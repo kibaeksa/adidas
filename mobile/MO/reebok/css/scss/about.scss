@@ -321,11 +321,13 @@ footer#footer{
 			position: absolute;
 			top: 50%;
 			left: 50%;
-			transform: translate3d(-50%,-50%,0);
 			border-top: 14px solid transparent;
 			border-bottom: 14px solid transparent;
 			border-left: 14px solid #fff;
 			margin-left: 2px;
+
+			transform:translate3d(-50%,-50%,0);
+			-webkit-transform:translate3d(-50%,-50%,0);
 		}
 	}
 
@@ -470,7 +472,7 @@ footer#footer{
 }
 
 .about_camapign{
-
+	
 	.prodlist{
 		width: 100%;
 		padding: 0 15px;
@@ -565,6 +567,20 @@ footer#footer{
 			font:500 2.2rem/5rem 'dinpro';
 			color: #000;
 			letter-spacing:2px;
+		}
+	}
+
+	.list{
+		background: #000;
+		text-align:center;
+		a{
+			font:500 1.8rem/7rem  'NotoSansKRMedium','Nanum Gothic';
+			color:#fff;
+		}
+		a:after{
+			font-size: 1.5rem;
+			padding:0.5rem 0 0 1rem;
+			display: inline-block;
 		}
 	}
 }
@@ -2258,19 +2274,6 @@ footer#footer{
 			}
 			.map_list:last-child{
 				border-bottom: 0;
-			}
-		}
-		.list{
-			background: #000;
-			text-align:center;
-			a{
-				font:500 2rem/7rem  'NotoSansKRMedium','Nanum Gothic';
-				color:#fff;
-			}
-			a:after{
-				font-size: 1.5rem;
-				padding:0.5rem 0 0 1rem;
-				display: inline-block;
 			}
 		}
 	}
