@@ -2614,6 +2614,7 @@ html.no_srl{
 #container.main .main_visual .owl-dots{
 	padding: 20px 0;
 	text-align: center;
+	background: #000;
 }
 
 #container.main .main_visual .owl-dots .owl-dot{
