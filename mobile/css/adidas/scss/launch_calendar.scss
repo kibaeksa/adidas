@@ -67,6 +67,10 @@ $width600:600px;
 		font-size:2.85rem;
 		text-align: center;
 		text-transform: uppercase;
+
+		span{
+			color: #59aa6f !important;
+		}		
 	}
 
 	.category_menu{
@@ -356,7 +360,7 @@ $width600:600px;
 					width: 100%;
 					padding-bottom: 100%;
 					position: relative;
-					background: #ccc;
+					background: #000;
 
 					.text{
 						width: 100%;
@@ -378,6 +382,7 @@ $width600:600px;
 								font-size: 2.4rem;
 								text-transform: uppercase;
 								opacity: 0.8;
+								color: #59aa6f;
 							}
 						}
 					}

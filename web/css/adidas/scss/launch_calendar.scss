@@ -54,16 +54,19 @@ $width600:600px;
 	}
 }
 
+#container_r{
+	background: #f9f9f9 !important;
+}
 
 #launch_calendar{
-
+	background: #f9f9f9;
 	.ctr{
 		width: 950px;
 		margin: 0 auto;
 	}
 
 	h2{
-		padding: 40px 0 70px;
+		padding: 40px 0 16px;
 		font:70px/60px 'adinenuPro-black';
 		text-align: center;
 		color: #000;
@@ -76,10 +79,17 @@ $width600:600px;
 			text-transform: uppercase;
 		}
 
-		strong{
-			font:70px/60px 'adinenuPro-black';
-			color: #5bc2e7;
+		span{
+			font: 70px/60px 'adinenuPro-black';
+    		color: #59aa6f !important;
 		}
+	}
+
+	.stit{
+		margin-bottom: 60px;
+		font:30px/30px 'NotoSansKRLight','Nanum Gothic';
+		color:#222;
+		text-align: center;
 	}
 
 	.utils{
@@ -176,7 +186,7 @@ $width600:600px;
 
 				&.on{
 					a{
-						color: #0286cd;
+						color: #59aa6f;
 					}
 				}
 
@@ -223,6 +233,12 @@ $width600:600px;
 				img{
 					width: 290px;
 					@include opacity(0.8);
+				}
+
+				&.locked{
+					img{
+						@include opacity(1);
+					}
 				}
 
 				.status{

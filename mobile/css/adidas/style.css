@@ -1150,7 +1150,7 @@ html.no_srl{
 }
 
 .prod_box .img .label.o-only{
-	background: rgba(129,39,109,0.8);
+	background:rgba(35,158,145,0.8);
 }
 
 .prod_box .img .label.new{
@@ -2062,7 +2062,7 @@ html.no_srl{
 
 #header .nav_menu .viewed_items .item_list .img .label.o-only{
 	/*background: #964e86;*/
-	background:rgba(129,39,109,0.8);
+	background:rgba(35,158,145,0.8);
 }
 
 #header .nav_menu .viewed_items .item_list .img .label.new{
@@ -4329,7 +4329,7 @@ div.layerpop_wrap.mi_login_layer .button_area>div{
 }
 
 #container.product_view .product_order>.prod_imgs_cut li>div .label.o-only{
-	background: rgba(129,39,109,0.8);
+	background:rgba(35,158,145,0.8);
 }
 
 #container.product_view .product_order>.prod_imgs_cut li>div .label.new{
@@ -7449,7 +7449,7 @@ padding:30px 15px;
 }
 
 #container .product_grid>* .img .label.o-only{
-	background: rgba(129,39,109,0.8);
+	background:rgba(35,158,145,0.8);
 }
 
 #container .product_grid>* .img .label.new{
