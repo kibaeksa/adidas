@@ -1770,6 +1770,8 @@ html.no_scroll{
 					}
 					.packs{
 						ul{
+							position: relative;
+							height:434px;
 							li{
 								float: left;
 								width:307px;
@@ -1994,20 +1996,22 @@ html.no_scroll{
 				}
 			}
 			.bg_shoe{
+				width: 40%;
 				position: absolute;
-				top:100px;
+				top:10%;
 				left:50%;
 				margin-left:-438px;
 				transition:all 0.1s ease-out;
 				@media screen and (max-width: 1585px){
-					top:89px;
+					top:10%;
 					left:50%;
 					margin-left:-277px;
 				}
+				@media screen and (max-width: 1200px){
+					margin-left:-359px;
+				}
 				img{
-					@media screen and (max-width: 1585px){
-						width: 60%;
-					}
+					width: 100%;
 				}
 
 			}
@@ -2072,7 +2076,7 @@ html.no_scroll{
 						a{
 							position: relative;
 							display: inline-block;
-							padding:0 80px;
+							padding:0 92px;
 							color:#e6e6e4;
 							overflow: hidden;
 							border:1px solid #e6e6e4;
@@ -2117,10 +2121,11 @@ html.no_scroll{
 						@include prefix-css3(transition,all 0.5s);
 					}
 					.text{
-						margin-left:-237px;
-						margin-top:-300px;
-						
-						transition:all 0.2s ease-out;
+
+						@include prefix-css3(transition,all 0.2s ease-out);
+						@media screen and (max-width: 1585px){
+							margin-top:-203px;
+						}
 						
 						.heading{
 							display: inline-block;
@@ -2152,6 +2157,12 @@ html.no_scroll{
 					&.active{
 						.con_img{
 							@include prefix-css3(transform,scale(1));
+							@media screen and (max-width: 1585px){
+								@include prefix-css3(transform,scale(0.8));
+							}
+							@media screen and (max-width: 1200px){
+								@include prefix-css3(transform,scale(0.6));
+							}
 						}
 						.text{
 							// margin-left:-337px;
@@ -2178,18 +2189,37 @@ html.no_scroll{
 						left:50%;
 						margin-left:93px;
 					}
+					@media screen and (max-width: 1200px){
+						top:334px;
+						left:50%;
+						margin-left:3px;
+					}
 					.target1:hover{
 						background:url('/images/reebok/event/about/nano7/target1_hover.png') 50% 100% no-repeat;
 					}
 					.target1.active{
 						background:url('/images/reebok/event/about/nano7/target1_hover.png') 50% 100% no-repeat;
 					}
+					.content1{
+						.text{
+							margin-left:-237px;
+							margin-top:-218px;
+							@media screen and (max-width: 1585px){
+								margin-left:-158px;
+								margin-top:-150px;
+							}
+							@media screen and (max-width: 1200px){
+								margin-top:-215px;
+								margin-left: -91px;
+							}
+						}
+					}
 				}
 				&.point2{
 					position: absolute;
-					top:252px;
+					top:328px;
 					left:50%;
-					margin-left:-142px;
+					margin-left:-79px;
 					@media screen and (max-width: 1585px){
 						top:248px;
 						left:50%;
@@ -2212,14 +2242,20 @@ html.no_scroll{
 						.text{
 							margin-left: 0px;
 							margin-top:14px;
+							@media screen and (max-width: 1585px){
+								margin-top: -20px;
+							}
+							@media screen and (max-width: 1200px){
+								margin-top: -72px;
+							}
 						}
 					}
 				}
 				&.point3{
 					position: absolute;
-					top:191px;
+					top:230px;
 					left:50%;
-					margin-left:-406px;
+					margin-left:-225px;
 					@media screen and (max-width: 1585px){
 						top:121px;
 						left:50%;
@@ -2242,6 +2278,10 @@ html.no_scroll{
 						.text{
 							margin-left: 0px;
 							margin-top:14px;
+							@media screen and (max-width: 1200px){
+								margin-left:67px;
+								margin-top:-37px;
+							}
 						}
 					}
 				}
