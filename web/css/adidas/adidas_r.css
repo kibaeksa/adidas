@@ -5162,6 +5162,12 @@ div.search_fail .sch_failbox2 #new_prodlist .banner_list .banner_slide{width:100
 	font:15px/18px 'NotoSansKR','Nanum Gothic';	
 }
 
+.cart-main .prodlist .box .info .tit .prod_nm{
+	margin-left: 4px;
+	color: #999;
+	font:13px/13px 'NotoSansKR','Nanum Gothic';	
+}
+
 .cart-main .prodlist .box .info .tit .no_sale{
 	color: #ff0000;
 	font-size: 13px;

@@ -8387,6 +8387,10 @@ padding:30px 15px;
 	text-transform: uppercase;
 }
 
+#container.order .cart_prod_box .tit label>div p .prod_nm{
+	color: #999;
+}
+
 
 #container.order .cart_prod_box .tit label>div p.ctgr{
 	font:12px 'Adihaus-regular';
@@ -13971,6 +13975,125 @@ padding:30px 15px;
 
 .layerpopup.layerpopup_zipfinder .contents>.button_area a{
 	color: #fff;
+}
+
+.layerpopup.layerpopup_zipfinder .paging{
+	padding: 20px 0;
+}
+
+.layerpopup.layerpopup_zipfinder .paging>div{
+	width: 100%;
+	max-width:300px;
+	padding: 0 1.5rem;
+	margin: 0 auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	-webkit-align-items:center;
+	-webkit-justify-content: space-around;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.layerpopup.layerpopup_zipfinder .paging>div>*{
+	-webkit-flex: 0 0 30px;
+	flex: 0 0 30px;
+}
+
+
+
+.layerpopup.layerpopup_zipfinder .paging .btn{
+	position: relative;
+	left: 0;
+	top: 0;
+	-webkit-flex: 0 0 40px;
+	flex: 0 0 40px;
+	height: 40px;
+}
+
+.layerpopup.layerpopup_zipfinder .paging .btn.disabled{
+	opacity: 0.3;
+}
+
+
+.layerpopup.layerpopup_zipfinder .paging .btn>span{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	width: 20px;
+	height: 20px;
+	background: #000;
+	border-radius:40px;
+	text-align: center;
+}
+
+.layerpopup.layerpopup_zipfinder .paging .btn>span::before,
+.layerpopup.layerpopup_zipfinder .paging .btn>span::after{
+	position: absolute;
+	top: 50%;
+	content:'';
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	border-style:solid;
+	border-width:0 0 2px 2px;
+	border-color:#fff;
+}
+
+.layerpopup.layerpopup_zipfinder .paging .btn.prev>span::after,
+.layerpopup.layerpopup_zipfinder .paging .btn.next>span::after{
+	display: none;
+}
+
+.layerpopup.layerpopup_zipfinder .paging .btn.prev>span::before{
+	left: 50%;
+	transform:rotate(45deg) translate3d(-50%,-50%,0);
+	-webkit-transform:rotate(45deg) translate3d(-50%,-50%,0);
+	margin-top: 1px;
+	margin-left: -2px;
+}
+
+.layerpopup.layerpopup_zipfinder .paging .btn.next>span::before{
+	left: 50%;
+	transform:rotate(-135deg) translate3d(-50%,-50%,0);
+	-webkit-transform:rotate(-135deg) translate3d(-50%,-50%,0);
+	margin-top: -8px;
+	margin-left: -4px;
+}
+
+.layerpopup.layerpopup_zipfinder .paging .btn.first>span::before{
+	left: 50%;
+	transform:rotate(45deg) translate3d(-50%,-50%,0);
+	-webkit-transform:rotate(45deg) translate3d(-50%,-50%,0);
+	margin-top: 1px;
+}
+
+.layerpopup.layerpopup_zipfinder .paging .btn.first>span::after{
+	left: 50%;
+	transform:rotate(45deg) translate3d(-50%,-50%,0);
+	-webkit-transform:rotate(45deg) translate3d(-50%,-50%,0);
+	margin-top: 1px;
+	margin-left: -4px;
+}
+
+.layerpopup.layerpopup_zipfinder .paging .btn.last>span::before{
+	left: 50%;
+	transform:rotate(-135deg) translate3d(-50%,-50%,0);
+	-webkit-transform:rotate(-135deg) translate3d(-50%,-50%,0);
+	margin-top: -8px;
+	margin-left: -6px;
+}
+
+.layerpopup.layerpopup_zipfinder .paging .btn.last>span::after{
+	left: 50%;
+	transform:rotate(-135deg) translate3d(-50%,-50%,0);
+	-webkit-transform:rotate(-135deg) translate3d(-50%,-50%,0);
+	margin-top: -8px;
+	margin-left: -2px;
 }
 
 
