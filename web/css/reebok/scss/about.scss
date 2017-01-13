@@ -1076,12 +1076,19 @@ html.no_scroll{
 			}
 			h2{
 				width: 315px;
-				height: 283px;
+				height: 281px;
 				background: url('/images/reebok/event/about/gigi_hadid/text-video.png');
 				margin: 0 auto 25px;
 				text-indent: -5555px;
 			}
-
+			.desc_eng{
+				color:#fff;
+			}
+			.desc_eng2{
+				font:23px/50px 'DINWebPro-CondMedium';
+				color:#fff;
+				margin:0;
+			}
 			.video_bg{
 				width: 100%;
 				.ie &{
@@ -1177,7 +1184,12 @@ html.no_scroll{
 				}
 			}
 			// box1 end
-			
+			.txt_perspect{
+				opacity: 0.2;
+					position: absolute;
+					top:0;
+					left:0;
+				}
 			.box2{
 				height: 900px;
 				position: relative;
@@ -1302,14 +1314,15 @@ html.no_scroll{
 				ul{
 					position: absolute;
 					top: 0;
-					left: 0;
+					left: 0 !important;
 					width: 100%;
 					height: 550px;
 
 					li{
-						width: 765px;
+						// width: 765px;
+						width: 100%;
 						position: relative;
-						float: left;
+						// float: left;
 						@include opacity(0.4);
 						@include prefix-css3(transition,opacity 0.3s);
 
