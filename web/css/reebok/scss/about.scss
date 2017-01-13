@@ -1986,6 +1986,7 @@ html.no_scroll{
 
 	&.campaign_nano7{
 		.visual_video{
+			background: #000;
 			h2{
 				// width:900px;
 				height: inherit;
@@ -2005,6 +2006,32 @@ html.no_scroll{
 			}
 			.desc_eng2{
 				font:22px/28px 'NotoSansKRRegular','Nanum Gothic';
+			}
+
+			.bg{
+				@include opacity(0);
+				@include prefix-css3(transition ,opacity 1.2s ease-in);
+			}
+
+			.masthead{
+				@include opacity(0);
+				@include prefix-css3(transition ,opacity 1s ease-in);
+				&.active{
+					@include opacity(1);
+				}
+			}
+
+			&.active{
+				.bg{
+					@include opacity(1);
+				}
+			}
+
+			.video_bg{
+				&.ended{
+					@include opacity(0);
+					@include prefix-css3(transition ,opacity 1.6s ease-in);
+				}
 			}
 		}
 		.perform{
