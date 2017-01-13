@@ -773,6 +773,7 @@ html.no_scroll{
 		}
 
 		.campaign_list{
+			position: relative;
 			width: 100%;
 			height: 830px;
 			overflow: hidden;
@@ -1074,8 +1075,8 @@ html.no_scroll{
 				}
 			}
 			h2{
-				width: 374px;
-				height: 272px;
+				width: 315px;
+				height: 283px;
 				background: url('/images/reebok/event/about/gigi_hadid/text-video.png');
 				margin: 0 auto 25px;
 				text-indent: -5555px;
@@ -1100,15 +1101,15 @@ html.no_scroll{
 				position: relative;
 				padding-top: 120px;
 				background: #252525;
-				height: 985px;
-
-
+				height: 901px;
 				.inner{
+					width: 889px;
 					height: 100%;
 				}
 
 				h3{
 					position: relative;
+					margin-left:-47px;
 					z-index: 2;
 					color: #fff;
 					font:90px/80px 'QStencil';
@@ -1116,11 +1117,27 @@ html.no_scroll{
 
 				.desc{
 					position: absolute;
-					top: 220px;
-					right: 0;
-					font:20px/30px 'NotoSansKRRegular','Nanum Gothic';
+					top: 303px;
+					right: -170px;
+					font:19px/27px 'NotoSansKRRegular','Nanum Gothic';
 					color: #bbb;
 					z-index: 1;
+					letter-spacing: -1px;
+					text-transform: uppercase;
+				}
+
+				.btn{
+					position: absolute;
+					bottom:339px;
+					right: -35px;
+					a{
+						box-sizing:border-box;
+						padding: 0 39px;
+						display: inline-block;
+						font:22px/60px 'NotoSansKRRegular','Nanum Gothic';
+						border:2px solid #d3d3d3;
+						color:#fff;
+					}
 				}
 
 				.bg{
@@ -1133,21 +1150,23 @@ html.no_scroll{
 
 				.textbg{
 					position: absolute;
-					top: 250px;
-					right: 0;
-					font:214px 'DINWebPro-CondMedium';
+					top: 513px;
+					right: -461px;
+					font:214px/167px 'DINWebPro-CondMedium';
 					color: #353535;
 					z-index: 0;
 					letter-spacing: 0.5px;
+					text-align: right;
 				}
 
 				.slider-wrapper{
 					position: absolute;
-					bottom: 75px;
-					left: 0;
+					top: 210px;
+					left: -168px;
 
 					.slider-control{
 						margin-bottom: 25px;
+						margin-left: 154px;
 					}
 
 					.images-slider{
@@ -1190,7 +1209,7 @@ html.no_scroll{
 					.tit{
 						padding-top: 60px;
 						p{
-							font:28px/28px 'NotoSansKRLight','Nanum Gothic';
+							font:28px/36px 'NotoSansKRLight','Nanum Gothic';
 							text-align: center;
 							color: #000;
 
@@ -1345,7 +1364,7 @@ html.no_scroll{
 		
 		.banner_area{
 			position: relative;
-			height: 665px;
+			height: 190px;
 			.bg{
 				position: absolute;
 				top: 0;
@@ -1522,7 +1541,7 @@ html.no_scroll{
 		}
 
 		.banner_area{
-			height: 260px;
+			height: 110px;
 			.bnn{
 				padding-top: 97px;
 			}
@@ -1669,7 +1688,7 @@ html.no_scroll{
 		}
 
 		.banner_area{
-			height: 608px;
+			height: 550px;
 
 			.button-anim{
 				margin-top: 57px;
@@ -1887,7 +1906,7 @@ html.no_scroll{
 			}
 			.prodlist_wrap{
 				position: relative;
-				padding:108px 0 100px 0;
+				padding:18px 0 100px 0;
 				height:63px;
 				background:url('/images/reebok/event/about/heritage/bg_wall.png') 50% 100% no-repeat;
 				border-bottom: 0px;			
