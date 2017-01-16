@@ -1075,8 +1075,8 @@ html.no_scroll{
 				}
 			}
 			h2{
-				width: 315px;
-				height: 281px;
+				width: 375px;
+				height: 271px;
 				background: url('/images/reebok/event/about/gigi_hadid/text-video.png');
 				margin: 0 auto 25px;
 				text-indent: -5555px;
@@ -1314,15 +1314,16 @@ html.no_scroll{
 				ul{
 					position: absolute;
 					top: 0;
-					left: 0 !important;
+					// left: 0;
 					width: 100%;
 					height: 550px;
 
 					li{
-						// width: 765px;
-						width: 100%;
+						width: 765px;
+						// width: 100%;
 						position: relative;
-						// float: left;
+						float: left;
+						overflow: hidden;
 						@include opacity(0.4);
 						@include prefix-css3(transition,opacity 0.3s);
 
@@ -1438,7 +1439,7 @@ html.no_scroll{
 				height: 985px;
 
 				h3{
-					margin-left:130px;
+					margin-left:0px;
 					color: #292929;
 					strong{
 						margin-top: 10px;
@@ -1457,14 +1458,14 @@ html.no_scroll{
 				}
 
 				.textbg{
-					top: 199px;
-					right: 35px;
+					top: 228px;
+					right: -116px;
 					color: #cac9c8;
 				}
 
 				.textbg_bg1{
 					position:absolute;
-					bottom:2px;
+					bottom:-5px;
 					left:-308px;
 					font:166px 'DINWebPro-CondMedium';
 					color:#000;
@@ -1473,14 +1474,14 @@ html.no_scroll{
 
 				.bg2{
 					position: absolute;
-					top: 422px;
+					top: 533px;
 					right: 50%;
 					z-index: 0;
 					margin-right: -960px;
 				}
 				.inner-buybtn{
 					display: inline-block;
-					margin:30px 0 0 130px;
+					margin:30px 0 0 0;
 					padding:0 75px;
 					vertical-align: middle;
 					font:22px/60px 'NotoSansKRRegular','Nanum Gothic';
@@ -1489,10 +1490,14 @@ html.no_scroll{
 				}
 
 				.slider-wrapper{
-					bottom: 40px;
+					// bottom: 40px;
+					top:300px;
 					left: -36px;
 					.slider-control{
-						margin:50px 0 25px 195px;
+						margin:50px 0 26px 64px;
+					}
+					.images-slider{
+						margin-left: -168px;
 					}
 				}
 				
@@ -1540,9 +1545,91 @@ html.no_scroll{
 		}
 
 		.products_collection{
-			.prodlist_wrap{
-				height: 249px;
+			width: 100%;
+			position: relative;
+			background: #323232;
+			.bg{
+				position: absolute;
+				top:0;
+				left:50%;
+				margin-left:-980px;
+				}
+			h4{
+				position: relative;
+				padding:90px 0 45px;
+				z-index: 1;
+				font:55px/55px 'DINWebPro-Cond';
+				text-align: center;
+				color:#fff;
+				}
+			.wide-slider-wrapper{
+				position: relative;
+				width: 100%;
+				height:550px;
+				z-index: 1;
+				overflow: hidden;
+				background: #000;
+				.arrow-prev{
+					position: absolute;
+					top:50%;
+					left:50%;
+					margin-left: -420px;
+					background-position: -125px -80px;
+					z-index: 2;
+					width: 22px;
+					height: 42px;
+				}
+				.arrow-next{
+					position: absolute;
+					top:50%;
+					left:50%;
+					margin-left:420px;
+					background-position: -125px -125px;
+					z-index: 2;
+					width: 22px;
+					height: 42px;
+				}
+				ul{
+					position: absolute;
+					top:0;
+					width: 100%;
+					height: 550px;
+					li{
+						width: 765px;
+						position: relative;
+						float: left;
+						@include opacity(0.4);
+						@include prefix-css3(transition ,opacity 0.4s ease-in 0.3s);
+					}
+					li:active{
+						@include opacity(1);
+					}
+				}
 
+			}
+			.prodlist_wrap{
+				position: relative;
+				height: 249px;
+				background: #ebeaee;
+				overflow: inherit;
+				z-index: 2;
+				border-bottom-width: 0;
+				.arrow{
+					position: absolute;
+					left:50%;
+					top:-21px;
+					margin-left: -21px;
+					background-position: -140px 0;
+					width: 43px;
+					height: 21px;
+				}
+				.prodlist_box{
+					width: 892px;
+					position: absolute;
+					top:0;
+					left:50%;
+					margin-left: -446px;
+				}
 				.prodlist_box.last{
 					margin-left: -230px;
 					display: none;
@@ -1554,7 +1641,14 @@ html.no_scroll{
 		}
 
 		.banner_area{
+			position: relative;
 			height: 110px;
+			.bg{
+				position: absolute;
+				top:0;
+				left:50%;
+				margin-left: -990px;
+			}
 			.bnn{
 				padding-top: 97px;
 			}
@@ -1780,8 +1874,8 @@ html.no_scroll{
 						text-align: center;
 						font:80px/118px 'QStencil';
 						color:#000;
-						border-top:2px solid #000;
-						border-bottom:2px solid #000;
+						// border-top:2px solid #000;
+						// border-bottom:2px solid #000;
 						z-index: 2;
 					}
 					h3+p{
