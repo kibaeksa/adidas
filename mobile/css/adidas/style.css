@@ -2582,20 +2582,22 @@ html.no_srl{
 	z-index: 2;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	padding: 0 20px 20px;
+	padding: 0 20px 5px;
 }
 
 
 #container.main .main_visual .btn a{
 	width: 100%;
 	height: 40px;
-	line-height: 40px;
 	text-align: center;
 	margin-bottom:10px;
 	color: #fff;
 	display: block;
-	font-size:13px;
 	background:rgba(2,95,142,1);
+    background: -webkit-linear-gradient(left,#025f8e,#0286cd);
+    background: linear-gradient(to right,#025f8e,#0286cd);
+
+	font:14px/40px 'NotoSansKR';
 }	
 
 #container.main .main_visual .white .btn a{
@@ -2612,7 +2614,7 @@ html.no_srl{
 }
 
 #container.main .main_visual .owl-dots{
-	padding: 20px 0;
+	padding: 15px 0;
 	text-align: center;
 	background: #000;
 }

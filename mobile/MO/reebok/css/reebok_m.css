@@ -1976,8 +1976,9 @@ section#header .navigation_main_wrapper>a.navi_cart strong{
 #contents .mypage .mpg_cont .data_tb_form .phn .td input:last-child{border-radius:0 2px 2px 0;}
 #contents .mypage .mpg_cont .data_tb_form .addr .td.colspan{margin:0;}
 #contents .mypage .mpg_cont .data_tb_form .zip_num .td{margin:0 70px 0 100px;}
-#contents .mypage .mpg_cont .data_tb_form .zip_num input[type='text']{width:47%;border-radius:2px;text-align:center;}
+#contents .mypage .mpg_cont .data_tb_form .zip_num input[type='text']{width:90%;border-radius:2px;text-align:center;}
 #contents .mypage .mpg_cont .data_tb_form .zip_num input[type='text']:first-child{border-radius:0 2px 2px 0;}
+#contents .mypage .mpg_cont .data_tb_form .zip_num input[type='text']:nth-child(2){opacity: 0;}
 #contents .mypage .mpg_cont .data_tb_form .zip_num .btn1{width:65px;height:21px;padding-top:11px;position:absolute;top:4px;right:0;font-size:9px;background:#5d5d5d;}
 
 /* login page*/
@@ -2386,8 +2387,9 @@ div.prod_manual p.desc strong{color:#3e3e3e;font-size:11px;letter-spacing:-1px;}
 #contents .order_wrt .data_tb_form .phn .td input:last-child{border-radius:0 2px 2px 0;}
 #contents .order_wrt .data_tb_form .addr .td.colspan{margin:0;}
 #contents .order_wrt .data_tb_form .zip_num .td{margin:0 70px 0 100px;}
-#contents .order_wrt .data_tb_form .zip_num input[type='text']{width:47%;border-radius:2px;text-align:center;padding-left:0;}
+#contents .order_wrt .data_tb_form .zip_num input[type='text']{width:90%;border-radius:2px;text-align:center;padding-left:0;}
 #contents .order_wrt .data_tb_form .zip_num input[type='text']:first-child{border-radius:0 2px 2px 0;}
+#contents .order_wrt .data_tb_form .zip_num input[type='text']:nth-child(2){opacity: 0;}
 #contents .order_wrt .data_tb_form .zip_num .btn1{width:65px;height:21px;padding-top:11px;position:absolute;top:4px;right:0;font-size:9px;background:#5d5d5d;}
 #contents .order_wrt .data_tb_form .zip_num input[type='text'][disabled=""]{background: #fff;}
 
@@ -2570,8 +2572,9 @@ div.prod_manual p.desc strong{color:#3e3e3e;font-size:11px;letter-spacing:-1px;}
 
 #contents .join .join3 .jn3_area1 .addr .td.colspan{margin:0;}
 #contents .join .join3 .jn3_area1 .zip_num .td{margin:0 70px 0 100px;}
-#contents .join .join3 .jn3_area1 .zip_num input[type='text']{width:47%;border-radius:2px;text-align:center;padding-left:0;}
+#contents .join .join3 .jn3_area1 .zip_num input[type='text']{width:90%;border-radius:2px;text-align:center;padding-left:0;}
 #contents .join .join3 .jn3_area1 .zip_num input[type='text']:first-child{border-radius:0 2px 2px 0;}
+#contents .join .join3 .jn3_area1 .zip_num input[type='text']:nth-child(2){opacity: 0;}
 #contents .join .join3 .jn3_area1 .zip_num .btn1{width:65px;height:21px;padding-top:11px;position:absolute;top:4px;right:0;font-size:9px;background:#5d5d5d;}
 #contents .join .join3 .jn3_area1 .birth .selc_box2{width:30%;height:40px;float:left;border-left-width:0;padding-right:0;}
 #contents .join .join3 .jn3_area1 .birth .selc_box2:first-child{width:40%;}
