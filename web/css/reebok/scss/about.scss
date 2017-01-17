@@ -1084,7 +1084,7 @@ html.no_scroll{
 				h2{
 				width: 315px;
 				height: 271px;
-				background: url('/images/reebok/event/about/gigi_hadid/text-video.png');
+				background: url('/images/reebok/event/about/gigi_hadid/text-video.png?v=0110');
 				margin: 0 auto 25px;
 				text-indent: -5555px;
 				}
@@ -1298,8 +1298,10 @@ html.no_scroll{
 			}
 			.wide-slider-wrapper{
 				position: relative;
-				width: 100%;
+				width: 1920000px;
 				height: 550px;
+				left:50%;
+				margin-left:-960px;
 				z-index: 1;
 				overflow: hidden;
 				background: #000;
@@ -1324,11 +1326,11 @@ html.no_scroll{
 					position: absolute;
 					top: 0;
 					// left: 0;
-					width: 100%;
+					// width: 100%;
 					height: 550px;
 
 					li{
-						width: 765px;
+						// width: 765px;
 						// width: 100%;
 						position: relative;
 						float: left;
@@ -1369,7 +1371,13 @@ html.no_scroll{
 					left: 50%;
 					margin-left: -446px;
 					display: none;
+					// @include prefix-css3(transition,opacity 0.5s);
+
 				}
+				// .prodlist_box.active{
+				// 	opacity: 1;
+				// 	display: block;
+				// }
 
 				.slider-btn{
 					width: 100%;
