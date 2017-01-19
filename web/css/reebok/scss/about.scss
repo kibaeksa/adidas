@@ -1593,6 +1593,8 @@ html.no_scroll{
 				position: relative;
 				width: 100%;
 				height:550px;
+				left: inherit;
+				margin-left:inherit;
 				z-index: 1;
 				overflow: hidden;
 				background: #000;
