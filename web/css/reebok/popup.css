@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 #pop {width:100%;}
-*html #pop {height:100%;overflow:auto;overflow-x:hidden;position:relative; width:99.9%;z-index:1;} 
-#popupHeader {background:url(//image.reebok.co.kr/images/reebok/popup/bg_top.gif) repeat-x;height:52px;position:relative;} 
+*html #pop {height:100%;overflow:auto;overflow-x:hidden;position:relative; width:99.9%;z-index:1;}
+#popupHeader {background:url(//image.reebok.co.kr/images/reebok/popup/bg_top.gif) repeat-x;height:52px;position:relative;}
 #popupHeader h1 {height:35px;color:#fff;font-size:12px;padding:17px 20px 0;}
 #popupHeader h1 span {color:#d0cfcf;}
 #popupHeader a {position:absolute;top:18px;right:21px;}
@@ -70,31 +70,31 @@
 #popupContents ul.advice li.btn {background:url(//image.reebok.co.kr/images/reebok/popup/blt_advice_list.gif) no-repeat left 9px;}
 
 /* popup_popup */
-#popup_popup {width:100%; height:800px; overflow:hidden; position:absolute; top:0; left:0; z-index:500; opacity:.40; filter:alpha(opacity=40); background:#000;} 
+#popup_popup {width:100%; height:800px; overflow:hidden; position:absolute; top:0; left:0; z-index:500; opacity:.40; filter:alpha(opacity=40); background:#000;}
 #popup_popupbox {position:absolute; top:230px; left:120px; z-index:700; width:410px; height:185px; background:#FFF; border:3px solid #343434;}
 #popup_popupbox div.massage {margin:30px 10px;}
 #popup_popupbox div.massage p {text-align:center;line-height:18px;letter-spacing:-1px; color:#888888;}
 #popup_popupbox div.massage strong {color:#444;letter-spacing:0;}
-#popup_popupbox div.massage em {color:#e50000;font-weight:bold;} 
+#popup_popupbox div.massage em {color:#e50000;font-weight:bold;}
 #popup_popupbox div.button {margin-bottom:0;text-align:center;}
-#popup_popupbox div.button img {margin:0 2px;} 
+#popup_popupbox div.button img {margin:0 2px;}
 
 /* join */
 #popupContents div.usech1 {margin-bottom:48px;}
 #popupContents div.usech1 p {text-align:center;line-height:18px;letter-spacing:-1px; color:#888888;}
-#popupContents div.usech1 span {color:#f66905;letter-spacing:0;} 
+#popupContents div.usech1 span {color:#f66905;letter-spacing:0;}
 
 #popupContents div.usech2 {margin-bottom:62px;}
-#popupContents div.usech2 p {text-align:center;line-height:18px;letter-spacing:-1px; color:#888888;} 
+#popupContents div.usech2 p {text-align:center;line-height:18px;letter-spacing:-1px; color:#888888;}
 #popupContents div.usech2 em {color:#497cde;font-weight:bold;}
 #popupContents div.usech2 span {color:#f66905;}
 
 #popupContents div.usech3 {margin-bottom:30px;}
-#popupContents div.usech3 p {text-align:center;line-height:18px;letter-spacing:-1px; color:#888888;} 
-#popupContents div.usech3 span {color:#888888;letter-spacing:0;} 
+#popupContents div.usech3 p {text-align:center;line-height:18px;letter-spacing:-1px; color:#888888;}
+#popupContents div.usech3 span {color:#888888;letter-spacing:0;}
 #popupContents div.usech3 em {color:#f66905;letter-spacing:0; font-weight:bold;}
-#popupContents div.usech3 span.bule {color:#497cde;letter-spacing:-1px;} 
-#popupContents div.usech3 strong {font-weight:bold; letter-spacing:0;} 
+#popupContents div.usech3 span.bule {color:#497cde;letter-spacing:-1px;}
+#popupContents div.usech3 strong {font-weight:bold; letter-spacing:0;}
 
 #popupContents div.usebox {width:100%; height:92px; margin-top:-4px;}
 #popupContents div.sbox {width:437px; height:89px; position:relative; margin:0 auto; border:1px solid #d3d3d3; background:#fafafa;}
@@ -103,15 +103,15 @@
 *:first-child+html #popupContents div.sbox ul li {width:335px; height:26px; margin:0 auto; background:url(//image.reebok.co.kr/images/reebok/popup/blt_dot_s.gif) 0 9px no-repeat; padding-left:10px;}
 #popupContents div.sbox ul li span {margin-right:16px; font-family:dotum; font-size:11px; color:#888; font-weight:bold;}
 #popupContents div.sbox ul li em {margin-right:8px; font-family:dotum; font-size:11px; color:#888; font-weight:bold;}
-#popupContents div.sbox ul li input {width:118px; height:16px; text-align:left;}  
+#popupContents div.sbox ul li input {width:118px; height:16px; text-align:left;}
 #popupContents div.sbox span.btn {position:absolute; top:20px; right:91px;}
 
 #popupContents div.usebox2 {width:100%; height:51px; margin-top:-30px;}
 #popupContents div.sbox2 {width:437px; height:49px; position:relative; margin:0 auto; background:#fafafa; border:1px solid #d3d3d3;}
-#popupContents div.sbox2 ul {width:437px;} 
-#popupContents div.sbox2 ul li.tit {position:absolute; top:17px; left:19px; font-family:gulim; font-size:12px; color:#888; letter-spacing:-1px;} 
+#popupContents div.sbox2 ul {width:437px;}
+#popupContents div.sbox2 ul li.tit {position:absolute; top:17px; left:19px; font-family:gulim; font-size:12px; color:#888; letter-spacing:-1px;}
 #popupContents div.sbox2 ul li.input {position:absolute; top:14px; left:175px;}
-#popupContents div.sbox2 ul li.input input {width:166px; height:16px; margin-right:10px;}  
+#popupContents div.sbox2 ul li.input input {width:166px; height:16px; margin-right:10px;}
 #popupContents div.sbox2 ul li.img {position:absolute; top:11px; right:11px;}
 
 #popupContents div.usebox4 {width:100%; height:92px; margin-top:-5px;}
@@ -120,32 +120,32 @@
 *:first-child+html #popupContents div.sbox4 ul {position:absolute; top:22px; left:7px;}
 #popupContents div.sbox4 ul li {width:335px; height:26px; margin:0 auto; background:url(//image.reebok.co.kr/images/reebok/popup/blt_dot_s.gif) 0 7px no-repeat; _background:url(//image.reebok.co.kr/images/reebok/popup/blt_dot_s.gif) 0 9px no-repeat; padding-left:10px;}
 *:first-child+html #popupContents div.sbox4 ul li {width:335px; height:26px; margin:0 auto; background:url(//image.reebok.co.kr/images/reebok/popup/blt_dot_s.gif) 0 9px no-repeat; padding-left:10px;}
-#popupContents div.sbox4 ul li span {margin-right:10px; font-family:dotum; font-size:12px; color:#888; font-weight:bold; letter-spacing:-1px;} 
-#popupContents div.sbox4 ul li input {width:151px; height:16px; text-align:left;}  
+#popupContents div.sbox4 ul li span {margin-right:10px; font-family:dotum; font-size:12px; color:#888; font-weight:bold; letter-spacing:-1px;}
+#popupContents div.sbox4 ul li input {width:151px; height:16px; text-align:left;}
 #popupContents div.sbox4 span.btn {position:absolute; top:20px; right:47px;}
 
 #popupContents div.usech4 {height:102px;}
-#popupContents div.usech4 p.tit {text-align:left;line-height:18px;letter-spacing:-1px; color:#888888; font-weight:bold; margin-bottom:15px;}  
+#popupContents div.usech4 p.tit {text-align:left;line-height:18px;letter-spacing:-1px; color:#888888; font-weight:bold; margin-bottom:15px;}
 #popupContents div.usech4 p.txt {width:80%; float:left; padding-left:7px; font-family:dotum; font-size:11px; font-weight:normal; color:#888; margin-bottom:6px; letter-spacing:-1px; background:url(//image.reebok.co.kr/images/reebok/popup/blt_dot_btn.gif) 0 6px no-repeat;}
 
 #popupContents div.usebox5 {width:439px; height:52px; margin-top:-4px; margin-bottom:23px;}
 #popupContents div.sbox5 {width: auto; height:50px; position:relative; background:#fafafa; border:1px solid #d3d3d3;}
-#popupContents div.sbox5 ul {width:437px;} 
-#popupContents div.sbox5 ul li.tit {position:absolute; top:17px; left:54px; font-family:gulim; font-size:12px; color:#888; letter-spacing:-1px; background:url(//image.reebok.co.kr/images/reebok/popup/blt_dot_s.gif) 0 5px no-repeat; padding-left:8px; font-weight:bold;} 
+#popupContents div.sbox5 ul {width:437px;}
+#popupContents div.sbox5 ul li.tit {position:absolute; top:17px; left:54px; font-family:gulim; font-size:12px; color:#888; letter-spacing:-1px; background:url(//image.reebok.co.kr/images/reebok/popup/blt_dot_s.gif) 0 5px no-repeat; padding-left:8px; font-weight:bold;}
 #popupContents div.sbox5 ul li.input {position:absolute; top:14px; left:118px;}
-#popupContents div.sbox5 ul li.input input {width:166px; height:16px; margin-right:10px;}  
+#popupContents div.sbox5 ul li.input input {width:166px; height:16px; margin-right:10px;}
 #popupContents div.sbox5 ul li.img {position:absolute; top:11px; right:67px;}
 
 /* login */
 #popupContents div.joinbox {width:439px; overflow:hidden; margin:0 auto; border:0px solid #0066CC;}
 
 #popupContents div.logintit {margin-bottom:20px;}
-#popupContents div.logintit p {text-align:left; line-height:18px;letter-spacing:-1px; color:#888888;} 
+#popupContents div.logintit p {text-align:left; line-height:18px;letter-spacing:-1px; color:#888888;}
 
 #popupContents div.errorbox {width:437px; height:102px; border:1px solid #ff6a00; margin-bottom:18px;}
 #popupContents div.errorboxs {width:431px; height:48px; border:3px solid #ffa05d; padding:23px 0 25px 0; text-align:center;}
-#popupContents div.errorboxs p {font-family:gulim; font-size:12px; line-height:17px; letter-spacing:-1px; color:#f66905; text-align:center; padding-bottom:3px;} 
-#popupContents div.errorboxs span {font-family:dotum; font-size:11px; line-height:16px; letter-spacing:-1px; color:#888888;} 
+#popupContents div.errorboxs p {font-family:gulim; font-size:12px; line-height:17px; letter-spacing:-1px; color:#f66905; text-align:center; padding-bottom:3px;}
+#popupContents div.errorboxs span {font-family:dotum; font-size:11px; line-height:16px; letter-spacing:-1px; color:#888888;}
 
 #popupContents p.radiobox {width:437px; margin-bottom:15px;}
 #popupContents p.radiobox input {margin-top:-2px; margin-right:5px;}
@@ -153,8 +153,8 @@
 
 #popupContents div.errorbox2 {width:437px; height:88px; border:1px solid #ff6a00; margin-bottom:20px;}
 #popupContents div.errorboxs2 {width:431px; height:34px; border:3px solid #ffa05d; padding:23px 0 25px 0; text-align:center;}
-#popupContents div.errorboxs2 p {font-family:gulim; font-size:12px; line-height:17px; letter-spacing:-1px; color:#f66905; text-align:center; padding-bottom:6px;} 
-#popupContents div.errorboxs2 span {font-family:dotum; font-size:11px; line-height:16px; letter-spacing:-1px; color:#888888;} 
+#popupContents div.errorboxs2 p {font-family:gulim; font-size:12px; line-height:17px; letter-spacing:-1px; color:#f66905; text-align:center; padding-bottom:6px;}
+#popupContents div.errorboxs2 span {font-family:dotum; font-size:11px; line-height:16px; letter-spacing:-1px; color:#888888;}
 
 #popupContents div.centrebox {width:439px; height:31px; background:#6d6d6d; position:relative;}
 #popupContents div.centrebox p {font-family:dotum; font-size:11px; color:#e3e3e3; letter-spacing:-1px; background:url(//image.reebok.co.kr/images/reebok/popup/blt_notice.gif) 12px 10px no-repeat; padding:8px 0 0 31px;}
@@ -171,7 +171,7 @@
 *:first-child+html #popupContents div.loginsbox ul li {width:335px; height:26px; background:url(//image.reebok.co.kr/images/reebok/popup/blt_dot_s.gif) 0 9px no-repeat; padding-left:10px;}
 #popupContents div.loginsbox ul li span {margin-right:16px; font-family:dotum; font-size:11px; color:#888; font-weight:bold;}
 #popupContents div.loginsbox ul li em {margin-right:8px; font-family:dotum; font-size:11px; color:#888; font-weight:bold;}
-#popupContents div.loginsbox ul li input {width:118px; height:16px; text-align:left;}  
+#popupContents div.loginsbox ul li input {width:118px; height:16px; text-align:left;}
 #popupContents div.loginsbox span.btn {position:absolute; top:20px; right:91px;}
 #popupContents div.loginsbox p.checkboxs2 {position:absolute; top:77px; left:156px; _left:151px;}
 *:first-child+html #popupContents div.loginsbox p.checkboxs2 {position:absolute; top:77px; left:151px;}
@@ -186,12 +186,12 @@
 *:first-child+html #popupContents div.loginsbox2 ul li {width:335px; height:26px; background:url(//image.reebok.co.kr/images/reebok/popup/blt_dot_s.gif) 0 9px no-repeat; padding-left:10px;}
 #popupContents div.loginsbox2 ul li span {margin-left:5px; margin-right:87px; font-family:gulim; font-size:12px; color:#888; font-weight:bold;}
 #popupContents div.loginsbox2 ul li em {margin-left:5px; margin-right:75px; font-family:gulim; font-size:12px; color:#888; font-weight:bold;}
-#popupContents div.loginsbox2 ul li input {width:189px; height:16px; text-align:left;}  
-#popupContents div.loginsbox2 ul li input.nb {width:86px; height:16px;} 
+#popupContents div.loginsbox2 ul li input {width:189px; height:16px; text-align:left;}
+#popupContents div.loginsbox2 ul li input.nb {width:86px; height:16px;}
 #popupContents div.loginsbox2 ul li select {width:110px; margin-right:8px; font-family:gulim; font-size:12px; color:#888; font-weight:normal;}
-#popupContents div.loginsbox2 ul li input.tel {width:48px; height:16px;} 
+#popupContents div.loginsbox2 ul li input.tel {width:48px; height:16px;}
 #popupContents div.loginsbox2 ul li select.tel {width:60px; font-family:gulim; font-size:12px; color:#888; font-weight:normal; margin-right:0px;}
-#popupContents div.loginsbox2 span.btn {position:absolute; top:20px; right:17px;} 
+#popupContents div.loginsbox2 span.btn {position:absolute; top:20px; right:17px;}
 
 #popupContents div.loginbox3_1 {width:100%; height:312px; margin-top:-5px; }
 #popupContents div.loginbox3_1 p {width:auto; height:60px; border-bottom:1px solid #e1e1e1; margin:15px 32px 0 32px; font-family:gulim; font-size:12px; color:#888; letter-spacing:-1px; text-align:center;line-height:17px;}
@@ -205,13 +205,13 @@
 *:first-child+html #popupContents div.loginsbox3_1 ul li span {margin-left:5px; margin-right:84px; font-family:gulim; font-size:12px; color:#888; font-weight:bold;}
 #popupContents div.loginsbox3_1 ul li em {margin-left:5px; margin-right:75px; _margin-right:71px; font-family:gulim; font-size:12px; color:#888; font-weight:bold;}
 *:first-child+html #popupContents div.loginsbox3_1 ul li em {margin-left:5px; margin-right:71px; font-family:gulim; font-size:12px; color:#888; font-weight:bold;}
-#popupContents div.loginsbox3_1 ul li input {width:149px; height:16px; text-align:left;}  
-#popupContents div.loginsbox3_1 ul li input.nb {width:66px; height:16px;} 
+#popupContents div.loginsbox3_1 ul li input {width:149px; height:16px; text-align:left;}
+#popupContents div.loginsbox3_1 ul li input.nb {width:66px; height:16px;}
 #popupContents div.loginsbox3_1 ul li select {width:110px; margin-right:8px; _margin-right:5px; font-family:gulim; font-size:12px; color:#888; font-weight:normal;}
 *:first-child+html #popupContents div.loginsbox3_1 ul li select {width:110px; margin-right:5px; font-family:gulim; font-size:12px; color:#888; font-weight:normal;}
-#popupContents div.loginsbox3_1 ul li input.tel {width:48px; height:16px;} 
+#popupContents div.loginsbox3_1 ul li input.tel {width:48px; height:16px;}
 #popupContents div.loginsbox3_1 ul li select.tel {width:60px; font-family:gulim; font-size:12px; color:#888; font-weight:normal; margin-right:0px;}
-#popupContents div.loginsbox3_1 span.btn {position:absolute; top:58px; right:46px;}  
+#popupContents div.loginsbox3_1 span.btn {position:absolute; top:58px; right:46px;}
 
 #popupContents div.loginbox3_2 {width:100%; height:153px; margin-top:-5px; padding-bottom:10px;}
 #popupContents div.loginbox3_2 p {width:auto; height:23px; border-bottom:1px solid #e1e1e1; margin:20px 32px 0 32px; padding-left:4px; font-family:gulim; font-size:12px; color:#545963; letter-spacing:-1px;}
@@ -223,13 +223,13 @@
 *:first-child+html #popupContents div.loginsbox3_2 ul li span {margin-left:5px; margin-right:84px; font-family:gulim; font-size:12px; color:#888; font-weight:bold;}
 #popupContents div.loginsbox3_2 ul li em {margin-left:5px; margin-right:75px; _margin-right:71px; font-family:gulim; font-size:12px; color:#888; font-weight:bold;}
 *:first-child+html #popupContents div.loginsbox3_2 ul li em {margin-left:5px; margin-right:71px; font-family:gulim; font-size:12px; color:#888; font-weight:bold;}
-#popupContents div.loginsbox3_2 ul li input {width:149px; height:16px; text-align:left;}  
-#popupContents div.loginsbox3_2 ul li input.nb {width:66px; height:16px;} 
+#popupContents div.loginsbox3_2 ul li input {width:149px; height:16px; text-align:left;}
+#popupContents div.loginsbox3_2 ul li input.nb {width:66px; height:16px;}
 #popupContents div.loginsbox3_2 ul li select {width:110px; margin-right:8px; _margin-right:5px; font-family:gulim; font-size:12px; color:#888; font-weight:normal;}
 *:first-child+html #popupContents div.loginsbox3_2 ul li select {width:110px; margin-right:5px; font-family:gulim; font-size:12px; color:#888; font-weight:normal;}
-#popupContents div.loginsbox3_2 ul li input.tel {width:48px; height:16px;} 
+#popupContents div.loginsbox3_2 ul li input.tel {width:48px; height:16px;}
 #popupContents div.loginsbox3_2 ul li select.tel {width:60px; font-family:gulim; font-size:12px; color:#888; font-weight:normal; margin-right:0px;}
-#popupContents div.loginsbox3_2 span.btn {position:absolute; top:58px; right:34px;}  
+#popupContents div.loginsbox3_2 span.btn {position:absolute; top:58px; right:34px;}
 
 #popupContents div.loginbox3_3 {width:100%; height:312px; margin-top:-5px; }
 #popupContents div.loginsbox3_3 p {width:auto; height:60px; border-bottom:1px solid #e1e1e1; margin:15px 32px 0 32px; font-family:gulim; font-size:12px; color:#888; letter-spacing:-1px; text-align:center;line-height:17px;}
@@ -238,7 +238,7 @@
 
 #popupContents div.loginbox3_4 {width:100%; height:114px; margin-top:0; padding-bottom:10px;}
 #popupContents div.loginsbox3_4 p {width:auto; height:30px; margin:20px 32px 0 32px; font-family:gulim; font-size:12px; color:#888; letter-spacing:0; text-align:center; line-height:18px;}
-#popupContents div.loginsbox3_4 p span {color:#f66905; font-weight:bold;} 
+#popupContents div.loginsbox3_4 p span {color:#f66905; font-weight:bold;}
 #popupContents div.loginsbox3_4 p.btn {width:auto; border-bottom:0px solid #e1e1e1; margin:0 auto; margin-top:15px;}
 #popupContents div.loginsbox3_4 {width:437px; height:112px; position:relative; border:1px solid #d3d3d3; background:#fafafa;}
 
@@ -248,18 +248,18 @@
 #popupContents div.loginsbox4 ul {position:absolute; top:15px; left:15px;}
 #popupContents div.loginsbox4 ul li {width:420px; height:20px; background:url(//image.reebok.co.kr/images/reebok/popup/blt_dot_s.gif) 0 5px no-repeat; padding-left:9px;}
 #popupContents div.loginsbox4 ul li span {margin-right:16px; font-family:dotum; font-size:11px; color:#888; letter-spacing:-1px;}
-#popupContents div.loginsbox4 ul li.txt {margin-right:8px; font-family:gulim; font-size:12px; color:#497cde; background:none;} 
+#popupContents div.loginsbox4 ul li.txt {margin-right:8px; font-family:gulim; font-size:12px; color:#497cde; background:none;}
 #popupContents div.loginsbox4 span.btn {position:absolute; bottom:9px; right:11px;}
 #popupContents div.loginbox4_2 {width:100%; height:78px; margin-top:10px; padding-bottom:20px;}
 #popupContents div.loginsbox4_2 {width:437px; height:76px; position:relative; border:1px solid #d3d3d3; background:#fafafa;}
 #popupContents div.loginsbox4_2 ul {position:absolute; top:15px; left:15px;}
 #popupContents div.loginsbox4_2 ul li {width:420px; height:20px; background:url(//image.reebok.co.kr/images/reebok/popup/blt_dot_s.gif) 0 5px no-repeat; padding-left:9px;}
-#popupContents div.loginsbox4_2 ul li span {margin-right:16px; font-family:dotum; font-size:11px; color:#888; letter-spacing:-1px;} 
+#popupContents div.loginsbox4_2 ul li span {margin-right:16px; font-family:dotum; font-size:11px; color:#888; letter-spacing:-1px;}
 #popupContents div.loginsbox4_2 span.btn {position:absolute; bottom:9px; right:11px;}
 
 
 #popupContents div.btnsbox {width:100%; overflow:hidden; margin-bottom:17px; position:relative;}
- 
+
 #popupContents div.line0 {width:100%; height:8px; _height:5px; clear:both;_overflow:hidden;}
 #popupContents div.line1 {width:100%; height:5px; clear:both; border-bottom:1px dashed #e0e0e0; margin-bottom:17px;_overflow:hidden;}
 #popupContents div.line2 {width:100%; height:12px; clear:both; border-bottom:1px dashed #e0e0e0; margin-bottom:11px;_overflow:hidden;}
@@ -374,7 +374,7 @@
 #popupContents div.calendar table tr td.sun a:hover {background-color:#e21d1d;color:#fff;font-weight:bold;}
 #popupContents div.calendar table tr td.sat a:hover {background-color:#7c9fdc;color:#fff;font-weight:bold;}
 
- 
+
 div.calendar2 {border:1px solid #7992be;width:180px; height:186px;}
 div.calendar2 div.border {border:3px solid #b3c2df;padding:0;text-align:center; height:180px;}
 div.calendar2 div.combo {height:28px; margin:6px 0 0 0;text-align:left; padding-left:13px;}
@@ -382,7 +382,7 @@ div.calendar2 div.combo select.select01 {width:75px; margin-right:4px;}
 div.calendar2 div.combo select.select02 {width:66px;}
 div.calendar2 div.view {border:0px solid #e0ddd0;width:174px;height:125px;margin:0 auto;}
 div.calendar2 table {margin:0;}
-div.calendar2 table tr th {width:25px;height:22px;color:#666;text-align:center;background:#e5e5e5; border-top:1px solid #cccccc; border-bottom:1px solid #cccccc; font-weight: normal; margin-bottom:2px;} 
+div.calendar2 table tr th {width:25px;height:22px;color:#666;text-align:center;background:#e5e5e5; border-top:1px solid #cccccc; border-bottom:1px solid #cccccc; font-weight: normal; margin-bottom:2px;}
 div.calendar2 table tr td {width:25px;height:20px;color:#888;font-size:11px;font-family:'dotum','돋움';text-align:center; border-top:0px solid #cccccc; border-right:0px solid #cccccc;}
 div.calendar2 table tr th.sun, div.calendar2 table tr td.sun a {color:#e21d1d;}
 div.calendar2 table tr th.sat, div.calendar2 table tr td.sat a {color:#7c9fdc;}
@@ -399,7 +399,7 @@ div.calendar2 table tr td.sat a:hover {background-color:#ececec;color:#7c9fdc;fo
 #popupContents div.sorting ul {float:left;display:inline;margin:0;}
 #popupContents div.sorting ul li {float:left;display:inline;width:42px;height:20px;overflow:hidden;margin-right:5px;}
 #popupContents div.sorting div.date {float:right;display:inline;margin:1px 0 0;_margin:0;}
-*:first-child+html #popupContents div.sorting div.date {margin:1px 10px 0 0;} 
+*:first-child+html #popupContents div.sorting div.date {margin:1px 10px 0 0;}
 #popupContents div.sorting div.date input {width:70px;height:16px;font-size:11px;font-family:'dotum','돋움';padding:2px 0 0 8px;}
 #popupContents div.sorting div.date img {vertical-align:middle;cursor: pointer;margin-left: 6px;}
 #popupContents div.sorting div.date img.btn {margin-left:5px;}
@@ -423,7 +423,7 @@ div.calendar2 table tr td.sat a:hover {background-color:#ececec;color:#7c9fdc;fo
 
 
 
-#popupHeader2 {background:url(//image.reebok.co.kr/images/reebok/popup/bg_top.gif) repeat-x;height:52px;position:relative;} 
+#popupHeader2 {background:url(//image.reebok.co.kr/images/reebok/popup/bg_top.gif) repeat-x;height:52px;position:relative;}
 #popupHeader2 h1 {height:35px;color:#f7f7f7;font-size:12px;padding:17px 20px 0;}
 #popupHeader2 h1 span {color:#d0cfcf;}
 #popupHeader2 a {position:absolute;top:18px;right:21px;}
@@ -461,15 +461,15 @@ table.shippinglist {width:560px;}
 table.shippinglist tfoot tr td {padding:55px 0; border-bottom:1px solid #c0c7ce;}
 table.shippinglist tr th {background-image:url(//image.reebok.co.kr/images/reebok/popup/etc_line.gif);background-position:right 9px;background-repeat:no-repeat;border-bottom:1px solid #c0c7ce;color:#fff;padding:9px 0 8px;letter-spacing:-1px;text-align:center;}
 table.shippinglist tr th.last {background-image:none;}
-table.shippinglist tr td {border-bottom:0px solid #e9e9e9;padding:0;text-align:center;} 
+table.shippinglist tr td {border-bottom:0px solid #e9e9e9;padding:0;text-align:center;}
 table.shippinglist tr td div.scrollbox {width:auto; height:150px; overflow-x:hidden; overflow-y:auto; scrollbar-face-color:#fff; scrollbar-shadow-color:#fff; scrollbar-highlight-color:#fff; scrollbar-3dlight-color:#c5c4c4; scrollbar-darkshadow-color:#C0C0C0; scrollbar-track-color:#e4e5e5; scrollbar-arrow-color:#808080;}
 table.shipping {width:560px;_width:540px;border-bottom:1px solid #c0c7ce;}
 *:first-child+html table.shipping {width:540px;border-bottom:1px solid #c0c7ce;}
 table.shipping tr th {background-color:#ededed;background-image:url(//image.reebok.co.kr/images/reebok/common/bg_th_line02.gif);background-position:right 8px;background-repeat:no-repeat;border-bottom:1px solid #c0c7ce;color:#777777;padding:8px 0 7px;letter-spacing:-1px;text-align:center;}
 table.shipping tr th.last {background-image:none;}
-table.shipping tr td {border-bottom:1px solid #e9e9e9;padding:8px 0 7px;text-align:center;} 
+table.shipping tr td {border-bottom:1px solid #e9e9e9;padding:8px 0 7px;text-align:center;}
 table.shipping tr td.address {font-size:12px;padding:8px 0 7px 15px;text-align:left;}
-table.shipping tr td.zipcode {font-size:12px;padding:8px 0 7px 0;text-align:center; } 
+table.shipping tr td.zipcode {font-size:12px;padding:8px 0 7px 0;text-align:center; }
 
 #popupContents div.popupSecurityTrade table.list td {padding-left:10px;font-size:11px; text-align:left;letter-spacing:-1px; border-color:#e7e7e7;}
 #popupContents div.popupSecurityTrade table.list th {padding-left:11px; font-size:11px; text-align:left; background:#f5f7f9; border-color:#e7e7e7;}
@@ -556,8 +556,8 @@ div.electronic_commerce strong {font-weight:normal; color:#ed4908;}
 	height: 18px;
 	position: absolute;
 	top: 12px;
-    left: 15px;
-	background-position:-385px -970px;
+  left: 15px;
+	background-position:-40px -760px;
 }
 
 .findzip_pop .search_zip  .btn-ctm{
