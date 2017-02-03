@@ -496,6 +496,10 @@ html.no_srl{
 	overflow: hidden;
 }
 
+.button_area.button_area_update>.l_gray>a{
+	background: #ebebeb;
+}
+
 .button_area.tac{
 	text-align: center;
 }
@@ -534,6 +538,11 @@ html.no_srl{
 .button_area>*:last-child{
 	padding-right:15px;
 }
+
+.button_area .l_gray .plus:after{
+	padding-left: 10px;
+}
+
 .button_area.no_pdg>*{
 	padding: 0;
 }
@@ -557,6 +566,11 @@ html.no_srl{
 .button_area>*.l_gray>a{
 	color: #000;
 	background: #dedede;
+}
+
+.review_write.review_write_update .button_area>.l_gray>a{
+	color: #000;
+	background: #ebebeb;
 }
 
 /* small button */
@@ -10154,22 +10168,42 @@ padding:30px 15px;
 
 #container .review_write.review_write_update .eval .check_point{
 	left:0;
-	/*margin-top: 1rem;*/
 	max-width: 100%;
 }
 
 #container .review_write.review_write_update .eval .check_point .cbox:first-child .label{
-	/*text-align: right;*/
 	margin-left: 15px;
 }
 
 #container .review_write.review_write_update .eval .check_point .cbox:last-child .label{
-	/*text-align: left;*/
 	margin-right: 15px;
 }
 
 #container .review_write.review_write_update .review_form{
 	margin-bottom: 15px;
+}
+
+#container .review_write.review_write_update .review_form.review_form_update{
+	padding:15px 30px 0 30px;
+	border-top:2px solid #000;
+}
+
+#container .review_write.review_write_update .review_form.review_form_update td{
+	padding:0;
+}
+
+#container .review_write.review_write_update .review_form.review_form_update td:first-child{
+	font-size: 13px;
+	padding:0;
+}
+
+#container .review_write.review_write_update .review_form.review_form_update td a.remove_review{
+	font:15px/15px 'NotoSansKR';
+	color:#aaa;
+}
+
+#container .review_write.review_write_update .review_form.review_form_update td a.remove_review:after{
+	padding-left: 5px;
 }
 
 #container .review_write.review_write_update .review_form>h3{
@@ -10190,6 +10224,7 @@ padding:30px 15px;
 	height: 45px;
 	font-size: 1.4rem;
 	line-height: 1.5;
+	font-family :'NotoSansKRLight';
 }
 /*170202 update review wirte*/
 #container .review_write.review_write_update .step_spec{}
@@ -10204,14 +10239,73 @@ padding:30px 15px;
 #container .review_write.review_write_update .step_spec .box.col2 .eval{
 	margin-top: 0px;
 	margin-bottom: 0;
+	padding:0;
 	width: 100%;
 }
 
 #container .review_write.review_write_update .step_spec .box.col2 .eval .check_point .cbox.mf{
-	width: 30%;
+	width: 23%;
 	float:left;
 	padding: 10px 0;
 }
+
+#container .review_write.review_write_update .step_spec .box.col2 .eval .check_point .cbox.mf .chk{
+	height: 30px;
+	margin-right: 2px;
+}
+
+#container .review_write.review_write_update .step_spec .box.col2 .eval .check_point .cbox.mf.female{
+	width: 30%;
+}
+
+#container .review_write.review_write_update .step_spec .box.col2 .check input.save_store{
+
+}
+
+#container .review_write.review_write_update .step_spec .box.col2 p.save{
+	display: inline-block;
+	font-size: 14px;
+	line-height: 30px;
+	padding-left: 12px;
+}
+
+#container .review_write.review_write_update .step_spec .box.col2 .check label{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 30px;
+	height: 30px;
+	background: #c5c7c9;
+}
+
+#container .review_write.review_write_update .step_spec .box.col2 .check label:after{
+	content: '';
+	display: inline-block;
+	background: #fff;
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-top: -3px;
+	margin-left:-7px;
+	width: 17px;
+	height: 3px;
+	transform: rotate(-45deg);
+}
+
+#container .review_write.review_write_update .step_spec .box.col2 .check label:before{
+	content: '';
+	display: inline-block;
+	background: #fff;
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-left:-10px;
+	margin-top: -1px;
+	width: 7px;
+	height: 3px;
+	transform: rotate(45deg);
+}
+
 #container .review_write.review_write_update .step_spec .box.col2 .eval .check_point:after{
 	content: '';
 	display: block;
@@ -10223,7 +10317,7 @@ padding:30px 15px;
 }
 #container .review_write.review_write_update .step_spec .box.col2 .eval .check_point .cbox.mf .label{
 	display: inline-block;
-	color:#000;
+	color:#555;
 	font-size: 13px;
 }
 
@@ -10252,6 +10346,7 @@ padding:30px 15px;
 
 #container .review_write.review_write_update .step_spec .box{
 	padding:0 12px;
+	/*padding:0 30px;*/
 }
 
 #container .review_write .step_spec .box:last-child{
@@ -10284,6 +10379,16 @@ padding:30px 15px;
 	right: 13px;
 }
 
+#container .review_write.review_write_update .step_spec .box.col2 .check{
+	position: relative;
+	height: 30px;
+	margin:15px 0 0 0;
+}
+
+#container .review_write.review_write_update .step_spec .box.col2 .check input:checked + label{
+	background:#017dc3;
+}
+
 #container .review_write .step_spec .box.col2>div:last-child{
 	padding: 0 0 0 4px;
 }
@@ -10293,9 +10398,17 @@ padding:30px 15px;
 }
 
 #container .review_write .noti_staffreview{
-
 	padding:25px 15px;
 }
+
+#container .review_write.review_write_update .noti_staffreview{
+	padding:0px 30px 30px 30px;
+}
+
+#container .review_write.review_write_update .noti_staffreview ul{
+	padding-top: 5px;
+}
+
 
 #container .review_write .noti_staffreview dt{
 	font-size: 14px;
@@ -10593,6 +10706,11 @@ padding:30px 15px;
 }
 
 #container .review_write .review_form tr:last-child td{
+	padding-bottom: 15px;
+	/*padding:15px 30px;*/
+}
+
+#container .review_write.review_write_update .review_form tr:last-child td{
 	/*padding-bottom: 15px;*/
 	padding:15px 30px;
 }
@@ -14628,9 +14746,13 @@ padding:30px 15px;
 /*common*/
 .mt10{ margin-top: 10px !important }
 .mt15{ margin-top: 15px !important }
+.mt25{ margin-top: 25px !important }
+.mb15{ margin-bottom: 15px !important }
 
+.pt5{ padding-top: 5px !important }
 .pt10{ padding-top: 10px !important }
 .pt15{ padding-top: 15px !important }
+.pt25{ padding-top: 15px !important }
 
 @media screen and (max-width: 320px) {
 	#container.main .main_visual .box{
