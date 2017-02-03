@@ -216,7 +216,18 @@ $width600:600px;
 }
 #sports17{
 	.visual{
+		position: relative;
 		img{ width: 100%; }
+		.play{
+			position: absolute;
+			top:50%;
+			margin-top: -45px;
+			left:50%;
+			margin-left: -45px;
+			a{
+
+			}
+		}
 	}
 	.bg{
 		width:100%;
@@ -261,7 +272,7 @@ $width600:600px;
 							color:#000;
 						}
 						span{
-							font: 26px/28px 'NotoSansKRMedium';
+							font: 26px/28px 'NotoSansKRRegular';
 							color:#000;
 						}
 					}
@@ -320,7 +331,7 @@ $width600:600px;
 					top:0;
 					width:317px;
 					display: inline-block; text-align: center;
-					font: 28px/30px 'NotoSansKRMedium';
+					font: 28px/30px 'NotoSansKRRegular';
 					color:#000;
 					vertical-align: middle;
 					transition: all 0.3s ease-out;
@@ -372,9 +383,11 @@ $width600:600px;
 				.play{
 					position: absolute;
 					top:50%;
+					left:50%;
 					text-align: center;
-					width: 100%;
+					// width: 100%;
 					margin-top: -49px;
+					margin-left: -49px;
 				}
 			}
 		}

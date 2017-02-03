@@ -115,7 +115,15 @@ $width600:600px;
 
 #sports17{
 	.main{
+		position: relative;
 		img{ width: 100%; }
+		.play{
+			position: absolute;
+			top:50%;
+			margin-top: -50px;
+			left:50%;
+			margin-left: -52px;
+		}
 	}
 	.bg{
 		background-image: url('/images/adidas/event/sports17/bg.jpg');
