@@ -20,7 +20,49 @@ $break-large: 1400px;
 	filter : alpha(opacity=$val * 100);
 	-ms-filter : alpha(opacity=$val * 100);
 }
+@mixin animation ($delay, $duration, $animation) {
+    -webkit-animation-delay: $delay;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-name: $animation;
+    -webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+    -webkit-animation-iteration-count:infinite;
 
+    -moz-animation-delay: $delay;
+    -moz-animation-duration: $duration;
+    -moz-animation-name: $animation;
+    -moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+    -moz-animation-iteration-count:infinite;
+
+    -o-animation-delay: $delay;
+    -o-animation-duration: $duration;
+    -o-animation-name: $animation;
+    -o-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+    -o-animation-iteration-count:infinite;
+
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-name: $animation;
+    animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+    animation-iteration-count:infinite;
+}
+
+@mixin keyframe ($animation_name) {
+    @-webkit-keyframes #{$animation_name} {
+        @content;
+    }
+
+    @-moz-keyframes #{$animation_name} {
+        @content;
+    }
+
+    @-o-keyframes #{$animation_name} {
+        @content;
+    }
+
+    @keyframes #{$animation_name} {
+        @content;
+    }
+}
 iframe[name="google_conversion_frame"]{
 	height: 0;
 }
@@ -913,6 +955,7 @@ html.no_scroll{
 				
 			}
 		}
+
 
 		.banner_area{
 			position: relative;
@@ -2114,6 +2157,554 @@ html.no_scroll{
 
 	/* Heritage Campaign end */
 
+	&.campaign_clubc{
+		.visual_video{
+			background: #fff;
+			.bg{
+				@include opacity(0);
+				@include prefix-css3(transition,opacity 1.3s);
+
+				&.active{
+					@include opacity(1);
+				}
+			}
+
+			.video_bg{
+				width: 100%;
+				.ie &{
+					video{
+						width:100%;
+						min-width: 1900px;
+						height: 650px;
+					}
+				}
+			}
+
+			.masthead{
+				 .ie7 & , .ie8 &{
+				    opacity:1 !important;
+				    filter:alpha(opacity=100) !important;
+				    -ms-filter:alpha(opacity=100) !important;
+				  }
+				@include opacity(0);
+				@include prefix-css3(transition,opacity 0.6s ease 1.5s);
+					
+				&.active{
+					@include opacity(1);
+					h2{
+						width: 375px;
+						height: 234px;
+						background: url("/images/reebok/event/about/clubc/logo.png") no-repeat !important;
+						margin:99px auto 0px;
+						text-indent:-5555px;
+					}
+					.desc_eng{
+						color:#fff;
+					}
+				}
+				h2{
+				width:inherit;
+				height: inherit;
+				text-indent: 0;
+				background:none;
+				font:85px/90px 'QStencil';
+					}
+				.desc_eng{
+					font:24px/24px 'DINWebPro-CondMedium';
+					}
+				.desc_eng2{
+					font:22px/28px 'NotoSansKRRegular','Nanum Gothic';
+					}
+				}
+				
+		}
+
+
+		.about_passion{
+			.box1{
+				position: relative;
+				// padding:80px 0 118px 0;
+				// height: 1058px;
+				background:url('/images/reebok/event/about/clubc/bg2.jpg') 0 0 no-repeat;
+				background-size: 100% 100%;
+				height: 1058px;
+				// background-size: cover;
+				.btn{
+			    	padding:0;
+		    		a.inner-buybtn{
+			    		position: relative;
+			    		display:inline-block;
+			    		margin:0;
+			    		padding:0 71px;
+			    		color:#fff;
+			    		border:1px solid #fff;
+			    		font:22px/56px  'NotoSansKRRegular','Nanum Gothic';
+			    		overflow: hidden;
+			    			em{
+			    				position: relative;
+			    				z-index: 100;
+			    				transition:all 0.6s ease-out;
+			    			}
+				    		.bg{
+				    			display: inline-block;
+				    			margin:0 auto;
+				    			width: 100%;
+				    			height: 63px;
+								position: absolute;
+								top:inherit;
+								// bottom: -63px;
+								right:inherit;
+								left:0;
+								background: #000;
+								@include opacity(0.3);
+
+								transition:all 0.4s ease-out;
+				    		}
+			    		}
+			    	
+			    	a.inner-buybtn:hover{
+			    		color:#fff;
+			    		.bg{
+							@include opacity(0.6);
+			    		}
+			    	}
+		    	}
+				.inner{
+					position: relative;
+					width:890px;
+					height: 100%;
+					z-index: 40;
+					.info{
+						float:left;
+						width: 50%;
+						text-align: left;
+						h3{
+							position: relative;
+							width:664px;
+							padding-top: 113px;
+							text-align: left;
+							font:80px/118px 'QStencil';
+							color:#000;
+						}
+						h3+p{
+							padding:21px 0 30px 0;
+							text-align: left;
+							font:16px/30px  'NotoSansKR','Nanum Gothic';
+							color:#b2b2b2;
+							letter-spacing: -1px;
+						}
+					}
+					.shoe_img{
+						float:right;
+						width: 50%;
+						padding-top: 60px;
+						text-align: right;
+					}
+					.packs{
+						position: relative;
+						margin-bottom: 60px;
+						ul{
+							position: relative;
+							width: 100%;
+							height: 433px;
+							overflow: hidden;
+							li{
+								float: left;
+								width: 31.2%;
+								margin-right: 2%;
+								.shoe_box{
+									padding:20px;
+									height: 412px;
+									background: #fff;
+									.tit{
+										font: 900 13px/13px 'reefont-bold';
+										.black{
+												width: 13px;
+												height: 13px;
+												display: inline-block;
+												background: #0f0f0f;
+												border-radius: 50px;
+												vertical-align: middle;
+											}
+										
+										.red{
+												width: 13px;
+												height: 13px;
+												display: inline-block;
+												background: #c6303e;
+												border-radius: 50px;
+												vertical-align: middle;
+											}
+										.blue{
+												width: 13px;
+												height: 13px;
+												display: inline-block;
+												background: #0062c2;
+												border-radius: 50px;
+												vertical-align: middle;
+											}
+									}
+									.img{
+										position: relative;
+										top:0;
+										text-align:center;
+										padding-top: 122px;
+										padding-bottom: 58px;
+										@include opacity (0.85);
+										@include prefix-css3(transition,all 0.4s);
+
+									}
+									.detail{
+										
+										p{
+											display: block;
+											text-align: center;
+											font:18px/20px 'DINWebPro-CondBold';
+											text-transform: uppercase;
+										}
+										.title{
+											display: block;
+											padding-top: 5px;
+											text-align: center;
+											font:18px/20px '';
+											text-transform: uppercase;
+											font:900 22px/25px 'reefont-bold';
+											color:#000;
+
+										}
+										.buy{
+											display: block;
+											padding-top: 12px;
+											text-align: center;
+											font: 16px/16px 'NotoSansKR';
+											color:#866432;
+											em{
+												display: inline-block;
+												height: 19px;
+												padding-left: 10px;
+												vertical-align: middle;
+
+											}
+										}
+										.buy:hover{
+											em{
+												// transform:rotate(-180deg);
+											}
+										}
+									}
+								}
+							}
+							li:last-child{
+								margin-right: 0;
+							}
+							li:hover{
+								.shoe_box{
+									.img{
+										@include opacity (1);
+										top:-10px;
+									}
+								}
+							}
+						}
+					}
+					.bg1{
+						position: absolute;
+						top:241px;
+						right:-507px;
+						// .box_darker{
+						// 	position: relative;
+						// 	z-index: 10;
+						// 	background: #000;
+						// 	width: 852px;
+						// 	height: 172px;
+						// 	@include opacity (0.78);
+						// }
+						// .box_lighter{
+						// 	position: relative;
+						// 	z-index: 11;
+						// 	top:-33px;
+						// 	background: #5b2000;
+						// 	width: 852px;
+						// 	height: 116px;
+						// 	@include opacity (0.78);
+						// 	mix-blend-mode: saturation;
+						// }
+						// .txt1{
+						// 	position: relative;
+						// 	top:-194px;
+						// 	left:50%;
+						// 	z-index: 11;
+						// 	color:#fff;
+						// 	font:100px/100px 'DINWebPro-CondLight';
+						// 	mix-blend-mode: overlay;
+						// }
+						// .txt2{
+						// 	position: relative;
+						// 	top:-293px;
+						// 	left:50%;
+						// 	z-index: 11;
+						// 	color:#fff;
+						// 	font:100px/100px 'DINWebPro-CondLight';
+						// 	mix-blend-mode: overlay;
+						// }
+						// .txt3{
+						// 	position: relative;
+						// 	top:-393px;
+						// 	left:50%;
+						// 	z-index: 11;
+						// 	color:#fff;
+						// 	font:100px/100px 'DINWebPro-CondLight';
+						// 	mix-blend-mode: overlay;
+						// }
+					}
+					
+
+				}
+				.bg2{
+					position: absolute;
+					width: 432px;
+					bottom:0;
+					left:0;
+					right: inherit;
+					z-index: 0;
+					}
+				.bg2_1{
+					position: absolute;
+					top:0;
+					@include opacity (0.1);
+					// mix-blend-mode:overlay;
+					}
+				.bg2_2{
+					position: absolute;
+					bottom:0;
+					right:0;
+					@include opacity (0.1);
+					
+					// mix-blend-mode:overlay;
+				}
+			}
+		}
+
+		.club_gallery{
+			position: relative;
+			padding:170px 0 0px 0;
+			height:100%;
+			background:url('/images/reebok/event/about/heritage/bg_wall.png') 0 0 repeat-y;
+			border-bottom: 0px;	
+			background-size: 100% 100%;
+			h4{
+				position: absolute;
+				top:70px;
+				left:50%;
+				margin-left: -158px;
+				// width: 100%;
+				color:#fff;
+				text-align: center;
+				font:55px/55px 'DINWebPro-Cond';
+				text-transform: uppercase;
+			}
+			.club_slider{
+				width: 890px;
+				height: 640px;
+				margin:0 auto;
+				overflow: hidden;
+				ul{
+					height: 646px;
+					overflow: hidden;
+					// width: 1800px;
+					margin:0 auto;
+					display: block;
+					li.slide{
+						position: relative;
+						// width: 100%;
+						// position: relative;
+						float:left;
+						
+						// margin-right: 20px;	
+						.item_ul{
+							width: 900px;
+							li{
+								float:left;
+								width: 450px;
+								// margin-right: 20px;	
+							}
+							li:last-child{
+								margin-right: 0;
+							}
+						}		
+					}
+
+
+				}
+			}
+			.slider_sub_img{
+				position: absolute;
+				top:0;
+				left:50%;
+				margin-left: -445px;
+				width: 890px;
+				height: 100%;
+				ul{
+					li{
+						// opacity: 0;
+						display: none;
+
+						// visibility:hidden;
+						// @include prefix-css3(transition ,all 0.1s ease-in 0.5s);
+						.sub_left{
+							overflow: hidden;
+							position: absolute;
+							left:-450px;
+							top:170px;
+							img{
+								@include prefix-css3(transition, all ease 4s);
+							}
+							.sub_bg{
+								content: '';
+								display: inline-block;
+								background: #000;
+								@include opacity (0.7);
+								position: absolute;
+								top:0;
+								left:0;
+								width: 100%;
+								height: 100%;
+								@include prefix-css3(transition, all ease 0.5s);
+							}
+						}
+						
+
+						.sub_right{
+							overflow: hidden;
+							position: absolute;
+							right:-450px;
+							top:170px;
+							img{
+								@include prefix-css3(transition, all ease 4s);
+							}
+							.sub_bg{
+								content: '';
+								display: inline-block;
+								background: #000;
+								@include opacity (0.7);
+								position: absolute;
+								top:0;
+								left:0;
+								width: 100%;
+								height: 100%;
+								@include prefix-css3(transition, all ease 0.5s);
+							}
+						}
+					}
+					li.on{
+						opacity: 1;
+						visibility:visible;
+
+
+						// display: block;
+					}
+					li:hover{
+						
+					}
+				}
+			}
+			.banner{
+				padding:50px 0;
+				width: 100%;
+				text-align: center;
+				img{
+
+				}
+			}
+
+
+		}
+		.products_collection{
+			width: 100%;
+			position: relative;
+			h4{
+				position: relative;
+				padding:90px 0 45px;
+				z-index: 1;
+				font:55px/55px 'DINWebPro-Cond';
+				text-align: center;
+				color:#fff;
+			}
+			.prodlist_wrap{
+				position: relative;
+				padding:18px 0 100px 0;
+				height:63px;
+				background:url('/images/reebok/event/about/heritage/bg_wall.png') 50% 100% no-repeat;
+				border-bottom: 0px;			
+				.slider-btn{
+					width: 100%;
+					position: absolute;
+					top:30px;
+					left:0;
+					text-align: center;
+					a{
+						margin:0 4px;
+					}
+				}
+				.button-anim{
+					margin:0 auto;
+				}
+			}
+			.bg{
+				position: absolute;
+				top:0;
+				left: 50%;
+				margin-left: -980px;
+			}
+			.wide-slider-wrapper{
+				position: relative;
+				width: 100%;
+				height: 550px;
+				z-index: 1;
+				overflow: hidden;
+				background:#000;
+				.arrow-prev{
+					width: 22px;
+					height: 42px;
+					position: absolute;
+					top:50%;
+					left:50%;
+					margin-left:-420px;
+					background-position: -125px -80px;
+					z-index: 2;
+				}
+				.arrow-next{
+					width: 22px;
+					height: 42px;
+					position: absolute;
+					top:50%;
+					left:50%;
+					margin-left: 420px;
+					background-position: -125px -125px;
+					z-index: 2;
+				}
+				ul{
+					position: absolute;
+					top:0;
+					left:0;
+					width:100%;
+					height: 550px;
+					li{
+						margin-right: 15px;
+						float:left;
+						opacity: .4;
+						@include prefix-css3(transition ,opacity 0.3s ease-in 0.5s);
+					}
+					li.active{
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+
+	/* clubc Campaign end */
+
 	&.campaign_nano7{
 		.visual_video{
 			background: #000;
@@ -2161,6 +2752,24 @@ html.no_scroll{
 				&.ended{
 					@include opacity(0);
 					@include prefix-css3(transition ,opacity 1.6s ease-in);
+				}
+			}
+			.masthead{
+				@include opacity(0);
+				@include prefix-css3(transition,opacity 0.6s ease 1.5s);
+					
+				&.active{
+					@include opacity(1);
+					h2{
+						// width: 375px;
+						// height: 271px;
+						// background: url("/images/reebok/event/about/nada/text-video.png") no-repeat;
+						margin:0 auto 25px;
+						// text-indent:-5555px;
+					}
+					.desc_eng{
+						color:#fff;
+					}
 				}
 			}
 		}
@@ -2481,4 +3090,941 @@ html.no_scroll{
 			}
 		}
 	}
+
+	/* nano7 Campaign end */
+
+	
+	&.campaign_2l{
+		.visual_video{
+			background: #fff;
+			.bg{
+				@include opacity(0);
+				@include prefix-css3(transition,opacity 1.3s);
+
+				&.active{
+					@include opacity(1);
+				}
+			}
+
+			.video_bg{
+				width: 100%;
+				.ie &{
+					video{
+						width:100%;
+						min-width: 1900px;
+						height: 650px;
+					}
+				}
+			}
+
+			.masthead{
+
+				@include opacity(0);
+				@include prefix-css3(transition,opacity 0.6s ease 1.5s);
+					
+				&.active{
+					@include opacity(1);
+					h2{
+						width: 375px;
+						height: 271px;
+						background: url("/images/reebok/event/about/nada/text-video.png") no-repeat !important;
+						margin:0 auto 25px;
+						text-indent:-5555px;
+					}
+					.desc_eng{
+						color:#fff;
+					}
+				}
+			}
+		}
+		.about_passion{
+			.box{
+				width: 100%;
+				position: relative;
+				padding: 120px 0 75px 0;
+				background: #202020;
+				background: url("/images/reebok/event/about/2l/bg.jpg") no-repeat;
+				background-size: 100% 100%;
+				height: auto;
+
+
+				h3{
+					padding-bottom: 30px;
+					color: #FFF;
+					font:90px/80px 'QStencil';
+					span{
+
+					}
+				}
+	
+				.desc{
+					top: 190px;
+					color: #bababa;
+					text-align: left;
+					font:19px/27px 'NotoSansKRRegular','Nanum Gothic';
+				}
+				
+				.inner-buybtn{
+					display: inline-block;
+					margin:30px 0 0 0;
+					padding:0 75px;
+					vertical-align: middle;
+					font:22px/60px 'NotoSansKRRegular','Nanum Gothic';
+					border:1px solid #fff;
+					color:#fff;
+				}
+
+
+				.slider_wrap{
+					position: relative;
+					margin-left: -20px;
+					margin-top: 60px;
+					height: 700px;
+					.slider_innder{
+						width: 870px;
+						.img{
+							float: left;
+							position: absolute;
+							top:0;
+							left:-33px;
+							z-index: 20;
+							width: 502px;
+						}
+						ul.slider{
+							position: relative;
+							width: 300px;
+							height: 700px;
+							float: right;
+							z-index:20;
+							li{
+								// width: 844px;
+								height: 700px;
+								position: absolute;
+								top:0;
+								right:37px;
+								display: none;
+								
+								.info{
+									float: left;
+									margin-top: 178px;
+									// margin-left: 35px;
+									width: 320px;
+									.info_img{
+										margin-bottom: 35px;
+										text-align: center;
+									}
+									.info_tit{
+										position: absolute;
+										top:393px;
+										p{
+											width: 320px;
+											font:22px/60px 'NotoSansKRRegular','Nanum Gothic';
+											color:#fff;
+											border-bottom: 2px solid #fff;
+											margin-bottom: 20px;
+											span{
+												background: #000;
+												width: 29px;
+												height: 29px;
+												display: inline-block;
+												font:17px/33px 'DINWebPro-CondBold','Nanum Gothic';
+												text-align: center;
+												text-transform: uppercase;
+
+											}
+										}
+										.sub_tit{
+											font:14.5px/18px 'NotoSansKRRegular','Nanum Gothic';
+											color:#bcbcbc;
+											letter-spacing: -0.5px;
+										}
+										a{
+											display: block;
+											padding-top: 15px;
+											font:14px/18px 'NotoSansKRRegular','Nanum Gothic';
+											color:#6f6f6f;
+										}
+										.buy{
+											display: block;
+											padding-top: 15px;
+											font:14px/18px 'NotoSansKRRegular','Nanum Gothic';
+											color:#fe584a;
+
+											em{
+												display: inline-block;
+												margin-left:9px; 
+												width: 16px;
+												height:16px;
+												vertical-align: middle;
+												background: url('/images/reebok/event/about/2l/icons.png') 0 -1px no-repeat;
+											}
+										}
+									}
+								}
+							}
+								
+						}
+						.num{
+							position: relative;
+							z-index: 21;
+							a{
+								display: inline-block;
+								width: 30px;
+								height: 30px;
+								text-align: center;
+								line-height: 30px;
+								background: #000;
+								color:#fff;
+								font:17px/33px 'DINWebPro-CondBold','Nanum Gothic';
+								@include opacity(0.8);
+
+								&.num1{
+									position: absolute;
+									top:155px;
+									left:130px;
+								}
+								&.num2{
+									position: absolute;
+									top:447px;
+									left:324px;
+								}
+								&.num3{
+									position: absolute;
+									top:218px;
+									left:566px;
+								}
+								&.num4{
+									position: absolute;
+									top:443px;
+									left:766px;
+								}
+								&.num5{
+									position: absolute;
+									top:224px;
+									left:270px;
+								}
+								&.num6{
+									position: absolute;
+									top:379px;
+									left:-18px;
+								}
+								&.num7{
+									position: absolute;
+									top:233px;
+									left:757px;
+								}
+								&.num8{
+									position: absolute;
+									top:511px;
+									left:786px;
+								}
+								&.num9{
+									position: absolute;
+									top:179px;
+									left:101px;
+								}
+								&.num10{
+									position: absolute;
+									top:274px;
+									left:223px;
+								}
+								&.num11{
+									position: absolute;
+									top:451px;
+									left:283px;
+								}
+								&.no_active{
+									@include opacity(0.3);
+									cursor: default;
+									pointer-events: none;
+								}
+
+							}
+							a.on{
+								background: #b91c23;
+								@include opacity(0.8);
+							}
+
+						}
+					}
+					.slider_bg{
+						position: absolute;
+						z-index: 10;
+						top:41px;
+						left:49px;
+						width: 822px;
+						height: 680px;
+						background: #fff;
+						@include opacity (0.1);
+					}
+					&.type2{
+						display: block;
+						.slider_bg{
+							left:0;
+						}
+						.slider_innder{
+							.img{
+								left:430px;
+							}
+							.slider{
+								float:left;
+								li{
+									right:-79px;
+								}
+							}
+						}
+					}
+					&.type3{
+						display: block;
+						.slider_bg{
+							// left:0;
+						}
+						.slider_innder{
+							.img{
+								// left:430px;
+							}
+							.slider{
+								float:right;
+								li{
+									// right:-67px;
+								}
+							}
+						}
+					}
+					&.type4{
+						display: block;
+						.slider_bg{
+							left:0;
+						}
+						.slider_innder{
+							.img{
+								left:430px;
+							}
+							.slider{
+								float:left;
+								li{
+									right:-79px;
+								}
+							}
+						}
+					}
+				}
+
+				.textbg_bg1{
+					position:absolute;
+					top:238px;
+					right:-39%;
+					font:166px 'DINWebPro-CondMedium';
+					color:#fff;
+					@include opacity (0.1);
+				}
+				.textbg_bg2{
+					position:absolute;
+					top:863px;
+					left:-58%;
+					font:196px 'DINWebPro-CondMedium';
+					color:#fff;
+					@include opacity (0.1);
+				}
+				.textbg_bg3{
+					position:absolute;
+					top:3226px;
+					left:-47%;
+					font:196px 'DINWebPro-CondMedium';
+					color:#fff;
+					@include opacity (0.1);
+				}
+				.bg_ban1{
+					position: absolute;
+					top:0;
+					right:-57%;
+				}
+				.bg_ban2{
+					position: absolute;
+					top:371px;
+					left:-57%;
+				}
+				.bg_ban3{
+					position: absolute;
+					top:1051px;
+					right:-50%;
+				}
+				.bg_ban4{
+					position: absolute;
+					top:1612px;
+					left:-57%;
+					z-index: 1;
+				}
+				.bg_ban4_bg{
+					position: absolute;
+					width: 324px;
+					height: 422px;
+					top:1632px;
+					left:-55%;
+					background: #b81c25;
+					
+					mix-blend-mode:overlay;
+					@include opacity(0.5);
+					opacity: 0.5;
+					-ms-filter:alpha(opacity=0.3);
+				}
+
+				
+				.bg_ban5{
+					position: absolute;
+					top:2357px;
+					right:-57%;
+					z-index: 1;
+				}
+				.bg_ban5_bg{
+					position: absolute;
+					width: 360px;
+					height: 473px;
+					top:2337px;
+					right:-57%;
+					background: #1e70b0;
+					
+					mix-blend-mode:overlay;
+					@include opacity(0.5);
+					opacity: 0.5;
+					-ms-filter:alpha(opacity=0.3);
+				}
+			}
+
+			
+		}
+
+		.banner_area{
+			position: relative;
+			height: 484px;
+			.bg{
+				position: absolute;
+				top:0;
+				left:50%;
+				margin-left: -990px;
+			}
+			.inner{
+				padding-top: 50px;
+				text-align: center;
+			}
+
+		}
+	}
+	/* 2l Campaign end */
+
 }
+
+.campaign_list_update{
+	ul{
+		li{
+			position: relative;
+			height: 685px;
+			overflow: hidden;
+			
+			@media screen and (max-width: 1366px) { 
+				height: 550px;
+			}
+			//pointer
+			.pointer{
+				position: absolute;
+				bottom:220px;
+				left:50%;
+				margin-left: -29px;
+				z-index: 1;
+				// width: 100%;
+				@include opacity(0);
+				text-align: center;
+				// transition:bottom 0.3s;
+				@include prefix-css3(transition, bottom 0.3s);
+
+			}
+			.pointer.on{
+				position: absolute;
+				bottom:234px;
+				@include opacity(1);
+				z-index: 1;
+				// width: 100%;
+				text-align: center;
+			}
+			.bg{
+				height: 440px;
+				
+				a{
+					.bg_img{
+						position: absolute;
+						left:50%;
+						top:0;
+						margin-left: -990px;
+						// transition:all 0.4s;
+
+						
+
+						// @include opacity(1);
+						// transition: all 2s;
+						@include prefix-css3(transition,all 5s);
+
+						@media screen and (max-width: 1366px) { 
+							width: 1622px;
+							margin-left: -811px;
+						}
+					}
+				}
+				.view_more{
+					display: inline-block;
+					position: absolute;
+					top:193px;
+					left:50%;
+					margin-left: -96px;
+					// margin-left: -100px;
+					border:1px solid #fff;
+					// padding:0 64px;
+					width: 200px;
+					p{
+						position: relative;
+						color:#fff;
+						font:16px/50px 'NotoSansKRRegular';
+						z-index: 10;
+						text-align: center;
+					}
+					.bg{
+						position: absolute;
+						top:50%;
+						left:50%;
+						margin-left: -98px;
+						margin-top: -23px;
+						// width: 196px;
+						// height: 46px;
+						width: 196px;
+						height: 46px;
+						display: block;
+						background: transparent;
+						box-sizing:border-box;
+						// transition:all 0.2s ease-out;
+						@include prefix-css3(transition,all 0.2s);
+
+					}
+				}
+				.view_more.on{
+					 .bg{
+					 	background: #fff;
+					 }
+					 p{
+					 	color:#000;
+					 }
+				}
+				@media screen and (max-width: 1366px) { 
+					height: 360px;
+				}
+				.list_bg{
+					content: '';
+					display: inline-block;
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					top:0;
+					left: 0;
+					background: #000;
+					// @include opacity (0.3);
+					// @include prefix-css3(transition,all ease-out 1s);
+					@include opacity(0.3);
+					@include prefix-css3(transition,opacity 0.5s);
+								
+				}
+
+
+			}
+			
+			.title{
+				position: relative;
+				display: block;
+				padding:70px 0 0 0;
+				border-bottom: 5px solid #d8d8cf;
+				height: 170px;
+				text-align: center;
+				// overflow: hidden;
+				background:url('/images/reebok/event/about/main_list/title_bg.jpg') 0 0 no-repeat;
+				@media screen and (max-width: 1366px) { 
+					height: 170px;
+				}
+				.main_title{
+					position: relative;
+					margin:0 auto;
+					width: 645px;
+					height: 75px;
+					overflow: hidden;
+
+					p{
+						position: relative;
+						top:0;
+						display: block;
+						// margin-top: 70px;
+						margin:0 auto 0;
+						// padding:70px 0 0 0;
+						width: 645px;
+						height: 65px;
+						text-align: center;
+						font:65px/65px 'QStencil';
+						color:#000;
+						
+						@include prefix-css3(transition, top 0.5s);	
+					}
+
+					.nano{
+						font:25px/45px 'QStencil';
+						vertical-align: top;
+					}
+					@media screen and (max-width: 1366px) { 
+						margin:-21px auto 0;
+						font:55px/65px 'QStencil';
+
+					}
+					img{
+						@media screen and (max-width: 1366px) { 
+							width: 35px;
+						}
+					}
+				}
+				.main_title.on{
+					p{
+					// 	animation: rolling 2s 1;
+					// -webkit-animation:rolling 2s 1;
+					top:-100%;
+					}
+					p.clone{
+						top:-100%;
+					}
+				}
+
+				.main_title:after{
+					position: absolute;
+					left:-300px;
+					top:10px;
+					content: '';
+					display: block;
+					width: 380px;
+					height: 150px;
+
+					background: rgba(239, 240, 234, 0.5);
+
+					background: linear-gradient(
+					to right, 
+					rgba(239, 240, 234, 0.5) 0%,
+					rgba(239, 240, 234, 0.5) 77%,
+					rgba(239, 240, 234, 0.5) 92%,
+					rgba(239, 240, 234, 0.0) 100%
+					);
+
+					@include prefix-css3(transform,rotate(45deg));
+					
+					
+				}
+				.main_title.on:after{
+					@include animation(0.1s, 2.5s, barmove);
+				}
+
+				.sub_title{
+					position: relative;
+					top:0;
+					display: block;
+					width: 100%;
+					text-align: center;
+					padding-top: 26px;
+					font:16px/20px 'NotoSansKRRegular';
+					color:#000;
+					@include prefix-css3(transition, top 0.6s);
+
+					@media screen and (max-width: 1366px) { 
+						padding-top: 12px;
+					}
+				}
+				.sub_title.on{
+					top:-18px;
+					// animation: rolling 2s infinite;
+					// -webkit-animation:rolling 2s infinite;
+				}
+			}
+			.title.heritage{
+				background:url('/images/reebok/event/about/main_list/title_bg2.jpg') 50% 100% no-repeat;
+			}
+		}
+		li:hover{
+			.list{
+				.bg{
+					a{
+						.bg_img{
+							// transform:scale(1.09);
+							@include prefix-css3(transform, scale(1.09));
+						}
+					}
+				}
+
+			}
+			.view_more{
+				 .bg{
+				 	background: #fff;
+				 }
+				 p{
+				 	color:#000;
+				 }
+			}
+		}
+	}
+	.video_section{
+		position: relative;
+		display: block;
+		height: 600px;
+		background:url('/images/reebok/event/about/main_list/video_bg.jpg') 50% 100% no-repeat;	
+		.title{
+			position: relative;
+			display: block;
+
+			// border-bottom: 5px solid #d8d8cf;
+			// height: 240px;
+			text-align: center;
+			overflow: hidden;
+			.main_title{
+				position: relative;
+				display: block;
+				// margin-top: 70px;
+				margin:150px auto 0;
+				width: 736px;
+				height: 104px;
+				text-align: center;
+				font:105px/105px 'QStencil';
+				color:#fff;
+				overflow: hidden;
+			}
+
+			.sub_title{
+				display: block;
+				width: 100%;
+				text-align: center;
+				font:24px/30px 'NotoSansKRlight';
+				color:#fff;
+
+			}
+		}
+		.view_more{
+			display: inline-block;
+			position: absolute;
+			top:417px;
+			left:50%;
+			margin-left: -100px;
+			border:1px solid #fff;
+			padding:0 64px;
+			p{
+				position: relative;
+				color:#fff;
+				font:16px/50px 'NotoSansKRRegular';
+				z-index: 10;
+			}
+			.bg{
+				position: absolute;
+				top:50%;
+				left:50%;
+				margin-left: -98px;
+				margin-top: -23px;
+				width: 196px;
+				height: 46px;
+				display: block;
+				background: transparent;
+				box-sizing:border-box;
+				transition:all 0.2s ease-out;
+
+			}
+		}
+		.play{
+			display: block;
+			text-align: center;
+			position: absolute;
+			top:305px;
+			left:50%;
+			margin-left: -36px;
+		}
+		.view_more.on{
+			 .bg{
+			 	background: #fff;
+			 }
+			 p{
+			 	color:#000;
+			 }
+		}
+	}
+	.video_section:hover{
+			.view_more{
+				 .bg{
+				 	background: #fff;
+				 }
+				 p{
+				 	color:#000;
+				 }
+			}
+	}
+	.visual_video{
+		position: relative;
+		display: block;
+		height: 600px;
+		background:url('/images/reebok/event/about/main_list/video_bg.jpg') 50% 100% no-repeat;	
+		.title{
+			position: absolute;
+			display: block;
+			// margin-top: -26px;
+			top:275px;
+			// border-bottom: 5px solid #d8d8cf;
+			// height: 240px;
+			text-align: center;
+			overflow: hidden;
+			h2{
+				position: relative;
+				display: block;
+				// margin-top: 70px;
+				margin:0px auto 0;
+				width: 736px;
+				height: 104px;
+				text-align: center;
+				font:105px/105px 'QStencil';
+				color:#fff;
+				overflow: hidden;
+			}
+			.play-video{
+				margin-top: -12px;
+			}
+			.sub_title{
+				display: block;
+				width: 100%;
+				text-align: center;
+				font:24px/30px 'NotoSansKRlight';
+				color:#fff;
+
+			}
+		}
+		.view_more{
+			display: inline-block;
+			position: absolute;
+			top:422px;
+			left:50%;
+			margin-left: -96px;
+			// margin-left: -100px;
+			border:1px solid #fff;
+			// padding:0 64px;
+			width: 200px;
+			z-index: 20;
+			p{
+				position: relative;
+				color:#fff;
+				font:16px/50px 'NotoSansKRRegular';
+				z-index: 10;
+				text-align: center;
+			}
+			.bg{
+				position: absolute;
+				top:50%;
+				left:50%;
+				margin-left: -98px;
+				margin-top: -23px;
+				// width: 196px;
+				// height: 46px;
+				width: 196px;
+				height: 46px;
+				display: block;
+				background: transparent;
+				box-sizing:border-box;
+				// transition:all 0.2s ease-out;
+				@include prefix-css3(transition,all 0.2s);
+
+			}
+		}
+		.play{
+			display: block;
+			text-align: center;
+			position: absolute;
+			top:305px;
+			left:50%;
+			margin-left: -36px;
+		}
+		.view_more.on{
+			 .bg{
+			 	background: #fff;
+			 }
+			 p{
+			 	color:#000;
+			 }
+		}
+	}
+	.visual_video:hover{
+			.view_more{
+				 .bg{
+				 	background: #fff;
+				 }
+				 p{
+				 	color:#000;
+				 }
+			}
+	}
+}
+
+// @include keyframe(barmove){
+// 	0%{
+// 		opacity: 0.5;
+// 		left:-300px;
+// 		top:10px;
+// 	}
+
+// 	100%{
+// 		left:1000px;
+// 		opacity: 1;
+// 	}
+// }
+// @include keyframe(rolling){
+// 	0%{
+// 		top: 0%;
+// 	}
+
+// 	15%{
+// 		top: 0%;
+// 	}
+
+// 	30%{
+// 		top: 0%;
+// 	}
+
+// 	45%{
+// 		top: 0%;
+// 	}
+
+// 	60%{
+// 		top: 0%;
+// 	}
+
+// 	75%{
+// 		top: 0%;
+// 	}
+
+// 	100%{
+// 		top: -100%;
+// 	}
+// }
+
+// @include keyframe(rolling){
+
+
+// 	0%{
+// 		top: 0%;
+// 	}
+
+// 	25%{
+// 		top: 0%;
+// 	}
+
+// 	50%{
+// 		top: 0%;
+// 	}
+
+// 	75%{
+// 		top: 0%;
+// 	}
+
+// 	100%{
+// 		top: -110%;
+// 	}
+// }
