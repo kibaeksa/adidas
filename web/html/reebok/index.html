@@ -11,7 +11,7 @@
 	  <script type="text/javascript" src="/js/jquery/easing/jquery.easing.1.3.js"></script>
       <script type="text/javascript" src="/js/reebok/navigator.js"></script>
       <script type="text/javascript">
-	
+
          jQuery(document).ready(function(){
 			jQuery('#visual_main').adislider({
 				slidewrap:'.visual_slide',
@@ -108,7 +108,7 @@
 function strCut(obj,len) {
 	var str = obj;
 	var l = 0;
-	for (var i=0; i<str.length; i++) {				
+	for (var i=0; i<str.length; i++) {
 		l += (str.charCodeAt(i) > 128) ? 2 : 1;
 		if (l > len) return str.substring(0,i) + "..";
 	}
@@ -120,7 +120,7 @@ function strCut(obj,len) {
 /* 150513 */
 jQuery(document).ready(function(){
 	var title1 = '2015년 브라질 월드컵 기념 coupon brazil worldcup';
-	var title2 = '생일축하 기념 10% 할인 쿠폰';	
+	var title2 = '생일축하 기념 10% 할인 쿠폰';
 	var cutln = navigator.appVersion.indexOf('MSIE 7.0') < 0 ? 32 : 30; //바이트 수
 
 	jQuery('.coupon_popup_layer .body .cpn li').eq(0).find('.label').attr('title',title1).text(strCut(title1 , cutln));
@@ -142,11 +142,11 @@ jQuery(document).ready(function(){
 		</div>
 		-->
 
-		
+
 
 
         <div id="container_r" style="position:relative;">
-			
+
 			<!-- 130621 skip 네비게이션 리복은 다 똑같이 사용 -->
 			<div class="skip_nav">
 				<h2 class="blind">skip navigation</h2>
@@ -154,7 +154,7 @@ jQuery(document).ready(function(){
 				<a href="#gnb_150930" onclick="document.getElementById('gnb_150930').tabIndex = -1;document.getElementById('gnb_150930').focus();return false;">상단메뉴 바로가기</a>
 				<a href="#contents_wrap"onclick="document.getElementById('contents_wrap').tabIndex = -1;document.getElementById('contents_wrap').focus();return false;">본문 바로가기</a>
 				<a href="#footer_wrap" onclick="document.getElementById('footer_wrap').tabIndex = -1;document.getElementById('footer_wrap').focus();return false;">하단 바로가기</a>
-			</div>				
+			</div>
 			<!-- 130621 end -->
 
             <link rel="apple-touch-icon-precomposed" sizes="72*72" href="/images/reebok/icon_114.png" />
@@ -180,7 +180,7 @@ jQuery(document).ready(function(){
 
                <div id="header_150930">
                   <!-- header_top -->
-                  <div class="header_top">                     
+                  <div class="header_top">
                      <h1>
                      	<a class="spt_bg" href="/reeMain.action" onMouseDown="javascript:fn_trkClickTrace('^최상단^Reebok(로고)');">리복 온라인 스토어</a>
                      </h1>
@@ -188,12 +188,12 @@ jQuery(document).ready(function(){
                         <form id="frmSrchTop" name="frmSrchTop" method="post" onsubmit="return false;" autocomplete="off">
                            <fieldset>
                               <legend>SEARCH</legend>
-                              <label class="blind" for="S_PROD_NM_TOP">검색</label> 
+                              <label class="blind" for="S_PROD_NM_TOP">검색</label>
 
                               <input type="text" name="S_PROD_NM_TOP" id="S_PROD_NM_TOP" class="search_box" onfocus="this.value='';document.getElementById('S_SEARCH_WORDS_URL').value='';" onblur="fn_inputBlur()" onmousedown="dqtop_setTextbox('1',event);" onKeyPress="keyDownTop('1',event);" onkeydown="javascript:if(event.keyCode==13) fn_search_top();fn_trkClickTrace('^최상단^검색');" />
                               <input type="submit" class="submit spt_bg" onclick="fn_search_top();fn_trkClickTrace('^최상단^검색');">
                               <script language="JavaScript" src="/js/search/dqAutoCompleteTopR.js"></script>
-                              
+
                            </fieldset>
                         </form>
 
@@ -420,7 +420,7 @@ jQuery(document).ready(function(){
 														<li><a href="#" style="color:#f00000;">SALE</a></li>
 													</ul>
 												</dd>
-											</dl>										
+											</dl>
 										</div>
 									</div>
 									<!-- //leftarea -->
@@ -479,7 +479,7 @@ jQuery(document).ready(function(){
 														<li><a href="#" style="color:#f00000;">SALE</a></li>
 													</ul>
 												</dd>
-											</dl>										
+											</dl>
 										</div>
 									</div>
 									<!-- //leftarea -->
@@ -555,12 +555,12 @@ jQuery(document).ready(function(){
 											<dl class="last">
 												<dt>Collection</dt>
 												<dd>
-													<ul>      
+													<ul>
 														<li><a href="#">PUMP FURY</a></li>
 														<li><a href="#">GL6000</a></li>
 													</ul>
 												</dd>
-											</dl>										
+											</dl>
 										</div>
 									</div>
 									<!-- //leftarea -->
@@ -569,7 +569,7 @@ jQuery(document).ready(function(){
 									</div>
 									<!-- //righttarea -->
 								</div>
-								<!-- sports depth2 menu end -->						
+								<!-- sports depth2 menu end -->
 							</li>
 							<!-- //classic -->
 
@@ -589,7 +589,7 @@ jQuery(document).ready(function(){
 								</div>
 								<!-- collection depth2 menu end -->
 							</li>
-							<!-- //collection -->							
+							<!-- //collection -->
 						</ul>
 						<!-- 130807 menu2 -->
 
@@ -609,7 +609,7 @@ jQuery(document).ready(function(){
 							</li>
 							<li class="sale">
 								<a href="#" class="depth1_btn dep2btn">Sale</a>
-								<div class="depth2_menu">								
+								<div class="depth2_menu">
 									<ul>
 										<li><a href="#">Men</a></li>
 										<li><a href="#">Women</a></li>
@@ -688,7 +688,7 @@ jQuery(document).ready(function(){
 										<div class="area2">
 											<div class="tit">About Reebok</div>
 											<a href="#" class="delta spt_bg">Be More Human</a>
-											
+
 											<div class="linkbox">
 												<a href="#">Our Story <span class="spt_bg"></span></a>
 											</div>
@@ -714,11 +714,11 @@ jQuery(document).ready(function(){
                <!-- contents_main -->
 				<div id="contents_main">
 
-				   <div id="visual_main">					
+				   <div id="visual_main">
 						<div class="visual_wrap">
 							<div class="visual_inner_wrap">
 								<div class="visual_slide">
-								
+
 									<!-- banner -->
 									<div class="visual_box">
 										<div class="visual_img"><img src="http://image.reebok.co.kr/upload/banner/0c70159aa5554acc87b0c4dbe5a3025e_1118094757.jpg" alt=""/></div>
@@ -741,7 +741,7 @@ jQuery(document).ready(function(){
 								<!-- //visual_slide -->
 							</div>
 							<!-- //visual_inner_wrap -->
-						</div>	
+						</div>
 						<!-- //visual_wrap -->
 
 						<div class="visual_util">
@@ -756,7 +756,7 @@ jQuery(document).ready(function(){
 
 				   </div>
 				   <!-- //visual_main -->
-					
+
 				   <div class="main_banner_area ct890">
 				   		<!-- 151001 start -->
 						<ul class="data">
@@ -764,17 +764,17 @@ jQuery(document).ready(function(){
 								<p class="label spt_bg"></p>
 								<p class="img"><a href="#"><img src="http://shop.reebok.co.kr//upload/prod/basic/320/V67061-1_320X320.jpg"/></a></p>
 								<p class="tit"><a href="#">[Unisex running] 레코드피니쉬 RS 2.0 </a></p>
-								<p class="price">   	
+								<p class="price">
 							   		<span>
 							   			129,000<span class="won">원</span>
 							   		</span>
 								</p>
 							</li>
-							<li class="m2">								
+							<li class="m2">
 								<p class="label spt_bg"></p>
 								<p class="img"><a href="#"><img src="http://shop.reebok.co.kr/upload/prod/basic/320/AQ9016-1_320X320.jpg"/></a></p>
 								<p class="tit"><a href="#">[Reebok Classic/Unisex] 퓨리라이트</a></p>
-								<p class="price">   	
+								<p class="price">
 							   		<span class="line_through">
 							   			129,000<span class="won">원</span>
 							   		</span>
@@ -788,7 +788,7 @@ jQuery(document).ready(function(){
 								<p class="label spt_bg"></p>
 								<p class="img"><a href="#"><img src="http://shop.reebok.co.kr//upload/prod/basic/320/AC3897-1_320X320.jpg"/></a></p>
 								<p class="tit"><a href="#">[Women's Training][온라인단독] 레스밀 바디컴뱃 탱크 [Women's Training][온라인단독] 레스밀 바디컴뱃 탱크</a></p>
-								<p class="price">   	
+								<p class="price">
 							   		<span class="line_through">
 							   			129,000<span class="won">원</span></span>
 							   		<span class="sale">
@@ -841,7 +841,7 @@ jQuery(document).ready(function(){
 										</li>
 										<li>
 											<p class="img">
-												<!-- 150616 start -->	
+												<!-- 150616 start -->
 												<span class="oo_label size35">
 													<img src="/images/reebok/common/bg_oo_label_50.png" alt="온라인단독 상품">
 												</span>
@@ -851,7 +851,7 @@ jQuery(document).ready(function(){
 											<p class="tit"><a href="#">[REEBOK CLASSIC/Unisex][한정상품] 펌프 퓨리 에이치엘에스</a></p>
 											<p class="price">
 												<span>219,000원</span>
-											</p>										
+											</p>
 										</li>
 										<li>
 											<p class="img">
@@ -863,7 +863,7 @@ jQuery(document).ready(function(){
 											<p class="tit"><a href="#">[REEBOK CLASSIC/Unisex][한정상품] 펌프 퓨리 에이치엘에스</a></p>
 											<p class="price">
 												<span>219,000원</span>
-											</p>										
+											</p>
 										</li>
 										<li class="last">
 											<p class="img">
@@ -876,7 +876,7 @@ jQuery(document).ready(function(){
 											<p class="price">
 												<span class="line_through">219,000원</span>
 												<span class="sale">139,000원</span>
-											</p>										
+											</p>
 										</li>
 									</ul>
 								</div>
@@ -897,14 +897,14 @@ jQuery(document).ready(function(){
 											<p class="tit"><a href="#">[REEBOK CLASSIC/Unisex][한정상품] 펌프 퓨리 에이치엘에스</a></p>
 											<p class="price">
 												<span>219,000원</span>
-											</p>										
+											</p>
 										</li>
 										<li>
 											<p class="img"><a href="#"><img src="http://shop.adidas.co.kr/upload/prod/basic/160/V53306-1_160X160.jpg" alt=""/></a></p>
 											<p class="tit"><a href="#">[REEBOK CLASSIC/Unisex][한정상품] 펌프 퓨리 에이치엘에스</a></p>
 											<p class="price">
 												<span>219,000원</span>
-											</p>										
+											</p>
 										</li>
 										<li class="last">
 											<p class="img"><a href="#"><img src="http://shop.adidas.co.kr/upload/prod/basic/160/J93501-1_160X160.jpg" alt=""/></a></p>
@@ -912,7 +912,7 @@ jQuery(document).ready(function(){
 											<p class="price">
 												<span class="line_through">219,000원</span>
 												<span class="sale">139,000원</span>
-											</p>										
+											</p>
 										</li>
 									</ul>
 								</div>
@@ -934,14 +934,14 @@ jQuery(document).ready(function(){
 											<p class="tit"><a href="#">[REEBOK CLASSIC/Unisex][한정상품] 펌프 퓨리 에이치엘에스</a></p>
 											<p class="price">
 												<span>219,000원</span>
-											</p>										
+											</p>
 										</li>
 										<li>
 											<p class="img"><a href="#"><img src="http://shop.adidas.co.kr/upload/prod/basic/160/V53306-1_160X160.jpg" alt=""/></a></p>
 											<p class="tit"><a href="#">[REEBOK CLASSIC/Unisex][한정상품] 펌프 퓨리 에이치엘에스</a></p>
 											<p class="price">
 												<span>219,000원</span>
-											</p>										
+											</p>
 										</li>
 										<li class="last">
 											<p class="img"><a href="#"><img src="http://shop.adidas.co.kr/upload/prod/basic/160/J93501-1_160X160.jpg" alt=""/></a></p>
@@ -949,7 +949,7 @@ jQuery(document).ready(function(){
 											<p class="price">
 												<span class="line_through">219,000원</span>
 												<span class="sale">139,000원</span>
-											</p>										
+											</p>
 										</li>
 									</ul>
 								</div>
@@ -970,14 +970,14 @@ jQuery(document).ready(function(){
 											<p class="tit"><a href="#">[REEBOK CLASSIC/Unisex][한정상품] 펌프 퓨리 에이치엘에스</a></p>
 											<p class="price">
 												<span>219,000원</span>
-											</p>										
+											</p>
 										</li>
 										<li>
 											<p class="img"><a href="#"><img src="http://shop.adidas.co.kr/upload/prod/basic/160/V53306-1_160X160.jpg" alt=""/></a></p>
 											<p class="tit"><a href="#">[REEBOK CLASSIC/Unisex][한정상품] 펌프 퓨리 에이치엘에스</a></p>
 											<p class="price">
 												<span>219,000원</span>
-											</p>										
+											</p>
 										</li>
 										<li class="last">
 											<p class="img"><a href="#"><img src="http://shop.adidas.co.kr/upload/prod/basic/160/J93501-1_160X160.jpg" alt=""/></a></p>
@@ -985,7 +985,7 @@ jQuery(document).ready(function(){
 											<p class="price">
 												<span class="line_through">219,000원</span>
 												<span class="sale">139,000원</span>
-											</p>										
+											</p>
 										</li>
 									</ul>
 								</div>
@@ -1006,14 +1006,14 @@ jQuery(document).ready(function(){
 											<p class="tit"><a href="#">[REEBOK CLASSIC/Unisex][한정상품] 펌프 퓨리 에이치엘에스</a></p>
 											<p class="price">
 												<span>219,000원</span>
-											</p>										
+											</p>
 										</li>
 										<li>
 											<p class="img"><a href="#"><img src="http://shop.adidas.co.kr/upload/prod/basic/160/V53306-1_160X160.jpg" alt=""/></a></p>
 											<p class="tit"><a href="#">[REEBOK CLASSIC/Unisex][한정상품] 펌프 퓨리 에이치엘에스</a></p>
 											<p class="price">
 												<span>219,000원</span>
-											</p>										
+											</p>
 										</li>
 										<li class="last">
 											<p class="img"><a href="#"><img src="http://shop.adidas.co.kr/upload/prod/basic/160/J93501-1_160X160.jpg" alt=""/></a></p>
@@ -1021,7 +1021,7 @@ jQuery(document).ready(function(){
 											<p class="price">
 												<span class="line_through">219,000원</span>
 												<span class="sale">139,000원</span>
-											</p>										
+											</p>
 										</li>
 									</ul>
 								</div>
@@ -1061,7 +1061,11 @@ jQuery(document).ready(function(){
 				<div class="top">
 					<div class="ct890">
 						<ul class="f_menu clfix">
-							<li><a href="http://shop.reebok.co.kr/RPF010107.action?gubn=2"><strong>개인정보 취급방침</strong></a></li>
+                            <!--
+                            170131
+                            * 개인정보 취급방침 ===> 개인정보 처리방침
+                             -->
+							<li><a href="http://shop.reebok.co.kr/RPF010107.action?gubn=2"><strong>개인정보 처리방침</strong></a></li>
 							<li><a href="http://shop.reebok.co.kr/RPF010107.action?gubn=1">구매 이용약관</a></li>
 							<li><a href="http://shop.reebok.co.kr/RPF010107.action?gubn=3">리클럽 이용약관</a></li>
 							<li><a href="#" onclick="window.open('http://shop.reebok.co.kr/html/reebok/popup_justice_bns.html','','width=680,height=500');return false;">공정거래 자율준수</a></li>
@@ -1099,24 +1103,35 @@ jQuery(document).ready(function(){
 								</div>
 							</div>
 							<div class="sns_box blog">
-								<a href="http://blog.naver.com/reebokkr" class="spt_bg" target="_blank"></a>								
+								<a href="http://blog.naver.com/reebokkr" class="spt_bg" target="_blank"></a>
 							</div>
 							<div class="sns_box ytb">
-								<a href="https://www.youtube.com/channel/UCFrW9Ojay5Pk7s-4-KD0M6w" class="spt_bg" target="_blank"></a>								
+								<a href="https://www.youtube.com/channel/UCFrW9Ojay5Pk7s-4-KD0M6w" class="spt_bg" target="_blank"></a>
 							</div>
 							<div class="sns_box kakao last">
-								<a href="http://plus.kakao.com/home/@리복" class="spt_bg" target="_blank"></a>								
+								<a href="http://plus.kakao.com/home/@리복" class="spt_bg" target="_blank"></a>
 							</div>
-						</div>	
-					</div>					
+						</div>
+					</div>
 				</div>
 				<div class="address">
 					<div class="ct890">
 						<p>리복 공식 온라인 스토어 (아디다스코리아)     06620 서울특별시 서초구 서초대로 74길 4, 삼성생명 서초타워 7층</p>
-						<p>대표이사 : 장 미쉘 그라니에     사업자 등록번호 : 214-81-07412     통신판매업신고 : 2007-서울서초-10391</p>
-						<p><span>교환 및 반품 문의 (본사로 반품불가) : 온라인스토어 고객센터 1588-7324 (평일 09:00 ~ 18:00, 점심시간 : 12:00 ~ 13:00)</span></p>
+						<p>대표이사 : 에드워드 닉슨     사업자 등록번호 : 214-81-07412     통신판매업신고 : 2007-서울서초-10391</p>
+						<!--
+                        170203
+                        * 기존 교환반품 / 제품수선 삭제
+
+                        <p><span>교환 및 반품 문의 (본사로 반품불가) : 온라인스토어 고객센터 1588-7324 (평일 09:00 ~ 18:00, 점심시간 : 12:00 ~ 13:00)</span></p>
 						<p>제품 수선문의 : 리복 고객만족센터 080-344-3732 (평일 : 09:00 ~ 18:00)</p>
-						<p>개인정보 관리책임자 : 김동일  ,  개인정보 관리담당자 : 황선영     이메일 : Reeclub_Korea@Reebok.com</p>
+                        -->
+
+                        <!--
+                        170203
+                        * 이메일 삭제
+                        * 고객센터 연락처 주가
+                        -->
+                        <p>개인정보 보호책임자 : 김동일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;고객센터 : 1588-7324</p>
 						<p class="last">Copyright© adidas Korea Inc.</p>
 						<div class="logo spt_bg">Reebok</div>
 					</div>
@@ -1129,7 +1144,7 @@ jQuery(document).ready(function(){
 							<area shape="rect" coords="145,42,191,58" href="#" alt="공정거래 위원회 사업자 신원정보 확인" onclick="window.open('http://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=2148107412', 'communicationViewPopup','width=750,height=700;');return false;">
 						</map>
 					</div>
-				</div>			
+				</div>
             </div>
             <!-- //160705 -->
 
