@@ -608,7 +608,7 @@
 					<div class="location">
 						<a href="/brand/aboutus.action">ABOUT US</a>
 						<a href="/brand/campaign/list.action">CAMPAIGN</a>
-						<span>reebok <span class="colab">x</span> Reebok X 2L</span>
+						<span>reebok <span class="colab">x</span> 2L</span>
 					</div>
 					
 					<div class="video_visual">
@@ -739,8 +739,8 @@
 							<ul>
 								<li style="left:0;">
 									<img src="/images/reebok/about/2l/main3.jpg" alt="">
-									<span class="p_num pos pos9"><em>5</em><a href="#none" class="no_active"></a></span>
-									<span class="p_num pos pos10 "><em>6</em><a class="on" href="#none"></a></span>
+									<span class="p_num pos pos9"><em>5</em><a href="javascript:void(0)" class="blink"></a></span>
+									<span class="p_num pos pos10 "><em>6</em><a class="on" href="javascript:void(0)"></a></span>
 								</li>
 
 							</ul>
@@ -751,12 +751,12 @@
 							<div class="slider_info type2 on">
 
 								<div class="img_section type2 pos9_img" style="margin-right: -30rem;">
-									<p><span class="p_num">5</span> 컴벳 글로리 후디</p>
-									<p class="desc">스포티하고섹시한 느낌의 브라. 앞면의 추가적인 
+									<p><span class="p_num">5</span> C 스트래피 브라</p>
+									<p class="desc">스포티하고 섹시한 느낌의 브라. 앞면의 추가적인 
 									스트랩이 더 나은 지지력과 모아주는 효과를 
 									제공합니다.
 									</p>
-									<a href="#" class="no_active" data-icon="">입고예정</a>
+									<a href="http://m.reebok.co.kr/MO/Product/prdDispBas.action?prodCD=B45964&spst_id=&srch_nm=C%EC%8A%A4%ED%8A%B8%EB%9E%98%ED%94%BC&INFLW_TC_CD=" class="buy icons aft" data-icon="">구매하기</a>
 								</div>
 
 								<div class="img_section type2 pos10_img on" >
@@ -790,7 +790,7 @@
 							<ul>
 								<li style="left:0;">
 									<img src="/images/reebok/about/2l/main4.jpg" alt="">
-									<span class="p_num pos pos11"><em>7</em><a href="#none" class="no_active" ></a></span>
+									<span class="p_num pos pos11"><em>7</em><a href="javascript:void(0)" class="blink" ></a></span>
 									<span class="p_num pos pos12 "><em>8</em><a class="on" href="#none"></a></span>
 								</li>
 
@@ -802,12 +802,11 @@
 							<div class="slider_info type2 on">
 
 								<div class="img_section type2 pos11_img " style="margin-right: -30rem;">
-									<p><span class="p_num">7</span> 컴벳 글로리 후디</p>
-									<p class="desc">스포티하고섹시한 느낌의 브라. 앞면의 추가적인 
-									스트랩이 더 나은 지지력과 모아주는 효과를 
-									제공합니다.
+									<p><span class="p_num">7</span> S 페이브즈 머슬</p>
+									<p class="desc">레이어링 하기 좋은 아이코닉 머슬 티 실루엣. 
+									부들부들한 소재로 자유로운 움직임을 선사해줍니다.
 									</p>
-									<a href="#" class="no_active" data-icon="">입고예정</a>
+									<a href="http://m.reebok.co.kr/MO/Product/prdDispBas.action?prodCD=B45985&spst_id=&srch_nm=&INFLW_TC_CD=" class="buy icons aft" data-icon="">구매하기</a>
 								</div>
 
 								<div class="img_section type2 pos12_img on" >
@@ -819,12 +818,12 @@
 									<a href="#" class="buy icons aft" data-icon="">구매하기</a>
 								</div>
 
-								<div class="img_txt pos11_info type2 on">
-									<img src="/images/reebok/about/2l/img7.png" alt="" />
+								<div class="img_txt pos11_info type2 ">
+									<img src="/images/reebok/about/2l/img7.png?v=1" alt="" />
 									
 
 								</div>
-								<div class="img_txt pos12_info type2">
+								<div class="img_txt pos12_info type2 on">
 									<img src="/images/reebok/about/2l/img8.png" alt="" class="" />
 									
 								</div>
@@ -1136,13 +1135,12 @@
 							$(this).children('a').addClass('on');
 
 							$(this).siblings('span').children('a').addClass('blink');
-							$(this).siblings('span').children('a').addClass('on');
 							$(this).siblings('span').children('a').removeClass('on');
 
 							// 이미지
 							$('.pos9_img').fadeIn();
 							$('.pos10_img').fadeOut();
-							
+							$('.pos9_img').css({'opacity':'1'});
 							$('.pos10_img').css({'margin-right':'-30rem'});
 							$('.pos9_img').animate({'margin-right':'0'},200);
 
@@ -1167,7 +1165,7 @@
 							$('.pos10_info').fadeIn();
 						})
 
-						//  4 갤러리 번호에 따른 상품 1112
+						//  4 갤러리 번호에 따른 상품 11 12
 						$('.pos11').click(function(){ 
 							$(this).children('a').removeClass('blink');
 							$(this).children('a').addClass('on');
@@ -1180,6 +1178,7 @@
 							$('.pos11_img').fadeIn();
 							$('.pos12_img').fadeOut();
 							
+							$('.pos11_img').css({'opacity':'1'});
 							$('.pos12_img').css({'margin-right':'-30rem'});
 							$('.pos11_img').animate({'margin-right':'0'},200);
 
@@ -1190,7 +1189,9 @@
 						$('.pos12').click(function(){ 
 							$(this).children('a').removeClass('blink');
 							$(this).children('a').addClass('on');
-							// $(this).siblings('span').children('a').addClass('blink');
+
+							$(this).siblings('span').children('a').addClass('blink');
+							$(this).siblings('span').children('a').addClass('on');
 							$(this).siblings('span').children('a').removeClass('on');
 							
 							// 신발갤러리
