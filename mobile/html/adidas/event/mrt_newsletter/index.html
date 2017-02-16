@@ -580,6 +580,40 @@
                     line-height: 1.6rem;
                 }
 
+                /* 170214 css 추가 */
+                #news_letter .terms_box{
+                    margin-bottom: 30px;
+                    padding:15px;
+                    background: #f1f1f1;
+                }
+
+                #news_letter .terms_box>*:last-child{
+                    margin-bottom: 0;
+                }
+
+                #news_letter .terms_box ul{
+                    margin-bottom: 3px;
+                }
+
+                #news_letter .terms_box li{
+                    color:#969696;
+                    font-size: 1rem;
+                    line-height: 1.6rem;
+                    font-family: 'NotoSansKRBold';
+                }
+
+                #news_letter .terms_box li::before{
+                    background: #969696;
+                }
+
+                #news_letter .terms_box p{
+                    margin-bottom: 12px;
+                    padding-left: 10px;
+                    color:#969696;
+                    font-size: 1rem;
+                    line-height: 1.3rem;
+                }
+
 
 
 			</style>
@@ -616,15 +650,37 @@
                         </ul>
                     </div>
 
-                    <div class="form_wrap">
+                    <div class="form_wrap" style="margin-bottom:10px;">
                         <div class="chkbox">
                             <div class="chk_box1">
 								<input type="checkbox" id="newletter_agree_yn">
-								<label for="newletter_agree_yn">뉴스레터 수신동의</label>
+								<label for="newletter_agree_yn">개인정보 수집∙이용 등에 동의합니다. </label>
 							</div>
                         </div>
-                        <div class="desc">아디다스 러닝제품, 행사, 런베이스 서울 등 러닝 관련 소식을 이메일로 받아보는 것에 동의합니다.</div>
+                        <div class="desc">아디다스코리아 주식회사는 러닝 행사 관련 정보 및 러닝 트레이닝 팁 등을 제공하기 위하여 개인정보를 수집하고 있습니다.</div>
                     </div>
+
+                    <!-- 170214 start -->
+                    <div class="terms_box">
+                        <ul class="li_dot">
+                            <li>개인정보의 수집ㆍ이용 목적</li>
+                        </ul>
+                        <p>전문가 마라톤 트레이닝팁, 서울국제마라톤과 동일 또는<br/>유사한 행사 관련 정보, 신제품 정보, 런베이스 관련 정보 제공, 제품할인 쿠폰제공</p>
+                        <ul class="li_dot">
+                            <li>수집하려는 개인정보항목</li>
+                        </ul>
+                        <p>이메일 주소</p>
+
+                        <ul class="li_dot">
+                            <li>개인정보의 보유 ∙ 이용 기간</li>
+                        </ul>
+                        <p>수신동의일로부터 1년이 경과된 때까지 </p>
+
+                        <ul class="li_dot">
+                            <li>개인정보 수집이용 등에 동의하지 않을 수 있으나 동의하지 않는 경우, 유용한 정보를 제공받지 못합니다.</li>
+                        </ul>
+                    </div>
+                    <!-- //170214 -->
 
                     <div class="form_wrap">
                         <div class="chkbox">
@@ -633,7 +689,7 @@
 								<label for="info_agree_yn">개인정보취급 위탁 동의</label>
 							</div>
                         </div>
-                        <div class="desc">회사는 아디다스 러닝 뉴스레터 발송을 위한 개인정보 취급 위탁을 하고 있으며, 다음에 기재 된 위탁업무를 수행 목적 외에는 개인정보 처리를 하지 않습니다.</div>
+                        <div class="desc">회사는 아디다스 러닝 뉴스레터 발송을 위한   취급 위탁을 하고 있으며, 다음에 기재 된 위탁업무를 수행 목적 외에는 개인정보 처리를 하지 않습니다.</div>
                         <ul class="li_dot">
                             <li>개인정보 취급 위탁을 받는자(수탁자) : 밀버스(주)</li>
                             <li>개인정보 취급 위탁을 하는 업무의 내용 : 이메일 발송 업무</li>
