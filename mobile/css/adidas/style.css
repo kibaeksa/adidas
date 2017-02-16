@@ -496,10 +496,6 @@ html.no_srl{
 	overflow: hidden;
 }
 
-.button_area.button_area_update>.l_gray>a{
-	background: #ebebeb;
-}
-
 .button_area.tac{
 	text-align: center;
 }
@@ -537,10 +533,6 @@ html.no_srl{
 
 .button_area>*:last-child{
 	padding-right:15px;
-}
-
-.button_area .l_gray .plus:after{
-	padding-left: 10px;
 }
 
 .button_area.no_pdg>*{
@@ -1712,6 +1704,7 @@ html.no_srl{
   background:rgba(0,0,0,0.5);
   opacity: 0;
   transition:opacity 0.4s;
+  -webkit-transition:opacity 0.4s;
 }
 
 #header #nav_menu_overlay.active{
@@ -1719,17 +1712,16 @@ html.no_srl{
 }
 
 #header .nav_menu{
-	width: 90%;
-	/*height: 100% !important;
-	min-height:100%;*/
+	width: 100%;
 	position: absolute;
 	top:61px;
-	left:-100%;
+    transform:translate3d(-100%,0,0);
+    -webkit-transform:translate3d(-100%,0,0);
 	background: #000;
 	overflow: hidden;
 	z-index:-10;
-	transition:left 0.4s cubic-bezier(1, 0, 0, 1);
-	-webkit-transition:left 0.4s cubic-bezier(1, 0, 0, 1);
+	transition:all 0.4s cubic-bezier(1, 0, 0, 1);
+	-webkit-transition:all 0.4s cubic-bezier(1, 0, 0, 1);
 	box-sizing:border-box;
 	-webkit-box-sizing:border-box;
 	z-index:100;
@@ -2429,7 +2421,7 @@ html.no_srl{
 	border-width: 0;
 	padding: 0;
 	display: block;
-	padding-left:45px;
+	padding:0 45px 0 10px;
 	box-sizing:border-box;
 	-webkit-box-sizing:border-box;
 	font:13px 'NotoSansKRRegular';
@@ -2439,7 +2431,7 @@ html.no_srl{
 	height: 45px;
 	position: absolute;
 	top: 0;
-	left: 0;
+	right: 0;
 	background: none;
 	border:none;
 }
@@ -2785,6 +2777,12 @@ html.no_srl{
 	padding: 15px 0;
 	text-align: center;
 	background: #000;
+    transition:background 0.2s;
+    -webkit-transition:background 0.2s;
+}
+
+#container.main .main_visual .white .owl-dots{
+    background: #fff;
 }
 
 #container.main .main_visual .owl-dots .owl-dot{
@@ -6800,8 +6798,8 @@ div.layerpop_wrap.mi_login_layer .button_area>div{
 	z-index: 70;
 	transform:translate3d(0,100%,0);
 	-webkit-transform:translate3d(0,100%,0);
-	transition:transform 0.4s;
-	-webkit-transition:-webkit-transform 0.4s;
+	transition:transform 0.8s;
+	-webkit-transition:-webkit-transform 0.8s;
 	text-align: center;
 }
 

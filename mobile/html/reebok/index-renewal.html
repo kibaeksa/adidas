@@ -2,103 +2,34 @@
 <html itemscope="" itemtype="http://schema.org/WebPage" lang="ko" class="">
 <head>
 	<title>Reebok</title>
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 	<meta content="telephone=no" name="format-detection">
 	<meta content="address=no" name="format-detection">
 	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
 	<link rel="stylesheet" href="/MO/reebok/css/reebok_m.css" />
-	<script type="text/javascript" src="/MO/reebok/js/jquery.js"></script>
-	<script type="text/javascript" src="/MO/reebok/js/reebok_js_m-renewal.js?v=151118"></script>
-	<script type="text/javascript" src="/MO/reebok/js/iscroll.js"></script>
-	<script type="text/javascript" src="/MO/reebok/js/FlickKkb.js"></script>
+	<script type="text/javascript" src="/js/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="/MO/reebok/js/reebok_js_m.js"></script>
+
 	<script type="text/javascript" src="/js/swipe.js"></script>
-	<script type="text/javascript">
-		var d;
-		var main_sec1;
-		var main_sec2;
-		var main_sec3;
-		var lmenu_bnn;
-		(function($){
-			function resizeSliderHeightObj(){
-				$('#main_cnt1 .top_bnn').css({height:$(window).width()*0.95});
-				$('#main_cnt3 .top_bnn').css({height:$(window).width()*0.7125});				
-				$('#main_cnt4 .top_bnn').css({height:$(window).width()*0.7125});
-				$('#main_cnt1_fake .top_bnn').css({height:$(window).width()*0.95});
-				$('.sprt_ctgr ul').css({height:$(window).width()*0.42125}); 
-				$('.main_bnn2').css({height:$(window).width()*0.625}); // 141031 추가
-			}
+	<script type="text/javascript" src="/js/swipe.js"></script>
+	<script type="text/javascript" src="/js/owl.carousel.min.js"></script>
 
-			$(document).ready(function(){
-				// Reebok.fn.prodTabAction({
-				// 	wrap : $('#main1_prod_tab'),
-				// 	btn : $('#main1_prod_tab .prod_tab li'),
-				// 	cont_wrap : $('#main1_prod_tab .prod_tab_cont'),
-				// 	cont : $('#main1_prod_tab .prod_tab_cont>div')
-				// });			
-
-				// 메인 비주얼				
-				var swipe1 = Swipe(document.getElementById('slider_mainmenu1'), { 
-	                auto: 3000,
-	                stopPropagation: true,
-	                callback: function(index, element) {
-	                    $('.top_bnn .num_paging a').removeClass('on').eq(index).addClass('on');
-						// $('.collections .prodlist_wrap .prodlist').removeClass('active').eq(index).addClass('active');
-	                },
-	            });
-	            $('.top_bnn .num_paging a').bind('click',function(){
-					if($(this).hasClass('on')){
-						return;
-					}
-					swipe1.slide($(this).index());
-				});
-
-	            // 최상단으로 가기
-				$('.gotop').click(function(){ 
-			    $("html, body").animate({ scrollTop: 0 }, 600);
-			      return false; 
-			  	});
-			  	// 검색창 : 최근검색어/인기검색어
-			  	$('.fav').click(function(){
-			  		$('.rank_keywords').fadeIn();
-			  		$('.searched_keywords').hide();
-
-			  	});
-			  	$('.new').click(function(){
-			  		$('.searched_keywords').fadeIn();
-			  		$('.rank_keywords').hide();
-			  	});
-			  	$('.search_category>ul>li').click(function(){
-			  		if($(this).hasClass('on')){
-			  			return false;
-			  		}
-		  			$('.search_category>ul>li').removeClass('on');
-		  			$(this).addClass('on');
-
-			  	})
-
-			});
-
-		})(jQuery);
-
-	</script>	
-
-	<!-- 141027 오픈 이벤트 스타일 -->
-	
 </head>
 
 <body>
 
 	<section id="wrap">
-		
+
 		<section id="container">
-			
+
 			<section id="header">
 				<div class="navigation_main_wrapper">
 					<a href="javascript:void(0)" class="navi_slide" id="global-navigation-button">
 						<div class="ico">
 							<span></span>
 							<span></span>
-							<span></span>	
+							<span></span>
 						</div>
 					</a>
 					<h1>
@@ -297,8 +228,8 @@
 								<li class="m2-1"><a href="#">BEST</a></li>
 								<li class="m2-2"><a href="#">NEW</a></li>
 								<li class="m2-3"><a href="#">SALE</a></li>
-								<li class="m2-4"><a href="#" class="kor">전체보기<span class="kor">(15)</span></a></li>
-								
+								<li class="m2-4"><a href="#" class="kor">전체보기<span>(15)</span></a></li>
+
 							</ul>
 						</li>
 						<!-- fitness depth1 menu -->
@@ -309,8 +240,8 @@
 								<li class="m2-1"><a href="#">BEST</a></li>
 								<li class="m2-2"><a href="#">NEW</a></li>
 								<li class="m2-3"><a href="#">SALE</a></li>
-								<li class="m2-4"><a href="#">MEN<span class="kor">(15)</span></a></li>
-								<li class="m2-5"><a href="#">WOMEN<span class="kor">(15)</span></a></li>
+								<li class="m2-4"><a href="#">MEN<span>(15)</span></a></li>
+								<li class="m2-5"><a href="#">WOMEN<span>(15)</span></a></li>
 							</ul>
 						</li>
 						<!-- classic depth1 menu -->
@@ -321,8 +252,8 @@
 								<li class="m2-1"><a href="#">BEST</a></li>
 								<li class="m2-2"><a href="#">NEW</a></li>
 								<li class="m2-3"><a href="#">SALE</a></li>
-								<li class="m2-4"><a href="#">MEN<span class="kor">(15)</span></a></li>
-								<li class="m2-5"><a href="#">WOMEN<span class="kor">(15)</span></a></li>
+								<li class="m2-4"><a href="#">MEN<span>(15)</span></a></li>
+								<li class="m2-5"><a href="#">WOMEN<span>(15)</span></a></li>
 							</ul>
 						</li>
 						<!-- collection depth1 menu -->
@@ -333,11 +264,11 @@
 								<li class="m2-1"><a href="#">BEST</a></li>
 								<li class="m2-2"><a href="#">NEW</a></li>
 								<li class="m2-3"><a href="#">SALE</a></li>
-								<li class="m2-4"><a href="#" class="kor">크로스핏<span class="kor">(15)</span></a></li>
-								<li class="m2-5"><a href="#" class="kor">펌프 퓨리<span class="kor">(15)</span></a></li>
-								<li class="m2-5"><a href="#" class="kor">피트니스 컬렉션<span class="kor">(15)</span></a></li>
-								<li class="m2-5"><a href="#" class="kor">요가 컬렉션<span class="kor">(15)</span></a></li>
-								<li class="m2-5"><a href="#" class="kor">컴뱃<span class="kor">(15)</span></a></li>
+								<li class="m2-4"><a href="#" class="kor">크로스핏<span>(15)</span></a></li>
+								<li class="m2-5"><a href="#" class="kor">펌프 퓨리<span>(15)</span></a></li>
+								<li class="m2-5"><a href="#" class="kor">피트니스 컬렉션<span>(15)</span></a></li>
+								<li class="m2-5"><a href="#" class="kor">요가 컬렉션<span>(15)</span></a></li>
+								<li class="m2-5"><a href="#" class="kor">컴뱃<span>(15)</span></a></li>
 							</ul>
 						</li>
 						<!-- 170119 수정 css 검색어 /* depth1_type1 */-->
@@ -361,124 +292,17 @@
 								<li><a href="#">SALE</a></li>
 							</ul>
 						</li>
-						<!-- 신상품 depth1 menu -->
 						<li class="depth1_type2">
-							<a href="javascript:void(0)" class="kor">신상품</a>
-							<!-- depth2 menu -->
-							<ul class="sub_menu">
-								<li><a href="#">BEST</a></li>
-								<li><a href="#">NEW</a></li>
-								<li><a href="#">SALE</a></li>
-								<li>
-									<a href="javascript:void(0)" class="icons kor" data-icon="">신발</a>
-									<!-- depth3 menu -->
-									<ul class="sub_sub_menu">
-										<li>
-											<a href="#">BEST</a>
-										</li>
-										<li>
-											<a href="#">NEW</a>
-										</li>
-										<li>
-											<a href="#">SALE</a>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a href="javascript:void(0)" class="icons kor" data-icon="">의류</a>
-									<!-- depth3 menu -->
-									<ul class="sub_sub_menu">
-										<li>
-											<a href="#">BEST</a>
-										</li>
-										<li>
-											<a href="#">NEW</a>
-										</li>
-										<li>
-											<a href="#">SALE</a>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a href="javascript:void(0)" class="icons kor" data-icon="">용품</a>
-									<!-- depth3 menu -->
-									<ul class="sub_sub_menu">
-										<li>
-											<a href="#">BEST</a>
-										</li>
-										<li>
-											<a href="#">NEW</a>
-										</li>
-										<li>
-											<a href="#">SALE</a>
-										</li>
-									</ul>
-								</li>
-							</ul>
+							<a href="#" class="kor">신상품</a>
 						</li>
-						<!-- 인기상품 depth1 menu -->
 						<li class="depth1_type2">
-							<a href="javascript:void(0)" class="kor">인기상품</a>
-							<!-- depth2 menu -->
-							<ul class="sub_menu">
-								<li><a href="#">BEST</a></li>
-								<li><a href="#">NEW</a></li>
-								<li><a href="#">SALE</a></li>
-								<li>
-									<a href="javascript:void(0)" class="icons kor" data-icon="">신발</a>
-									<!-- depth3 menu -->
-									<ul class="sub_sub_menu">
-										<li>
-											<a href="#">BEST</a>
-										</li>
-										<li>
-											<a href="#">NEW</a>
-										</li>
-										<li>
-											<a href="#">SALE</a>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a href="javascript:void(0)" class="icons kor" data-icon="">의류</a>
-									<!-- depth3 menu -->
-									<ul class="sub_sub_menu">
-										<li>
-											<a href="#">BEST</a>
-										</li>
-										<li>
-											<a href="#">NEW</a>
-										</li>
-										<li>
-											<a href="#">SALE</a>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a href="javascript:void(0)" class="icons kor" data-icon="">용품</a>
-									<!-- depth3 menu -->
-									<ul class="sub_sub_menu">
-										<li>
-											<a href="#">BEST</a>
-										</li>
-										<li>
-											<a href="#">NEW</a>
-										</li>
-										<li>
-											<a href="#">SALE</a>
-										</li>
-									</ul>
-								</li>
-							</ul>
+							<a href="#" class="kor">인기상품</a>
 						</li>
-						<!-- SALE depth1 menu -->
 						<li class="depth1_type3">
-							<a href="javascript:void(0)">SALE</a>
+							<a href="#">SALE</a>
 						</li>
-						<!-- OUTLET depth1 menu -->
 						<li class="depth1_type3">
 							<a href="javascript:void(0)" class="icons" data-icon="">OUTLET</a>
-							<!-- depth2 menu -->
 							<ul class="sub_menu">
 								<li><a href="#">BEST</a></li>
 								<li><a href="#">NEW</a></li>
@@ -497,8 +321,10 @@
 				<div id="global-search-slide">
 					<div class="search_field">
 						<div>
-							<button type="button" onclick="doSearch();" class="icons" data-icon=""></button>
-							<input type="text" id="S_PROD_NM" name="S_PROD_NM" placeholder="검색어를 입력하세요" autocomplete="off">	
+							<form action="#">
+								<input type="search" id="S_PROD_NM" name="S_PROD_NM" placeholder="검색어를 입력하세요" autocomplete="off">
+								<button type="button" onclick="doSearch();" class="icons" data-icon=""></button>
+							</form>
 						</div>
 					</div>
 
@@ -533,30 +359,52 @@
 			<!-- //header -->
 			<section id="contents" class="main">
 				<!-- css 2986 번째줄 시작 -->
-				<div class="top_bnn" id="slider_mainmenu1">
-					<ul id="slider_mainmenu1_ul">
-						<li>
-							<a href="#"><img src="/images/reebok/main/main_slide1.jpg" alt="slide-image1" /></a>
-						</li>
-						<li>
-							<a href="#"><img src="/images/reebok/main/main_slide1.jpg" alt="slide-image2" /></a>
-						</li>
-						<li>
-							<a href="#"><img src="/images/reebok/main/main_slide1.jpg" alt="slide-image3" /></a>
-						</li>
-						<li>
-							<a href="#"><img src="/images/reebok/main/main_slide1.jpg" alt="slide-image4" /></a>
-						</li>
-					</ul>
-					
-					<div class="btn_detail"><a href="#none">자세히보기</a></div>
-					<div class="btn_buy"><a href="#none">구매하기</a></div>
-					
-					<div class="num_paging">
-						<a href="javascript:void(0)" class="on">1</a>
-						<a href="javascript:void(0)">2</a>
-						<a href="javascript:void(0)">3</a>
-						<a href="javascript:void(0)">4</a>
+				<div class="masthead-main">
+					<div class="masthead-main-slider">
+						<div class="box">
+							<img src="/images/reebok/main/main_slide1.jpg" alt="slide-image1" />
+							<div class="buttons-area">
+								<div>
+									<a href="#"><span>자세히보기</span></a>
+								</div>
+								<div>
+									<a href="#"><span>구매하기</span></a>
+								</div>
+							</div>
+						</div>
+						<div class="box">
+							<img src="/images/reebok/main/main_slide1.jpg" alt="slide-image1" />
+							<div class="buttons-area">
+								<div>
+									<a href="#"><span>자세히보기</span></a>
+								</div>
+								<div>
+									<a href="#"><span>구매하기</span></a>
+								</div>
+							</div>
+						</div>
+						<div class="box">
+							<img src="/images/reebok/main/main_slide1.jpg" alt="slide-image1" />
+							<div class="buttons-area">
+								<div>
+									<a href="#"><span>자세히보기</span></a>
+								</div>
+								<div>
+									<a href="#"><span>구매하기</span></a>
+								</div>
+							</div>
+						</div>
+						<div class="box">
+							<img src="/images/reebok/main/main_slide1.jpg" alt="slide-image1" />
+							<div class="buttons-area">
+								<div>
+									<a href="#"><span>자세히보기</span></a>
+								</div>
+								<div>
+									<a href="#"><span>구매하기</span></a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="main_banner">
@@ -569,7 +417,8 @@
 						<img src="/images/reebok/main/reebok_banner.jpg" alt="" class="banner_img">
 					</div>
 				</div>
-				<div id="main1_prod_tab" class="prodlist_type1 now_tab1">
+
+				<div id="main1_prod_tab" class="prodlist_type1 now_tab1" style="margin-top: 20px;">
 						<ul class="prod_tab">
 							<li>
 								<a href="#" class="on" onmousedown="javascript:trk_clickTrace('EVT','^메인^BEST')">BEST PRODUCT</a>
@@ -681,16 +530,69 @@
 			</section>
 			<!-- //contents -->
 
-			<!-- 수정 일시 170117 : 해당 css 검색어 /*20170117 gotop 업데이트*/ -->
 			<div class="gotop" >
-				<a href="#none">
+				<a href="javascript:void(0)" onclick="window.scrollTo(0,0)">
 					<span class="icon"></span>
 					<span class="txt">back to top</span>
 				</a>
 			</div>
-			
+
+
+			<script type="text/javascript">
+				(function($){
+
+
+						$('.fav').click(function(){
+							$('.rank_keywords').fadeIn();
+							$('.searched_keywords').hide();
+
+						});
+
+						$('.new').click(function(){
+							$('.searched_keywords').fadeIn();
+							$('.rank_keywords').hide();
+						});
+
+						$('.search_category>ul>li').click(function(){
+							if($(this).hasClass('on')){
+								return false;
+							}
+							$('.search_category>ul>li').removeClass('on');
+							$(this).addClass('on');
+						});
+
+
+						var visualSlider = $('.masthead-main-slider');
+						// 161201 메인배너 롤링 시 배경색에 따라 클래스 넣어주는 부분 삭제했던 것 부분 복원
+						visualSlider.on('initialized.owl.carousel changed.owl.carousel', function(event) {
+							var elements = $(event.target).find('.owl-item');
+							var elem = $(elements.eq(event.item.index));
+
+							if(elem.find('.box').hasClass('white')){
+								$('#visual_home .owl-controls').addClass('white');
+							}else{
+								$('#visual_home .owl-controls').removeClass('white');
+							}
+						});
+						// 161201
+						visualSlider.owlCarousel({
+							items : 1,
+							merge: true,
+							loop : true,
+							autoplay : true,
+							autoplayTimeout : 2000,
+							autoplaySpeed : 3000
+
+						});
+						// 160407 끝
+
+				})(jQuery);
+
+			</script>
+
+
 			<!-- 수정 일시 170117 : 해당 css 검색어 /*20170117 푸터 수정*/ -->
-			<footer id="footer">
+			<footer id="footer" class="footer-update">
 				<ul class="f_menu">
 					<li><a href="#none">주문배송</a></li>
 					<li><a href="#none">고객센터</a></li>
@@ -704,43 +606,14 @@
 					<a href="http://plus.kakao.com/home/@%EB%A6%AC%EB%B3%B5" class="kakao" target="_blank"></a>
 				</div>
 				<address>
-					<!-- 161121 inner 추가 -->
-					<!-- <div class="inner">
-						<div class="ft1">
-			                <p class="lgo"><img src="http://imagem.reebok.co.kr/images/reebok/bg_logo_f.gif" alt="reebok"></p>
-			                <p>리복 공식 온라인 스토어<span class="line l_left"> (아디다스 코리아)</span></p>
-			            </div>
-			            <div class="ft2">
-			                <p>서울특별시 서초구 서초대로 74길 4, 삼성생명 서초타워 23층 (06620)</p>
-			                <p>대표 : 에드워드 닉슨</p>
-			                <p>사업자 등록번호 : 214-81-07412</p>
-			                <p>통신판매업신고번호 : 2007-서울서초-10391 </p>
-			                <p>교환반품문의 : 1588-7324 (평일 9-18시)</p>
-							<p>제품수선문의 : 080-344-3732 (평일 9-18시)</p>
-							<p>개인정보관리책임자 : 김동일 <span style="display:inline-block;margin:0 6px;">|</span> 개인정보관리담당자 : 황선영</p>
-			            </div>
-
-			            <ul>
-			            	<li class="line"><a href="/MO/reebok/html/m_join_purchase_clause.html" target="_blank">구매이용약관</a></li>
-			            	<li class="line"><a href="http://shop.reebok.co.kr/RPF010107.action?gubn=2" target="_blank">개인정보처리방침</a></li>
-			            	<li class="line"><a href="http://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=2148107412" target="_blank">사업자정보확인</a></li>
-			            	<li class="line"><a href="http://m.reebok.co.kr/m_pop_justice_bns.html" target="_blank">공정거래자율준수</a></li>
-			            	<li class="line"><a href="http://m.reebok.co.kr/Common/CertifiedInfoPop.jsp" target="_blank">채무지급보증안내</a></li>
-			            </ul>
-			            
-			            <p>ⓒ adidas Korea Inc. All Rights Reserved</p>	
-					</div> -->
-		            <!-- //inner -->
-		            <!-- 170117 푸터 수정 -->
 		            <div class="inner">
 		            	<p><strong>리복 공식 온라인 스토어</strong><span class="line l_left"> (아디다스 코리아)</span></p>
 		            	<p>서울특별시 서초구 서초대로 74길 4, 삼성생명 서초타워 23층 (06620)</p>
 		            	<p>대표 : 에드워드 닉슨</p>
 		            	<p>사업자 등록번호 : 214-81-07412</p>
 		            	<p>통신판매업신고번호 : 2007-서울서초-10391</p>
-		            	<p>교환반품문의 : 1588-7324 (평일 9-18시)</p>
-		            	<p>제품수선문의 : 080-344-3732 (평일 9-18시)</p>
-		            	<p>개인정보관리책임자 : 김동일 <span style="display:inline-block;margin:0 6px;">|</span> 개인정보관리담당자 : 황선영</p>
+		            	<p>고객센터 : 1588-7324</p>
+		            	<p>개인정보 보호책임자 : 김동일</p>
 		            	<div class="f_url">
 	            			<p>
 	            				<a href="/MO/reebok/html/m_join_purchase_clause.html">이용약관</a><span class="line l_left">
@@ -759,9 +632,73 @@
 		        </address>
 			</footer>
 			<!-- //footer -->
+
+			<script type="text/javascript">
+				(function($){
+					$('#footer .sns_menu>a').bind('click',function(){
+
+						var snsType = $(this).attr('class');
+						if(snsType !== 'insta' && snsType !== 'fb'){
+							return;
+						}
+
+						var elemHtml = 	document.getElementsByTagName('html')[0];
+						var x = $(this).offset().left;
+						var y = $(this).offset().top + $(this).height();
+
+						elemHtml.style.overflow = 'hidden';
+
+						var scrollTop = window.scrollY;
+
+						var html = '<div id="sns-footer-layer"><div class="btn_wrap" style="top:'+y+'px;left:'+x+'px">';
+						if(snsType == 'fb'){
+							html += '<a href="javascript:void(0)" class="close"></a><a href="https://www.facebook.com/Reebokkr/" class="fb" target="_blank" onmousedown="javascript:trk_clickTrace(\'EVT\',\'^리복모바일^페북코리아\')"><span>FITNESS</span></a><a href="https://www.facebook.com/rbk.classic/" class="fb" target="_blank" onmousedown="javascript:trk_clickTrace(\'EVT\',\'^리복모바일^페북클래식\')"><span>CLASSIC</span></a>';
+						}else if(snsType == 'insta'){
+							html += '<a href="javascript:void(0)" class="close"></a><a href="https://www.instagram.com/reebokkorea/" class="insta" target="_blank"><span>FITNESS</span></a><a href="https://www.instagram.com/reebokclassickorea/" class="insta" target="_blank"><span>CLASSIC</span></a>';
+						}
+
+						html += '</div></div>';
+						$('#container').append(html);
+
+						$('#sns-footer-layer .close').bind('click',function(){
+
+							var indexLength = $('#sns-footer-layer .btn_wrap a').length-1;
+
+							$('#sns-footer-layer .btn_wrap a').each(function(index){
+								var revIdx = $(this).index() * -1 + indexLength;
+								var elem = $('#sns-footer-layer .btn_wrap a').eq(revIdx);
+								setTimeout(function(){
+									elem.removeClass('active');
+								},50 * index);
+
+								setTimeout(function(){
+									$('#sns-footer-layer').removeClass('active');
+									setTimeout(function(){
+										$('#sns-footer-layer').remove();
+										elemHtml.style.overflow = '';
+									},200);
+								},100);
+							});
+						});
+
+						setTimeout(function(){
+							$('#sns-footer-layer').addClass('active');
+							$('#sns-footer-layer .btn_wrap a').each(function(index){
+								var elem = $(this);
+								setTimeout(function(){
+									elem.addClass('active');
+								},50 * index);
+
+							});
+
+						},10);
+					});
+				})(jQuery)
+
+			</script>
 		</section>
 		<!-- //container -->
-		
+
 	</seciton>
 	<!-- //wrap -->
 

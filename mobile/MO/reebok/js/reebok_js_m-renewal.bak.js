@@ -187,7 +187,7 @@ Reebok.ops = {
 					ops.css[i].isFinished = true;
 				}
 
-				element.style[ops.css[i].prop] = ops.css[i].cur + ops.css[i].unit;	
+				element.style[ops.css[i].prop] = ops.css[i].cur + ops.css[i].unit;
 			}else{
 				finishCount += 1;
 			}
@@ -198,7 +198,6 @@ Reebok.ops = {
 				animate(element , ops);
 			});
 		}
-		
 	}
 
 
@@ -285,7 +284,6 @@ Reebok.ops = {
 
 		// Click gnb items
 		var gnbWrappersElem = document.getElementById('navigation-slide').getElementsByTagName('ul');
-		// var gnbItemsElem = gnbWrappersElem.childrens;
 
 		for(var i = 0; i < gnbWrappersElem.length; i++){
 			var itemsElem = gnbWrappersElem[i].children;
@@ -338,7 +336,7 @@ Reebok.ops = {
 										},400);
 									})(j);
 								}
-								
+
 							}else{
 								this.dataset.state = 'working';
 								childElem.style.height = '0px';
@@ -362,7 +360,7 @@ Reebok.ops = {
 									}
 								}
 
-							}						
+							}
 
 							// For animation
 							setTimeout(function(){
@@ -373,7 +371,7 @@ Reebok.ops = {
 							setTimeout(function(){
 								_this.dataset.state = state;
 								if(state == ''){
-									childElem.style.display = 'none';	
+									childElem.style.display = 'none';
 								}else{
 									childElem.style.height = 'auto';
 								}
