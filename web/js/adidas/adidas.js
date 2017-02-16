@@ -50,15 +50,6 @@ function openModalVideoViewer(ytbId , width , height){
 
 }
 
-function language_btn(){
-	if(document.getElementById("language_layer").style.display=="none"){
-	   document.getElementById("language_layer").style.display='block'
-	}else{
-		document.getElementById("language_layer").style.display='none'
-	}
-}
-
-
 function fn_closeBanner(){
 	fn_setCookie('top_bnn','close',1);
 	jQuery('.top_bnn').animate({height:'0'});
@@ -110,38 +101,12 @@ function slideLeftMenu(obj,isCategory){
 	}
 }
 
-function sizeViewMore(obj){
-	var o=jQuery(obj);
-	if(o.parent('p').hasClass('open')){
-		o.text('[View More]');
-		o.parent('p').siblings('ul').css('height','48px');
-		o.parent('p').removeClass('open');
-	}else{
-		o.text('[View Less]');
-		o.parent('p').siblings('ul').css('height','auto');
-		o.parent('p').addClass('open');
-	}
-}
-
 function layerOverNavi(o){
 	jQuery(o).find('.depth2').show();
 }
 
 function layerOutNavi(o){
 	jQuery(o).find('.depth2').hide();
-}
-
-var marketLoc=0;
-
-function marketLayer(){
-	var ht=parseInt( jQuery('.market_layer').css('display'));
-
-	if(ht =='block'){
-		jQuery('.market_layer').hide();
-	}else{
-		jQuery('.market_layer').show();
-	}
-	return false;
 }
 
 function quickLayerOpen(){
@@ -228,123 +193,6 @@ function sortOpenLayer(o,e){
 	return false;
 }
 
-var isTechRolling=false;
-
-function techLayerOpen(num){
-	var _techImg=jQuery('.technology_layer .layer_body .techbox');
-	if(_techImg.length == 1){
-		jQuery('.technology_layer .arrow_r').addClass('disable');
-		jQuery('.technology_layer .arrow_l').addClass('disable');
-	}
-	if(isTechRolling) return false;
-	isTechRolling=true;
-	if(!num){
-		if(jQuery('.technology_layer').css('display')=='block') jQuery('.technology_layer').slideUp();
-		else jQuery('.technology_layer').slideDown();
-		isTechRolling=false;
-	}else{
-		setTechBanner(num-1);
-		setTimeout('isTechRolling=false',500);
-	}
-}
-
-function setTechBanner(num){
-	var _nowidx;
-	var _idx=num;
-
-	var _techImg=jQuery('.technology_layer .layer_body .techbox');
-	_techImg.each(function(){
-		if(jQuery(this).css('display')=='block' || jQuery(this).css('display')=='inline') _nowidx=jQuery(this).index();
-	});
-	if(_nowidx == _idx){
-		jQuery('.technology_layer').slideDown();
-		return false;
-	}
-	_techImg.each(function(){
-		jQuery(this).hide();
-	});
-	_techImg.eq(_idx).fadeIn(500);
-	jQuery('.technology_layer').slideDown();
-	if(_techImg.length>1){
-		if(_idx==0){
-			jQuery('.technology_layer .arrow_l').addClass('disable');
-			jQuery('.technology_layer .arrow_r').removeClass('disable');
-		}else if(_idx==_techImg.length-1){
-			jQuery('.technology_layer .arrow_r').addClass('disable');
-			jQuery('.technology_layer .arrow_l').removeClass('disable');
-		}else{
-			jQuery('.technology_layer .arrow_r').removeClass('disable');
-			jQuery('.technology_layer .arrow_l').removeClass('disable');
-		}
-	}
-
-}
-
-function techLayerClose(){
-	jQuery('.technology_layer').slideUp();
-}
-
-function techLayerLeft(){
-	if(isTechRolling) return false;
-	isTechRolling=true;
-	if(jQuery('.technology_layer .arrow_l').hasClass('disable')){
-		isTechRolling=false;
-		return false;
-	}
-	var _techImg=jQuery('.technology_layer .layer_body .techbox');
-	var _viewidx;
-	_techImg.each(function(){
-		if(jQuery(this).css('display')=='block' || jQuery(this).css('display')=='inline') _viewidx=jQuery(this).index();
-	});
-
-	setTechBanner(_viewidx-1);
-	setTimeout('isTechRolling=false',500);
-	return false;
-}
-
-function techLayerRight(){
-	if(isTechRolling) return false;
-	isTechRolling=true;
-	if(jQuery('.technology_layer .arrow_r').hasClass('disable')){
-		isTechRolling=false;
-		return false;
-	}
-	var _techImg=jQuery('.technology_layer .layer_body .techbox');
-	var _viewidx;
-	_techImg.each(function(){
-		if(jQuery(this).css('display')=='block' || jQuery(this).css('display')=='inline') _viewidx=jQuery(this).index();
-	});
-
-	setTechBanner(_viewidx+1);
-	setTimeout('isTechRolling=false',500);
-	return false;
-}
-
-function techBoxOpen(o){
-
-	var _obj=jQuery(o).parent();
-	var moveval=338;
-	var _obj_moveval=_obj.parent('li').index()+1;
-	_obj_moveval=169*_obj_moveval;
-
-	var _cssVal=_obj.siblings('.techlist_cont').css('display');
-
-	if(_cssVal=='block' ||_cssVal=='inline'){
-		_obj.siblings('.techlist_cont').slideUp();
-	}else{
-		jQuery('.techlist li div.techlist_cont').slideUp();
-		_obj.siblings('.techlist_cont').slideDown();
-	}
-	var mv=(moveval+_obj_moveval)-50;
-	jQuery("html, body").animate({scrollTop:mv+'px'},300);
-
-
-}
-
-function techBoxClose(){
-	jQuery('.techlist li div.techlist_cont').slideUp();
-}
-
 function blurAction(obj,moveId,dir,obj2){
 	if(dir == 0){ /* just use the tab key */
 		if(tabval == 1){
@@ -374,54 +222,6 @@ function blurAction(obj,moveId,dir,obj2){
 
 }
 
-
-function openReviewBox(o){
-	var _obj=jQuery(o);
-	if(_obj.hasClass('open')){
-		_obj.removeClass('open');
-		_obj.parent().siblings('.review_box_body').css('height','0');
-		_obj.parent().siblings('.review_box_body').find('.review_left').hide();
-		_obj.parent().siblings('.review_box_body').find('.review_right').hide();
-	}else{
-		jQuery('.review_list .review_box').each(function(){
-			_obj.find('.review_box_head a').removeClass('open');
-			_obj.find('.review_box_body').css('height','0');
-			_obj.find('.review_box_body').find('.review_left').hide();
-			_obj.find('.review_box_body').find('.review_right').hide();
-		});
-		_obj.addClass('open');
-		_obj.parent().siblings('.review_box_body').css('height','auto');
-		_obj.parent().siblings('.review_box_body').find('.review_left').fadeIn();
-		_obj.parent().siblings('.review_box_body').find('.review_right').fadeIn();
-	}
-
-	return false;
-}
-
-function openReviewBoxAll(){
-	jQuery('.review_list .review_box').each(function(){
-		if(!jQuery(this).find('.review_box_head a').hasClass('open')){
-			jQuery(this).find('.review_box_head a').addClass('open');
-			jQuery(this).find('.review_box_body').css('height','auto');
-			jQuery(this).find('.review_box_body').find('.review_left').fadeIn();
-			jQuery(this).find('.review_box_body').find('.review_right').fadeIn();
-		}
-	});
-	return false;
-}
-
-function closeReviewBoxAll(){
-	var idx=0;
-	jQuery('.review_list .review_box').each(function(){
-		if(jQuery(this).find('.review_box_head a').hasClass('open')){
-			jQuery(this).find('.review_box_head a').removeClass('open');
-			jQuery(this).find('.review_box_body').css('height','0');
-			jQuery(this).find('.review_box_body').find('.review_left').hide();
-			jQuery(this).find('.review_box_body').find('.review_right').hide();
-		}
-	});
-	return false;
-}
 
 (function($){
 	$.fn.adislider=function(options){
@@ -953,166 +753,7 @@ function closeReviewBoxAll(){
 		}
 	}
 
-	/**
-	* $.fn.cmtSelectInit
-	* 커스텀 셀렉트박스 활성화 함수 (즁복으로 이벤트가 적용되지 않기 때문에 스크립트로 HTML 생성 시 사용가능 )
-	*/
-	$.fn.cmtSelectInit = function(){
-		$('.selectbox-ctm').each(function(){
-			var elemContainer = $(this);
-			var elemOpions = elemContainer.find('.select-contents').find('*[data-option-value],[data-option-value=""]');
 
-			elemOpions.each(function(){
-				var $this = $(this);
-				var optionText = (function(){
-					if($this.attr('data-option-text') == undefined){
-						return $this.find('*').text()
-					}else{
-						return $this.attr('data-option-text');
-					}
-				})();
-
-				var optionValue = $(this).attr('data-option-value');
-
-				if($this.hasClass('selected')){
-					elemContainer.find('>a').text(optionText);
-					elemContainer.attr('data-value',optionValue);
-				}
-			});
-
-			if(!$(this).data('events')){
-				elemContainer.bind('click',toggleSelecbox);
-			}
-
-
-			if(!elemOpions.eq(0).data('events')){
-
-				elemOpions.bind('click',function(){
-					var $this = $(this);
-					if($(this).hasClass('disable')){
-						return false;
-					}
-
-
-					if(!!elemContainer.data('callback') && !!elemContainer.data('callback').before){
-						var beforeCallbackResult = elemContainer.data('callback').before.call($(this),$this.attr('data-option-value'),$this.index());
-						if(beforeCallbackResult === false){
-							return;
-						}
-					}
-
-					var optionText = (function(){
-						if($this.attr('data-option-text') == undefined){
-							return $this.find('*').text()
-						}else{
-							return $this.attr('data-option-text');
-						}
-
-					})();
-
-					elemOpions.removeClass('selected');
-					$this.addClass('selected');
-					elemContainer.find('>a').text(optionText);
-					elemContainer.attr('data-value',$this.attr('data-option-value'));
-
-					if(!!elemContainer.data('callback') && !!elemContainer.data('callback').after){
-						elemContainer.data('callback').after.call($this,$this.attr('data-option-value'),$this.index());
-					}
-				});
-			}
-
-
-			function toggleSelecbox(event){
-				event.stopPropagation();
-				if($(this).hasClass('open')){
-					$('.selectbox-ctm').removeClass('open');
-					$(this).removeClass('open');
-				}else{
-					$('.selectbox-ctm').removeClass('open');
-					$(this).addClass('open');
-				}
-			}
-		});
-	};
-
-	/**
-	* $.fn.ctmSelectSetCallback
-	* 커스텀 셀렉트 박스에 callback(before , after) 함수 추가 (최소 1개)
-	* @param {Object} callback
-	*        before : function,
-	*        after : function
-	*/
-	$.fn.ctmSelectSetCallback = function(callback){
-		$(this).data('callback',callback);
-	}
-
-	/**
-	* $.fn.cmtInputInit
-	* 커스텀 인풋박스 활성화 함수 (즁복으로 이벤트가 적용되지 않기 때문에 스크립트로 HTML 생성 시 사용가능 )
-	*/
-	$.fn.cmtInputInit = function(){
-
-		$this = $(this);
-		$('.input-ctm').each(function(){
-			if(!!$(this).data('events')){
-				return;
-			}
-
-			if($(this).find('input').is(':checked')){
-				$(this).addClass('checked');
-			}
-
-			$(this).bind('click',function(event){
-
-				event.preventDefault();
-				event.stopPropagation();
-
-				var inputElem = $(this).find('input');
-
-				if(!!$(this).data('callback') && !!$(this).data('callback').before){
-					var beforeCallbackResult = $(this).data('callback').before.call($(this));
-					if(beforeCallbackResult === false){
-						return;
-					}
-				}
-
-
-				if($(this).find('input').is(':checked') && $(this).hasClass('checked')){
-
-					if($(this).hasClass('input-check-ctm')){
-						$(this).removeClass('checked').find('input').attr('checked',false);
-					}
-
-				}else{
-					if($(this).hasClass('input-radio-ctm')){
-						$('input[type="radio"][name="'+$(this).find('input[type="radio"]').attr('name')+'"]').attr('checked',false).parent().removeClass('checked');
-					}
-
-					$(this).addClass('checked').find('input').attr('checked',true);
-				}
-
-
-
-				if(!!$(this).data('callback') && !!$(this).data('callback').after){
-					$(this).data('callback').after.call($(this));
-				}
-
-
-				return false;
-			});
-		});
-	};
-
-	/**
-	* $.fn.ctmInputSetCallback
-	* 커스텀 인풋박스에 callback(before , after) 함수 추가 (최소 1개)
-	* @param {Object} callback
-	*        before : function,
-	*        after : function
-	*/
-	$.fn.ctmInputSetCallback = function(callback){
-		$(this).data('callback',callback);
-	}
 
 	$(document).ready(function(){
 
@@ -1392,6 +1033,16 @@ function closeReviewBoxAll(){
 				$(this).parent().siblings('.status').text($(this).attr('title'));
 				$(this).addClass('on');
 			});
+
+
+			$(this).find('.radio_container>div').bind('click',function(){
+				if($(this).hasClass('on')){
+					return;
+				}
+				$(this).parent().find('div').removeClass('on');
+				$(this).addClass('on');
+			});
+
 		});
 
 
