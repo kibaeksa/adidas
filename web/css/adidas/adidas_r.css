@@ -1125,7 +1125,7 @@ div.error .btn {width:700px; height:30px; text-align:center; margin-top:20px;}
 .top_bnn{overflow:hidden;background:#e0e0e0;text-align:center;position:relative;z-index:500;}
 
 .ct950{width:950px;margin:0 auto;}
-.spt_bg{background:url('/images/adidas/common/adidas_spirite.png?v=161227') 0 0 no-repeat;display:block;}
+.spt_bg{background:url('/images/adidas/common/adidas_spirite.png?v=170217') 0 0 no-repeat;display:block;}
 .ir{position:absolute;z-index:0;text-align:center;font:11px 'dotum','verdana';display:block;top:0;left:0;text-decoration:underline}
 .oo_label{position:absolute;top:0;left:0;display:block;}
 .oo_label img{width:100%;height:100%;}
@@ -1265,6 +1265,19 @@ div.error .btn {width:700px; height:30px; text-align:center; margin-top:20px;}
 
 .modal-popup-wrapper>.popup .popup-contents{
 	padding: 0 30px 40px;
+}
+
+.modal-popup-wrapper.not_layer{
+	position: relative;
+	top: 0;
+	left: 0;
+	display: block;
+}
+.modal-popup-wrapper.not_layer>.popup{
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
 }
 
 
@@ -2866,7 +2879,7 @@ div.cont758 .prodlist li .focus_prod{position:absolute;top:0;left:0;width:172px;
 div.cont758 .prodlist li .img{padding:7px 0 0;text-align:center;position:relative;z-index:1;}
 div.cont758 .prodlist li .img .product-badge{z-index:2;left: 6px;}
 div.cont758 .prodlist li .img a{width:170px;height: 170px;margin:0 auto;display:block;position:relative;}
-div.cont758 .prodlist li .logo{height:32px;margin:13px 0 6px 10px;}
+div.cont758 .prodlist li .logo{width:30px;height:23px;background-position:-100px -30px;margin:13px 0 6px 10px;}
 div.cont758 .prodlist li .logo.ss{width:24px;height:23px;background-position:-100px 0;text-indent:-5000px}
 div.cont758 .prodlist li .logo.sp{width:30px;height:23px;background-position:-100px -30px;text-indent:-5000px}
 div.cont758 .prodlist li .logo.neo{width:55px;height:8px;margin-top:17px;background:url(//image.adidas.co.kr/images/adidas/common/bg_logo_neo.png) 0 0 no-repeat;text-indent:-5000px;}
@@ -6214,6 +6227,10 @@ Update
 }
 
 .payment-main .deliv_form .col_body .col .addrbox input[type="text"][disabled=""]{
+	background: #fff;
+}
+
+.payment-main .deliv_form .col_body .col .addrbox.disabled input[type="text"]{
 	background: #ebebeb;
 }
 
@@ -8378,19 +8395,6 @@ Update
 }
 
 /* Find id and password  */
-.modal-popup-wrapper.modal-popup-find_idpwd{
-	position: relative;
-	top: 0;
-	left: 0;
-	display: block;
-}
-.modal-popup-wrapper.modal-popup-find_idpwd>.popup{
-	width: 100%;
-	position: relative;
-	top: 0;
-	left: 0;
-}
-
 .modal-popup-wrapper.modal-popup-find_idpwd>.popup .select_type{
 	margin-bottom: 20px;
 }
@@ -8524,4 +8528,163 @@ Update
 
 .modal-popup-wrapper.modal-popup-find_idpwd>.popup .pwd_result_box .box.last .button_area{
 	left: 30px;
+}
+
+/* Add address popup */
+.modal-popup-wrapper.modal-popup-add_address{
+	width: 660px;
+}
+
+.modal-popup-wrapper.modal-popup-add_address .payment-main{
+	margin-bottom: 30px;
+}
+
+.modal-popup-wrapper.modal-popup-add_address .payment-main .deliv_form{
+	padding: 30px 0;
+	border-top: 1px solid  #000;
+	border-bottom: 1px solid  #000;
+}
+
+.modal-popup-wrapper.modal-popup-add_address .btn_area{
+	overflow: hidden;
+}
+
+.modal-popup-wrapper.modal-popup-add_address .btn_area .btn-ctm{
+	width: 170px;
+	float: left;
+	margin-right: 10px;
+}
+
+.modal-popup-wrapper.modal-popup-add_address .btn_area .btn-lgray{
+	width: 100px;
+}
+
+/* Manage address popup */
+.modal-popup-wrapper.modal-popup-manage_address{
+	width: 880px;
+}
+
+.modal-popup-wrapper.modal-popup-manage_address .tab_list{
+	border-bottom: 1px solid  #000;
+	overflow: hidden;
+	height: 44px;
+}
+
+.modal-popup-wrapper.modal-popup-manage_address .tab_list a{
+	display: block;
+	width: 170px;
+	height: 44px;
+	float: left;
+	text-align: center;
+	font:14px/44px 'NotoSansKRRegular','Nanum Gothic';
+	color: #999;
+	background: #ececec;
+}
+
+.modal-popup-wrapper.modal-popup-manage_address .tab_list a.on{
+	color: #fff;
+	background: #000;
+}
+
+.modal-popup-wrapper.modal-popup-manage_address .tab_contents_wrap{
+	position: relative;
+}
+
+.modal-popup-wrapper.modal-popup-manage_address .tab_contents_wrap .tab_cont_box{
+	display: none;
+}
+
+.modal-popup-wrapper.modal-popup-manage_address .utils{
+	position: relative;
+	padding-left: 20px;
+	height: 60px;
+}
+
+.modal-popup-wrapper.modal-popup-manage_address .utils .tit{
+	padding-left: 10px;
+	position: relative;
+	float: left;
+	margin-top: 21px;
+	font:14px/14px 'NotoSansKRBold','Nanum Gothic';
+	color: #000;
+	letter-spacing: -0.5px;
+}
+
+.modal-popup-wrapper.modal-popup-manage_address .utils .tit .bul{
+	width: 2px;
+	height: 2px;
+	background: #000;
+	position: absolute;
+	top: 7px;
+	left: 0;
+}
+
+.modal-popup-wrapper.modal-popup-manage_address .utils .add_addr{
+	height: 16px;
+	display: block;
+	position: absolute;
+	top: 21px;
+	right: 20px;
+	padding-right: 22px;
+	background:url('//image.adidas.co.kr/images/adidas/order/ico_add.gif') right 0 no-repeat;
+	font:14px/14px 'NotoSansKR','Nanum Gothic';
+	color: #027dbf;
+}
+
+.modal-popup-wrapper.modal-popup-manage_address table{
+	width: 100%;
+}
+
+.modal-popup-wrapper.modal-popup-manage_address table th{
+	height: 45px;
+	background: #ececec;
+	text-align: center;
+	font:13px/13px 'NotoSansKRRegular','Nanum Gothic';
+	color: #000;
+}
+
+.modal-popup-wrapper.modal-popup-manage_address table td{
+	padding: 15px 0;
+	border-bottom: 1px solid  #ebebeb;
+	text-align: center;
+	font:13px/17px 'NotoSansKRRegular','Nanum Gothic';
+	color: #000;
+}
+
+.modal-popup-wrapper.modal-popup-manage_address table .selected td{
+	font-family:'NotoSansKR','Nanum Gothic';
+}
+
+.ie7 .modal-popup-wrapper.modal-popup-manage_address table .selected td,
+.ie8 .modal-popup-wrapper.modal-popup-manage_address table .selected td{
+	font-weight: bold;
+}
+
+.modal-popup-wrapper.modal-popup-manage_address table tr:last-child td{
+	border-bottom-width: 0;
+}
+
+.modal-popup-wrapper.modal-popup-manage_address table td.addr{
+	padding-left: 10px;
+	text-align: left;
+}
+
+.modal-popup-wrapper.modal-popup-manage_address table td .input-radio-ctm label{
+	padding-left: 24px;
+}
+
+.modal-popup-wrapper.modal-popup-manage_address .btn_area{
+	padding-top: 20px;
+	border-top: 1px solid  #000;
+	overflow: hidden;
+}
+
+.modal-popup-wrapper.modal-popup-manage_address .btn_area .btn-ctm{
+	width: 170px;
+	float: left;
+	margin-right: 10px;
+}
+
+.modal-popup-wrapper.modal-popup-manage_address .btn_area .btn-lgray{
+	width: 100px;
 }

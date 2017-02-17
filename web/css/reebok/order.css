@@ -259,7 +259,56 @@ div.write table tr td input {color:#888;font:11px 'dotum','돋움';padding:3px 2
 
 div.write table tr td input.disabled{background: #ebebeb;}
 
+div.write table tr td input:disabled{background: #ebebeb;}
+
 div.write table tr td input.addr {margin-top:5px;_margin-top:3px;}
+
+div.write table tr td .addrbox{
+	position: relative;
+	width: 380px;
+	padding-left:60px;
+	height: 21px;
+	border: 1px solid  #ccc;
+	margin-top: 5px;
+}
+
+div.write table tr td .addrbox input[type="text"]{
+	width: 355px;
+	height: 20px;
+	font:11px/20px 'Dotum' !important;
+	padding-top: 0;
+	border-width: 0 !important;
+	margin-top: 0;
+}
+
+div.write table tr td .addrbox span{
+	position: absolute;
+	top: 4px;
+	left: 10px;
+	color: #aaa;
+}
+
+div.write table tr td .addrbox.disabled{
+	background: #ebebeb;
+}
+
+div.write table tr td .addrbox.disabled input{
+	background: #ebebeb;
+}
+
+div.write table tr td .addrbox.non{
+	width: 440px;
+	padding-left: 0;
+}
+
+div.write table tr td .addrbox.non span{
+	display: none;
+}
+
+div.write table tr td .addrbox.non input[type="text"]{
+	width: 430px;
+	outline:none;
+}
 
 div.write table tr td textarea {padding:3px 2px 0 8px;font:11px 'dotum','돋움';}
 
