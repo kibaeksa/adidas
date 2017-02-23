@@ -67,7 +67,7 @@ html{
 .element_to_pop_up{
 		background-color:#fafafb;
 	    color:#000;
-	    display:none; 
+	    display:none;
 	    width: 320px;
 	    overflow: hidden;
 	    @media screen and (max-width: 320px) {
@@ -88,13 +88,13 @@ html{
 	    	text-align: center;
 	    	img{
 	    		width: 80%;
-	    	} 
+	    	}
 	    }
 	    .desc{
 	    	// float: right;
 	    	background:url('/images/reebok/about/heritage/pop_bg.png') 0 0 no-repeat;
 	    	background-size: 100% 100%;
-	    	// width: 100%; 
+	    	// width: 100%;
 	    	// height: 300px;
 	    	padding: 3.5rem 0;
 	    	.tle{
@@ -172,7 +172,7 @@ footer#footer{
 
 .clearfix{
 	&:after{
-		content:'.'; 
+		content:'.';
 		display:block;
 		height:0;
 		font-size:0;
@@ -193,11 +193,11 @@ footer#footer{
 	&:after,
 	&:before{
 		@extend .pseudo-element;
-		width:50%;	
-		height: 1px;	
-		position: absolute;	
-		top:50%;	
-		left:50%;	
+		width:50%;
+		height: 1px;
+		position: absolute;
+		top:50%;
+		left:50%;
 		transform:translate3d(-50%,-50%,0) rotate(45deg);
 		-webkit-transform:translate3d(-50%,-50%,0) rotate(45deg);
 		background: #5c5c5c;
@@ -232,12 +232,12 @@ footer#footer{
 			font:500 1.3rem 'dinpro','NotoSansKRRegular';
 			color: #000;
 			border: 1px solid  #000;
-		}	
+		}
 	}
-	
+
 
 	.video_visual{
-		@include box-sizing(border-box); 
+		@include box-sizing(border-box);
 		width: 100%;
 		padding-bottom: 1185px / 960px * 100%;
 		position: relative;
@@ -249,7 +249,7 @@ footer#footer{
 			left: 0;
 			transform:translate3d(0,-50%,0);
 			-webkit-transform:translate3d(0,-50%,0);
-			
+
 			z-index: 1
 		}
 		.bg{
@@ -291,14 +291,14 @@ footer#footer{
 				position: relative;
 				z-index: 3;
 			}
-			
+
 
 			&:before{
 				@extend .pseudo-element;
 				width: 100%;
 				height: 100%;
 				transition:all 0.5s;
-				-webkit-transition:all 0.5s;	
+				-webkit-transition:all 0.5s;
 				background: #000;
 				filter:blur(10px);
 				-webkit-filter:blur(10px);
@@ -402,7 +402,7 @@ footer#footer{
 			margin: 0px 2px;
 			font-family:'dinpro';
 			font-weight: 100;
-		}	
+		}
 	}
 
 	// num_paging
@@ -444,9 +444,9 @@ footer#footer{
 
 			h2{
 				p{
-					font: 5.4rem/5rem 'QStencil';	
+					font: 5.4rem/5rem 'QStencil';
 				}
-				margin-bottom: 1.2rem;    			
+				margin-bottom: 1.2rem;
 			}
 
 			.desc{
@@ -489,9 +489,11 @@ footer#footer{
 				}
 			}
 		}
+
+
 	}
 	// video_visual
-	
+
 	.camapign_list{
 		a{
 			width: 100%;
@@ -501,12 +503,12 @@ footer#footer{
 		img{
 			width: 100%;
 		}
-		
+
 	}
 }
 
 .about_camapign{
-	
+
 	.prodlist{
 		width: 100%;
 		padding: 0 15px;
@@ -566,7 +568,7 @@ footer#footer{
 				.tit{
 					a{
 						color: #252525;
-						font:500 1.4rem 'dinpro';	
+						font:500 1.4rem 'dinpro';
 					}
 					// font:'DINWebPro-Cond';
 				}
@@ -577,7 +579,7 @@ footer#footer{
 			padding-right: 0;
 			padding-left: 5px;
 		}
-	}	
+	}
 
 	.banner{
 		width: 100%;
@@ -621,7 +623,7 @@ footer#footer{
 
 // ufc start
 .about_camapign.ufc{
-	.video_visual .cover{		
+	.video_visual .cover{
 		display: block;
 		>*{
 			color: #fff;
@@ -667,7 +669,7 @@ footer#footer{
 
 		.contents{
 			position: relative;
-			margin-top: 1px;			
+			margin-top: 1px;
 			.bg img{
 				width: 100%;
 			}
@@ -717,8 +719,8 @@ footer#footer{
 
 						&:before{
 							@extend .pseudo-element;
-							width: 0; 
-							height: 0; 
+							width: 0;
+							height: 0;
 							border-left: 10px solid transparent;
 							border-right: 10px solid transparent;
 							border-top: 10px solid #028fe8;
@@ -741,7 +743,7 @@ footer#footer{
 						height: 3rem;
 						display: block;
 						margin: 0 auto;
-						font:300 1.2rem/3rem 'dinpro';						
+						font:300 1.2rem/3rem 'dinpro';
 						border: 1px solid  #fff;
 						letter-spacing:2px;
 					}
@@ -763,7 +765,7 @@ footer#footer{
 					right: 5%;
 					text-align: right;
 					img{
-						width: 55%;		
+						width: 55%;
 					}
 				}
 			}
@@ -771,7 +773,7 @@ footer#footer{
 		}
 	}
 	// stories_fighters
-	
+
 	.products{
 		width: 100%;
 		background:#252525;
@@ -799,7 +801,7 @@ footer#footer{
 			}
 		}
 		// prodlist_wrap
-		
+
 		.num_paging{
 			padding: 1rem 0 3rem;
 
@@ -809,7 +811,7 @@ footer#footer{
 				color: #252525;
 			}
 		}
-		
+
 	}
 	// products
 }
@@ -830,8 +832,8 @@ footer#footer{
 		left: 0;
 		background: #000;
 		overflow: hidden;
-		@include box-sizing(border-box); 
-		transition:opacity 0.2s;		
+		@include box-sizing(border-box);
+		transition:opacity 0.2s;
 		-webkit-transition:opacity 0.2s;
 
 		&:before,
@@ -870,7 +872,7 @@ footer#footer{
 
 			&:before{
 				transform:rotate(20deg) translate3d(-56%, -50%, 0);
-				-webkit-transform:rotate(20deg) translate3d(-56%, -50%, 0);	
+				-webkit-transform:rotate(20deg) translate3d(-56%, -50%, 0);
 			}
 
 			&:after{
@@ -899,10 +901,10 @@ footer#footer{
 		}
 
 		&#conor_layerpopup{
-			
+
 			&:before,
 			&:after{
-				background: #1e672f;	
+				background: #1e672f;
 			}
 
 			&:before{
@@ -920,7 +922,7 @@ footer#footer{
 				&:before{
 					transform:rotate(-20deg) translate3d(152%, -20%, 0);
 					-webkit-transform:rotate(-20deg) translate3d(152%, -20%, 0);
-					
+
 				}
 
 				&:after{
@@ -950,19 +952,19 @@ footer#footer{
 			}
 
 			.contents .text_box .a{
-				
+
 			}
 
 			.contents .back{
 				margin:0 0 4rem 1.5rem;
 			}
-		}		
+		}
 
 		.inner{
 			width: 100%;
 			padding-top: 4rem;
 			position: relative;
-			@include box-sizing(border-box); 
+			@include box-sizing(border-box);
 
 			.header{
 				position: relative;
@@ -972,12 +974,12 @@ footer#footer{
 					color: #fff;
 					text-align: center;
 				}
-				h2{				
+				h2{
 					font:5001.5rem/2rem 'dinpro';
 					letter-spacing:0.5px;
 				}
 
-				h3{				
+				h3{
 					font:2.3rem/2rem 'NotoSansKRLight';
 					letter-spacing:0.5px;
 
@@ -1053,15 +1055,15 @@ footer#footer{
 }
 
 
-.about_camapign.gigi_hadid{	
+.about_camapign.gigi_hadid{
 
 	.video_visual{
 		h2{
 			margin-bottom: 1.5rem;
 			text-align: center;
 			img{
-				width: 70%;	
-			}			
+				width: 70%;
+			}
 		}
 
 		.desc{
@@ -1140,7 +1142,7 @@ footer#footer{
 					width: 100%;
 				}
 			}
-			
+
 			.owl-carousel{
 				width: 100%;
 				position: relative;
@@ -1153,7 +1155,7 @@ footer#footer{
 
 			.owl-stage{
 				width: 100%;
-				position: relative;			
+				position: relative;
 				overflow: hidden;
 			}
 
@@ -1192,9 +1194,9 @@ footer#footer{
 					display: inline-block;
 					border: 1px solid #fff;
 					box-sizing:border-box;
-					color: #fff;					
+					color: #fff;
 					transition-duration: 0s;
-					-webkit-transition-duration: 0s;					
+					-webkit-transition-duration: 0s;
 
 					span{
 						font:16px/26px 'reefont-condensed';
@@ -1291,7 +1293,7 @@ footer#footer{
 
 				.ico{
 					text-align: center;
-	
+
 					div{
 						margin-bottom: 1.2rem;
 						position: relative;
@@ -1306,10 +1308,10 @@ footer#footer{
 							position: absolute;
 							top: -0.5rem;
 							left: 0;
-							width: 0; 
-							height: 0; 
+							width: 0;
+							height: 0;
 							border-top:0.5rem solid transparent;
-							border-bottom:0.5rem solid transparent; 
+							border-bottom:0.5rem solid transparent;
 							border-left:0.5rem solid #252525;
 						}
 					}
@@ -1331,7 +1333,7 @@ footer#footer{
 				&.gray{
 					.ico{
 						div{
-							&:before{								
+							&:before{
 								border-left-color:#6a6969 !important;
 							}
 						}
@@ -1362,12 +1364,12 @@ footer#footer{
 					strong{
 						margin-top: 2rem;
 						// display: block;
-						font:1.3rem/2.6rem 'NotoSansKR';	
+						font:1.3rem/2.6rem 'NotoSansKR';
 						color: #f4a099;
 					}
 				}
 				.img{
-					position: relative;				
+					position: relative;
 					text-align: right;
 
 					&:before{
@@ -1382,12 +1384,12 @@ footer#footer{
 						    -webkit-transform: skew(-8.4deg) translate3d(-15px,0,0);
 						    background: #44518c;
 						    opacity: 0;
-					}				
+					}
 
 					img{
 						width: 70%;
 						opacity: 0;
-					}					
+					}
 
 				}
 
@@ -1410,14 +1412,14 @@ footer#footer{
 							transform: skew(-11deg) translate3d(15px,0,0);
 						    -webkit-transform: skew(-11deg) translate3d(15px,0,0);
 						    background: #931123;
-						}	
+						}
 					}
-					
+
 				}
 			}
 
 			.active{
-				opacity: 1;								
+				opacity: 1;
 				transition:opacity 0.3s;
 				-webkit-transition:opacity 0.3s;
 
@@ -1454,10 +1456,10 @@ footer#footer{
 							transition:all 0.3s ease 1.15s;
 							-webkit-transition:all 0.3s ease 0.15s;
 						}
-					}					
+					}
 				}
 			}
-			
+
 		}
 	}
 
@@ -1496,12 +1498,12 @@ footer#footer{
 						width: 100%;
 					}
 				}
-			}			
+			}
 		}
 
 		.prodlist_wrap{
 			position: relative;
-			
+
 			.prodlist{
 				position: absolute;
 				top: 0;
@@ -1510,7 +1512,7 @@ footer#footer{
 				opacity: 0;
 				transition:opacity 0.3s;
 				-webkit-transition:opacity 0.3s;
-				z-index: 1;	
+				z-index: 1;
 
 				.tit{
 					height: 1.4rem;
@@ -1519,10 +1521,10 @@ footer#footer{
 					display: -webkit-box;
 					overflow: hidden;
 					text-overflow: ellipsis;
-					white-space:normal;	
+					white-space:normal;
 					-webkit-line-clamp:1;
 					-webkit-box-orient: vertical;
-				}			
+				}
 			}
 
 			.active{
@@ -1542,7 +1544,7 @@ footer#footer{
 		.video_visual{
 			.bg{
 				overflow: hidden;
-				img{					
+				img{
 					position: absolute;
 					top: 0;
 					left: 0;
@@ -1555,7 +1557,7 @@ footer#footer{
 
 					&.remove_ready{
 						transform:scale(1);
-						-webkit-transform:scale(1);						
+						-webkit-transform:scale(1);
 					}
 
 					&.active{
@@ -1635,10 +1637,10 @@ footer#footer{
 					&.active{
 						background: #000;
 						span{
-							color: #fff;	
+							color: #fff;
 						}
 					}
-				}	
+				}
 			}
 		}
 
@@ -1675,7 +1677,7 @@ footer#footer{
 				.img{
 					&:before{
 						display: none;
-					}	
+					}
 
 					&.abt{
 						width: 100%;
@@ -1700,7 +1702,7 @@ footer#footer{
 						-webkit-transform: translate3d(0,0,0);
 					}
 				}
-				
+
 			}
 
 			.box{
@@ -1726,7 +1728,7 @@ footer#footer{
 
 						&:before{
 							display: none;
-						}		
+						}
 
 						img{
 							width: 88%;
@@ -1769,7 +1771,7 @@ footer#footer{
 
 						&:before{
 							display: none;
-						}		
+						}
 
 						img{
 							width: 95%;
@@ -1795,21 +1797,22 @@ footer#footer{
 
 			}
 
-			
+
 		}
 	}
 
 }
+
 .about_camapign.about2l{
 	background: #5c5c5c url('/images/reebok/about/2l/bg.jpg') 0 0 repeat;
-	
+
 	.video_visual{
 		h2{
 			margin-bottom: 1.5rem;
 			text-align: center;
 			img{
-				width: 70%;	
-			}			
+				width: 70%;
+			}
 		}
 
 		.desc{
@@ -1882,7 +1885,7 @@ footer#footer{
 					width: 100%;
 				}
 			}
-			
+
 			.owl-carousel{
 				width: 100%;
 				position: relative;
@@ -1895,7 +1898,7 @@ footer#footer{
 
 			.owl-stage{
 				width: 100%;
-				position: relative;			
+				position: relative;
 				overflow: hidden;
 			}
 
@@ -1934,9 +1937,9 @@ footer#footer{
 					display: inline-block;
 					border: 1px solid #fff;
 					box-sizing:border-box;
-					color: #fff;					
+					color: #fff;
 					transition-duration: 0s;
-					-webkit-transition-duration: 0s;					
+					-webkit-transition-duration: 0s;
 
 					span{
 						font:16px/26px 'reefont-condensed';
@@ -2044,12 +2047,12 @@ footer#footer{
 						width: 100%;
 					}
 				}
-			}			
+			}
 		}
 
 		.prodlist_wrap{
 			position: relative;
-			
+
 			.prodlist{
 				position: absolute;
 				top: 0;
@@ -2058,7 +2061,7 @@ footer#footer{
 				opacity: 0;
 				transition:opacity 0.3s;
 				-webkit-transition:opacity 0.3s;
-				z-index: 1;	
+				z-index: 1;
 
 				.tit{
 					height: 1.4rem;
@@ -2067,10 +2070,10 @@ footer#footer{
 					display: -webkit-box;
 					overflow: hidden;
 					text-overflow: ellipsis;
-					white-space:normal;	
+					white-space:normal;
 					-webkit-line-clamp:1;
 					-webkit-box-orient: vertical;
-				}			
+				}
 			}
 
 			.active{
@@ -2090,7 +2093,7 @@ footer#footer{
 	.slider ul{position: relative; width:100%; height: 30rem;}
 	.slider ul li{ position: absolute; top:0; left:-999px; float:left; position: relative;}
 	.slider ul li img{ width: 100%; }
-	
+
 	.slider2{
 		position: relative;
 		margin: 1rem;
@@ -2105,9 +2108,9 @@ footer#footer{
 			}
 		}
 	}
-	
+
 	/*슬라이더 정보css*/
-	.info_section{ 
+	.info_section{
 		position: relative;
 		padding:1rem; height: 14rem;
 		overflow: hidden;
@@ -2175,7 +2178,7 @@ footer#footer{
 					display: none;
 				}
 				&.pos10_info{
-					
+
 					img{
 						width: 39%;
 					}
@@ -2185,7 +2188,7 @@ footer#footer{
 					display: none;
 				}
 				&.pos12_info{
-					
+
 					img{
 						width: 39%;
 					}
@@ -2225,10 +2228,10 @@ footer#footer{
 	.img_txt .shoe_area img{ width:80%; }
 	.img_txt p {text-align: center; font: 1.1rem/1.2rem 'NotoSansKR'; }
 	.img_txt p em{  font: 0.8rem/1.2rem 'NotoSansKR'; color:#7f7f7f; }
-	
+
 	.img_txt a { display: block; text-align: center; color:#8c8b8b; font: 1rem/1rem 'NotoSansKRBold';}
 	// a.buy{ color:#ed2512 !important; font: 1rem/1rem 'NotoSansKRBold'; }
-	
+
 	.img_section{
 		margin-left:-30rem;
 		opacity: 0;
@@ -2243,23 +2246,23 @@ footer#footer{
 	}
 	.section{ position: relative; }
 	/*상품 번호 위치*/
-	.p_num{ 
-		display: inline-block; width: 2rem; height:2rem; 
-		vertical-align: middle; background: #000; 
-		color:#fff; text-align:center;  cursor: pointer; 
+	.p_num{
+		display: inline-block; width: 2rem; height:2rem;
+		vertical-align: middle; background: #000;
+		color:#fff; text-align:center;  cursor: pointer;
 		font-size: 12px; font: 1.1rem/2rem 'NotoSansKRLight';
 	}
 	.p_num.pos a:hover  em{ @include opacity (1); }
 	.p_num.pos:hover a{ background: #b91c23;  @include opacity (0.7);  }
 	.p_num.pos a.on{ background: #b91c23;  @include opacity (0.7);  }
 	.p_num.pos a.no_active{ background: #000; @include opacity (0.3); }
-	
+
 	.p_num.pos{ background: transparent; width:3.5rem; height: 3.5rem; text-align: center;}
 
-	.p_num.pos a{ 
+	.p_num.pos a{
 		content: ''; display: inline-block;
-		width:100%; height: 100%; background: #000; 
-		opacity: .7; position: absolute; left:0; 
+		width:100%; height: 100%; background: #000;
+		opacity: .7; position: absolute; left:0;
 	}
 	/*깜빡효과*/
 	.p_num.pos a.blink{
@@ -2281,7 +2284,7 @@ footer#footer{
 	.p_num.pos6{ position: absolute; left:60%; top:57%; }
 
 	.p_num.pos em{ margin-left:1px; font: 1.3rem/3.5rem 'AdihausDIN'; position: relative; z-index: 10; border:2px solid transparent;}
-	
+
 	.pos5_info{ z-index: 10; }
 	.pos6_info{ z-index: 9; }
 
@@ -2301,7 +2304,7 @@ footer#footer{
 	.p_num.pos13{ position: absolute; left:36%; top:18%; }
 	.p_num.pos14{ position: absolute; left:50%; top:30%; }
 	.p_num.pos15{ position: absolute; left:59%; top:66%; }
-	
+
 
 	.pos7_info{ z-index: 10; }
 	.pos8_info{ z-index: 9; }
@@ -2317,14 +2320,14 @@ footer#footer{
 
 .about_camapign.kangsisters{
 	background: #5c5c5c url('/images/reebok/about/kangsisters/bg.jpg') 0 0 repeat;
-	
+
 	.video_visual{
 		h2{
 			margin-bottom: 1.5rem;
 			text-align: center;
 			img{
-				width: 70%;	
-			}			
+				width: 70%;
+			}
 		}
 
 		.desc{
@@ -2400,7 +2403,7 @@ footer#footer{
 					width: 100%;
 				}
 			}
-			
+
 			.owl-carousel{
 				width: 100%;
 				position: relative;
@@ -2413,7 +2416,7 @@ footer#footer{
 
 			.owl-stage{
 				width: 100%;
-				position: relative;			
+				position: relative;
 				overflow: hidden;
 			}
 
@@ -2452,9 +2455,9 @@ footer#footer{
 					display: inline-block;
 					border: 1px solid #fff;
 					box-sizing:border-box;
-					color: #fff;					
+					color: #fff;
 					transition-duration: 0s;
-					-webkit-transition-duration: 0s;					
+					-webkit-transition-duration: 0s;
 
 					span{
 						font:16px/26px 'reefont-condensed';
@@ -2624,11 +2627,11 @@ footer#footer{
 					&:after,
 					&:before{
 						@extend .pseudo-element;
-						width:50%;	
-						height: 1px;	
-						position: absolute;	
-						top:50%;	
-						left:50%;	
+						width:50%;
+						height: 1px;
+						position: absolute;
+						top:50%;
+						left:50%;
 						transform:translate3d(-50%,-50%,0) rotate(45deg);
 						-webkit-transform:translate3d(-50%,-50%,0) rotate(45deg);
 						background: #5c5c5c;
@@ -2645,14 +2648,14 @@ footer#footer{
 					position: relative;
 					z-index: 3;
 				}
-				
+
 
 				&:before{
 					@extend .pseudo-element;
 					width: 100%;
 					height: 100%;
 					transition:all 0.5s;
-					-webkit-transition:all 0.5s;	
+					-webkit-transition:all 0.5s;
 					background: #000;
 					filter:blur(10px);
 					-webkit-filter:blur(10px);
@@ -2755,15 +2758,15 @@ footer#footer{
 
 }
 
-.about_camapign.clubc{	
+.about_camapign.clubc{
 
 	.video_visual{
 		h2{
 			margin-bottom: 1.5rem;
 			text-align: center;
 			img{
-				width: 70%;	
-			}			
+				width: 70%;
+			}
 		}
 
 		.desc{
@@ -2787,7 +2790,7 @@ footer#footer{
 		}
 	}
 
-	
+
 
 	.about_clubc{
 		background:url('/images/reebok/about/clubc/bg.jpg') 0 -30px repeat-y;
@@ -2800,15 +2803,15 @@ footer#footer{
 			padding:3rem 3rem 1rem 3rem;
 			img{ width: 100%; }
 		}
-		
+
 
 		.contents{
 
-			
+
 
 			.box{
 				position: relative;
-				
+
 				>p{
 					position: absolute;
 					top: 3rem;
@@ -2824,19 +2827,19 @@ footer#footer{
 
 				}
 				.img{
-					position: relative;				
+					position: relative;
 					text-align: right;
 					// width: 100%;
 					height: 17rem;
 					img{
 						width: 14rem;
 
-					}				
+					}
 
 					img{
 						width: 70%;
 						opacity: 0;
-					}					
+					}
 
 				}
 				&.box1{
@@ -2886,7 +2889,7 @@ footer#footer{
 							}
 						}
 					}
-					
+
 				}
 				&.pack{
 					// height: 14rem;
@@ -2958,7 +2961,7 @@ footer#footer{
 						display: inline-block;
 						clear: both;
 					}
-					
+
 				}
 				&.box3{
 					@include opacity(0.2);
@@ -3029,10 +3032,10 @@ footer#footer{
 					}
 				}
 			}
-			
+
 
 			.active{
-				opacity: 1;								
+				opacity: 1;
 				transition:opacity 0.3s;
 				-webkit-transition:opacity 0.3s;
 
@@ -3090,31 +3093,31 @@ footer#footer{
 							transform:translate3d(-38px,0,0);
 							-webkit-transform:translate3d(-38px,0,0);
 						}
-					}				
+					}
 				}
 				&.box3{
 					@include opacity(1);
 					// transform:translate3d(0px,0,0);
 					// -webkit-transform:translate3d(0px,0,0);
 					transition:all ease 0.6s;
-					-webkit-transition:all ease 0.6s;			
+					-webkit-transition:all ease 0.6s;
 				}
 				&.box4{
 					@include opacity(1);
 					// transform:translate3d(0px,0,0);
 					// -webkit-transform:translate3d(0px,0,0);
 					transition:all ease 0.6s;
-					-webkit-transition:all ease 0.6s;			
+					-webkit-transition:all ease 0.6s;
 				}
 				&.box5{
 					@include opacity(1);
 					// transform:translate3d(0px,0,0);
 					// -webkit-transform:translate3d(0px,0,0);
 					transition:all ease 0.6s;
-					-webkit-transition:all ease 0.6s;			
+					-webkit-transition:all ease 0.6s;
 				}
 			}
-			
+
 		}
 	}
 	.clubc_gallery{
@@ -3133,7 +3136,7 @@ footer#footer{
 		ul{
 			display: inline-block;
 			li{
-				padding-right:3%; 
+				padding-right:3%;
 				float:left;
 				width: 48%;
 				img{
@@ -3188,12 +3191,12 @@ footer#footer{
 						width: 100%;
 					}
 				}
-			}			
+			}
 		}
 
 		.prodlist_wrap{
 			position: relative;
-			
+
 			.prodlist{
 				position: absolute;
 				top: 0;
@@ -3202,7 +3205,7 @@ footer#footer{
 				opacity: 0;
 				transition:opacity 0.3s;
 				-webkit-transition:opacity 0.3s;
-				z-index: 1;	
+				z-index: 1;
 
 				.tit{
 					height: 1.4rem;
@@ -3211,10 +3214,10 @@ footer#footer{
 					display: -webkit-box;
 					overflow: hidden;
 					text-overflow: ellipsis;
-					white-space:normal;	
+					white-space:normal;
 					-webkit-line-clamp:1;
 					-webkit-box-orient: vertical;
-				}			
+				}
 			}
 
 			.active{
@@ -3234,7 +3237,7 @@ footer#footer{
 		.video_visual{
 			.bg{
 				overflow: hidden;
-				img{					
+				img{
 					position: absolute;
 					top: 0;
 					left: 0;
@@ -3247,7 +3250,7 @@ footer#footer{
 
 					&.remove_ready{
 						transform:scale(1);
-						-webkit-transform:scale(1);						
+						-webkit-transform:scale(1);
 					}
 
 					&.active{
@@ -3327,10 +3330,10 @@ footer#footer{
 					&.active{
 						background: #000;
 						span{
-							color: #fff;	
+							color: #fff;
 						}
 					}
-				}	
+				}
 			}
 		}
 
@@ -3367,7 +3370,7 @@ footer#footer{
 				.img{
 					&:before{
 						display: none;
-					}	
+					}
 
 					&.abt{
 						width: 100%;
@@ -3392,7 +3395,7 @@ footer#footer{
 						-webkit-transform: translate3d(0,0,0);
 					}
 				}
-				
+
 			}
 
 			.box{
@@ -3418,7 +3421,7 @@ footer#footer{
 
 						&:before{
 							display: none;
-						}		
+						}
 
 						img{
 							width: 88%;
@@ -3461,7 +3464,7 @@ footer#footer{
 
 						&:before{
 							display: none;
-						}		
+						}
 
 						img{
 							width: 95%;
@@ -3487,7 +3490,7 @@ footer#footer{
 
 			}
 
-			
+
 		}
 	}
 
@@ -3664,7 +3667,7 @@ footer#footer{
 						width: 100%;
 					}
 				}
-				
+
 				.owl-carousel{
 					width: 100%;
 					position: relative;
@@ -3677,7 +3680,7 @@ footer#footer{
 
 				.owl-stage{
 					width: 100%;
-					position: relative;			
+					position: relative;
 					overflow: hidden;
 				}
 
@@ -3716,9 +3719,9 @@ footer#footer{
 						display: inline-block;
 						border: 1px solid #fff;
 						box-sizing:border-box;
-						color: #fff;					
+						color: #fff;
 						transition-duration: 0s;
-						-webkit-transition-duration: 0s;					
+						-webkit-transition-duration: 0s;
 
 						span{
 							font:16px/26px 'reefont-condensed';
@@ -3794,7 +3797,7 @@ footer#footer{
 					color:#fff;
 				}
 			}
-			
+
 		}
 	}
 	&.nano7{
@@ -3946,12 +3949,12 @@ footer#footer{
 							}
 						}
 					}
-				}			
+				}
 			}
 
 			.prodlist_wrap{
 				position: relative;
-				
+
 				.prodlist{
 					position: absolute;
 					top: 0;
@@ -3960,7 +3963,7 @@ footer#footer{
 					opacity: 0;
 					transition:opacity 0.3s;
 					-webkit-transition:opacity 0.3s;
-					z-index: 1;	
+					z-index: 1;
 
 					.tit{
 						height: 1.4rem;
@@ -3969,10 +3972,10 @@ footer#footer{
 						display: -webkit-box;
 						overflow: hidden;
 						text-overflow: ellipsis;
-						white-space:normal;	
+						white-space:normal;
 						-webkit-line-clamp:1;
 						-webkit-box-orient: vertical;
-					}			
+					}
 				}
 
 				.active{
@@ -4034,10 +4037,10 @@ footer#footer{
 			}
 		}
 	}
-	// nano 
+	// nano
 	&.nano7_m{
 		.main{
-			@include box-sizing(border-box); 
+			@include box-sizing(border-box);
 			position: relative;
 			width: 100%;
 			padding-bottom: 123%;
@@ -4102,7 +4105,7 @@ footer#footer{
 				width: 100%;
 				text-align: center;
 				top:87%;
-				
+
 				a{
 					display: inline-block;
 					padding:0.2rem 2.4rem 0 2.4rem;
@@ -4190,12 +4193,12 @@ footer#footer{
 							}
 						}
 					}
-				}			
+				}
 			}
 
 			.prodlist_wrap{
 				position: relative;
-				
+
 				.prodlist{
 					position: absolute;
 					top: 0;
@@ -4204,7 +4207,7 @@ footer#footer{
 					opacity: 0;
 					transition:opacity 0.3s;
 					-webkit-transition:opacity 0.3s;
-					z-index: 1;	
+					z-index: 1;
 
 					.tit{
 						height: 1.4rem;
@@ -4213,10 +4216,10 @@ footer#footer{
 						display: -webkit-box;
 						overflow: hidden;
 						text-overflow: ellipsis;
-						white-space:normal;	
+						white-space:normal;
 						-webkit-line-clamp:1;
 						-webkit-box-orient: vertical;
-					}			
+					}
 				}
 
 				.active{
@@ -4243,13 +4246,13 @@ footer#footer{
 				text-align: center;
 				text-transform: uppercase;
 				img{
-					@include box-sizing(border-box); 
+					@include box-sizing(border-box);
 					padding:0 10px;
 					width: 100%;
 				}
 			}
 			>.desc{
-				@include box-sizing(border-box); 
+				@include box-sizing(border-box);
 				padding:0 10px 15px 0;
 				font:500 1rem/1.5rem 'NotoSansKRLight';
 				color:#fff;
@@ -4296,12 +4299,12 @@ footer#footer{
 						position: absolute;
 						left:0;
 					}
-				}	
+				}
 
 			}
 			.prodlist_wrap{
 				position: relative;
-				
+
 				.prodlist{
 					// position: absolute;
 					position: relative;
@@ -4311,7 +4314,7 @@ footer#footer{
 					opacity: 0;
 					transition:opacity 0.3s;
 					-webkit-transition:opacity 0.3s;
-					z-index: 1;	
+					z-index: 1;
 					.box{
 						.inner{
 							.info{
@@ -4321,15 +4324,15 @@ footer#footer{
 					}
 					.tit{
 						height: 1.4rem;
-						
+
 						display: -webkit-box;
 						// overflow: hidden;
 						// overflow: hidden;
 						// text-overflow: ellipsis;
-						// white-space:normal;	
+						// white-space:normal;
 						// -webkit-line-clamp:1;
 						// -webkit-box-orient: vertical;
-					}			
+					}
 				}
 
 				.active{
@@ -4428,7 +4431,7 @@ footer#footer{
 			}
 		}
 		.main{
-			@include box-sizing(border-box); 
+			@include box-sizing(border-box);
 			position: relative;
 			width: 100%;
 			padding-bottom: 123%;
@@ -4470,7 +4473,7 @@ footer#footer{
 					h3{
 					margin: 2rem 3rem;
 					padding:2rem 0 0 0;
-					
+
 					text-align: center;
 					img{
 						width: 79%;
@@ -4556,7 +4559,7 @@ footer#footer{
 									width: 100%;
 								}
 							}
-							
+
 							.txt{
 								position: absolute;
 								bottom: 30px;
@@ -4567,7 +4570,7 @@ footer#footer{
 								p.main{
 									// padding-bottom: 1.2rem;
 									display: block;
-									
+
 									padding:0 2rem 1rem 2rem;
 									color:#fff;
 									font:600 1.8rem/1.8rem  'NotoSansKRMedium','Nanum Gothic';
@@ -4595,14 +4598,14 @@ footer#footer{
 							background: url('/images/reebok/about/nano7_w/perform_bg3.jpg') 0 0 no-repeat;
 							background-size:100%;
 						}
-					}			
+					}
 				}
 				.num_paging{
 				}
 
 				.prodlist_wrap{
 					position: relative;
-					
+
 					.prodlist{
 						position: absolute;
 						top: 0;
@@ -4611,7 +4614,7 @@ footer#footer{
 						opacity: 0;
 						transition:opacity 0.3s;
 						-webkit-transition:opacity 0.3s;
-						z-index: 1;	
+						z-index: 1;
 
 						.tit{
 							height: 1.4rem;
@@ -4620,10 +4623,10 @@ footer#footer{
 							display: -webkit-box;
 							overflow: hidden;
 							text-overflow: ellipsis;
-							white-space:normal;	
+							white-space:normal;
 							-webkit-line-clamp:1;
 							-webkit-box-orient: vertical;
-						}			
+						}
 					}
 
 					.active{
@@ -4652,13 +4655,13 @@ footer#footer{
 				text-align: center;
 				text-transform: uppercase;
 				img{
-					@include box-sizing(border-box); 
+					@include box-sizing(border-box);
 					padding:0 10px;
 					width: 100%;
 				}
 			}
 			>.desc{
-				@include box-sizing(border-box); 
+				@include box-sizing(border-box);
 				padding:0 10px 15px 0;
 				font:500 1rem/1.5rem 'NotoSansKRLight';
 				color:#fff;
@@ -4706,13 +4709,13 @@ footer#footer{
 						position: absolute;
 						left:0;
 					}
-				}	
+				}
 
 			}
-			.swiper-button-next2{color:#fff; font-size: 60px;}	
+			.swiper-button-next2{color:#fff; font-size: 60px;}
 			.prodlist_wrap{
 				position: relative;
-				
+
 				.prodlist{
 					// position: absolute;
 					position: relative;
@@ -4722,7 +4725,7 @@ footer#footer{
 					opacity: 0;
 					transition:opacity 0.3s;
 					-webkit-transition:opacity 0.3s;
-					z-index: 1;	
+					z-index: 1;
 					.box{
 						.inner{
 							.info{
@@ -4732,15 +4735,15 @@ footer#footer{
 					}
 					.tit{
 						height: 1.4rem;
-						
+
 						display: -webkit-box;
 						// overflow: hidden;
 						// overflow: hidden;
 						// text-overflow: ellipsis;
-						// white-space:normal;	
+						// white-space:normal;
 						// -webkit-line-clamp:1;
 						// -webkit-box-orient: vertical;
-					}			
+					}
 				}
 
 				.active{
@@ -4803,4 +4806,123 @@ footer#footer{
 		}
 	}
 	// nano w
+}
+
+// 20170217 메인리스트 모바일 업데이트
+.main_list{
+	.video_visual{
+		position: relative;
+		background: #eff0ea;
+		padding-bottom: 149%;
+		@media screen and(min-width: 750px){
+			padding-bottom: 125%;
+		}
+		.bg{
+			img{
+				@include box-sizing(border-box);
+				border:10px solid #eff0ea;
+			}
+		}
+		.cover{
+			top:35%;
+		}
+		.txt{
+			position: absolute;
+			bottom: 8%;
+			width: 100%;
+			text-align: center;
+			@media screen and(min-width: 750px){
+				bottom: 6%;
+			}
+
+			.title{
+				font:3.8rem 'QStencil';
+			}
+			.tit{
+				display: inline-block;
+				padding-bottom: 1.5rem;
+				font:1.2rem 'NotoSansKRRegular';
+				letter-spacing: -1px;
+				
+			}
+			.btn{
+				a{
+					display: inline-block;
+					padding:0.3rem 3.5rem 0 3.5rem;
+					border:1.5px solid #151515;
+					font:1.3rem/3.8rem 'dinpro', 'NotoSansKRRegular';
+					color:#000;
+				}
+			}
+		}
+	}
+	.box{
+		border-bottom: 2px solid #bebfba;
+		.img{
+			border:10px solid #eff0ea;
+			@include box-sizing(border-box);
+
+			img{
+				width:100%;
+			}
+		}
+		.txt{
+			padding:1rem 0 3rem 0;
+			text-align: center;
+			background: #eff0ea;
+
+			.title{
+				font:3.8rem 'QStencil';
+				span{
+					display: inline-block;
+					vertical-align: middle;
+					line-height: 4rem;
+					img{
+						width: 3.3rem;
+					}
+				}
+
+			}
+			.tit{
+				display: inline-block;
+				padding-bottom: 1.5rem;
+				font:1.1rem 'NotoSansKRRegular';
+				letter-spacing: -1px;
+				
+			}
+			.btn{
+				a{
+					display: inline-block;
+					padding:0.3rem 3.5rem 0 3.5rem;
+					border:1.5px solid #151515;
+					font:1.3rem/3.8rem 'dinpro', 'NotoSansKRRegular';
+					color:#000;
+				}
+				&.nano{
+					a{
+						padding:0.3rem 2.3rem 0 2.3rem;
+					}
+				}
+			}
+		}
+		
+	}
+}
+.campaign_list_update{
+	display: block;
+	background:url('/images/reebok/about/campaign_list/bg.jpg');
+	background-size:100%;
+	padding:8rem 1rem;
+	.box{
+		padding-bottom: 1rem;
+		a{
+			display: block;
+			img{
+				width: 100%;
+			}
+		}
+		&:last-child{
+			padding-bottom: 0px;
+		}
+	}
 }
