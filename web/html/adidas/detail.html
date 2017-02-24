@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="/css/adidas/adidas_r.css"/>
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css"/>
   <script src="/js/jquery/jquery-1.4.2.js"></script>
+  <script src="/js/customForm.js"></script>
   <script src="/js/adidas/adidas.js"></script>
   <script src="/js/jquery/zoom/adidas/zoom.js"></script>
   <script type="text/javascript" src="http://image.adidas.co.kr/js/jquery/easing/jquery.easing.1.3.js"></script>
@@ -80,95 +81,118 @@
 	  			}
 
 	  			initProductThumbnails();
-
-  				var testData = [
-  					[
-  						'안녕하세요.<br/>아디다스 타임스퀘어점 오리지널스 담당 공일욱입니다.<br/><br/>오늘 설명드릴 상품은 NMD R1 제품입니다.<br/><br/>워낙에 인기가 있는 제품이기 때문에 모두들 아시리라 믿습니다!<br/>NMD 제품 중에서도 가장 인기가 많은 제품 중 하나인 블랙상품입니다.',
-  						'밑창을 보시면 아디다스 오리지널스 제품 특유의 디테일이 살아있어 진정한 아디다스 매니아라면 가져야면 하는 제품이라고 생각입니다!<br/><br/>현재는 매장에 재고가 없어 재입고를 기다리는 상황이고 빠른 시일내에 여러분들께서 구매할수 있도록 최선을 다하겠습니다!',
-  						'안녕하세요.<br/>아디다스 타임스퀘어점 오리지널스 담당 공일욱입니다.<br/>안녕하세요.<br/>아디다스 타임스퀘어점 오리지널스 담당 공일욱입니다.<br/>안녕하세요.<br/>아디다스 타임스퀘어점 오리지널스 담당 공일욱입니다.<br/>안녕하세요.<br/>아디다스 타임스퀘어점 오리지널스 담당 공일욱입니다.<br/>안녕하세요.<br/>아디다스 타임스퀘어점 오리지널스 담당 공일욱입니다.<br/>안녕하세요.<br/>아디다스 타임스퀘어점 오리지널스 담당 공일욱입니다.<br/>안녕하세요.<br/>아디다스 타임스퀘어점 오리지널스 담당 공일욱입니다.<br/>안녕하세요.<br/>아디다스 타임스퀘어점 오리지널스 담당 공일욱입니다.<br/>안녕하세요.<br/>아디다스 타임스퀘어점 오리지널스 담당 공일욱입니다.<br/>안녕하세요.<br/>아디다스 타임스퀘어점 오리지널스 담당 공일욱입니다.<br/>안녕하세요.<br/>아디다스 타임스퀘어점 오리지널스 담당 공일욱입니다.<br/>안녕하세요.<br/>아디다스 타임스퀘어점 오리지널스 담당 공일욱입니다.<br/>안녕하세요.<br/>아디다스 타임스퀘어점 오리지널스 담당 공일욱입니다.<br/>안녕하세요.<br/>아디다스 타임스퀘어점 오리지널스 담당 공일욱입니다.<br/>안녕하세요.<br/>아디다스 타임스퀘어점 오리지널스 담당 공일욱입니다.<br/>'
-  					],
-  					[
-  						'안녕하세요.<br/>아디다스 타임스퀘어점 오리지널스 담당 공일욱입니다.<br/><br/>마지스타 오브라는 성능, 착용감, 내구성 면에서 모두 좋은 평가를 받으며 매장을 방문하시는 고객 분들께 가장 선호도가 높은 제품입니다. 이 제품은 플라이니트 소재로 편안한 착용감을 제공하면서도 3D 텍스처 갑피로 볼이 발에 붙는 듯한 안정적인 터치감을 선사하여, 포지션에 <br/>상관 없이 다양한 선수들이 착용하는 축구화로도 알려져 있습니다. 마지스타 오브라를 착용하는 <br/>대표적인 선수로는 바이에른 뮌헨의 마리오 괴체, 바르셀로나의 아르다 투란이 있고<br/> 이번 시즌 메시와 수아레즈와 네이마르 (이하 MSN) 의 가공할만한 화력이 기대된다. 저번시즌 최고의 한해를 보냈던 수아레즈의 폼이 코파아메리카 이후 얼마나 살아났는지가 많인 이들의 주목을 모으고 있다. 안정적인 터치감을 선사하여, 포지션에 <br/>상관 없이 다양한 선수들이 착용하는 축구화로도 알려져 있습니다. 마지스타 오브라를 착용하는 <br/>대표적인 선수로는 바이에른 뮌헨의 마리오 괴체, 바르셀로나의 아르다 투란이 있고<br/> 이번 시즌 메시와 수아레즈와 네이마르 (이하 MSN) 의 가공할만한 화력이 기대된다. 저번시즌 최고의 한해를 보냈던 수아레즈의 폼이 코파아메리카 이후 얼마나 살아났는지가 많인 이들의 주목을 모으고 있다. 안정적인 터치감을 선사하여, 포지션에 <br/>상관 없이 다양한 선수들이 착용하는 축구화로도 알려져 있습니다. 마지스타 오브라를 착용하는 <br/>대표적인 선수로는 바이에른 뮌헨의 마리오 괴체, 바르셀로나의 아르다 투란이 있고<br/> 이번 시즌 메시와 수아레즈와 네이마르 (이하 MSN) 의 가공할만한 화력이 기대된다. 저번시즌 최고의 한해를 보냈던 수아레즈의 폼이 코파아메리카 이후 얼마나 살아났는지가 많인 이들의 주목을 모으고 있다.',
-  						'국민신발 아디다스 슈퍼스타의 뒷모습을 같이 보시겠습니다!<br/><br/>대한민국 멋쟁이라면 누구나 하나씩 가지고있는 슈퍼스타의 뒷태입니다~<br/>슈퍼스타 특유의 감성이 느껴지시나요?<br/>어느 코디에 입어도 이쁜 아디다스의 상징적인 슈퍼스타입니다.<br/> 이 모델같은 경우는 80년도의 제품을 재구현한 제품으로서 슈퍼스타 특유의 올드스쿨한 느낌을 그대로 반영한 나름의 역사가 있는 아디다스의 인기 제품입니다.'
-  					],
-	  				[
-	  					'안녕하세요.<br/>아디다스 타임스퀘어점 오리지널스 담당 공일욱입니다. 제가 소개해드릴 제품은 저번달 온/오프라인에서 뜨거운 반응을 보였던 언케이지드 부스트 제품입니다.',
-	  					'이 제품은 반응성, 지지력, 유연성을 함께 갖춘 이 러닝화는 모든 스텝을 넘치는 에너지로 채워줍니다.<br/>전장 boost™ 미드솔과 STRETCHWEB 아웃솔이 함께 작용하여 모든 스텝에서 에너지를 효율적으로 사용하고 피로를 줄여 더 멀리 달릴 수 있습니다.<br/><br/>또한 발 중앙부의 TORSION SYSTEM®과 뛰어난 밀착감의 adidas Primeknit 갑피가 뒤꿈치에서 앞꿈치까지 자연스러운 유연성을 제공합니다. Continental™ 고무 아웃솔은 모든 표면에서 뛰어난 접지력을 선사합니다.',
-	  					'고강도 퍼포먼스를 위해 준비된 에너지 리턴 러닝화.<br/>중량: 304g (사이즈 270mm); 러닝화 타입: 내추럴; 스택 높이 30.5mm / 20.5mm (10mm 차이)<br/>boost™의 에너지 리턴 기능은 모든 스텝에 가볍고 빠른 에너지를 끝없이 공급합니다.<br/>가볍고 탄력적인 STRETCHWEB 고무 아웃솔은 탁월한 지면 적응력으로 안정감을 제공하는 동시에 boost™의 독특한 에너지 리턴 특성을 최적화합니다.<br/>',
-	  					'달리는 동안 발과 함께 자연스럽게 팽창하는 adidas Primeknit가 보다 뛰어난 착용감을 제공하는 동시에 피부 마찰을 최소화; 아늑하고 안정감 있는 핏을 제공하는 SOCKFIT 갑피; 구조 변경 없이 향상된 지지력을 제공하는 내부 보강물<br/>발 아치 부분의 안정감을 위한 토션(TORSION®) 시스템; 뒤꿈치 주위의 안정성을 높여주는 FITFRAME 3D-몰드 TPU<br/>젖은 표면과 마른 표면에서 최고의 접지력을 선사하는 Continental™ 고무 아웃솔',
-	  					'현재는 재고가 없고 이번달 말 (8월 30일) 재입고 예정이니 많은 관심 부탁 드리겠습니다.<br/><br/>감사합니다^^'
-	  				]
-  				];
-  				// 스탭 리뷰 스크립트
-  				var elemContainer = $('.staff_review_slider');
-  				var elemSlider = elemContainer.find('ul');
-  				var index = 0;
-  				var length = elemSlider.find('li').length;
-  				var elemNum = $('.staff_review').find('.num').find('a');
-
-  				if(length <= 1){
-  					return;
-  				}
-
-  				for(var i=0; i<length; i++){
-  					$('#stf_review_content'+(i+1)).cutString({
-						text : testData[i][0],
-						cutLength : 200,
-						buttonName : {
-							open : '더보기',
-							// 160825 버튼명 수정 '줄이기' -> '닫기'
-							close : '닫기'
-						}
-  					});
-  				}
-
-				elemNum.bind('click',function(){
-					if(index == $(this).index()){
-						return;
-					}
-
-					closeAllTextbox();
-
-					index = $(this).index();
-					elemNum.removeClass('on').eq(index).addClass('on');
-					elemSlider.animate({
-						left : index * -948
-					},600);
-				});
-
-
-				// 섬네일 이미지
-				elemContainer.find('.cut_thumbnails a').bind('click',function(){
-					if($(this).hasClass('on')){
-						return;
-					}
-
-					$(this).parent().siblings('.big_cut').find('img').attr('src',$(this).find('img').attr('src'));
-					$(this).parent().find('a').removeClass('on');
-					$(this).addClass('on');
-
-					$('#stf_review_content'+(index+1)).cutString({
-						text : testData[index][$(this).index()],
-						cutLength : 200,
-						buttonName : {
-							open : '더보기',
-							// 160825 버튼명 수정 '줄이기' -> '닫기'
-							close : '닫기'
-						}
-  					});
-				});
-
-
-				function closeAllTextbox(){
-					elemSlider.find('li').each(function(){
-
-						if($(this).find('.info .desc .more_read').hasClass('shortened')){
-							$(this).find('.info .desc .more_read').trigger('click');
-						}
-					});
-				}
-
   			})();
+
+            // 170201 스탭 리뷰 스크립트 수정
+            (function(){
+
+                var elemStaffReview = $('.staff_review');
+                var elemStaffReviewSlider = elemStaffReview.find('ul');
+                elemStaffReviewSlider.append(elemStaffReviewSlider.find('li').eq(0).clone());
+                var elemStaffReviewNum = $('.staff_review .num');
+                var elemStaffReviewBtnPrev = $('.staff_review .prev');
+                var elemStaffReviewBtnNext = $('.staff_review .next');
+
+                var index = 0;
+                var length = elemStaffReviewSlider.find('li').length;
+
+                if(length-1 <= 1){
+                    elemStaffReviewNum.hide();
+                    elemStaffReview.find('.arrow_wrap').hide();
+                }else{
+                    elemStaffReviewNum.find('span').text(' / '+ (length-1));
+                }
+
+                var setNum = function(){
+                    var num = index == length-1 ? 1 : index + 1;
+                    elemStaffReviewNum.find('strong').text(num);
+                }
+
+                var animate = function(loopType){
+                    var prevItemTitle;
+                    var nextItemTitle;
+                    var prevItemTitleIndex;
+                    var nextItemTitleIndex;
+
+                    elemStaffReviewSlider.stop();
+                    if(loopType == 'next'){
+                        elemStaffReviewSlider.css({left : 0});
+                    }else if(loopType == 'prev'){
+                        elemStaffReviewSlider.css({left : (length - 1) * -950});
+                    }
+
+                    if(index == 0 || index == length-1){
+                        prevItemTitleIndex = length-2;
+                        nextItemTitleIndex = 1;
+                    }else if(index == length-2){
+                        prevItemTitleIndex = length-3;
+                        nextItemTitleIndex = 0;
+                    }else{
+                        prevItemTitleIndex = index-1;
+                        nextItemTitleIndex = index+1;
+                    }
+
+                    prevItemTitle = elemStaffReviewSlider.find('li').eq(prevItemTitleIndex).find('.info .tit').text();
+                    nextItemTitle = elemStaffReviewSlider.find('li').eq(nextItemTitleIndex).find('.info .tit').text();
+
+                    elemStaffReviewBtnNext.siblings('.text').find('.next_tit').text(nextItemTitle);
+                    elemStaffReviewBtnPrev.siblings('.text').find('.next_tit').text(prevItemTitle);
+
+                    elemStaffReviewSlider.animate({
+                        left : index * -950
+                    });
+
+                    setNum();
+                };
+
+                elemStaffReview.find('.cut_thumbnails a').bind('click',function(){
+                    if($(this).hasClass('on')){
+                        return false;
+                    }
+
+                    var elemWrapper = $(this).parent().parent().parent();
+                    var imgPath = $(this).find('img').attr('src');
+                    var elemsThumb = elemWrapper.find('.cut_thumbnails a');
+                    var elemsTexts = elemWrapper.find('.info .desc .review_content');
+
+                    $(this).parent().siblings('.big_cut').find('img').attr('src',imgPath);
+                    elemsThumb.removeClass('on');
+                    $(this).addClass('on');
+
+                    elemsTexts.hide().eq($(this).index()).show();
+
+                    if(length > 1){
+                        if(elemWrapper.index() == length-1){
+                            elemStaffReviewSlider.find('li').eq(0).find('.cut_thumbnails a').eq($(this).index()).trigger('click');
+                        }else if(elemWrapper.index() == 0){
+                            elemStaffReviewSlider.find('li').eq(length-1).find('.cut_thumbnails a').eq($(this).index()).trigger('click');
+                        }
+                    }
+
+                });
+
+                elemStaffReviewBtnPrev.bind('click',function(){
+                    if(index == 0){
+                        index = length-2;
+                        animate('prev');
+                    }else{
+                        index -= 1;
+                        animate();
+                    }
+                });
+
+                elemStaffReviewBtnNext.bind('click',function(){
+                    if(index == length-1){
+                        index = 1;
+                        animate('next');
+                    }else{
+                        index += 1;
+                        animate();
+                    }
+                });
+
+            })();
+            // 170201 스탭 리뷰 스크립트 수정 끝
 
   			(function(){
   				//이노베이션
@@ -2685,8 +2709,8 @@
 				</div>
 
 
-				<!-- 160816 start -->
-				<div class="product-main">
+				<!-- 170201 start -->
+				<div class="product-main product-main-update">
 
 					<div class="product-infomation">
 						<div class="ct950 clfix">
@@ -2838,63 +2862,155 @@
 											</div> -->
 											<!-- //selectbox-ctm -->
 
+                                            <!-- 170201 start -->
 											<div class="selectbox-ctm size_clothes">
 												<a href="javascript:void(0)">사이즈 선택</a>
 												<div class="arrow spt_bg"></div>
 												<div class="select-contents option-list">
-													<ul>
+													<ul class="clfix">
 														<li data-option-value="230" data-option-text="85">
 															<a href="javascript:void(0)">
 																<span class="num">085</span>
-																<span>신장 160~165cm</span>
-																<span>가슴둘레 86cm</span>
+																<span>신장 </span>
+                                                                <span class="size">160~165cm</span>
+																<span>가슴둘레</span>
+                                                                <span class="size">86cm</span>
 															</a>
 														</li>
 														<li data-option-value="230" data-option-text="90">
 															<a href="javascript:void(0)">
 																<span class="num">090</span>
-																<span>신장 160~165cm</span>
-																<span>가슴둘레 85cm</span>
+																<span>신장 </span>
+                                                                <span class="size">160~165cm</span>
+																<span>가슴둘레</span>
+                                                                <span class="size">86cm</span>
 															</a>
 														</li>
 														<li data-option-value="230" data-option-text="95">
 															<a href="javascript:void(0)">
-																<span class="num">095</span>
-																<span>신장 170~175cm</span>
-																<span>가슴둘레 90cm</span>
+                                                                <span class="num">095</span>
+																<span>신장 </span>
+                                                                <span class="size">160~165cm</span>
+																<span>가슴둘레</span>
+                                                                <span class="size">86cm</span>
 															</a>
 														</li>
 
 														<li data-option-value="230" data-option-text="100">
 															<a href="javascript:void(0)">
-																<span class="num">100</span>
-																<span>신장 175~180cm</span>
-																<span>가슴둘레 100cm</span>
+                                                                <span class="num">100</span>
+																<span>신장 </span>
+                                                                <span class="size">160~165cm</span>
+																<span>가슴둘레</span>
+                                                                <span class="size">86cm</span>
 															</a>
 														</li>
 														<li data-option-value="230" data-option-text="105">
 															<a href="javascript:void(0)">
-																<span class="num">105</span>
-																<span>신장 180~185cm</span>
-																<span>가슴둘레 105cm</span>
+                                                                <span class="num">105</span>
+																<span>신장 </span>
+                                                                <span class="size">160~165cm</span>
+																<span>가슴둘레</span>
+                                                                <span class="size">86cm</span>
 															</a>
 														</li>
 														<li class="disable" data-option-value="230" data-option-text="110">
 															<a href="javascript:void(0)">
-																<span class="num">110</span>
-																<span>신장 185~190cm</span>
-																<span>가슴둘레 110cm</span>
+                                                                <span class="num">110</span>
+                                                                <span>신장 </span>
+                                                                <span class="size">160~165cm</span>
+                                                                <span>가슴둘레</span>
+                                                                <span class="size">86cm</span>
 															</a>
 														</li>
 														<li data-option-value="230" data-option-text="115">
 															<a href="javascript:void(0)">
-																<span class="num">115</span>
-																<span>신장 190~195cm</span>
-																<span>가슴둘레 115cm</span>
+                                                                <span class="num">115</span>
+                                                                <span>신장 </span>
+                                                                <span class="size">160~165cm</span>
+                                                                <span>가슴둘레</span>
+                                                                <span class="size">86cm</span>
 															</a>
 														</li>
-
+                                                        <li data-option-value="230" data-option-text="120">
+                                                            <a href="javascript:void(0)">
+                                                                <span class="num">120</span>
+                                                                <span>신장 </span>
+                                                                <span class="size">160~165cm</span>
+                                                                <span>가슴둘레</span>
+                                                                <span class="size">86cm</span>
+                                                            </a>
+                                                        </li>
+                                                        <li data-option-value="230" data-option-text="125">
+                                                            <a href="javascript:void(0)">
+                                                                <span class="num">125</span>
+                                                                <span>신장 </span>
+                                                                <span class="size">160~165cm</span>
+                                                                <span>가슴둘레</span>
+                                                                <span class="size">86cm</span>
+                                                            </a>
+                                                        </li>
+                                                        <li data-option-value="230" data-option-text="130">
+                                                            <a href="javascript:void(0)">
+                                                                <span class="num">130</span>
+                                                                <span>신장 </span>
+                                                                <span class="size">160~165cm</span>
+                                                                <span>가슴둘레</span>
+                                                                <span class="size">86cm</span>
+                                                            </a>
+                                                        </li>
 													</ul>
+
+                                                    <div class="rating_percantage">
+                                                        <div class="top">
+                                                            <div class="tit">사이즈 리뷰 통계 <span>매우 작아요 80%</span></div>
+                                                            <div class="total">205명 평가</div>
+                                                        </div>
+                                                        <div class="rating_wrap">
+
+                                                            <div class="box">
+                                                                <div class="label">매우 작아요</div>
+                                                                <div class="bar_wrap">
+                                                                    <div style="width:20%;"></div>
+                                                                </div>
+                                                                <div class="num">24</div>
+                                                            </div>
+
+                                                            <div class="box">
+                                                                <div class="label">작아요</div>
+                                                                <div class="bar_wrap">
+                                                                    <div style="width:60%;"></div>
+                                                                </div>
+                                                                <div class="num">24</div>
+                                                            </div>
+
+                                                            <div class="box">
+                                                                <div class="label">적당해요</div>
+                                                                <div class="bar_wrap">
+                                                                    <div style="width:100%;"></div>
+                                                                </div>
+                                                                <div class="num">24</div>
+                                                            </div>
+
+                                                            <div class="box">
+                                                                <div class="label">커요</div>
+                                                                <div class="bar_wrap">
+                                                                    <div style="width:10%;"></div>
+                                                                </div>
+                                                                <div class="num">24</div>
+                                                            </div>
+
+                                                            <div class="box">
+                                                                <div class="label">매우 커요</div>
+                                                                <div class="bar_wrap">
+                                                                    <div></div>
+                                                                </div>
+                                                                <div class="num">24</div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
 												</div>
 											</div>
 
@@ -3121,113 +3237,187 @@
 					</div>
 					<!-- //product-innovations -->
 
-					<div class="product-insta">
-						<div class="ct950">
-							<img src="/images/adidas/temp/temp_product_insta.jpg" alt="" />
-						</div>
-					</div>
-
+                    <!-- 170201 -->
 					<div class="product-reviews">
 						<div class="ct950">
-							<h3>상품리뷰</h3>
+							<h3>스탭리뷰 <span>(4)</span></h3>
 							<div class="staff_review">
+                                <a href="#" class="btn-ctm btn-blue btn_stfreview"><span>스탭 리뷰 쓰기</span></a>
 								<div class="staff_review_wrap">
-									<!--
-									160825 기존 스탭리뷰 작성하기 버튼 삭제
-									<a href="#" class="btn_write">스탭 리뷰쓰기</a>
-									-->
 									<div class="staff_review_slider">
 										<ul>
 											<li class="clfix">
 												<div class="cut">
-													<div class="big_cut"><img src="http://image.adidas.co.kr/upload/prod/etc/source/S31510-2.jpg" alt=""/></div>
+													<div class="big_cut"><img src="http://image.adidas.co.kr/upload/eval_staff/201612/7782c0de735d4bc4b1e2a2c982f9d157_1214173128.jpg" alt=""/></div>
 													<div class="cut_thumbnails clfix">
-														<a href="javascript:void(0)" class="on"><img src="http://image.adidas.co.kr/upload/prod/etc/source/S31510-2.jpg" alt=""/></a>
-														<a href="javascript:void(0)"><img src="http://image.adidas.co.kr/upload/prod/etc/source/S31510-3.jpg" alt=""/></a>
-														<a href="javascript:void(0)" class="last"><img src="http://image.adidas.co.kr/upload/prod/etc/source/S31510-5.jpg" alt=""/></a>
+														<a href="javascript:void(0)" class="on"><img src="http://image.adidas.co.kr/upload/eval_staff/201612/7782c0de735d4bc4b1e2a2c982f9d157_1214173128.jpg" alt=""/></a>
+														<a href="javascript:void(0)"><img src="http://image.adidas.co.kr/upload/eval_staff/201612/707da351d70c41169be876ae83b738f4_1214173146.jpg" alt=""/></a>
+														<a href="javascript:void(0)"><img src="http://image.adidas.co.kr/upload/eval_staff/201612/dda635f979b14ed086b62e34f722aa3f_1214173150.jpg" alt=""/></a>
+                                                        <a href="javascript:void(0)"><img src="http://image.adidas.co.kr/upload/eval_staff/201612/6a934c6087444347947c1a799c5d799e_1214173156.jpg" alt=""/></a>
+                                                        <a href="javascript:void(0)" class="last"><img src="http://image.adidas.co.kr/upload/eval_staff/201612/cd5960af2aa34aeeaad20b8466c9c70f_1214173159.jpg" alt=""/></a>
 													</div>
 												</div>
 												<div class="info">
-													<h4>STAFF REVIEW</h4>
-													<p class="tit">타임스퀘어점 막내스텝의 생생리뷰</p>
+													<p class="tit">오리지날스 동성로</p>
 													<p class="reviewer_spec">
-														<span>키 : 177cm</span>
-														<span>체중 : 79kg</span>
-														<span>나이 : 29세</span>
-														<span>착장 사이즈 : 275</span>
+														<span>키 : 158cm</span>
+														<span>체중 : 45kg</span>
+														<span>나이 : 23세</span>
+														<span>착장 사이즈 : 180</span>
 													</p>
-													<!-- 160822 해당 상품평 부분에 아이디 추가 -->
-													<div class="desc" id="stf_review_content1"></div>
+                                                    <div class="size_tip">
+                                                        <p>
+                                                            <span class="ico"><span class="spt_bg"></span>size tip</span>
+                                                            <span>“ 매우 작아요.”</span>
+                                                        </p>
+                                                        <p class="t">한치수 작게 주문하시면 정말 작습니다.</p>
+                                                    </div>
+
+													<div class="desc" id="stf_review_content1">
+													    <div class="review_content" style="display: block;">
+                                                            안녕하세요. 오리지날 동성로 아디다스 매장에서 근무하는 직원입니다.!!<br/>
+                                                            아디다스 온라인스토어를 보시고 구매하시는 고객님들을 위해 이번에는 키즈 운동화 리뷰를 들려 드리겠습니다.모든분들이 아디다스!! 그러면 잘아시는 수퍼스타 리뷰입니다. 이 수퍼스타 파운데이션 C제품은 주니어 제품입니다. 색상은 전체적인 화이트 색상과 블랙 삼선인데요. 개인적으로 저는 골드 로고 를 좋아하는 편인데, 이 운동화도 골드 로고입니다.!! 사이즈는 주니어 제품이다 보니 170 에서 210 사이즈까지 나온다고 하네요.<br/><br/>
+                                                            주니어 제품이라 성인제품과 비교 했을때 신발끈의 두께가 조금 얇은 편입니다. 크기도 작아서 그런지 귀여운 느낌이 있네요. 저도 이제품을 조카에게 선물 한적이 있는데요. 부모와 아이가 함께 신으니 더욱 이쁜 운동화였어요.!!
+													    </div>
+
+                                                        <div class="review_content">
+                                                            수퍼스타 파운데이션 c제품의 뒷측 모습입니다. 할패치 부분이 전체적인 블랙 색상에 트레포일 로고는 화이트 색상으로 되어있는 제품인데요. 키즈 제품이라 그런지 더욱 귀여워 보입니다.^^
+													    </div>
+
+                                                        <div class="review_content">
+                                                            수퍼스타 파운데이션 c제품의 앞보강 부분 사진 입니다. 앞보강 부분toe cap이 일반 신발과 달리 가죽이라 좀더 단단해 발가락 부분을 더 보호 해줄수있을것 같네요~!!
+													    </div>
+                                                        <div class="review_content">
+                                                            수퍼스타 파운데이션 c제품입니다. 오른쪽은 제품의 바닥면 모습이고, 왼쪽은 수퍼스타 제품의 전체적인 모습입니다.<br/>
+                                                            수퍼스타 제품은 천연가죽으로 소가죽이라고 합니다.!! 또, 가격대도 69,000원입니다.
+													    </div>
+                                                        <div class="review_content">
+                                                            수퍼스타 파운데이션 c제품의 사진입니다.<br/>
+                                                            사진처럼 조금 슬림 한 느낌이 있는 것같아요.<br/>
+                                                            가족들과 함께 신을 데일리 운동화를 찾으신다면 이 제품을 추천 해드리고 싶네요^^
+													    </div>
+													</div>
 												</div>
 											</li>
 
-											<li class="clfix">
+                                            <li class="clfix">
 												<div class="cut">
-													<div class="big_cut"><img src="http://image.adidas.co.kr/upload/prod/etc/source/BB5896-4.jpg" alt=""/></div>
+													<div class="big_cut"><img src="http://image.adidas.co.kr/upload/eval_staff/201610/0d6b393e4d794c29a68a6ba05c17cbab_1022141134.jpg" alt=""/></div>
 													<div class="cut_thumbnails clfix">
-														<a href="javascript:void(0)" class="on"><img src="http://image.adidas.co.kr/upload/prod/etc/source/BB5896-4.jpg" alt=""/></a>
-														<a href="javascript:void(0)" class="last"><img src="http://image.adidas.co.kr/upload/prod/etc/source/BB5896-5.jpg" alt=""/></a>
+														<a href="javascript:void(0)" class="on"><img src="http://image.adidas.co.kr/upload/eval_staff/201610/0d6b393e4d794c29a68a6ba05c17cbab_1022141134.jpg" alt=""/></a>
+														<a href="javascript:void(0)"><img src="http://image.adidas.co.kr/upload/eval_staff/201610/38f1330ccb974820b65108bfc87dfec1_1022141146.jpg" alt=""/></a>
+														<a href="javascript:void(0)"><img src="http://image.adidas.co.kr/upload/eval_staff/201610/0d12b9b56b6f49c49eb18463584b3c1b_1022141150.jpg" alt=""/></a>
+                                                        <a href="javascript:void(0)"><img src="http://image.adidas.co.kr/upload/eval_staff/201610/fae4dcf48425403da037c574f443e865_1022141158.jpg" alt=""/></a>
+                                                        <a href="javascript:void(0)" class="last"><img src="http://image.adidas.co.kr/upload/eval_staff/201610/672eca008030413eb523706b0e9c3638_1022141203.jpg" alt=""/></a>
 													</div>
 												</div>
 												<div class="info">
-													<h4>STAFF REVIEW</h4>
-													<p class="tit">타임스퀘어점 막내스텝의 생생리뷰</p>
+													<p class="tit">퍼포먼스 명동</p>
 													<p class="reviewer_spec">
-														<span>키 : 177cm</span>
-														<span>체중 : 79kg</span>
-														<span>나이 : 29세</span>
-														<span>착장 사이즈 : 275</span>
+														<span>키 : 158cm</span>
+														<span>체중 : 45kg</span>
+														<span>나이 : 23세</span>
+														<span>착장 사이즈 : 180</span>
 													</p>
-													<!-- 160822 해당 상품평 부분에 아이디 추가 -->
-													<div class="desc" id="stf_review_content2"></div>
+													<div class="desc" id="stf_review_content1">
+                                                        <div class="review_content" style="display: block;">안녕하세요!!! 많이들 기다리셨죠?? 오랜만에 새로운 제품을 가지고 BCS명동점 STAFF리뷰가 돌아왔습니다!!!!!!!<br>오늘 소개드릴 제품은 전세계적으로 가장 많은 팬을 보유 한 맨체스터 유나이티드 Home Jsy입니다.<br>바로 한국의 캡틴 박지성 선수가 전성기 시절을 보내면서 국내 팬들에게는 가장 친숙한 팀이지요.<br>올해 아디다스와 함께 두번째 시즌을 맞게 되었는대요. 시즌을 시작 하기 전 부터 세계적인 명장과 스타플레이어 영입으로 큰 이슈를 끌면서 Jsy 또한 많은 분들에게 사랑을 받고 있는 제품입니다.<br>전통색상인 red와 white의 조화로 깔끔하게 출시 되면서 운동복 뿐만 아니라 스트리패션으로도 추천드립니다!<br>올시즌 부활을 꿈꾸는 맨체스터 유나이티드! 저희와 함께 응원해보시는건 어떠신지요?</div>
+
+                                                        <div class="review_content">
+                                                            전년 시즌과 가장 큰 차이점은 어깨의 삼선!!<br/>처음 보시는 분들은 '아디다스하면 삼선인제 어디갔지?'라고 의문증을 가지실텐데요!<br/>삼선이 어깨에서 허리라인으로 옮겨가면서 이전보다 좀 더 슬림한 핏을 연출 할 수있습니다.
+													    </div>
+
+                                                        <div class="review_content">
+                                                            전면을 투톤으로 출시되면서 부담스럽게 화려하지 않으면서도 세련됨을 강조하고있습니다.<br>밋밋하지 않아서 시간이 흘러 언제봐도 이쁜 item으로 소장한번 해보세요^^
+													    </div>
+                                                        <div class="review_content">
+                                                            모든 남성분들의 로망이지 않을까요?? 우리 둘만의 커플룩!<br>어딜 다니셔도 남들의 부러움을 살 만큼 너무 이뻐보이지 않으시나요?<br><br>여성직원은 163CM, 53KG, 100SIZE 입니다.
+													    </div>
+                                                        <div class="review_content">
+                                                            수도권 내 오직 아디다스 명동점에서만 진행 하는 마킹 서비스!!<br>포그바, 즐라탄, 루니등 여러명의 선수들과 함께 EPL 패치도 마킹 가능하니 매장으로도 많이 방문해주세요^^
+													    </div>
+													</div>
 												</div>
 											</li>
 
-											<li class="clfix">
+                                            <li class="clfix">
 												<div class="cut">
-													<div class="big_cut"><img src="http://image.adidas.co.kr/upload/prod/basic/target/BB3900-1.jpg" alt=""/></div>
+													<div class="big_cut"><img src="http://image.adidas.co.kr/upload/eval_staff/201611/ac6d0fbbf59f4d3a9d82bd92e5f6bee3_1117180126.jpg" alt=""/></div>
 													<div class="cut_thumbnails clfix">
-														<a href="javascript:void(0)" class="on"><img src="http://image.adidas.co.kr/upload/prod/basic/target/BB3900-1.jpg" alt=""/></a>
-														<a href="javascript:void(0)"><img src="http://image.adidas.co.kr/upload/prod/etc/source/BB3900-2.jpg" alt=""/></a>
-														<a href="javascript:void(0)"><img src="http://image.adidas.co.kr/upload/prod/etc/source/BB3900-3.jpg" alt=""/></a>
-														<a href="javascript:void(0)"><img src="http://image.adidas.co.kr/upload/prod/etc/source/BB3900-4.jpg" alt=""/></a>
-														<a href="javascript:void(0)" class="last"><img src="http://image.adidas.co.kr/upload/prod/etc/source/BB3900-5.jpg" alt=""/></a>
+														<a href="javascript:void(0)" class="on"><img src="http://image.adidas.co.kr/upload/eval_staff/201611/ac6d0fbbf59f4d3a9d82bd92e5f6bee3_1117180126.jpg" alt=""/></a>
+														<a href="javascript:void(0)"><img src="http://image.adidas.co.kr/upload/eval_staff/201611/79538d4540d248d9984785c410738890_1117180129.jpg" alt=""/></a>
+														<a href="javascript:void(0)"><img src="http://image.adidas.co.kr/upload/eval_staff/201611/4988078d1cf2424fb57094e2aed33d3a_1117180134.jpg" alt=""/></a>
+                                                        <a href="javascript:void(0)"><img src="http://image.adidas.co.kr/upload/eval_staff/201611/4e0d9373f35d4213afbae9e6a6c0ee84_1117180140.jpg" alt=""/></a>
+                                                        <a href="javascript:void(0)" class="last"><img src="http://image.adidas.co.kr/upload/eval_staff/201611/166a38701cfe473ca1d3c29afdbe50d5_1117180146.jpg" alt=""/></a>
 													</div>
 												</div>
 												<div class="info">
-													<h4>STAFF REVIEW</h4>
-													<p class="tit">타임스퀘어점 막내스텝의 생생리뷰</p>
+													<p class="tit">퍼포먼스 코엑스</p>
 													<p class="reviewer_spec">
-														<span>키 : 177cm</span>
-														<span>체중 : 79kg</span>
-														<span>나이 : 29세</span>
-														<span>착장 사이즈 : 275</span>
+														<span>키 : 158cm</span>
+														<span>체중 : 45kg</span>
+														<span>나이 : 23세</span>
+														<span>착장 사이즈 : 225</span>
 													</p>
-													<!-- 160822 해당 상품평 부분에 아이디 추가 -->
-													<div class="desc" id="stf_review_content3"></div>
+													<div class="desc" id="stf_review_content1">
+                                                        <div class="review_content" style="display: block;">
+                                                            안녕하세요. 동성로 오리지날 스리슬이 입니다.!! 이번에는 몇일전에 출시한 튜블라 쉐도우 제품의 리뷰를 들려드리겠습니다. 신발을 신는순간 아주 따끈 따끈하더군요 ^^ 보자마자 반한 제품인데요. 색상 자체에서도 이제품은 너무 마음에 든 제품이였는데요. 일단 착용감이 너무 좋았어요. 쿠션감도 있었고요. 디자인도 이쁜데, 착용감으로도 만족스러우니 신는동안에는 이제품만한 운동화는 없겠구나..싶었어요 ^^ 긴 양말과 매치해도 너무 이쁜 제품입니다.청바지 뿐만아니라 트레이닝복, 슬랙스  아니 여성분들은 치마나 원피스에도 잘 어울릴만한 데일리 제품이였어요.<br><br>출시 되고난 후, 매장 방문 해주시는 고객님들에게 벌써 인기 있는 제품인데요. 실물이 더 만족스럽다는 점!! 알려드리고 싶네요. 궁금하시다면, 매장 오셔서 착용해보시고 선택하세요~!!!
+                                                        </div>
+
+                                                        <div class="review_content">
+                                                            튜블라 쉐도우 'BB8824' 제품의 착용샷인데요. 거울샷으로 찍었답니다. 더 자세히 보여드리고 싶은 저의 자세 ^^<br>일단 청바지에는 통과 입니다. 모든 데일리 룩에도 잘어울리는 제품입니다.
+													    </div>
+
+                                                        <div class="review_content">
+                                                            튜블라 쉐도우 'BB8824' 제품과 아디다스 양말의 조화입니다.^^<br>양말은 매장에서 직접 구매가 가능하세요!! 일단 긴 양말과도 통과입니다.
+													    </div>
+                                                        <div class="review_content">
+                                                            튜블라 쉐도우 'BB8824' 제품의 상세컷입니다. 전체적인 색상이 다 비슷한 색상으로 되어있어 더 마음에 드는 제품인것같습니다. 'BB8824'제품의 색상은 어느 계절에도 잘어울리만한 제품인것같아요.
+													    </div>
+                                                        <div class="review_content">
+                                                            튜블라 쉐도우 ' BB8824'제품의 거울샷입니다.^^ <br>바닥부분입니다. 저도 착용하기전, 겉으로 보기에 디자인에 너무만족하여, 착용감은 생각 하지도 않았는데...<br>디자인과 편안함을 원하시는 고객님께 꼭!! 추천해드리고 싶은 제품입니다.!!!
+													    </div>
+													</div>
 												</div>
 											</li>
+
 										</ul>
 									</div>
 									<!-- //staff_review_slider -->
+
+                                    <div class="num">
+                                        <strong>1</strong>
+                                        <span> / 4</span>
+                                    </div>
+
+                                    <div class="arrow_wrap">
+                                        <div class="prev_wrap">
+                                            <a href="javascript:void(0)" class="prev spt_bg"></a>
+                                            <div class="text">
+                                                <p>이전 리뷰</p>
+                                                <div class="next_tit">오리지널스 잠실점</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="next_wrap">
+                                            <a href="javascript:void(0)" class="next spt_bg"></a>
+                                            <div class="text">
+                                                <p>다음 리뷰</p>
+                                                <div class="next_tit">오리지널스 잠실점</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //arrow_wrap -->
+
 								</div>
 								<!-- //staff_review_wrap -->
-								<div class="num">
-									<a href="javascript:void(0)" class="on">
-										<span class="spt_bg"></span>
-									</a>
-									<a href="javascript:void(0)">
-										<span class="spt_bg"></span>
-									</a>
-									<a href="javascript:void(0)">
-										<span class="spt_bg"></span>
-									</a>
-								</div>
 							</div>
 							<!-- //staff_review -->
 
+
 							<div class="reviews_container">
-								<div class="filter_box clfix">
+								<!--
+                                170201 필터 삭제
+                                <div class="filter_box clfix">
 									<dl class="clfix">
 										<dt>FILTER ON</dt>
 										<dd>
@@ -3293,16 +3483,17 @@
 										</dd>
 									</dl>
 
-									<!-- 160825 부분 수정 (스탭 상품평 쓰기 부분 추가 시 col2 추가) -->
 									<div class="btn_area col2 clfix">
 										<a href="#" class="btn-ctm btn-blue"><span>상품평 쓰기</span></a>
 										<a href="#" class="btn-ctm for_staff"><span>스탭리뷰 쓰기</span></a>
 									</div>
 
 
-								</div>
+								</div> -->
 								<!-- //filter_box -->
 
+                                <!--170201 제목 추가  -->
+                                <h3>상품평</h3>
 								<div class="reviews_box">
 									<div class="rating_summary">
 										<div class="rating-star">
@@ -3318,62 +3509,51 @@
 										<p class="per">100%</p>
 										<p class="desc">고객님들이 이 상품을 추천하셨습니다.</p>
 
+                                        <!-- 170201 수정 -->
 										<dl class="rating_grph">
-											<dt>실착용 사이즈</dt>
+											<dt>사이즈</dt>
 											<dd>
 												<div class="radio_img spt_bg">
 													<!-- 160824 실착용, 발볼 넓이 등 -->
 													<div class="point spt_bg" style="left:270px;"></div>
 												</div>
 												<div class="labels">
-													<span class="p1">작다</span>
-													<span class="p2">적당함</span>
-													<span class="p3">크다</span>
+													<span class="p1">매우 작아요</span>
+													<span class="p2">적당해요</span>
+													<span class="p3">매우 커요</span>
 												</div>
 											</dd>
 										</dl>
 
 										<dl class="rating_grph">
-											<dt>발볼 넓이</dt>
+											<dt>색상</dt>
 											<dd>
 												<div class="radio_img spt_bg">
 													<div class="point spt_bg" style="left:135px;"></div>
 												</div>
 												<div class="labels">
-													<span class="p1">작다</span>
-													<span class="p2">적당함</span>
-													<span class="p3">크다</span>
+													<span class="p1">매우 어두워요</span>
+													<span class="p2">적당해요</span>
+													<span class="p3">매우 밝아요</span>
 												</div>
 											</dd>
 										</dl>
 
 										<dl class="rating_grph">
-											<dt>실제품 컬러</dt>
+											<dt>배송</dt>
 											<dd>
 												<div class="radio_img spt_bg">
 													<div class="point spt_bg" style="left:67.5px;"></div>
 												</div>
 												<div class="labels">
-													<span class="p1">어둡다</span>
-													<span class="p2">화면과같다</span>
-													<span class="p3">밝다</span>
+													<span class="p1">매우 느려요</span>
+													<span class="p2">적당해요</span>
+													<span class="p3">매우 빨라요</span>
 												</div>
 											</dd>
 										</dl>
+                                        <!-- //170201 -->
 
-										<dl class="rating_grph">
-											<dt>품질&amp;만족도</dt>
-											<dd>
-												<div class="radio_img spt_bg">
-													<div class="point spt_bg" style="left:202.5px;"></div>
-												</div>
-												<div class="labels">
-													<span class="p1">불만</span>
-													<span class="p2">보통</span>
-													<span class="p3">만족</span>
-												</div>
-											</dd>
-										</dl>
 									</div>
 									<!-- //rating_summary -->
 
@@ -3387,7 +3567,6 @@
 												</div>
 											</div>
 											<!-- //rating-star -->
-											<div class="tit">리뷰 타이틀 영역입니다.</div>
 											<div class="content" id="prod_review1">
 												정말 최고의 제품입니다. 이렇게 좋은 제품을 제가 또 살 수 있을지 모르겠네요.<br/>
 												맨날맨날 신고 싶습니다. 너무 간지 쩔!
@@ -3409,7 +3588,6 @@
 												</div>
 											</div>
 											<!-- //rating-star -->
-											<div class="tit">리뷰 타이틀 영역입니다.</div>
 											<div class="content" id="prod_review2">
 												정말 최고의 제품입니다. 이렇게 좋은 제품을 제가 또 살 수 있을지 모르겠네요.<br/>
 												맨날맨날 신고 싶습니다. 너무 간지 쩔!
@@ -3444,7 +3622,6 @@
 												</div>
 											</div>
 											<!-- //rating-star -->
-											<div class="tit">리뷰 타이틀 영역입니다.</div>
 											<div class="content" id="prod_review3">
 												정말 최고의 제품입니다. 이렇게 좋은 제품을 제가 또 살 수 있을지 모르겠네요.<br/>
 												맨날맨날 신고 싶습니다. 너무 간지 쩔!
@@ -3487,10 +3664,9 @@
 							<!-- //reviews -->
 						</div>
 					</div>
-					<!-- //product-reviews -->
+					<!-- //product-reviews //170201 end -->
 
 					<div class="products-list-tpl related-products" style="margin-bottom: 50px;">
-                        <!-- 170208 텍스트 수정 -->
 						<h3 class="h_tit">추천 상품</h3>
 						<div class="products-list-wrapper">
 							<ul class="products-list">
