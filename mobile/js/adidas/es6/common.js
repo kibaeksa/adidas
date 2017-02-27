@@ -318,10 +318,6 @@ adiApp.getNextElement = (element) => {
 	const elemButtonGnb = document.querySelector('.nav_main .btn_slide');
 	const elemCloseButtonGnb = document.querySelector('#header>.navmenu_close');
 	const elemButtonSearch = document.querySelector('.nav_main .btn_search');
-	elemGnbNav.style.transform =
-	elemGnbNav.style.WebkitTransform =
-	elemGnbNav.style.MozkitTransform ='translate3d(-100%,0,0)';
-	elemGnbNav.style.left = '0';
 
 	elemGnbNav.style.width = window.innerWidth - 60 + 'px';
 	elemGnbNav.style.WebkitTransitionProperty = '-webkit-transform';
@@ -493,9 +489,9 @@ adiApp.getNextElement = (element) => {
 				closeGnbNavMenu();
 				elemCloseButtonGnb.style.display = 'none';
 				adiApp.removeClass(elemCloseButtonGnb,'open');
-			}else{
-				document.querySelector('.nav_main').prevScroll = scrollTop;
 			}
+
+			document.querySelector('.nav_main').prevScroll = scrollTop;
 
 			adiApp.addClass(elemButtonSearch , 'open');
 			adiApp.addClass(elemHtml,'no_srl');
@@ -516,18 +512,32 @@ adiApp.getNextElement = (element) => {
 		e.stopPropagation();
 		e.preventDefault();
 		if(!adiApp.hasClass(e.currentTarget,'open')){
-			const rootTop = document.getElementById('header').getBoundingClientRect().bottom;
-			const innerTop = rootTop - document.querySelector('#header .nav_menu .nav_menu_inner').getBoundingClientRect().top;
-			const yVal = (e.currentTarget.getBoundingClientRect().top - rootTop) + innerTop;
+			// const rootTop = document.getElementById('header').getBoundingClientRect().bottom;
+			// const innerTop = rootTop - document.querySelector('#header .nav_menu .nav_menu_inner').getBoundingClientRect().top;
+			// const yVal = (e.currentTarget.getBoundingClientRect().top - rootTop) + innerTop;
+
 
 			adiApp.removeClass(document.querySelectorAll('#header .nav_menu .gnb>li'),'open')
 			adiApp.addClass(e.currentTarget , 'open');
-			document.querySelector('#header .nav_menu').prevGnbScroll = document.querySelector('#header .nav_menu').scrollTop;
-			document.querySelector('#header .nav_menu').scrollTop = yVal;
+
+			const el = e.currentTarget;
+			const scrollVal = document.querySelector('.nav_menu').scrollTop;
+			const objOffsetTop = (e.currentTarget.getBoundingClientRect().top + (scrollVal-60));
+
+
+			// document.querySelector('#header .nav_menu').scrollTop = objOffsetTop;
+
+			setTimeout(function(){
+				const scrollVal = document.querySelector('.nav_menu').scrollTop;
+				const objOffsetTop = (el.getBoundingClientRect().top + (scrollVal-60));
+
+				$('#header .nav_menu').animate({
+					scrollTop : objOffsetTop
+				},300);
+			},150);
 
 		}else{
 			adiApp.removeClass(e.currentTarget , 'open');
-			document.querySelector('#header .nav_menu').scrollTop = document.querySelector('#header .nav_menu').prevGnbScroll;
 		}
 		return false;
 	});
@@ -541,6 +551,7 @@ adiApp.getNextElement = (element) => {
 		}else{
 			adiApp.addClass(e.currentTarget , 'open');
 		}
+
 		return false;
 	});
 
