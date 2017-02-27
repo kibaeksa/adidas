@@ -900,7 +900,7 @@
                                         <div class="staff_review_slider" id="staff_review_slider1">
     										<ul>
     											<li>
-    												<div class="img"><img src="http://image.adidas.co.kr/upload/eval_staff/201612/7782c0de735d4bc4b1e2a2c982f9d157_1214173128.jpg" alt=""/></div>
+    												<div class="img"><img src="https://cdn.ccs.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/h/a/habitat-silas-x-adidas-skateboard-deck-8-125-bottom_1.1478170905.jpg" alt=""/></div>
     												<div class="desc" id="stf_review_content1">
                                                         안녕하세요. 오리지날 동성로 아디다스 매장에서 근무하는 직원입니다.!!<br>
                                                         아디다스 온라인스토어를 보시고 구매하시는 고객님들을 위해 이번에는 키즈 운동화 리뷰를 들려 드리겠습니다.모든분들이 아디다스!! 그러면 잘아시는 수퍼스타 리뷰입니다. 이 수퍼스타 파운데이션 C제품은 주니어 제품입니다. 색상은 전체적인 화이트 색상과 블랙 삼선인데요. 개인적으로 저는 골드 로고 를 좋아하는 편인데, 이 운동화도 골드 로고입니다.!! 사이즈는 주니어 제품이다 보니 170 에서 210 사이즈까지 나온다고 하네요.<br><br>
@@ -2943,6 +2943,34 @@
 
 			// // 170220 스탭리뷰 스크립트 (기존에 스크립트 삭제)
 			(function(){
+                var openImage = function(imgUrl){
+                    var htmlString = '<div class="modal-popup open" id="viewImagePop" style="padding:0;">';
+                    htmlString += '    <div class="popup-contents" style="margin-top:60px;min-height:100%;">';
+                    htmlString += '        <a href="javascript:void(0)" class="close_x_btn"></a>';
+                    htmlString += '        <div class="img_contents" style="padding:15px;background:#fff;"></div>';
+                    htmlString += '    </div>';
+                    htmlString += '</div>';
+
+                    var img = new Image();
+                    img.onload = function(){
+                        var that = this;
+                        $(this).css({
+                            width : '100%',
+                            opacity : 0,
+                            transition:'opacity 0.3s'
+                        });
+                        $('#viewImagePop .img_contents').html(this);
+                        setTimeout(function(){
+                            that.style.opacity = 1;
+                        },100);
+                    };
+                    img.src = imgUrl;
+                    $('body').prepend(htmlString);
+                    $('#viewImagePop').bind('click',function(){
+                        $('#viewImagePop').remove();
+                    });
+                };
+
                 var sliderObj = new Swipe(document.getElementById('staff_review_slider1'),{
                     callback : function(index,element){
                         var wrapElemHeight = element.getBoundingClientRect().bottom - element.getBoundingClientRect().top;
@@ -2951,6 +2979,12 @@
                     },
                     stopPropagation : false
                 });
+
+                $('#staff_review_slider1 li .img').bind('click',function(){
+                    console.log(11);
+                    openImage($(this).find('img').attr('src'));
+                });
+
 
   			})();
 
