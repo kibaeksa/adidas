@@ -1614,7 +1614,7 @@ div.error .btn {width:700px; height:30px; text-align:center; margin-top:20px;}
 	position: absolute;
 	width:201px;
 	height: 32px;
-	padding-left: 28px;
+	padding-right: 28px;
 	background: #fff;
 	position: absolute;
 	top:40px;
@@ -1627,7 +1627,7 @@ div.error .btn {width:700px; height:30px; text-align:center; margin-top:20px;}
 	height:32px;
 	position: absolute;
 	top: 0;
-	left: 0;
+	right: 0;
 	background-position:-110px -1250px;
 	text-indent: -5000px;
 }
@@ -2073,7 +2073,8 @@ div.error .btn {width:700px; height:30px; text-align:center; margin-top:20px;}
 }
 
 #header-20160315 .gnb_menu>ul>li.sports .depth2_contents .ct950{
-	background:url('//image.adidas.co.kr/images/adidas/common/bg_gnb_depth2_line.gif') right 0 repeat-y;
+	/*background:url('//image.adidas.co.kr/images/adidas/common/bg_gnb_depth2_line.gif') right 0 repeat-y;*/
+	background:url('//image.adidas.co.kr/images/adidas/common/bg_gnb_depth2_line.gif') 766px 0 repeat-y;
 }
 
 #header-20160315 .gnb_menu>ul>li.brands .depth2_contents .ct950{
@@ -5016,6 +5017,8 @@ Update end
 .product-main.product-main-update .product-reviews .staff_review_slider li .cut .cut_thumbnails a{
 	margin-bottom:12px;
 	float:none;
+	overflow: hidden;
+	position: relative;
 }
 
 .product-main.product-main-update .product-reviews .staff_review_slider li .info .reviewer_spec span{
@@ -5027,11 +5030,14 @@ Update end
 .product-main.product-main-update .product-reviews .staff_review_slider li .cut .big_cut{
 	width: 395px;
 	height: 395px;
+	position: relative;
+	overflow: hidden;
+	cursor: default;
 }
 
 .product-main.product-main-update .product-reviews .staff_review_slider li .cut .big_cut img{
-	width: 395px;
-	min-width: 395px;
+	max-width: 395px;
+	width: auto;
 }
 
 .product-main.product-main-update .product-reviews .staff_review_slider li .info{
@@ -9106,6 +9112,22 @@ Update
 
 .modal-popup-wrapper.modal-popup-add_address .btn_area .btn-lgray{
 	width: 100px;
+}
+
+.modal-popup-wrapper.modal-popup-add_address .payment-main .deliv_form .b1 input{
+	width: 293px;
+}
+
+.modal-popup-wrapper.modal-popup-add_address .payment-main .deliv_form .addr .b2{
+	width: 194px;
+}
+
+.modal-popup-wrapper.modal-popup-add_address .payment-main .deliv_form input[type="text"]{
+	background: #fff;
+}
+
+.modal-popup-wrapper.modal-popup-add_address .payment-main .deliv_form .addrbox.disabled input[type="text"]{
+	border-width:0 !important;
 }
 
 /* Manage address popup */

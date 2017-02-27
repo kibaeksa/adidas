@@ -9,7 +9,7 @@ adiApp.getNodefromString = function (htmlString) {
 
 (function($){
 	if($('.navmenu_close').length < 1){
-		$('#header').prepend('<a href="javascript:void(0)" class="navmenu_close close_x_btn"></a>');
+		$('#header').prepend('<a href="javascript:void(0)" class="navmenu_close close_x_btn" style="right:60px;z-index:102;"></a>');
 	}
 
 	if($('.nav_menu_overlay').length < 1){

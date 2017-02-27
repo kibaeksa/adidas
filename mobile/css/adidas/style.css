@@ -6251,12 +6251,21 @@ div.layerpop_wrap.mi_login_layer .button_area>div{
 }
 
 #container.product_view .product_info>.detail_info .review .staff_review .staff_review_slider li .img{
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+    overflow: hidden;
 	margin-bottom: 15px;
 }
 
 #container.product_view .product_info>.detail_info .review .staff_review .staff_review_slider li .img img{
 	max-width: 100%;
 	width:auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate3d(-50%,-50%,0);
+    -webkit-transform:translate3d(-50%,-50%,0);
 }
 
 #container.product_view .product_info>.detail_info .review .staff_review .staff_review_slider li .desc{
