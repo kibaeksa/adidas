@@ -32,7 +32,11 @@ jQuery(document).ready(function(){
 		controlObj:'.slide_control a.visual_btn',
 		moveValue:'1920',
 		loopStyle:false,
-		speed:2000,
+		/*
+			170224 speed 값 변경
+			speed:2000 ==> speed:4000,
+		*/
+		speed:4000,
 		easing:'easeOutCubic',
 		autoControl:'.control>a',
 		loopStyle:true,
@@ -804,14 +808,15 @@ jQuery(document).ready(function(){
 					</div>
 					<!-- //depth2_contents -->
 				</li>
+				<!-- 170224 Start -->
 				<li class="sports">
 					<a href="#">SPORTS</a>
 					<div class="depth2_contents">
+						<!-- 170224 background:none style제거 -->
 						<div class="ct950">
 							<div class="ctgr_box">
-								<div class="box img_box col_14">
+								<div class="box img_box col_17">
 									<dl>
-										<!-- 160908 제목 앞에 로고 추가 "<span class="spt_bg logo sp"></span>" -->
 										<dt><a href="#"><span class="spt_bg logo sp"></span>축구</a></dt>
 										<dd>
 											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_bnn1.jpg" alt="" /></a></div>
@@ -845,9 +850,8 @@ jQuery(document).ready(function(){
 									</dl>
 								</div>
 								<!-- //box -->
-								<div class="box img_box col_14">
+								<div class="box img_box col_17">
 									<dl>
-										<!-- 160908 제목 앞에 로고 추가 "<span class="spt_bg logo sp"></span>" -->
 										<dt><span class="spt_bg logo sp"></span>러닝</dt>
 										<dd>
 											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_bnn2.jpg" alt="" /></a></div>
@@ -881,9 +885,8 @@ jQuery(document).ready(function(){
 									</dl>
 								</div>
 								<!-- //box -->
-								<div class="box img_box col_14">
+								<div class="box img_box col_17">
 									<dl>
-										<!-- 160908 제목 앞에 로고 추가 "<span class="spt_bg logo sp"></span>" -->
 										<dt><span class="spt_bg logo sp"></span>농구</dt>
 										<dd>
 											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_bnn3.jpg" alt="" /></a></div>
@@ -917,9 +920,8 @@ jQuery(document).ready(function(){
 									</dl>
 								</div>
 								<!-- //box -->
-								<div class="box img_box col_14">
+								<div class="box img_box col_17">
 									<dl>
-										<!-- 160908 제목 앞에 로고 추가 "<span class="spt_bg logo sp"></span>" -->
 										<dt><span class="spt_bg logo sp"></span>트레이닝</dt>
 										<dd>
 											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_bnn4.jpg" alt="" /></a></div>
@@ -954,72 +956,36 @@ jQuery(document).ready(function(){
 								</div>
 								<!-- //box -->
 
-								<div class="box img_box col_14">
+								<div class="box etcbox col_16_5 last">
 									<dl>
-										<!-- 160908 제목 앞에 로고 추가 "<span class="spt_bg logo sp"></span>" -->
-										<dt><span class="spt_bg logo sp"></span>아웃도어</dt>
-										<dd>
-											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_bnn5.jpg" alt="" /></a></div>
-											<ul>
-												<li class="depth3_wrapper">
-													<a href="#">신발</a>
-													<div class="depth3">
-														<a href="#">남성</a>
-														<a href="#">여성</a>
-														<a href="#">키즈</a>
-													</div>
-												</li>
-												<li class="depth3_wrapper">
-													<a href="#">의류</a>
-													<div class="depth3">
-														<a href="#">남성</a>
-														<a href="#">여성</a>
-														<a href="#">키즈</a>
-													</div>
-												</li>
-												<li class="depth3_wrapper">
-													<a href="#">용품</a>
-													<div class="depth3">
-														<a href="#">남성</a>
-														<a href="#">여성</a>
-														<a href="#">키즈</a>
-													</div>
-												</li>
-											</ul>
-										</dd>
-									</dl>
-								</div>
-								<!-- //box -->
-
-								<div class="box etcbox col_13 last">
-									<dl>
-										<dt>기타</dt>
+										<dt>다른 스포츠</dt>
 										<dd>
 											<ul>
 												<li><a href="#">아웃도어</a></li>
 												<li><a href="#">테니스</a></li>
-												<li><a href="#">수영</a></li>
-												<li><a href="#">야구</a></li>
+												<li><a href="#">스케이트보딩</a></li>
+												<!-- <li><a href="#">사이클링</a></li> -->
+												<li class="last"><a href="#">사이클링</a></li>
 											</ul>
 										</dd>
 									</dl>
 								</div>
-								<!-- //box -->
 							</div>
 							<!-- //ctgr_box -->
 
 							<div class="view_all img_box">
-								<div class="col_14"><a href="#">축구 전체보기</a></div>
-								<div class="col_14"><a href="#">러닝 전체보기</a></div>
-								<div class="col_14"><a href="#">농구 전체보기</a></div>
-								<div class="col_14"><a href="#">트레이닝 전체보기</a></div>
-								<div class="col_14"><a href="#">아웃도어 전체보기</a></div>
+								<div class="col_17"><a href="#">축구 전체보기</a></div>
+								<div class="col_17"><a href="#">러닝 전체보기</a></div>
+								<div class="col_17"><a href="#">농구 전체보기</a></div>
+								<div class="col_17"><a href="#">트레이닝 전체보기</a></div>
+								<div class="last" style="width:165px;margin-left:15px;"><a href="http://shop.adidas.co.kr/PF020201.action?S_CTGR_CD=01004001">스포츠 전체보기</a></div>
 							</div>
 						</div>
 						<!-- //ct950 -->
 					</div>
 					<!-- //depth2_contents -->
 				</li>
+				<!-- 170224 End -->
 				<li class="brands line">
 					<a href="#">BRANDS</a>
 					<div class="depth2_contents">
@@ -1328,10 +1294,28 @@ jQuery(document).ready(function(){
 					</div>
 					<!-- //depth2_contents -->
 				</li>
-				<!-- 170220 VR STORE 링크 추가 -->
-				<li>
+				<!-- 170220 VR STORE 추가 -->
+				<li class="vrstore">
 					<a href="http://360pano.kr/adidaskorea/20170209/web/" target="_blank">VR STORE</a>
+					<div class="depth2_contents">
+						<div class="ct950">
+							<div class="text_box">
+								<h3>adidas vr store <span>open</span></h3>
+								<p>새롭게 오픈한 아디다스 오리지널스 압구정 VR 스토어를 직접 체험해 보세요.<br/>실제 오프라인 스토어의 환경을 온라인상에서 구현하여, <strong>365일/ 24시간</strong> 언제 어디서든<br/><strong>압구정 플래그십 스토어만의 프리미엄 컬렉션 및 한정 상품을 쇼핑하실 수 있습니다.</strong> </p>
+								<a href="http://shop.adidas.co.kr/vr/originals_apgujeong/web/index.html" target="_blank"><span>VR</span> 스토어 바로가기 <span class="spt_bg"></span></a>
+							</div>
+
+							<div class="bg">
+								<a href="http://shop.adidas.co.kr/vr/originals_apgujeong/web/index.html" target="_blank">
+									<div><img src="http://image.adidas.co.kr/images/adidas/common/bg_gnb_vrstore.jpg" alt=""></div>
+									<div>아디다스 오리지널스 압구정 VR 스토어 </div>
+								</a>
+
+							</div>
+						</div>
+					</div>
 				</li>
+				<!-- 170220 VR STORE 끝 -->
 			</ul>
 		</div>
 		<!-- //gnb_menu -->

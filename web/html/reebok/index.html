@@ -20,7 +20,11 @@
 				controlWrap:'.visual_util',
 				controlObj:'a.visual_btn',
 				moveValue:'1920',
-				speed:1500,
+                /*
+        			170224 speed 값 변경
+        			speed:1500 ==> speed:4000,
+        		*/
+				speed:4000,
 				easing:'easeOutCubic',
 				autoRolling:true,
 				autoControl:'a.control',
@@ -199,7 +203,7 @@ jQuery(document).ready(function(){
 
 
                         <!-- 161109 검색제안 -->
-						<div class="search-suggest" style="display: block;">
+						<div class="search-suggest" style="display:none;">
 							<div class="category_lits">
 								<h2>추천 카테고리</h2>
 								<ul>

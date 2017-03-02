@@ -399,8 +399,11 @@ window.requestAnimFrame = (function(){
 		})();
 
 		/* Custom form init */
-		$.fn.cmtSelectInit();
-		$.fn.cmtInputInit();
+		if($.fn.cmtSelectInit){
+			$.fn.cmtSelectInit();
+			$.fn.cmtInputInit();
+		}
+
 	});
 
 	$.fn.Swipers = function(_options){
