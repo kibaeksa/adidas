@@ -5049,7 +5049,7 @@ html.no_scroll{
 				background: #202020;
 				background: url("/images/reebok/event/about/kangsisters/bg.jpg") no-repeat;
 				background-size: 100% 100%;
-				height: 1645px;
+				height: 2576px;
 
 
 				h3{
@@ -5096,6 +5096,14 @@ html.no_scroll{
 					position:absolute;
 					top:732px;
 					left:-58%;
+					font:214px 'DINWebPro-CondMedium';
+					color:#fff;
+					@include opacity (0.1);
+				}
+				.textbg_bg3{
+					position:absolute;
+					bottom:-670px;
+					left:-42%;
 					font:214px 'DINWebPro-CondMedium';
 					color:#fff;
 					@include opacity (0.1);
@@ -5151,9 +5159,9 @@ html.no_scroll{
 
 		.instagram{
 			position: relative;
-			padding:60px 50px;
+			padding:272px 50px 0 50px;
 			width: 100%;
-			background: url("/images/reebok/event/about/kangsisters/bg2.jpg") no-repeat;
+			// background: url("/images/reebok/event/about/kangsisters/bg2.jpg") no-repeat;
 			background-size: 100% 100%;
 			.inner_wrap{
 				width: 899px;
@@ -5292,117 +5300,147 @@ html.no_scroll{
 			}
 		}
 
+		.main{
+			position: relative;
+			.bg{
+				img{
+					position: absolute;
+					top:0;
+					left:50%;
+					margin-left: -990px;
+				}
+			}
+			.content{
+				position: relative;
+				width: 889px;
+				height: 650px;
+				margin:0 auto;
+				.right{
+					position: absolute;
+					top:60px;
+					right: 0;
+				}
+				.left{
+					position: absolute;
+					top:107px;
+					left: -75px;
+					a.buy{
+						position: absolute;
+						top:302px;
+						right:50%;
+						// width: 240px;
+						margin-right: -156px;
+						border:2px solid #423e3c;
+
+						&:hover{
+							.bg{
+								@include opacity (0.5);
+							}
+						}
+						p{
+							position: relative;
+							padding:2px 78px 0 78px;
+							color:#231f20;
+							font:22px/56px 'DINWebPro-Cond','NotoSansKR';
+							z-index: 3;
+						}
+						.bg{
+							position: absolute;
+							top:0;
+							left:0;
+							width: 100%;
+							height: 100%;
+							background: #fff;
+							@include opacity (0.2);
+							z-index: 2;
+						}
+					}
+				}
+
+			}
+		}
 
 		.perform{
-			// min-width: 1780px;
+			min-width: 1200px;
 			position: relative;
-			width: 100%;
-			height: 835px;
+			width: 107%;
+			height: 846px;
 			overflow: hidden;
 			@media screen and (max-width: 1850px){
-				height: 760px;
+				height: 810px;
 				.bg{
 					img{
+						width: 107%;
 					}
 				}
 
 			}
-			@media screen and (max-width: 1570px){
+			@media screen and (max-width: 1770px){
 				height: 760px;
-				.bg{
-					img{
-
-					}
-				}
 			}
-			@media screen and (max-width: 1570px){
-				height: 680px;
-				.bg{
-					img{
-
-					}
-				}
+			@media screen and (max-width: 1630px){
+				height: 705px;
 			}
 			@media screen and (max-width: 1400px){
 				height: 600px;
-				.bg{
-					img{
-						width: 130% !important;
-					}
-				}
+
 			}
 			.bg{
 				position: relative;
 				transition:all 0.3s ease-out;
 				img{
 					width:105%;
+					@media screen and (max-width: 1630px){
+						width: 120%;
+					}
 
 
 				}
 			}
 			.bg_shoe{
-				// width: 40%;
 				position: absolute;
 				top:140px;
-				left:50%;
-				margin-left:-274px;
+				right:40%;
 				transition:all 0.1s ease-out;
 				@media screen and (max-width: 1585px){
-					top:19%;
-					left:50%;
-					margin-left:-498px;
+					top:75px;
 				}
-				@media screen and (max-width: 1400px){
-					top:20%;
-					left:50%;
-					margin-left:-468px;
+				@media screen and (max-width: 1780px){
+					top:94px;
 				}
 				img{
 
+					@media screen and (max-width: 1585px){
+						width: 95%;
+					}
 				}
 
 			}
 			.txt_wrapper{
-
+				position: absolute;
+				top:145px;
+				right:50%;
+				margin-right: -369px;
 				.txt_box{
-					position: absolute;
-					top:100px;
-					left:50%;
-					margin-left: -450px;
 					@media screen and (max-width: 1585px){
 						top:98px !important;
-
 					}
 					.main_txt{
 						margin-left: -73px;
-						text-align: left;
-						img{
-							// opacity: .7;
-							// transition:all 0.5s ease-in;
-						}
 					}
 					.main_txt:hover img{
 						opacity: 1;
 					}
 
-					.sub_txt{
-						margin-top: 25px;
-						text-align: left;
-						color:#231f20;
-						text-transform: uppercase;
-						font:600 20px/33px  'NotoSansKRlight','Nanum Gothic';
-						@media screen and (max-width: 1585px){
-							font:600 18px/25px  'NotoSansKRlight','Nanum Gothic';
-						}
-					}
+
 					a.buy{
 						position: absolute;
-						top:408px;
-						// right:0px;
+						top:161px;
+						right:50%;
+						// width: 240px;
+						margin-right: -156px;
 						border:2px solid #423e3c;
-						@media screen and (max-width: 1585px){
-							top:360px !important;
-						}
+
 						&:hover{
 							.bg{
 								@include opacity (0.5);
@@ -5447,13 +5485,13 @@ html.no_scroll{
 							width: 14px;
 							height: 14px;
 							background:url('/images/reebok/event/about/printsmooth/icon.png') 50% 100% no-repeat;
-							background-position:-37px 0;
+							background-position:0px 0;
 
 						}
 						&:hover{
 							background: #e54a11;
 							a{
-								background-position:0 0;
+								background-position:-28px 0;
 							}
 						}
 						&.active{
@@ -5494,9 +5532,7 @@ html.no_scroll{
 							font:600 26px/60px  'NotoSansKR','Nanum Gothic';
 							@include prefix-css3(transform,translate3d(20px,0,0));
 							transition:all 0.5s ease-out;
-							@media screen and (max-width: 1585px){
-								font:600 20px/30px  'NotoSansKR','Nanum Gothic';
-							}
+
 							}
 						.desc{
 							color:#231f20;
@@ -5504,9 +5540,7 @@ html.no_scroll{
 							font:600 15px/20px  'NotoSansKRRegular','Nanum Gothic';
 							@include prefix-css3(transform,translate3d(20px,0,0));
 							transition:all 0.5s ease-out;
-							@media screen and (max-width: 1585px){
-								font:600 15px/18px  'NotoSansKRRegular','Nanum Gothic';
-							}
+
 							}
 						}
 					}
@@ -5514,15 +5548,18 @@ html.no_scroll{
 					&.active{
 						.con_img{
 							@include prefix-css3(transform,scale(1));
-							@media screen and (max-width: 1585px){
+							@media screen and (max-width: 1890px){
 								@include prefix-css3(transform,scale(0.8));
 							}
-							@media screen and (max-width: 1200px){
+							@media screen and (max-width: 1780px){
+								@include prefix-css3(transform,scale(0.8));
+							}
+							@media screen and (max-width: 1480px){
 								@include prefix-css3(transform,scale(0.6));
 							}
 						}
 						.text{
-							// margin-left:-337px;
+
 							.heading{
 								opacity: 1;
 								@include prefix-css3(transform,translate3d(0,0,0));
@@ -5539,17 +5576,10 @@ html.no_scroll{
 				&.point1{
 					position: absolute;
 					top:70%;
-					left:50%;
+					right:45%;
 					margin-left:26%;
-					@media screen and (max-width: 1585px){
-						top:545px;
-						left:50%;
-						margin-left:-5px;
-					}
-					@media screen and (max-width: 1400px){
-						top:490px;
-						left:50%;
-						margin-left:-46px;
+					@media screen and (max-width: 1780px){
+						top:80%;
 					}
 
 
@@ -5557,22 +5587,25 @@ html.no_scroll{
 						.text{
 							margin-left:-237px;
 							margin-top:-218px;
-							@media screen and (max-width: 1585px){
-								margin-left:-158px;
-								margin-top:-150px;
-							}
-							@media screen and (max-width: 1200px){
-								margin-top:-215px;
-								margin-left: -91px;
+							@media screen and (max-width: 1480px){
+								margin-left: -160px;
 							}
 						}
 					}
 				}
 				&.point2{
 					position: absolute;
-					top:65%;
-					left:65%;
-					// margin-left:14%;
+					top:44%;
+					left:36%;
+					@media screen and (max-width: 1780px){
+						top:44%;
+						left:34%;
+					}
+					@media screen and (max-width: 1600px){
+						top:44%;
+						left:27%;
+					}
+
 					.content1{
 						position: relative;
 						width: 318px;
@@ -5585,44 +5618,57 @@ html.no_scroll{
 						.text{
 							width: 100%;
 							position: absolute;
-							top:50%;
+							top:99%;
 							left:0;
-							margin-left: -276px;
-							margin-top: -79px;
+							@media screen and (max-width: 1890px){
+								top:78%;
+							}
+							@media screen and (max-width: 1585px){
+								margin-top: -7px;
+							}
+							@media screen and (max-width: 1480px){
+								margin-top: -59px;
+							}
 						}
 					}
-					@media screen and (max-width: 1585px){
-						top:345px;
-						left:50%;
-						margin-left:-149px;
-					}
-					@media screen and (max-width: 1400px){
-						top:358px;
-						margin-left:-199px;
-					}
+
 
 
 				}
 				&.point3{
+					height: 40px;
 					position: absolute;
-					top:29%;
-					left:53%;
+					top:32%;
+					right:58%;
 					@media screen and (max-width: 1585px){
-						top:223px;
-						left:50%;
-						margin-left:-437px;
+					}
+					@media screen and (max-width: 1780px){
+						top:25%;
+						right:62%;
+					}
+					@media screen and (max-width: 1480px){
+						top:25%;
+						right:68%;
 					}
 
 					.content1{
 						position: relative;
-						top:-15px;
-						left:-42%;
+						margin-left: -137px;
+						margin-top: -23px;
+						.con_img{
+							@include prefix-css3(transform-origin,center top);
+						}
 						.text{
 							margin-left: 0px;
 							margin-top:14px;
-							@media screen and (max-width: 1200px){
-								margin-left:67px;
-								margin-top:-37px;
+							@media screen and (max-width: 1585px){
+								margin-top: -53px;
+							}
+							@media screen and (max-width: 1780px){
+								margin-top: -47px;
+							}
+							@media screen and (max-width: 1480px){
+								margin-top: -97px;
 							}
 						}
 					}
@@ -5631,40 +5677,27 @@ html.no_scroll{
 			}
 		}
 
-		.product-list{
-			.item{
-				width: 25%;
-				float: left;
-				// float:none;
-				margin:0 auto;
-				text-align: center;
-				.img{
-					height: 208px;
-					padding-top: 37px;
-				}
-				.tit{
-					margin-bottom: 5px;
-				}
-			}
-		}
-
-
 
 		.products_collection{
 			width: 100%;
+			// height: 100%;
+			height: 1135px;
 			position: relative;
 			background: #323232;
+			background:url('http://image.reebok.co.kr/images/reebok/event/about/printsmooth/gal_bg.jpg') no-repeat;
+			background-size: 100% 100%;
+
 			.bg{
 				position: absolute;
 				top:0;
 				left:50%;
-				margin-left:-980px;
+				margin-left:-990px;
 				}
 			h4{
 				position: relative;
-				padding:90px 0 14px;
+				padding:37px 0 14px;
 				z-index: 1;
-				font:55px/55px 'DINWebPro-Cond';
+				font:50px/90px 'QStencil';
 				text-align: center;
 				color:#fff;
 				}
@@ -5716,6 +5749,7 @@ html.no_scroll{
 						float: left;
 						@include opacity(0.4);
 						@include prefix-css3(transition ,opacity 0.4s ease-in 0.3s);
+
 					}
 					li.active{
 						@include opacity(1);
@@ -5725,12 +5759,12 @@ html.no_scroll{
 			}
 			.prodlist_wrap{
 				position: relative;
-				height: 335px;
+				height: 364px;
 				background: #ebeaee;
 				overflow: inherit;
 				z-index: 2;
-				margin-top: 70px;
 				border-bottom-width: 0;
+				margin-bottom: 100px;
 				.arrow{
 					position: absolute;
 					left:50%;
@@ -5745,151 +5779,70 @@ html.no_scroll{
 					position: absolute;
 					top:0;
 					left:50%;
-					margin-left: -446px;
+					margin-left: -440px;
 					display: none;
+					h5{
+						position: absolute;
+						top:36px;
+						text-align: center;
+						width: 100%;
+					}
+					.product-list{
+						.item{
+							width: 25%;
+							float: left;
+							// float:none;
+							margin:0 auto;
+							text-align: center;
+							.img{
+								height: 203px;
+								padding-top: 70px;
+								img{
+									margin-top: 65px;
+								}
+							}
+							.tit{
+								margin-bottom: 5px;
+							}
+						}
+					}
 				}
 				.prodlist_box.last{
-					margin-left: -230px;
-					display: none;
-					.item{
-						float: left;
+					ul{
+						li{
+							.img{
+								img{
+									margin-top: 23px !important;
+								}
+							}
+						}
 					}
 				}
 				.slider-btn{
 					width: 100%;
 					position: absolute;
-					top:-49px;
+					bottom: -48px;
 					left:0;
 					text-align: center;
+					a{
+						margin-right: 15px;
+					}
 				}
 			}
 		}
 
-
-
-		.products_collection{
-			width: 100%;
-			position: relative;
-			background: #323232;
-			.bg{
-				position: absolute;
-				top:0;
-				left:50%;
-				margin-left:-980px;
-				}
-			h4{
-				position: relative;
-				padding:90px 0 14px;
-				z-index: 1;
-				font:55px/55px 'DINWebPro-Cond';
-				text-align: center;
-				color:#fff;
-				}
-			p.title{
-				position: relative;
-				padding-bottom: 44px;
-				width: 100%;
-				font:18px/25px 'NotoSansKRlight';
-				text-align: center;
-				color:#fff;
-			}
-			.wide-slider-wrapper{
-				position: relative;
-				width: 100%;
-				height:550px;
-				left: inherit;
-				margin-left:inherit;
-				z-index: 1;
-				overflow: hidden;
-				background: #000;
-				.arrow-prev{
-					position: absolute;
-					top:50%;
-					left:50%;
-					margin-left: -420px;
-					background-position: -125px -80px;
-					z-index: 2;
-					width: 22px;
-					height: 42px;
-				}
-				.arrow-next{
-					position: absolute;
-					top:50%;
-					left:50%;
-					margin-left:420px;
-					background-position: -125px -125px;
-					z-index: 2;
-					width: 22px;
-					height: 42px;
-				}
-				ul{
-					position: absolute;
-					top:0;
-					width: 100%;
-					height: 550px;
-					li{
-						width: 765px;
-						position: relative;
-						float: left;
-						@include opacity(0.4);
-						@include prefix-css3(transition ,opacity 0.4s ease-in 0.3s);
-					}
-					li.active{
-						@include opacity(1);
-					}
-				}
-
-			}
-			.prodlist_wrap{
-				position: relative;
-				height: 335px;
-				background: #ebeaee;
-				overflow: inherit;
-				z-index: 2;
-				margin-top: 70px;
-				border-bottom-width: 0;
-				.arrow{
-					position: absolute;
-					left:50%;
-					top:-21px;
-					margin-left: -21px;
-					background-position: -140px 0;
-					width: 43px;
-					height: 21px;
-				}
-				.prodlist_box{
-					width: 889px;
-					position: absolute;
-					top:0;
-					left:50%;
-					margin-left: -446px;
-					display: none;
-				}
-				.prodlist_box.last{
-					margin-left: -230px;
-					display: none;
-					.item{
-						float: left;
-					}
-				}
-				.slider-btn{
-					width: 100%;
-					position: absolute;
-					top:-49px;
-					left:0;
-					text-align: center;
-				}
-			}
-		}
-		.banner_wrap{
+		.banner_area{
 			width:100%;
+			height:100%;
 			position: relative;
-			margin-top: -89px;
-			.banner1{
-				img{
-					width: 100%;
-				}
+			.bg{
+				position: absolute;
 			}
+			.inner{
+				text-align: center;
+			}
+
+
 		}
 	}
 	/* printsmooth end */
@@ -6727,7 +6680,8 @@ html.no_scroll{
 	.list_wrap{
 		position: relative;
 		overflow: hidden;
-		height: 3000px;
+		height: 3289px;
+
 		background:#161616;
 			.bg{
 				position: absolute;
@@ -6875,18 +6829,23 @@ html.no_scroll{
 								}
 							}
 						}
-						&.kangsister{
+						&.printsmooth{
 							background: url("/images/reebok/event/about/campaign_list/gigi_bg.jpg") 50%  no-repeat;
 							filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/reebok/event/about/campaign_list/gigi_bg.jpg', sizingMethod='scale');
 							background-size:100%;
 						}
-						&.nano7_m{
+						&.kangsister{
 							background: url("/images/reebok/event/about/campaign_list/heritage_bg.jpg") 50%  no-repeat;
+							filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/reebok/event/about/campaign_list/gigi_bg.jpg', sizingMethod='scale');
+							background-size:100%;
+						}
+						&.nano7_m{
+							background: url("/images/reebok/event/about/campaign_list/nada_bg.jpg") 50%  no-repeat;
 							filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/reebok/event/about/campaign_list/heritage_bg.jpg', sizingMethod='scale');
 							background-size:100%;
 						}
 						&.nano7_w{
-							background: url("/images/reebok/event/about/campaign_list/heritage_bg.jpg") 50%  no-repeat;
+							background: url("/images/reebok/event/about/campaign_list/gigi_bg.jpg") 50%  no-repeat;
 							filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/reebok/event/about/campaign_list/heritage_bg.jpg', sizingMethod='scale');
 							background-size:100%;
 						}
@@ -6911,12 +6870,12 @@ html.no_scroll{
 							background-size:100%;
 						}
 						&.about2l{
-							background: url("/images/reebok/event/about/campaign_list/2l_bg.jpg") 50%  no-repeat;
+							background: url("/images/reebok/event/about/campaign_list/heritage_bg.jpg") 50%  no-repeat;
 							filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/reebok/event/about/campaign_list/2l_bg.jpg', sizingMethod='scale');
 							background-size:100%;
 						}
 						&.clubc{
-							background: url("/images/reebok/event/about/campaign_list/clubc_bg.jpg") 50%  no-repeat;
+							background: url("/images/reebok/event/about/campaign_list/nada_bg.jpg") 50%  no-repeat;
 							filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/reebok/event/about/campaign_list/2l_bg.jpg', sizingMethod='scale');
 							background-size:100%;
 						}
