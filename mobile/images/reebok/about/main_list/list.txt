@@ -1,7 +1,0 @@
-2l_img.png
-clubc_img.jpg
-heritage_img.jpg
-list.txt
-nano7_img.jpg
-txt_x.png
-video_img.jpg
