@@ -9,7 +9,7 @@ adiApp.getNodefromString = function (htmlString) {
 
 (function($){
 	if($('.navmenu_close').length < 1){
-		$('#header').prepend('<a href="javascript:void(0)" class="navmenu_close close_x_btn" style="right:60px;z-index:102;"></a>');
+		$('#header').prepend('<a href="javascript:void(0)" class="navmenu_close close_x_btn" style="right:0;z-index:102;"></a>');
 	}
 
 	if($('.nav_menu_overlay').length < 1){
@@ -166,8 +166,8 @@ adiApp.getNodefromString = function (htmlString) {
 		return false;
 	});
 
-	$('#header .nav_menu .gnb>li li , #container.main .category_menu>li li').bind('click',function(event){
-		event.stopPropagation()
+	$('#header .nav_menu .gnb>li li').bind('click',function(event){
+		event.stopPropagation();
 
 		if($(this).hasClass('open')){
 			$(this).removeClass('open');
@@ -176,7 +176,21 @@ adiApp.getNodefromString = function (htmlString) {
 		}
 	});
 
-	$('#header .nav_menu .gnb>li , #container.main .category_menu>li').bind('click',function(event){
+	$('#container.main .category_menu_wrapper .gnb>li li').bind('click',function(event){
+		event.stopPropagation();
+		if(!$(this).hasClass('dep')){
+			return;
+		}
+
+		if($(this).hasClass('open')){
+			$(this).removeClass('open');
+		}else{
+			$(this).addClass('open');
+		}
+		return false;
+	});
+
+	$('#header .nav_menu .gnb>li').bind('click',function(event){
 		event.stopPropagation()
 
 		if(!$(this).hasClass('open')){
@@ -202,8 +216,34 @@ adiApp.getNodefromString = function (htmlString) {
 			$('#header .nav_menu').animate({
 				scrollTop : $('#header .nav_menu').data('prevGnbScroll').scrollTop
 			},250);
-
 		}
+	});
+
+	$('#container.main .category_menu_wrapper .gnb>li').bind('click',function(event){
+		event.stopPropagation()
+		if(!$(this).hasClass('open')){
+
+			$('#container.main .category_menu_wrapper .gnb>li').removeClass('open');
+			$(this).addClass('open');
+
+
+			$('#container.main .category_menu_wrapper').data('prevGnbScroll',{
+				scrollTop : $('#header .nav_menu').scrollTop()
+			});
+
+			var yVal = $(this).offset().top;
+
+			setTimeout(function(){
+				$('html,body').animate({
+					scrollTop : yVal
+				},460);
+			},100);
+
+		}else{
+			$(this).removeClass('open');
+		}
+
+		return false;
 	});
 
 	$('#filterLayerBtn').bind('click',function(){
