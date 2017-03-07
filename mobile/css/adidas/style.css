@@ -2706,6 +2706,18 @@ html.no_srl{
 
 }
 
+#container.main .main_visual .owl-stage-outer{
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+}
+
+#container.main .main_visual .owl-stage-outer .owl-stage{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 #container.main .main_visual .box{
 	position: relative;
 	width: 100%;
@@ -8359,7 +8371,7 @@ padding:30px 15px;
     line-height: 48px;
     background: #fff;
     color: #999;
-    border: 1px solid  #999;
+    border: 1px solid  #ccc;
 }
 
 #container.login .button_area>div.naver>a span::before{
@@ -9050,7 +9062,7 @@ padding:30px 15px;
     line-height: 48px;
     background: #fff;
     color: #999;
-    border: 1px solid #999;
+    border: 1px solid #ccc;
 }
 
 #container.order .odr_pay_box>.cont .choice_login .naver_box .naver a span::before{
@@ -15483,6 +15495,15 @@ padding:30px 15px;
 }
 /*common*/
 @media screen and (max-width: 320px) {
+
+    #container.main .main_visual .owl-stage-outer{
+        padding-bottom: 0;
+    }
+
+    #container.main .main_visual .owl-stage-outer .owl-stage{
+        position: relative;
+    }
+
 	#container.main .main_visual .box{
 		padding-bottom: 120%;
 	}

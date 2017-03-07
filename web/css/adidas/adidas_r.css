@@ -6920,7 +6920,7 @@ Update
 .payment-main .delivery_info .for_guest .btn-ctm.sns_btn{
 	width: 243px;
 	height: 38px;
-	margin-bottom: 11px;
+	margin-bottom:73px;
 	background: #fff;
 	border: 1px solid  #ccc;
 }
@@ -6932,10 +6932,6 @@ Update
 	font-size: 13px;
 	line-height: 38px;
 	background:url('//image.adidas.co.kr/images/adidas/common/ico_btn_naver.gif') 0 center no-repeat;
-}
-
-.payment-main .delivery_info .for_guest .login_naver{
-	margin-bottom: 40px;
 }
 
 .payment-main .delivery_info .for_guest .login_naver .desc{
@@ -7741,16 +7737,21 @@ Update
 
 .login-main.login-sns .login_form{
 	width: 338px;
-	float: left;
 	padding: 0 135px 0 0;
 	border-right: 2px solid  #eee;
 }
 
+.login-main.login-sns>.clfix{
+	position: relative;
+}
+
 .login-main.login-sns .register{
-	width: 370px;
-	float: left;
+	width: 420px;
 	padding: 0 0 0 80px;
 	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 450px;
 }
 
 .login-main.login-sns .desc{
