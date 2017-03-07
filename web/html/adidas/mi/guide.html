@@ -9,7 +9,7 @@
   <script type="text/javascript" src="/js/jquery/easing/jquery.easing.1.3.js"></script>
   <script src="/js/adidas/adidas.js" type="text/javascript"></script>
   <script type="text/javascript">
-	
+
 	/* 141210 script */
 	;(function($){
 		var slideAct = false;
@@ -51,11 +51,11 @@
 				var _idx = $(this).index();
 				if(slideAct || _idx == nowIdx) return false;
 				var dir;
-				
+
 				if(nowIdx < _idx) dir = 'r';
-				else dir = 'l'; 
+				else dir = 'l';
 				setIndex(_idx);
-			
+
 				animateObj(dir);
 				return false;
 			});
@@ -65,7 +65,7 @@
 			},function(){
 				mouseOver = false;
 			});
-			
+
 		});
 
 		function setInit(){
@@ -86,7 +86,7 @@
 			slideAct = true;
 			var val;
 			var p_val;
-			
+
 			curObj = sliderBox.eq(nowIdx);
 			prevObj = sliderBox.eq(prevIdx);
 			if(dir == 'l'){
@@ -96,7 +96,7 @@
 				val = '100%';
 				p_val = '-100%';
 			}
-			
+
 			setBtn(nowIdx);
 			curObj.css({left:val});
 
@@ -104,7 +104,7 @@
 			prevObj.animate({left:p_val},1200,'easeOutQuart');
 			setSlideAct();
 			return false;
-				
+
 		}
 
 		function setBtn(idx){
@@ -142,7 +142,7 @@
   </script>
  </head>
 
- <body>	
+ <body>
 
 	<div id="wrap">
 		<div class="top_bnn"><img src="/images/adidas/temp/top131118.jpg" border="0" usemap="#Map" alt=""/>
@@ -154,7 +154,7 @@
 		</div>
 		<!-- 130620 start -->
 		<div class="skip_nav">
-			<!--  
+			<!--
 				main에만 들어갈 소스
 			-->
 			<h2 class="blind">skip navigation</h2>
@@ -164,7 +164,7 @@
 			<a href="#best_prodlist"onclick="document.getElementById('best_prodlist').tabIndex = -1;document.getElementById('best_prodlist').focus();return false;">베스트상품 바로가기</a>
 			<a href="#new_prodlist"onclick="document.getElementById('new_prodlist').tabIndex = -1;document.getElementById('new_prodlist').focus();return false;">신상품 바로가기</a>
 			<a href="#expl_more"onclick="document.getElementById('expl_more').tabIndex = -1;document.getElementById('expl_more').focus();return false;">EXPLORE MORE 바로가기</a>
-			<a href="#footer_r" onclick="document.getElementById('footer_r').tabIndex = -1;document.getElementById('footer_r').focus();return false;">하단 바로가기</a>		
+			<a href="#footer_r" onclick="document.getElementById('footer_r').tabIndex = -1;document.getElementById('footer_r').focus();return false;">하단 바로가기</a>
 			<!--
 				나머지 페이지에 공통으로 들어갈 소스
 			<h2 class="blind">skip navigation</h2>
@@ -262,7 +262,7 @@
 				<a class="icon_market" onclick="marketLayer();return false">
 					<img src="/images/adidas/common/market.jpg" alt="장바구니"/>
 				</a>
-			</div>			
+			</div>
 
 		</div>
 		<!-- //header -->
@@ -451,7 +451,7 @@
 										<li>세상에서 유일한 당신만의 제품을 디자인하세요.</li>
 										<li>다양한 소재와 컬러의 조합과 당신만의 이니셜까지!</li>
 										<li><strong style="letter-spacing:0;">customize</strong>를 통해 당신만의 스타일을 보여주세요.</li>
-										<li style="margin-bottom:0;"><strong>배송기간 : 6~8 주</strong></li> 
+										<li style="margin-bottom:0;"><strong>배송기간 : 6~8 주</strong></li>
 									</ul>
 								</dd>
 							</dl>
@@ -463,7 +463,7 @@
 							</div>
 						</div>
 					</li>
-					<!-- //141210 miadidas gnb 추가 -->					
+					<!-- //141210 miadidas gnb 추가 -->
 				</ul>
 				<ul class="menu2">
 					<li class="menu"><a href="#">BEST</a></li>
@@ -495,7 +495,7 @@
 			</div>
 		</div>
 		<div id="container_r">
-			
+
 			<!-- 141210 miadidas start -->
 			<div class="miadidas" style="background-color:#f5f5f5;">
 				<div id="mi_visual" class="visual">
@@ -539,7 +539,7 @@
 						</div>
 						<!-- //slider_wrap -->
 					</div>
-					<!-- //vsl_wrap -->					
+					<!-- //vsl_wrap -->
 				</div>
 				<!-- //visual -->
 
@@ -596,7 +596,7 @@
 									<li><a href="#">KIDS</a></li>
 								</ul>
 							</dd>
-						</dl>						
+						</dl>
 
 						<dl class="custom">
 							<dt><strong>custo<span>mi</span>ze</strong> 제작방법</dt>
@@ -609,14 +609,24 @@
 
 					<!-- 141217 가이드이미지 -->
 					<div class="banner">
-						<div><img src="/images/adidas/etc/bg_mi_guide.jpg" alt="" usemap="#mi_guide_map"/></div>
-						<map id="mi_guide_map" name="mi_guide_map">
-							<area shape="rect" coords="159,1978,853,2068" href="#" alt="customize 메인으로 가기">
-						</map>
+                        <div><img src="http://image.adidas.co.kr/images/adidas/etc/bg_mi_guide1.jpg" alt=""></div>
+                        <div>
+                            <img src="http://image.adidas.co.kr/images/adidas/etc/bg_mi_guide2.jpg" usemap="#mi_guide_video">
+                            <map id="mi_guide_video" name="mi_guide_video">
+    							<area shape="rect" coords="30,0,920,273" href="javascript:void(0)" alt="영상 보기" onclick="openModalVideoViewer('eEzgIiTEbPI');">
+    						</map>
+                        </div>
+                        <div><img src="http://image.adidas.co.kr/images/adidas/etc/bg_mi_guide3.jpg" alt=""></div>
+                        <div>
+                            <img src="http://image.adidas.co.kr/images/adidas/etc/bg_mi_guide4.jpg" alt="" usemap="#mi_guide_map">
+                            <map id="mi_guide_map" name="mi_guide_map">
+    							<area shape="rect" coords="30,779,920,869" href="http://shop.adidas.co.kr/PF020105.action" alt="customize 메인으로 가기">
+    						</map>
+                        </div>
 					</div>
 					<!-- //141217 -->
 				</div>
-				
+
 			</div>
 			<!-- //miadidas -->
 			<!-- //141210 miadidas end -->
@@ -640,9 +650,9 @@
 					<div class="cscenter_num spt_bg">
 						<strong><a href="#">고객센터</a> : </strong>
 						<span><em>1588-8241</em></span>
-					</div> 
+					</div>
 				</div>
-			</div>	
+			</div>
 			<!-- //f_linemenu -->
 			<div class="sitemap ct950">
 				<div class="sitemap_area1">
@@ -872,7 +882,7 @@
 						<area shape="rect" coords="168,29,260,47" href="javascript:fn_certifiedInfoPopAdi();return false" alt="">
                         <area shape="rect" coords="228,4,262,23" href="http://ftc.go.kr/info/bizinfo/communicationList.jsp" target="_blank" alt="">
 					</map>
-				</div>				
+				</div>
 			</div>
 		</div>
 		<!-- //footer -->
