@@ -31,10 +31,10 @@
 
 				//소비자 피해보상 신청
 				jQuery("#escrw_reward_apply").hide();
-				
+
 				jQuery("#cardReport").show();
 				jQuery("#mobile_payment").hide();
-				
+
 				jQuery("#cardReport_choice2").hide();
 				jQuery("#CARD_PAYMT_TYPE").val("01");
 
@@ -45,7 +45,7 @@
 				jQuery("#escrw_personal").show();
 				jQuery("#escrw_business").hide();
 				jQuery("#noInt").hide();
-				
+
 				jQuery("#cardReport").hide();
 				// 161209
 				jQuery("#credit_payment").hide();
@@ -60,10 +60,10 @@
 				}
 				jQuery('#account_desc').html(htmlsc);
 				jQuery("#mobile_payment").hide();
-				
+
 				jQuery("#cardReport_choice2").hide();
 				jQuery("#CARD_PAYMT_TYPE").val("01");
-				
+
 			} else if ( sel == "kpay" ) {
 
 				// 핸드폰번호 초기화
@@ -81,10 +81,10 @@
 
 				//소비자 피해보상 신청
 				jQuery("#escrw_reward_apply").hide();
-				
+
 				jQuery("#cardReport").show();
 				jQuery("#mobile_payment").hide();
-				
+
 				jQuery("#cardReport_choice2").show();
 				jQuery("#CARD_PAYMT_TYPE").val("02");
 			} else if ( sel == "mobile" ) {
@@ -98,7 +98,7 @@
 				// 161209
 				jQuery("#credit_payment").hide();
 				jQuery("#mobile_payment").show();
-				
+
 				jQuery("#cardReport_choice2").hide();
 				jQuery("#CARD_PAYMT_TYPE").val("01");
 			} else {
@@ -112,7 +112,7 @@
 				jQuery("#escrw_reward_apply").hide();
 				jQuery("#cardReport").hide();
 				jQuery("#mobile_payment").hide();
-				
+
 				jQuery("#cardReport_choice2").hide();
 				jQuery("#CARD_PAYMT_TYPE").val("01");
 			}
@@ -272,7 +272,7 @@
 			jQuery("#DELVYA").val(delvya);
 			jQuery("#NM_DORO").val(nm_doro);
 			jQuery("#NUM_BLDG").val(num_bldg);
-			
+
 			clearDlvRadio();
 			changeDlvAmount();
 		}
@@ -286,11 +286,11 @@
 			var onSuccess = function(req){
 				var json = req.responseJSON;
 
-				JsonUtil.alert(json);			
-				
+				JsonUtil.alert(json);
+
 				fn_dlivySearch(json);
 			};
-			var onFailure = function(){			
+			var onFailure = function(){
 			};
 
 			cfn_ajaxRequest(url, param, onSuccess, onFailure);
@@ -303,7 +303,7 @@
 			for ( var i = 0; i < obj.length ; i++ ) {
 				dlivyString = obj[i].DLIVY_CD;
 			}
-			
+
 			if (dlivyString == '5'){
 				alert('사서함으로는 주문이 불가능 합니다.');
 			}
@@ -311,19 +311,19 @@
 		}
 
 		function changeDlvAmount() {
-			
+
 			dlivyInfo();
 			var vOrgDlivyFee = parseInt("2500");
 			var vTOTAL_ORDER_AMT = jQuery("#TOTAL_ORDER_AMT").val();
 			var vIslndSupCntryDlivyFee = parseInt("4500");
 			var vJejudoDlivyFee = parseInt("3000");
-			
+
 			if(vTOTAL_ORDER_AMT >= parseInt("50000") || ("Y" == "Y" && parseInt("2") >= parseInt("4")) || (jQuery("#H_ONLINE_ONLY").val() == "Y" && "N" == "Y")) {
 			 	vOrgDlivyFee = 0;
 			}
 
-			if( (parseInt(jQuery("#TOTAL_ORDER_AMT").val()) >= 50000) 
-					|| ("Y" == "Y" && parseInt("2") >= parseInt("4")) 
+			if( (parseInt(jQuery("#TOTAL_ORDER_AMT").val()) >= 50000)
+					|| ("Y" == "Y" && parseInt("2") >= parseInt("4"))
 					|| (jQuery("#H_ONLINE_ONLY").val() == "Y" && "N" == "Y")) {
 				vIslndSupCntryDlivyFee = 0;
 				vJejudoDlivyFee = 0;
@@ -398,7 +398,7 @@
 			jQuery('.card_info_pop').css({top:scr_top+20}).show();
 			jQuery('body').prepend('<div class="card_info_layerbg" style="width:100%;z-index: 90000;height:'+jQuery(document).height()+'px;display:block;background:#000;position:absolute;top:0;left:0;opacity:0.8;-ms-filter: alpha(opacity=80);filter: alpha(opacity=80);" onclick="closeCardBenefitPop();return false;"></div>');
 			return false;
-			
+
 		}
 
 		function closeCardBenefitPop(){
@@ -407,7 +407,7 @@
 			return false;
 		}
       </script>
-    
+
    </head>
    <body>
 
@@ -437,68 +437,68 @@
 					</tr>
 				</thead>
 				<tbody>
-					
-						
+
+
 						<tr>
 							<td>롯데</td>
 							<td>12.01~12.31</td>
 							<td>
 								5만원 이상 구매시
-								 
+
 								2500원 할인
-								
+
 							</td>
 						</tr>
-						
-					
-						
+
+
+
 						<tr>
 							<td>롯데</td>
 							<td>12.01~12.31</td>
 							<td>
 								7만원 이상 구매시
-								 
+
 								3500원 할인
-								
+
 							</td>
 						</tr>
-						
-					
-						
+
+
+
 						<tr>
 							<td>롯데</td>
 							<td>12.01~12.31</td>
 							<td>
 								10만원 이상 구매시
-								 
+
 								5000원 할인
-								
+
 							</td>
 						</tr>
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 				</tbody>
 			</table>
 		</div>
-		
+
 		<ul class="desc">
 			<li>- 쿠폰 금액을 제외한 실 결제 금액 기준입니다.</li>
 			<li>- 법인/체크/기프트 카드도 적용 가능합니다.</li>
@@ -511,7 +511,7 @@
 
 
 
-	
+
 	<div class="box">
 		<h3>카드사 무이자 할부안내</h3>
 		<div class="info">
@@ -531,140 +531,140 @@
 					</tr>
 				</thead>
 				<tbody>
-					
-						
-					
-						
-					
-						
-					
-						
+
+
+
+
+
+
+
+
 						<tr>
 							<td>롯데</td>
 							<td>12.01~12.31</td>
 							<td>
 								5만원 이상 구매시
-								
+
 							</td>
 							<td>2~5개월</td>
 						</tr>
-						
-					
-						
+
+
+
 						<tr>
 							<td>현대</td>
 							<td>12.01~12.31</td>
 							<td>
 								5만원 이상 구매시
-								
+
 							</td>
 							<td>2~5개월</td>
 						</tr>
-						
-					
-						
+
+
+
 						<tr>
 							<td>국민</td>
 							<td>12.01~12.31</td>
 							<td>
 								5만원 이상 구매시
-								
+
 							</td>
 							<td>2~5개월</td>
 						</tr>
-						
-					
-						
+
+
+
 						<tr>
 							<td>BC</td>
 							<td>12.01~12.31</td>
 							<td>
 								5만원 이상 구매시
-								
+
 							</td>
 							<td>2~5개월</td>
 						</tr>
-						
-					
-						
+
+
+
 						<tr>
 							<td>삼성</td>
 							<td>12.01~12.31</td>
 							<td>
 								5만원 이상 구매시
-								
+
 							</td>
 							<td>2~5개월</td>
 						</tr>
-						
-					
-						
+
+
+
 						<tr>
 							<td>신한</td>
 							<td>12.01~12.31</td>
 							<td>
 								5만원 이상 구매시
-								
+
 							</td>
 							<td>2~5개월</td>
 						</tr>
-						
-					
-						
+
+
+
 						<tr>
 							<td>씨티</td>
 							<td>12.01~12.31</td>
 							<td>
 								5만원 이상 구매시
-								
+
 							</td>
 							<td>2~3개월</td>
 						</tr>
-						
-					
-						
+
+
+
 						<tr>
 							<td>NH</td>
 							<td>12.01~12.31</td>
 							<td>
 								5만원 이상 구매시
-								
+
 							</td>
 							<td>2~5개월</td>
 						</tr>
-						
-					
-						
+
+
+
 						<tr>
 							<td>하나SK</td>
 							<td>12.01~12.31</td>
 							<td>
 								5만원 이상 구매시
-								
+
 							</td>
 							<td>2~5개월</td>
 						</tr>
-						
-					
+
+
 				</tbody>
 			</table>
 		</div>
 		<ul class="desc">
 			<li>- 법인/체크/선불/기프트/은행계열카드 제외</li>
-			<li>- 무이자할부 결제 시 포인트, 마일리지 적립 제외</li>				
+			<li>- 무이자할부 결제 시 포인트, 마일리지 적립 제외</li>
 			<li>- 직계약 가맹점, 상점부담 무이자 가맹점, 특별제휴 가맹점, 오프라인 가맹점, 신규 가맹점 등<br/>&nbsp;&nbsp;일부 제외</li>
 			<li>- 카드사의 사정으로 변경 또는 종료될 수 있으니, 이니시스 결제창의 무이자 안내를 확인하세요.</li>
 		</ul>
 	</div>
 
-	
+
 </div>
 </div>
 
       <div id="wrap">
 
         <div id="container_r" style="position:relative;">
-			
+
 			<!-- 130621 skip 네비게이션 리복은 다 똑같이 사용 -->
 			<div class="skip_nav">
 				<h2 class="blind">skip navigation</h2>
@@ -672,7 +672,7 @@
 				<a href="#gnb_150930" onclick="document.getElementById('gnb_150930').tabIndex = -1;document.getElementById('gnb_150930').focus();return false;">상단메뉴 바로가기</a>
 				<a href="#contents_wrap"onclick="document.getElementById('contents_wrap').tabIndex = -1;document.getElementById('contents_wrap').focus();return false;">본문 바로가기</a>
 				<a href="#footer_wrap" onclick="document.getElementById('footer_wrap').tabIndex = -1;document.getElementById('footer_wrap').focus();return false;">하단 바로가기</a>
-			</div>				
+			</div>
 			<!-- 130621 end -->
 
             <link rel="apple-touch-icon-precomposed" sizes="72*72" href="/images/reebok/icon_114.png" />
@@ -698,7 +698,7 @@
 
                <div id="header_150930">
                   <!-- header_top -->
-                  <div class="header_top">                     
+                  <div class="header_top">
                      <h1>
                      	<a class="spt_bg" href="/reeMain.action" onMouseDown="javascript:fn_trkClickTrace('^최상단^Reebok(로고)');">리복 온라인 스토어</a>
                      </h1>
@@ -706,12 +706,12 @@
                         <form id="frmSrchTop" name="frmSrchTop" method="post" onsubmit="return false;" autocomplete="off">
                            <fieldset>
                               <legend>SEARCH</legend>
-                              <label class="blind" for="S_PROD_NM_TOP">검색</label> 
+                              <label class="blind" for="S_PROD_NM_TOP">검색</label>
 
                               <input type="text" name="S_PROD_NM_TOP" id="S_PROD_NM_TOP" class="search_box" onfocus="this.value='';document.getElementById('S_SEARCH_WORDS_URL').value='';" onblur="fn_inputBlur()" onmousedown="dqtop_setTextbox('1',event);" onKeyPress="keyDownTop('1',event);" onkeydown="javascript:if(event.keyCode==13) fn_search_top();fn_trkClickTrace('^최상단^검색');" />
                               <input type="submit" class="submit spt_bg" onclick="fn_search_top();fn_trkClickTrace('^최상단^검색');">
                               <script language="JavaScript" src="/js/search/dqAutoCompleteTopR.js"></script>
-                              
+
                            </fieldset>
                         </form>
 
@@ -935,7 +935,7 @@
 														<li><a href="#" style="color:#f00000;">SALE</a></li>
 													</ul>
 												</dd>
-											</dl>										
+											</dl>
 										</div>
 									</div>
 									<!-- //leftarea -->
@@ -994,7 +994,7 @@
 														<li><a href="#" style="color:#f00000;">SALE</a></li>
 													</ul>
 												</dd>
-											</dl>										
+											</dl>
 										</div>
 									</div>
 									<!-- //leftarea -->
@@ -1070,12 +1070,12 @@
 											<dl class="last">
 												<dt>Collection</dt>
 												<dd>
-													<ul>      
+													<ul>
 														<li><a href="#">PUMP FURY</a></li>
 														<li><a href="#">GL6000</a></li>
 													</ul>
 												</dd>
-											</dl>										
+											</dl>
 										</div>
 									</div>
 									<!-- //leftarea -->
@@ -1084,7 +1084,7 @@
 									</div>
 									<!-- //righttarea -->
 								</div>
-								<!-- sports depth2 menu end -->						
+								<!-- sports depth2 menu end -->
 							</li>
 							<!-- //classic -->
 
@@ -1104,7 +1104,7 @@
 								</div>
 								<!-- collection depth2 menu end -->
 							</li>
-							<!-- //collection -->							
+							<!-- //collection -->
 						</ul>
 						<!-- 130807 menu2 -->
 
@@ -1124,7 +1124,7 @@
 							</li>
 							<li class="sale">
 								<a href="#" class="depth1_btn dep2btn">Sale</a>
-								<div class="depth2_menu">								
+								<div class="depth2_menu">
 									<ul>
 										<li><a href="#">Men</a></li>
 										<li><a href="#">Women</a></li>
@@ -1179,7 +1179,7 @@
 										<div class="area2">
 											<div class="tit">About Reebok</div>
 											<a href="#" class="delta spt_bg">Be More Human</a>
-											
+
 											<div class="linkbox">
 												<a href="#">Our Story <span class="spt_bg"></span></a>
 											</div>
@@ -1277,7 +1277,7 @@
 							</table>
 						</div>
 						<!-- //list -->
-					
+
 
 						<!-- total -->
 						<div class="total space25">
@@ -1322,10 +1322,10 @@
 											</tr>
 											<tr>
 												<th scope="row">주소</th>
-												
+
 												<td>[131-200] 서울 중랑구 면목동 </td>
 											</tr>
-											
+
 											<tr class="noline">
 												<th scope="row">SMS 정보수신</th>
 												<td class="text">
@@ -1384,14 +1384,14 @@
 														<option value="018">018</option>
 														<option value="019">019</option>
 													</select> -
-													<input type="text" name="RCIVR_MOBL2" id="RCIVR_MOBL2" onkeydown="fn_onlyFigureKey()" maxlength="4" style="width:76px;" title="휴대폰번호2"> - 
+													<input type="text" name="RCIVR_MOBL2" id="RCIVR_MOBL2" onkeydown="fn_onlyFigureKey()" maxlength="4" style="width:76px;" title="휴대폰번호2"> -
 													<input type="text" name="RCIVR_MOBL3" id="RCIVR_MOBL3" onkeydown="fn_onlyFigureKey()" maxlength="4" style="width:76px;" title="휴대폰번호2">
 												</td>
 											</tr>
 											<tr>
 												<th scope="row"><label for="DLIVY_DTL_ADDR">배송지 주소</label></th>
 												<td>
-													<input type="text" name="DLIVY_POST_NO1" id="DLIVY_POST_NO1" style="width:76px;" title="우편번호1" readonly="readonly"> - 
+													<input type="text" name="DLIVY_POST_NO1" id="DLIVY_POST_NO1" style="width:76px;" title="우편번호1" readonly="readonly"> -
 													<input type="text" name="DLIVY_POST_NO2" id="DLIVY_POST_NO2" style="width:76px;" title="우편번호2" readonly="readonly">&nbsp;
 
 													<a href="javascript:fn_zipPop('fn_return_zipaddr');" title="새창 우편번호 찾기"><img src="https://image.reebok.co.kr/images/reebok/order/btn_zipcode.gif" alt="우편번호 찾기"></a>
@@ -1460,7 +1460,7 @@
 													<span id="TOTAL_PAY_AMT_STR">169,000 원</span>
 												</td>
 											</tr>
-											
+
 											<tr>
 										         <th scope="row">&nbsp;</th>
 										         <td style="padding:10px 0;color:#000;">
@@ -1468,7 +1468,7 @@
 								                  <p style="padding-left:21px;">신용카드의 정보 유출로 인해 우려되신다면, 무통장입금(가상계좌)을 이용해보세요.</p>
 										         </td>
 											</tr>
-											
+
 											<tr class="noline" id="payMethodTr">
 												<th scope="row">결제수단 선택</th>
 												<td>
@@ -1479,7 +1479,7 @@
 													<input type="radio" name="payMethod" id="account" onclick="fn_ChangePayMethod('account');" value="04"><label for="account">실시간이체</label>
 												</td>
 											</tr>
-											
+
 				                            <tr class="noline" id="noInt" style="display: none;">
 											    <td></td>
 											</tr>
@@ -1549,7 +1549,7 @@
 																	<col>
 																</colgroup>
 																<!-- //161209 -->
-																
+
 																<tr>
 																	<!-- 161209 -->
 																	<th class="noline"></th>
@@ -1582,15 +1582,15 @@
 																			<p style="margin-bottom:15px;font-size:11px;color:#ff0000;">※ 자세한 결제 취소 및 반품 절차는 FAQ 참고</p>
 																		</div>
 																	</td>
-																</tr>			
+																</tr>
 															</table>
 														</td>
 													</tr>
 												</tbody>
 											</table>
 										</div>
-																
-									
+
+
 									<div id="cardReport" style="display: none;">
 										<table summary="카드 결제">
 											<caption>카드결제 선택</caption>
@@ -1604,7 +1604,7 @@
 													<td colspan="2" class="noline" style="padding:5px 0;">
 													<div id="cardReport_choice2" style="display:none;">
 														<!-- 141217 K-Pay 가이드 -->
-																											
+
 															<table border="0" cellpadding="0" cellspacing="0">
 																<colgroup>
 																	<col width="142px">
@@ -1650,12 +1650,12 @@
 																								<span style="font-size:11px;color:#888;margin:0;">1280 x 720 이상 단말<em style="margin-left:5px;">(갤럭시S2 와 해당 동급 스마트폰 사용 불가)</em></span>
 																							</li>
 																						</ul>
-																					</dd>										
+																					</dd>
 																				</dl>
 																				<p style="font-size:11px;color:#ff0000;font-weight:bold;">위의 지원 카드 및 지원 단말기 등을 확인 후 사용해 주세요.</p>
 																			</div>
 																		</td>
-																	</tr>			
+																	</tr>
 																</tbody>
 															</table>
 														</div>
@@ -1799,28 +1799,28 @@
 									<div style="padding-left: 142px;padding-bottom: 10px;">
 										<div style="margin-bottom:3px;position:relative;">
 											<input type="checkbox" id="pay_agree_yn" >
-											<label for="pay_agree_yn" style="font-weight:bold;color:#797b80;">전체 동의하기</label>	
+											<label for="pay_agree_yn" style="font-weight:bold;color:#797b80;">전체 동의하기</label>
 										</div>
 										<!-- 161219 추가 sub_agreements  -->
 										<div class="sub_agreements" style="display: none;">
 											<div style="position:relative;">
 												<input type="checkbox" id="term1" onclick="fnCheck();">
-												<label for="term1" style="color:#797b80;">전자금융거래 이용약관</label>	
+												<label for="term1" style="color:#797b80;">전자금융거래 이용약관</label>
 												<a href="javascript:void(0);" style="margin-left:5px;color: #aaa;vertical-align: middle;font-size: 12px;" onclick="window.open('https://plugin.inicis.com/html60/main/01_Information.html','inicisTerm','width=980,height=580')">자세히보기<img src="https://image.reebok.co.kr/images/reebok/common/ico_qmark.gif" alt="" style="position:relative;top:2px;margin-left:3px;opacity:0.5;filter:alpha(opacity=50);-ms-filter:alpha(opacity=50);"></a>
 											</div>
 											<div style="position:relative;">
 												<input type="checkbox" id="term2" onclick="fnCheck();">
-												<label for="term2" style="color:#797b80;">고유식별정보 수집 및 이용안내</label>	
+												<label for="term2" style="color:#797b80;">고유식별정보 수집 및 이용안내</label>
 												<a href="javascript:void(0);" style="margin-left:5px;color: #aaa;vertical-align: middle;font-size: 12px;" onclick="window.open('https://plugin.inicis.com/html60/main/02_Information.html','inicisTerm','width=450,height=580')">자세히보기<img src="https://image.reebok.co.kr/images/reebok/common/ico_qmark.gif" alt="" style="position:relative;top:2px;margin-left:3px;opacity:0.5;filter:alpha(opacity=50);-ms-filter:alpha(opacity=50);"></a>
 											</div>
 											<div style="position:relative;">
 												<input type="checkbox" id="term3" onclick="fnCheck();">
-												<label for="term3" style="color:#797b80;">개인정보의 수집 및 이용안내</label>	
+												<label for="term3" style="color:#797b80;">개인정보의 수집 및 이용안내</label>
 												<a href="javascript:void(0);" style="margin-left:5px;color: #aaa;vertical-align: middle;font-size: 12px;" onclick="window.open('https://plugin.inicis.com/html60/main/03_Information.html','inicisTerm','width=980,height=580')">자세히보기<img src="https://image.reebok.co.kr/images/reebok/common/ico_qmark.gif" alt="" style="position:relative;top:2px;margin-left:3px;opacity:0.5;filter:alpha(opacity=50);-ms-filter:alpha(opacity=50);"></a>
 											</div>
 											<div style="position:relative;">
 												<input type="checkbox" id="term4" onclick="fnCheck();">
-												<label for="term4" style="color:#797b80;">개인정보 제공 및 위탁안내</label>	
+												<label for="term4" style="color:#797b80;">개인정보 제공 및 위탁안내</label>
 												<a href="javascript:void(0);" style="margin-left:5px;color: #aaa;vertical-align: middle;font-size: 12px;" onclick="window.open('https://plugin.inicis.com/html60/main/04_Information.html','inicisTerm','width=980,height=580')">자세히보기<img src="https://image.reebok.co.kr/images/reebok/common/ico_qmark.gif" alt="" style="position:relative;top:2px;margin-left:3px;opacity:0.5;filter:alpha(opacity=50);-ms-filter:alpha(opacity=50);"></a>
 											</div>
 										</div>
@@ -1831,13 +1831,13 @@
 									<div class="agr_box">
 										<span>
 											<input type="checkbox" id="CASH_RECPT_APPLY_N">
-											<label for="">비회원 구매 동의</label>	
+											<label for="">비회원 구매 동의</label>
 										</span>
 
 										<span>
 											<input type="checkbox" id="CASH_RECPT_APPLY_N">
-											<label for="">선택한 결제수단을 다음에도 사용</label>	
-										</span>	
+											<label for="">선택한 결제수단을 다음에도 사용</label>
+										</span>
 									</div>
 									<!-- //161209 -->
 
@@ -1847,7 +1847,7 @@
 							</div>
 						</div>
 						<!-- //결제금액 확인 -->
-						
+
 
 						<!-- 161209 기존코드 삭제/
 						<div style="margin:10px 0 0;text-align: right;">
@@ -1873,74 +1873,74 @@
 			</div>
 			<!-- //contents -->
 
-	
+
 		<!-- quick -->
-		<div id="quick">		
+		<div id="quick">
 			<form name="frmQuick" id="frmQuick" method="post" action="">
-				<input type="hidden" name="QUICK_PROD_CD" id="QUICK_PROD_CD" value="'BD1437'">								
+				<input type="hidden" name="QUICK_PROD_CD" id="QUICK_PROD_CD" value="'BD1437'">
 				<input type="hidden" name="CPON_CNT" id="CPON_CNT" value="R">
 			</form>
-			
+
 			<div class="area">
 				<dl>
-					<dt class="first"><img src="https://image.reebok.co.kr/images/reebok/common/tit_cart.gif?v=151019" alt="장바구니"></dt> 
+					<dt class="first"><img src="https://image.reebok.co.kr/images/reebok/common/tit_cart.gif?v=151019" alt="장바구니"></dt>
 					<dd class="first"><span id="quick_cart_cnt"><a href="http://shop.reebok.co.kr/RPF030101.action">0</a></span></dd>
 <!--					<dt><img src="/images/reebok/common/tit_wish.gif?v=151019" alt="관심상품" /></dt>-->
 <!--					<dd><span id="quick_wish_cnt"><a href="javascript:fn_logIn();">0</a></span></dd>	-->
 					<dt><img src="https://image.reebok.co.kr/images/reebok/common/tit_coupon.gif?v=151019" alt="쿠폰"></dt>
-					<dd><span id="quick_cpon"><a href="http://shop.reebok.co.kr/RPF060201.action">2</a></span></dd>		
-					<dt class="last"><img src="https://image.reebok.co.kr/images/reebok/common/tit_today_prd.gif?v=151019" alt="오늘 본 상품"></dt>				
+					<dd><span id="quick_cpon"><a href="http://shop.reebok.co.kr/RPF060201.action">2</a></span></dd>
+					<dt class="last"><img src="https://image.reebok.co.kr/images/reebok/common/tit_today_prd.gif?v=151019" alt="오늘 본 상품"></dt>
 					<dd class="last" id="cookiewCnt"><a href="/RPF060301.action">1</a></dd>
 				</dl>
-					
+
 				<div class="today_prod" id="todayProd1" style="display:block"><div class="quick_arrow"><a href="javascript:fn_img_down_src();" class="down">DOWN</a><a href="javascript:fn_img_up_src();" class="up">UP</a></div><div class="quick_prod"><ul><li id="img_prodImg_0"><a href="http://shop.reebok.co.kr/RPF020401.action?PROD_CD=BD1437"><img src="https://image.reebok.co.kr/upload/prod/basic/60/BD1437-1_60X60.jpg" width="60" height="60" name="img" alt="[Reebok Classic/Unisex] 퓨리라이트"></a></li></ul></div></div>
-				
+
 				<!-- 즐겨찾기 -->
 				<div class="favorite">
 					<a href="javascript:addFavorite()"><img src="https://image.reebok.co.kr/images/reebok/common/btn_favority.gif?v=151019" alt="즐겨찾기"></a>
-				</div>	
+				</div>
 			</div>
 			<!-- //area -->
-			
+
 			<!-- 회원가입쿠폰 -->
 			<!-- <p class="q_category"><a href="https://shop.reebok.co.kr:444/RPF0601001.action" onmousedown="javascript:fn_trkClickTrace('^우측 숏컷^회원가입시 1만원 쿠폰');"><img src="/images/reebok/common/bg_quick_sub02.gif" alt="회원가입시 1만원 쿠폰" /></a></p> -->
 
-		</div>	
+		</div>
 		<!-- //quick -->
 
-		<script type="text/javascript">		
+		<script type="text/javascript">
 		/* <![CDATA[ */
 			var url = "http://shop.reebok.co.kr";
 			var title = "리복 공식 온라인 스토어";
-			
+
 			//즐겨찾기 만들기
 			function addFavorite(){
 				if ( navigator.appName != 'Microsoft Internet Explorer' ) {
-					window.sidebar.addPanel(title,url,""); 
-				} else { 
+					window.sidebar.addPanel(title,url,"");
+				} else {
 					window.external.AddFavorite(url,title);
-				} 
+				}
 			}
-					
+
 			var stmnLEFT = 900; //첫로드 y축 forcus
 			var stmnGAP1 = 79; //첫로드 x축 forcus
 			var stmnGAP2 = 79; //첫로드 x축 defult
 			var stmnBASE = 155;
 			var stmnActivateSpeed = 200;
 			var stmnScrollSpeed = 10;
-			
+
 			var stmnTimer;
 			var clickCnt;
 			var cnt;
-		
+
 			 // 스크롤 메뉴의 위치 갱신
 			 function RefreshStaticMenu()
 			 {
-				 var stmnStartPoint, stmnEndPoint, stmnRefreshTimer;			 
-				
+				 var stmnStartPoint, stmnEndPoint, stmnRefreshTimer;
+
 				 stmnStartPoint = parseInt(document.getElementById('quick').style.top, 10);
 				 stmnEndPoint = document.documentElement.scrollTop + stmnGAP2;
-				
+
 				 if (stmnEndPoint < stmnGAP1) stmnEndPoint = stmnGAP1;
 				 stmnRefreshTimer = stmnActivateSpeed;
 				 if ( stmnStartPoint != stmnEndPoint ) {
@@ -1949,29 +1949,29 @@
 					stmnRefreshTimer = stmnScrollSpeed;
 				 }
 				 stmnTimer = setTimeout ("RefreshStaticMenu();", stmnRefreshTimer);
-			 }	
-			
+			 }
+
 			 // 메뉴 초기화
-			 function InitializeStaticMenu() {					 
+			 function InitializeStaticMenu() {
 				document.getElementById('quick').style.top = document.documentElement.scrollTop+ stmnBASE; // 기본위치로 이동한다.
-				RefreshStaticMenu(); // 스크립트 가동		
+				RefreshStaticMenu(); // 스크립트 가동
 				document.getElementById('quick').style.left = eval('stmnLEFT'); // 메뉴 왼쪽 위치 초기화. 필요없을 경우 삭제
-			 }	 
-			 
+			 }
+
 			 //화면 상단으로 이동
 			 function MoveTop(){
 			 	document.documentElement.scrollTop = 0;
-			 	document.getElementById('quick').style.top = document.documentElement.scrollTop+ stmnBASE; 
+			 	document.getElementById('quick').style.top = document.documentElement.scrollTop+ stmnBASE;
 			 }
 
-			 // 161219 전체동의 클릭 시 
+			 // 161219 전체동의 클릭 시
 			 jQuery('#pay_agree_yn').bind('click',function(){
 			 	jQuery('.sub_agreements').fadeIn();
 			 });
 		/* ]]> */
 		</script>
 		<!-- //quick -->
-		
+
 
 			<!-- //quick -->
 		</div>
@@ -2019,16 +2019,16 @@
 								</div>
 							</div>
 							<div class="sns_box blog">
-								<a href="http://blog.naver.com/reebokkr" class="spt_bg" target="_blank"></a>								
+								<a href="http://blog.naver.com/reebokkr" class="spt_bg" target="_blank"></a>
 							</div>
 							<div class="sns_box ytb">
-								<a href="https://www.youtube.com/channel/UCFrW9Ojay5Pk7s-4-KD0M6w" class="spt_bg" target="_blank"></a>								
+								<a href="https://www.youtube.com/channel/UCFrW9Ojay5Pk7s-4-KD0M6w" class="spt_bg" target="_blank"></a>
 							</div>
 							<div class="sns_box kakao last">
-								<a href="http://plus.kakao.com/home/@리복" class="spt_bg" target="_blank"></a>								
+								<a href="http://plus.kakao.com/home/@리복" class="spt_bg" target="_blank"></a>
 							</div>
-						</div>	
-					</div>					
+						</div>
+					</div>
 				</div>
 				<div class="address">
 					<div class="ct890">
@@ -2049,7 +2049,7 @@
 							<area shape="rect" coords="145,42,191,58" href="#" alt="공정거래 위원회 사업자 신원정보 확인" onclick="window.open('http://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=2148107412', 'communicationViewPopup','width=750,height=700;');return false;">
 						</map>
 					</div>
-				</div>			
+				</div>
             </div>
             <!-- //160705 -->
 

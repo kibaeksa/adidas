@@ -4,8 +4,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<meta property="og:title" content="아디다스 공식 온라인 스토어" /> 
-<meta property="og:image" content="http://shop.adidas.co.kr/upload/snsimg/adidas/main/main.jpg" /> 
+<meta property="og:title" content="아디다스 공식 온라인 스토어" />
+<meta property="og:image" content="http://shop.adidas.co.kr/upload/snsimg/adidas/main/main.jpg" />
 <meta property="og:url" content="http://shop.adidas.co.kr"/>
 <title>아디다스 공식 온라인 스토어</title>
 
@@ -14,6 +14,7 @@
 <link rel="stylesheet" type="text/css" href="/css/adidas/adidas_r.css" />
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css"/>
 <script type="text/javascript" src="/js/jquery/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="/js/customForm.js"></script>
 <script type="text/javascript" src="/js/prototype-1.6.1.js"></script>
 <script type="text/javascript" src="/js/common.js"></script>
 <script type="text/javascript" src="/js/adidas/common.js"></script>
@@ -45,10 +46,10 @@
 						top : 0
 					}).addClass('fixed');
 				}else if(endPos <= obj.scrollTop()){
-					if($('.payment-main .contents .prods_info').hasClass('fixed')){						
+					if($('.payment-main .contents .prods_info').hasClass('fixed')){
 						$('.payment-main .contents .prods_info').removeClass('fixed').css({
 							top : ($('#footer_r').offset().top - $('.prods_info').outerHeight())-260
-						});	
+						});
 					}
 				}else{
 					$('.payment-main .contents .prods_info').css({
@@ -71,7 +72,7 @@
 					}else{
 						$('.delivery_info .for_guest>.login_form').hide();
 						$('.delivery_info .for_guest>.deliv_form_wrap').show()
-						
+
 					}
 				}
 			});
@@ -87,7 +88,7 @@
 					var elemId = this.find('input').attr('id');
 					$('.payment_contents>div').hide();
 					$('#'+elemId+'_payment').show();
-					
+
 					setProdinfoPosition($(document));
 
 				}
@@ -114,7 +115,7 @@
 					var elemId = this.find('input').attr('id');
 					if(elemId == 'VBANK_CASH_RECPT_PUBL_PRPOS_01'){
 						$('#vbank_payment #vbank_escrw_business').hide();
-						$('#vbank_payment #vbank_escrw_personal').show();						
+						$('#vbank_payment #vbank_escrw_personal').show();
 					}else{
 						$('#vbank_payment #vbank_escrw_personal').hide();
 						$('#vbank_payment #vbank_escrw_business').show();
@@ -143,17 +144,17 @@
 					var elemId = this.find('input').attr('id');
 					if(elemId == 'CASH_RECPT_PUBL_PRPOS_01'){
 						$('#account_payment #account_escrw_business').hide();
-						$('#account_payment #account_escrw_personal').show();						
+						$('#account_payment #account_escrw_personal').show();
 					}else{
 						$('#account_payment #account_escrw_personal').hide();
 						$('#account_payment #account_escrw_business').show();
 					}
 				}
 			});
-			
 
-			
-			
+
+
+
 
 		});
 
@@ -168,7 +169,7 @@
 <div class="quickview_layer" id="quickview"></div>
 
 	<div id="wrap">
-	
+
 		<script type="text/javascript" src="/js/adidas/navigation.js"></script>
 		<script type="text/javascript" src="/js/topSearchR.js"></script>
 		<script type="text/javascript" src="/js/validatorUtil.js"></script>
@@ -178,12 +179,12 @@
 
 		<div class="top_bnn" id="div_top_banner" style="display:none; height:0; background: rgb(224, 224, 224);"><img src="http://shop.adidas.co.kr/upload/banner/1f7f977720964eeebd4b31211e6f4102_0324170535.gif" alt="아디클럽 신규회원 가입 시, 아디클럽 1만원 쿠폰 증정!하드웨어 기획전)" border="0" usemap="#topbnn"><map name="topbnn" id="topbnn"><area onclick="fn_closeBanner();return false" href="#" coords="931,0,950,19" shape="rect" onmousedown="fn_trkClickTrace('^탑배너^아디클럽 1만원 쿠폰^닫기')" alt="닫기">   <area shape="poly" coords="741,0,625,120,0,120,0,0" href="http://shop.adidas.co.kr/PF020701.action?PROD_CD=15005987_M">  <area shape="poly" coords="743,0,950,0,950,120,626,120" href="http://shop.adidas.co.kr/PF080101.action"></map></div>
 
-	
+
 	<!-- 160324 start -->
-	<div id="header-20160315">		
+	<div id="header-20160315">
 		<a href="#" class="topbnn_toggle spt_bg"></a>
 		<div class="util_box">
-			<div class="bar_rpt"></div>			
+			<div class="bar_rpt"></div>
 			<div class="ct950">
 				<h1><a href="#" class="spt_bg">로고</a></h1>
 				<ul class="utils_menu">
@@ -211,7 +212,7 @@
 							<input type="hidden" name="S_SEARCH_WORDS_URL" id="S_SEARCH_WORDS_URL" value="http://shop.adidas.co.kr/PF050101.action?S_PROD_NM=360%20I"><script type="text/javascript" src="/js/search/dqAutoCompleteTopR.js"></script>
 							<div class="search_box" id="dqAutoTop" style="display:none;z-index:1000;" onmouseover="dqtop_setMouseon();" onmouseout="dqtop_setMouseoff();"></div>
 						</form>
-					</div>					
+					</div>
 				</div>
 				<!-- //search_box -->
 				<div class="market">
@@ -227,7 +228,7 @@
 						</div>
 
 						<!-- 160719 배송문구 -->
-						<div class="market_bottom" id="market_bottom">							
+						<div class="market_bottom" id="market_bottom">
 							<div class="desc"><span class="spt_bg"></span>한 달간 전 제품 무료배송 ( 2016/07/15 ~ 08/15 )</div>
 						</div>
 						<!-- //160719 -->
@@ -308,12 +309,12 @@
 							<div class="go_market">
 								<a href="http://shop.adidas.co.kr/PF030101.action"><img src="/images/adidas/common/btn_go_market.gif" alt="장바구니 바로가기"></a>
 							</div>
-							<!-- 
+							<!--
 							160719 제거
 							<div class="go_market">
 								<a href="http://shop.adidas.co.kr/PF030101.action"><img src="/images/adidas/common/btn_go_market.gif" alt="장바구니 바로가기"></a>
 							</div>
-							<div class="desc"><span class="spt_bg"></span>5만원 이상 주문시 배송비 무료 (단, CUSTOMIZE 제외)</div> 
+							<div class="desc"><span class="spt_bg"></span>5만원 이상 주문시 배송비 무료 (단, CUSTOMIZE 제외)</div>
 							-->
 						</div>
 					</div>
@@ -322,7 +323,7 @@
 			</div>
 			<!-- //ct950 -->
 		</div>
-		<!-- //utils -->		
+		<!-- //utils -->
 
 		<div class="gnb_menu">
 			<ul class="ct950 clfix">
@@ -336,8 +337,8 @@
 										<dt>남성</dt>
 										<dd>
 											<ul>
-												<!-- 
-												160415 
+												<!--
+												160415
 												신상품/인기상품/할인상품/온라인 단독상품 strong 태그 추가
 												-->
 												<li><a href="#"><strong>신상품</strong></a></li>
@@ -450,8 +451,8 @@
 										<dt>여성</dt>
 										<dd>
 											<ul>
-												<!-- 
-												160415 
+												<!--
+												160415
 												신상품/인기상품/할인상품/온라인 단독상품 strong 태그 추가
 												-->
 												<li><a href="#"><strong>신상품</strong></a></li>
@@ -565,8 +566,8 @@
 										<dt>키즈</dt>
 										<dd>
 											<ul>
-												<!-- 
-												160415 
+												<!--
+												160415
 												신상품/인기상품/할인상품/온라인 단독상품 strong 태그 추가
 												-->
 												<li><a href="#"><strong>신상품</strong></a></li>
@@ -1065,7 +1066,7 @@
 					<a href="#">CUSTOMISE</a>
 					<div class="depth2_contents">
 						<div class="ct950">
-							<div class="ctgr_box">								
+							<div class="ctgr_box">
 								<!-- //box -->
 								<!-- 160630 col_18 -> col_14 로 수정 -->
 								<div class="box col_15">
@@ -1115,7 +1116,7 @@
 								</div>
 								<!-- //box -->
 
-								<!-- 160630 col_18 -> col_14 로 수정 -->								
+								<!-- 160630 col_18 -> col_14 로 수정 -->
 								<div class="box col_15">
 									<dl>
 										<dt>키즈</dt>
@@ -1135,7 +1136,7 @@
 								<div class="box col_31 last">
 									<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_bnn13.jpg" alt="" style="width:342px;" /></a></div>
 								</div>
-								<!-- //box -->								
+								<!-- //box -->
 							</div>
 							<!-- //ctgr_box -->
 
@@ -1160,11 +1161,11 @@
 
 
 
-		
-	<div id="container_r" style="background: #fff;">	
+
+	<div id="container_r" style="background: #fff;">
 		<div id="contents_r">
 
-			<div class="payment-main">				
+			<div class="payment-main">
 				<h2 class="blind">주문서 작성</h2>
 				<div class="contents">
 					<div class="payment_wrap">
@@ -1206,7 +1207,7 @@
 									<a href="#" class="find_info">아이디, 비밀번호 찾기 <img src="/images/adidas/order/ico_circle_gray.gif" alt=""/></a>
 								</div>
 								<!-- //login_form -->
-								
+
 								<div class="box deliv_form_wrap" style="padding-top:0;">
 									<div class="deliv_form">
 										<div class="row clfix">
@@ -1264,7 +1265,7 @@
 																<li data-option-value="gmail.com"><a href="javascript:void(0)">gmail.com</a></li>
 																<li data-option-value="hanmir.com"><a href="javascript:void(0)">hanmir.com</a></li>
 																<li data-option-value="paran.com"><a href="javascript:void(0)">paran.com</a></li>
-															</ul>	
+															</ul>
 														</div>
 													</div>
 													<!-- //selectbox-ctm -->
@@ -1277,10 +1278,10 @@
 											<div class="col_body">
 												<div class="col_row clfix">
 													<div class="col b1">
-														<input type="text" />	
+														<input type="text" />
 													</div>
 													<div class="col b2">
-														<a href="#" class="btn-ctm btn-lgray"><span>주소찾기</span></a>	
+														<a href="#" class="btn-ctm btn-lgray"><span>주소찾기</span></a>
 													</div>
 												</div>
 												<div class="col_row clfix">
@@ -1344,7 +1345,7 @@
 																	<li data-option-value="gmail.com"><a href="javascript:void(0)">gmail.com</a></li>
 																	<li data-option-value="hanmir.com"><a href="javascript:void(0)">hanmir.com</a></li>
 																	<li data-option-value="paran.com"><a href="javascript:void(0)">paran.com</a></li>
-																</ul>	
+																</ul>
 															</div>
 														</div>
 														<!-- //selectbox-ctm -->
@@ -1353,7 +1354,7 @@
 												<div class="col_row" style="margin-bottom: 0;">
 													<div class="col clf">
 														<input type="text" />
-													</div>	
+													</div>
 												</div>
 											</div>
 										</div>
@@ -1363,7 +1364,7 @@
 								<!-- //deliv_form_wrap -->
 							</div>
 							<!-- //for_guest -->
-							
+
 						</div>
 						<!-- //delivery_info -->
 
@@ -1420,7 +1421,7 @@
 											휴대폰 결제
 										</label>
 									</div>
-								</div>								
+								</div>
 							</div>
 							<!-- //payment_options -->
 							<div class="payment_contents">
@@ -1438,13 +1439,13 @@
 											<li>-부분 취소/반품의 경우, 취소 건을 제외한 금액을 재결제 하시면 이전 결제 건 전체가 취소 됩니다.</li>
 											<li>-부분 취소 시 결제한도 금액이 부족한 경우, 휴대폰 결제 외에 다른 결제 수단으로 이용해주세요.</li>
 										</ul>
-										<p class="desc"><strong>※ 자세한 결제 취소 및 반품 절차는 FAQ 참고</strong></p>	
+										<p class="desc"><strong>※ 자세한 결제 취소 및 반품 절차는 FAQ 참고</strong></p>
 									</div>
-									
+
 								</div>
 								<div class="payment_kpay_wrap" id="kpay_payment">
 									<div class="box" style="border-bottom-width:0;">
-										<h4>KG이니시스의 스마트폰 앱 간편결제 서비스</h4>	
+										<h4>KG이니시스의 스마트폰 앱 간편결제 서비스</h4>
 										<p class="desc">사용자가 신용카드 결제정보를 Kpay에 미리 등록하고, 가맹점 결제 시 Kpay 어플리케이션을 실행, 간편하게 결제하는 서비스 입니다.</p>
 										<dl>
 											<dt>※ Kpay 지원 카드</dt>
@@ -1468,7 +1469,7 @@
 											<li><strong>- 실시간 계좌이체시 은행별 서비스 가능시간을 확인바랍니다.</strong></li>
 											<li class="last"><strong>- 실시간 계좌이체는 10분 이내로 입금확인을 하실 수 있습니다.</strong></li>
 										</ul>
-									</div>	
+									</div>
 									<div class="box">
 										<h4>현금영수증 신청</h4>
 										<div class="box_form" id="select_account_recpt_yn" style="margin-bottom: 0;">
@@ -1554,7 +1555,7 @@
 										<ul class="desc">
 											<li class="last"><strong>- 아래 ‘결제하기’ 버튼클릭 후 입금은행 및 계좌, 입금기한을 확인하실 수 있습니다.</strong></li>
 										</ul>
-									</div>	
+									</div>
 									<div class="box">
 										<h4>현금영수증 신청</h4>
 										<div class="box_form" id="select_vbank_recpt_yn" style="margin-bottom: 0;">
@@ -1661,7 +1662,7 @@
 					<!-- //payment_wrap -->
 
 					<div class="prods_info" id="test_box">
-						
+
 						<div class="total_amount">총 주문 상품 : 2개</div>
 						<div class="price_box">
 							<div class="box clfix">
@@ -1686,7 +1687,7 @@
 										</span>
 									</span>
 								</strong>
-									
+
 								<div class="price-container">
 									<span class="prc">15,000<span class="won">원</span></span>
 								</div>
@@ -1709,9 +1710,9 @@
 									<div class="details">사이즈 : 235 / 수량 1</div>
 									<div class="price-container">
 										<span class="prc">129,000<span class="won">원</span></span>
-									</div>	
+									</div>
 								</div>
-								
+
 							</div>
 							<div class="box last">
 								<div class="img"><img src="http://image.adidas.co.kr/upload/prod/basic/60/S76582-1_60X60.jpg" alt="" /></div>
@@ -1721,9 +1722,9 @@
 									<div class="price-container">
 										<span class="prc line">129,000<span class="won">원</span></span>
 										<span class="prc sale">87,200<span class="won">원</span></span>
-									</div>	
+									</div>
 								</div>
-								
+
 							</div>
 						</div>
 						<!-- //prodlist -->
@@ -1731,21 +1732,21 @@
 						<div class="btn_coupon">
 							<a href="#">쿠폰사용 <span class="spt_bg"></span></a>
 						</div>
-													
+
 					</div>
 					<!-- //prods_info -->
-					
+
 				</div>
 				<!-- //contents -->
-				
+
 			</div>
 			<!-- //payment-main -->
 
 		</div>
 	</div>
-	
 
-		
+
+
 	<div id="footer_r" class="m20160302">
 	<!-- footer HTML -->
 
@@ -1758,11 +1759,11 @@
 				<div class="cscenter_num spt_bg">
 					<strong><a href="#">고객센터</a> : </strong>
 					<span><em>1588-8241</em></span>
-				</div> 
+				</div>
 			</div>
-		</div>	
+		</div>
 		<!-- //f_linemenu -->
-	
+
 		<div class="sitemap ct950">
 			<div class="sitemap_area1">
 				<div class="box">
@@ -1798,7 +1799,7 @@
 						</dd>
 					</dl>
 					<div class="dlbox">
-						<!-- 
+						<!--
 						160302 arial 클래스 제거
 						<p class="sale arial"><a href="#">SALE</a></p>
 						<p class="arial"><a href="#">NEW ARRIVALS</a></p>
@@ -1937,7 +1938,7 @@
 						</dd>
 					</dl>
 					<div class="dlbox">
-						<!-- 
+						<!--
 						160302 arial 클래스 제거
 						<p class="arial"><a href="#">PROMOTION</a></p>
 						<p class="arial"><a href="#">TECHNOLOGY</a></p>
@@ -1974,7 +1975,7 @@
 
 
 		<!-- /footer HTML -->
-		<div class="f_menu">				
+		<div class="f_menu">
 			<div class="ct950" style="position:relative;">
 				<!-- 160302 다른국가 사이트 레이어 -->
 				<div class="country_selector">
@@ -2005,7 +2006,7 @@
 					<li><a href="#" onclick="window.open('/html/adidas/popup_justice_bns.html','','width=680,height=500');return false;"><img src="/images/adidas/common/btn_fmenu7.gif" alt="공정거래 자율준수"></a></li>
 					<li style="border-right-width:0;"><a href="http://shop.adidas.co.kr/PF080301.action?FAQ_DIVI=01&amp;FAQ_DIVI_DTL=02"><img src="/images/adidas/common/btn_fmenu6.gif" alt="팀/단체복 주문 안내"></a></li>
 				</ul>
-				
+
 				<div class="f_sns">
 					<div class="blog">
 						<a href="http://www.alladidas.com/" class="spt_bg btn" target="_blank"></a>
@@ -2062,10 +2063,10 @@
 				<!-- //150924 -->
 			</div>
 		</div>
-					
+
 		<div class="address_r ct950">
 			<div class="footer_left">
-				<!-- 
+				<!--
 				160302 h1 태그 제거
 				<h1><img src="/images/adidas/common/bg_logo_footer.gif" alt="아디다스 코리아"/></h1> -->
 				<div class="info">
@@ -2077,7 +2078,7 @@
 					<p>통신판매업신고 : 2007-서울서초-10391&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;개인정보 관리책임자 : 김동일&nbsp;&nbsp;,&nbsp;&nbsp;개인정보 관리담당자 : 황선영</p>
 					<p>이메일 : adiCLUB_Korea@adidas.com</p>
 					<p>Copyright &copy;2011 adidas Korea Inc.</p>
-				</div>			
+				</div>
 				<!-- //151130 text 추가 끝 -->
 			</div>
 			<div class="footer_right">
@@ -2086,11 +2087,11 @@
 					<area alt="공정거래 위원회 사업자 신원정보 확인" shape="rect" coords="168,29,260,47" href="javascript:fn_certifiedInfoPopAdi();" title="새창"/>
 					<area target="_blank" href="http://ftc.go.kr/info/bizinfo/communicationList.jsp" coords="214,4,262,23" shape="rect" alt="한국 스탠다드차타드은행 채무지급보증 안내 , 서비스 가입사실 확인" />
 				</map>
-			</div>				
+			</div>
 		</div>
 	</div>
 
-	
+
 
 </div>
 </body>
