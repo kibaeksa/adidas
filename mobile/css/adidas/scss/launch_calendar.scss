@@ -70,7 +70,7 @@ $width600:600px;
 
 		span{
 			color: #59aa6f !important;
-		}		
+		}
 	}
 
 	.category_menu{
@@ -165,7 +165,7 @@ $width600:600px;
 						display: block;
 						&:after , &:before{
 							display: block;
-							@extend .pseudo-element;	
+							@extend .pseudo-element;
 						}
 					}
 				}
@@ -174,7 +174,7 @@ $width600:600px;
 					.ico{
 						span{
 							position: relative;
-							
+
 							&:before{
 								width: 21px;
 								height: 14px;
@@ -188,7 +188,7 @@ $width600:600px;
 								background: #ccc;
 							}
 						}
-					}	
+					}
 				}
 
 				&.list_type{
@@ -388,7 +388,7 @@ $width600:600px;
 					}
 
 					&:before{
-						display: block;	
+						display: block;
 						position: absolute;
 						top: 50%;
 						left: 50%;
@@ -470,7 +470,7 @@ $width600:600px;
 
 
 		&.list_type{
-			
+
 			margin-top: 15px;
 			.box{
 				padding-top: 20px;
@@ -478,21 +478,31 @@ $width600:600px;
 				border-bottom:1px solid #eee;
 				&:after{
 					display: none;
-				}	
+				}
 
 				&.locked{
 					.img{
-						width: 10rem;	
+						width: 10rem;
 						height: 10rem;
 						padding-bottom: 0;
 
 						&:before{
-							font-size: 5rem;	
+							font-size: 5rem;
 						}
 
 						.label{
 							top: 0;
 							padding-left: 15px;
+						}
+
+						.text{
+							.icons{
+								font-size: 2rem;
+							}
+
+							.adipro-l{
+								font-size: 1.6rem;
+							}
 						}
 					}
 				}
@@ -508,7 +518,7 @@ $width600:600px;
 					}
 				}
 			}
-			
+
 
 			.img{
 				position: static;
@@ -537,7 +547,7 @@ $width600:600px;
 				display: -moz-box;
 				display: box;
 				overflow: hidden;
-				
+
 				@include prefix-css3(line-clamp,2);
 				@include prefix-css3(box-orient,vertical);
 			}
