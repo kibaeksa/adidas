@@ -1150,7 +1150,7 @@
 						</div>
 					</div>
 
-					<div class="slider_wrap">
+					<div class="slider_section">
 						<div class="slider_inner">
 							<div class="txt">Greater every run</div>
 							<div id="sliders">
@@ -1163,13 +1163,11 @@
 								</ul>
 							</div>
 						</div>
-				    <a href="javascript:void(0)" class="prev"></a>
-				    <a href="javascript:void(0)" class="next"></a>
+						<div class="navi">
+					    <a href="javascript:void(0)" class="prev"></a>
+					    <a href="javascript:void(0)" class="next"></a>
+						</div>
 					</div>
-
-
-
-
 
 
 
@@ -1213,135 +1211,76 @@
 
 				(function($){
 					var sliderElem = $('.ultra_boost #sliders');
+					var slider= $('.ultra_boost #sliders ul li');
+					var slider_li_w= $('.ultra_boost #sliders ul li img').width();
 					var window_width = $(window).width();
 
 
-							if (matchMedia("screen and (min-width: 1630px)").matches) {
-
-									var sliders = $('#sliders').Swipers({
-											width : 1700,
-											height : 644,
-											duration : 600,
-											easing : 'easeOutQuad',
-											auto : true,
-											loop: true,
-											autoTime : 4000,
-											callback : function(index,prevIdx){
-												$('.ultra_boost .btn a').eq(prevIdx).removeClass('on');
-												$('.ultra_boost .btn a').eq(index).addClass('on');
-
-												$('.ultra_boost .dot span').eq(prevIdx).removeClass('on');
-												$('.ultra_boost .dot span').eq(index).addClass('on');
-											}
-										});
-										$('.ultra_boost .prev').bind('click',function(){
-											sliders.prev();
-										});
-
-										$('.ultra_boost .next').bind('click',function(){
-											sliders.next();
-										});
 
 
-							} else {
+							//slider_section
+							var index = 0;
+							var preindex = -1;
 
-									var sliders = $('#sliders').Swipers({
-											width : 1380,
-											height : 444,
-											duration : 600,
-											easing : 'easeOutQuad',
-											auto : true,
-											loop: true,
-											autoTime : 4000,
-											callback : function(index,prevIdx){
-												$('.ultra_boost .btn a').eq(prevIdx).removeClass('on');
-												$('.ultra_boost .btn a').eq(index).addClass('on');
+							slider.eq(0).css({'left':'0'})
 
-												$('.ultra_boost .dot span').eq(prevIdx).removeClass('on');
-												$('.ultra_boost .dot span').eq(index).addClass('on');
-											}
-										});
-										$('.ultra_boost .prev').bind('click',function(){
-											sliders.prev();
-										});
+							$('.next').click(function(){
 
-										$('.ultra_boost .next').bind('click',function(){
-											sliders.next();
-										});
+								preindex = index;
 
+								if( index == 4){
+									index = 0;
+								}else{
+									index +=1;
+								}
+								slider.eq(index).css({'left':slider_li_w + 'px'});
+								slider.eq(preindex).animate({'left':-slider_li_w + 'px'},500);
+								slider.eq(index).animate({'left':'0'},500);
+
+
+							});
+
+							$('.prev').click(function(){
+
+								preindex = index;
+
+								if( index == 0){
+									index = 4;
+								}else{
+									index -=1;
+								}
+								slider.eq(index).css({'left':'-1743px'});
+								slider.eq(preindex).animate({'left':'1743px'},500);
+								slider.eq(index).animate({'left':'0'},500);
+
+							});
+
+							//resizing_170307
+							$(window).resize(function(){
+
+								slider_li_w = $('.ultra_boost #sliders ul li img').width();
+
+							});
+
+							setInterval(autoslider, 2500);
+
+							function autoslider(){
+								preindex = index;
+
+								if( index == 4){
+									index = 0;
+								}else{
+									index +=1;
+								}
+								slider.eq(index).css({'left':slider_li_w + 'px'});
+								slider.eq(preindex).animate({'left':-slider_li_w + 'px'},500);
+								slider.eq(index).animate({'left':'0'},500);
 							}
 
 
-							window.onresize = function(){
-
-							    if (matchMedia("screen and (min-width: 1630px)").matches) {
-							        // 1630px 이상에서 사용할 JavaScript
-											var sliders = $('#sliders').Swipers({
-													width : 1700,
-													// height : 644,
-													duration : 600,
-													easing : 'easeOutQuad',
-													auto : true,
-													loop: true,
-													autoTime : 4000,
-													callback : function(index,prevIdx){
-														$('.ultra_boost .btn a').eq(prevIdx).removeClass('on');
-														$('.ultra_boost .btn a').eq(index).addClass('on');
-
-														$('.ultra_boost .dot span').eq(prevIdx).removeClass('on');
-														$('.ultra_boost .dot span').eq(index).addClass('on');
-													}
-												});
-												$('.ultra_boost .prev').bind('click',function(){
-													sliders.prev();
-												});
-
-												$('.ultra_boost .next').bind('click',function(){
-													sliders.next();
-												});
-
-							    } else if (matchMedia("screen and (min-width: 1480px)").matches) {
-							        // 1480px 이상에서 사용할 JavaScript
-											location.reload();
-											$('.ultra_boost .slider_wrap #sliders').css({
-												'width':'1380px'
-											})
-											$('.ultra_boost .prev').bind('click',function(){
-												sliders.prev();
-											});
-
-											$('.ultra_boost .next').bind('click',function(){
-												sliders.next();
-											});
-
-							    }  else if (matchMedia("screen and (min-width: 1280px)").matches) {
-							        // 1280px 이상에서 사용할 JavaScript
-											$('.ultra_boost .slider_wrap #sliders').css({
-												'width':'1380px'
-											})
-											$('.ultra_boost .prev').bind('click',function(){
-												sliders.prev();
-											});
-
-											$('.ultra_boost .next').bind('click',function(){
-												sliders.next();
-											});
-
-							    } else{
-										$('.ultra_boost .slider_wrap #sliders').css({
-											'width':'1280px'
-										})
-										$('.ultra_boost .prev').bind('click',function(){
-											sliders.prev();
-										});
-
-										$('.ultra_boost .next').bind('click',function(){
-											sliders.next();
-										});
 
 
-									}
-							};
+
 
 
 						$('.play-video').bind('click',function(){
