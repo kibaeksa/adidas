@@ -883,10 +883,90 @@
 					</div>
 					<!-- //collection2 -->
 
+					<!-- css : video, banner종료 css -->
+					<style>
+						#video-layer{
+							position:fixed;top:0;left:0;width: 100%;height: 100%;z-index:1000;
+						}
+
+						#video-layer .bg{
+							width: 100%;
+							height: 100%;
+
+							position: absolute;
+							top: 0;
+							left: 0;
+							transform-origin:center center;
+							-webkit-transform-origin:center center;
+							transform:scale(0);
+							-webkit-transform:scale(0);
+							opacity:0;
+							background:#000;
+							z-index:1;
+							transition:all 0.4s;
+							-webkit-transition:all 0.4s;
+						}
+
+						#video-layer.loaded .bg{
+							opacity: 1;
+							transform:scale(1.2);
+							-webkit-transform:scale(1.2);
+						}
+
+						#video-layer .video-box{
+							position: relative;
+							width: 100%;
+							height: 100%;
+							z-index: 3;
+						}
+
+						#video-layer .close_x_btn{
+							width: 70px;
+							height: 70px;
+							position: absolute;
+							top: 0;
+							right: 0;
+							z-index: 5;
+							opacity: 0;
+						}
+
+						#video-layer.loaded .close_x_btn{
+							opacity: 1;
+						}
+
+						.campaign .banner .eventOver{display: block;}
+
+						.campaign .banner .eventOver a{
+	            position: absolute;
+	            top:0;
+	            left:0;
+	            width: 100%;
+	            height: 100%;
+	            background: #000;
+	            opacity: .75;
+	          }
+	          .campaign .banner .eventOver p{
+	            position: absolute;
+	            top:50%;
+	            width: 100%;
+	            text-align: center;
+	            color:#fff;
+	            font:2.2rem 'NotoSansKRRegular','Nanum Gothic';
+	            z-index: 1;
+	            letter-spacing: -1px;
+	          }
+					</style>
+					<!-- css : video, banner종료 css 끝 -->
+
+					<!--banner -->
 					<div class="banner" style="position:relative;">
 						<a href="https://goo.gl/f1L2BF" style="position:absolute; bottom:5%; left:5%; width:14rem; height:3rem;"></a>
 						<a href="https://goo.gl/Z629fQ" style="position:absolute; bottom:5%; left:50%; width:14rem; height:3rem;"></a>
 						<a href="배너링크"><img src="/images/reebok/about/printsmooth/banner.jpg?v=1" alt=""></a>
+						<div class="eventOver">
+							<p>이벤트가 종료되었습니다.</p>
+							<a href="javascript:void(0)"></a>
+						</div>
 					</div>
 					<!--//banner -->
 
@@ -898,64 +978,39 @@
 				</div>
 				<!-- //about_camapign -->
 
-				<!-- video css -->
-				<style>
-					#video-layer{
-			          position:fixed;top:0;left:0;width: 100%;height: 100%;z-index:1000;
-			        }
 
-			        #video-layer .bg{
-			          width: 100%;
-			          height: 100%;
-
-			          position: absolute;
-			          top: 0;
-			          left: 0;
-
-			          transform-origin:center center;
-			          -webkit-transform-origin:center center;
-			          transform:scale(0);
-			          -webkit-transform:scale(0);
-			          opacity:0;
-			          background:#000;
-			          z-index:1;
-
-			          transition:all 0.4s;
-			          -webkit-transition:all 0.4s;
-
-
-			        }
-
-			        #video-layer.loaded .bg{
-			          opacity: 1;
-			          transform:scale(1.2);
-			          -webkit-transform:scale(1.2);
-			        }
-
-			        #video-layer .video-box{
-			          position: relative;
-			          width: 100%;
-			          height: 100%;
-			          z-index: 3;
-			        }
-
-			        #video-layer .close_x_btn{
-			          width: 70px;
-			          height: 70px;
-			          position: absolute;
-			          top: 0;
-			          right: 0;
-			          z-index: 5;
-			          opacity: 0;
-			        }
-
-			        #video-layer.loaded .close_x_btn{
-			          opacity: 1;
-			        }
-				</style>
 
 				<script type="text/javascript">
 					(function($){
+						/*banner 종료 날짜 설정 시작*/
+
+						var startdate = "2017030600";
+						var enddate = "2017040500";
+
+						var now = new Date();   //현재시간
+
+						year = now.getFullYear();   //현재시간 중 4자리 연도
+						month = now.getMonth()+1;   //현재시간 중 달. 달은 0부터 시작하기 때문에 +1
+						if((month+"").length < 2){
+								month="0"+month;   //달의 숫자가 1자리면 앞에 0을 붙임.
+						}
+						date = now.getDate();      //현재 시간 중 날짜.
+						if((date+"").length < 2){
+								date="0"+date;
+						}
+						hour = now.getHours();   //현재 시간 중 시간.
+						if((hour+"").length < 2){
+						hour="0"+hour;
+						}
+						today = year + "" + month + "" + date+ "" +hour;      //오늘 날짜 완성.
+						// 시간비교
+						if ((eval(today) > eval(startdate)) && ((eval(today) < eval(enddate))))  {
+								 $('.eventOver').css({'display':'none'});
+						}else{
+							$('.eventOver').css({'display':'block'});
+						}
+
+						/*banner 종료 날짜 설정 끝*/
 
 							//미등록 상품
 							$('#ready').click(function(){
