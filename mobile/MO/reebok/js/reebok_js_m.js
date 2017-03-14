@@ -497,11 +497,7 @@ Reebok.ops = {
 
 			// Click gnb items
 			$('.navigation_menu li').bind('click',function(event){
-				if($(this).find('>ul').length <= 0){
-					return;
-				}
 				event.stopPropagation();
-				event.preventDefault();
 
 				var $this = $(this);
 				var objOffsetTop = 0;
@@ -535,6 +531,8 @@ Reebok.ops = {
 				}
 
 			});
+
+
 		}
 
 	});

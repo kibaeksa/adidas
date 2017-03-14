@@ -118,13 +118,16 @@ $width600:600px;
 	@include prefix-css3(transition,opacity 1s);
 
 	div{
+		width: 200px;
+		height: 200px;
 		position: relative;
 		font:60px 'adiBlack';
 		color: #000;
 		position: absolute;
 		top:50%;
 		left:50%;
-		@include prefix-css3(transform,translate3d(-50%,-50%,0));
+		background:url('/images/adidas/event/running_guide/logo.png') 0 0 no-repeat;
+		margin: -100px 0 0 -100px;
 		text-transform:uppercase;
 
 
@@ -637,6 +640,16 @@ $width600:600px;
                     font: 22px/23px 'adihausDIN-Cond';
                     color: #aaa;
 
+					&.active{
+						a{
+							width:100%;
+                            height:20px;
+                            background-color:#eee;
+                            color:#000;
+                            background:#eee url('http://image.adidas.co.kr/images/adidas/event/running_guide/bullet.png') right center no-repeat;
+						}
+					}
+
                     a{
                         width: 100%;
                         display: block;
@@ -696,7 +709,7 @@ $width600:600px;
     /* Shoes list END */
 
 	.contents_wrapper{
-		padding-top: 100px;
+		padding-top: 45px;
 	}
 
 

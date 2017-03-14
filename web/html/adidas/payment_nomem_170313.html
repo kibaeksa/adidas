@@ -240,7 +240,35 @@
 			});
 			// 161213 end
 
+
+
+			/* 170314
+			임시 스크립트
+			*** 참고만 해주세요.
+			 */
+
+			// 결제하기 버튼 클릭
+			$('#paymtButton').bind('click',function(){
+				$('.modal-popup-self_verification').show();
+			});
+
+			//팝업에서 "비회원 주문" 희망 할 시,
+			$('.modal-popup-self_verification .close ,.modal-popup-self_verification .btn-lgray ,.modal-popup-self_verification .overlay').bind('click',function(){
+				$('.modal-popup-self_verification').hide();
+				$('#paymtButton').html('<span>결제하기<span class="spt_bg"></span></span>');
+				return false;
+			});
+
+			// 비회원 주문조회 닫기팝업
+			$('.modal-popup-search_order .close ,.modal-popup-search_order .overlay').bind('click',function(){
+				$('.modal-popup-search_order').hide();
+				return false;
+			});
+
+
 		});
+
+
 
 	})(jQuery);
 	/* //160929 */
@@ -250,160 +278,62 @@
 </head>
 <body>
 
-	<!-- 161209 start -->
-	<div class="modal_pop_layer card_benefit_layer">
+	<!-- 170314 start -->
+	<div class="modal-popup-wrapper modal-popup-self_verification" style="display: none;">
 		<div class="overlay"></div>
-		<!-- 161213 css 추가 -->
-		<div class="popup" style="border-color:#000;">
-			<!-- 161213 css 추가 -->
-			<a href="javascript:void(0)" class="spt_bg close" style="right: 0;"></a>
-			<!-- 161213 css 추가 -->
-			<div class="top" style="background: #000;">
-				<div class="tit">지금 할인되는 카드 프로모션</div>
+		<div class="popup">
+			<div class="popup-header">
+				<h2>본인인증</h2>
+				<a href="javascript:void(0)" class="close">
+					<span class="spt_bg"></span>
+				</a>
 			</div>
-			<div class="body">
-				<div class="box">
-					<h3>카드사 무이자 할부안내</h3>
-					<div class="info">
-						<table cellpadding="0" cellspacing="0" width="100%">
-							<colgroup>
-								<col width="95">
-								<col width="120">
-								<col width="140">
-								<col>
-							</colgroup>
-							<thead>
-								<tr>
-									<th>카드사</th>
-									<th>기간</th>
-									<th>내용</th>
-									<th>할부개월</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>롯데</td>
-									<td>08.01~08.31</td>
-									<td>
-										5만원 이상 구매시
-
-									</td>
-									<td>2~5개월</td>
-								</tr>
-
-
-
-								<tr>
-									<td>현대</td>
-									<td>08.01~08.31</td>
-									<td>
-										5만원 이상 구매시
-
-									</td>
-									<td>2~5개월</td>
-								</tr>
-
-
-
-								<tr>
-									<td>국민</td>
-									<td>08.01~08.31</td>
-									<td>
-										5만원 이상 구매시
-
-									</td>
-									<td>2~5개월</td>
-								</tr>
-
-
-
-								<tr>
-									<td>BC</td>
-									<td>08.01~08.31</td>
-									<td>
-										5만원 이상 구매시
-
-									</td>
-									<td>2~5개월</td>
-								</tr>
-
-
-
-								<tr>
-									<td>삼성</td>
-									<td>08.01~08.31</td>
-									<td>
-										5만원 이상 구매시
-
-									</td>
-									<td>2~5개월</td>
-								</tr>
-
-
-
-								<tr>
-									<td>신한</td>
-									<td>08.01~08.31</td>
-									<td>
-										5만원 이상 구매시
-
-									</td>
-									<td>2~5개월</td>
-								</tr>
-
-
-
-								<tr>
-									<td>씨티</td>
-									<td>08.01~08.31</td>
-									<td>
-										5만원 이상 구매시
-
-									</td>
-									<td>2~3개월</td>
-								</tr>
-
-
-
-								<tr>
-									<td>NH</td>
-									<td>08.01~08.31</td>
-									<td>
-										5만원 이상 구매시
-
-									</td>
-									<td>2~5개월</td>
-								</tr>
-
-
-
-								<tr>
-									<td>하나SK</td>
-									<td>08.01~08.31</td>
-									<td>
-										5만원 이상 구매시
-
-									</td>
-									<td>2~5개월</td>
-								</tr>
-
-
-							</tbody>
-						</table>
-					</div>
-					<ul class="desc">
-						<li>- 법인/체크/선불/기프트/은행계열카드 제외</li>
-						<li>- 무이자할부 결제 시 포인트, 마일리지 적립 제외</li>
-						<li>- 직계약 가맹점, 상점부담 무이자 가맹점, 특별제휴 가맹점, 오프라인 가맹점, 신규 가맹점 등<br>&nbsp;&nbsp;일부 제외</li>
-						<li>- 카드사의 사정으로 변경 또는 종료될 수 있으니, 이니시스 결제창의 무이자 안내를 확인하세요.</li>
-					</ul>
+			<div class="popup-contents">
+				<p class="desc">“홍길동” 고객님은 아디클럽 회원이십니다.<br/>포인트 혜택을 위해 로그인 하시겠어요?</p>
+				<div class="button_area clfix">
+					<a href="#" class="btn-ctm btn-blue arrow"><span>로그인<span class="spt_bg"></span></span></a>
+					<a href="#" class="btn-ctm btn-lgray"><span>비회원 주문</span></a>
+				</div>
+				<div class="more">
+					<a href="#">아이디 / 비밀번호 찾기</a>
 				</div>
 			</div>
+
 		</div>
 	</div>
-	<!-- //161209 -->
+	<!-- //170314 -->
 
+	<!-- 170314 start -->
+	<div class="modal-popup-wrapper modal-popup-search_order" style="display: block;">
+		<div class="overlay"></div>
+		<div class="popup">
+			<div class="popup-header">
+				<h2>비회원 주문조회</h2>
+				<a href="javascript:void(0)" class="close">
+					<span class="spt_bg"></span>
+				</a>
+			</div>
+			<div class="popup-contents">
+				<div class="form">
+					<div class="box">
+						<label for="">주문 번호</label>
+						<input type="text" placeholder="주문 후 받으신 주문번호 15자리 숫자입력">
+					</div>
 
+					<div class="box">
+						<label for="">휴대폰 번호</label>
+						<input type="text" placeholder="- 빼고 입력">
+					</div>
+				</div>
+				<div class="button_area">
+					<a href="#" class="btn-ctm btn-blue arrow"><span>주문조회<span class="spt_bg"></span></span></a>
+				</div>
+				<p class="desc">주문번호를 잊으신 경우, 아디다스 코리아 고객센터 1588-8241로 문의해 주세요.</p>
+			</div>
+
+		</div>
+	</div>
+	<!-- //170314 -->
 
 <div class="quickview_layer" id="quickview"></div>
 
@@ -1434,9 +1364,6 @@
 									<!-- 최근 배송지 -->
 									<div id="address_infomation1" style="display: block;">
 										<div class="deliv_form">
-											<div class="mi_noti">
-												<span class="spt_bg"></span>마이아디다스 상품은 해외에서 국내로 직배송 되는 상품입니다.<br/>배송 받으실 주소 확인 후 반드시 정확한 주소를 입력해주세요.
-											</div>
 											<div class="row clfix">
 												<div class="col_head">주문자 이름*</div>
 												<div class="col_body">
@@ -1457,7 +1384,7 @@
 												<div class="col_head col_head2">휴대전화 2*</div>
 												<div class="col_body col_body2">
 													<div class="col">
-														<input type="text" value="01042454515"/>
+														<input type="text" value=""/>
 													</div>
 												</div>
 											</div>
@@ -1466,11 +1393,11 @@
 												<div class="col_head">이메일 주소*</div>
 												<div class="col_body">
 													<div class="col b1">
-														<input type="text" value="honggildong" disabled="" />
+														<input type="text" value="" disabled="" />
 													</div>
 													<div class="col a b2">@</div>
 													<div class="col b3">
-														<input type="text" disabled="" value="naver.com"/>
+														<input type="text" disabled="" value=""/>
 													</div>
 													<div class="col b4">
 														<div class="selectbox-ctm disabled">
@@ -1519,7 +1446,7 @@
 														<div class="col">
 															<div class="addrbox">
 																<span>(도로명)</span>
-																<input type="text" value="서울시 서초구 서초대로" readonly=""/>
+																<input type="text" value="" readonly=""/>
 															</div>
 														</div>
 														<!-- //170131 -->
@@ -1532,7 +1459,7 @@
 														<div class="col">
 															<div class="addrbox">
 																<span>(지번)</span>
-																<input type="text" value="서울시 서초구 서초동" readonly="" />
+																<input type="text" value="" readonly="" />
 															</div>
 														</div>
 														<!-- //170131 -->
@@ -1558,14 +1485,14 @@
 														<div class="col">
 															<div class="addrbox non">
 																<span>(지번)</span>
-																<input type="text" readonly="" disabled="" value="서울시 서초구 서초동"/>
+																<input type="text" readonly="" disabled="" value=""/>
 															</div>
 														</div>
 														<!-- //170131 -->
 													</div>
 													<div class="col_row clfix" style="margin-bottom: 0;">
 														<div class="col">
-															<input type="text" value="1321-2 서초타워 24층" />
+															<input type="text" value="" />
 														</div>
 													</div>
 												</div>
@@ -2109,11 +2036,8 @@
 										<a href="#" style="position: absolute;top: 15px;left: 220px;"><img src="/images/adidas/order/btn_security_check.gif" alt="서비스 가입사실 확인"/></a>
 									</div>
 								</div>
-								<!-- //payment_vbank -->
 							</div>
-							<!-- //payment_contents -->
 
-							<!-- 161213 id 추가 -->
 							<div id="agreebox_inicis" class="agr_box">
 								<div class="box">
 									<div class="input-ctm input-check-ctm small" id="input_inicis_agree_all">
@@ -2126,7 +2050,6 @@
 										</label>
 									</div>
 								</div>
-								<!-- 161219 sub_agreements 부분 추가 -->
 								<div class="sub_agreements" style="display: none;">
 									<div class="box" style="border-top-width: 1px;">
 										<div class="input-ctm input-check-ctm small">
@@ -2178,26 +2101,23 @@
 										<a href="javascript:void(0)" class="view_more_term" onclick="window.open('https://plugin.inicis.com/html60/main/04_Information.html','inicisTerm','width=980,height=580')">자세히보기 <span class="spt_bg"></span></a>
 									</div>
 								</div>
-								<!-- //sub_agreements -->
-
 							</div>
-							<!-- //161213 -->
 
 							<div class="checkout_btn">
-								<!-- 161109 -->
-								<div style="margin-bottom: 15px;">
-									<div class="input-ctm input-check-ctm">
-										<input type="checkbox" id="use_payment">
-										<label for="use_payment" style="font-size:13px;">
-											<a class="ctm-box spt_bg" href="javascript:void(0)">
-												<span class=" spt_bg"></span>
-											</a>
-											비회원 구매 동의
-										</label>
+								<div class="agreebox">
+									<div class="input-ctm input-check-ctm ctm-check-blue checked">
+										<input type="checkbox" id="check_agree" checked="checked">
+										<label for="check_agree"><span class="ctm-box"><span class=" spt_bg"></span></span>비회원 구매 약관 동의</label>
 									</div>
+									<a href="javascript:void(0);" class="view_term btn_nomem_terms">약관 전문 보기<span class="spt_bg"></span></a>
 								</div>
-								<!-- //161109 -->
-								<a href="#" class="btn-ctm btn-blue"><span>결제하기</span></a>
+
+								<!--
+								170314
+								* 버튼 명 추가
+								* 일부 코딩 변경
+								-->
+								<a href="javascript:fn_pay();" class="btn-ctm btn-blue arrow" id="paymtButton"><span>본인 인증 후 결제하기<span class="spt_bg"></span></span></a>
 							</div>
 						</div>
 						<!-- //payment_info -->

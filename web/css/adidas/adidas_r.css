@@ -193,9 +193,10 @@ a:active {color:#797b80;text-decoration:none;}
 	width: 15px;
 	height: 14px;
 	position: absolute;
-	top:17px;
+	top:50%;
 	right: -15px !important;
 	opacity: 0;
+	margin-top: -7px;
 	filter:alpha(opacity=0);
 	-ms-filter:alpha(opacity=0);
 	background-position: -685px -900px;
@@ -468,14 +469,13 @@ a:active {color:#797b80;text-decoration:none;}
 	display: none;
 }
 
+.input-check-ctm.small.blue label .ctm-box span{
+	background-position:-310px -70px;
+}
+
 .input-check-ctm.checked label .ctm-box{
 	background: #0286cd;
 	border-color:#0286cd;
-}
-
-.input-check-ctm.ctm-check-blue.checked label .ctm-box{
-	background: #ebebeb;
-	border-color:#ebebeb;
 }
 
 .input-check-ctm.small.checked label .ctm-box{
@@ -483,8 +483,17 @@ a:active {color:#797b80;text-decoration:none;}
 	background: #fff;
 }
 
+.input-check-ctm.ctm-check-blue.checked label .ctm-box{
+	background: #ebebeb;
+	border-color:#ebebeb;
+}
+
 .input-check-ctm.small.checked label .ctm-box span{
 	display: block;
+}
+
+.input-check-ctm.small.blue.checked label .ctm-box{
+	background: #0286cd;
 }
 
 /* product list */
@@ -7341,6 +7350,7 @@ Update
 
 .payment-main .payment_wrap .checkout_btn .btn-ctm span{
 	line-height: 55px;
+	font-size: 16px;
 }
 
 .payment-main .payment_wrap .checkout_btn .btn-ctm:hover{
@@ -7519,19 +7529,23 @@ Update
 	top: 0;
 }
 
+.payment-main .prods_info .prodlist .box .info{
+	position: relative;
+}
+
 .payment-main .prods_info .prodlist .box .info .tit{
-	margin-bottom: 10px;
+	margin-bottom: 7px;
 	color: #000;
-	font:14px 'NotoSansKRBold','Nanum Gothic';
 }
 
 .payment-main .prods_info .prodlist .box .info .tit a{
 	color: #000;
+	font:14px/18px 'NotoSansKR','Nanum Gothic';
 }
 
 .payment-main .prods_info .prodlist .box .info .details{
-	font:12px 'NotoSansKRRegular','Nanum Gothic';
-	color: #000;
+	font: 12px 'NotoSansKRLight','Nanum Gothic';
+	color: #888;
 	letter-spacing: -0.5px;
 }
 
@@ -8039,6 +8053,10 @@ Update
 	padding: 15px 20px;
 	background: #fff;
 	border-top: 1px solid  #eee;
+}
+
+.register-main .agr_box .box .input-check-ctm{
+	letter-spacing:-1px;
 }
 
 .register-main .agr_box .box.all_agree{
@@ -9396,4 +9414,104 @@ Update
 
 .modal-popup-wrapper.modal-popup-manage_address .btn_area .btn-lgray{
 	width: 100px;
+}
+
+
+/* Self verification */
+.modal-popup-wrapper.modal-popup-self_verification>.popup{
+	width:550px;
+	height:316px;
+	margin: -158px 0 0 -275px;
+	top: 50%;
+	left: 50%;
+}
+
+.modal-popup-wrapper.modal-popup-self_verification>.popup .desc{
+	margin:15px 0 54px;
+	font:20px/30px 'NotoSansKR','Nanum Gothic';
+	color: #000;
+	text-align: center;
+}
+
+.modal-popup-wrapper.modal-popup-self_verification>.popup .more{
+	margin-top: 10px;
+	color: #027dbf;
+}
+
+.modal-popup-wrapper.modal-popup-self_verification>.popup .more a{
+	color: #027dbf;
+	font:14px/14px 'NotoSansKRRegular','Nanum Gothic';
+}
+
+.modal-popup-wrapper.modal-popup-self_verification>.popup .button_area .btn-ctm{
+	width: 330px;
+	height: 56px;
+	margin-right: 10px;
+	float: left;
+}
+
+.modal-popup-wrapper.modal-popup-self_verification>.popup .button_area .btn-ctm span{
+	line-height: 56px;
+}
+
+.modal-popup-wrapper.modal-popup-self_verification>.popup .button_area .btn-lgray{
+	width: 150px;
+	margin-right: 0;
+	background: #aaa;
+}
+
+/* Search order */
+.modal-popup-wrapper.modal-popup-search_order>.popup{
+	width:550px;
+	height:316px;
+	margin: -158px 0 0 -275px;
+	top: 50%;
+	left: 50%;
+}
+
+.modal-popup-wrapper.modal-popup-search_order .form{
+
+}
+
+.modal-popup-wrapper.modal-popup-search_order .form .box{
+	position: relative;
+	height: 45px;
+	padding-left: 100px;
+	margin-bottom: 10px;
+}
+
+.modal-popup-wrapper.modal-popup-search_order .form .box label{
+	position: absolute;
+	top:14px;
+	left:0;
+}
+
+.modal-popup-wrapper.modal-popup-search_order .form .box input{
+	width: 100%;
+	height: 45px;
+	padding: 0 0 0 10px;
+	border:1px solid #c8cbcc;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	font:14px/45px 'NotoSansKRRegular','Nanum Gothic';
+	color: #000;
+}
+
+.modal-popup-wrapper.modal-popup-search_order .form .box label{
+	font:16px/16px 'NotoSansKR','Nanum Gothic';
+	color: #000;
+}
+
+.modal-popup-wrapper.modal-popup-search_order .btn-ctm{
+	margin: 30px 0 10px;
+	height: 56px;
+}
+
+.modal-popup-wrapper.modal-popup-search_order .btn-ctm span{
+	line-height: 56px;
+}
+
+.modal-popup-wrapper.modal-popup-search_order .desc{
+	color: #666;
+	font:14px/14px 'NotoSansKRRegular','Nanum Gothic';
 }
