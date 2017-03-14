@@ -554,7 +554,7 @@ html.no_srl{
 	color: #fff;
 	background: #000;
 }
-.button_area>*.blue>a:after{
+.button_area>div>a:after{
   margin-left: 10px;
 }
 .button_area>*.blue>a{
@@ -4017,6 +4017,62 @@ div.layerpop_wrap.mi_login_layer .form input{
 
 div.layerpop_wrap.mi_login_layer .button_area>div{
 	margin-bottom: 5px;
+}
+
+/* 본인인증 & 비회원주문조회 팝업 */
+div.layerpop_wrap .inner .header{
+  position: relative;
+  background: #ebebeb;
+}
+div.layerpop_wrap .inner .header h2{
+  padding-left: 15px;
+  height: 60px;
+  font: 1.5rem/60px 'NotoSansKRRegular';
+}
+div.layerpop_wrap .inner .header .close_x_btn{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translate3d(0,-50%,0);
+  -webkit-transform: translate3d(0,-50%,0);
+}
+div.layerpop_wrap .inner .content{
+  padding:30px 15px;
+}
+div.layerpop_wrap .inner .content p.title{
+  margin-bottom: 50px;
+  text-align: center;
+  font: 1.5rem/2.2rem 'NotoSansKRRegular';
+}
+div.layerpop_wrap .inner .content div.id_pw>a{
+  font: 1.2rem/2.2rem 'NotoSansKRLight';
+  text-decoration: none;
+  color:#027dbf;
+}
+div.layerpop_wrap .inner .content .ipt_box.order_number{
+  position: relative;
+}
+div.layerpop_wrap .inner .content .ipt_box.order_number>div{
+  position: relative;
+}
+div.layerpop_wrap .inner .content .ipt_box.order_number div>div.input_wrap{
+    margin-left: 80px;
+}
+div.layerpop_wrap .inner .content .ipt_box.order_number div>div.input_wrap>input{
+  width: 100%;
+  height: 40px;
+  border: 1px solid #b5b5b5;
+  padding-left: 10px;
+}
+div.layerpop_wrap .inner .content .ipt_box.order_number>div>p{
+  position: absolute;
+  left:0;
+  font:15px/40px 'NotoSansKRRegular';
+}
+div.layerpop_wrap#nomem_order_popup .inner .content .desc{
+  font:1rem/40px 'NotoSansKRLight';
 }
 
 #container #sns_share_layer,
