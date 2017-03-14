@@ -334,6 +334,10 @@ html.no_srl{
 	border-color: #027dbf;
 }
 
+.chk_box1.line_blue>input:checked+label:before{
+	border-color: #027dbf;
+}
+
 .chk_box1>input:checked + label:after{
 	content:'';
 	width: 12px;
@@ -350,6 +354,10 @@ html.no_srl{
 
 .chk_box1.blue>input:checked+label:after{
 	border-color: #fff;
+}
+
+.chk_box1.line_blue>input:checked+label:after{
+    border-color: #027dbf;
 }
 
 .rdo_box1>input+label:before{
@@ -4514,7 +4522,7 @@ div.layerpop_wrap.mi_login_layer .button_area>div{
 	background: #929292;
 	color: #fff;
 	display: inline-block;
-	font-size:7px;
+	font-size:10px;
 	vertical-align: middle;
 	text-align: center;
 	line-height: 12px;
@@ -4534,7 +4542,7 @@ div.layerpop_wrap.mi_login_layer .button_area>div{
 }
 
 #container.product_view .product_order>.price_box> .price>div.line span{
-	font-size: 7px;
+	font-size: 10px;
 }
 
 #container.product_view .product_order>.price_box> .benefit a{
@@ -5293,7 +5301,7 @@ div.layerpop_wrap.mi_login_layer .button_area>div{
 }
 #container.product_view .product_order ul.info>li.util>div .calc_layer .price_list>ul>li>.cont>div span{
 	margin-left: 2px;
-	font-size:5px;
+	font-size:10px;
 	position: relative;
 	bottom:1px;
 }
@@ -5687,7 +5695,7 @@ div.layerpop_wrap.mi_login_layer .button_area>div{
 }
 #calc_layer_pop .calc_layer .price_list>ul>li>.cont>div span{
 	margin-left: 2px;
-	font-size:5px;
+	font-size:10px;
 	position: relative;
 	bottom:1px;
 }
@@ -8129,7 +8137,7 @@ padding:30px 15px;
 
 #container .product_grid.grid_2box>* .info .rating .star span{
 	width:9px;
-	font-size:7px;
+	font-size:10px;
 }
 
 #container.login input[type="text"],
@@ -9296,7 +9304,7 @@ padding:30px 15px;
 	margin-right: 3px;
 }
 #container.order .cart_prod_box .set_prod .info .price_box .price>div>span{
-	font-size:7px;
+	font-size:10px;
 	margin-left: 2px;
 }
 #container.order .cart_prod_box .set_prod .info .price_box .price>div.line{
@@ -9447,7 +9455,7 @@ padding:30px 15px;
 }
 #container.order .cart_prod_box .result_box .price_box .price span{
 	margin-left: 2px;
-	font-size:6px;
+	font-size:10px;
 }
 
 #container.order .cart_prod_box .result_box .m_button{
@@ -9495,7 +9503,7 @@ padding:30px 15px;
 
 #container.order .total_result .prc .r span{
 	margin-left: 3px;
-	font-size:5px;
+	font-size:10px;
 }
 
 #container.order .total_result .pot .mpoints{
@@ -9710,7 +9718,6 @@ padding:30px 15px;
 
 #container.order .odr_pay_box.order_prodlist .cont li .info .tit{
     max-height: 39px;
-    margin-bottom:8px;
     display: -webkit-box;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -9721,12 +9728,18 @@ padding:30px 15px;
 	font: 14px/18px 'NotoSansKRRegular';
 }
 
+#container.order .odr_pay_box.order_prodlist .cont li .info .price{
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+}
+
 #container.order .odr_pay_box.order_prodlist .cont li .info .price>div{
 	font-size:18px;
 }
 #container.order .odr_pay_box.order_prodlist .cont li .info .price>div span{
 	margin-left: 2px;
-	font-size:6px;
+	font-size:10px;
 }
 
 #container.order .odr_pay_box.order_prodlist .cont li .info .price>div.line{
@@ -9749,20 +9762,26 @@ padding:30px 15px;
 
 #container.order .odr_pay_box.order_prodlist .cont li .etc>span{
 	letter-spacing:-1px;
-	font-size: 9.5px;
+	font-size: 11px;
+    color: #888;
+}
+
+#container.order .odr_pay_box.order_prodlist .cont li .etc>span strong{
+    color: #888;
 }
 
 #container.order .odr_pay_box.order_prodlist .cont li .etc>span.mpoints{
 	font-weight: bold;
-	font-size: 9px;
+	font-size:11px;
 	font-family:'AdihausDIN-bold';
+    color: #888;
 }
 #container.order .odr_pay_box.order_prodlist .cont li .etc>span.mpoints span{
 	font-size: 10px;
 }
 
 #container.order .odr_pay_box.order_prodlist .cont li .etc>span.mpoints span:before{
-	font-size: 7px;
+	font-size: 10px;
 }
 
 #container.order .odr_pay_box.order_prodlist .cont li .etc>span>strong{
@@ -9967,7 +9986,7 @@ padding:30px 15px;
 	font-size:22px;
 }
 #container.order .odr_pay_box.total_prc .tit>span span{
-	font-size:7px;
+	font-size:10px;
 	margin-left:2px;
 }
 
@@ -10011,7 +10030,7 @@ padding:30px 15px;
 	top: 0;
 	left: 0;
 	color: #000;
-	font-size:7px;
+	font-size:10px;
 	line-height: 18px;
 }
 
@@ -10513,7 +10532,7 @@ padding:30px 15px;
 
 #container.order .total_result.cpn_total .r .price>div span{
 	margin-left: 2px;
-	font-size: 7px;
+	font-size: 10px;
 }
 
 #container.order .total_result.cpn_total .list{
@@ -12481,7 +12500,7 @@ padding:30px 15px;
 
 
 #container.mypage .mpg_orderbox.today_viewd_box>.box .oprod_box>a .price_box div span{
-	font-size: 7px;
+	font-size: 10px;
 }
 
 #container.mypage .mpg_orderbox.today_viewd_box>.box .oprod_box>a .price_box div.line span{
@@ -13227,7 +13246,7 @@ padding:30px 15px;
 
 #container .adiclub>.top>.info dd>p{
 	margin-bottom: 15px;
-	font-size:6px;
+	font-size:10px;
 	line-height: 14px;
 }
 #container .adiclub>.top>.info dd>p:last-child{
@@ -13244,7 +13263,7 @@ padding:30px 15px;
 	line-height: 30px;
 	display: block;
 	border: 1px solid  #fff;
-	font-size:7px;
+	font-size:10px;
 	text-align: center;
 	font-family:'NotoSansKRRegular';
 }
@@ -14654,19 +14673,29 @@ padding:30px 15px;
     font-family: 'NotoSansKRBold';
 }
 
-#container.register-main .agr_box .box .subscribe_details{
+#container.register-main .agr_box .box.subscribe_details{
+    display: none;
+    padding-left: 40px;
+}
+
+#container.register-main .agr_box .box.subscribe_details::after{
+    content:'';
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid  #aaa;
+    border-left:2px solid  #aaa;
     display: inline-block;
-    margin-left:16px;
-    opacity: 0.4;
-    transition:opacity 0.2s;
-    -webkit-transition:opacity 0.2s;
+
+    position: absolute;
+    top: 11px;
+    left: 20px;
 }
 
-#container.register-main .agr_box .box .subscribe_details.active{
-    opacity: 1;
+#container.register-main .agr_box .box.subscribe_details.active{
+    display: block;
 }
 
-#container.register-main .agr_box .box .subscribe_details .chk_box1:last-child{
+#container.register-main .agr_box .box.subscribe_details .chk_box1:last-child{
     margin-left: 15px;
 }
 
