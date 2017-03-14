@@ -71,7 +71,7 @@ html{
 	    width: 320px;
 	    overflow: hidden;
 	    @media screen and (max-width: 320px) {
-		width: 300px;
+				width: 300px;
 		}
 	    .b-close{
 	    	cursor:pointer;
@@ -1838,7 +1838,6 @@ footer#footer{
 
 	.lookbook{
 		width: 100%;
-		// background: #252525;
 		padding-top: 3.5rem;
 		text-align: center;
 
@@ -1874,433 +1873,311 @@ footer#footer{
 
 		}
 
-
-
-		.slider_wrap{
-			overflow: hidden;
-			margin-top:2.5rem;
-			.box{
-				width: 100%;
-				img{
-					width: 100%;
-				}
-			}
-
-			.owl-carousel{
-				width: 100%;
-				position: relative;
-			}
-			.owl-stage-outer{
-				width: 100%;
-				position: relative;
-				overflow: hidden;
-			}
-
-			.owl-stage{
-				width: 100%;
-				position: relative;
-				overflow: hidden;
-			}
-
-			.owl-item{
-				float: left;
-			    @include box-sizing(border-box);
-			}
-			.owl-item .box{
-				width: 100%;
-				img{
-					width: 100%;
-				}
-			}
-
-			.owl-controls{
-				padding:0 1.5rem;
-			}
-
-			.owl-dots{
-				text-align: center;
-				padding: 1rem 0 2rem;
-				border-bottom: 1px solid #515151;
-				@extend .num_paging;
-
-				.active{
-					span{
-						color: #000;
-					}
-				}
-
-				.owl-dot{
-					width: 26px;
-					height: 26px;
-					border-radius: 26px;
-					margin: 0 4px;
-					display: inline-block;
-					border: 1px solid #fff;
-					box-sizing:border-box;
-					color: #fff;
-					transition-duration: 0s;
-					-webkit-transition-duration: 0s;
-
-					span{
-						font:16px/26px 'reefont-condensed';
-					}
-
-					&:nth-child(1){
-						span{
-							&:before{
-								content:'1';
-							}
-						}
-					}
-
-					&:nth-child(2){
-						span{
-							&:before{
-								content:'2';
-							}
-						}
-					}
-
-					&:nth-child(3){
-						span{
-							&:before{
-								content:'3';
-							}
-						}
-					}
-
-					&:nth-child(4){
-						span{
-							&:before{
-								content:'4';
-							}
-						}
-					}
-
-					&:nth-child(5){
-						span{
-							&:before{
-								content:'5';
-							}
-						}
-					}
-
-					&:nth-child(6){
-						span{
-							&:before{
-								content:'6';
-							}
-						}
-					}
-
-					&:nth-child(7){
-						span{
-							&:before{
-								content:'7';
-							}
-						}
-					}
-				}
-
-				.active{
-					background: #fff;
-					border-color: #fff;
-				}
-			}
-		}
 	}
-
-
-
-	.collections{
-		padding: 0 1.5rem 1.5rem;
-		background: #5c5c5c url('/images/reebok/about/gigi_hadid/bg_collection.jpg') 0 0 repeat;
-		background-size: 100% auto;
-
-		h3{
-			padding: 3.5rem 0px 1.8rem;
-			color: #fff;
-			font:500 2.4rem 'dinpro';
-			text-align: center;
-			text-transform: uppercase;
-		}
-
-		.num_paging{
-			padding: 1rem 0px;
-
-			.on{
-				background: #fff;
-				color: #000;
-				border-color: #fff;
-			}
-		}
-
-		.collection_cut{
+	.section{
+		/*슬라이더*/
+		.slider2{
+			position: relative;
+			margin: 1rem 2rem;
 			overflow: hidden;
+			text-align: center;
 			ul{
-				overflow: hidden;
 				li{
-					position: relative;
-					float: left;
-
 					img{
 						width: 100%;
 					}
+					.p_num{
+						display: inline-block;
+						width:3.5rem; height: 3.5rem;
+						vertical-align: middle;
+						color:#fff;
+						text-align:center;
+						cursor: pointer;
+						font: 1.1rem/2rem 'NotoSansKRLight', 'Nanum Gothic';
+						em{
+							margin-left: 1px;
+							font: 1.3rem/3.5rem 'AdihausDIN';
+							position: relative;
+							z-index: 10;
+							border: 2px solid transparent;
+						}
+						a{
+							content: '';
+							display: inline-block;
+							width:100%; height: 100%;
+							background: #000;
+							@include opacity (0.7);
+							position: absolute;
+							left:0;
+							&.blink{
+								-webkit-animation: blink 2.5s linear infinite;
+								animation: blink 2.5s linear infinite;
+							}
+							&.no_active{
+								background: #000;
+								@include opacity (0.3);
+							}
+							&.on{
+								background: #b91c23;
+								@include opacity (0.7);
+							}
+							&:hover{
+								background: #b91c23;
+								@include opacity (0.7);
+								em{
+									@include opacity (1);
+								}
+							}
+
+						}
+
+					}
 				}
 			}
 		}
 
-		.prodlist_wrap{
+		/*슬라이더 정보css*/
+		.info_section{
 			position: relative;
-
-			.prodlist{
-				position: absolute;
-				top: 0;
-				left: 0;
-				padding: 0;
-				opacity: 0;
-				transition:opacity 0.3s;
-				-webkit-transition:opacity 0.3s;
-				z-index: 1;
-
-				.tit{
-					height: 1.4rem;
-					overflow: hidden;
-
-					display: -webkit-box;
-					overflow: hidden;
-					text-overflow: ellipsis;
-					white-space:normal;
-					-webkit-line-clamp:1;
-					-webkit-box-orient: vertical;
-				}
-			}
-
-			.active{
-				opacity: 1;
-				z-index: 2;
-			}
-			.fake{
+			padding:1rem 2rem;
+			height: 14rem;
+			overflow: hidden;
+			.slider_info{
 				position: relative;
-				opacity: 0;
-				visibility: hidden;
+				// display: none;
+				// @include opacity (0);
+				/*170307 코드 개선*/
+				.item{
+					position: absolute;
+					top:0;
+					display: none;
+					&:after{
+						content: '';
+						display: block;
+						clear:both;
+					}
+					.item_img{
+						width: 30%;
+						float:left;
+						text-align: center;
+						img{
+							width: 100%;
+							margin-top: 1rem;
+						}
+					}
+					.item_info{
+						width: 63%;
+						float:right;
+						p{
+							display:block;
+							padding-top: 0.5rem;
+							font: 1.4rem/2rem 'NotoSansKRLight';
+							color:#fff;
+							padding-bottom: 0.7rem;
+							border-bottom: 1px solid #fff;
+							.p_num{
+								display: inline-block;
+								width:2rem; height: 2rem;
+								vertical-align: middle;
+								color:#fff;
+								background: #000;
+								text-align:center;
+								cursor: pointer;
+								font: 1.1rem/2rem 'NotoSansKRLight', 'Nanum Gothic';
+							}
+							&.desc{
+								padding-top: 1rem;
+								border-bottom: 0px;
+								font: 1.1rem/1.5rem 'NotoSansKR','Nanum Gothic';
+								color:#bbb;
+								letter-spacing: -0.5px;
+							}
+						}
+						a.buy{
+							color:#f1554c !important;
+							font: 1.2rem/2rem 'NotoSansKRBold','Nanum Gothic';
+						}
+						a.buy:after{
+							display: inline-block;
+							padding-left: 5px;
+						}
+					}
+				}
+
+				// &.on{
+				// 	display: block;
+				// 	@include opacity (1);
+				// }
+				// &:after{
+				// 	display: block;
+				// 	content:'';
+				// 	clear:both;
+				// }
+				// .img_section{
+				// 	float:left;
+				// 	width:64%;
+				// 	height: 14rem;
+				// 	margin-left:-30rem;
+				// 	@include opacity (0);
+				// 	transition: all 0.3s ease-in;
+				// 	-webkit-transition: all 0.3s ease-in;
+				// 	&.on{
+				// 		display: block;
+				// 		@include opacity (1);
+				// 		margin-left:0rem;
+				// 	}
+				// 	&.type2{
+				// 		position: absolute;
+				// 		right:0;
+				// 		&.on{
+				// 			display: block;
+				// 			@include opacity (1);
+				// 			margin-right: 0;
+				// 		}
+				// 	}
+				// 	img{
+				// 		width: 100%;
+				// 	}
+				// 	p{
+				// 		display:block;
+				// 		padding-top: 0.5rem;
+				// 		font: 1.4rem/2rem 'NotoSansKRLight';
+				// 		color:#fff;
+				// 		padding-bottom: 0.7rem;
+				// 		border-bottom: 1px solid #fff;
+				// 		.p_num{
+				// 			display: inline-block;
+				// 			width:2rem; height: 2rem;
+				// 			vertical-align: middle;
+				// 			color:#fff;
+				// 			background: #000;
+				// 			text-align:center;
+				// 			cursor: pointer;
+				// 			font: 1.1rem/2rem 'NotoSansKRLight', 'Nanum Gothic';
+				// 		}
+				// 	}
+				// 	p.desc{
+				// 		padding-top: 1rem;
+				// 		border-bottom: 0px;
+				// 		font: 1.1rem/1.5rem 'NotoSansKR','Nanum Gothic';
+				// 		color:#bbb;
+				//
+				// 	}
+				// 	a.no_active{
+				// 		color:#6f6f6f;
+				// 		font: 1.5rem/2rem 'NotoSansKR','Nanum Gothic';
+				// 		pointer-events:none;
+				// 	}
+				// 	a.buy{
+				// 		color:#f1554c !important;
+				// 		font: 1.5rem/2rem 'NotoSansKRBold','Nanum Gothic';
+				// 	}
+				// 	a.buy:after{
+				// 		display: inline-block;
+				// 		padding-left: 5px;
+				// 	}
+				// }
+				// .img_txt{
+				// 	float:right;
+				// 	width: 50%;
+				// 	text-align: center;
+				// 	p{
+				// 		text-align: center;
+				// 		font: 1.1rem/1.2rem 'NotoSansKR','Nanum Gothic';
+				// 		em{
+				// 			color:#7f7f7f;
+				// 			font: 0.8rem/1.2rem 'NotoSansKR', 'Nanum Gothic';
+				// 		}
+				// 	}
+				//
+				// 	&.type2{
+				// 		float:left;
+				// 		width: 40%;
+				// 		position: absolute;
+				// 		top:0;
+				// 		img{
+				// 			width: 65%;
+				// 		}
+				// 	}
+				//
+				// 	&.pos6_info{
+				// 		display: none;
+				// 		img{
+				// 			width: 39%;
+				// 		}
+				// 	}
+				// 	&.pos7_info{
+				// 		display: none;
+				// 	}
+				// 	&.pos8_info{
+				// 		img{
+				// 			width: 39%;
+				// 		}
+				// 	}
+				// 	&.pos9_info{
+				// 		display: none;
+				// 	}
+				// 	&.pos10_info{
+				// 		img{
+				// 			width: 39%;
+				// 		}
+				// 	}
+				// 	&.pos11_info{
+				// 		display: none;
+				// 	}
+				// 	&.pos12_info{
+				// 		img{
+				// 			width: 39%;
+				// 		}
+				// 	}
+				// 	&.pos14_info{
+				// 		display: none;
+				// 		img{
+				// 			width: 44%;
+				// 		}
+				// 	}
+				// 	&.pos15_info{
+				// 		display: none;
+				// 		img{
+				// 			width: 39%;
+				// 		}
+				// 	}
+				//
+				// }
 			}
 
 		}
-	}
-
-	.slider{ position: relative; margin: 1rem; overflow: hidden; }
-	.slider ul{position: relative; width:100%; height: 30rem;}
-	.slider ul li{ position: absolute; top:0; left:-999px; float:left; position: relative;}
-	.slider ul li img{ width: 100%; }
-
-	.slider2{
-		position: relative;
-		margin: 1rem;
-		overflow: hidden;
-		text-align: center;
-		ul{
-			li{
-
-				img{
-					width: 100%;
-				}
-			}
-		}
-	}
-
-	/*슬라이더 정보css*/
-	.info_section{
-		position: relative;
-		padding:1rem; height: 14rem;
-		overflow: hidden;
-		.slider_info{
-			.img_section{
-				width: 60%;
-				height: 14rem;
-				p{
-					display:block;
-					padding-top: 0.5rem;
-					font: 1.5rem/2rem 'NotoSansKRLight';
-					color:#fff;
-					padding-bottom: 0.7rem;
-					border-bottom: 1px solid #fff;
-				}
-				p.desc{
-					padding-top: 1rem;
-					border-bottom: 0px;
-					font: 1.2rem/1.5rem 'NotoSansKR';
-					color:#bbb;
-
-				}
-				a.no_active{
-					color:#6f6f6f;
-					font: 1.5rem/2rem 'NotoSansKR';
-					pointer-events:none;
-				}
-				a.buy{
-					color:#f1554c;
-					font: 1.5rem/2rem 'NotoSansKR';
-				}
-				a.buy:after{
-					display: inline-block;
-					padding-left: 5px;
-				}
-			}
-			.img_txt{
-				text-align: center;
-				&.type2{
-
-					img{
-						width: 65%;
-					}
-				}
-				&.pos5_info{
-
-				}
-				&.pos6_info{
-					display: none;
-					img{
-						width: 39%;
-					}
-				}
-
-				&.pos7_info{
-					display: none;
-				}
-				&.pos8_info{
-					img{
-						width: 39%;
-					}
-				}
-
-				&.pos9_info{
-					display: none;
-				}
-				&.pos10_info{
-
-					img{
-						width: 39%;
-					}
-				}
-
-				&.pos11_info{
-					display: none;
-				}
-				&.pos12_info{
-
-					img{
-						width: 39%;
-					}
-				}
-
-				&.pos13_info{
-
-				}
-				&.pos14_info{
-					display: none;
-					img{
-						width: 39%;
-					}
-				}
-				&.pos15_info{
-					display: none;
-					img{
-						width: 39%;
-					}
-				}
-
-			}
-		}
 
 	}
 
-	.slider_info { display: none; opacity: 0;position: relative;}
-	.slider_info.on{  opacity: 1; display: block;}
-	.slider_info:after{ content: ''; display: block; clear:both; }
-	.img_section{ float:left; width:50%; }
-	.img_section img{ width: 100%; }
-	.img_txt { float:right; width: 50%; }
-
-	.img_txt.type2 { float:left; width: 40%; position: absolute; top:0;  }
-
-	.img_txt .shoe_area{ padding:0.7rem 1rem 1.2rem 1rem; text-align: center; }
-	.img_txt .shoe_area img{ width:80%; }
-	.img_txt p {text-align: center; font: 1.1rem/1.2rem 'NotoSansKR'; }
-	.img_txt p em{  font: 0.8rem/1.2rem 'NotoSansKR'; color:#7f7f7f; }
-
-	.img_txt a { display: block; text-align: center; color:#8c8b8b; font: 1rem/1rem 'NotoSansKRBold';}
-	// a.buy{ color:#ed2512 !important; font: 1rem/1rem 'NotoSansKRBold'; }
-
-	.img_section{
-		margin-left:-30rem;
-		opacity: 0;
-		transition: all 0.3s ease-in;
-	}
-	.img_section.type2{ position: absolute; right:0;}
-	.img_section.type2.on{ display: block; margin-right: 0; }
-	.img_section.on{
-		display: block;
-		opacity: 1;
-		margin-left:0rem;
-	}
-	.section{ position: relative; }
-	/*상품 번호 위치*/
-	.p_num{
-		display: inline-block; width: 2rem; height:2rem;
-		vertical-align: middle; background: #000;
-		color:#fff; text-align:center;  cursor: pointer;
-		font-size: 12px; font: 1.1rem/2rem 'NotoSansKRLight';
-	}
-	.p_num.pos a:hover  em{ @include opacity (1); }
-	.p_num.pos:hover a{ background: #b91c23;  @include opacity (0.7);  }
-	.p_num.pos a.on{ background: #b91c23;  @include opacity (0.7);  }
-	.p_num.pos a.no_active{ background: #000; @include opacity (0.3); }
-
-	.p_num.pos{ background: transparent; width:3.5rem; height: 3.5rem; text-align: center;}
-
-	.p_num.pos a{
-		content: ''; display: inline-block;
-		width:100%; height: 100%; background: #000;
-		opacity: .7; position: absolute; left:0;
-	}
-	/*깜빡효과*/
-	.p_num.pos a.blink{
-		/*width:2.5rem; height: 2.5rem;*/
-		/*border:2px solid red;*/
-		/*margin-left:-2px; margin-top:1px;*/
-	}
-	.p_num.pos a.blink {
-		 -webkit-animation: blink 2.5s linear infinite;
-	}
 	@-webkit-keyframes blink {
 	    0% { opacity: .9; }
 	    50% { opacity: .3; }
 	    100% { opacity: .9; }
 	}
 
-	//5,6
-	.p_num.pos5{ position: absolute; left:28%; top:29%; }
-	.p_num.pos6{ position: absolute; left:60%; top:57%; }
+	//1 ,2
+	.p_num.pos1{ position: absolute; left:28%; top:29%; }
+	.p_num.pos2{ position: absolute; left:60%; top:57%; }
 
 	.p_num.pos em{ margin-left:1px; font: 1.3rem/3.5rem 'AdihausDIN'; position: relative; z-index: 10; border:2px solid transparent;}
 
 	.pos5_info{ z-index: 10; }
 	.pos6_info{ z-index: 9; }
 
-	//7,8
+	//3 4
 	.p_num.pos7{ position: absolute; left:35%; top:29%; pointer-events: none;}
-	.p_num.pos8{ position: absolute; left:58%; top:58%; }
+	.p_num.pos8{ position: absolute; left:58%; top:58%;pointer-events: none; }
 
-	//9 10
+	//5 6
 	.p_num.pos9{ position: absolute; left:59%; top:29%; }
 	.p_num.pos10{ position: absolute; left:20%; top:67%; }
 
-	//11 12
+	//7 8
 	.p_num.pos11{ position: absolute; left:59%; top:30%; }
 	.p_num.pos12{ position: absolute; left:56%; top:66%; }
 
-	//13 14 15
+	//9 10 11
 	.p_num.pos13{ position: absolute; left:36%; top:18%; }
 	.p_num.pos14{ position: absolute; left:50%; top:30%; }
 	.p_num.pos15{ position: absolute; left:59%; top:66%; }
