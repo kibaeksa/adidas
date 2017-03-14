@@ -546,7 +546,9 @@ html.no_srl{
 	color: #fff;
 	background: #000;
 }
-
+.button_area>*.blue>a:after{
+  margin-left: 10px;
+}
 .button_area>*.blue>a{
 	background: #0286ce;
 }
@@ -9528,12 +9530,13 @@ padding:30px 15px;
 	position: relative;
 	box-sizing:border-box;
 	-webkit-box-sizing:border-box;
-	border-top: 1px solid  #909090;
+	/*border-top: 1px solid  #909090;*/
 	background: #f0f0f0;
 }
 #container.order .odr_pay_box>.tit>strong{
 	float: left;
-	font:bold 14px 'NotoSansKRRegular';
+  /*font:bold 14px 'NotoSansKRRegular';*/
+	font:bold 14px 'NotoSansKRLight';
 }
 
 #container.order .odr_pay_box>.tit>strong>em{
@@ -10064,12 +10067,14 @@ padding:30px 15px;
 	line-height: 38px;
 	display: block;
 	position: relative;
+  padding-left: 15px;
 	border: 1px solid  #ddd;
 	color: #000;
 	font-size:12px;
 	box-sizing:border-box;
 	-webkit-box-sizing:border-box;
-	text-align: center;
+  /*text-align: center;*/
+	text-align: left;
 	text-transform: uppercase;
 }
 
@@ -10087,6 +10092,13 @@ padding:30px 15px;
 	background: #0286cd;
 	border-color: #0286cd;
 }
+#container.order .odr_pay_box.select_payment .payment_list>div>a:after{
+  position: absolute;
+  top:2px;
+  right:15px;
+
+}
+
 
 #container.order .odr_pay_box.select_payment .payment_list>div.on>a::before{
 	color: #fff;
