@@ -1014,9 +1014,9 @@
                         </div>
                         <h3>ULTRA BOOST</h3>
                         <ul>
-                            <li data-target-id="ultra_boost" class="active"><a href="javascript:void(0)" data-link="ultra_boost">ULTRA BOOST</a></li>
-                            <li data-target-id="ultra_boost_uncaged" ><a href="javascript:void(0)" data-link="ultra_boost_uncaged">ULTRA BOOST UNCAGED</a></li>
-                            <li data-target-id="ultra_boost_st" ><a href="javascript:void(0)" data-link="ultra_boost_st">ULTRA BOOST ST</a></li>
+                            <li id="nav_ultra_boost" class="active"><a href="javascript:void(0)" data-link="ultra_boost">ULTRA BOOST</a></li>
+                            <li id="nav_ultra_boost_uncaged" ><a href="javascript:void(0)" data-link="ultra_boost_uncaged">ULTRA BOOST UNCAGED</a></li>
+                            <li id="nav_ultra_boost_st" ><a href="javascript:void(0)" data-link="ultra_boost_st">ULTRA BOOST ST</a></li>
                         </ul>
                     </div>
 
@@ -1026,7 +1026,7 @@
                         </div>
                         <h3>PURE BOOST</h3>
                         <ul>
-                            <li data-target-id="pure_boost_x" ><a href="javascript:void(0)" data-link="pure_boost_x">PURE BOOST X</a></li>
+                            <li id="nav_pure_boost_x" ><a href="javascript:void(0)" data-link="pure_boost_x">PURE BOOST X</a></li>
                             <li><a href="javascript:void(0)" >PURE BOOST <span class="coming_soon">(COMING SOON)</span></a></li>
                         </ul>
                     </div>
@@ -1037,7 +1037,7 @@
                         </div>
                         <h3>ALPHA BOUNCE</h3>
                         <ul>
-                            <li data-target-id="alpha_bounce" ><a href="javascript:void(0)" data-link="alpha_bounce">ALPHA BOUNCE</a></li>
+                            <li id="nav_alpha_bounce" ><a href="javascript:void(0)" data-link="alpha_bounce">ALPHA BOUNCE</a></li>
                         </ul>
                     </div>
 
@@ -1047,25 +1047,11 @@
                         </div>
                         <h3>FAST &amp; ENERGY</h3>
                         <ul>
-                            <li data-target-id="adizero_adios" ><a href="javascript:void(0)" data-link="adizero_adios">ADIZERO ADIOS</a></li>
-                            <li data-target-id="supernova" ><a href="javascript:void(0)" data-link="supernova">SUPERNOVA</a></li>
+                            <li id="nav_adizero_adios" ><a href="javascript:void(0)" data-link="adizero_adios">ADIZERO ADIOS</a></li>
+                            <li id="nav_supernova" ><a href="javascript:void(0)" data-link="supernova">SUPERNOVA</a></li>
                         </ul>
                     </div>
 
-                    <div class="line_wrap">
-                        <div class="bar">
-                            <div class="inner"><div></div></div>
-                        </div>
-                        <div class="bar">
-                            <div class="inner"><div></div></div>
-                        </div>
-                        <div class="bar">
-                            <div class="inner"><div></div></div>
-                        </div>
-                        <div class="bar last">
-                            <div class="inner"><div></div></div>
-                        </div>
-                    </div>
                 </div>
                 <!-- //shoes_list -->
 
@@ -1310,7 +1296,7 @@
 
 					function setLoading(callback){
 
-						$('body').prepend('<div id="preloadPanel"><div>running guide</div></div>');
+						$('body').prepend('<div id="preloadPanel"><div></div></div>');
 						setTimeout(function(){
 							$('#preloadPanel').addClass('loaded');
 						},10);
@@ -1384,12 +1370,16 @@
 							return false;
 						}
 
+						$('.shoes_list li').removeClass('active');
+						$('#nav_'+ctgrName).addClass('active');
+
 						if(window.history.pushState){
 							window.history.pushState(state , '아디다스 공식 온라인 스토어',URL+'#'+ctgrName);
 							handlePage(ctgrName , status);
 						}else{
 							handlePage(ctgrName , status);
 						}
+
 					};
 
 					function handlePage(ctgrName,status){
