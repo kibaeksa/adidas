@@ -397,7 +397,7 @@ html.no-scroll body{
 .buttons-area>div>a:active::after,
 .buttons-area>div>a:focus::after,
 .buttons-area>div>a:hover::after{
-	opacity: 1 !important;
+	opacity: 1;
 }
 
 
@@ -1074,17 +1074,14 @@ header#header .hdr2 a.btn_sidemenu span:nth-child(1){top:18px;}
 header#header .hdr2 a.btn_sidemenu span:nth-child(2){top:27px;}
 header#header .hdr2 a.btn_sidemenu span:nth-child(3){top:36px;}
 header#header .hdr2 button{width:35px;height:35px;display:block;position:absolute;top:10px;right:10px;background:url(/images/reebok/btn_sch.gif) no-repeat 0 0;background-size:35px 35px;border-radius:0 5px 5px 0;text-indent:-5000px;}
-header#header .hdr2 .sch{margin:0 45px 0 60px; overflow: hidden;}
+header#header .hdr2 .sch{margin:0 45px 0 60px;}
 header#header .hdr2 .sch input{
-	width:110%;
+	width:100%;
 	height:35px;
 	padding:0 0 0 10px;
 	margin:0;
 	line-height:35px;
 	border-width:0px;
-
-	-webkit-appearance: none;
-	border-radius: 0;
 	border-radius:5px 0 0 5px;
 	background-color:#c7c7cd;
 	color:#58585b;
@@ -1128,7 +1125,7 @@ section#header .navmenu_close.close_x_btn{
   position: absolute;
   top: 51px;
   right: 0;
-  background:#c41230;
+  background: #000;
   display: none;
   opacity: 0;
   transform : translate3d(-10px , 0 ,0);
@@ -1144,7 +1141,7 @@ section#header .navmenu_close.close_x_btn.active{
 
 section#header .navmenu_close.close_x_btn::before,
 section#header .navmenu_close.close_x_btn::after{
-  background: #000;
+  background: #a0a0a0;
   height: 2px;
   width: 20px;
 }
@@ -1171,10 +1168,6 @@ section#header .navigation_main_wrapper>*{
 
 section#header .navigation_main_wrapper>*:last-child{
 	border-right-width: 0px;
-}
-
-section#header .navigation_main_wrapper>.navi_cart{
-	top: 2px;
 }
 
 section#header .navigation_main_wrapper>h1{
@@ -1209,7 +1202,7 @@ section#header .navigation_main_wrapper>a.navi_slide .ico span{
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: #8c8c8c;
+	background: #a0a0a0;
 
 	transition:all 0.3s;
 	-webkit-transition:all 0.3s;
@@ -1264,7 +1257,7 @@ section#header .navigation_main_wrapper>a.navi_search .ico span:last-child::afte
 
 section#header .navigation_main_wrapper>a.navi_search .ico span:first-child{
 	font-size: 30px;
-	color:#8c8c8c;
+	color:#fff;
 	line-height: 50px;
 	margin-top: 2px;
 }
@@ -1488,13 +1481,6 @@ section#header #global-search-slide .searched_keywords li>a:first-child{
 	color: #fff;
 	padding-left:15px;
 	font:12px/35px 'NotoSansKRRegular';
-}
-
-section#header #global-search-slide .searched_keywords li.no_data{
-	text-align: center;
-	color: #aaa;
-	padding-top:20px;
-	font: 12px/12px 'NotoSansKRRegular';
 }
 
 section#header #global-search-slide .searched_keywords li .close{
@@ -3306,13 +3292,13 @@ div.zip_btn{height:52px;padding-top:10px;}
 #contents.main .masthead-main .owl-item .box{
     width: 100%;
 	position: relative;
-	/*padding-bottom: 15%;*/
+	padding-bottom: 15%;
 }
 
 #contents.main .masthead-main .owl-item .buttons-area{
 	width: 100%;
 	position: absolute;
-	bottom: 45px;
+	bottom: 0;
 	left: 0;
 	padding: 15px 15px 0;
 	box-sizing: border-box;
@@ -3327,31 +3313,8 @@ div.zip_btn{height:52px;padding-top:10px;}
 	margin-bottom:0;
 }
 
-#contents.main .masthead-main .owl-item .box .buttons-area>div>a::after{
-	opacity: 0.8;
-}
-
-#contents.main .masthead-main .owl-item .box .buttons-area>div>a span{
-	color: #000;
-}
-
-#contents.main .masthead-main .owl-item .box.white .buttons-area>div{
-	border: 1px solid  #000;
-}
-
-#contents.main .masthead-main .owl-item .box.white .buttons-area>div span{
-	color: #fff;
-}
-
-#contents.main .masthead-main .owl-item .box.white .buttons-area>div>a::after{
-	background: #000;
-}
-
 #contents.main .masthead-main .owl-controls .owl-dots{
-	width: 100%;
-	position: absolute;
-	bottom: 15px;
-	left: 0;
+	padding: 1.5rem 0px;
 	text-align: center;
 }
 
