@@ -203,8 +203,66 @@ html.no-scroll body{
     position: absolute;
     width: 1px;
 }
-.chk_dsgn label{height:15px;padding-top:2px;display:inline-block;color:#fff;background:url(/images/reebok/bg_checkbox.png) 0 0 no-repeat;padding-left:22px;background-size:17px auto;}
-.chk_dsgn input[type='checkbox']:checked + label{background-position:0 -17px;}
+.chk_dsgn label{
+	position: relative;
+	height:16px;
+	padding-top:1px;
+	display:inline-block;
+	color:#fff;
+	padding-left:22px;
+}
+.chk_dsgn label::before,
+.chk_dsgn label::after{
+	content:'';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.chk_dsgn label::before{
+	width: 17px;
+	height: 17px;
+	background: #b2b2b2;
+	border-radius:3px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.chk_dsgn.line label::before{
+	background: none;
+	border: 1px solid  #b2b2b2;
+}
+
+.chk_dsgn label::after{
+	width: 7px;
+    height: 3px;
+    top: 5px;
+    left: 4px;
+	border-bottom: 2px solid  #f0f0f0;
+	border-left: 2px solid  #f0f0f0;
+
+	transform:rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+}
+
+.chk_dsgn.line label::after{
+	border-color: #b2b2b2;
+}
+
+.chk_dsgn input[type='checkbox']:checked + label::before{
+	background: #cd000c;
+}
+
+.chk_dsgn input[type='checkbox']:checked + label::after{
+	border-color: #fff;
+}
+
+.chk_dsgn.line input[type='checkbox']:checked + label::before,
+.chk_dsgn.line input[type='checkbox']:checked + label::after{
+	background: none;
+	border-color:#cd000c;
+}
 
 /* radiobox design */
 .rdo_dsgn{display:inline-block;}
@@ -2789,7 +2847,7 @@ div.prod_manual p.desc strong{color:#3e3e3e;font-size:11px;letter-spacing:-1px;}
 #contents .order_wrt .btn_area a:first-child.btn_C4_off{background:#aaa;color:#ccc;}
 
 #contents .join{}
-#contents .join>.bnn{margin-bottom:10px;}
+#contents .join>.bnn{border-bottom: 1px solid  #24241c;}
 #contents .join>.bnn img{width:100%;}
 #contents .join>.join_step{height:40px;background:#212121;}
 #contents .join>.join_step span{width:25%;float:left;height:27px;padding-top:13px;display:table-cell;text-align:center;background:url(/images/reebok/bg_arw_join_step.png) right 16px no-repeat;background-size:6px auto;}
@@ -2810,7 +2868,8 @@ div.prod_manual p.desc strong{color:#3e3e3e;font-size:11px;letter-spacing:-1px;}
 #contents .join .join1 .data_tb_list{margin-bottom:10px;}
 #contents .join .join1 .data_tb_list li{background:#fff;margin-bottom:0;border-bottom:1px dotted #ccc;}
 #contents .join .join1 .data_tb_list li:last-child{border-bottom-width:0;}
-#contents .join .join1 .data_tb_list li strong{width:120px;height:24px;padding-top:16px;font-size:12px;padding-left:0;letter-spacing:-1px;}
+#contents .join .join1 .data_tb_list li strong{width:160px;height:24px;padding-top:16px;font-size:12px;padding-left:0;letter-spacing:-1px;}
+#contents .join .join1 .data_tb_list li strong span{color: #888;}
 #contents .join .join1 .data_tb_list li .td{margin:0 0 0 120px;padding-top:6px;text-align:right;}
 #contents .join .join1 .data_tb_list li .td .chk_dsgn{display:inline-block;}
 #contents .join .join1 .data_tb_list li .td .chk_dsgn label{color:#282828;font-size:11px;}
@@ -2830,6 +2889,28 @@ div.prod_manual p.desc strong{color:#3e3e3e;font-size:11px;letter-spacing:-1px;}
 	background-size:6px auto;
 	background-position:right 5px center;
 }
+#contents .join .data_tb_list li.sms_box{
+	padding-top: 2px;
+}
+#contents .join .data_tb_list li.sms_box .td{
+	padding-left: 30px;
+	margin: 0;
+	text-align: left;
+}
+
+#contents .join .data_tb_list li.sms_box .td::before{
+	content:'';
+	width: 11px;
+	height: 11px;
+	display: block;
+	border-left:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	position: absolute;
+	top: 4px;
+	left: 8px;
+
+}
+
 #contents .join .join1 .desc{margin-bottom:10px;padding:10px;background:#eee;}
 #contents .join .join1 .desc p{color:#8f8f8f;font-size:11px;letter-spacing:-.75px;line-height:15px;}
 #contents .join .join1 .btn_area{padding-bottom:15px;}
