@@ -188,6 +188,19 @@ table.view tr td.middle {text-align:center;padding:8px 0 7px;}
 table.view tr td strong {color:#444;}
 table.view tr td strong span {color:#e50000; margin:0;}
 table.view tr td span {color:#808080; margin-left:40px;}
+table.view tr td .oneday_deliv_date{
+    color: #000;
+    font-weight: bold;
+    margin: 0;
+}
+table.view tr td .oneday_deliv_date .spt_bg{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-left: 1px;
+    background-position: -285px -140px;
+    vertical-align: middle;
+}
 table.mg20 {margin-bottom:20px;}
 
 
