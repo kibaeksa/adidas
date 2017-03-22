@@ -70,7 +70,8 @@
 									loop : 1,
 									playlist : videoId,
 									modestbranding : 1,
-									wmode:'transparent'
+									wmode:'transparent',
+                                    rel : 0
 								}
 							});
 						}else{
@@ -511,6 +512,24 @@
 			$.fn.initPhotoReviews();
 			// 160824
 
+
+            //170322 당일배송 안내 POPUP SCRIPT
+            $('.modal-popup-oneday_notice .popup-header .close').bind('click',function(){
+                $(this).parent().parent().parent().hide();
+            });
+
+            $('.modal-popup-oneday_notice .overlay').bind('click',function(){
+                $(this).parent().hide();
+            });
+
+            $('.oneday_bars .bar').bind('click',function(){
+                if($(this).hasClass('b1')){
+                    $('.modal-popup-oneday_notice1').show();
+                }else if($(this).hasClass('b3')){
+                    $('.modal-popup-oneday_notice2').show();
+                }
+            });
+            
   		});
 
   	})(jQuery);
@@ -519,6 +538,36 @@
  </head>
 
  <body>
+     <!-- 170322 당일배송 안내 POPUP  -->
+     <div class="modal-popup-wrapper modal-popup-oneday_notice modal-popup-oneday_notice1">
+ 		<div class="overlay"></div>
+ 		<div class="popup">
+            <div class="popup-header">
+                <h2>당일배송 서비스 오픈!</h2>
+                <a href="javascript:void(0)" class="close"><span class="spt_bg"></span></a>
+            </div>
+
+ 			<div class="popup-contents">
+ 			    <p>당일배송 서비스 오픈!</p>
+ 			</div>
+ 		</div>
+ 	</div>
+
+    <div class="modal-popup-wrapper modal-popup-oneday_notice modal-popup-oneday_notice2">
+       <div class="overlay"></div>
+       <div class="popup">
+           <div class="popup-header">
+               <h2>교환/환불은 이렇게</h2>
+               <a href="javascript:void(0)" class="close"><span class="spt_bg"></span></a>
+           </div>
+
+           <div class="popup-contents">
+               <p>교환/환불은 이렇게</p>
+           </div>
+       </div>
+   </div>
+   <!-- //170322  -->
+
 	<!-- 160825 입고알림 -->
 	<div class="modal_pop_layer" id="modalpop_prod_alert">
  		<div class="overlay"></div>
@@ -2551,7 +2600,28 @@
 				</ul>
 			</div>
 			<!-- //gnb_menu -->
+
+            <!-- 170322 START -->
+            <div class="oneday_bars">
+                <div class="ct950">
+                    <div class="bar b1">
+                        <span class="spt_bg"></span>
+                        <a href="javascript:void(0)">당일배송 서비스 오픈!</a>
+                    </div>
+                    <div class="bar b2">
+                        <span class="spt_bg"></span>
+                        <a href="#">온라인 한정상품을 만나보세요</a>
+                    </div>
+                    <div class="bar b3">
+                        <span class="spt_bg"></span>
+                        <a href="javascript:void(0)">교환/환불은 이렇게</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 170322 END -->
+
 		</div>
+        <!-- //HEADER -->
 
 		<div id="container_r" style="background:#fff;">
 
@@ -3163,6 +3233,15 @@
 								</div>
 								<!-- //size_box -->
 
+                                <!-- 170322 START -->
+                                <div class="oneday_deliv_info">
+                                    <div class="ico_car spt_bg"></div>
+                                    <p>도착예정일 - 2월 27일 월요일<span class="spt_bg"></span></p>
+                                    <p class="desc">지금 주문 시, 서울 서초구 기준</p>
+                                    <a href="javascript:void(0)" class="btn_change_addr" onclick="window.open('/html/adidas/find_zip_oneday.html','','width=650px,height=290px,status=no,titlebar=no')">지역변경</a>
+                                </div>
+                                <!-- 170322 END -->
+
 								<div class="etc_info">
 									<dl class="clfix">
 										<dt>배송비</dt>
@@ -3285,9 +3364,10 @@
 
 								<!-- 160830   -->
 								<div class="prod_etc_info">
+                                    <a href="javascript:void(0)" class="view_deliv"><span class="ico spt_bg"></span>배송 / 반품 / 교환</a>
 									<a href="javascript:void(0)" class="view_clean_guide"><span class="ico spt_bg"></span>세탁 및 취급시 유의사항</a>
 									<a href="javascript:void(0)" class="view_as"><span class="ico spt_bg"></span>품질보증 및 AS정보</a>
-									<a href="javascript:void(0)" class="view_warning"><span class="ico spt_bg"></span>유의사항</a>
+									<a href="javascript:void(0)" class="view_warning">컨텐츠 관련 안내</a>
 								</div>
 								<!-- //160830  -->
 
