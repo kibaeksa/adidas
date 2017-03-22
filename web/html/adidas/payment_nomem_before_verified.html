@@ -156,10 +156,15 @@
 						$('#account_payment #account_escrw_business').show();
 					}
 				}
+			}); 
+
+
+			// 170317 툴팁 스크립트 START
+			$('.naver_tooltipbox .spt_bg').hover(function(){
+				$(this).siblings('.tooltip-layer').show();
+			},function(){
+				$(this).siblings('.tooltip-layer').hide();
 			});
-
-
-
 
 
 		});
@@ -1236,9 +1241,30 @@
 								<div class="box login_naver" style="padding-top:0;display: none;">
 									<a href="#" class="btn-ctm sns_btn"><span>네이버 아이디로 로그인</span></a>
 									<!--
-									170307 
+									170307
 									<p class="desc">네이버 아이디로 편리하게 로그인 하세요</p>
 									 -->
+
+
+
+									 <!-- 170317 네이버 툴팁박스 -->
+ 									<span class="naver_tooltipbox">
+ 										<span class="spt_bg"></span>
+ 										<span class="tooltip-layer">
+ 											<div class="arrow spt_bg"></div>
+ 											<div class="tooltip-contents">
+ 												<ul class="li-dot">
+ 													<li><span class="bul"></span>사용 중인 브라우저에 타인의 네이버 계정이 로그인되어 있는경우 로그아웃 후에 네이버 아이디로 로그인을 진행해 주세요. </li>
+ 													<li><span class="bul"></span>본인의 네이버 아이디가 아니라도 아디클럽 아이디와 연동이 가능 합니다. </li>
+ 													<li><span class="bul"></span>공용 PC에서 네이버 아이디로 로그인을 한 경우 타인이 아이디 도용을 막기 위해 사용 완료시 반드시 브라우저를 종료해 주시길 바랍니다.  </li>
+ 												</ul>
+ 											</div>
+ 										</span>
+ 									</span>
+ 									<!-- 170317 END -->
+
+
+
 								</div>
 								<!-- 170303 네이버로그인 ENd -->
 							</div>
