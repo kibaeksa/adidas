@@ -8182,6 +8182,19 @@ padding:30px 15px;
 	background:rgba(0,0,0,0.8);
 }
 
+#container .product_grid>* .img .label.t-delivery{
+  padding-right: 13px;
+	background:rgba(0,0,0,0.8);
+  opacity: .8;
+  -webkit-opacity: .8;
+}
+#container .product_grid>* .img .label.t-delivery:after{
+  font-size: 15px;
+  position: relative;
+  top: 2px;
+  left: 4px;
+}
+
 #container .product_grid>* .img .label.customize .icon{
 	position: absolute;
 	top:3px;
@@ -9182,9 +9195,9 @@ padding:30px 15px;
 	-webkit-box-orient: vertical;
 }
 
-#container.order .cart_prod_box .tit label>div p:before{
+#container.order .cart_prod_box .tit label>div p>span:after{
   position: relative;
-  top:1px;
+  top:2px;
   font-size: 23px;
   margin-right: 5px;
 }
@@ -9780,6 +9793,12 @@ padding:30px 15px;
 	padding: 15px;
 }
 
+#container.order .odr_pay_box>.cont table tr td.icons:after{
+  position: relative;
+  top:2px;
+  margin-left: 5px;
+}
+
 #container.order .odr_pay_box.adr_history>.cont{
 	padding: 0;
 }
@@ -9850,22 +9869,22 @@ padding:30px 15px;
 
 }
 
-#container.order .odr_pay_box.order_prodlist .today_delivery_notice{
+#container.order .today_delivery_notice{
   position: relative;
 }
 
-#container.order .odr_pay_box.order_prodlist .today_delivery_notice .day_info{
+#container.order .today_delivery_notice .day_info{
   text-align: center;
   background: #ddf3fb;
 }
-#container.order .odr_pay_box.order_prodlist .today_delivery_notice .exclude{
+#container.order .today_delivery_notice .exclude{
   padding: 13px 0;
   text-align: center;
   background: #ddf3fb;
   border-top:1px dotted #999;
 }
 
-#container.order .odr_pay_box.order_prodlist .today_delivery_notice .day_info em{
+#container.order .today_delivery_notice .day_info em{
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -9880,14 +9899,56 @@ padding:30px 15px;
   -webkit-border-radius: 50px;
 }
 
-#container.order .odr_pay_box.order_prodlist .today_delivery_notice .day_info span{
+#container.order .today_delivery_notice .day_info span{
   font: 1.2rem/60px 'NotoSansKR';
-  
+
 }
 
-#container.order .odr_pay_box.order_prodlist .today_delivery_notice .day_info span:after{
-  margin-left: 2px;
+#container.order .today_delivery_notice .day_info span:after{
+  margin-left: 3px;
 }
+
+#container.order .today_delivery_notice{
+  position: relative;
+}
+
+#container.order .today_delivery_notice .day_info{
+  text-align: center;
+  background: #ddf3fb;
+}
+#container.order .today_delivery_notice .exclude{
+  padding: 13px 0;
+  text-align: center;
+  background: #ddf3fb;
+  border-top:1px dotted #999;
+}
+
+#container.order .today_delivery_notice .day_info em{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  font: 20px/30px 'NotoSansKR';
+  text-align: center;
+  position: relative;
+  left:-7px;
+  color: #ddf3fb;
+  top: 5px;
+  background: #56c2e9;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+}
+
+#container.order .today_delivery_notice .day_info span{
+  font: 1.2rem/60px 'NotoSansKR';
+
+}
+
+#container.order .today_delivery_notice .day_info span:after{
+  position: relative;
+  top: 2px;
+  margin-left: 3px;
+}
+
 
 #container.order .odr_pay_box.order_prodlist .today_delivery_notice .exclude span{
   font: 1.2rem/1.8rem 'NotoSansKR';
@@ -9943,7 +10004,8 @@ padding:30px 15px;
 }
 
 #container.order .odr_pay_box.order_prodlist .cont li .info .tit{
-    max-height: 39px;
+    /*max-height: 39px;*/
+    height: 16px;
     display: -webkit-box;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -9953,11 +10015,11 @@ padding:30px 15px;
 	-webkit-box-orient: vertical;
 	font: 14px/18px 'NotoSansKRRegular';
 }
-#container.order .odr_pay_box.order_prodlist .cont li .info .tit:before{
+#container.order .odr_pay_box.order_prodlist .cont li .info .tit>span:before{
   position: relative;
   top:2px;
-  font-size: 25px;
-  margin-right: 8px;
+  font-size: 23px;
+  margin-right: 5px;
 }
 
 #container.order .odr_pay_box.order_prodlist .cont li .info .price{
@@ -15577,6 +15639,15 @@ padding:30px 15px;
 .header_layerpopup .contents .main_icon span{
   color:#fff;
 }
+
+.header_layerpopup#h-pop-today-delivery .contents .main_icon span.icons:after{
+  font-size: 41px;
+}
+
+.header_layerpopup#h-pop-exchange .contents .main_icon span.icons:after{
+  font-size: 25px;
+}
+
 .header_layerpopup .contents>h2{
   padding-bottom: 20px;
   font: 2rem/5rem 'NotosansKRBold';
