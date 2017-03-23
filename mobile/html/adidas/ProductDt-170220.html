@@ -436,12 +436,7 @@
 
         <!-- 170220 product_view_update 클래스 추가 -->
 		<div id="container" class="product_view product_view_update">
-			<div id="location">
-				<span><a href="#">MEN</a></span>
-				<span><a href="#">신발</a></span>
-				<span><a href="#">스포츠</a></span>
-				<span>축구</span>
-			</div>
+
 			<div class="product_order">
 				<p class="ctgr">UNISEX ORIGINALS</p>
 				<h3>울트라 부스트</h3>
@@ -698,6 +693,19 @@
 					<a href="javascript:void(0)" class="icons add_cart" data-icon=""></a>
 				</div>
 				<!-- //buy_btn -->
+        <!-- 170322 당일배송정보 추가 -->
+        <div class="today_delivery">
+          <em class="icons bef" data-icon=""></em>
+          <a href="javascript:void(0)" class="btn_today_deli">
+            <span class="icons aft deli_txt" data-icon="">도착예정일 - 2월 27일 월요일</span>
+            <span class="deli_txt_s">지금 주문 시, 서울 서초구 기준</span>
+          </a>
+          <a href="#" class="icons aft address_edit" data-icon="">
+            지역변경
+          </a>
+
+        </div>
+        <!-- //170322 당일배송정보 추가 -->
 
 				<div class="sns_btn clearfix">
 					<a href="#" class="fb icons" data-icon=""></a>
@@ -2890,6 +2898,20 @@
 				$('.sale_info').removeClass('open');
 			});
 
+      // 170322 당일배송 지역찾기 레이어 시작
+      $('.btn_today_deli').bind('click',function(){
+        document.getElementById('wrap').scrollTopBefore = window.scrollY;
+        document.getElementById('wrap').style.display = 'none';
+        document.getElementById('layerpopup-zipfinder').style.display = 'block';
+        window.scrollTo(0, 0);
+      });
+      // 170322 당일배송 지역찾기 레이어 닫았을 떄
+      $('.layerpopup_zipfinder .close_x_btn').bind('click',function(){ alert();
+        document.getElementById('layerpopup-zipfinder').style.display = 'none';
+        document.getElementById('wrap').style.display = 'block';
+        window.scrollTo(0, document.getElementById('wrap').scrollTopBefore);
+      });
+
 
 			$.fn.cutString = function(options){
 				var elemObj = $(this);
@@ -3042,7 +3064,209 @@
 
 
 	</script>
+  <!-- 170322 today_delivery locationPop -->
+  <div class="layerpopup layerpopup_zipfinder layerpopup_today_delivery" id="layerpopup-zipfinder" style="display: none;">
+  	<div class="header">
+  		<h2>당일 배송 가능 지역 찾기</h2>
+  		<a href="javascript:void(0)" class="close_x_btn"></a>
+  	</div>
+  	<div class="contents">
 
+
+      <div class="search_wrap">
+        <div class="desc">당일 배송은 서울 및 일부 수도권 지역 배송시 가능합니다.</div>
+  			<div class="inner">
+  				<div class="input_wrap">
+  					<div class="icons" data-icon=""></div>
+  					<input type="search" placeholder="예) 서초동 아리빌딩, 강남대로 47길">
+  				</div>
+
+  				<div class="button_area no_pdg">
+            <button>검 색</button>
+  				</div>
+  			</div>
+
+
+  		</div>
+  		<!-- //search_wrap -->
+
+
+  			<!-- <div class="zip_result">
+  			<div class="state">
+  				검색결과: <strong>49</strong>건
+  			</div>
+  			<ul class="zip_list">
+  				<li>
+  					<a href="#">
+  						<strong>06449</strong>
+  						<div class="address_box">
+  							<div>
+  								<div class="label">도로명</div>
+  								서울 서초구 서초동 1362-26
+  							</div>
+  							<div>
+  								<div class="label">지번</div>
+  								서울 서초구 강남대로 253 (아웃백스테이크하우스)
+  							</div>
+  						</div>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="#">
+  						<strong>06449</strong>
+  						<div class="address_box">
+  							<div>
+  								<div class="label">도로명</div>
+  								서울 서초구 서초동 1362-26
+  							</div>
+  							<div>
+  								<div class="label">지번</div>
+  								서울 서초구 강남대로 253 (아웃백스테이크하우스)
+  							</div>
+  						</div>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="#">
+  						<strong>06449</strong>
+  						<div class="address_box">
+  							<div>
+  								<div class="label">도로명</div>
+  								서울 서초구 서초동 1362-26
+  							</div>
+  							<div>
+  								<div class="label">지번</div>
+  								서울 서초구 강남대로 253 (아웃백스테이크하우스)
+  							</div>
+  						</div>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="#">
+  						<strong>06449</strong>
+  						<div class="address_box">
+  							<div>
+  								<div class="label">도로명</div>
+  								서울 서초구 서초동 1362-26
+  							</div>
+  							<div>
+  								<div class="label">지번</div>
+  								서울 서초구 강남대로 253 (아웃백스테이크하우스)
+  							</div>
+  						</div>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="#">
+  						<strong>06449</strong>
+  						<div class="address_box">
+  							<div>
+  								<div class="label">도로명</div>
+  								서울 서초구 서초동 1362-26
+  							</div>
+  							<div>
+  								<div class="label">지번</div>
+  								서울 서초구 강남대로 253 (아웃백스테이크하우스)
+  							</div>
+  						</div>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="#">
+  						<strong>06449</strong>
+  						<div class="address_box">
+  							<div>
+  								<div class="label">도로명</div>
+  								서울 서초구 서초동 1362-26
+  							</div>
+  							<div>
+  								<div class="label">지번</div>
+  								서울 서초구 강남대로 253 (아웃백스테이크하우스)
+  							</div>
+  						</div>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="#">
+  						<strong>06449</strong>
+  						<div class="address_box">
+  							<div>
+  								<div class="label">도로명</div>
+  								서울 서초구 서초동 1362-26
+  							</div>
+  							<div>
+  								<div class="label">지번</div>
+  								서울 서초구 강남대로 253 (아웃백스테이크하우스)
+  							</div>
+  						</div>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="#">
+  						<strong>06449</strong>
+  						<div class="address_box">
+  							<div>
+  								<div class="label">도로명</div>
+  								서울 서초구 서초동 1362-26
+  							</div>
+  							<div>
+  								<div class="label">지번</div>
+  								서울 서초구 강남대로 253 (아웃백스테이크하우스)
+  							</div>
+  						</div>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="#">
+  						<strong>06449</strong>
+  						<div class="address_box">
+  							<div>
+  								<div class="label">도로명</div>
+  								서울 서초구 서초동 1362-26
+  							</div>
+  							<div>
+  								<div class="label">지번</div>
+  								서울 서초구 강남대로 253 (아웃백스테이크하우스)
+  							</div>
+  						</div>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="#">
+  						<strong>06449</strong>
+  						<div class="address_box">
+  							<div>
+  								<div class="label">도로명</div>
+  								서울 서초구 서초동 1362-26
+  							</div>
+  							<div>
+  								<div class="label">지번</div>
+  								서울 서초구 강남대로 253 (아웃백스테이크하우스)
+  							</div>
+  						</div>
+  					</a>
+  				</li>
+  			</ul> -->
+  		</div>
+
+  		<!-- 170113 paging -->
+  		<!-- <div class="paging">
+  			<div>
+  				<a href="javascript:void(0)" class="first btn disabled"><span></span></a>
+  				<a href="javascript:void(0)" class="prev btn"><span></span></a>
+  				<a href="javascript:void(0)">1</a>
+  				<a href="javascript:void(0)">2</a>
+  				<a href="javascript:void(0);">3</a>
+  				<a href="javascript:void(0)">4</a>
+  				<a href="javascript:void(0)" class="on">5</a>
+  				<a href="javascript:void(0)" class="next btn"><span></span></a>
+  				<a href="javascript:void(0)" class="last btn"><span></span></a>
+  			</div>
+  		</div> -->
+
+  	</div>
+  </div>
+  <!-- 170322 today_delivery locationPop end -->
 </body>
 
 </html>
