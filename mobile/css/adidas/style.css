@@ -192,7 +192,8 @@ html.no_srl{
 }
 .no_srl body{
 	position: relative;
-	height: 100%;overflow: hidden;
+	height: 100%;
+    overflow: hidden;
 }
 
 .no_srl #wrap{
@@ -251,7 +252,7 @@ html.no_srl{
 	left: 50%;
 	transform:translate3d(-50%,-50%,0);
 	-webkit-transform:translate3d(-50%,-50%,0);
-	z-index: 1000;
+	z-index: 150;
 }
 
 .loading-adi>*{
@@ -1670,7 +1671,7 @@ html.no_srl{
 	overflow: hidden;
 }
 #wrap>.top_bnn{
-	z-index: 300;
+	z-index: 120;
 }
 
 #wrap>.top_bnn .top_bnn_close{
@@ -1685,12 +1686,144 @@ html.no_srl{
 	z-index:10;
 }
 
+/*Quick menu*/
+#quick-menu{
+    width:5rem;
+    height:5rem;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 150;
+}
+
+#quick-menu>.toggle_btn{
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+    background: #0286cd;
+    border-radius:50%;
+    z-index: 150;
+}
+
+#quick-menu>.toggle_btn>*{
+    transition:opacity 0.3s;
+    -webkit-transition:opacity 0.3s;
+    text-align: center;
+    color: #fff;
+    font-size: 1.7rem;
+    line-height: 5rem;
+}
+
+#quick-menu>.toggle_btn .close_x_btn{
+    opacity: 0;
+}
+
+#quick-menu.open>.toggle_btn .close_x_btn{
+    opacity: 1;
+}
+
+#quick-menu.open>.toggle_btn .default{
+    opacity: 0;
+}
+
+#quick-menu>.toggle_btn .close_x_btn::before,
+#quick-menu>.toggle_btn .close_x_btn::after{
+    background: #fff;
+    height: 2px;
+    width: 45%;
+}
+
+#quick-menu>.layer-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    opacity: 0;
+
+    transition:opacity 0.3s;
+    -webkit-transition:opacity 0.3s;
+}
+
+#quick-menu.open>.layer-wrapper{
+    opacity: 1;
+}
+
+#quick-menu .overlay{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.8;
+}
+
+#quick-menu .menubtn_wrap{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    z-index: 100;
+}
+
+
+
+#quick-menu .menubtn_wrap>.btn_list{
+    width: 200px;
+    position: absolute;
+    bottom: 6.5rem;
+    right: 0.5rem;
+}
+
+#quick-menu .menubtn_wrap>.btn_list>a{
+    margin-top:1.5rem;
+    min-height: 4rem;
+    display: block;
+    position: relative;
+    opacity: 0;
+
+    transform:translate3d(0,3rem,0);
+    -webkit-transform:translate3d(0,3rem,0);
+
+    transition:transform 0.2s , opacity 0.25s;
+    -webkit-transition:transform 0.2s , opacity 0.25s;
+}
+
+#quick-menu .menubtn_wrap>.btn_list>a.opened{
+    transform:translate3d(0,0,0);
+    -webkit-transform:translate3d(0,0,0);
+    opacity: 1;
+}
+
+#quick-menu .menubtn_wrap>.btn_list>a .txt{
+    position: absolute;
+    top: 50%;
+    right: 4.8rem;
+    color: #fff;
+    font: 1.3rem 'NotoSansKRRegular';
+    transform:translate3d(0,-50%,0);
+    -webkit-transform:translate3d(0,-50%,0);
+}
+
+#quick-menu .menubtn_wrap>.btn_list>a .img{
+    float: right;
+    background: #fff;
+    width: 4rem;
+    height: 4rem;
+    border-radius:50%;
+    display: block;
+}
+
+
+/* Header */
 #header{
 	position: fixed !important;
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index:300;
+	z-index:120;
 }
 
 #header.unfixed{
@@ -1698,10 +1831,10 @@ html.no_srl{
 }
 
 #header.hide{
-	top:-61px;
+	display: none;
 }
 #header.unfixed.hide{
-	top: 0;
+	display: block;
 }
 
 #header #nav_menu_overlay{
@@ -7558,7 +7691,7 @@ div.layerpop_wrap#nomem_order_popup .inner .content .desc{
 	background:rgba(255,255,255,0.96);
 	overflow: auto;
 	-webkit-overflow-scrolling : touch;
-	z-index:301;
+	z-index:121;
 	transition:right 0.4s cubic-bezier(1, 0, 0, 1);
 	-webkit-transition:right 0.4s cubic-bezier(1, 0, 0, 1);
 }
@@ -10146,14 +10279,12 @@ padding:30px 15px;
 	line-height: 38px;
 	display: block;
 	position: relative;
-  padding-left: 15px;
 	border: 1px solid  #ddd;
 	color: #000;
 	font-size:12px;
 	box-sizing:border-box;
 	-webkit-box-sizing:border-box;
-  /*text-align: center;*/
-	text-align: left;
+	text-align: center;
 	text-transform: uppercase;
 }
 
@@ -10862,7 +10993,6 @@ padding:30px 15px;
 #container .review_write.review_write_update .review_form .form_table .no_line textarea{
 	border:1px solid #c4c4c4;
 	border-width: 0 0 1px 0;
-	border-radius: 15px;
 	height:70px;
 	font-size: 1.25rem;
 	line-height: 1.5;
@@ -14734,7 +14864,6 @@ padding:30px 15px;
 }
 
 #container.register-main .agr_box .box.subscribe_details{
-    display: none;
     padding-left: 40px;
 }
 
@@ -15068,7 +15197,7 @@ padding:30px 15px;
 .layerpopup.layerpopup_zipfinder{
 	display: none;
 	width: 100%;
-	z-index: 1000;
+	z-index: 130;
 	background: #fff;
 }
 .layerpopup.layerpopup_zipfinder .contents{
@@ -15565,7 +15694,7 @@ padding:30px 15px;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	overflow: auto;
-	z-index: 500;
+	z-index: 130;
 	background:rgba(0,0,0,0.5);
 }
 
