@@ -1157,9 +1157,6 @@ header#header .hdr2 .sch input{
 
 section#header{
 	position: relative;
-	height: 50px;
-	background: #000;
-	border-bottom: 1px solid  #535353;
 	z-index: 100;
 }
 
@@ -1211,6 +1208,8 @@ section#header .navmenu_close.close_x_btn::after{
 section#header .navigation_main_wrapper{
 	width: 100%;
 	height: 50px;
+	background: #000;
+	border-bottom: 1px solid  #535353;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -1833,6 +1832,90 @@ section#header .navigation_main_wrapper>a.navi_cart strong{
 	right: 7px;
 }
 
+section#header .notice_tits{
+	display: none;
+	width: 100%;
+	height: 40px;
+	position: relative;
+	background: #d0d0d6;
+	border-bottom: 1px solid  #fff;
+}
+
+section#header .notice_tits .more_ico{
+	position: absolute;
+	top: 50%;
+	right:15px;
+	width: 13px;
+	height: 13px;
+	background-position: -20px -25px;
+
+	transform:translate3d(0,-50%,0);
+	-webkit-transform:translate3d(0,-50%,0);
+}
+
+section#header .notice_tits>a{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	padding-top:3px;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	display: none;
+	opacity: 0;
+
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+	transition:opacity 0.6s;
+	-webkit-transition:opacity 0.6s;
+}
+
+section#header .notice_tits>a.on{
+	opacity: 1;
+}
+
+section#header .notice_tits>a>div{
+	margin-top: 6px;
+	position: relative;
+	display: inline-block;
+	color: #333;
+	font: 1.2rem/1.2rem 'NotoSansKRRegular';
+	color: #333;
+	margin-left: 15px;
+}
+
+section#header .notice_tits>a .ico{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	position: absolute;
+	top: -6px;
+	left: -30px;
+	background-color: #555;
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: 50% auto;
+	background-size: 50% auto;
+}
+
+section#header .notice_tits>a.b1 .ico{
+	background-image: url('/images/reebok/ico_truck_s.png');
+	-webkit-background-size: 60% auto;
+	background-size: 60% auto;
+}
+
+section#header .notice_tits>a.b2 .ico{
+	background-image: url('/images/reebok/ico_screen.png');
+}
+
+section#header .notice_tits>a.b3 .ico{
+	background-image: url('/images/reebok/ico_exch.png');
+
+}
 
 #contents .gnb{width:100%;height:45px;background:#28282b;}
 #contents .gnb li{
@@ -2590,6 +2673,69 @@ section#header .navigation_main_wrapper>a.navi_cart strong{
 #contents .detail .prod_info2 .prd_btn_area>a:nth-child(2){position:absolute;top:0;left:50%;margin-left:-16%;}
 #contents .detail .prod_info2 .prd_btn_area>a:last-child{float:right;}
 
+#contents .detail .today_delivery{
+	position: relative;
+	padding: 25px 0 25px 65px;
+	background: #f0f0f0;
+}
+
+#contents .detail .today_delivery .ico_car{
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #cd000c url('/images/reebok/ico_truck.png') center center no-repeat;
+	-webkit-background-size: 60% auto;
+	background-size: 60% auto;
+
+	transform:translate3d(0,-50%,0);
+	-webkit-transform:translate3d(0,-50%,0);
+}
+
+#contents .detail .today_delivery p{
+	margin-bottom: 5px;
+	color: #ab2328;
+	font: 1.25rem/1.25rem 'NotoSansKR';
+}
+
+#contents .detail .today_delivery p::after{
+	margin-left: 2px;
+}
+
+#contents .detail .today_delivery p.deli_txt{
+	margin-bottom: 0;
+	color: #000;
+	font: 1.1rem/1.1rem 'NotoSansKRRegular';
+}
+
+#contents .detail .today_delivery a.address_edit{
+	width: 100%;
+	height: 100%;
+	text-align: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#contents .detail .today_delivery a.address_edit span{
+	transform:translate3d(0,-50%,0);
+	-webkit-transform:translate3d(0,-50%,0);
+	font: 1.15rem/1.15rem 'NotoSansKRRegular';
+	text-align: right;
+	position: absolute;
+	top: 50%;
+	right: 15px;
+}
+
+
+#contents .detail .today_delivery a.address_edit span::after{
+	display: inline-block;
+	margin: 2px 0 0 2px;
+	vertical-align: middle;
+}
+
 #contents .detail .rela_prodlist_wrap{border-bottom:20px solid #d0d0d6;}
 #contents .detail .rela_prodlist_wrap .btn{position:relative;height:40px;padding-top:10px;text-align:center;background:#212121;}
 #contents .detail .rela_prodlist_wrap h5{color:#fff;}
@@ -2747,6 +2893,52 @@ div.prod_manual table td.kids span{width:33.3%;}
 div.prod_manual p.desc{padding:5px 0;color:#999;line-height:16px;font-size:11px;letter-spacing:-1px;}
 div.prod_manual p.desc strong{color:#3e3e3e;font-size:11px;letter-spacing:-1px;}
 
+/* Oneday delivery (Using in Cart / Payment page )*/
+#contents .oneday_deliv_noti{
+
+}
+
+#contents .oneday_deliv_noti .box{
+	padding: 15px 0;
+	background: #f0f0f0;
+	text-align: center;
+}
+
+#contents .oneday_deliv_noti .box p>*{
+	color: #ab2328;
+}
+
+#contents .oneday_deliv_noti .box strong{
+	text-align: center;
+	font:1.1rem/1.1rem 'NotoSansKRBold';
+	letter-spacing:-0.75px;
+}
+
+#contents .oneday_deliv_noti .box strong span{
+	margin-left: 3px;
+	font:1.1rem/1.1rem 'NotoSansKRLight';
+}
+
+#contents .oneday_deliv_noti .box .ico_car{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-right: 5px;
+	background: #000;
+	border-radius: 50%;
+	background: #ab2328 url('/images/reebok/ico_truck.png') center center no-repeat;
+	-webkit-background-size: 60% auto;
+	background-size: 60% auto;
+	vertical-align: middle;
+}
+
+#contents .oneday_deliv_noti .noti_otherprod{
+	padding: 10px 0;
+	background: #ab2328;
+	text-align: center;
+	color: #fff;
+	font:1rem/1rem 'NotoSansKRRegular';
+}
 
 /* 주문서 작성 */
 #contents .order_wrt{}
@@ -2821,7 +3013,20 @@ div.prod_manual p.desc strong{color:#3e3e3e;font-size:11px;letter-spacing:-1px;}
 #contents .order_wrt .odr_box.sec1 .cont .prod_info .lf{width:30%;max-width:120px;}
 #contents .order_wrt .odr_box.sec1 .cont .prod_info .lf img{width:100%;}
 #contents .order_wrt .odr_box.sec1 .cont .prod_info .rg{width:70%;padding-left:15px;margin-top:10px;}
-#contents .order_wrt .odr_box.sec1 .cont .prod_info .rg .tit a{font-size:14px;color:#333;}
+#contents .order_wrt .odr_box.sec1 .cont .prod_info .rg .tit a{
+	font-size:14px;
+	color:#333;
+}
+#contents .order_wrt .odr_box.sec1 .cont .prod_info .rg .tit .ico{
+	width: 18px;
+	height: 14px;
+	margin-right: 3px;
+	display: inline-block;
+	background:url('/images/reebok/ico_truck_dark.png') 0 0 no-repeat;
+	vertical-align: middle;
+	-webkit-background-size: 18px auto;
+	background-size: 18px auto;
+}
 #contents .order_wrt .odr_box.sec1 .cont .prod_info .rg .price em{font-size:25px;vertical-align:baseline;margin-right:3px;color:#333;}
 #contents .order_wrt .odr_box.sec1 .cont .prod_info .rg .price .sale *{margin-right:0;color:#cc0000;}
 #contents .order_wrt .odr_box.sec1 .cont .prod_info .rg .price .line{margin-right:3px;text-decoration:line-through;}
@@ -4467,4 +4672,59 @@ footer#footer.footer-update .f_logo img{
 	-webkit-transform:rotate(-135deg) translate3d(-50%,-50%,0);
 	margin-top: -8px;
 	margin-left: -2px;
+}
+
+.layerpopup.popup_oneday_exchange,
+.layerpopup.popup_oneday_open{
+	display: none;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:rgba(255,255,255,0.9);
+	z-index: 200;
+
+	overflow: auto;
+	-webkit-overflow-scrolling : touch;
+}
+
+.layerpopup.popup_oneday_exchange .header,
+.layerpopup.popup_oneday_open .header{
+	height: 30px;
+	background: none;
+}
+
+.layerpopup.popup_oneday_exchange .header .close_x_btn,
+.layerpopup.popup_oneday_open .header .close_x_btn{
+	top: 15px;
+	transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+}
+
+.layerpopup.popup_oneday_exchange .contents,
+.layerpopup.popup_oneday_open .contents{
+	padding: 15px 0px;
+	background: none;
+}
+
+.layerpopup.popup_oneday_exchange .contents h2,
+.layerpopup.popup_oneday_open .contents h2{
+	margin-bottom: 15px;
+	color: #333;
+	font:2.4rem/2.4rem 'NotoSansKRBold';
+	text-align: center;
+	letter-spacing:-0.5px;
+}
+
+.layerpopup.popup_oneday_exchange .contents .ico,
+.layerpopup.popup_oneday_open .contents .ico{
+	margin-bottom: 15px;
+	text-align: center;
+
+}
+
+.layerpopup.popup_oneday_exchange .contents .ico img,
+.layerpopup.popup_oneday_open .contents .ico img{
+	width: 70px;
 }

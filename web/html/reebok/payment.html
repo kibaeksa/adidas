@@ -7,9 +7,7 @@
       <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css"/>
       <script type="text/javascript" src="/js/jquery/jquery-1.4.2.js"></script>
       <script type="text/javascript" src="/js/reebok/main.js"></script>
-      <script type="text/javascript" src="/js/prototype-1.6.1.js"></script>
 	  <script type="text/javascript" src="/js/jquery/easing/jquery.easing.1.3.js"></script>
-      <script type="text/javascript" src="/js/reebok/navigator.js"></script>
 
       <script type="text/javascript">
 
@@ -677,9 +675,7 @@
 
             <link rel="apple-touch-icon-precomposed" sizes="72*72" href="/images/reebok/icon_114.png" />
             <script type="text/javascript" src="/js/reebok/navigation.js"></script>
-            <script type="text/javascript" src="/js/topSearchR.js"></script>
             <script type="text/javascript" src="/js/reebok/main.js"></script>
-            <script type="text/javascript" src="/js/search/dqAutoCompleteCommonTop.js"></script>
             <script type="text/javascript" src="/js/reebok/select_layer.js"></script>
             <!-- header_wrap -->
 
@@ -710,7 +706,6 @@
 
                               <input type="text" name="S_PROD_NM_TOP" id="S_PROD_NM_TOP" class="search_box" onfocus="this.value='';document.getElementById('S_SEARCH_WORDS_URL').value='';" onblur="fn_inputBlur()" onmousedown="dqtop_setTextbox('1',event);" onKeyPress="keyDownTop('1',event);" onkeydown="javascript:if(event.keyCode==13) fn_search_top();fn_trkClickTrace('^최상단^검색');" />
                               <input type="submit" class="submit spt_bg" onclick="fn_search_top();fn_trkClickTrace('^최상단^검색');">
-                              <script language="JavaScript" src="/js/search/dqAutoCompleteTopR.js"></script>
 
                            </fieldset>
                         </form>
@@ -1228,6 +1223,15 @@
 								</ul>
 							</dd>
 						</dl>
+                        <!-- 170322 당일배송 안내 -->
+    					<div class="oneday_deliv_noti">
+                            <div class="box" style="border-bottom-width: 0;">
+                                <p><span class="spt_bg ico_car"></span><strong>지금 주문 시 도착예정일은 2월 27일 월요일입니다.</strong><span class="spt_bg"></span></p>
+                            </div>
+    						<div class="noti_otherprod">
+                                당일 배송 제외 상품이 포함되어 있습니다. 해당 상품은 분리배송됩니다.
+    						</div>
+    					</div>
 					</div>
 
 					<div class="nogrid">
@@ -1261,7 +1265,9 @@
 												<img src="https://image.reebok.co.kr/upload/prod/basic/60/BS7029-1_60X60.jpg" class="prd" alt="상품" width="60" height="60">
 											</a>
 											<p>
-												<a href="http://shop.reebok.co.kr/RPF020401.action?PROD_CD=BS7029" target="_blank">[Women's training] 펌프 이자르</a>
+												<a href="http://shop.reebok.co.kr/RPF020401.action?PROD_CD=BS7029" target="_blank">
+                                                    <span class="spt_bg ico_oneday"></span>[Women's training] 펌프 이자르
+                                                </a>
 											</p>
 										</td>
 										<td class="price"><strong>169,000 원</strong></td>
@@ -1473,6 +1479,8 @@
 												<th scope="row">결제수단 선택</th>
 												<td>
 													<input type="radio" name="payMethod" id="creditcard" onclick="fn_ChangePayMethod('credit');" value="03" checked><label for="creditcard">카드결제</label>
+                                                    <!-- 170324 리복 네이버페이 -->
+                                                    <input type="radio" name="payMethod" id="pay_naver" value="" onclick="fn_ChangePayMethod('naver');" ><label for="pay_naver">네이버페이</label>
 													<input type="radio" name="payMethod" id="kpay" onclick="fn_ChangePayMethod('kpay');" value="03"><label for="kpay">KPAY</label>
 													<input type="radio" name="payMethod" id="vbank" onclick="fn_ChangePayMethod('vbank');" value="05"><label for="vbank">무통장입금</label>
 													<input type="radio" name="payMethod" id="mobile" onclick="fn_ChangePayMethod('mobile');" value="07"><label for="mobile">휴대폰결제</label>
@@ -1873,107 +1881,6 @@
 			</div>
 			<!-- //contents -->
 
-
-		<!-- quick -->
-		<div id="quick">
-			<form name="frmQuick" id="frmQuick" method="post" action="">
-				<input type="hidden" name="QUICK_PROD_CD" id="QUICK_PROD_CD" value="'BD1437'">
-				<input type="hidden" name="CPON_CNT" id="CPON_CNT" value="R">
-			</form>
-
-			<div class="area">
-				<dl>
-					<dt class="first"><img src="https://image.reebok.co.kr/images/reebok/common/tit_cart.gif?v=151019" alt="장바구니"></dt>
-					<dd class="first"><span id="quick_cart_cnt"><a href="http://shop.reebok.co.kr/RPF030101.action">0</a></span></dd>
-<!--					<dt><img src="/images/reebok/common/tit_wish.gif?v=151019" alt="관심상품" /></dt>-->
-<!--					<dd><span id="quick_wish_cnt"><a href="javascript:fn_logIn();">0</a></span></dd>	-->
-					<dt><img src="https://image.reebok.co.kr/images/reebok/common/tit_coupon.gif?v=151019" alt="쿠폰"></dt>
-					<dd><span id="quick_cpon"><a href="http://shop.reebok.co.kr/RPF060201.action">2</a></span></dd>
-					<dt class="last"><img src="https://image.reebok.co.kr/images/reebok/common/tit_today_prd.gif?v=151019" alt="오늘 본 상품"></dt>
-					<dd class="last" id="cookiewCnt"><a href="/RPF060301.action">1</a></dd>
-				</dl>
-
-				<div class="today_prod" id="todayProd1" style="display:block"><div class="quick_arrow"><a href="javascript:fn_img_down_src();" class="down">DOWN</a><a href="javascript:fn_img_up_src();" class="up">UP</a></div><div class="quick_prod"><ul><li id="img_prodImg_0"><a href="http://shop.reebok.co.kr/RPF020401.action?PROD_CD=BD1437"><img src="https://image.reebok.co.kr/upload/prod/basic/60/BD1437-1_60X60.jpg" width="60" height="60" name="img" alt="[Reebok Classic/Unisex] 퓨리라이트"></a></li></ul></div></div>
-
-				<!-- 즐겨찾기 -->
-				<div class="favorite">
-					<a href="javascript:addFavorite()"><img src="https://image.reebok.co.kr/images/reebok/common/btn_favority.gif?v=151019" alt="즐겨찾기"></a>
-				</div>
-			</div>
-			<!-- //area -->
-
-			<!-- 회원가입쿠폰 -->
-			<!-- <p class="q_category"><a href="https://shop.reebok.co.kr:444/RPF0601001.action" onmousedown="javascript:fn_trkClickTrace('^우측 숏컷^회원가입시 1만원 쿠폰');"><img src="/images/reebok/common/bg_quick_sub02.gif" alt="회원가입시 1만원 쿠폰" /></a></p> -->
-
-		</div>
-		<!-- //quick -->
-
-		<script type="text/javascript">
-		/* <![CDATA[ */
-			var url = "http://shop.reebok.co.kr";
-			var title = "리복 공식 온라인 스토어";
-
-			//즐겨찾기 만들기
-			function addFavorite(){
-				if ( navigator.appName != 'Microsoft Internet Explorer' ) {
-					window.sidebar.addPanel(title,url,"");
-				} else {
-					window.external.AddFavorite(url,title);
-				}
-			}
-
-			var stmnLEFT = 900; //첫로드 y축 forcus
-			var stmnGAP1 = 79; //첫로드 x축 forcus
-			var stmnGAP2 = 79; //첫로드 x축 defult
-			var stmnBASE = 155;
-			var stmnActivateSpeed = 200;
-			var stmnScrollSpeed = 10;
-
-			var stmnTimer;
-			var clickCnt;
-			var cnt;
-
-			 // 스크롤 메뉴의 위치 갱신
-			 function RefreshStaticMenu()
-			 {
-				 var stmnStartPoint, stmnEndPoint, stmnRefreshTimer;
-
-				 stmnStartPoint = parseInt(document.getElementById('quick').style.top, 10);
-				 stmnEndPoint = document.documentElement.scrollTop + stmnGAP2;
-
-				 if (stmnEndPoint < stmnGAP1) stmnEndPoint = stmnGAP1;
-				 stmnRefreshTimer = stmnActivateSpeed;
-				 if ( stmnStartPoint != stmnEndPoint ) {
-					stmnScrollAmount = Math.ceil( Math.abs( stmnEndPoint - stmnStartPoint ) / 15 );
-					document.getElementById('quick').style.top = parseInt(document.getElementById('quick').style.top, 10) + ( ( stmnEndPoint <stmnStartPoint ) ? -stmnScrollAmount : stmnScrollAmount );
-					stmnRefreshTimer = stmnScrollSpeed;
-				 }
-				 stmnTimer = setTimeout ("RefreshStaticMenu();", stmnRefreshTimer);
-			 }
-
-			 // 메뉴 초기화
-			 function InitializeStaticMenu() {
-				document.getElementById('quick').style.top = document.documentElement.scrollTop+ stmnBASE; // 기본위치로 이동한다.
-				RefreshStaticMenu(); // 스크립트 가동
-				document.getElementById('quick').style.left = eval('stmnLEFT'); // 메뉴 왼쪽 위치 초기화. 필요없을 경우 삭제
-			 }
-
-			 //화면 상단으로 이동
-			 function MoveTop(){
-			 	document.documentElement.scrollTop = 0;
-			 	document.getElementById('quick').style.top = document.documentElement.scrollTop+ stmnBASE;
-			 }
-
-			 // 161219 전체동의 클릭 시
-			 jQuery('#pay_agree_yn').bind('click',function(){
-			 	jQuery('.sub_agreements').fadeIn();
-			 });
-		/* ]]> */
-		</script>
-		<!-- //quick -->
-
-
-			<!-- //quick -->
 		</div>
 
             <!-- 160705 start -->
