@@ -139,8 +139,6 @@
 			// 사업자번호 초기화
 			fn_initCashRecptBizrno();
 
-			// 161209 삭제 및 추가
-			// jQuery("#credit_box").show();
 			jQuery("#credit_box").hide();
 			jQuery("#no_accbox").hide();
 			jQuery("#no_accbox_desc").hide();
@@ -192,7 +190,30 @@
 
 			jQuery("#cardReport_choice2").hide();
 			jQuery("#CARD_PAYMT_TYPE").val("01");
-		} else {
+		}  else if ( sel == "spay" ) {
+
+			jQuery("#PAYMT_TYPE").val("03");
+			jQuery("#P_GOPAYMETHOD").val("CARD");
+			jQuery("#SWALLET_YN").val("N");
+
+			// 핸드폰번호 초기화
+			fn_initCashRecptMoblno();
+			// 사업자번호 초기화
+			fn_initCashRecptBizrno();
+
+			jQuery("#credit_box").hide();
+			jQuery("#no_accbox").hide();
+			jQuery("#no_accbox_desc").hide();
+			jQuery("#standard_bank").hide();
+			jQuery("#cashReport").hide();
+			jQuery("#cashReport_choice").hide();
+			jQuery("#phoneReport_choice").hide();
+
+			jQuery("#cardReport_choice2").hide();
+			jQuery("#CARD_PAYMT_TYPE").val("03");
+		} else if(sel == 'vbank'){
+
+
 			jQuery("#PAYMT_TYPE").val("05");
 			jQuery("#P_GOPAYMETHOD").val("VBANK");
 			jQuery("#SWALLET_YN").val("N");
@@ -210,6 +231,17 @@
 
 			jQuery("#cardReport_choice2").hide();
 			jQuery("#CARD_PAYMT_TYPE").val("01");
+		}else if(sel == 'naver'){
+			// 170324 naver 페이 else 문 추가
+			jQuery("#credit_box").hide();
+			jQuery("#no_accbox").hide();
+			jQuery("#no_accbox_desc").hide();
+			jQuery("#standard_bank").hide();
+			jQuery("#cashReport").hide();
+			jQuery("#cashReport_choice").hide();
+			jQuery("#phoneReport_choice").hide();
+
+			jQuery("#cardReport_choice2").hide();
 		}
 	}
 
@@ -554,35 +586,339 @@
 			</div>
 
 
-			<header id="header">
-				<div class="hdr1">
-					<h1><a href="#" class="spt_bg"></a></h1>
-					<ul>
-						<li><a href="#">로그인</a></li>
-						<li><a href="#">회원가입</a></li>
-						<li><a href="#">마이페이지</a></li>
-						<li><a href="#">장바구니<span>(3)</span></a></li>
+			<section id="header">
+				<div id="nav_menu_overlay" class=" " style="display: none;"></div><a href="javascript:void(0)" class="navmenu_close close_x_btn " style="display: none;"></a><div class="navigation_main_wrapper">
+					<a href="javascript:void(0)" class="navi_slide " id="global-navigation-button">
+						<div class="ico">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</a>
+					<h1>
+						<a href="#" class="sprite-image">Reebok</a>
+					</h1>
+					<a href="javascript:void(0)" class="navi_search" id="global-search-button">
+						<div class="ico">
+							<span class="icons" data-icon=""></span>
+							<span></span>
+						</div>
+					</a>
+					<!-- 170314 start -->
+					<a href="javascript:void(0)" class="navi_cart">
+						<span class="sprite-image"></span>
+						<!-- 170118 장바구니 아이콘 수정 -->
+						<strong>2</strong>
+					</a>
+					<!-- 170314 start -->
+				</div>
+
+				<div id="navigation-slide" style="width: 270px; height: 517px; transform: translate3d(-100%, 0px, 0px);" data-state="">
+					<ul class="navigation_menu">
+						<!-- men depth1 menu -->
+						<li class="m1">
+							<a href="javascript:void(0)" class="icons" data-icon="">MEN</a>
+							<!-- depth2 menu -->
+							<ul class="sub_menu">
+								<li class="m1-1"><a href="#">BEST</a></li>
+								<li class="m1-2"><a href="#">NEW</a></li>
+								<li class="m1-3"><a href="#">SALE</a></li>
+								<li class="m1-4">
+									<a href="javascript:void(0)" class="icons kor" data-icon="">신발</a>
+									<!-- 신발 depth3 menu -->
+									<!-- 170118 sub_sub_menu 수정 -->
+									<ul class="sub_sub_menu">
+										<a href="#" class="sub_sub_menu_all">전체 보기</a>
+										<li>
+											<dl>
+												<dt class="sub_sub_sub_menu">스포츠별</dt>
+												<dd class="sub_sub_sub_menu_dd"><a href="#" onclick="alert('링크이동');">러닝<span>(10)</span></a></dd>
+												<dd class="sub_sub_sub_menu_dd"><a href="#">트레이닝<span>(10)</span></a></dd>
+												<dd class="sub_sub_sub_menu_dd"><a href="#">캐주얼<span>(10)</span></a></dd>
+												<dd class="sub_sub_sub_menu_dd"><a href="#">스윔<span>(10)</span></a></dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt class="sub_sub_sub_menu">상품별</dt>
+												<dd class="sub_sub_sub_menu_dd"><a href="#" onclick="alert('링크이동');">하이컷/미드컷<span>(10)</span></a></dd>
+												<dd class="sub_sub_sub_menu_dd"><a href="#">로우컷<span>(10)</span></a></dd>
+												<dd class="sub_sub_sub_menu_dd"><a href="#">샌들/슬리퍼<span>(10)</span></a></dd>
+											</dl>
+										</li>
+									</ul>
+								</li>
+								<li class="m1-5">
+									<a href="javascript:void(0)" class="icons kor" data-icon="">의류</a>
+									<!-- 의류 depth3 menu -->
+									<!-- 170118 sub_sub_menu 수정 -->
+									<ul class="sub_sub_menu">
+										<a href="#" class="sub_sub_menu_all">전체 보기</a>
+										<li>
+											<dl>
+												<dt class="sub_sub_sub_menu">스포츠별</dt>
+												<dd class="sub_sub_sub_menu_dd"><a href="#" onclick="alert('링크이동');">러닝<span>(10)</span></a></dd>
+												<dd class="sub_sub_sub_menu_dd"><a href="#">아웃도어<span>(10)</span></a></dd>
+												<dd class="sub_sub_sub_menu_dd"><a href="#">트레이닝<span>(10)</span></a></dd>
+												<dd class="sub_sub_sub_menu_dd"><a href="#">캐주얼<span>(10)</span></a></dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt class="sub_sub_sub_menu">상품별</dt>
+												<dd class="sub_sub_sub_menu_dd"><a href="#" onclick="alert('링크이동');">자켓<span>(10)</span></a></dd>
+												<dd class="sub_sub_sub_menu_dd"><a href="#">티셔츠<span>(10)</span></a></dd>
+												<dd class="sub_sub_sub_menu_dd"><a href="#">팬츠<span>(10)</span></a></dd>
+												<dd class="sub_sub_sub_menu_dd"><a href="#">트랙탑/져지탑<span>(10)</span></a></dd>
+												<dd class="sub_sub_sub_menu_dd"><a href="#">슬리브리스<span>(10)</span></a></dd>
+												<dd class="sub_sub_sub_menu_dd"><a href="#">윈터자켓<span>(10)</span></a></dd>
+											</dl>
+										</li>
+									</ul>
+								</li>
+								<li class="m1-6">
+									<a href="javascript:void(0)" class="icons kor" data-icon="">용품</a>
+									<!-- depth3 menu -->
+									<!-- 170118 sub_sub_menu 수정 -->
+									<ul class="sub_sub_menu">
+										<a href="#" class="sub_sub_menu_all">전체 보기</a>
+										<li>
+											<dl>
+												<dt class="sub_sub_sub_menu">스포츠별</dt>
+												<dd class="sub_sub_sub_menu_dd"><a href="#" onclick="alert('링크이동');">전체보기<span>(10)</span></a></dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt class="sub_sub_sub_menu">상품별</dt>
+												<dd class="sub_sub_sub_menu_dd"><a href="#" onclick="alert('링크이동');">전체보기<span>(10)</span></a></dd>
+											</dl>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<!-- women depth1 menu -->
+						<li class="m2">
+							<a href="javascript:void(0)" class="icons" data-icon="">WOMEN</a>
+							<!-- depth2 menu -->
+							<ul class="sub_menu">
+								<li class="m2-1"><a href="#">BEST</a></li>
+								<li class="m2-2"><a href="#">NEW</a></li>
+								<li class="m2-3"><a href="#">SALE</a></li>
+								<li class="m2-4">
+									<a href="javascript:void(0)" class="icons kor" data-icon="">신발</a>
+									<!-- depth3 menu -->
+									<!-- 170118 sub_sub_menu 수정 -->
+									<ul class="sub_sub_menu">
+										<a href="#" class="sub_sub_menu_all">전체 보기</a>
+										<li>
+											<dl>
+												<dt class="sub_sub_sub_menu">스포츠별</dt>
+												<dd class="sub_sub_sub_menu_dd"><a href="#" onclick="alert('링크이동');">러닝<span>(10)</span></a></dd>
+												<dd class="sub_sub_sub_menu_dd"><a href="#">트레이닝<span>(10)</span></a></dd>
+												<dd class="sub_sub_sub_menu_dd"><a href="#">캐주얼<span>(10)</span></a></dd>
+												<dd class="sub_sub_sub_menu_dd"><a href="#">스윔<span>(10)</span></a></dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt class="sub_sub_sub_menu">상품별</dt>
+												<dd class="sub_sub_sub_menu_dd"><a href="#" onclick="alert('링크이동');">하이컷/미드컷<span>(10)</span></a></dd>
+												<dd class="sub_sub_sub_menu_dd"><a href="#">로우컷<span>(10)</span></a></dd>
+												<dd class="sub_sub_sub_menu_dd"><a href="#">샌들/슬리퍼<span>(10)</span></a></dd>
+											</dl>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:void(0)" class="icons kor" data-icon="">의류</a>
+									<!-- 의류 depth3 menu -->
+									<!-- 170118 sub_sub_menu 수정 -->
+									<ul class="sub_sub_menu">
+										<a href="#" class="sub_sub_menu_all">전체 보기</a>
+										<li>
+											<dl>
+												<dt class="sub_sub_sub_menu">스포츠별</dt>
+												<dd class="sub_sub_sub_menu_dd"><a href="#" onclick="alert('링크이동');">러닝<span>(10)</span></a></dd>
+												<dd class="sub_sub_sub_menu_dd"><a href="#">트레이닝<span>(10)</span></a></dd>
+												<dd class="sub_sub_sub_menu_dd"><a href="#">캐주얼<span>(10)</span></a></dd>
+												<dd class="sub_sub_sub_menu_dd"><a href="#">아웃도어<span>(10)</span></a></dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt class="sub_sub_sub_menu">상품별</dt>
+												<dd class="sub_sub_sub_menu_dd"><a href="#" onclick="alert('링크이동');">자켓<span>(10)</span></a></dd>
+												<dd class="sub_sub_sub_menu_dd"><a href="#">티셔츠<span>(10)</span></a></dd>
+												<dd class="sub_sub_sub_menu_dd"><a href="#">팬츠<span>(10)</span></a></dd>
+												<dd class="sub_sub_sub_menu_dd"><a href="#">기타<span>(10)</span></a></dd>
+												<dd class="sub_sub_sub_menu_dd"><a href="#">트랙탑/져지탑<span>(10)</span></a></dd>
+												<dd class="sub_sub_sub_menu_dd"><a href="#">브라탑/언더웨어<span>(10)</span></a></dd>
+												<dd class="sub_sub_sub_menu_dd"><a href="#">윈터자켓<span>(10)</span></a></dd>
+											</dl>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:void(0)" class="icons kor" data-icon="">용품</a>
+									<!-- depth3 menu -->
+									<ul class="sub_sub_menu">
+										<a href="#" class="sub_sub_menu_all">전체 보기</a>
+										<li>
+											<dl>
+												<dt class="sub_sub_sub_menu">스포츠별</dt>
+												<dd class="sub_sub_sub_menu_dd"><a href="#" onclick="alert('링크이동');">전체보기<span>(10)</span></a></dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt class="sub_sub_sub_menu">상품별</dt>
+												<dd class="sub_sub_sub_menu_dd"><a href="#" onclick="alert('링크이동');">전체보기<span>(10)</span></a></dd>
+											</dl>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<!-- kids depth1 menu -->
+						<li>
+							<a href="javascript:void(0)" class="icons" data-icon="">KIDS</a>
+							<!-- depth2 menu -->
+							<ul class="sub_menu">
+								<li class="m2-1"><a href="#">BEST</a></li>
+								<li class="m2-2"><a href="#">NEW</a></li>
+								<li class="m2-3"><a href="#">SALE</a></li>
+								<li class="m2-4"><a href="#" class="kor">전체보기<span>(15)</span></a></li>
+
+							</ul>
+						</li>
+						<!-- fitness depth1 menu -->
+						<li>
+							<a href="javascript:void(0)" class="icons" data-icon="">FITNESS</a>
+							<!-- depth2 menu -->
+							<ul class="sub_menu">
+								<li class="m2-1"><a href="#">BEST</a></li>
+								<li class="m2-2"><a href="#">NEW</a></li>
+								<li class="m2-3"><a href="#">SALE</a></li>
+								<li class="m2-4"><a href="#">MEN<span>(15)</span></a></li>
+								<li class="m2-5"><a href="#">WOMEN<span>(15)</span></a></li>
+							</ul>
+						</li>
+						<!-- classic depth1 menu -->
+						<li>
+							<a href="javascript:void(0)" class="icons" data-icon="">CLASSIC</a>
+							<!-- depth2 menu -->
+							<ul class="sub_menu">
+								<li class="m2-1"><a href="#">BEST</a></li>
+								<li class="m2-2"><a href="#">NEW</a></li>
+								<li class="m2-3"><a href="#">SALE</a></li>
+								<li class="m2-4"><a href="#">MEN<span>(15)</span></a></li>
+								<li class="m2-5"><a href="#">WOMEN<span>(15)</span></a></li>
+							</ul>
+						</li>
+						<!-- collection depth1 menu -->
+						<li>
+							<a href="javascript:void(0)" class="icons" data-icon="">COLLECTION</a>
+							<!-- depth2 menu -->
+							<ul class="sub_menu">
+								<li class="m2-1"><a href="#">BEST</a></li>
+								<li class="m2-2"><a href="#">NEW</a></li>
+								<li class="m2-3"><a href="#">SALE</a></li>
+								<li class="m2-4"><a href="#" class="kor">크로스핏<span>(15)</span></a></li>
+								<li class="m2-5"><a href="#" class="kor">펌프 퓨리<span>(15)</span></a></li>
+								<li class="m2-5"><a href="#" class="kor">피트니스 컬렉션<span>(15)</span></a></li>
+								<li class="m2-5"><a href="#" class="kor">요가 컬렉션<span>(15)</span></a></li>
+								<li class="m2-5"><a href="#" class="kor">컴뱃<span>(15)</span></a></li>
+							</ul>
+						</li>
+						<!-- 170119 수정 css 검색어 /* depth1_type1 */-->
+						<!-- ABOUT US depth1 menu -->
+						<li class="depth1_type1">
+							<a href="javascript:void(0)" class="icons" data-icon="">ABOUT US</a>
+							<!-- depth2 menu -->
+							<ul class="sub_menu">
+								<li><a href="#">HOME</a></li>
+								<li><a href="#">ABOUT REEBOK</a></li>
+								<li><a href="#">CAMPAIGN</a></li>
+							</ul>
+						</li>
+						<!-- REECLUB depth1 menu -->
+						<li class="depth1_type1">
+							<a href="javascript:void(0)" class="icons" data-icon="">REECLUB</a>
+							<!-- depth2 menu -->
+							<ul class="sub_menu">
+								<li><a href="#">BEST</a></li>
+								<li><a href="#">NEW</a></li>
+								<li><a href="#">SALE</a></li>
+							</ul>
+						</li>
+						<li class="depth1_type2">
+							<a href="#" class="kor">신상품</a>
+						</li>
+						<li class="depth1_type2">
+							<a href="#" class="kor">인기상품</a>
+						</li>
+						<li class="depth1_type3">
+							<a href="#">SALE</a>
+						</li>
+						<li class="depth1_type3">
+							<a href="javascript:void(0)" class="icons" data-icon="">OUTLET</a>
+							<ul class="sub_menu">
+								<li><a href="#">BEST</a></li>
+								<li><a href="#">NEW</a></li>
+								<li><a href="#">SALE</a></li>
+							</ul>
+						</li>
+					</ul>
+					<!-- 170119 수정 css 검색어 /* menu_util */-->
+					<ul class="menu_util">
+						<li><a href="#" class="kor">로그인/회원가입</a></li>
+						<li><a href="#" class="kor">마이페이지</a></li>
+						<li><a href="#" class="kor">공지사항</a></li>
 					</ul>
 				</div>
-				<!-- //hdr1 -->
-				<div class="hdr2">
-					<div class="sch_area">
-						<a href="#" class="btn_sidemenu active" onclick="Reebok.fn.toggleLeft();return false;">
-							<span></span>
-							<span></span>
-							<span></span>
-						</a>
-						<form method="get" action="#">
-							<div class="sch">
-								<input type="input" placeholder="검색어를 입력하세요"/>
-							</div>
-							<button type="button">검색</button>
-						</form>
+
+				<div id="global-search-slide" style="height: 517px; transform: translate3d(100%, 0px, 0px);" data-state="">
+					<div class="search_field">
+						<div>
+							<form action="#">
+								<input type="search" id="S_PROD_NM" name="S_PROD_NM" placeholder="검색어를 입력하세요" autocomplete="off">
+								<button type="button" onclick="doSearch();" class="icons" data-icon=""></button>
+							</form>
+						</div>
 					</div>
-					<!-- //hdr2 -->
+
+					<div class="search_category">
+						<ul>
+							<li class="new"><a href="#">최근 검색어</a></li>
+							<li class="fav on"><a href="#">인기 검색어</a></li>
+						</ul>
+						<div class="contents">
+							<ul class="searched_keywords" style="display: none;">
+								<li><a href="#">FURY</a><a href="javascript:void(0)" class="close icons" data-icon=""></a></li>
+								<li><a href="#">클래식</a><a href="javascript:void(0)" class="close icons" data-icon=""></a></li>
+								<li><a href="#">하야수</a><a href="javascript:void(0)" class="close icons" data-icon=""></a></li>
+								<li><a href="#">UFC</a><a href="javascript:void(0)" class="close icons" data-icon=""></a></li>
+							</ul>
+							<ol class="rank_keywords" style="display: block;">
+								<li><a href="#"><span>1</span><strong class="icons" data-icon="">하야수</strong></a></li>
+								<li><a href="#"><span>2</span><strong class="icons" data-icon="">하야수</strong></a></li>
+								<li><a href="#"><span>3</span><strong class="icons" data-icon="">하야수</strong></a></li>
+								<li><a href="#"><span>4</span><strong class="icons" data-icon="">하야수</strong></a></li>
+								<li><a href="#"><span>5</span><strong class="icons" data-icon="">하야수</strong></a></li>
+								<li><a href="#"><span>6</span><strong class="icons" data-icon="">하야수</strong></a></li>
+								<li><a href="#"><span>7</span><strong class="icons" data-icon="">하야수</strong></a></li>
+								<li><a href="#"><span>8</span><strong class="icons" data-icon="">하야수</strong></a></li>
+								<li><a href="#"><span>9</span><strong class="icons" data-icon="">하야수</strong></a></li>
+								<li><a href="#"><span>10</span><strong class="icons" data-icon="">하야수</strong></a></li>
+							</ol>
+						</div>
+					</div>
 				</div>
-			</header>
-			<!-- //header -->
+
+
+			</section>
 
 			<section id="contents">
 				<section class="m_contents order_wrt">
@@ -601,6 +937,21 @@
 					</div>
 					<!-- //ord_desc -->
 
+					<!-- 170322 당일배송 안내 -->
+					<div class="oneday_deliv_noti">
+                        <div class="box">
+                            <p>
+								<span class="ico_car"></span>
+								<strong>지금 주문 시 도착예정일은 2월 27일 월요일입니다.</strong>
+								<span class="icons" data-icon=""></span>
+							</p>
+                        </div>
+						<div class="noti_otherprod">
+                            당일 배송 제외 상품이 포함되어 있습니다. 해당 상품은 분리배송됩니다.
+						</div>
+					</div>
+					<!-- 170322 당일배송 안내 끝 -->
+
 					<section class="odr_box sec1">
 						<h4>01. 주문할 상품</h4>
 						<div class="cont">
@@ -608,7 +959,11 @@
 								<div class="prod_info">
 									<div class="lf"><img alt="" src="http://shop.adidas.co.kr/upload/prod/basic/120/M41417-1_120X120.jpg"></div>
 									<div class="rg bdrbox">
-										<p class="tit">[reebok classic/unisex] 인스타 펌프 퓨리 오리지널</p>
+										<p class="tit">
+											<!-- 170322 당일배송 아이콘 추가 -->
+											<span class="ico"></span>
+											[reebok classic/unisex] 인스타 펌프 퓨리 오리지널
+										</p>
 										<p class="price">
 											<span><em class="ree_ft">129,200</em>원</span>
 										</p>
@@ -876,10 +1231,16 @@
 								<div>
 									<strong>결제수단 선택</strong>
 									<div>
-			                            <span class="rdo_dsgn" style="margin-bottom:5px;">
-			                                <input type="radio" id="credit" name="payMethod" onclick="fn_ChangePayMethod('credit');" value="03" checked="" />
+
+										<span class="rdo_dsgn" style="margin-bottom:5px;">
+			                                <input type="radio" id="credit" name="payMethod" onclick="fn_ChangePayMethod('credit');" value="03" checked/>
 			                                <label  for="credit">카드결제</label>
 			                            </span>
+										<!-- 170324 네이버페이 추가 -->
+										<span class="rdo_dsgn" style="margin-bottom:5px;">
+											<input type="radio" id="pay_naver" name="payMethod" onclick="fn_ChangePayMethod('naver');" value="" />
+											<label  for="pay_naver">네이버페이</label>
+										</span>
 			                            <span class="rdo_dsgn" style="margin-bottom:5px;">
 			                                <input type="radio" id="kpay" name="payMethod" onclick="fn_ChangePayMethod('kpay');" value="03"/>
 			                                <label  for="kpay">KPAY</label>
@@ -1088,7 +1449,8 @@
 
 						<!-- 161213 start -->
 						<div style="background: #fff;padding: 0 15px;">
-							<div class="view_more_area" style="padding:15px 0;border-top:1px solid  #dfdfdf;">
+							<!-- 170324 border-top:1px solid  #dfdfdf 삭제  -->
+							<div class="view_more_area" style="padding:15px 0;">
 								<div style="margin-bottom: 10px;">
 									<span class="chk_dsgn">
 										<input type="checkbox" id="pay_agree_yn">
