@@ -1,57 +1,57 @@
 @font-face {
 	font-family: 'adinenu-bold';
     src: url('/fonts/mygirl/EOT/adineue-bold-webfont.eot');
-	src: url('/fonts/mygirl/EOT/adineue-bold-webfont.eot?#iefix') format('embedded-opentype'), 
-	     url('/fonts/mygirl/WOFF/adineue-bold-webfont.woff') format('woff'), 
+	src: url('/fonts/mygirl/EOT/adineue-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('/fonts/mygirl/WOFF/adineue-bold-webfont.woff') format('woff'),
 	     url('/fonts/mygirl/TTF/adineue-bold-webfont.ttf')  format('truetype');
 }
-@font-face { 
-	font-family: 'adi12wf-l'; 
+@font-face {
+	font-family: 'adi12wf-l';
     src: url('/fonts/mygirl/EOT/adi12wf-l.eot');
-	src: url('/fonts/mygirl/EOT/adi12wf-l.eot?#iefix') format('embedded-opentype'), 
-	     url('/fonts/mygirl/WOFF/adi12wf-l.woff') format('woff'), 
+	src: url('/fonts/mygirl/EOT/adi12wf-l.eot?#iefix') format('embedded-opentype'),
+	     url('/fonts/mygirl/WOFF/adi12wf-l.woff') format('woff'),
 	     url('/fonts/mygirl/TTF/adi12wf-l.ttf')  format('truetype');
 }
-@font-face { 
-	font-family: 'adi12wf-r'; 
+@font-face {
+	font-family: 'adi12wf-r';
     src: url('/fonts/mygirl/EOT/adi12wf-r.eot');
-	src: url('/fonts/mygirl/EOT/adi12wf-r.eot?#iefix') format('embedded-opentype'), 
-	     url('/fonts/mygirl/WOFF/adi12wf-r.woff') format('woff'), 
+	src: url('/fonts/mygirl/EOT/adi12wf-r.eot?#iefix') format('embedded-opentype'),
+	     url('/fonts/mygirl/WOFF/adi12wf-r.woff') format('woff'),
 	     url('/fonts/mygirl/TTF/adi12wf-r.ttf')  format('truetype');
 }
-@font-face { 
+@font-face {
 	font-family: 'adi12wf-b';
     src: url('/fonts/mygirl/EOT/adi12wf-b.eot');
-	src: url('/fonts/mygirl/EOT/adi12wf-b.eot?#iefix') format('embedded-opentype'), 
-	     url('/fonts/mygirl/WOFF/adi12wf-b.woff') format('woff'), 
+	src: url('/fonts/mygirl/EOT/adi12wf-b.eot?#iefix') format('embedded-opentype'),
+	     url('/fonts/mygirl/WOFF/adi12wf-b.woff') format('woff'),
 	     url('/fonts/mygirl/TTF/adi12wf-b.ttf')  format('truetype');
 }
 
 @font-face {
 	font-family: 'adihaus-it-bold';
     src: url('/fonts/mygirl/EOT/ADIHBDIT.eot');
-	src: url('/fonts/mygirl/EOT/ADIHBDIT.eot?#iefix') format('embedded-opentype'), 
+	src: url('/fonts/mygirl/EOT/ADIHBDIT.eot?#iefix') format('embedded-opentype'),
 	     url('/fonts/mygirl/TTF/ADIHBDIT.ttf')  format('truetype');
 }
 
 @font-face {
 	font-family: 'adihaus-bold';
     src: url('/fonts/mygirl/EOT/ADIHDB.eot');
-	src: url('/fonts/mygirl/EOT/ADIHDB.eot?#iefix') format('embedded-opentype'), 
+	src: url('/fonts/mygirl/EOT/ADIHDB.eot?#iefix') format('embedded-opentype'),
 	     url('/fonts/mygirl/TTF/ADIHDB.ttf')  format('truetype');
 }
 
 @font-face {
 	font-family: 'adihaus-it';
     src: url('/fonts/mygirl/EOT/ADIHRGIT.eot');
-	src: url('/fonts/mygirl/EOT/ADIHRGIT.eot?#iefix') format('embedded-opentype'), 
+	src: url('/fonts/mygirl/EOT/ADIHRGIT.eot?#iefix') format('embedded-opentype'),
 	     url('/fonts/mygirl/TTF/ADIHRGIT.ttf')  format('truetype');
 }
 
 @font-face {
 	font-family: 'adihaus';
     src: url('/fonts/mygirl/EOT/ADIHRG.eot');
-	src: url('/fonts/mygirl/EOT/ADIHRG.eot?#iefix') format('embedded-opentype'), 
+	src: url('/fonts/mygirl/EOT/ADIHRG.eot?#iefix') format('embedded-opentype'),
 	     url('/fonts/mygirl/TTF/ADIHRG.ttf')  format('truetype');
 }
 
@@ -80,7 +80,7 @@
 @font-face{
 	font-family: 'NotoSansKRBold';
 	src: url('/fonts/NotoSansKr/eot/NotoSansKRBold.eot');
-	src: url('/fonts/NotoSansKr/woff/NotoSansKr-bold.woff') format('woff');	
+	src: url('/fonts/NotoSansKr/woff/NotoSansKr-bold.woff') format('woff');
 }
 
 @font-face{
@@ -122,7 +122,7 @@
 @font-face {
 	font-family: 'adinenuPro-regular';
 	src: url('/fonts/adineuePro/eot/adineuePRO-Regular.eot');
-	src: url('/fonts/adineuePro/woff/adineuePRO-Regular.woff') format('woff');	
+	src: url('/fonts/adineuePro/woff/adineuePRO-Regular.woff') format('woff');
 }
 
 @font-face {
@@ -134,28 +134,28 @@
 @font-face {
 	font-family: 'adihaus-it-bold';
     src: url('/fonts/mygirl/EOT/ADIHBDIT.eot');
-	src: url('/fonts/mygirl/EOT/ADIHBDIT.eot?#iefix') format('embedded-opentype'), 
+	src: url('/fonts/mygirl/EOT/ADIHBDIT.eot?#iefix') format('embedded-opentype'),
 	     url('/fonts/mygirl/TTF/ADIHBDIT.ttf')  format('truetype');
 }
 
 @font-face {
 	font-family: 'adihaus-bold';
     src: url('/fonts/mygirl/EOT/ADIHDB.eot');
-	src: url('/fonts/mygirl/EOT/ADIHDB.eot?#iefix') format('embedded-opentype'), 
+	src: url('/fonts/mygirl/EOT/ADIHDB.eot?#iefix') format('embedded-opentype'),
 	     url('/fonts/mygirl/TTF/ADIHDB.ttf')  format('truetype');
 }
 
 @font-face {
 	font-family: 'adihaus-it';
     src: url('/fonts/mygirl/EOT/ADIHRGIT.eot');
-	src: url('/fonts/mygirl/EOT/ADIHRGIT.eot?#iefix') format('embedded-opentype'), 
+	src: url('/fonts/mygirl/EOT/ADIHRGIT.eot?#iefix') format('embedded-opentype'),
 	     url('/fonts/mygirl/TTF/ADIHRGIT.ttf')  format('truetype');
 }
 
 @font-face {
 	font-family: 'adihaus';
     src: url('/fonts/mygirl/EOT/ADIHRG.eot');
-	src: url('/fonts/mygirl/EOT/ADIHRG.eot?#iefix') format('embedded-opentype'), 
+	src: url('/fonts/mygirl/EOT/ADIHRG.eot?#iefix') format('embedded-opentype'),
 	     url('/fonts/mygirl/TTF/ADIHRG.ttf')  format('truetype');
 }
 
@@ -228,7 +228,7 @@
 
 @font-face {
     font-family: 'icomoonregular';
-    src:url('/fonts/icomoon.ttf') format('truetype');    
+    src:url('/fonts/icomoon.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -240,3 +240,10 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face{
+	font-family:'Decima Mono';
+	src:url('/fonts/decimamono/woff/32923C_0_0.woff2') format('woff2'),
+			url('/fonts/decimamono/woff/32923C_0_0.woff') format('woff'),
+			url('/fonts/decimamono/ttf/32923C_0_0.ttf') format('truetype');
+	}

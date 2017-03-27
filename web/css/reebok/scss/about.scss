@@ -6070,20 +6070,22 @@ html.no_scroll{
 			}
 			.inner{
 				position: relative;
-				height: 836px;
+				height: 898px;
+				width: 900px;
 				ul{
 					li.item{
+						width:100%;
 						position: absolute;
 						top:60px;
 						left:50%;
-						margin-left: -328px;
+						margin-left: -450px;
 						text-align: center;
 						@include prefix-css3(transition ,all ease-in 0.5s);
 						@include opacity(0);
+
 						.img{
 							position: relative;
 							left:30px;
-
 							// left:-600px;
 							padding-bottom: 42px;
 							@include opacity(0);
@@ -6104,6 +6106,14 @@ html.no_scroll{
 										p{
 											@include opacity(1);
 										}
+									}
+									&:first-child{
+										position: relative;
+										left:-70px;
+									}
+									&:last-child{
+										position: relative;
+										right:-70px;
 									}
 									p{
 										text-align: center;
@@ -6194,7 +6204,7 @@ html.no_scroll{
 				.navi{
 					position:relative;
 					width: 100%;
-					top:50%;
+					top:40%;
 					text-align: center;
 					.next{
 						position: absolute;
@@ -6207,7 +6217,29 @@ html.no_scroll{
 						top:-35px;
 					}
 				}
-
+				.bottom_num{
+					position: absolute;
+					bottom: 50px;
+					left:50%;
+					margin-left: -120px;
+					z-index: 1;
+					a{
+						display: inline-block;
+						width: 28px;
+						padding-top: 2px;
+						text-align: center;
+						margin-right: 15px;
+						font: 16px/26px 'DINWebPro-CondBold';
+						border: 1px solid #fff;
+						border-radius: 50px;
+						-webkit-border-radius: 50px;
+						color: #fff;
+						&.on{
+							background: #fff;
+    					color: #000;
+						}
+					}
+				}
 		}
 
 
@@ -7243,7 +7275,7 @@ html.no_scroll{
 								text-align: center;
 								.a_wrap{
 									position: relative;
-									left:10px;
+									// left:10px;
 									display: inline-block;
 									padding:2px;
 									text-align: center;
@@ -7259,8 +7291,11 @@ html.no_scroll{
 										overflow: hidden;
 											.txt{
 												position: relative;
+												top:2px;
 												display: inline-block;
-												padding:2px 50px 0 50px;
+												width: 194px;
+												text-align: center;
+												// padding:2px 50px 0 50px;
 												font:17px/46px 'DINWebPro-CondBold','NotoSansKRRegular';
 												@include prefix-css3(transition,color 0.3s);
 												&.on{
@@ -7270,9 +7305,11 @@ html.no_scroll{
 											}
 											.overtxt{
 												position: absolute;
-												top:0;
-												left:-10px;
-												padding:2px 50px 0 50px;
+												top:2px;
+												width: 194px;
+												text-align: center;
+												// left:-10px;
+												// padding:2px 50px 0 50px;
 												font:17px/46px 'DINWebPro-CondBold','NotoSansKRRegular';
 												@include opacity(0);
 												color:#000;
@@ -7494,7 +7531,7 @@ html.no_scroll{
 				text-align: center;
 				.a_wrap{
 					position: relative;
-					left:10px;
+					// left:10px;
 					display:inline-block;
 					padding:2px;
 					text-align: center;
