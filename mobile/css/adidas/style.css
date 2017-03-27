@@ -1771,7 +1771,7 @@ html.no_srl{
 
 
 #quick-menu .menubtn_wrap>.btn_list{
-    width: 200px;
+    width: 150px;
     position: absolute;
     bottom: 6.5rem;
     right: 0.5rem;
@@ -1814,6 +1814,36 @@ html.no_srl{
     height: 4rem;
     border-radius:50%;
     display: block;
+    color: #000;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#quick-menu .menubtn_wrap>.btn_list>a.btn_login .img{
+    font-size: 1.4rem;
+}
+
+#quick-menu .menubtn_wrap>.btn_list>a.btn_logout .img{
+    background:#fff url('/images/adidas/ico_logout.png') center center no-repeat;
+    -webkit-background-size:1.08rem auto;
+    background-size:1.08rem auto;
+}
+
+#quick-menu .menubtn_wrap>.btn_list>a.btn_mypage .img{
+    font-size: 2.2rem;
+}
+
+#quick-menu .menubtn_wrap>.btn_list>a.btn_member .img{
+    font-size: 1.6rem;
+}
+
+#quick-menu .menubtn_wrap>.btn_list>a.btn_cs .img{
+    font-size: 1.5rem;
+}
+
+#quick-menu .menubtn_wrap>.btn_list>a.btn_order .img{
+    font-size: 1.5rem;
 }
 
 
@@ -10146,7 +10176,7 @@ padding:30px 15px;
 	-webkit-box-orient: vertical;
 	font: 14px/18px 'NotoSansKRRegular';
 }
-#container.order .odr_pay_box.order_prodlist .cont li .info .tit>span:before{
+#container.order .odr_pay_box.order_prodlist .cont li .info .tit>span::before{
   position: relative;
   top:2px;
   font-size: 23px;
@@ -10416,6 +10446,7 @@ padding:30px 15px;
 }
 
 #container.order .odr_pay_box.total_prc .total_result{
+    border-top-width: 0;
 	padding: 0;
 }
 
@@ -10684,8 +10715,9 @@ padding:30px 15px;
 #container.order .odr_pay_box.select_payment .payments #cashReport_phn,
 #container.order .odr_pay_box.select_payment .payments #cashReport_bizr{
 	display: none;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #cfcfcf;
 }
-
 
 #no_accbox>p{
 	line-height: 16px;

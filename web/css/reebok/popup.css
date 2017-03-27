@@ -578,6 +578,12 @@ div.electronic_commerce strong {font-weight:normal; color:#ed4908;}
 	color: #666;
 }
 
+.findzip_pop .search_zip .desc_oneday{
+	font:16px/16px 'NotoSansKR','Nanum Gothic';
+	margin-bottom: 15px;
+	color: #000;
+}
+
 .findzip_pop .zip_result .status{
 	margin:30px 0 10px;
 	padding-left: 30px;

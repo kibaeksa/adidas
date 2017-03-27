@@ -26,6 +26,61 @@ dl.info dd ul li span {color:#7b91bd;}
 
 dl.info dd ul li strong {color:#888;}
 
+.oneday_deliv_noti{
+	margin-bottom: 30px;
+	font: 14px/14px 'NotoSansKRLight','Nanum Gothic';
+
+}
+
+.oneday_deliv_noti .box{
+	padding: 10px 0;
+	height: 36px;
+	border: 1px solid  #e1e1e1;
+	color: #ab2328;
+	text-align: center;
+}
+
+.oneday_deliv_noti .box strong{
+	font: 14px/14px 'NotoSansKR','Nanum Gothic';
+}
+
+.oneday_deliv_noti .box p{
+	padding-top: 10px;
+    margin-left: 45px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.oneday_deliv_noti .box p .spt_bg{
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	margin-left: 3px;
+	background-position: -140px -2430px;
+	vertical-align: middle;
+	position: relative;
+	top: -1px;
+	margin-left: 3px;
+}
+
+.oneday_deliv_noti .box p .ico_car{
+	position: absolute;
+    width: 29px;
+    height: 29px;
+    top: 3px;
+    left: -46px;
+    background-position: -195px -2375px;
+}
+
+.oneday_deliv_noti .noti_otherprod{
+	padding:10px 0;
+	color: #fff;
+	background: #ab2328;
+	text-align: center;
+	font: 14px/14px 'NotoSansKR','Nanum Gothic';
+}
+
 
 
 dl.notice_read {background:url(//image.reebok.co.kr/images/reebok/order/ bg_part02.gif) no-repeat right top;height:57px;border:none;padding-bottom:22px;}
@@ -63,6 +118,15 @@ div.cart_list table tr td {background:url(//image.reebok.co.kr/images/reebok/com
 div.cart_list table tr td.product {color:#444;text-align:left;padding:15px 9px;}
 
 div.cart_list table tr td.product a {color:#444;}
+
+div.cart_list table tr td.product a .ico_oneday{
+	width: 17px;
+    height: 12px;
+    margin:-3px 4px 0 0;
+    display: inline-block;
+    background-position: -160px -2431px;
+	vertical-align: middle;
+}
 
 div.cart_list table tr td.product img {float:left;margin-right:20px;}
 
@@ -402,6 +466,23 @@ table.view tr td strong span {color:#e50000; margin:0;}
 
 table.view tr td span {color:#808080; margin-left:40px;}
 
+table.view tr td .oneday_deliv_date{
+    color: #000;
+    font-weight: bold;
+    margin: 0;
+}
+table.view tr td .oneday_deliv_date .spt_bg{
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	margin-left: 3px;
+	background-position: -140px -2430px;
+	vertical-align: middle;
+	position: relative;
+	top: -1px;
+	margin-left: 3px;
+}
+
 table.mg10 {margin-bottom:10px;}
 
 table.mg20 {margin-bottom:20px;}
@@ -433,6 +514,10 @@ table.list tr td.price {font-family:verdana;padding:8px 20px 7px 0;text-align:ri
 
 
 span.col_space {display:inline-block;width:15px;text-align:center;}
+
+.contents_area2 div.grid{
+	overflow: hidden;
+}
 
 .contents_area2 .notice_return{
 	width: 810px;
