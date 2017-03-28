@@ -1,8 +1,8 @@
 @charset "utf-8";
-/*@import url('//image.reebok.co.kr/css/reebok/order.css');*/
-/*@import url('//image.reebok.co.kr/css/reebok/popup.css');*/
 @import url('order.css');
 @import url('popup.css');
+/*@import url('//image.reebok.co.kr/css/reebok/order.css');
+@import url('//image.reebok.co.kr/css/reebok/popup.css');*/
 @import url('//image.reebok.co.kr/css/reebok/customer.css');
 @import url('//image.reebok.co.kr/css/reebok/mypage.css');
 @import url('//image.reebok.co.kr/css/reebok/cscenter.css');
@@ -881,6 +881,7 @@ span.price span.sale span.won{color:#e4000f;}
 
 .modal-popup-wrapper>.popup .popup-contents{
 	padding: 30px 30px 40px;
+	background: #fff;
 }
 
 /* select layer */
@@ -3731,7 +3732,7 @@ div.right_box2{width:381px;height:570px;float:left;border-left:1px solid #eaeaea
 #infobox2 table .oneday_deliv_info p{
 	margin-bottom: 6px;
 	font:14px/14px 'NotoSansKRBold','Nanum Gothic';
-	color: #000;
+	color: #ab2328;
 }
 
 #infobox2 table .oneday_deliv_info p.desc{

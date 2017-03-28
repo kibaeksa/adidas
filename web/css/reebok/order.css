@@ -78,7 +78,7 @@ dl.info dd ul li strong {color:#888;}
 	color: #fff;
 	background: #ab2328;
 	text-align: center;
-	font: 14px/14px 'NotoSansKR','Nanum Gothic';
+	font: 14px/14px 'NotoSansKRLight','Nanum Gothic';
 }
 
 
@@ -467,7 +467,7 @@ table.view tr td strong span {color:#e50000; margin:0;}
 table.view tr td span {color:#808080; margin-left:40px;}
 
 table.view tr td .oneday_deliv_date{
-    color: #000;
+    color: #ab2328;
     font-weight: bold;
     margin: 0;
 }

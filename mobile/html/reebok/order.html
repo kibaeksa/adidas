@@ -22,6 +22,15 @@
 		;(function($){
 
 			$(document).ready(function(){
+
+				// 170328 비회원 주문조회 열때 사용
+				$('#nomem_order_popup').addClass('open');
+
+				// 170328 비회원 주문조회 닫기버튼
+				$('#nomem_order_popup .close_x_btn').bind('click',function(){
+					$('#nomem_order_popup').removeClass('open');
+				});
+
 				changePayMethod = function(sel) {
 					if ( sel == "credit" ) {
 						// 핸드폰번호 초기화
@@ -1790,6 +1799,35 @@
 	</section>
 
 
+
+	<!-- 170328 비회원 주문조회 팝업 -->
+	<div class="layerpop_wrap" id="nomem_order_popup">
+		<div class="inner" style="width:100%;position:absolute;left:0;top:80px;margin:0;background:#fff;">
+			<div class="header">
+				<h2>비회원 주문조회</h2>
+				<a href="javascript:void(0)" class="close_x_btn"></a>
+			</div>
+
+			<div class="content">
+
+				<div class="ipt_box order_number">
+					<div style="margin-bottom:10px;">
+						<p>주문번호</p>
+						<div class="input_wrap"><input type="tel" placeholder="주문 후 받으신 주문번호 15자리 숫자입력"></div>
+					</div>
+					<div style="margin-bottom:30px;">
+						<p>휴대폰 번호</p>
+						<div class="input_wrap"><input type="tel" placeholder="- 빼고 입력"></div>
+					</div>
+				</div>
+
+				<div class="button_area no_pdg">
+					<div class="red"><a href="javascript:void(0)" class="aft icons" data-icon="">주문조회</a></div>
+				</div>
+				<div class="desc">주문번호를 잊으신 경우, 아디다스 코리아 고객센터 1588-8241로 문의해 주세요.</div>
+			</div>
+		</div>
+	</div>
 
 
 
