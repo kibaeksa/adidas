@@ -181,14 +181,14 @@ $width600:600px;
 			p{
 				position: relative;
 				margin-bottom: 8px;
-				font:21px/30px 'NotoSansKRLitght','Nanum Gothic';
-				color:#fff;
+				font: 21px/30px 'NotoSansKRLitght','Nanum Gothic';
+				color: #fff;
 				text-align: center;
-				transition:all 0.8s;
-				-webkit-transition:all 0.8s;
-				-moz-transition:all 0.8s;
-				-o-transition:all 0.8s;
-				-ms-transition:all 0.8s;
+				transition: all 0.8s;
+				-webkit-transition: all 0.8s;
+				-moz-transition: all 0.8s;
+				-o-transition: all 0.8s;
+				-ms-transition: all 0.8s;
 				letter-spacing: -1px;
 			}
 		}
@@ -305,16 +305,15 @@ $width600:600px;
 							position: relative;
 					    top: 50px;
 					    margin-top: 18px;
-					    font: 22px/30px 'NotoSansKRLight','Nanum Gothic';
+					    font: 18px/25px 'NotoSansKRLight','Nanum Gothic';
 					    color: #fff;
 					    opacity: 0;
-					    // text-align: right;
 					    transition: all 0.8s;
 					    -webkit-transition: all 0.8s;
 					    -moz-transition: all 0.8s;
 					    -o-transition: all 0.8s;
 					    -ms-transition: all 0.8s;
-					    letter-spacing: 3.3px;
+					    /* letter-spacing: 0px; */
 						}
 
 					}
@@ -333,8 +332,8 @@ $width600:600px;
 				margin-top: 70px;
 				span{
 					margin-top: 20px;
-					font:24px/39px 'NotoSansKR','Nanum Gothic';
-					color:#fff;
+					font: 24px/39px 'NotoSansKR','Nanum Gothic';
+					color: #fff;
 					text-align: center;
 				}
 			}
@@ -348,17 +347,18 @@ $width600:600px;
 			text-align: center;
 			p{
 				position: relative;
-				top:60px;
-				font:20px/25px 'NotoSansKRLight','Nanum Gothic';
-				color:#fff;
+				top: 60px;
+				font: 20px/30px 'NotoSansKRLight','Nanum Gothic';
+				color: #fff;
 				text-align: center;
-				transition:all 0.8s;
-				-webkit-transition:all 0.8s;
-				-moz-transition:all 0.8s;
-				-o-transition:all 0.8s;
-				-ms-transition:all 0.8s;
+				transition: all 0.8s;
+				-webkit-transition: all 0.8s;
+				-moz-transition: all 0.8s;
+				-o-transition: all 0.8s;
+				-ms-transition: all 0.8s;
 				opacity: 0;
 				-webkit-opacity: 0;
+				/* letter-spacing: 0.3px; */
 				span{
 					display: inline-block;
 					font:22px/32px 'NotoSansKRBold','Nanum Gothic';
@@ -434,8 +434,8 @@ $width600:600px;
 							-moz-transition:all 0.8s;
 							-o-transition:all 0.8s;
 							-ms-transition:all 0.8s;
+							opacity: 1;
 							-webkit-opacity: 1;
-							-moz-opacity: 1;
 							-moz-opacity: 1;
 							-o-opacity: 1;
 							-ms-opacity: 1;
