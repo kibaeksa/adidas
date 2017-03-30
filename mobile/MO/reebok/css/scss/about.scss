@@ -507,7 +507,7 @@ footer#footer{
 	}
 }
 
-.about_camapign{
+.about_campaign{
 
 	.prodlist{
 		width: 100%;
@@ -607,11 +607,38 @@ footer#footer{
 	}
 
 	.list{
-		background: #000;
+		background: #333;
 		text-align:center;
 		a{
-			font:500 1.8rem/7rem  'NotoSansKRMedium','Nanum Gothic';
-			color:#fff;
+			// font:500 1.8rem/7rem  'NotoSansKRMedium','Nanum Gothic';
+	    color: #fff;
+	    // position: relative;
+	    // padding: 2.5rem 0;
+	    /* margin: 0 2rem; */
+	    display: block;
+			padding: 2.3rem 6rem;
+			span{
+				position: relative;
+				left: -5px;
+				display: inline-block;
+				width: 68%;
+				vertical-align: middle;
+				img{
+					width: 100%;
+					// padding: 0 6rem;
+					// box-sizing: border-box;
+					// -webkit-box-sizing: border-box;
+				}
+			}
+			em{
+				vertical-align: middle;
+				&:after{
+					font-size: 15px;
+			    position: relative;
+			    top: 1px;
+				}
+			}
+
 		}
 		a:after{
 			font-size: 1.5rem;
@@ -622,7 +649,7 @@ footer#footer{
 }
 
 // ufc start
-.about_camapign.ufc{
+.about_campaign.ufc{
 	.video_visual .cover{
 		display: block;
 		>*{
@@ -1055,7 +1082,7 @@ footer#footer{
 }
 
 
-.about_camapign.gigi_hadid{
+.about_campaign.gigi_hadid{
 
 	.video_visual{
 		h2{
@@ -1803,7 +1830,103 @@ footer#footer{
 
 }
 
-.about_camapign.about2l{
+.about_campaign.clubc_diamond{
+
+	.collections{
+		position: relative;
+		background: #5c5c5c url('/images/reebok/about/gigi_hadid/bg_collection.jpg') 0 0 repeat;
+		background-size: 100% auto;
+		h2{
+			position: absolute;
+			top:8rem;
+			z-index: 10;
+			padding: 0 6rem;
+			img{
+				width: 100%;
+			}
+		}
+
+		.num_paging{
+			position: absolute;
+			bottom:10px;
+			width: 100%;
+			text-align: center;
+			padding: 1rem 0px;
+			a{
+				margin: 0 4px;
+				width: 13px;
+				height:13px;
+				background: #fff;
+				@include opacity(0.3);
+
+				&.on{
+					background: #fff;
+					border-color: #fff;
+					@include opacity(1);
+
+
+				}
+			}
+
+		}
+
+		.collection_cut{
+			overflow: hidden;
+			ul{
+				overflow: hidden;
+				li{
+					position: relative;
+					float: left;
+
+					img{
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	.prd_section{
+		text-align: center;
+		background: url("/images/reebok/about/clubc_diamond/bg.jpg") no-repeat;
+		background-size:100% 100%;
+		h3{
+			padding: 3.8rem 3.5rem 1.8rem;;
+			img{
+				width: 100%;
+			}
+		}
+		p{
+			padding: 0 1.5rem;
+			img{
+				width: 100%;
+			}
+		}
+		a.btn{
+			display: inline-block;
+			margin: 1.5rem 0 2rem;
+			padding: 0 3rem;
+			border:1px solid #000;
+			font:1.1rem/3rem 'NotosansKR','Nanum Gothic';
+		}
+		.prd{
+			margin: 0 1.5rem;
+			padding-bottom: 2rem;
+			a{
+				display: block;
+				padding-bottom: 1.2rem;
+				img{
+					width: 100%;
+				}
+			}
+
+		}
+	}
+
+
+}
+
+
+.about_campaign.about2l{
 	background: #5c5c5c url('/images/reebok/about/2l/bg.jpg') 0 0 repeat;
 
 	.video_visual{
@@ -2195,7 +2318,7 @@ footer#footer{
 
 }
 
-.about_camapign.kangsisters{
+.about_campaign.kangsisters{
 	background: #5c5c5c url('/images/reebok/about/kangsisters/bg.jpg') 0 0 repeat;
 
 	.video_visual{
@@ -2635,7 +2758,7 @@ footer#footer{
 
 }
 
-.about_camapign.clubc{
+.about_campaign.clubc{
 
 	.video_visual{
 		h2{
@@ -3373,7 +3496,359 @@ footer#footer{
 
 }
 
-.about_camapign{
+.about_campaign.zoku{
+	.main_section{
+		position: relative;
+
+		.bg{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top:0;
+			img{
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.title{
+			position: relative;
+			padding:3rem 4rem 3.5rem 4rem;
+			text-align: center;
+
+			.desc{
+				padding-bottom: 0.5rem;
+				font:1rem 'NotosansKR';
+				color:#fff;
+				letter-spacing: -0.5px;
+			}
+			a{
+				position: relative;
+				top:15px;
+				z-index: 10;
+				padding:0.8rem 3.8rem 1rem 3.8rem;
+				border:1px solid #fff;
+				color:#fff;
+				font:500 1.2rem/2rem  'NotoSansKRMedium','Nanum Gothic';
+			}
+			img{
+				padding-bottom: 1.5rem;
+				width: 90%;
+			}
+		}
+
+	}
+
+
+	.video_visual{
+		padding-bottom: 112.4375%;
+		.cover{
+			top:53%;
+		}
+		h2{
+			margin-bottom:0.4rem;
+			width:inherit;
+			height: inherit;
+			text-indent: 0;
+			background:none;
+			text-align: center;
+			color:#fff;
+			text-transform: uppercase;
+			font:5rem/5.3rem 'QStencil';
+			span{
+				font:2.5rem/3.5rem 'QStencil';
+				vertical-align: top;
+			}
+		}
+		.desc{
+			margin-bottom:1.5rem;
+			text-align: center;
+			color:#fff;
+			letter-spacing: 11px;
+			text-transform: uppercase;
+			font:300 1.7rem/1.3rem 'dinpro';
+		}
+		.desc_eng2{
+			text-align:center;
+			color:#fff;
+			padding-bottom:5%;
+			font:300 1.3rem/1.9rem 'NotoSansKRLight','Nanum Gothic';
+		}
+		.video-btn{
+			top:1.5rem;
+			margin:0 auto;
+		}
+	}
+
+
+	.collections{
+		position: relative;
+		padding: 1.8rem 0 2.8rem 0;
+		background: #5c5c5c url('/images/reebok/about/zoku/slider_bg.jpg') 100% 0 no-repeat;
+		background-size: cover;
+
+		.num{
+			width: 100%;
+			padding: 1rem 0px;
+			text-align: center;
+
+			a{
+				position: relative;
+				display: inline-block;
+				text-align: center;
+				width: 1.8rem;
+				margin-right: 0.8rem;
+				padding-top: 1px;
+				color:#fff;
+				border:1px solid #fff;
+				font:1.4rem/1.8rem 'reefont-condensed';
+				border-radius: 50px;
+				-webkit-border-radius: 50px;
+			}
+			a:last-child{
+				margin-right: 0;
+			}
+
+			.on{
+				background: #fff;
+				color: #000;
+				font-weight: bold;
+
+			}
+		}
+		.navi{
+			position: absolute;
+			top:50%;
+			margin-top: -16.5px;
+			width: 100%;
+			text-align: center;
+			img{
+				width: 50%;
+			}
+			.next{
+				position: absolute;
+				right:0;
+				text-align: right;
+			}
+			.prev{
+				position: absolute;
+				left:0;
+				text-align: left;
+			}
+		}
+		.collection_cut{
+			overflow: hidden;
+			ul{
+				overflow: hidden;
+				li{
+					position: relative;
+					float: left;
+					text-align: center;
+					img{
+						width: 86%;
+					}
+					.txt{
+						text-align: center;
+						width: 88%;
+						display: block;
+						padding:2.6rem 2rem 2.5rem 2rem;
+						p.main{
+							text-align: center;
+							color:#fff;
+							font:2.5rem 'dinpro';
+							letter-spacing: 2px;
+						}
+						p.desc{
+							padding-bottom: 2rem;
+							text-align: center;
+							color:#fff;
+							font:1.5rem 'dinpro';
+
+						}
+						a{
+							position: relative;
+							z-index: 10;
+							padding:0.8rem 3.8rem 1rem 3.8rem;
+							border:1px solid #fff;
+							color:#fff;
+							font:500 1.2rem/2rem  'NotoSansKRMedium','Nanum Gothic';
+						}
+					}
+				}
+			}
+		}
+		.num_paging{
+			width: 91.2%;
+			padding-bottom: 5rem;
+		}
+		.prodlist_wrap{
+			position: relative;
+
+			.prodlist{
+				position: absolute;
+				top: 0;
+				left: 0;
+				padding: 0;
+				opacity: 0;
+				transition:opacity 0.3s;
+				-webkit-transition:opacity 0.3s;
+				z-index: 1;
+
+				.tit{
+					height: 1.4rem;
+					overflow: hidden;
+					display: -webkit-box;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space:normal;
+					-webkit-line-clamp:1;
+					-webkit-box-orient: vertical;
+				}
+			}
+
+			.active{
+				opacity: 1;
+				z-index: 2;
+			}
+			.fake{
+				position: relative;
+				opacity: 0;
+				visibility: hidden;
+			}
+
+		}
+	}
+	.collections2{
+		padding: 0 1.5rem 1.5rem;
+		background: url('/images/reebok/about/zoku/gal_bg.jpg') 0 no-repeat;
+		background-size: 100% 100%;
+
+		h3{
+			padding: 2.5rem 0px 1rem;
+			color: #fff;
+			font:2.5rem/3rem 'dinpro';
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		.num_paging{
+			padding: 1rem 0px;
+			.on{
+				background: #fff;
+				color: #000;
+				border-color: #fff;
+			}
+		}
+
+		.collection_cut{
+			position: relative;
+			overflow: hidden;
+			ul{
+				overflow: hidden;
+				li{
+					position: relative;
+					float: left;
+					img{
+						width: 100%;
+					}
+				}
+			}
+			.navi{
+				position: absolute;
+				top:50%;
+				margin-top: -16.5px;
+				width: 100%;
+				text-align: center;
+				img{
+					width: 50%;
+				}
+				.next{
+					position: absolute;
+					right:0;
+					text-align: right;
+					img{
+						width: 40%;
+						margin-right: 1rem;
+					}
+				}
+				.prev{
+					position: absolute;
+					left:0;
+					text-align: left;
+					img{
+						width: 40%;
+						margin-left: 1rem;
+					}
+				}
+			}
+		}
+		.prodlist_wrap{
+			position: relative;
+			padding-bottom: 190%;
+
+			.prodlist{
+				position: absolute;
+				top: 63px;
+				left: 0;
+				padding: 0;
+				opacity: 0;
+				transition:opacity 0.3s;
+				-webkit-transition:opacity 0.3s;
+				z-index: 1;
+				h4{
+					position: absolute;
+					top:-3.5rem;
+					width: 100%;
+					text-align: center;
+					img{
+						width: 77%;
+					}
+				}
+				.box{
+					.inner{
+						padding-right: 5px;
+						padding-left: 5px;
+						.info{
+							padding:20px 0 30px 12px;
+						}
+					}
+				}
+				.box:nth-child(2n){
+					.inner{
+						padding-right: 5px;
+						padding-left: 5px;
+					}
+
+				}
+				.tit{
+					height: 1.4rem;
+
+					display: -webkit-box;
+					// overflow: hidden;
+					// overflow: hidden;
+					// text-overflow: ellipsis;
+					// white-space:normal;
+					// -webkit-line-clamp:1;
+					// -webkit-box-orient: vertical;
+				}
+			}
+
+			.active{
+				opacity: 1;
+				z-index: 2;
+			}
+			.fake{
+				position: relative;
+				opacity: 0;
+				visibility: hidden;
+			}
+
+		}
+	}
+
+
+}
+
+.about_campaign{
 	&.heritage{
 		.video_visual{
 			h2{
