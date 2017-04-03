@@ -81,6 +81,19 @@
 			};
 
 			$(document).ready(function(){
+
+				// 툴팁소스
+				$('.tooltip_btn').bind('click',function(event){
+					$(this).addClass('on');
+					$(this).find('.tooltip-box').addClass('active');
+				});
+
+				$('.tooltip_btn .close_x_btn').bind('click',function(event){
+					event.stopPropagation();
+					$(this).parent().parent().removeClass('active');
+					$('.tooltip_btn').removeClass('on');
+				});
+
 				w = $(window).width();
 				$('#prod_detail_cut li').css({width:w});
 
@@ -179,7 +192,7 @@
 				});
 
 
-				// 170322 당일배송 상단 바 롤링 / 클릭 스크립트
+				// 170322 스피드 배송 상단 바 롤링 / 클릭 스크립트
 				(function(){
 					var index = 0;
 					var length = $('.notice_tits>a').length;
@@ -214,17 +227,18 @@
 						$(this).parent().parent().hide();
 					});
 				})();
-				// 170322 당일배송 상단 바 스크립트 끝
+				// 170322 스피드 배송 상단 바 스크립트 끝
 
 
 				/*
 				170322
-				디자인 확인을 위한 당일배송 주소찾기 레이어 뜨는 임시 버튼
+				디자인 확인을 위한 스피드 배송 주소찾기 레이어 뜨는 임시 버튼
 
 				*/
 				$('.address_edit').bind('click',function(){
 					$('#layerpopup-zipfinder').show();
 					$('#wrap').hide();
+
 				});
 
 				$('#layerpopup-zipfinder .close_x_btn').bind('click',function(){
@@ -242,7 +256,7 @@
 
 <body>
 
-	<!-- 170322 START 당일배송 교환/환불 안내팝업 -->
+	<!-- 170322 START 스피드 배송 교환/환불 안내팝업 -->
 	<div class="layerpopup popup_oneday_exchange">
 		<div class="header">
 			<a href="javascript:void(0)" class="close_x_btn"></a>
@@ -252,14 +266,11 @@
 				<img src="/images/reebok/ico_exch_pop.png" alt="">
 			</div>
 			<h2>교환/환불은 이렇게</h2>
-			<div>
-
-			</div>
 
 		</div>
 	</div>
 
-	<!-- 170322 START 당일배송 오픈 안내팝업 -->
+	<!-- 170322 START 스피드 배송 오픈 안내팝업 -->
 	<div class="layerpopup popup_oneday_open">
 		<div class="header">
 			<a href="javascript:void(0)" class="close_x_btn"></a>
@@ -268,10 +279,28 @@
 			<div class="ico">
 				<img src="/images/reebok/ico_truck_pop.png" alt="">
 			</div>
-			<h2>당일배송 서비스 오픈</h2>
-			<div>
-				당일배송 안내
-			</div>
+			<h2>스피드 배송 서비스 오픈</h2>
+			<p class="bold">
+	          SPEEDY DELIVERY(스피드 배송)란? <br>
+	          상품상세 페이지에 <span class="ico_car"></span> 표시가 된 상품을<br>
+	          저녁 6시부터 다음 날 오전 9시까지 주문 후<br>
+	          결제 완료된 <span class="ico_car"></span> 상품에 한하여 다음날 또는<br>
+	          당일까지 빠르게 배송해 드리는 서비스 입니다.
+	        </p>
+	        <p>
+	            배송지 기준으로 서울 및 수도권 <br>
+	          인근지역(일부지역 제외)에 한하여 진행 됩니다.<br>
+	          빠르고 안전한 배송을 위해 박스 규격은<br>
+	          가로/세로/높이의 합이 80cm 이내이며,<br>
+	          총 주문 수량은 3개로 제한 됩니다. (단, 신발은 2개만 가능)<br>
+	          기타 SPEEDY DELIVERY(스피드 배송) 관련 자세한 안내는<br>
+	          FAQ를 참고해주시기 바랍니다.
+	          <br>
+	          <br>
+	          <br>
+	          <br>
+	          <br>
+			</p>
 		</div>
 	</div>
 
@@ -926,10 +955,10 @@
 					</div>
 				</div>
 
-				<!-- 170322 당일배송 안내 바 -->
+				<!-- 170322 스피드 배송 안내 바 -->
 				<div class="notice_tits" style="display: block;">
 					<a class="b1 on" style="display: block;" href="javascript:void(0)">
-						<div><span class="ico"></span>당일배송 서비스 오픈</div>
+						<div><span class="ico"></span>스피드 배송 서비스 오픈</div>
 					</a>
 					<a class="b2" href="javascript:void(0)">
 						<div><span class="ico"></span>온라인 한정상품을 만나보세요</div>
@@ -973,7 +1002,7 @@
 								<span class="oo_label"><img src="/images/reebok/bg_oo_label.png" alt=""/></span>
 							 	-->
 
-								<!-- 170322 당일배송 제품 -->
+								<!-- 170322 스피드 배송 제품 -->
 								<span class="oo_label"><img src="/images/reebok/bg_oneday_label.png" alt=""/></span>
 							</div>
 							<!-- //150302 -->
@@ -1233,10 +1262,24 @@
 						<!-- //prd_btn_area -->
 					</div>
 					<!-- //prod_info2 -->
-
+					<!-- 17070403 스피드배송 안내 -->
 					<div class="today_delivery">
 						<div class="ico_car"></div>
-						<p class="icons aft" data-icon="">도착예정일 - 2월 27일 월요일</p>
+						<p class="">도착예정일 - 2월 27일 월요일
+							<!-- 20170403 툴팁 추가 -->
+							<em class="icons bef tooltip_btn detail_speedy" data-icon="">
+								<span class="tooltip-box">
+									<span class="tooltip-contents">
+										<a href="javascript:void(0)" class="close_x_btn"></a>
+										<span><strong>SPEEDY DELIVERY (스피드 배송)</strong> <br>
+											빠르고 안전한 배송을 위해 박스 규격은
+											가로/세로/높이의 합이 80cm 이내이며,
+											한 주문 건당 수량은 3개로 제한 됩니다.
+											(단, 신발은 2개만 가능)</span>
+									</span>
+								</span>
+							</em>
+						</p>
 						<p class="deli_txt">지금 주문 시, 서울 서초구 기준</p>
 						<a href="#" class="address_edit">
 							<span class="icons aft" data-icon="">지역변경</span>
@@ -3523,18 +3566,18 @@
 </section>
 
 
-	<!-- 170322 당일배송 주소 찾기
+	<!-- 170322 스피드 배송 주소 찾기
 	(바뀌었다는 부분을 보여주기 위한 테스트 소스입니다. 참고하세요.) -->
 	<div class="layerpopup layerpopup_zipfinder" id="layerpopup-zipfinder">
 		<div class="header">
 			<!-- 170322 제목 변경 -->
-			<h2>당일배송 가능지역 찾기</h2>
+			<h2>스피드 배송 가능지역 찾기</h2>
 			<a href="javascript:void(0)" id="close-modal" class="close_x_btn"></a>
 		</div>
 		<div class="contents">
 			<div class="search_wrap">
 				<!-- 170322 문구추가 -->
-				<p style="font: 1.15rem 'NotoSansKR';color: #555;letter-spacing: -0.5px;margin-bottom: 15px;">당일 배송은 서울 및 일부 수도권 지역 배송시 가능합니다.</p>
+				<p style="font: 1.15rem 'NotoSansKR';color: #555;letter-spacing: -0.5px;margin-bottom: 15px;">스피드 배송은 서울 및 일부 수도권 지역 배송시 가능합니다.</p>
 				<div class="inner">
 					<div class="input_wrap">
 						<div class="icons" data-icon=""></div>

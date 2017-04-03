@@ -719,13 +719,30 @@
 					<a href="javascript:void(0)" class="icons add_cart" data-icon=""></a>
 				</div>
 				<!-- //buy_btn -->
-        <!-- 170322 당일배송정보 추가 -->
+        <!-- 170403 당일배송정보 추가 -->
         <div class="today_delivery">
           <em class="icons bef" data-icon=""></em>
-          <a href="javascript:void(0)" class="btn_today_deli_pop">
-            <span class="icons aft deli_txt" data-icon="">도착예정일 - 2월 27일 월요일</span>
+          <a href="javascript:void(0)" class="">
+            <span class=" deli_txt" >
+                도착예정일 - 2월 27일 월요일
+            </span>
+
             <span class="deli_txt_s">지금 주문 시, 서울 서초구 기준</span>
           </a>
+          <!-- 20170403 툴팁 추가 -->
+          <em class="icons bef tooltip_btn prd_speedy" data-icon="">
+              <span class="tooltip-box">
+                  <span class="tooltip-contents">
+                  <a href="javascript:void(0)" class="close_x_btn"></a>
+                  <p>
+                      <strong class="title">SPEEDY DELIVERY (스피드 배송)</strong> <br>
+                      빠르고 안전한 배송을 위해 박스 규격은
+                      가로/세로/높이의 합이 80cm 이내이며,
+                      한 주문 건당 수량은 3개로 제한 됩니다.
+                      (단, 신발은 2개만 가능)</span>
+                  </p>
+              </span>
+          </em>
           <a href="#" class="icons aft address_edit btn_today_deli_pop" data-icon="">
             지역변경
           </a>
@@ -2620,14 +2637,14 @@
   <!-- 170322 today_delivery locationPop -->
   <div class="layerpopup layerpopup_zipfinder layerpopup_today_delivery" id="layerpopup-zipfinder" style="display: none;">
   	<div class="header">
-  		<h2>당일 배송 가능 지역 찾기</h2>
+  		<h2>스피드 배송 가능 지역 찾기</h2>
   		<a href="javascript:void(0)" class="close_x_btn"></a>
   	</div>
   	<div class="contents">
 
 
       <div class="search_wrap">
-        <div class="desc">당일 배송은 서울 및 일부 수도권 지역 배송시 가능합니다.</div>
+        <div class="desc">스피드 배송은 서울 및 일부 수도권 지역 배송시 가능합니다.</div>
   			<div class="inner">
   				<div class="input_wrap">
   					<div class="icons" data-icon=""></div>
@@ -2832,7 +2849,27 @@
       <div class="bg"></div>
       <div class="main_icon"><span class="icons aft" data-icon=""></span></div>
       <h2>스피드 배송 서비스 오픈!</h2>
-      <div style="font:1.2rem/1.2rem 'NotoSansKRRegular'">SPEEDY DELIVERY(스피드 배송)란?<br/>상품상세 페이지에              표시가 된 상품을<br/>저녁 6시부터 다음 날 오전 9시까지 주문 후<br/>결제 완료된              상품에 한하여 다음날 또는<br/>당일까지 빠르게 배송해 드리는 서비스 입니다. </div>
+      <p class="bold">
+        SPEEDY DELIVERY(스피드 배송)란? <br>
+        상품상세 페이지에 <span class="icons aft" data-icon=""></span> 표시가 된 상품을<br>
+        저녁 6시부터 다음 날 오전 9시까지 주문 후<br>
+        결제 완료된 <span class="icons aft" data-icon=""></span> 상품에 한하여 다음날 또는<br>
+        당일까지 빠르게 배송해 드리는 서비스 입니다.
+      </p>
+      <p>
+          배송지 기준으로 서울 및 수도권 <br>
+        인근지역(일부지역 제외)에 한하여 진행 됩니다.<br>
+        빠르고 안전한 배송을 위해 박스 규격은<br>
+        가로/세로/높이의 합이 80cm 이내이며,<br>
+        총 주문 수량은 3개로 제한 됩니다. (단, 신발은 2개만 가능)<br>
+        기타 SPEEDY DELIVERY(스피드 배송) 관련 자세한 안내는<br>
+        FAQ를 참고해주시기 바랍니다.
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </p>
 
     </div>
   </div>
@@ -2916,6 +2953,18 @@
   <script type="text/javascript">
 		(function($){
 			$(document).ready(function() {
+
+                $('.tooltip_btn').bind('click',function(event){
+					$(this).addClass('on');
+					$(this).find('.tooltip-box').addClass('active');
+				});
+
+				$('.tooltip_btn .close_x_btn').bind('click',function(event){
+					event.stopPropagation();
+					$(this).parent().parent().removeClass('active');
+					$('.tooltip_btn').removeClass('on');
+				});
+
 				var storePopTimer = setTimeout(function(){
 					$('#prod_now').fadeOut();
 				},10000);

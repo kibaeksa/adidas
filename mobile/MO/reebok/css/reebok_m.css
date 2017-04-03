@@ -2827,7 +2827,7 @@ section#header .notice_tits>a.b3 .ico{
 }
 
 #contents .detail .today_delivery a.address_edit{
-	width: 100%;
+	width: 25%;
 	height: 100%;
 	text-align: right;
 	position: absolute;
@@ -3011,7 +3011,7 @@ div.prod_manual p.desc strong{color:#3e3e3e;font-size:11px;letter-spacing:-1px;}
 
 /* Oneday delivery (Using in Cart / Payment page )*/
 #contents .oneday_deliv_noti{
-
+	position: relative;
 }
 
 #contents .oneday_deliv_noti .box{
@@ -3024,9 +3024,13 @@ div.prod_manual p.desc strong{color:#3e3e3e;font-size:11px;letter-spacing:-1px;}
 	color: #ab2328;
 }
 
+#contents .oneday_deliv_noti .box p{
+	/*position: relative;*/
+}
+
 #contents .oneday_deliv_noti .box strong{
 	text-align: center;
-	font:1.1rem/1.1rem 'NotoSansKRBold';
+	font:1rem/1.1rem 'NotoSansKRBold';
 	letter-spacing:-0.75px;
 }
 
@@ -3053,7 +3057,115 @@ div.prod_manual p.desc strong{color:#3e3e3e;font-size:11px;letter-spacing:-1px;}
 	background: #ab2328;
 	text-align: center;
 	color: #fff;
-	font:1rem/1rem 'NotoSansKRRegular';
+	font:1rem/1.5rem 'NotoSansKRRegular';
+}
+
+/*tooltip*/
+#contents .m_contents.order_wrt .oneday_deliv_noti .box p .tooltip_btn{
+}
+
+#contents .m_contents.order_wrt .oneday_deliv_noti .box p .tooltip_btn{
+	font: 1.2rem 'NotosansKR';
+    color: #000;
+}
+
+.tooltip-box.active{
+	display: block !important;
+}
+
+.cart_speedy .tooltip-box{
+	position: absolute;
+	top: 45px;
+}
+.detail_speedy .tooltip-box{
+	position: absolute;
+	top: 73px;
+}
+
+.tooltip-box{
+	width: 100%;
+    padding: 15px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 30;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.tooltip-box:before{
+	content: '';
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 116px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    z-index: 1;
+    background: #fff;
+}
+
+.tooltip-box .tooltip-contents{
+	width: 100%;
+	display: block;
+	position: relative;
+	padding: 15px 40px 15px 15px;
+	background: #fff;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	font-size: 12px;
+	line-height: 16px;
+	border: 1px solid #ccc;
+	box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+	box-shadow: 2px 2px 10px rgba(144, 144, 144, 0.4);
+	text-align: left;
+}
+
+.tooltip-box .tooltip-contents span{
+	font: 0.9rem/1.4rem 'Dotum';
+	color: #888;
+	text-align: left;
+	letter-spacing: -1px;
+}
+
+.tooltip-box .tooltip-contents span strong{
+	display: inline-block;
+	padding-bottom: 1rem;
+    font: 1.2rem/1.3rem 'NotoSansKR';
+    color: #333;
+    letter-spacing: 0.3px;
+}
+
+.tooltip-box .close_x_btn{
+	width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.tooltip_btn.cart_speedy .tooltip-box:before{
+	left:50%;
+	margin-left: 130px;
+}
+.tooltip_btn.detail_speedy .tooltip-box:before{
+	left:50%;
+	/*margin-left: 130px;*/
+}
+@media (max-width:320px){
+	.tooltip_btn.cart_speedy .tooltip-box:before{
+		margin-left: 120px;
+	}
+}
+.tooltip_btn.cart_speedy:before{
+	color: #ab2328;
 }
 
 /* 주문서 작성 */
@@ -4832,6 +4944,31 @@ footer#footer.footer-update .f_logo img{
 	font:2.4rem/2.4rem 'NotoSansKRBold';
 	text-align: center;
 	letter-spacing:-0.5px;
+}
+
+.layerpopup.popup_oneday_open .contents p{
+	padding: 0 1.5rem 2rem;
+    text-align: center;
+    font: 1.1rem/1.9rem 'NotosansKRLight';
+}
+.layerpopup.popup_oneday_open .contents p.bold{
+	font: 800 1.3rem/2.1rem 'NotosansKRRegular';
+}
+
+.layerpopup.popup_oneday_open .contents p.bold span{
+	font: 800 2rem/2.1rem 'NotosansKRRegular';
+	vertical-align: middle;
+}
+
+.layerpopup.popup_oneday_open .contents p span.ico_car{
+	width: 18px;
+    height: 14px;
+    margin-right: 3px;
+    display: inline-block;
+    background: url(../../../images/reebok/ico_truck_dark.png) 0 0 no-repeat;
+    vertical-align: middle;
+    -webkit-background-size: 18px auto;
+    background-size: 18px auto;
 }
 
 .layerpopup.popup_oneday_exchange .contents .ico,

@@ -457,7 +457,7 @@
 
 			<div class="cart_tit clearfix">
 				<h2>장바구니
-					<span class="icons" data-icon="">
+					<span class="icons tooltip_btn" data-icon="">
 						<div class="tooltip-box">
 							<div class="tooltip-contents">
 								<a href="javascript:void(0)" class="close_x_btn"></a>
@@ -469,7 +469,6 @@
 							</div>
 						</div>
 						<!-- //tooltip-box -->
-
 					</span>
 				</h2>
 				<span>총 <strong>2</strong>개 상품</span>
@@ -477,7 +476,28 @@
       <div class="today_delivery_notice">
         <div class="day_info">
           <em class="icons bef" data-icon=""></em>
-          <span class="icons aft" data-icon="">당일배송은 주문당 3개로 제한 <small>(신발은 2개)</small></span>
+          <span>
+              스피드 배송은 주문당 3개로 제한
+              <small>(신발은 2개)</small>
+              
+              <!-- 20170403 툴팁 추가 -->
+              <em class="icons bef tooltip_btn cart_speedy" data-icon="">
+                  <div class="tooltip-box">
+                      <div class="tooltip-contents">
+                          <a href="javascript:void(0)" class="close_x_btn"></a>
+                          <p class="title">SPEEDY DELIVERY (스피드 배송)</p>
+                          <p>
+                            빠르고 안전한 배송을 위해 박스 규격은
+                            가로/세로/높이의 합이 80cm 이내이며,
+                            한 주문 건당 수량은 3개로 제한 됩니다.
+                            (단, 신발은 2개만 가능)
+                          </p>
+                      </div>
+                  </div>
+              </em>
+
+          </span>
+
         </div>
       </div>
 			<div class="utils">
@@ -748,16 +768,17 @@
 		(function($){
 			$(document).ready(function() {
 
-				$('.cart_tit>h2>.icons').bind('click',function(event){
-					$('.cart_tit>h2>.icons').addClass('on');
+				$('.tooltip_btn').bind('click',function(event){
+					$(this).addClass('on');
 					$(this).find('.tooltip-box').addClass('active');
 				});
 
-				$('.cart_tit>h2>.icons .tooltip-box .close_x_btn').bind('click',function(event){
+				$('.tooltip_btn .close_x_btn').bind('click',function(event){
 					event.stopPropagation();
 					$(this).parent().parent().removeClass('active');
-					$('.cart_tit>h2>.icons').removeClass('on');
+					$('.tooltip_btn').removeClass('on');
 				});
+
 
 			});
 		})(jQuery);

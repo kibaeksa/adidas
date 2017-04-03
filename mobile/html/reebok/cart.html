@@ -509,8 +509,25 @@
 						<div class="box">
 							<p>
 								<span class="ico_car"></span>
-								<strong>당일 배송은 주문당 3개로 제한 <span>(신발은 2개)</span></strong>
-								<span class="icons" data-icon=""></span>
+								<strong>스피드 배송은 주문당 3개로 제한 <span>(신발은 2개)</span></strong>
+
+								<!-- 20170403 툴팁 추가 -->
+								<em class="icons bef tooltip_btn cart_speedy" data-icon="">
+
+									<span class="tooltip-box">
+										<span class="tooltip-contents">
+											<a href="javascript:void(0)" class="close_x_btn"></a>
+
+											<span><strong>SPEEDY DELIVERY (스피드 배송)</strong> <br>
+												빠르고 안전한 배송을 위해 박스 규격은
+					                            가로/세로/높이의 합이 80cm 이내이며,
+					                            한 주문 건당 수량은 3개로 제한 됩니다.
+					                            (단, 신발은 2개만 가능)</span>
+
+										</span>
+									</span>
+									<!-- //tooltip-box -->
+								</em>
 							</p>
 						</div>
 					</div>
@@ -732,7 +749,27 @@
 
 	</seciton>
 	<!-- //wrap -->
+	<script type="text/javascript">
+		(function($){
 
+			$(document).ready(function() {
+
+				$('.tooltip_btn').bind('click',function(event){
+					$(this).addClass('on');
+					$(this).find('.tooltip-box').addClass('active');
+				});
+
+				$('.tooltip_btn .close_x_btn').bind('click',function(event){
+					event.stopPropagation();
+					$(this).parent().parent().removeClass('active');
+					$('.tooltip_btn').removeClass('on');
+				});
+
+
+			});
+		})(jQuery);
+
+	</script>
 </body>
 
 </html>
