@@ -2157,8 +2157,46 @@ section#header .notice_tits>a.b3 .ico{
 }
 #contents .main_contents #main_cnt4 .sprt_ctgr li:last-child{border-right-width:0px;}
 
-#contents .prodlist_type1{position:relative;}
+#contents .prodlist_type1 .link_oneday_deliv a,
+#contents .prodlist_type2 .link_oneday_deliv a{
+	display: block;
+	padding:13px 0 10px;
+	background: #ab2328;
+	text-align: center;
+	color: #fff;
+	font-size: 1.05rem;
+	line-height: 1.05rem;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
 
+#contents .prodlist_type1 .link_oneday_deliv a>*,
+#contents .prodlist_type2 .link_oneday_deliv a>*{
+	vertical-align: middle;
+    margin: 0 2px;
+}
+
+#contents .prodlist_type1 .link_oneday_deliv a .ico_car,
+#contents .prodlist_type2 .link_oneday_deliv a .ico_car{
+	position:relative;
+	top:-1px;
+	vertical-align: middle;
+    margin: 0 2px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: #ab2328 url(/images/reebok/ico_truck.png) center center no-repeat;
+	-webkit-background-size: 18px auto;
+	background-size: 18px auto;
+}
+
+#contents .prodlist_type1 .link_oneday_deliv a .ico_arrow,
+#contents .prodlist_type2 .link_oneday_deliv a .ico_arrow{
+	position: relative;
+	top: -1px;
+}
+
+#contents .prodlist_type1{position:relative;}
 #contents .prodlist_type1 .prod_tab{height:50px;}
 #contents .prodlist_type1 .prod_tab li{width:50%;height:50px;float: left;}
 #contents .prodlist_type1 .prod_tab li a{
@@ -4112,7 +4150,8 @@ footer#footer.footer-update address{background: #000;}
 footer#footer.footer-update address .inner p{text-align: center;color:#888;line-height: 2rem; letter-spacing: -1px; font: 1.1rem/2.2rem 'NotoSansKRRegular';}
 footer#footer.footer-update address .inner p strong{font-weight: bold; color:#ccc;}
 footer#footer.footer-update address .inner .f_url{padding-top: 2rem;}
-footer#footer.footer-update address .inner .f_url p a{color:#ccc; font:1.1rem/2.2rem 'NotoSansKRLight';}
+footer#footer.footer-update address .inner .f_url p a{color:#999; font:1.1rem/2.2rem 'NotoSansKRLight';}
+footer#footer.footer-update address .inner .f_url p a strong{color: #fff;font:1.1rem/2.2rem 'NotoSansKRLight';}
 footer#footer.footer-update address .inner .f_url .f_logo{padding:3rem 0 1.5rem 0;}
 footer#footer.footer-update .line{
 	position: relative;

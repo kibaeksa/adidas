@@ -240,6 +240,17 @@
 			});
 			// 161213 end
 
+
+
+
+
+			/* 170401 툴팁 */
+		   $('.oneday_deliv_noti>div>.box>.ico_noti').hover(function(){
+			   $(this).find('.tooltip-layer').show();
+		   },function(){
+			   $(this).find('.tooltip-layer').hide();
+		   })
+
 		});
 
 	})(jQuery);
@@ -1440,16 +1451,51 @@
 												<span class="spt_bg"></span>마이아디다스 상품은 해외에서 국내로 직배송 되는 상품입니다.<br/>배송 받으실 주소 확인 후 반드시 정확한 주소를 입력해주세요.
 											</div>
 											 -->
-											<!-- 170322 당일배송 내용안내 -->
+											<!-- 170401 스피드배송 수정 -->
 											<div class="oneday_deliv_noti">
 												<div>
-													<p><span class="spt_bg ico_car"></span>지금 주문 시 도착예정일은 2월 27일 월요일입니다.<span class="spt_bg"></span></p>
+													<div class="box">
+														<div class="spt_bg ico_car"></div>
+														스피드 배송상품은 지금 주문 시 도착예정일은 2월 27일 월요일입니다.
+														<div class="spt_bg ico_noti">
+															<div class="tooltip-layer" style="display: none;">
+				                                                <div class="tooltip-contents">
+				                                                    <p class="tit">SPEEDY DELIVERY(스피드 배송) 유의사항 </p>
+																	<div class="desc">SPEEDY DELIVERY(스피드 배송) 의 주문시간 기준은 <br/>최종 결제완료시간이며, 무통장 입금 주문은 입금확인완료 시간을 <br/>기준으로 합니다. 또한, 아래와 같은 사항에 따라 <br/>SPEEDY DELIVERY 서비스가 불가능한 경우가 있을 수 있사오니 <br/>참고하시기 바랍니다.</div>
+				                                                    <ul class="li-dot">
+				                                                        <li>
+				                                                            <div class="bul"></div>
+				                                                            Super weekend 이벤트/프로모션, 온라인 래플 이벤트, 리미티드 에디션 판매, <br/>
+																			성수기, 명절, 천재지변, 당사의 사정으로 인하여 SPEEDY DELIVERY <br/>
+																			(스피드 배송) 서비스가 불가함을 사전 공지를 한 경우
+				                                                        </li>
+				                                                        <li>
+				                                                            <div class="bul"></div>
+				                                                            상품불량, 누락, 오 배송으로 인한 고객의 교환 요청의 건
+				                                                        </li>
+				                                                        <li>
+				                                                            <div class="bul"></div>
+				                                                            상품 출고 이후 고객의 요청을 통한 배송정보 변경 및 연락 불가로 인한 반송,<br/>배송지연의 경우
+				                                                        </li>
+																		<li>
+																			<div class="bul"></div>
+																			비회원 주문
+																		</li>
+																		<li>
+																			<div class="bul"></div>
+																			주문 폭주로 인한 재고부족의 경우, 해당 주문 건은 <br/>SPEEDY DELIVERY(스피드 배송) 에서 제외됩니다.
+																		</li>
+				                                                    </ul>
+				                                                </div>
+				                                            </div>
+														</div>
+													</div>
 												</div>
 												<div class="noti_not_case">
-													당일 배송 제외 상품이 포함되어 있습니다. 해당 상품은 분리배송됩니다.
+													스피드 배송 제외 상품이 포함되어 있습니다. 해당 상품은 분리배송됩니다.
 												</div>
  											</div>
-											<!-- //170322 END -->
+											<!-- //170401 END -->
 											<div class="row clfix">
 												<div class="col_head">주문자 이름*</div>
 												<div class="col_body">

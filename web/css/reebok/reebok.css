@@ -168,6 +168,34 @@ span.price span.sale span.won{color:#e4000f;}
 .oo_label.size90{width:90px;}
 .oo_label img{width:100%;}
 
+
+/* Tooltip layer */
+.tooltip-layer{
+	 position: absolute;
+	 top: -20px;
+	 left: 20px;
+	 display: none;
+	 z-index: 50;
+}
+
+.tooltip-layer .arrow{
+	width: 9px !important;
+	height: 14px !important;
+	background-position: -290px -120px !important;
+	position: absolute;
+	top: 50%;
+	left: -7px;
+	margin-top: -7px;
+}
+
+.tooltip-layer .tooltip-contents{
+	background: #fff;
+	padding: 12px 15px;
+	border: 1px solid  #ccc;
+	-webkit-box-shadow: 0 6px 12px rgba(68,68,68,0.1);
+	box-shadow: 0 6px 12px rgba(68,68,68,0.1);
+}
+
 /* button customize */
 .btn-ctm{
 	height: 46px;
@@ -3374,7 +3402,7 @@ iframe.ie6_select1 {position:absolute; bottom:-3px;left:-3px; z-index:99;width:2
 
 div.contents_prodorder {width:890px; overflow:hidden; position:relative;background:#fff;}
 
-div.prod_order {width:890px; height:540px; position:relative; margin-bottom:24px; border-top:0px solid #dfdfdf;}
+div.prod_order{width:890px; height:540px; position:relative; margin-bottom:24px; border-top:0px solid #dfdfdf;}
 div.prod_order div.prod_box {width:470px; height:520px; position:absolute; top:19px; left:20px; z-index:10;}
 div.prod_order div.prod_box p {width:445px; height:445px;}
 div.prod_order div.prod_box p img {width:445px; height:445px;}
@@ -3560,7 +3588,7 @@ div.prod_list div.imglist2 ul li p.price span {width:95px; height:15px; display:
 
 
 /* 새로 싹 바뀐거 120326 */
-div.prod_order2 {width:890px; height:570px; position:relative;border-top:0px solid #dfdfdf;}  /* KKB */
+div.prod_order2 {width:890px;position:relative;background: #fff url('//image.reebok.co.kr/images/reebok/common/grid_prod_info.gif') 509px 0 repeat-y;}
 *:first-child+html div.prod_order2{position:static;}
 div.prod_order2 div.prod_box {width:470px; height:520px; position:absolute; top:19px; left:20px; z-index:10;}
 div.prod_order2 div.prod_box p {width:445px; height:445px;}
@@ -3578,11 +3606,11 @@ div.prod_order2 div.prod_box #zoom iframe.ie6_select_3 {position:absolute;top:36
 
 
 
-div.prod_order2 div.prod_box div.imglist {width:468px; height:61px; position:absolute; bottom:0px; left:0px;text-align:center;}  /* KKB */
-div.prod_order2 div.prod_box div.imglist a {width:59px; height:59px; display:inline-block;border:1px solid #dddddd;margin:0 5px 0 0;position:relative;} /* KKB */
-div.prod_order2 div.prod_box div.imglist a:hover {border:1px solid #ef3f4d;}  /* KKB */
-div.prod_order2 div.prod_box div.imglist a.selected {width:59px; height:59px; border:1px solid #ef3f4d;}  /* KKB */
-div.prod_order2 div.prod_box div.imglist a.selected:hover {border:1px solid #ef3f4d;} /* KKB */
+div.prod_order2 div.prod_box div.imglist {width:468px; height:61px; position:absolute; bottom:0px; left:0px;text-align:center;}
+div.prod_order2 div.prod_box div.imglist a {width:59px; height:59px; display:inline-block;border:1px solid #dddddd;margin:0 5px 0 0;position:relative;}
+div.prod_order2 div.prod_box div.imglist a:hover {border:1px solid #ef3f4d;}
+div.prod_order2 div.prod_box div.imglist a.selected {width:59px; height:59px; border:1px solid #ef3f4d;}
+div.prod_order2 div.prod_box div.imglist a.selected:hover {border:1px solid #ef3f4d;}
 div.prod_order2 div.prod_box div.imglist a img {margin:1px;}
 div.prod_order2 div.prod_box div.imglist a .olt_lb{width:15px;height:15px;position:absolute;top:0;left:0;}
 div.prod_order2 div.prod_box div.imglist a .olt_lb img{width:100%;}
@@ -3594,16 +3622,16 @@ div.prod_order2 div.prod_box div.imglist span.pre img {margin:18px 0 18px 2px;}
 div.prod_order2 div.prod_box div.imglist span.next img {margin:18px 0 18px 2px;}
 
 
-div.contents_prodorder div.info_box2 {width:850px; height:39px;padding:20px 20px 0;border-bottom:1px solid #eaeaea;}  /*KKB*/
-div.contents_prodorder div.info_box2 h4{float:left;color:#000;line-height:20px;font:bold 20px 'Dotum',dotum;}  /*KKB*/
-div.contents_prodorder div.info_box2 div.social{float:right;}  /*KKB*/
-div.contents_prodorder div.info_box2 div.social li{float:left;margin-right:6px;}  /*KKB*/
+div.contents_prodorder div.info_box2 {width:850px; height:39px;padding:20px 20px 0;border-bottom:1px solid #eaeaea;}
+div.contents_prodorder div.info_box2 h4{float:left;color:#000;line-height:20px;font:bold 20px 'Dotum',dotum;}
+div.contents_prodorder div.info_box2 div.social{float:right;}
+div.contents_prodorder div.info_box2 div.social li{float:left;margin-right:6px;}
 
-div.left_box2{width:508px;height:570px;overflow:hidden;float:left;}  /* KKB */
+div.left_box2{width:508px;height:570px;overflow:hidden;float:left;}
 *:first-child+html div.left_box2{position:relative;}
-div.right_box2{width:381px;height:570px;float:left;border-left:1px solid #eaeaea;}  /* KKB */
+div.right_box2{width:381px;float:left;}
 
-#infobox2 {width:322px; height:420px;margin:30px 0 0 30px;}  /* KKB */
+#infobox2{width:322px;margin:30px 0 0 30px;}
 #infobox2 table {width:322px; margin:0; padding:0;}
 #infobox2 table thead tr th {height:41px; text-align:left; margin-top:7px;}
 #infobox2 table thead tr th p.title {float:left; display:inline; overflow:hidden; height:20px; font-size:15px; line-height:20px; color:#333; font-weight:bold; font-family:'dotum';}
@@ -3646,8 +3674,8 @@ div.right_box2{width:381px;height:570px;float:left;border-left:1px solid #eaeaea
 #infobox2 table tbody tr td.info03 p.txt {float:left; display:inline; padding-top:3px;}
 #infobox2 table tbody tr td.info03 p.ico {float:left; display:inline; padding-top:2px; padding-left:4px; width:15px;}
 
-#infobox2 table tbody tr td.line {height:7px; background:url(//image.reebok.co.kr/images/reebok/common/bg_line_pd02.gif) 0 bottom repeat-x;}  /* KKB */
-#infobox2 table tbody tr td.line_2 {height:10px; background:url(//image.reebok.co.kr/images/reebok/common/bg_line_pd02.gif) 0 bottom repeat-x;}  /* KKB */
+#infobox2 table tbody tr td.line {height:7px; background:url(//image.reebok.co.kr/images/reebok/common/bg_line_pd02.gif) 0 bottom repeat-x;}
+#infobox2 table tbody tr td.line_2 {height:10px; background:url(//image.reebok.co.kr/images/reebok/common/bg_line_pd02.gif) 0 bottom repeat-x;}
 #infobox2 table tbody tr th.info04 img {padding-top:8px;}
 #infobox2 table tbody tr td.info04 {height:67px; vertical-align:top;}
 #infobox2 table tbody tr td.info04 .imglist_wrap{width:322px;height:63px;position:relative;}
@@ -3659,17 +3687,17 @@ div.right_box2{width:381px;height:570px;float:left;border-left:1px solid #eaeaea
 #infobox2 table tbody tr td.info04 div.imglist {height:68px; margin-top:13px;}
 #infobox2 table tbody tr td.info04 div.imglist ul {width:100%; height:61px;}
 #infobox2 table tbody tr td.info04 div.imglist ul li {width:61px; height:61px; float:left;}
-#infobox2 table tbody tr td.info04 div.imglist ul li.photo {width:59px; height:59px; margin:0 5px 5px 0; _margin-right:0 3px 3px 0;} /* KKB */
-#infobox2 table tbody tr td.info04 div.imglist ul li.photo a {width:59px; height:59px; display:inline-block;border:1px solid #ddd;position:relative;}  /* KKB */
-#infobox2 table tbody tr td.info04 div.imglist ul li.photo a:hover {border:1px solid #ef3f4d;} /* KKB */
+#infobox2 table tbody tr td.info04 div.imglist ul li.photo {width:59px; height:59px; margin:0 5px 5px 0; _margin-right:0 3px 3px 0;}
+#infobox2 table tbody tr td.info04 div.imglist ul li.photo a {width:59px; height:59px; display:inline-block;border:1px solid #ddd;position:relative;}
+#infobox2 table tbody tr td.info04 div.imglist ul li.photo a:hover {border:1px solid #ef3f4d;}
 #infobox2 table tbody tr td.info04 div.imglist ul li.photo a img {margin:1px;}
 #infobox2 table tbody tr td.info04 div.imglist ul li.photo a .olt_lb{position:absolute;top:0;left:0;width:15px;}
 #infobox2 table tbody tr td.info04 div.imglist ul li.photo a .olt_lb img{width:100%;}
 #infobox2 table tbody tr td.info04 div.imglist ul li.photo a .oo_label{position:absolute;top:2px;left:2px;width:15px;}
 #infobox2 table tbody tr td.info04 div.imglist ul li.photo a .oo_label img{width:100%;}
 #infobox2 table tbody tr td.info04 div.imglist ul li.selected {margin-right:5px; _margin-right:3px;}
-#infobox2 table tbody tr td.info04 div.imglist ul li.selected a {width:59px; height:59px;  border:1px solid #ef3f4d;} /* KKB */
-#infobox2 table tbody tr td.info04 div.imglist ul li.selected a:hover {border:1px solid #ef3f4d;}  /* KKB */
+#infobox2 table tbody tr td.info04 div.imglist ul li.selected a {width:59px; height:59px;  border:1px solid #ef3f4d;}
+#infobox2 table tbody tr td.info04 div.imglist ul li.selected a:hover {border:1px solid #ef3f4d;}
 #infobox2 table tbody tr td.info04 div.imglist ul li.pre {width:4px; height:61px; margin-right:4px; border:0px solid #8b8b8b;}
 #infobox2 table tbody tr td.info04 div.imglist ul li.pre a {width:4px; height:61px; display:block;}
 #infobox2 table tbody tr td.info04 div.imglist ul li.pre img {margin:28px 0 0 0;}
@@ -3707,9 +3735,9 @@ div.right_box2{width:381px;height:570px;float:left;border-left:1px solid #eaeaea
 #infobox2 table tbody tr td.info08 span {margin-right:6px; height:16px;}
 #infobox2 table tbody tr td.line2 {height:5px; background:url(//image.reebok.co.kr/images/reebok/common/bg_line_pd02.gif) 0 bottom no-repeat;}
 
-#infobox2 table tbody tr th.info09 {height:40px; text-align:left; vertical-align:middle;} /* KKB */
+#infobox2 table tbody tr th.info09 {height:40px; text-align:left; vertical-align:middle;}
 #infobox2 table tbody tr td.info09 {height:51px; letter-spacing:-1px; vertical-align:top; font-family:dotum; font-size:11px; color:#a8a7a7;}
-#infobox2 table tbody tr td.info09 p.txt1 {padding:14px 12px 14px 0; line-height:17px;} /* KKB */
+#infobox2 table tbody tr td.info09 p.txt1 {padding:14px 12px 14px 0; line-height:17px;}
 #infobox2 table tbody tr td.info09 p.txt2 {padding-right:12px; line-height:17px;}
 #infobox2 table tbody tr td.line3 {height:1px; background:url(//image.reebok.co.kr/images/reebok/common/bg_line_pd02.gif) 0 bottom no-repeat;}
 
@@ -3729,19 +3757,19 @@ div.right_box2{width:381px;height:570px;float:left;border-left:1px solid #eaeaea
 	background-position: -140px -2375px;
 }
 
-#infobox2 table .oneday_deliv_info p{
+#infobox2 table .oneday_deliv_info>div{
 	margin-bottom: 6px;
 	font:14px/14px 'NotoSansKRBold','Nanum Gothic';
 	color: #ab2328;
 }
 
-#infobox2 table .oneday_deliv_info p.desc{
+#infobox2 table .oneday_deliv_info>.desc{
 	margin-bottom: 10px;
 	color: #666;
 	font:12px/12px 'NotoSansKRRegular','Nanum Gothic';
 }
 
-#infobox2 table .oneday_deliv_info p .spt_bg{
+#infobox2 table .oneday_deliv_info>div>.spt_bg{
 	display: inline-block;
 	width: 14px;
 	height: 14px;
@@ -3750,6 +3778,31 @@ div.right_box2{width:381px;height:570px;float:left;border-left:1px solid #eaeaea
 	vertical-align: middle;
 	position: relative;
 	top: -1px;
+	text-indent: 0;
+}
+
+
+#infobox2 table .oneday_deliv_info>div>.spt_bg .tooltip-layer{
+	width: 300px;
+    height: 290px;
+    top: 22px;
+    left: -245px;
+}
+
+#infobox2 table .oneday_deliv_info>div>.spt_bg.tooltip-layer .tooltip-contents{
+	padding: 20px;
+}
+
+#infobox2 table .oneday_deliv_info>div>.spt_bg .tooltip-layer .tit{
+	margin-bottom: 15px;
+	font: 16px/16px 'NotoSansKRRegular','Nanum Gothic';
+}
+
+#infobox2 table .oneday_deliv_info>div>.spt_bg .tooltip-layer li{
+	margin-bottom: 10px;
+	color: #888;
+	font:11px/16px 'Dotum';
+	letter-spacing:-0.75px;
 }
 
 #infobox2 table .oneday_deliv_info .btn_change_addr{
@@ -3791,29 +3844,29 @@ div.right_box2{width:381px;height:570px;float:left;border-left:1px solid #eaeaea
 
 
 
-div.prod_order2 ul.prodbtn {width:333px; height:42px; position:absolute; bottom:30px; right:23px;} /* KKB */
+div.prod_order2 ul.prodbtn {width:333px; height:42px;margin:25px auto 30px;}
 div.prod_order2 ul.prodbtn li {float:left; display:inline; margin-left:5px; position:relative;}
 
 
 
-div.prod_list2 {width:890px;position:relative; margin-bottom:20px;border-bottom:1px solid #d0d1d4;padding-top:3px;background:url(//image.reebok.co.kr/images/reebok/common/bg_prodch.gif) 0 0 repeat-x;}  /* KKB */
-div.prod_list2 div.title {width:870px; height:23px;padding:10px 0 0 20px;;background:url(//image.reebok.co.kr/images/reebok/common/bg_prodch_bg.gif) 0 0 repeat-x;border-bottom:1px solid #c8c8cb;} /*KKB*/
-div.prod_list2 div.relation_prod{height:116px;padding-top:20px;} /* KKB */
+div.prod_list2 {width:890px;position:relative; margin-bottom:20px;border-bottom:1px solid #d0d1d4;padding-top:3px;background:url(//image.reebok.co.kr/images/reebok/common/bg_prodch.gif) 0 0 repeat-x;}
+div.prod_list2 div.title {width:870px; height:23px;padding:10px 0 0 20px;;background:url(//image.reebok.co.kr/images/reebok/common/bg_prodch_bg.gif) 0 0 repeat-x;border-bottom:1px solid #c8c8cb;}
+div.prod_list2 div.relation_prod{height:116px;padding-top:20px;}
 div.prod_list2 div.relation_prod ul{overflow: hidden;}
-div.prod_list2 div.relation_prod li{width:197px;float:left;padding:0 5px 0 20px;background:url(//image.reebok.co.kr/images/reebok/common/bg_relaprod_bar.gif) right 14px no-repeat;} /* KKB */
-div.prod_list2 div.relation_prod li div{float:left;}/* KKB */
-div.prod_list2 div.relation_prod li div.img{width:94px;height:94px;position:relative;}/* KKB */
+div.prod_list2 div.relation_prod li{width:197px;float:left;padding:0 5px 0 20px;background:url(//image.reebok.co.kr/images/reebok/common/bg_relaprod_bar.gif) right 14px no-repeat;}
+div.prod_list2 div.relation_prod li div{float:left;}
+div.prod_list2 div.relation_prod li div.img{width:94px;height:94px;position:relative;}
 div.prod_list2 div.relation_prod li div.img .oo_label{top:4px;left:4px;}
 div.prod_list2 div.relation_prod li div.img .oo_label img{width:25px;}
-div.prod_list2 div.relation_prod li div.info{width:80px;padding:0 5px 0 15px;}/* KKB */
-div.prod_list2 div.relation_prod li div.info p.tit{height:38px;padding:12px 0 10px 0;letter-spacing:-.5px;font-size:11px;}/* KKB */
-div.prod_list2 div.relation_prod li div.info p.tit a{color:#a0a2a4;}/* KKB */
-div.prod_list2 div.relation_prod li div.info p span{color:#696969;font:bold 11px 'Verdana',verdana;}/* KKB */
-div.prod_list2 div.relation_prod li div.info p span.won{font:normal 10px 'Dotum',dotum;}/* KKB */
+div.prod_list2 div.relation_prod li div.info{width:80px;padding:0 5px 0 15px;}
+div.prod_list2 div.relation_prod li div.info p.tit{height:38px;padding:12px 0 10px 0;letter-spacing:-.5px;font-size:11px;}
+div.prod_list2 div.relation_prod li div.info p.tit a{color:#a0a2a4;}
+div.prod_list2 div.relation_prod li div.info p span{color:#696969;font:bold 11px 'Verdana',verdana;}
+div.prod_list2 div.relation_prod li div.info p span.won{font:normal 10px 'Dotum',dotum;}
 
-div.prod_list2 div.relation_prod li div.info p span.sale{color:#e4000f;}/* KKB */
-div.prod_list2 div.relation_prod li div.info p span.sale span.won{color:#e4000f;}/* KKB */
-div.prod_list2 div.relation_prod li.last{background:none;}/* KKB */
+div.prod_list2 div.relation_prod li div.info p span.sale{color:#e4000f;}
+div.prod_list2 div.relation_prod li div.info p span.sale span.won{color:#e4000f;}
+div.prod_list2 div.relation_prod li.last{background:none;}
 
 /* 새로 싹 바꾼거 끝 120326 */
 
@@ -5975,6 +6028,7 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 }
 
 .modal-popup-wrapper.modal-popup-search_order .desc{
+	margin-bottom: 15px;
 	color: #666;
 	font:13px/14px 'NotoSansKRRegular','Nanum Gothic';
 }
@@ -5983,4 +6037,37 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 .modal-popup-oneday_notice>.popup{
 	width: 600px;
 	margin-left: -300px;
+}
+
+.modal-popup-oneday_notice>.popup .desc{
+	margin-bottom: 20px;
+	font: 15px/24px 'NotoSansKRRegular','Nanum Gothic';
+	color: #000;
+}
+
+.modal-popup-oneday_notice>.popup .desc .ico_car{
+	width: 17px;
+    height: 12px;
+	margin: 0 3px;
+    display: inline-block;
+    background-position: -160px -2431px;
+    vertical-align: middle;
+}
+
+*:first-child+html  .modal-popup-oneday_notice>.popup .desc .ico_car{
+	display: inline;
+}
+
+.modal-popup-oneday_notice>.popup .li-dot{
+	margin-bottom: 20px;
+}
+
+.modal-popup-oneday_notice>.popup .li-dot li{
+	margin-bottom: 6px;
+	font: 13px/19px 'NotoSansKRLight','Nanum Gothic';
+}
+
+.modal-popup-oneday_notice>.popup .more{
+	font:13px 'NotoSansKR','Nanum Gothic';
+	color: #000;
 }

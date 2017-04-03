@@ -1303,6 +1303,7 @@ div.error .btn {width:700px; height:30px; text-align:center; margin-top:20px;}
 
 .modal-popup-wrapper>.popup .popup-contents{
 	padding: 30px 30px 40px;
+	background: #fff;
 }
 
 .modal-popup-wrapper>.popup .popup-contents .tab_list{
@@ -3579,7 +3580,8 @@ div.search_fail .sch_failbox2 #new_prodlist .banner_list .banner_slide{width:100
 }
 
 .product-main .product-infomation .imgscut_box .product-badge.mi,
-.product-main .product-infomation .imgscut_box .product-badge.online_only{
+.product-main .product-infomation .imgscut_box .product-badge.online_only,
+.product-main .product-infomation .imgscut_box .product-badge.oneday{
 	width: auto;
 }
 
@@ -4022,19 +4024,19 @@ div.search_fail .sch_failbox2 #new_prodlist .banner_list .banner_slide{width:100
 	background-position: -285px -160px;
 }
 
-.product-main .product-infomation .buy_box .oneday_deliv_info p{
+.product-main .product-infomation .buy_box .oneday_deliv_info>div{
 	margin-bottom: 6px;
 	font:14px/14px 'NotoSansKRBold','Nanum Gothic';
 	color: #000;
 }
 
-.product-main .product-infomation .buy_box .oneday_deliv_info p.desc{
+.product-main .product-infomation .buy_box .oneday_deliv_info>.desc{
 	margin-bottom: 0;
 	color: #666;
 	font:12px/12px 'NotoSansKRRegular','Nanum Gothic';
 }
 
-.product-main .product-infomation .buy_box .oneday_deliv_info p .spt_bg{
+.product-main .product-infomation .buy_box .oneday_deliv_info>div .spt_bg{
 	display: inline-block;
 	width: 14px;
 	height: 14px;
@@ -4055,6 +4057,29 @@ div.search_fail .sch_failbox2 #new_prodlist .banner_list .banner_slide{width:100
 	color: #333;
 	font:12px/12px 'NotoSansKRRegular','Nanum Gothic';
 	letter-spacing:-0.5px;
+}
+
+.product-main .product-infomation .buy_box .oneday_deliv_info .tooltip-layer{
+	width: 300px;
+	height: 290px;
+	top: 41px;
+    left: -137px;
+}
+
+.product-main .product-infomation .buy_box .oneday_deliv_info .tooltip-layer .tooltip-contents{
+	padding: 20px;
+}
+
+.product-main .product-infomation .buy_box .oneday_deliv_info .tooltip-layer .tit{
+	margin-bottom: 15px;
+	font: 16px/16px 'NotoSansKRRegular','Nanum Gothic';
+}
+
+.product-main .product-infomation .buy_box .oneday_deliv_info .tooltip-layer li{
+	margin-bottom: 10px;
+	color: #888;
+	font:11px/16px 'Dotum';
+	letter-spacing:-0.75px;
 }
 
 .product-main .product-infomation .buy_box .etc_info{
@@ -6549,6 +6574,25 @@ Update
 	top: -1px;
 }
 
+.cart-main .prodlist .oneday_deliv_noti p .spt_bg .tooltip-layer{
+	width: 295px;
+	height: 135px;
+}
+
+.cart-main .prodlist .oneday_deliv_noti p .spt_bg .tooltip-layer .tooltip-contents{
+	padding: 20px;
+	display: block;
+	color: #888;
+	font: 11px/16px 'Dotum';
+}
+
+.cart-main .prodlist .oneday_deliv_noti p .spt_bg .tooltip-layer .tooltip-contents .tit{
+	display: block;
+	margin-bottom: 15px;
+	font: 16px/16px 'NotoSansKRRegular','Nanum Gothic';
+	color: #333;
+}
+
 .cart-main .prodlist .oneday_deliv_noti p .ico_car{
 	position: absolute;
     width: 36px;
@@ -6955,7 +6999,7 @@ Update
 	text-align: center;
 }
 
-.payment-main .deliv_form .oneday_deliv_noti>div p{
+.payment-main .deliv_form .oneday_deliv_noti>div>.box{
 	padding-top: 10px;
 	margin-left: 44px;
 	position: relative;
@@ -6963,12 +7007,12 @@ Update
 	text-align: center;
 }
 
-*:first-child+html .payment-main .deliv_form .oneday_deliv_noti>div p,
-.ie7 .payment-main .deliv_form .oneday_deliv_noti>div p{
+*:first-child+html .payment-main .deliv_form .oneday_deliv_noti>div>.box,
+.ie7 .payment-main .deliv_form .oneday_deliv_noti>div>.box{
 	display: inline;
 }
 
-.payment-main .deliv_form .oneday_deliv_noti>div p .spt_bg{
+.payment-main .deliv_form .oneday_deliv_noti>div>.box>.spt_bg{
 	display: inline-block;
 	width: 14px;
 	height: 14px;
@@ -6979,7 +7023,7 @@ Update
 	top: -1px;
 }
 
-.payment-main .deliv_form .oneday_deliv_noti>div p .spt_bg.ico_car{
+.payment-main .deliv_form .oneday_deliv_noti>div>.box>.spt_bg.ico_car{
 	position: absolute;
 	width: 36px;
 	height: 36px;
@@ -6987,6 +7031,42 @@ Update
 	left:-46px;
 	background-position: -285px -160px;
 }
+
+*:first-child+html .payment-main .deliv_form .oneday_deliv_noti>div>.box>.spt_bg,
+.ie7 .payment-main .deliv_form .oneday_deliv_noti>div>.box>.spt_bg{
+	display: inline;
+}
+
+.payment-main .deliv_form .oneday_deliv_noti>div>.box>.spt_bg .tooltip-layer{
+	width: 425px;
+	height: 365px;
+	top: 41px;
+    left: -137px;
+}
+
+.payment-main .deliv_form .oneday_deliv_noti>div>.box>.spt_bg .tooltip-layer .tooltip-contents{
+	padding: 20px;
+}
+
+.payment-main .deliv_form .oneday_deliv_noti>div>.box>.spt_bg .tooltip-layer .tit{
+	margin-bottom: 15px;
+	font: 16px/16px 'NotoSansKRRegular','Nanum Gothic';
+}
+
+.payment-main .deliv_form .oneday_deliv_noti>div>.box>.spt_bg .tooltip-layer .desc{
+	margin-bottom: 15px;
+	font:bold 12px/18px 'Dotum';
+	color: #888;
+	letter-spacing:-0.75px;
+}
+
+.payment-main .deliv_form .oneday_deliv_noti>div>.box>.spt_bg .tooltip-layer li{
+	margin-bottom: 10px;
+	color: #888;
+	font:11px/16px 'Dotum';
+	letter-spacing:-0.75px;
+}
+
 
 .payment-main .deliv_form .oneday_deliv_noti>div.noti_not_case{
 	padding-top: 10px;
@@ -10139,6 +10219,10 @@ Update
 	left: 50%;
 }
 
+.modal-popup-wrapper.modal-popup-search_order>.popup .popup-contents{
+	/*padding-top: 15px;*/
+}
+
 .modal-popup-wrapper.modal-popup-search_order .form{
 
 }
@@ -10182,6 +10266,7 @@ Update
 }
 
 .modal-popup-wrapper.modal-popup-search_order .desc{
+	margin-bottom: 15px;
 	color: #666;
 	font:13px/14px 'NotoSansKRRegular','Nanum Gothic';
 }
@@ -10190,4 +10275,35 @@ Update
 .modal-popup-oneday_notice>.popup{
 	width: 600px;
 	margin-left: -300px;
+}
+
+.modal-popup-oneday_notice>.popup .desc{
+	margin-bottom: 20px;
+	font: 15px/24px 'NotoSansKRRegular','Nanum Gothic';
+	color: #000;
+}
+
+.modal-popup-oneday_notice>.popup .desc .ico_car{
+	width: 26px;
+	height: 12px;
+	background-position: -320px -56px;
+	display: inline-block;
+}
+
+*:first-child+html  .modal-popup-oneday_notice>.popup .desc .ico_car{
+	display: inline;
+}
+
+.modal-popup-oneday_notice>.popup .li-dot{
+	margin-bottom: 20px;
+}
+
+.modal-popup-oneday_notice>.popup .li-dot li{
+	margin-bottom: 6px;
+	font: 13px/19px 'NotoSansKRLight','Nanum Gothic';
+}
+
+.modal-popup-oneday_notice>.popup .more{
+	font:13px 'NotoSansKR','Nanum Gothic';
+	color: #000;
 }

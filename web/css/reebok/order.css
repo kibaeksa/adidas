@@ -27,9 +27,7 @@ dl.info dd ul li span {color:#7b91bd;}
 dl.info dd ul li strong {color:#888;}
 
 .oneday_deliv_noti{
-	margin-bottom: 30px;
 	font: 14px/14px 'NotoSansKRLight','Nanum Gothic';
-
 }
 
 .oneday_deliv_noti .box{
@@ -44,7 +42,7 @@ dl.info dd ul li strong {color:#888;}
 	font: 14px/14px 'NotoSansKR','Nanum Gothic';
 }
 
-.oneday_deliv_noti .box p{
+.oneday_deliv_noti .box>div{
 	padding-top: 10px;
     margin-left: 45px;
     position: relative;
@@ -52,7 +50,7 @@ dl.info dd ul li strong {color:#888;}
     text-align: center;
 }
 
-.oneday_deliv_noti .box p .spt_bg{
+.oneday_deliv_noti .box>div .spt_bg{
 	display: inline-block;
 	width: 13px;
 	height: 13px;
@@ -64,7 +62,63 @@ dl.info dd ul li strong {color:#888;}
 	margin-left: 3px;
 }
 
-.oneday_deliv_noti .box p .ico_car{
+.oneday_deliv_noti .box>div .spt_bg.ico_noti{
+	text-indent: 0;
+}
+
+.oneday_deliv_noti .box>div .spt_bg .tooltip-layer{
+	width: 425px;
+    height: 365px;
+    top: 41px;
+    left: -137px;
+}
+
+.oneday_deliv_noti .box>div .spt_bg .tooltip-layer .tooltip-contents{
+	padding: 20px;
+}
+
+.oneday_deliv_noti .box>div .spt_bg .tooltip-layer .tit{
+	margin-bottom: 15px;
+	font: 16px/16px 'NotoSansKRRegular','Nanum Gothic';
+	color: #000;
+}
+
+.oneday_deliv_noti .box>div .spt_bg .tooltip-layer .desc{
+	margin-bottom: 15px;
+	font:bold 12px/18px 'Dotum';
+	color: #888;
+	letter-spacing:-0.75px;
+}
+
+.oneday_deliv_noti .box>div .spt_bg .tooltip-layer li{
+	margin-bottom: 10px;
+	color: #888;
+	font:11px/16px 'Dotum';
+	letter-spacing:-0.75px;
+}
+
+.oneday_deliv_noti .box>div .spt_bg .tooltip-layer.cart_tip{
+	width: 295px;
+	height: 135px;
+}
+
+.oneday_deliv_noti .box>div .spt_bg .tooltip-layer.cart_tip .tooltip-contents{
+	padding: 20px;
+	display: block;
+	color: #888;
+	font: 11px/16px 'Dotum';
+}
+
+.oneday_deliv_noti .box>div .spt_bg .tooltip-layer.cart_tip .tooltip-contents .tit{
+	display: block;
+	margin-bottom: 15px;
+	font: 16px/16px 'NotoSansKRRegular','Nanum Gothic';
+	color: #333;
+}
+
+
+
+.oneday_deliv_noti .box>div .ico_car{
 	position: absolute;
     width: 29px;
     height: 29px;
@@ -514,10 +568,6 @@ table.list tr td.price {font-family:verdana;padding:8px 20px 7px 0;text-align:ri
 
 
 span.col_space {display:inline-block;width:15px;text-align:center;}
-
-.contents_area2 div.grid{
-	overflow: hidden;
-}
 
 .contents_area2 .notice_return{
 	width: 810px;

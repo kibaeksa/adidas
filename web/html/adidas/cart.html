@@ -58,6 +58,14 @@
 				$(this).siblings('.tooltip-layer').hide();
 			});
 
+
+			/* 170401 툴팁 */
+            $('.oneday_deliv_noti>p>.spt_bg.ico_noti').hover(function(){
+                $(this).find('.tooltip-layer').show();
+            },function(){
+                $(this).find('.tooltip-layer').hide();
+            })
+
 		});
 
 
@@ -1160,11 +1168,22 @@
 						<div class="mi_noti"><div class="span spt_bg"></div>마이 아디다스 상품은 일반 상품과 동시주문이 불가능합니다.</div>
 						 -->
 
-						<!-- 170322 당일배송 내용안내 -->
+						<!-- 170401 툴팁으로 인한 코딩수정 -->
 						<div class="oneday_deliv_noti">
-							<p><span class="spt_bg ico_car"></span><strong>당일 배송은 주문당 3개로 제한</strong>(신발은 2개)<span class="spt_bg"></span></p>
+							<p>
+								<span class="spt_bg ico_car"></span>
+								<strong>스피드 배송은 주문당 3개로 제한</strong>(신발은 2개)
+								<span class="spt_bg ico_noti">
+									<span class="tooltip-layer">
+										<span class="tooltip-contents">
+											<span class="tit">SPEEDY DELIVERY(스피드 배송)란? </span>
+											<span style="">빠르고 안전한 배송을 위해 박스 규격은<br/>가로/세로/높이의 합이 80cm 이내이며,<br/>한 주문 건당 수량은 3개로 제한 됩니다.<br/>(단, 신발은 2개만 가능)</span>
+										</span>
+									</span>
+								</span>
+							</p>
 						</div>
-						<!-- //170322 END -->
+						<!-- //170401 END -->
 
 						<div class="box first">
 							<div class="img">
