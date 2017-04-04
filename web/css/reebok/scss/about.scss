@@ -6713,22 +6713,9 @@ html.no_scroll{
 			}
 
 			.video_bg{
-				width: 100%;
-				.ie &{
-					video{
-						width:100%;
-						min-width: 2200px;
-						height: 685px;
-					}
-				}
 				&.ended{
 					@include opacity(0);
 					@include prefix-css3(transition ,opacity 1.6s ease-in);
-				}
-				video{
-					width:100%;
-					min-width: 2200px;
-
 				}
 			}
 			.masthead{
@@ -6856,7 +6843,7 @@ html.no_scroll{
 				img{
 					position: relative;
 					top:-2px;
-					width:110%;
+					width:105%;
 					@media screen and (max-width: 1630px){
 						width: 120%;
 					}
