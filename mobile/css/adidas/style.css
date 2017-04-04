@@ -10141,13 +10141,24 @@ padding:30px 15px;
 }
 
 .tooltip-box .tooltip-contents .title{
-    display: inline-block;
+    display: block;
     padding-bottom: 1rem;
     font: 1.2rem/1.3rem 'NotoSansKR';
     color:#333;
     letter-spacing: 0.3px;
+    text-align: left;
+
 }
 
+.tooltip-box .tooltip-contents .li_dot.li_tooltip li{
+    font: 0.9rem/1.4rem 'Dotum';
+    color: #888;
+    text-align: left;
+    padding-bottom: 7px;
+}
+.tooltip-box .tooltip-contents .li_dot.li_tooltip li:last-child{
+    padding-bottom: 0px;
+}
 
 em.cart_speedy .tooltip-box{
     position: absolute;

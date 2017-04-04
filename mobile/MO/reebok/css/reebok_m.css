@@ -3133,10 +3133,34 @@ div.prod_manual p.desc strong{color:#3e3e3e;font-size:11px;letter-spacing:-1px;}
 }
 
 .tooltip-box .tooltip-contents span{
+	position: relative;
 	font: 0.9rem/1.4rem 'Dotum';
 	color: #888;
 	text-align: left;
 	letter-spacing: -1px;
+}
+.tooltip-box .tooltip-contents span.dot{
+	display: block;
+	padding-left: 7px;
+	padding-bottom: 7px;
+}
+.tooltip-box .tooltip-contents span.dot:before{
+	content: '';
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background: #505050;
+}
+.tooltip-box .tooltip-contents span.title{
+	display: block;
+	padding-bottom: 1rem;
+   font: 1.2rem/1.3rem 'NotoSansKR';
+   color: #333;
+   letter-spacing: 0.3px;
+   text-align: left;
+
 }
 
 .tooltip-box .tooltip-contents span strong{
