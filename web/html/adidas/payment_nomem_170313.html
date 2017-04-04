@@ -2105,7 +2105,9 @@
 							</div>
 
 							<div class="checkout_btn">
-								<div class="agreebox">
+								<!-- 170403 마이 아디다스 비회원으로 구매 시, 체크박스 추가 -->
+								<!-- 170403 첫번째 박스에 style 추가 -->
+								<div class="agreebox" style="margin-bottom: 10px;">
 									<div class="input-ctm input-check-ctm ctm-check-blue checked">
 										<input type="checkbox" id="check_agree" checked="checked">
 										<label for="check_agree"><span class="ctm-box"><span class=" spt_bg"></span></span>비회원 구매 약관 동의</label>
@@ -2113,11 +2115,16 @@
 									<a href="javascript:void(0);" class="view_term btn_nomem_terms">약관 전문 보기<span class="spt_bg"></span></a>
 								</div>
 
-								<!--
-								170314
-								* 버튼 명 추가
-								* 일부 코딩 변경
-								-->
+								<div class="agreebox">
+									<div class="input-ctm input-check-ctm ctm-check-blue mi checked">
+										<input type="checkbox" id="mi_check_agree" checked="checked">
+										<label for="mi_check_agree"><span class="ctm-box"><span class=" spt_bg"></span></span>마이 아디다스 상품 구매 동의</label>
+									</div>
+									<a href="javascript:void(0);" class="view_term btn_miadi_noti">유의 사항 전체보기<span class="spt_bg"></span></a>
+								</div>
+								<!-- //170403 -->
+
+
 								<a href="javascript:fn_pay();" class="btn-ctm btn-blue arrow" id="paymtButton"><span>본인 인증 후 결제하기<span class="spt_bg"></span></span></a>
 							</div>
 						</div>
