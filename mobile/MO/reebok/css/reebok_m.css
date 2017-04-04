@@ -3077,6 +3077,10 @@ div.prod_manual p.desc strong{color:#3e3e3e;font-size:11px;letter-spacing:-1px;}
 	position: absolute;
 	top: 45px;
 }
+.order_speedy .tooltip-box{
+	position: absolute;
+	top: 45px;
+}
 .detail_speedy .tooltip-box{
 	position: absolute;
 	top: 73px;
@@ -3153,7 +3157,11 @@ div.prod_manual p.desc strong{color:#3e3e3e;font-size:11px;letter-spacing:-1px;}
 
 .tooltip_btn.cart_speedy .tooltip-box:before{
 	left:50%;
-	margin-left: 130px;
+	margin-left: 122px;
+}
+.tooltip_btn.order_speedy .tooltip-box:before{
+	left:50%;
+	margin-left: 165px;
 }
 .tooltip_btn.detail_speedy .tooltip-box:before{
 	left:50%;
@@ -3165,6 +3173,9 @@ div.prod_manual p.desc strong{color:#3e3e3e;font-size:11px;letter-spacing:-1px;}
 	}
 }
 .tooltip_btn.cart_speedy:before{
+	color: #ab2328;
+}
+.tooltip_btn.order_speedy:before{
 	color: #ab2328;
 }
 
