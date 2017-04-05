@@ -6181,8 +6181,6 @@ div.layerpop_wrap#nomem_order_popup .inner .content .desc{
 	width: 100%;
 }
 
-
-
 #container.product_view .product_order .buy_btn>a:last-child,
 #container.product_view #buy_btn_layer>a:last-child{
 	width: auto;
@@ -6197,7 +6195,6 @@ div.layerpop_wrap#nomem_order_popup .inner .content .desc{
     display: none;
 }
 
-/* today_delivery 170405 css 수정 */
 #container.product_view .product_order .today_delivery{
   position: relative;
   padding:0 15px;
@@ -6205,7 +6202,6 @@ div.layerpop_wrap#nomem_order_popup .inner .content .desc{
 }
 #container.product_view .product_order .today_delivery>a{
   position: relative;
-  /*width: 100%;*/
   padding: 26px 0 22px 8px;
   text-align: left;
   color: #000;
@@ -6220,8 +6216,6 @@ div.layerpop_wrap#nomem_order_popup .inner .content .desc{
     width: 40px;
     margin: 26px 0;
     display: inline-block;
-    /*flex: 40px 0 0;
-    -webkit-flex: 40px 0 0;*/
     height: 40px;
     font: 23px/40px 'NotoSansKR';
     text-align: center;
@@ -7972,7 +7966,7 @@ div.layerpop_wrap#nomem_order_popup .inner .content .desc{
 }
 
 #filter_layer .box.price .cont .ipt_price::after{
-	content: '원';
+	content: '??';
     position: absolute;
     top: 9px;
     right: 10px;
@@ -9919,9 +9913,7 @@ padding:30px 15px;
 #container.order .total_result .price_detail p .mpoints{
 	font-family:'NotoSansKRRegular';
 	font-size: 10px;
-
 }
-
 
 #container.order .odr_pay_box{
 	position: relative;
@@ -9933,12 +9925,11 @@ padding:30px 15px;
 	position: relative;
 	box-sizing:border-box;
 	-webkit-box-sizing:border-box;
-	/*border-top: 1px solid  #909090;*/
+	border-top: 1px solid  #909090;
 	background: #f0f0f0;
 }
 #container.order .odr_pay_box>.tit>strong{
 	float: left;
-  /*font:bold 14px 'NotoSansKRRegular';*/
 	font:bold 14px 'NotoSansKRLight';
 }
 
@@ -9985,6 +9976,28 @@ padding:30px 15px;
 	line-height:18px;
 	border-bottom-color: #e8e8e8;
 }
+
+#container.order .odr_pay_box .form_table td .deliv_date{
+    display: inline-block;
+}
+
+#container.order .odr_pay_box .form_table td .deliv_date>div{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3px;
+}
+
+#container.order .odr_pay_box .form_table td .deliv_date>div .tooltip-box{
+    top: auto;
+    bottom: 0;
+    transform:translate3d(0,80%,0);
+    -webkit-transform:translate3d(0,80%,0);
+}
+
+#container.order .odr_pay_box .form_table td .deliv_date>div .tooltip-box::before{
+    left: 50%;
+}
+
 #container.order .odr_pay_box.adr_history .form_table tr:last-child th,
 #container.order .odr_pay_box.adr_history .form_table tr:last-child td{
 	border-bottom-width: 0;
@@ -10139,7 +10152,7 @@ padding:30px 15px;
 
 
 .tooltip-box .tooltip-contents p{
-    font: 0.9rem/1.4rem 'Dotum';
+    font: 0.9rem/1.4rem 'NotoSansKRRegular';
     color:#888;
     text-align: left;
 }
@@ -11127,7 +11140,7 @@ em.prd_speedy .tooltip-box:before{
 }
 
 #container.order .order_done{
-	padding: 15px;
+	padding: 15px 0;
 	border-top: 1px solid  #d7d7d7;
 	text-align: center;
 	font-size:15px;
@@ -11141,11 +11154,27 @@ em.prd_speedy .tooltip-box:before{
 }
 
 #container.order .order_done .code{
-	margin: 15px 0 25px;
+	margin: 15px 15px 0;
 	padding: 15px 0;
 	font-size:9px;
 	border: 3px solid  #000;
 	font-size: 12px;
+}
+
+#container.order .order_done .nomem_noti{
+    margin-top: 15px;
+    color:#0286cd;
+    font-size:1.1rem;
+}
+
+#container.order .order_done .noti_speeddel{
+    margin: 15px 0 -15px 0;
+    padding: 10px 0;
+    text-align: center;
+    font-size:1.1rem;
+    line-height: 1.5rem;
+    background: #ddf3fb;
+    color: #f9423a;
 }
 
 #container.order .noti_order_done{

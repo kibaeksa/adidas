@@ -18,8 +18,15 @@
 		;(function($){
 
 			$(document).ready(function(){
+				// 170405 툴팁 스크립트
+				$('.deliv_date').bind('click',function(event){
+					$(this).find('.tooltip-box').addClass('active');
+				});
 
-
+				$('.deliv_date .tooltip-box .close_x_btn').bind('click',function(event){
+					event.stopPropagation();
+					$(this).parent().parent().removeClass('active');
+				});
 			});
 
 	})(jQuery);
@@ -490,14 +497,25 @@
 					</div>
 					<!-- //ord_desc -->
 
-					<section class="odr_box sec2">
+					<section class="odr_box sec2 order_code_wrap">
 						<h4>01. 주문번호</h4>
 						<div class="cont" style="text-align:center;">
 							<span class="ree_ft" style="font-size:25px;">201409227090965</span>
+							<!--
+			                170405
+			                추가
+			                -->
+							<p class="nomem_noti"><span class="icons" data-icon="" style="margin-right:3px;"></span>비회원 주문조회 시, 주문번호가 반드시 필요하니 꼭 기억해 주세요!</p>
 						</div>
-						<!-- //cont -->
 					</section>
 					<!-- //odr_box 02 -->
+
+					<!--
+					170405
+					추가
+					-->
+					<div class="noti_speeddel">스피드 배송 제외 상품이 포함되어 있습니다. 해당 상품은 일반 배송 됩니다.</div>
+
 
 					<section class="odr_box sec1">
 						<h4>02. 주문내역</h4>
@@ -506,7 +524,8 @@
 								<div class="prod_info">
 									<div class="lf"><img alt="" src="http://shop.adidas.co.kr/upload/prod/basic/120/M41417-1_120X120.jpg"></div>
 									<div class="rg bdrbox">
-										<p class="tit">[reebok classic/unisex] 인스타 펌프 퓨리 오리지널</p>
+										<!-- 170405 스티드배송 제품 아이콘 -->
+										<p class="tit"><span class="ico-speeddel"></span>[reebok classic/unisex] 인스타 펌프 퓨리 오리지널</p>
 										<p class="price">
 											<span><em class="ree_ft">129,200</em>원</span>
 										</p>
@@ -743,13 +762,28 @@
 										<p style="text-align:left;float:right;">오기시전에 꼭 연락주세요~왜냐하면 집에 없을수도 있거든요~</p>
 									</div>
 								</li>
+
 								<!-- 170322 당일배송 도착 예정일 안내 -->
 								<li class="hgt_auto">
 									<strong style="width:105px;letter-spacing:-1px;">도착 예정일</strong>
 									<div class="td" style="margin-left:120px;">
-										<p style="text-align:left;float:right;color:#ab2328;">
-											2월 27일 월요일<span class="icons aft" data-icon="" style="display:inline-block;margin-top:1px;vertical-align:middle;margin-left:3px;"></span>
-										</p>
+										<!--
+			                            170405
+			                            툴팁추가 되면서 코딩 수정
+			                             -->
+										<div class="deliv_date">
+		                                    2월 27일 월요일
+		                                    <div class="icons aft" data-icon="">
+		                                        <div class="tooltip-box">
+		        									<div class="tooltip-contents">
+		        										<a href="javascript:void(0)" class="close_x_btn"></a>
+		                                                <div>주문 결제된 상품 중, 스피드 배송 대상 제품이 <br/>포함되어 있을 경우에는 도착예정일은<br/>스피드 배송 기준 일자로 보여집니다.</div>
+		        									</div>
+		        								</div>
+
+		                                    </div>
+		                                </div>
+										<!-- //170405 -->
 									</div>
 								</li>
 

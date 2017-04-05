@@ -15,34 +15,19 @@
 <script type="text/javascript">
 /* <![CDATA[ */
 jQuery(document).ready(function(){
-	//rcivrTelno, rcivrMobl
-	divTelNo("rcivrTelno", $("rcivrTelno").innerHTML);
-	divTelNo("rcivrMobl", $("rcivrMobl").innerHTML);
+
+
+	jQuery('.oneday_deliv_date .spt_bg').hover(function(){
+		jQuery(this).find('.tooltip-layer').css({
+			display:'block'
+		});
+	},function(){
+		jQuery(this).find('.tooltip-layer').hide();
+	});
+
 });
 
-function divTelNo(strId, value) {
-	if(value.length == 12) {
-		$(strId).innerHTML = value.substring(0, 4) + "-" + value.substring(4, 8) + "-" + value.substring(8, 12);
-	} else if(value.length == 11) {        // 11 자리일때
-		$(strId).innerHTML = value.substring(0, 3) + "-" + value.substring(3, 7) + "-" + value.substring(7, 11);
-	} else if(value.length == 10) { // 10 자리일때
-		if(value.substring(0, 2) == "02") {
-			$(strId).innerHTML = value.substring(0, 2) + "-" + value.substring(2, 6) + "-" + value.substring(6, 10);
-		} else {
-			$(strId).innerHTML = value.substring(0, 3) + "-" + value.substring(3, 6) + "-" + value.substring(6, 10);
-		}
-	} else if(value.length == 9) {  // 9 자리 일때
-		$(strId).innerHTML = value.substring(0, 2) + "-" + value.substring(2, 5) + "-" + value.substring(5, 9);
-	} else if(value.length > 6) {
-		$(strId).innerHTML = value.substring(0, 2) + "-" + value.substring(2, 5) + "-" + value.substring(5, value.length);
-	} else if(value.length > 3) {
-		$(strId).innerHTML = value.substring(0, 2) + "-" + value.substring(2, value.length);
-	} else {
-		$(strId).innerHTML = value;
-	}
 
-}
-/* ]]> */
 </script>
 
 <!-- AceCounter eCommerce (Cart_Inout) v6.5 Start -->
@@ -1681,20 +1666,35 @@ var V_MAIN_PAGE_YN = "/PF030401.action"
 			</div>
 
 			<div class="contents_area2">
-				<div class="grid">
-					<!-- 170331 style padding-bottom 추가 -->
+				<!--
+                170405
+                order_finish_wrap 클래스 추가
+                -->
+				<div class="order_finish_wrap grid">
 					<dl class="order_finish" style="padding-bottom: 0;">
 						<dt><img src="/images/adidas/order/msg_order_finish.gif" alt="주문이 완료되었습니다." /></dt>
 						<dd>감사합니다. 주문이 정상적으로 완료되었습니다.</dd>
 						<dd>두 개 이상의 상품을 구매하셨을 경우, 빠른 배송을 위해 주문하신 상품이 각각 배송될 수 있습니다.</dd>
 					</dl>
 
-					<!-- 170331 주문번호 안내 추가 -->
-					<div style="width:596px;padding:21px 0;margin:0 auto;text-align:center;border:2px solid #000;">
-						<span style="font:15px/15px 'NotoSansKR','Nanum Gothic';color:#000;vertical-align:middle;">주문번호</span> : <span style="margin-top:-1px;vertical-align:middle;font:19px/19px 'adihaus-bold';color:#000;">201703316765710</span>
+					<!--
+                    170405
+                    style 삭제하고 order_num 클래스 추가
+                     -->
+					<div class="order_num">
+						<!--
+                        170405
+                        * style 삭제
+                        * num 클래스 추가
+                         -->
+						<span>주문번호</span> : <span class="num">201703316765710</span>
 					</div>
-					<p style="padding:15px 0 30px;font:14px/14px 'NotoSansKR','Nanum Gothic';color:#0286cd;text-align:center;"><span class="spt_bg" style="width:16px;height:15px;margin:-3px 3px 0 0;vertical-align:middle;background-position:-240px -110px;display:inline-block;"></span>비회원 주문조회 시, 주문번호가 반드시 필요하니 꼭 기억해 주세요!</p>
-					<!-- //170331 -->
+					<!--
+                    170405
+                    style 삭제하고 nomem_noti 클래스 추가
+                     -->
+					<p class="nomem_noti"><span class="spt_bg"></span>비회원 주문조회 시, 주문번호가 반드시 필요하니 꼭 기억해 주세요!</p>
+					<div class="noti_speeddel">스피드 배송 제외 상품이 포함되어 있습니다. 해당 상품은 일반 배송 됩니다.</div>
 
 
 
@@ -1737,25 +1737,12 @@ var V_MAIN_PAGE_YN = "/PF030401.action"
 				<tbody>
 				<tr>
 					<td class="product">
-
-
-
-
-
 						<a href="/PF020401.action?PROD_CD=O08629">
 							<img src="/upload/prod/basic/60/O08629-1_60X60.jpg" class="prd" alt="상품" width="60" height="60" />
-
-
+						</a>
 						<p>
-
-
-
-								<a href="/PF020401.action?PROD_CD=O08629">[한정상품] GOLF Lux Pant_전시명</a>
-
-
-
-
-
+							<!-- 170405 제품제목 앞에 아이콘 추가 -->
+							<a href="/PF020401.action?PROD_CD=O08629"><span class="ico-speeddel spt_bg"></span>[한정상품] GOLF Lux Pant_전시명</a>
 						</p>
 					</td>
 
@@ -1920,7 +1907,17 @@ var V_MAIN_PAGE_YN = "/PF030401.action"
 					<td colspan="3">
 						<span class="oneday_deliv_date">
 							2월 27일 월요일
-							<span class="spt_bg"></span>
+							<!-- 170405 툴팁 추가 -->
+							<span class="spt_bg">
+								<span class="tooltip-layer" style="display: none;">
+									<span class="tooltip-contents">
+										<span>
+											주문 결제된 상품 중, 스피드 배송 대상 제품이<br/>포함되어 있을 경우에는 도착예정일은<br/>스피드 배송 기준 일자로 보여집니다.
+										</span>
+									</span>
+								</span>
+							</span>
+							<!-- //170405 툴팁 추가 -->
 						</span>
 					</td>
 				</tr>

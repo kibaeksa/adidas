@@ -526,6 +526,7 @@ table.view tr td .oneday_deliv_date{
     margin: 0;
 }
 table.view tr td .oneday_deliv_date .spt_bg{
+	position: relative;
 	display: inline-block;
 	width: 13px;
 	height: 13px;
@@ -535,6 +536,16 @@ table.view tr td .oneday_deliv_date .spt_bg{
 	position: relative;
 	top: -1px;
 	margin-left: 3px;
+	text-indent: 0;
+}
+
+table.view tr td .oneday_deliv_date .spt_bg span{
+    margin: 0;
+    display: block;
+}
+
+table.view tr td .oneday_deliv_date .spt_bg .tooltip-layer{
+    width: 290px;
 }
 
 table.mg10 {margin-bottom:10px;}
@@ -581,3 +592,51 @@ span.col_space {display:inline-block;width:15px;text-align:center;}
 .contents_area2 .notice_return p{line-height:16px;color: #83868c;letter-spacing: -1px;font:normal 12px/20px 'dotum';background:url('//image.reebok.co.kr/images/reebok/common/blt_left_list.gif') 0 8px no-repeat;padding-left: 10px;}
 .contents_area2 .notice_return p.tit{margin-bottom: 20px;color: #6b6d72;background: none;padding-left: 0;}
 .contents_area2 .notice_return p.stit{margin-bottom: 5px;background: none;padding-left: 0;}
+
+#contents .order_finish_wrap{
+	padding:0 0 30px;
+}
+
+#contents .order_finish_wrap .order_num{
+	width:596px;
+	padding:21px 0;
+	margin:0 auto;
+	text-align:center;
+	border:2px solid #000;
+}
+
+#contents .order_finish_wrap .order_num span{
+	font:15px/15px 'NotoSansKR','Nanum Gothic';
+	color:#000;
+	vertical-align:middle;
+}
+
+#contents .order_finish_wrap .order_num span.num{
+	margin-top:-1px;
+	font:bold 19px/19px 'NotoSansKRRegular','Nanum Gothic';
+}
+
+#contents .order_finish_wrap .nomem_noti{
+	padding:15px 0 0;
+	font:14px/14px 'NotoSansKR','Nanum Gothic';
+	color:#ab2328;
+	text-align:center;
+}
+
+#contents .order_finish_wrap .nomem_noti .spt_bg{
+	width:16px;
+	height:15px;
+	margin:-3px 3px 0 0;
+	vertical-align:middle;
+	background-position:-140px -2430px;
+	display:inline-block;
+}
+
+#contents .order_finish_wrap .noti_speeddel{
+    margin:20px 0 -29px;
+    padding: 10px 0;
+    text-align: center;
+    background: #ab2229;
+    font:14px/14px 'NotoSansKRRegular','Nanum Gothic';
+    color: #fff;
+}

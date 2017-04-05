@@ -194,6 +194,7 @@ table.view tr td .oneday_deliv_date{
     margin: 0;
 }
 table.view tr td .oneday_deliv_date .spt_bg{
+    position: relative;
     display: inline-block;
     width: 14px;
     height: 14px;
@@ -201,6 +202,16 @@ table.view tr td .oneday_deliv_date .spt_bg{
     background-position: -285px -140px;
     vertical-align: middle;
 }
+
+table.view tr td .oneday_deliv_date .spt_bg span{
+    margin: 0;
+    display: block;
+}
+
+table.view tr td .oneday_deliv_date .spt_bg .tooltip-layer{
+    width: 290px;
+}
+
 table.mg20 {margin-bottom:20px;}
 
 
@@ -230,3 +241,53 @@ span.col_space {display:inline-block;width:15px;text-align:center;}
 .contents_area2 .notice_return li{padding:0 0 7px 7px;line-height:18px;letter-spacing:-.75px;background:url(//image.adidas.co.kr/images/adidas/common/bg_bullet.gif) 0 6px no-repeat;color:#777;}
 .contents_area2 .notice_return p{font-weight:bold;line-height:16px;color: #83868c;letter-spacing: -1px;}
 .contents_area2 .notice_return p.tit{margin-bottom: 20px;color: #6b6d72;font-weight: bold;}
+
+#contents_r .order_finish_wrap{
+	padding:0 0 30px;
+}
+
+#contents_r .order_finish_wrap .order_num{
+	width:596px;
+    padding:21px 0;
+    margin:0 auto;
+    text-align:center;
+    border:2px solid #000;
+}
+
+#contents_r .order_finish_wrap .order_num span{
+	font:15px/15px 'NotoSansKR','Nanum Gothic';
+    color:#000;
+    vertical-align:middle;
+}
+
+#contents_r .order_finish_wrap .order_num span.num{
+	margin-top:-1px;
+    vertical-align:middle;
+    font:19px/19px 'adihaus-bold';
+    color:#000;
+}
+
+#contents_r .order_finish_wrap .nomem_noti{
+    padding-top: 15px;
+    font:14px/14px 'NotoSansKR','Nanum Gothic';
+    color:#0286cd;
+    text-align:center;
+}
+
+#contents_r .order_finish_wrap .nomem_noti .spt_bg{
+	width:16px;
+    height:15px;
+    display:inline-block;
+    margin:-3px 3px 0 0;
+    vertical-align:middle;
+    background-position:-240px -110px;
+}
+
+#contents_r .order_finish_wrap .noti_speeddel{
+    margin:20px 0 -29px;
+    padding: 10px 0;
+    text-align: center;
+    background: #dcf3fb;
+    font:14px/14px 'NotoSansKRRegular','Nanum Gothic';
+    color: #f1433a;
+}

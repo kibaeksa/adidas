@@ -445,8 +445,17 @@
 				<p>이용해 주셔서 감사합니다.</p>
 				<p>주문이 정상적으로 완료 되었습니다.</p>
 				<div class="code">주문번호 : <strong class="adihs-din-b">20140945584685</strong></div>
-                <!-- 170331 주문번호 강조 안내 -->
-                <p style="margin:-15px 0 0;color:#0286cd;font-size:1.1rem;"><span class="icons" data-icon="" style="margin-right:3px;"></span>비회원 주문조회 시, 주문번호가 반드시 필요하니 꼭 기억해 주세요!</p>
+                <!--
+                170405
+                style 삭제하고 nomem_noti 클래스 추가
+                -->
+                <p class="nomem_noti"><span class="icons" data-icon="" style="margin-right:3px;"></span>비회원 주문조회 시, 주문번호가 반드시 필요하니 꼭 기억해 주세요!</p>
+                <!--
+                170405
+                추가
+                 -->
+                <div class="noti_speeddel">스피드 배송 제외 상품이 포함되어 있습니다.<br/>해당 상품은 일반 배송 됩니다.</div>
+
 			</div>
 
 			<div class="odr_pay_box order_prodlist">
@@ -462,7 +471,8 @@
 							</div>
 							<div class="info">
 								<p class="ctgr">UNISEX ORIGINALS</p>
-								<p class="tit">[모델착장] 슈퍼스타 파운데이션 슈즈 80s 빈티지 디럭스</p>
+                                <!-- 170405 스티드배송 제품 아이콘 -->
+								<p class="tit"><span class="ico-speeddel icons" data-icon=""></span>[모델착장] 슈퍼스타 파운데이션 슈즈 80s 빈티지 디럭스</p>
 								<div class="price">
 									<div>129,000<span>원</span></div>
 								</div>
@@ -556,9 +566,27 @@
 							<th>배송 시 요청사항</th>
 							<td>도착 전 전화 주세요.</td>
 						</tr>
-            <tr class="no_line">
+                        <tr class="no_line">
 							<th>도착 예정일</th>
-							<td class="icons aft" data-icon="">2월 27일 월요일</td>
+                            <!--
+                            170405
+                            툴팁추가 되면서 코딩 수정
+                             -->
+							<td>
+                                <div class="deliv_date">
+                                    2월 27일 월요일
+                                    <div class="icons aft" data-icon="">
+                                        <div class="tooltip-box">
+        									<div class="tooltip-contents">
+        										<a href="javascript:void(0)" class="close_x_btn"></a>
+                                                <div>주문 결제된 상품 중, 스피드 배송 대상 제품이 <br/>포함되어 있을 경우에는 도착예정일은<br/>스피드 배송 기준 일자로 보여집니다.</div>
+        									</div>
+        								</div>
+
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- //170405 -->
 						</tr>
 					</table>
 				</div>
@@ -698,10 +726,17 @@
 	<script type="text/javascript" src="/js/adidas/common.js"></script>
 	<script type="text/javascript">
 		(function($){
-			$(document).ready(function() {
 
-
+            // 170405 툴팁 스크립트
+			$('.deliv_date').bind('click',function(event){
+				$(this).find('.tooltip-box').addClass('active');
 			});
+
+			$('.deliv_date .tooltip-box .close_x_btn').bind('click',function(event){
+				event.stopPropagation();
+				$(this).parent().parent().removeClass('active');
+			});
+
 		})(jQuery);
 
 	</script>
