@@ -861,7 +861,7 @@
       							var targetElem = document.getElementById(targetId);
 
       							// elemVideo.autoplay = true;
-      							// elemVideo.loop = true;
+      							elemVideo.loop = true;
       							elemVideo.muted = true;
 
       							elemSource.src = videoSrc;
@@ -879,7 +879,7 @@
       								},500);
 
       								setTimeout(function(){
-      									$('#video-background').addClass('ended');
+      							// 		$('#video-background').addClass('ended');
       									setTimeout(function(){
       										$('.visual_video').addClass('active');
       									},500);
@@ -891,12 +891,13 @@
       								this.parentNode.parentNode.removeChild(this.parentNode);
       							  }
       						  }
+
                     setTimeout(function(){
                       $('.visual_video').addClass('active');
                       $('.visual_video .masthead').addClass('active');
                     },200)
 
-      						// initVideo('video-background' , '/images/reebok/event/about/nano7/RBK S17 NTV CARMEN 051 KOR 001FINAL CUT.mp4');
+      				initVideo('video-background' , 'http://image.reebok.co.kr/images/reebok/event/about/floatride/floatride_video_v3.mp4');
 
 
 
