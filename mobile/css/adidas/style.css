@@ -10141,13 +10141,24 @@ padding:30px 15px;
 }
 
 .tooltip-box .tooltip-contents .title{
-    display: inline-block;
+    display: block;
     padding-bottom: 1rem;
     font: 1.2rem/1.3rem 'NotoSansKR';
     color:#333;
     letter-spacing: 0.3px;
+    text-align: left;
+
 }
 
+.tooltip-box .tooltip-contents .li_dot.li_tooltip li{
+    font: 0.9rem/1.4rem 'Dotum';
+    color: #888;
+    text-align: left;
+    padding-bottom: 7px;
+}
+.tooltip-box .tooltip-contents .li_dot.li_tooltip li:last-child{
+    padding-bottom: 0px;
+}
 
 em.cart_speedy .tooltip-box{
     position: absolute;
@@ -10173,7 +10184,7 @@ em.cart_speedy .tooltip-box:before{
 em.order_speedy .tooltip-box:before{
     left: initial;
     right: 50%;
-    margin-right: -172px;
+    margin-right: -132px;
 }
 
 em.prd_speedy .tooltip-box:before{
@@ -15856,7 +15867,7 @@ em.prd_speedy .tooltip-box:before{
   overflow: scroll;
 }
 .header_layerpopup .contents{
-  padding: 50px 0 80px;
+  padding: 50px 0 100%;
 }
 .header_layerpopup .contents .bg{
   background: #fff;
@@ -15909,6 +15920,15 @@ em.prd_speedy .tooltip-box:before{
 .header_layerpopup .contents p.bold span{
     font: 800 2rem/2.1rem 'NotosansKRRegular';
     vertical-align: middle;
+}
+.header_layerpopup .contents p a{
+    display: block;
+    color:#000;
+    letter-spacing: 0.5px;
+    font-size: 1.1rem;
+}
+.header_layerpopup .contents p a:after{
+    margin-left: 3px;
 }
 
 .header_layerpopup .close_x_btn{
