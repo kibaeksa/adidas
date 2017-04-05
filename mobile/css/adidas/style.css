@@ -6196,16 +6196,11 @@ div.layerpop_wrap#nomem_order_popup .inner .content .desc{
 #container.product_view #buy_btn_layer>a:last-child::before{
     display: none;
 }
-/* today_delivery 170322 */
+
+/* today_delivery 170405 css 수정 */
 #container.product_view .product_order .today_delivery{
   position: relative;
   padding:0 15px;
-  /*overflow: hidden;*/
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
   background: #ddf3fb;
 }
 #container.product_view .product_order .today_delivery>a{
@@ -6215,32 +6210,41 @@ div.layerpop_wrap#nomem_order_popup .inner .content .desc{
   text-align: left;
   color: #000;
 }
-#container.product_view .product_order .today_delivery>a .deli_txt{
-  font: 1.4rem/1.7rem 'NotoSansKR';
+#container.product_view .product_order .today_delivery:after{
+    content:'';
+    display: block;
+    clear: both;
 }
-#container.product_view .product_order .today_delivery>a .deli_txt:after{
-  margin-left: 5px;
+#container.product_view .product_order .today_delivery .delivery_icon{
+    float:left;
+    width: 40px;
+    margin: 26px 0;
+    display: inline-block;
+    /*flex: 40px 0 0;
+    -webkit-flex: 40px 0 0;*/
+    height: 40px;
+    font: 23px/40px 'NotoSansKR';
+    text-align: center;
+    color: #ddf3fb;
+    background: #56c2e9;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
 }
-#container.product_view .product_order .today_delivery>a .deli_txt_s{
-  font: 1.25rem 'NotoSansKRRegular';
+#container.product_view .product_order .today_delivery .txt_area{
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    /* height: 60px; */
+    width: 65%;
+    margin: 26px 0 26px 6px;
 }
-#container.product_view .product_order .today_delivery>a>span{
-  display: block;
+#container.product_view .product_order .today_delivery .txt_area ul li.tit{
+    font: 1.25rem 'NotoSansKRRegular';
 }
-#container.product_view .product_order .today_delivery em{
-  width: auto;
-  margin: 26px 0;
-  display: inline-block;
-  flex: 40px 0 0;
-  -webkit-flex: 40px 0 0;
-  height: 40px;
-  font: 23px/40px 'NotoSansKR';
-  text-align: center;
-  color: #ddf3fb;
-  background: #56c2e9;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
+#container.product_view .product_order .today_delivery .txt_area ul li.tit:first-child{
+    font: 1.4rem/1.7rem 'NotoSansKR';
 }
+
 #container.product_view .product_order .today_delivery em.prd_speedy{
     font: 1.2rem 'NotosansKR';
     color: #000;
