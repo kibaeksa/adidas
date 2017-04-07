@@ -660,6 +660,20 @@
             </div>
             <!-- //header_wrap_150930 -->
 
+			<script type="text/javascript">
+				setTimeout(function(){
+					$('.oneday_bars').css({position:'relative',overflow:'hidden'});
+					if($('html').hasClass('ie7')){
+						$('.oneday_bars').hide();
+					}else{
+						$('.oneday_bars').animate({
+							height : 0
+						});
+					}
+
+				},3000);
+			</script>
+
 	<!-- contents_wrap -->
 	<div id="contents_wrap" class="pt_none">
 		<!-- contents -->

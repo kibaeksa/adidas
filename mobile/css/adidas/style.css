@@ -5057,6 +5057,19 @@ div.layerpop_wrap#nomem_order_popup .inner .content .desc{
 	color: #407DBE;
 }
 
+#container.product_view .product_order>.prod_imgs_cut li>div .label.t-delivery{
+    padding-left: 10px;
+    padding-right: 13px;
+    background:rgba(0,0,0,0.6);
+}
+
+#container.product_view .product_order>.prod_imgs_cut li>div .label.t-delivery:after{
+    font-size: 15px;
+    position: relative;
+    top: 2px;
+    left: 4px;
+}
+
 
 #container.product_view .product_order>.prod_imgs_cut li .zoom_btn{
 	text-align: center;
@@ -6233,7 +6246,7 @@ div.layerpop_wrap#nomem_order_popup .inner .content .desc{
     margin: 26px 0 26px 6px;
 }
 #container.product_view .product_order .today_delivery .txt_area ul li.tit{
-    font: 1.25rem 'NotoSansKRRegular';
+    font: 1.1rem 'NotoSansKRRegular';
 }
 #container.product_view .product_order .today_delivery .txt_area ul li.tit:first-child{
     font: 1.4rem/1.7rem 'NotoSansKR';
@@ -8380,11 +8393,10 @@ padding:30px 15px;
 }
 
 #container .product_grid>* .img .label.t-delivery{
-  padding-right: 13px;
-	background:rgba(0,0,0,0.8);
-  opacity: .8;
-  -webkit-opacity: .8;
+    padding-right: 13px;
+    background:rgba(0,0,0,0.6);
 }
+
 #container .product_grid>* .img .label.t-delivery:after{
   font-size: 15px;
   position: relative;
