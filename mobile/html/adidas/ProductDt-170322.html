@@ -21,6 +21,12 @@
 <body>
 
 	<div id="wrap">
+        <div id="topbnn_mycpn" style="width: 100%; position: relative; overflow: hidden;" class="top_bnn">
+              <img src="http://imagem.adidas.co.kr/images/adidas/bg_topbnn_coupon_140325.jpg?v=160429" alt="" style="width:100%;">
+              <a href="#" onclick="javascript:closeMyCpnLayer();" class="top_bnn_close" style="overflow:hidden;display:block;height: 71%;left: 87%;position: absolute;text-indent: -5000px;top: 12%;width: 11%;z-index:10;">닫기</a>
+              <a href="#" onclick="javascript:goCoupSel();" style=" display: block;width:100%;height:100%;position: absolute;top:0;left:0;text-indent: -5000px;">쿠폰 확인하기</a>
+      	</div>
+
 		<div id="header" style="position: relative;">
 			<div class="nav_menu">
 				<div class="nav_menu_inner">
@@ -530,8 +536,8 @@
 						<li>
 							<div data-zoom-image="http://shop.adidas.co.kr/upload/prod/etc/target/AQ6761-4.jpg">
 								<img src="http://shop.adidas.co.kr/upload/prod/etc/500/AQ6761-4_500X500.jpg" alt="">
-								<!-- 160513 LABEL 추가 -->
-								<span class="label adihs-b sale">-30%</span>
+								<!-- 170406 스피드 배송 제품 뱃지 추가 -->
+                                <div class="label adihs-b icons aft t-delivery " data-icon="">SPEEDY DELIVERY</div>
 								<!-- 160811 위크엔드 세일 -->
 								<!-- <span class="oo_label crazy_label" style="border-radius:0;">
 									<img src="http://imagem.adidas.co.kr/images/adidas/event/bg_weekend_sale_label.png">
@@ -544,7 +550,8 @@
 							<div data-zoom-image="http://shop.adidas.co.kr/upload/prod/basic/target/AQ6761-1.jpg">
 								<img src="http://shop.adidas.co.kr/upload/prod/basic/500/AQ6761-1_500X500.jpg" alt="">
 								<!-- 160513 LABEL 변경 -->
-								<span class="label adihs-b o-only">ONLINE ONLY</span>
+                                <span class="label adihs-b sale">-30%</span>
+
 							</div>
 							<a href="javascript:void(0)" class="zoom_btn"><span class="icons"></span></a>
 						</li>
@@ -2644,6 +2651,8 @@
 
   <!-- 170322 today_delivery locationPop -->
   <div class="layerpopup layerpopup_zipfinder layerpopup_today_delivery" id="layerpopup-zipfinder" style="display: none;">
+
+
   	<div class="header">
   		<h2>스피드 배송 가능 지역 찾기</h2>
   		<a href="javascript:void(0)" class="close_x_btn"></a>

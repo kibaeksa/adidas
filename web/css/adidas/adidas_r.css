@@ -797,7 +797,8 @@ a:active {color:#797b80;text-decoration:none;}
 }
 
 /* Speedy delivery icon */
-#wrap .ico-speeddel{
+#wrap .ico-speeddel,
+#container_r .ico-speeddel{
 	width: 26px;
     height: 12px;
     margin-right: 3px;
@@ -4080,7 +4081,7 @@ div.search_fail .sch_failbox2 #new_prodlist .banner_list .banner_slide{width:100
 }
 
 .product-main .product-infomation .buy_box .oneday_deliv_info .tooltip-layer{
-	width: 300px;
+	width: 360px;
 	height: 290px;
 	top: 41px;
     left: -137px;

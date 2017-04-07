@@ -1049,7 +1049,9 @@ span.price span.sale span.won{color:#e4000f;}
 }
 
 /* Speedy delivery icon */
-#wrap .ico-speeddel{
+#wrap .ico-speeddel,
+#wrap2 .ico-speeddel,
+#contents .ico-speeddel{
 	width: 17px;
     height: 12px;
     margin: -3px 4px 0 0;
@@ -3416,7 +3418,7 @@ iframe.ie6_select1 {position:absolute; bottom:-3px;left:-3px; z-index:99;width:2
 #contents .prod_calc_layer .calc_cpn_layer .body .cpn_list li .area2{width:50px;float:left;padding-top:16px;margin-right:28px;}
 #contents .prod_calc_layer .calc_cpn_layer .body .cpn_list li .area3{width:80px;float:left;padding-top:7px;line-height:16px;}
 
-div.contents_prodorder {width:890px; overflow:hidden; position:relative;background:#fff;}
+div.contents_prodorder {width:890px;position:relative;background:#fff;}
 
 div.prod_order{width:890px; height:540px; position:relative; margin-bottom:24px; border-top:0px solid #dfdfdf;}
 div.prod_order div.prod_box {width:470px; height:520px; position:absolute; top:19px; left:20px; z-index:10;}
@@ -3799,7 +3801,7 @@ div.right_box2{width:381px;float:left;}
 
 
 #infobox2 table .oneday_deliv_info>div>.spt_bg .tooltip-layer{
-	width: 300px;
+	width: 360px;
     height: 290px;
     top: 22px;
     left: -245px;
