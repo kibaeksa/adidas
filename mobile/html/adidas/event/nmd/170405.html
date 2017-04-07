@@ -627,18 +627,18 @@
 
 			<section id="nmd">
 				<div class="main_wrap">
-					<div class="box on"><img src="http://imagem.adidas.co.kr/images/adidas/event/nmd/170405/main1.jpg" alt=""></div>
+					<div class="box"><img src="http://imagem.adidas.co.kr/images/adidas/event/nmd/170405/main1.jpg" alt=""></div>
 					<div class="box"><img src="http://imagem.adidas.co.kr/images/adidas/event/nmd/170405/main2.jpg" alt=""></div>
 				</div>
 				<div class="tab">
 					<ul>
-						<li class="on"><span>shoes</span></li>
-						<li><span>apparel</span></li>
+						<li class="shoes"><span>shoes</span></li>
+						<li class="apparel"><span>apparel</span></li>
 					</ul>
 				</div>
 				<div class="content">
 
-					<div class="content_1 on type1">
+					<div class="content_1 type1">
 						<div class="title">
 							<h2>
 								새로운 유형의 오리지널리티. <br>
@@ -821,6 +821,38 @@
 			<script type="text/javascript">
 
 				(function($){
+					window.onload = function(){
+
+		                if( location.hash ){
+		                    $('#nmd .main_wrap .box').removeClass('on').eq(1).addClass('on');
+		                    $('#nmd .tab ul li').removeClass('on').eq(1).addClass('on');
+		                    $('#nmd .content .content_1').removeClass('on').eq(1).addClass('on');
+
+		                }else{
+		                    $('#nmd .main_wrap .box').removeClass('on').eq(0).addClass('on');
+		                    $('#nmd .tab ul li').removeClass('on').eq(0).addClass('on');
+		                    $('#nmd .content .content_1').removeClass('on').eq(0).addClass('on');
+		                }
+
+		            }
+
+
+		            $('.tab ul li.apparel').click(function(e){
+		                e.preventDefault();
+		                var state = { 'page_id': 1, 'user_id': 5 };
+		                var title = '';
+		                var url = '#apparel';
+		                history.pushState(state, title, url);
+		            });
+
+		            $('.tab ul li.shoes').click(function(e){
+		                e.preventDefault();
+		                var state = { 'page_id': 1, 'user_id': 5 };
+		                var title = ' ';
+		                var url = ' ';
+		                history.pushState(state, title, url);
+		            });
+
 					//ready
 					$('.ready').click(function(){
 						alert('준비중입니다.');

@@ -1337,7 +1337,7 @@
 
 		</style>
 		<div id="ndm_170405" style="position:relative; overflow:hidden;">
-			<div class="main_top on">
+			<div class="main_top">
 				<img src='http://image.adidas.co.kr/images/adidas/event/nmd/20170405/main_top.jpg' alt="">
 			</div>
 			<div class="main_top">
@@ -1349,8 +1349,8 @@
 
 					<div class="tab">
 						<ul>
-							<li class="on"><a href="javascript:void(0)">SHOE</a></li>
-							<li class="apparel"><a href="javascript:void(0)">apparel</a></li>
+							<li class="shoes"><a href="javascript:void(0)">SHOEs</a></li>
+							<li class="apparel" data="#"><a href="javascript:void(0)">apparel</a></li>
 						</ul>
 					</div>
 
@@ -1359,7 +1359,7 @@
 					<div class="content_box">
 
 						<!-- type1 -->
-						<div class="content_1 on">
+						<div class="content_1 ">
 
 							<div class="header">
 								<div class="title">
@@ -1769,34 +1769,84 @@
 		<!-- //ndm_170405 -->
 		<script type="text/javascript">
 
+
+
+
+
 			(function($){
 
+				function isIE () {
+				  var myNav = navigator.userAgent.toLowerCase();
+				  return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
+				}
+				if (isIE () && isIE () < 10) {
+				 // is IE version less than 10
+				 $('#ndm_170405 .main_top').removeClass('on').eq(0).addClass('on');
+				 $('#ndm_170405 .tab ul li').removeClass('on').eq(0).addClass('on');
+				 $('#ndm_170405 .content .content_box .content_1').removeClass('on').eq(0).addClass('on');
+				} else {
+					window.onload = function(){
 
 
-				$('.tab ul li.apparel').click(function(e){
-					e.preventDefault();
-					var targetUrl = $(this).attr('href');
+    					if( location.hash ){
+    						$('#ndm_170405 .main_top').removeClass('on').eq(1).addClass('on');
+    						$('#ndm_170405 .tab ul li').removeClass('on').eq(1).addClass('on');
+    						$('#ndm_170405 .content .content_box .content_1').removeClass('on').eq(1).addClass('on');
 
-					var state = { 'page_id': 1, 'user_id': 5 };
-					var title = '';
-					var url = '#apparel';
-					history.pushState(state, title, url);
+    					}else{
+    						$('#ndm_170405 .main_top').removeClass('on').eq(0).addClass('on');
+    						$('#ndm_170405 .tab ul li').removeClass('on').eq(0).addClass('on');
+
+    						$('#ndm_170405 .content .content_box .content_1').removeClass('on').eq(0).addClass('on');
+    					}
+
+    				}
 
 
-				});
 
-				var apparel = apparel
+    				$('.tab ul li.apparel').click(function(e){
+    					e.preventDefault();
+    					// var targetUrl = $(this).attr('href');
+    					var state = { 'page_id': 1, 'user_id': 5 };
+    					var title = '';
+    					var url = '#apparel';
+    					history.pushState(state, title, url);
+    					$('#ndm_170405 .content .content_box .content_1').removeClass('on').eq(1).addClass('on');
+    				});
 
-				if( window.location.hash == apparel ){
-					alert();
-					$('#ndm_170405 .content .content_box .content_1').removeClass('on').eq(1).addClass('on')
+    				$('.tab ul li.shoes').click(function(e){
+    					e.preventDefault();
+    					// var targetUrl = $(this).attr('href');
+    					var state = { 'page_id': 1, 'user_id': 5 };
+    					var title = ' ';
+    					var url = ' ';
+    					history.pushState(state, title, url);
+    				});
+
+
 				}
 
 
 
-				// window.onpopstate = function(event) {
-			    // 	loadStateContent(event.state);
-				// }
+				// if (location.hash == 'a'){
+				//  alert();
+				//  }
+
+				//  if(history.pushState) {
+				//     history.pushState(null, null, '#myhash');
+				// 	}
+				// 	else {
+				// 	    location.hash = '#myhash';
+				// 	}
+
+				// var apparel = #apparel
+
+
+
+
+
+
+
 
 
 
