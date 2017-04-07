@@ -156,7 +156,7 @@ $width600:600px;
 		}
 		.glich_bg{
 			width: 100%;
-			background-image: url("/images/adidas/event/alexander_wang/bg_center_org.jpg");
+			background-image: url("http://imagem.adidas.co.kr/images/adidas/event/alexander_wang/bg_center_org.jpg");
 			background-position: center center;
 			background-size: 100% 100%;
 			position: absolute;
@@ -170,10 +170,10 @@ $width600:600px;
 				height: 100%;
 				z-index: 1;
 				background-size: cover;
-				background-image: url("/images/adidas/event/alexander_wang/bg_change1.jpg");
+				background-image: url("http://imagem.adidas.co.kr/images/adidas/event/alexander_wang/bg_change1.jpg");
 			}
 			.bg_change2{
-				background-image: url("/images/adidas/event/alexander_wang/bg_change2.jpg");
+				background-image: url("http://imagem.adidas.co.kr/images/adidas/event/alexander_wang/bg_change2.jpg");
 				z-index: 2;
 			}
 		}
@@ -410,7 +410,7 @@ $width600:600px;
 								height: 2rem;
 								padding: 0.3rem;
 						    border: 2px solid #000;
-								background: url("/images/adidas/event/alexander_wang/prev.png") 50% no-repeat;
+								background: url("http://imagem.adidas.co.kr/images/adidas/event/alexander_wang/prev.png") 50% no-repeat;
 								background-size: auto 90%;
 
 							}
@@ -424,7 +424,7 @@ $width600:600px;
 						    height: 2rem;
 						    padding: 0.3rem;
 						    border: 2px solid #000;
-						    background: url("/images/adidas/event/alexander_wang/next.png") center center no-repeat;
+						    background: url("http://imagem.adidas.co.kr/images/adidas/event/alexander_wang/next.png") center center no-repeat;
 						    background-size: auto 90%;
 							}
 						}
