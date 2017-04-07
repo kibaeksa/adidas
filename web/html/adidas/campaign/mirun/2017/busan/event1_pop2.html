@@ -464,8 +464,8 @@
 		#popupContents .box table .detail ul{
 			display: block;
 			margin: 0 0px 10px 0px;
-			padding-bottom: 10px;
-			border-bottom: 1px dotted  #a9a9a9;
+			/*padding-bottom: 10px;*/
+			
 		}
 		#popupContents .box table .detail ul li label{
 			font:12px/18px 'Dotum',dotum;
@@ -501,6 +501,22 @@
 			letter-spacing:-0.75px;
 		}
 		.red{ padding-left: 10px; color:#c60146 !important; }
+
+		#popupContents .box table .w8_info{
+			border-bottom: 1px dotted  #a9a9a9;
+		}
+		#popupContents .box table .w8_info p{
+			font:11px/11px 'Dotum',dotum;
+			color:#999;
+			letter-spacing: -1px;
+		}
+		#popupContents .box table .w8_info a{
+			display: inline-block;
+			padding:10px 0 15px 0;
+		}
+		#popupContents .box table .adi_invite{
+			padding-top: 15px;
+		}
 	</style>
 	<script>
 		$(document).ready(function(){
@@ -557,7 +573,7 @@
 				<tr>
 					<th rowspan="" id="thChanged">참가코스</th>
 					<td colspan="3" style="height:auto;padding:16px 0 16px 0;" class="course4 clearfix">
-						<div style="overflow:hidden;padding-left:20px;">
+						<div style="overflow:hidden;padding-left:20px; padding-top: 1px;">
 							<div class="course"><input type="radio" id="course3" name="course" /> <label for="course3">Women’s 8K코스</label></div>
 							<div class="course"><input type="radio" id="course2" name="course" /> <label for="course2">10km 코스</label></div>
 						</div>
@@ -569,6 +585,11 @@
 									<li><label for="type2"><input type="radio" id="type2" name="course_w8"> BOOST RUNNER 모든 스포츠를 즐기는 러너</label></li>
 									<li><label for="type3"><input type="radio" id="type3" name="course_w8"> STYLE RUNNER 스타일리쉬하게 돋보이고 싶은 러너</label></li>
 								</ul>
+								<div class="w8_info">
+									<p>* Women’ 8K 참가자는 3개 그룹 모두 함께 출발합니다.</p>
+									<p>* 그룹 선택은 소셜 이벤트 참가 및 그룹별 평균 기록 산출을 통해 우승그룹 시상 시 활용됩니다. </p>
+									<a href="http://adidasmirun.com/02/05/"><img src="http://image.adidas.co.kr/images/adidas/popup/mirun2017/w8k_btn.png" alt="" /></a>
+								</div>
 								<div class="adi_invite">
 									<p><strong>친구 초대 하기</strong></p>
 									<div class="box">이름 <input type="text"></div>
@@ -705,45 +726,8 @@
 						</td>
 					</tr>
 
-					<tr>
-						<th>
-							나만의 간식 패키지<br>
-							(Snack Package)
-						</th>
-						<td colspan="3"style="padding:10px 0 10px 20px;">
-							<div style="overflow:hidden;margin-bottom:10px;">
-								<ul>
-									<li style="width:202px;float:left;">
-										<p class="snack_lb">
-											<input type="radio" id="drink1" name="drink"/>
-											<label for="drink1" style="color:#666;">라이트 패키지<br/>(Light Package)</label>
-										</p>
-										<p class="snack_desc">음료, 라이트바, 과일또는샐러드</p>
-										<p class="snack_desc">(Drink, Light bar, Salad)</p>
-									</li>
+					
 
-									<li style="width:165px;float:left;">
-										<p class="snack_lb">
-											<input type="radio" id="drink2" name="drink"/>
-											<label for="drink2" style="color:#666;">에너지 패키지<br/>(Energy Package)</label>
-										</p>
-										<p class="snack_desc">음료, 에너지바, 머핀류</p>
-										<p class="snack_desc">(Drink, Energy bar, Muffin)</p>
-									</li>
-
-									<li style="width:205px;float:left;">
-										<p class="snack_lb">
-											<input type="radio" id="drink3" name="drink"/>
-											<label for="drink3" style="color:#666;">스위트 패키지<br/>(sweet Package)</label>
-										</p>
-										<p class="snack_desc">음료, 초코바, 크림빵</p>
-										<p class="snack_desc">(Drink, Chocolate bar, Cream bread)</p>
-									</li>
-								</ul>
-							</div>
-							<p style="color:#999;margin-bottom:1px;letter-spacing:-1px;">* 패키지별 간식 항목은 추후 변경 될 수 있습니다. </p>
-						</td>
-					</tr>
 					<tr>
 					<th style="">
 						참가신청 <br>
