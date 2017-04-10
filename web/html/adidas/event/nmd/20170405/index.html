@@ -1141,11 +1141,14 @@
 		        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
 		        src='http://image.adidas.co.kr/images/adidas/event/nmd/20170405/bg.jpg',
 		        sizingMethod='scale');
-				transition: all 3.5s;
+				background-position: 0% 0%;
+
+				transition: all 4s;
+				-webkit-transition: all 4s;
 			}
 			#ndm_170405 .content.on{
 				/*transform: scale(1.1);*/
-				background-position: 100% 100%;
+				background-position: 110% 100%;
 			}
 			#ndm_170405 .content .inner{
 				width: 950px;
@@ -1258,12 +1261,15 @@
 			}
 
 			#ndm_170405 .content_1 .box ul li .buy span{
-				padding: 0 44px;
+				/*padding: 0 44px;*/
 				font:14px/34px 'NotosansKRLight';
 				color:#fff;
 				opacity: .8;
 				position: relative;
 				z-index: 10;
+				width: 140px;
+				display: inline-block;
+				text-align: center;
 			}
 
 			#ndm_170405 .content_1 .box ul li .buy em{
@@ -1534,12 +1540,12 @@
 											</a>
 										</div>
 									</li>
-									<li style="border-top:1px solid #404252;">
+									<li style="border-top:1px solid #404252;" class="readyprd">
 										<div class="shoe_box">
 											<p>BK2217</p>
 											<div class="img"><img src='http://image.adidas.co.kr/images/adidas/event/nmd/20170405/item2.png' alt=""></div>
-											<a href="http://shop.adidas.co.kr/PF020401.action?PROD_CD=BK2217" class="buy">
-												<span>구매하기</span>
+											<a href="http://shop.adidas.co.kr/PF020401.action?PROD_CD=BK2217" class="buy outorder">
+												<span>품절 상품</span>
 												<em></em>
 											</a>
 										</div>
@@ -1872,6 +1878,12 @@
 				// ready
 				$('.ready').click(function(){
 					alert('입고 예정입니다.');
+					return false;
+				});
+
+				// out
+				$('.outorder').click(function(){
+					alert('품절되었습니다.');
 					return false;
 				});
 
