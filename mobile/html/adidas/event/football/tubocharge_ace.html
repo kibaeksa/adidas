@@ -435,505 +435,501 @@
 
 		<div id="container">
 			<div id="football">
-      <style type="text/css">
-	        #wrap #header{
-	          position: relative !important;
-	        }
-
-	        #wrap #container{
-	          margin-top: 0 !important;
-	        }
-
-	        #football{
-	          position: relative;
-	          overflow: hidden;
-	        }
-
-	        #football .button{
-	          height: 50px;
-	          line-height:45px;
-	          display: block;
-	          box-sizing: border-box;
-	          -webkit-box-sizing: border-box;
-	          border: 2px solid  #fff;
-	          color: #fff;
-	          text-align: center;
-	          font-size: 14px;
-	          z-index: 12;
-	          text-transform: uppercase;
-	        }
-
-	        #football .button.dark{
-	          border-color: #000;
-	          color: #000;
-	        }
-
-	        #football .visual{
-	          width: 100%;
-	          height: 80vh;
-	          position: relative;
-	        }
-
-	        #football .visual .button{
-	          width: 80%;
-	          position: absolute;
-	          bottom: 44px;
-	          left: 50%;
-
-	          transform:translate3d(-50%,0,0);
-	          -webkit-transform:translate3d(-50%,0,0);
-	        }
-
-	        #football .visual img{
-	            min-width: 0;
-	            min-height: 0;
-	            max-width: 100%;
-	            object-fit: cover;
-	            width: 100%;
-	            height: 100%;
-	            top: 0;
-	            left: 0;
-	        }
-
-	        #football .statement{
-	          position: relative;
-	          background: #111;
-	        }
-
-	        #football .statement p{
-            width: 100%;
-            position: absolute;
-            margin-top: -13px;
-            top: 50%;
-            left: 0;
-            text-align: center;
-            transform: translate3d(0,-50%,0);
-            -webkit-transform: translate3d(0,-50%,0);
-            font: 13px/18px 'NotoSansKRLight';
-            color: #fff;
-	        }
-
-	        #football .statement .bg img{
-	          width: 100%;
-	        }
-
-	        #football .highlight{
-	          width: 100%;
-	          position: relative;
-	          overflow: hidden;
-	          background:url('http://imagem.adidas.co.kr/images/adidas/event/football/20161123/bg_paper.jpg') 0 0 no-repeat;
-	          background-size:cover;
-	        }
-
-	        #football .highlight .owl-stage{
-	          overflow: inherit;
-	        }
-
-	        #football .highlight .owl-stage::after{
-	          content:'';
-	          display: block;
-	          visibility: hidden;
-	          clear:both;
-	        }
-
-	        #football .highlight .products_slider{
-	          margin-top: 5rem;
-	        }
-
-	        #football .highlight .products_slider .box{
-	          width: 100%;
-	          position: relative;
-	        }
-
-	        #football .highlight .products_slider .box img{
-	          width: 100%;
-	        }
-
-	        #football .highlight .products_slider .box .bg{
-	          position: absolute;
-	          top: 0;
-	          left: 0;
-	        }
-
-	        #football .highlight .products_slider .box .img{
-	          position: relative;
-	          z-index: 1;
-	          text-align: center;
-
-	          transform:translate3d(0,-10%,0);
-	          -webkit-transform:translate3d(0,-10%,0);
-	        }
-
-	        #football .highlight .products_slider .box .img img{
-	          width: 80%;
-	        }
-
-	        #football .highlight .owl-dots{
-	          display: -webkit-flex;
-	          display: -moz-flex;
-	          display: -ms-flex;
-	          display: -o-flex;
-	          display: flex;
-	          position: relative;
-	            /*top: -3rem;*/
-	        }
-
-	        #football .highlight .owl-dots .owl-dot{
-	          width: 33%;
-	          height: 40px;
-	          position: relative;
-	        }
-
-	        #football .highlight .owl-dots .owl-dot:nth-child(2){
-	          width: 34%;
-	        }
-
-	        #football .highlight .owl-dots .owl-dot span{
-	          width: 100%;
-	          height: 100%;
-	          display: block;
-	          color: #000;
-	          letter-spacing: 3px;
-	          text-align: center;
-	          text-transform: uppercase;
-	          font:1.6rem/40px 'adiLight';
-	        }
-
-	        #football .highlight .owl-dots .owl-dot.active span{
-	          font-family: 'adiBlack';
-	        }
-
-	        #football .highlight .owl-dots .owl-dot:nth-child(1) span::after{
-	          content:'cage';
-	        }
-
-	        #football .highlight .owl-dots .owl-dot:nth-child(2) span::after{
-	          content:'stadium';
-	        }
-
-	        #football .highlight .owl-dots .owl-dot:nth-child(3) span::after{
-	          content:'street';
-	        }
-
-
-	        #football .highlight .owl-dots .owl-dot::after,
-	        #football .highlight .owl-dots .owl-dot::before{
-	          content:'';
-	          width: 0;
-	            height: 3px;
-	            background: #363636;
-	            position: absolute;
-	            bottom: -5px;
-	            transition: width 0.2s;
-	            -webkit-transition: width 0.2s;
-	        }
-
-	        #football .highlight .owl-dots .owl-dot::after{
-	          left: 50%;
-	        }
-
-	        #football .highlight .owl-dots .owl-dot::before{
-	          right: 50%;
-	        }
-
-	        #football .highlight .owl-dots .owl-dot.active::after,
-	        #football .highlight .owl-dots .owl-dot.active::before{
-	          width: 20%;
-	        }
-
-
-	        #football .highlight .prod_desc{
-	          position: relative;
-	          height: 8rem;
-	          margin-bottom: 4rem;
-	        }
-
-	        #football .highlight .prod_desc .box{
-	          width: 100%;
-	          position: absolute;
-	          top: 50%;
-	          opacity: 0;
-
-	          transition:opacity 0.3s;
-	          -webkit-transition:opacity 0.3s;
-
-	          transform:translate3d(0,-50%,0);
-	          -webkit-transform:translate3d(0,-50%,0);
-	        }
-
-	        #football .highlight .prod_desc .box p{
-	          color: #000;
-	          font:1.35rem/2rem 'NotoSansKR';
-	          text-align: center;
-	        }
-
-	        #football .highlight .prod_desc .box.loaded{
-	          opacity: 1;
-	        }
-
-	        #football .features{
-	          position: relative;
-	        }
-
-	        #football .features .box{
-	          margin-bottom: 10rem;
-	        }
-
-	        #football .features .box img{
-	          width: 80%;
-	        }
-
-	        #football .features .box .bg img{
-	          width: 80%;
-	        }
-
-	        #football .features .box .bg{
-	          width: 100%;
-	          position: absolute;
-	          top:50%;
-	          left: 0;
-	                      transform:translate3d(0,-50%,0);
-	                      -webkit-transform:translate3d(0,-50%,0);
-	        }
-
-	        #football .features .box .fore_bg{
-	          position: relative;
-	          z-index: 1;
-	          text-align: center;
-	        }
-
-	        #football .features .box .imgbox{
-	            margin-top: 20%;
-	          position: relative;
-	        }
-
-	        #football .features .box .textbox{
-	          margin-bottom: 2rem;
-	          box-sizing: border-box;
-	          -webkit-box-sizing: border-box;
-	          padding:0 2rem;
-	        }
-
-	        #football .features .box .textbox h3{
-	          position: relative;
-	          padding-bottom: 5rem;
-	          color: #363636;
-	          font-size:4rem;
-	          letter-spacing: 3px;
-	        }
-
-	        #football .features .box .textbox h3::after{
-	          content:'';
-	          display: block;
-	          width: 3rem;
-	          height: 3px;
-	          background: #363636;
-
-	          position: absolute;
-	          bottom: 2.4rem;
-	          left: 0;
-	        }
-
-	        #football .features .box .textbox .desc{
-	          margin-bottom: 2rem;
-	          font:13px/17px 'NotoSansKRLight';
-	        }
-
-	                  #football .features .box.type2 .imgbox{
-	                      margin-top: 0;
-	                  }
-
-	        #football .features .box.type2 .textbox{
-	          text-align: right;
-	        }
-
-	        #football .features .box.type2 .textbox h3::after{
-	          left: auto;
-	          right: 0;
-	        }
-
-	        #football .features .box.type2 .bg{
-	          text-align: right;
-	                      top: 10%;
-	                      transform:translate3d(0,0,0);
-	                      -webkit-transform:translate3d(0,0,0);
-	        }
-
-	                  #football .features .box.type2 .bg img{
-	                      width: 65%;
-	                  }
-
-	        #football .bottom_area{
-	          width: 100%;
-	          padding: 5rem 0 0;
-	          position: relative;
-	          overflow: hidden;
-	          background:url('http://imagem.adidas.co.kr/images/adidas/event/football/20161123/bg_black_paper.jpg') 50% no-repeat;
-	          background-size:100% 100%;
-	        }
-
-	        #football .bottom_area ul{
-
-	        }
-
-	        #football .bottom_area ul li{
-	          position: relative;
-	        }
-
-	        #football .bottom_area ul li img{
-	          width: 100%;
-	        }
-
-	        #football .bottom_area ul li .button{
-	          width: 85%;
-	          height: 4rem;
-	          line-height: 3.5rem;
-	          font-size: 1.1rem;
-	          position: absolute;
-	          bottom: 1.5rem;
-	          left: 50%;
-
-	          -webkit-transform: translate3d(-50%,0,0);
-	             -moz-transform: translate3d(-50%,0,0);
-	              -ms-transform: translate3d(-50%,0,0);
-	               -o-transform: translate3d(-50%,0,0);
-	                  transform: translate3d(-50%,0,0);
-	        }
-
-	        #football .bottom_area .owl-dots{
-	          padding: 2rem 0;
-	          text-align: center;
-	        }
-
-	        #football .bottom_area .owl-dots .owl-dot{
-	          width: 3rem;
-	          height: 3px;
-	          background: #fff;
-	          display: inline-block;
-	          margin: 0 0.5rem;
-	        }
-
-	        #football .bottom_area .banner_slider .owl-dots .owl-dot.active{
-	          background: #00457f;
-	        }
-
-	         #football .bottom_area .banner_slider1 .owl-dots .owl-dot{
-	          width:  0.5rem;
-	          height: 0.5rem;
-	          border-radius: 50px;
-	          background: #fff;
-	          display: inline-block;
-	          margin: 0 0.3rem;
-	        }
-	        #football .bottom_area .banner_slider1 .owl-controls{  position: relative; }
-	        #football .bottom_area .banner_slider1 .owl-controls .owl-nav{
-	        	position: absolute;
-	        	top:-143%;
-	        	margin-top: -1.5rem;
-	        	text-align: center;
-	        	width: 100%;
-
-	        }
-	        @media screen and (min-width: 430px){
-	        		 #football .bottom_area .banner_slider1 .owl-controls .owl-nav{top:-192%;}
-        	}
-	        @media screen and (min-width: 630px){
-	        		 #football .bottom_area .banner_slider1 .owl-controls .owl-nav{top:-313%;}
-        	}
-        	@media screen and (min-width: 800px){
-	        		 #football .bottom_area .banner_slider1 .owl-controls .owl-nav{top:-360%;}
-        	}
-        	@media screen and (min-width: 970px){
-	        		 #football .bottom_area .banner_slider1 .owl-controls .owl-nav{top:-496%;}
-        	}
-	        #football .bottom_area .banner_slider1 .owl-controls .owl-nav .owl-prev{
-	        	position: absolute;
-	        	left:61px;
-	        	display: inline-block;
-	        	width: 3.5rem;
-	        	height: 3.5rem;
-	        	/*background: #fff;*/
-	      /* opacity: .8;
-	        	-webkit-opacity: .8;*/
-	        	display: inline-block;
-	        	text-indent: -99999px;
-	          	background:url('/images/adidas/event/football/20170207/arrow.png') 50% no-repeat;
-
-	        }
-
-	        #football .bottom_area .banner_slider1 .owl-controls .owl-nav .owl-next{
-	        	position: absolute;
-	        	right:61px;
-	        	display: inline-block;
-	        	width: 3.5rem;
-	        	height: 3.5rem;
-	      /*	background: #fff;
-	        	opacity: .8;*/
-	        	text-indent: -99999px;
-	        	transform: rotate(-180deg);
-	          	background:url('/images/adidas/event/football/20170207/arrow.png') 50% no-repeat;
-
-	        }
-
-	        #football .bottom_area .banner_slider1 .owl-dots .owl-dot.active{
-	          background: #0286cd;
-	        }
-
-	        #video-layer{
-	          position:fixed;top:0;left:0;width: 100%;height: 100%;z-index:1000;
-	        }
-
-	        #video-layer .bg{
-	          width: 100%;
-	          height: 100%;
-
-	          position: absolute;
-	          top: 0;
-	          left: 0;
-
-	          transform-origin:center center;
-	          -webkit-transform-origin:center center;
-	          transform:scale(0);
-	          -webkit-transform:scale(0);
-	          opacity:0;
-	          background:#000;
-	          z-index:1;
-
-	          transition:all 0.4s;
-	          -webkit-transition:all 0.4s;
-
-
-	        }
-
-	        #video-layer.loaded .bg{
-	          opacity: 1;
-	          transform:scale(1.2);
-	          -webkit-transform:scale(1.2);
-	        }
-
-	        #video-layer .video-box{
-	          position: relative;
-	          width: 100%;
-	          height: 100%;
-	          z-index: 3;
-	        }
-
-	        #video-layer .close_x_btn{
-	          width: 70px;
-	          height: 70px;
-	          position: absolute;
-	          top: 0;
-	          right: 0;
-	          z-index: 5;
-	          opacity: 0;
-	        }
-
-	        #video-layer.loaded .close_x_btn{
-	          opacity: 1;
-	        }
-
-
-      </style>
+            <style type="text/css">
+                  #wrap #header{
+                    position: relative !important;
+                  }
+
+                  #wrap #container{
+                    margin-top: 0 !important;
+                  }
+
+                  #football{
+                    position: relative;
+                    overflow: hidden;
+                  }
+
+                  #football .button{
+                    height: 50px;
+                    line-height:45px;
+                    display: block;
+                    box-sizing: border-box;
+                    -webkit-box-sizing: border-box;
+                    border: 2px solid  #fff;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 14px;
+                    z-index: 12;
+                    text-transform: uppercase;
+                  }
+
+                  #football .button.dark{
+                    border-color: #000;
+                    color: #000;
+                  }
+
+                  #football .visual{
+                    width: 100%;
+                    height: 80vh;
+                    position: relative;
+                  }
+
+                  #football .visual .button{
+                    width: 80%;
+                    position: absolute;
+                    bottom: 44px;
+                    left: 50%;
+
+                    transform:translate3d(-50%,0,0);
+                    -webkit-transform:translate3d(-50%,0,0);
+                  }
+
+                  #football .visual img{
+                      min-width: 0;
+                      min-height: 0;
+                      max-width: 100%;
+                      object-fit: cover;
+                      width: 100%;
+                      height: 100%;
+                      top: 0;
+                      left: 0;
+                  }
+
+                  #football .statement{
+                    position: relative;
+                    background: #111;
+                  }
+
+                  #football .statement p{
+                  width: 100%;
+                  position: absolute;
+                  margin-top: -13px;
+                  top: 50%;
+                  left: 0;
+                  text-align: center;
+                  transform: translate3d(0,-50%,0);
+                  -webkit-transform: translate3d(0,-50%,0);
+                  font: 13px/18px 'NotoSansKRLight';
+                  color: #fff;
+                  }
+
+                  #football .statement .bg img{
+                    width: 100%;
+                  }
+
+                  #football .highlight{
+                    width: 100%;
+                    position: relative;
+                    overflow: hidden;
+                    background:url('http://imagem.adidas.co.kr/images/adidas/event/football/20161123/bg_paper.jpg') 0 0 no-repeat;
+                    background-size:cover;
+                  }
+
+                  #football .highlight .owl-stage{
+                    overflow: inherit;
+                  }
+
+                  #football .highlight .owl-stage::after{
+                    content:'';
+                    display: block;
+                    visibility: hidden;
+                    clear:both;
+                  }
+
+                  #football .highlight .products_slider{
+                    margin-top: 5rem;
+                  }
+
+                  #football .highlight .products_slider .box{
+                    width: 100%;
+                    position: relative;
+                  }
+
+                  #football .highlight .products_slider .box img{
+                    width: 100%;
+                  }
+
+                  #football .highlight .products_slider .box .bg{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                  }
+
+                  #football .highlight .products_slider .box .img{
+                    position: relative;
+                    z-index: 1;
+                    text-align: center;
+
+                    transform:translate3d(0,-10%,0);
+                    -webkit-transform:translate3d(0,-10%,0);
+                  }
+
+                  #football .highlight .products_slider .box .img img{
+                    width: 80%;
+                  }
+
+                  #football .highlight .owl-dots{
+                    display: -webkit-flex;
+                    display: -moz-flex;
+                    display: -ms-flex;
+                    display: -o-flex;
+                    display: flex;
+                    position: relative;
+                      /*top: -3rem;*/
+                  }
+
+                  #football .highlight .owl-dots .owl-dot{
+                    width: 33%;
+                    height: 40px;
+                    position: relative;
+                  }
+
+                  #football .highlight .owl-dots .owl-dot:nth-child(2){
+                    width: 34%;
+                  }
+
+                  #football .highlight .owl-dots .owl-dot span{
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    color: #000;
+                    letter-spacing: 3px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font:1.6rem/40px 'adiLight';
+                  }
+
+                  #football .highlight .owl-dots .owl-dot.active span{
+                    font-family: 'adiBlack';
+                  }
+
+                  #football .highlight .owl-dots .owl-dot:nth-child(1) span::after{
+                    content:'cage';
+                  }
+
+                  #football .highlight .owl-dots .owl-dot:nth-child(2) span::after{
+                    content:'stadium';
+                  }
+
+                  #football .highlight .owl-dots .owl-dot:nth-child(3) span::after{
+                    content:'street';
+                  }
+
+
+                  #football .highlight .owl-dots .owl-dot::after,
+                  #football .highlight .owl-dots .owl-dot::before{
+                    content:'';
+                    width: 0;
+                      height: 3px;
+                      background: #363636;
+                      position: absolute;
+                      bottom: -5px;
+                      transition: width 0.2s;
+                      -webkit-transition: width 0.2s;
+                  }
+
+                  #football .highlight .owl-dots .owl-dot::after{
+                    left: 50%;
+                  }
+
+                  #football .highlight .owl-dots .owl-dot::before{
+                    right: 50%;
+                  }
+
+                  #football .highlight .owl-dots .owl-dot.active::after,
+                  #football .highlight .owl-dots .owl-dot.active::before{
+                    width: 20%;
+                  }
+
+
+                  #football .highlight .prod_desc{
+                    position: relative;
+                    height: 8rem;
+                    margin-bottom: 4rem;
+                  }
+
+                  #football .highlight .prod_desc .box{
+                    width: 100%;
+                    position: absolute;
+                    top: 50%;
+                    opacity: 0;
+
+                    transition:opacity 0.3s;
+                    -webkit-transition:opacity 0.3s;
+
+                    transform:translate3d(0,-50%,0);
+                    -webkit-transform:translate3d(0,-50%,0);
+                  }
+
+                  #football .highlight .prod_desc .box p{
+                    color: #000;
+                    font:1.35rem/2rem 'NotoSansKR';
+                    text-align: center;
+                  }
+
+                  #football .highlight .prod_desc .box.loaded{
+                    opacity: 1;
+                  }
+
+                  #football .features{
+                    position: relative;
+                  }
+
+                  #football .features .box{
+                    margin-bottom: 10rem;
+                  }
+
+                  #football .features .box img{
+                    width: 80%;
+                  }
+
+                  #football .features .box .bg img{
+                    width: 80%;
+                  }
+
+                  #football .features .box .bg{
+                    width: 100%;
+                    position: absolute;
+                    top:50%;
+                    left: 0;
+                    transform:translate3d(0,-50%,0);
+                    -webkit-transform:translate3d(0,-50%,0);
+                  }
+
+                  #football .features .box .fore_bg{
+                    position: relative;
+                    z-index: 1;
+                    text-align: center;
+                  }
+
+                  #football .features .box .imgbox{
+                      margin-top: 20%;
+                    position: relative;
+                  }
+
+                  #football .features .box .textbox{
+                    margin-bottom: 2rem;
+                    box-sizing: border-box;
+                    -webkit-box-sizing: border-box;
+                    padding:0 2rem;
+                  }
+
+                  #football .features .box .textbox h3{
+                    position: relative;
+                    padding-bottom: 5rem;
+                    color: #363636;
+                    font-size:4rem;
+                    letter-spacing: 3px;
+                  }
+
+                  #football .features .box .textbox h3::after{
+                    content:'';
+                    display: block;
+                    width: 3rem;
+                    height: 3px;
+                    background: #363636;
+
+                    position: absolute;
+                    bottom: 2.4rem;
+                    left: 0;
+                  }
+
+                  #football .features .box .textbox .desc{
+                    margin-bottom: 2rem;
+                    font:13px/17px 'NotoSansKRLight';
+                  }
+
+                    #football .features .box.type2 .imgbox{
+                        margin-top: 0;
+                    }
+
+                  #football .features .box.type2 .textbox{
+                    text-align: right;
+                  }
+
+                  #football .features .box.type2 .textbox h3::after{
+                    left: auto;
+                    right: 0;
+                  }
+
+                  #football .features .box.type2 .bg{
+                    text-align: right;
+                    top: 10%;
+                    transform:translate3d(0,0,0);
+                    -webkit-transform:translate3d(0,0,0);
+                  }
+
+                #football .features .box.type2 .bg img{
+                    width: 65%;
+                }
+
+                  #football .bottom_area{
+                    width: 100%;
+                    padding: 5rem 0 0;
+                    position: relative;
+                    overflow: hidden;
+                    background:url('http://imagem.adidas.co.kr/images/adidas/event/football/20161123/bg_black_paper.jpg') 50% no-repeat;
+                    background-size:100% 100%;
+                  }
+
+                  #football .bottom_area .title{
+                      padding: 2rem 0 2rem;
+                      text-align: center;
+                      font: 13px/18px 'NotoSansKR';
+                      color:#fff;
+                  }
+
+                  #football .bottom_area ul{
+                      position: relative;
+
+                  }
+
+                  #football .bottom_area ul li{
+                    position: relative;
+                  }
+
+                  #football .bottom_area ul li img{
+                    width: 100%;
+                  }
+
+                  #football .bottom_area ul li .button{
+                    width: 85%;
+                    height: 4rem;
+                    line-height: 3.5rem;
+                    font-size: 1.1rem;
+                    position: absolute;
+                    bottom: 1.5rem;
+                    left: 50%;
+
+                    -webkit-transform: translate3d(-50%,0,0);
+                       -moz-transform: translate3d(-50%,0,0);
+                        -ms-transform: translate3d(-50%,0,0);
+                         -o-transform: translate3d(-50%,0,0);
+                            transform: translate3d(-50%,0,0);
+                  }
+
+                  #football .bottom_area .owl-dots{
+                    padding: 2rem 0;
+                    text-align: center;
+                  }
+
+                  #football .bottom_area .owl-dots .owl-dot{
+                    width: 3rem;
+                    height: 3px;
+                    background: #fff;
+                    display: inline-block;
+                    margin: 0 0.5rem;
+                  }
+
+                  #football .bottom_area .banner_slider .owl-dots .owl-dot.active{
+                    background: #58b84d;
+                  }
+
+                   #football .bottom_area .banner_slider1 .owl-dots .owl-dot{
+                    width:  0.5rem;
+                    height: 0.5rem;
+                    border-radius: 50px;
+                    background: #fff;
+                    display: inline-block;
+                    margin: 0 0.3rem;
+                  }
+                  #football .bottom_area .banner_slider1 .owl-controls{
+                      /*position: relative; */
+                  }
+                  #football .bottom_area .banner_slider1 .owl-controls .owl-nav{
+                      position: absolute;
+                      top:50%;
+                      margin-top: -44px;
+                      text-align: center;
+                      width: 100%;
+
+                  }
+
+                  #football .bottom_area .banner_slider1 .owl-controls .owl-nav .owl-prev{
+                      position: absolute;
+                      left:61px;
+                      display: inline-block;
+                      width: 3.5rem;
+                      height: 3.5rem;
+                      display: inline-block;
+                      text-indent: -99999px;
+                      background:url('http://imagem.adidas.co.kr/images/adidas/event/football/20170207/arrow.png') 50% no-repeat;
+                      background-size: 100% auto;
+                      background-position: center center;
+
+                  }
+
+                  #football .bottom_area .banner_slider1 .owl-controls .owl-nav .owl-next{
+                      position: absolute;
+                      right:61px;
+                      display: inline-block;
+                      width: 3.5rem;
+                      height: 3.5rem;
+                      text-indent: -99999px;
+                      transform: rotate(-180deg);
+                      background: url('http://imagem.adidas.co.kr/images/adidas/event/football/20170207/arrow.png') 50% no-repeat;
+                      background-size: 100% auto;
+                      background-position: center center;
+
+                  }
+
+                  #football .bottom_area .banner_slider1 .owl-dots .owl-dot.active{
+                    background: #60ba5a;
+                  }
+
+                  #video-layer{
+                    position:fixed;top:0;left:0;width: 100%;height: 100%;z-index:1000;
+                  }
+
+                  #video-layer .bg{
+                    width: 100%;
+                    height: 100%;
+
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    transform-origin:center center;
+                    -webkit-transform-origin:center center;
+                    transform:scale(0);
+                    -webkit-transform:scale(0);
+                    opacity:0;
+                    background:#000;
+                    z-index:1;
+
+                    transition:all 0.4s;
+                    -webkit-transition:all 0.4s;
+
+
+                  }
+
+                  #video-layer.loaded .bg{
+                    opacity: 1;
+                    transform:scale(1.2);
+                    -webkit-transform:scale(1.2);
+                  }
+
+                  #video-layer .video-box{
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 3;
+                  }
+
+                  #video-layer .close_x_btn{
+                    width: 70px;
+                    height: 70px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    z-index: 5;
+                    opacity: 0;
+                  }
+
+                  #video-layer.loaded .close_x_btn{
+                    opacity: 1;
+                  }
+            </style>
 
 				<div class="visual">
 					<img src="http://imagem.adidas.co.kr/images/adidas/event/football/20170330/main.jpg" alt="">
@@ -944,8 +940,8 @@
 					<div class="bg">
 						<img src="http://imagem.adidas.co.kr/images/adidas/event/football/20161123/bg_statement.jpg" alt="">
 					</div>
-					<p>정교한 컨트롤과 강력한 파워, <br> 안정적인 서포트의 결정체.<br/> 모두를 지배하는 완벽한 컨트롤.</p>
-          <p class="adihs-din-b" style="top: auto;bottom: 40px;">ACE 17</p>
+                    <p>정교한 컨트롤과 강력한 파워, <br> 안정적인 서포트의 결정체.<br/> 모두를 지배하는 완벽한 컨트롤.</p>
+                    <p class="adihs-din-b" style="top: auto;bottom: 40px;">ACE 17</p>
 				</div>
 
 				<div class="highlight">
@@ -970,10 +966,10 @@
 							<div class="box loaded">
 								<p>완벽한 퍼스트 터치로 케이지를 장악하라. </p>
 							</div>
-              <div class="box ">
+                            <div class="box ">
 								<p>공을 잡는 순간, 경기의 운명은 결정된다.<br/>모든 플레이를 통제하고, 그라운드를 지배하라.</p>
 							</div>
-              <div class="box ">
+                            <div class="box ">
 								<p>시선을 사로잡는 스타일. 편안한 착용감. 강렬한 존재감.<br/>스트리트를 나의 것으로 만들어라.</p>
 							</div>
 						</div>
@@ -1026,32 +1022,24 @@
 
 
 				<div class="bottom_area">
-					<!-- <ul class="banner_slider1">
-						<li>
-				            <a href="#">
-				                <img src="http://imagem.adidas.co.kr/images/adidas/event/football/20170207/01.jpg" alt="">
-				            </a>
-						</li>
+                    <div class="title">
+                        등장하는 순간, 게임의 레벨은 달라지지. <br>
+                        #터보차지 폭발적인 스피드의 엔진, 그 이상.
+                    </div>
+					<ul class="banner_slider1">
+						<li><a href="#"><img src="http://imagem.adidas.co.kr/images/adidas/event/football/20170330/01.jpg" alt=""></a></li>
+						<li><a href="#"><img src="http://imagem.adidas.co.kr/images/adidas/event/football/20170330/02.jpg" alt=""></a></li>
+						<li><a href="#"><img src="http://imagem.adidas.co.kr/images/adidas/event/football/20170330/03.jpg" alt=""></a></li>
+						<li><a href="#"><img src="http://imagem.adidas.co.kr/images/adidas/event/football/20170330/04.jpg" alt=""></a></li>
+						<li><a href="#"><img src="http://imagem.adidas.co.kr/images/adidas/event/football/20170330/05.jpg" alt=""></a></li>
+						<li><a href="#"><img src="http://imagem.adidas.co.kr/images/adidas/event/football/20170330/06.jpg" alt=""></a></li>
+						<li><a href="#"><img src="http://imagem.adidas.co.kr/images/adidas/event/football/20170330/07.jpg" alt=""></a></li>
+						<li><a href="#"><img src="http://imagem.adidas.co.kr/images/adidas/event/football/20170330/08.jpg" alt=""></a></li>
+						<li><a href="#"><img src="http://imagem.adidas.co.kr/images/adidas/event/football/20170330/09.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="http://imagem.adidas.co.kr/images/adidas/event/football/20170330/10.jpg" alt=""></a></li>
+						<li><a href="#"><img src="http://imagem.adidas.co.kr/images/adidas/event/football/20170330/11.jpg" alt=""></a></li>
+					</ul>
 
-						<li>
-				            <a href="#">
-				                <img src="http://imagem.adidas.co.kr/images/adidas/event/football/20170207/02.jpg" alt="">
-				            </a>
-						</li>
-
-						<li>
-				            <a href="#">
-				                <img src="http://imagem.adidas.co.kr/images/adidas/event/football/20170207/03.jpg" alt="">
-				            </a>
-						</li>
-						<li><a href="#"><img src="http://imagem.adidas.co.kr/images/adidas/event/football/20170207/04.jpg" alt=""></a></li>
-						<li><a href="#"><img src="http://imagem.adidas.co.kr/images/adidas/event/football/20170207/05.jpg" alt=""></a></li>
-						<li><a href="#"><img src="http://imagem.adidas.co.kr/images/adidas/event/football/20170207/06.jpg" alt=""></a></li>
-						<li><a href="#"><img src="http://imagem.adidas.co.kr/images/adidas/event/football/20170207/07.jpg" alt=""></a></li>
-						<li><a href="#"><img src="http://imagem.adidas.co.kr/images/adidas/event/football/20170207/08.jpg" alt=""></a></li>
-						<li><a href="#"><img src="http://imagem.adidas.co.kr/images/adidas/event/football/20170207/09.jpg" alt=""></a></li>
-						<li><a href="#"><img src="http://imagem.adidas.co.kr/images/adidas/event/football/20170207/10.jpg" alt=""></a></li>
-					</ul> -->
 					<ul class="banner_slider" style="margin-top: 30px;">
 						<li>
 		            <a href="http://m.adidas.co.kr/MO/Promotion/landingPage.action?pageNo=76">
