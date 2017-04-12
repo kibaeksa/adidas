@@ -1134,15 +1134,21 @@
 
 			#ndm_170405 .content{
 				margin-top: 400px;
-				/*background: url('http://image.adidas.co.kr/images/adidas/event/nmd/20170405/bg.jpg') no-repeat;*/
 				background-size:100% 100%;
 				-webkit-background-size:100% 100%;
-
 				background-image: url('http://image.adidas.co.kr/images/adidas/event/nmd/20170405/bg.jpg');
 		        background-size: cover;
 		        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
 		        src='http://image.adidas.co.kr/images/adidas/event/nmd/20170405/bg.jpg',
 		        sizingMethod='scale');
+				background-position: 0% 0%;
+
+				transition: all 4s;
+				-webkit-transition: all 4s;
+			}
+			#ndm_170405 .content.on{
+				/*transform: scale(1.1);*/
+				background-position: 110% 100%;
 			}
 			#ndm_170405 .content .inner{
 				width: 950px;
@@ -1163,7 +1169,7 @@
 				width: 50%;
 				text-align: center;
 				float: left;
-				font:18px 'adihaus';
+				/*font:18px 'adihaus';*/
 				background: #dc1c29;
 				border-bottom: 1px solid #dc1c29;
 				height: 40px;
@@ -1182,6 +1188,8 @@
 
 			}
 			#ndm_170405 .content .inner .content_box{
+				position: relative;
+				height: 1700px;
 				padding-bottom: 104px;
 			}
 			#ndm_170405 .content .inner .tab ul li a{
@@ -1189,19 +1197,31 @@
 				opacity: 0.6;
 				-webkit-opacity: 0.6;
 				color:#fff;
+				font:18px/18px 'NotosansKR'
 			}
 			#ndm_170405 .content .inner .header{
 				padding: 97px 0;
 			}
 
 			#ndm_170405 .content_1{
-				position: relative;
-				display: none;
+				/*position: relative;*/
+				position: absolute;
+				left:0;
+				/*left:-2000px;*/
+				height: 1701px;
+				/*display: none;*/
+				opacity: 0;
+
+				transition: all 1.5s;
+
 
 			}
 
 			#ndm_170405 .content_1.on{
-				display: block;
+				/*display: block;*/
+				opacity: 1;
+				left:0;
+				z-index: 10;
 			}
 
 			#ndm_170405 .content_1 .box{
@@ -1225,7 +1245,10 @@
 				border-right: 1px solid #404252;
 				box-sizing: border-box;
 				-webkit-box-sizing: border-box;
-
+			}
+			#ndm_170405 .content_1 .box ul li.readyprd .shoe_box a span{
+				opacity: .5;
+				-webkit-opacity: .5;
 			}
 			#ndm_170405 .content_1 .box ul li .img{
 				text-align: center;
@@ -1238,12 +1261,15 @@
 			}
 
 			#ndm_170405 .content_1 .box ul li .buy span{
-				padding: 0 44px;
+				/*padding: 0 44px;*/
 				font:14px/34px 'NotosansKRLight';
 				color:#fff;
 				opacity: .8;
 				position: relative;
 				z-index: 10;
+				width: 140px;
+				display: inline-block;
+				text-align: center;
 			}
 
 			#ndm_170405 .content_1 .box ul li .buy em{
@@ -1261,8 +1287,20 @@
 
 			}
 
+			#ndm_170405 .content_1 .box ul li{
+
+			}
+
 			#ndm_170405 .content_1 .box ul li .buy:hover em{
 				background: #fff;
+			}
+
+			#ndm_170405 .content_1 .box ul li.readyprd .buy:hover em{
+				background: transparent;
+			}
+			#ndm_170405 .content_1 .box ul li.readyprd .buy:hover span{
+				font:14px/34px 'NotosansKRLight';
+				color:#fff;
 			}
 
 			#ndm_170405 .gal .content_1 .box ul li .shoe_box{
@@ -1329,8 +1367,14 @@
 			}
 			#ndm_170405 .gal{
 				width: 950px;
+				height: 1085px;
 				padding-bottom: 138px;
 				margin: 0 auto;
+			}
+			#ndm_170405 .gal .content_1{
+				position: relative;
+				height: auto;
+				opacity: 1;
 			}
 
 
@@ -1349,8 +1393,8 @@
 
 					<div class="tab">
 						<ul>
-							<li class="shoes"><a href="javascript:void(0)">SHOEs</a></li>
-							<li class="apparel" data="#"><a href="javascript:void(0)">apparel</a></li>
+							<li class="shoes" ><a href="javascript:void(0)">신발</a></li>
+							<li class="apparel" data="#"><a href="javascript:void(0)">의류</a></li>
 						</ul>
 					</div>
 
@@ -1496,12 +1540,12 @@
 											</a>
 										</div>
 									</li>
-									<li style="border-top:1px solid #404252;">
+									<li style="border-top:1px solid #404252;" class="readyprd">
 										<div class="shoe_box">
 											<p>BK2217</p>
 											<div class="img"><img src='http://image.adidas.co.kr/images/adidas/event/nmd/20170405/item2.png' alt=""></div>
-											<a href="http://shop.adidas.co.kr/PF020401.action?PROD_CD=BK2217" class="buy">
-												<span>구매하기</span>
+											<a href="http://shop.adidas.co.kr/PF020401.action?PROD_CD=BK2217" class="buy outorder">
+												<span>품절 상품</span>
 												<em></em>
 											</a>
 										</div>
@@ -1576,12 +1620,12 @@
 											</a>
 										</div>
 									</li>
-									<li class="last">
+									<li class="last readyprd">
 										<div class="shoe_box">
 											<p>BK2214</p>
 											<div class="img"><img src='http://image.adidas.co.kr/images/adidas/event/nmd/20170405/item9.png' alt=""></div>
 											<a href="http://shop.adidas.co.kr/PF020401.action?PROD_CD=BK2214" class="buy ready">
-												<span>구매하기</span>
+												<span>입고 예정</span>
 												<em></em>
 											</a>
 										</div>
@@ -1769,10 +1813,6 @@
 		<!-- //ndm_170405 -->
 		<script type="text/javascript">
 
-
-
-
-
 			(function($){
 
 				function isIE () {
@@ -1789,15 +1829,20 @@
 
 
     					if( location.hash ){
+
     						$('#ndm_170405 .main_top').removeClass('on').eq(1).addClass('on');
     						$('#ndm_170405 .tab ul li').removeClass('on').eq(1).addClass('on');
     						$('#ndm_170405 .content .content_box .content_1').removeClass('on').eq(1).addClass('on');
+							$('#ndm_170405 .content .content_box .content_1').eq(0).css({'left':'-1500px'});
+							$('#ndm_170405 .tab ul li').eq(1).trigger( "click" );
 
     					}else{
+
     						$('#ndm_170405 .main_top').removeClass('on').eq(0).addClass('on');
     						$('#ndm_170405 .tab ul li').removeClass('on').eq(0).addClass('on');
-
     						$('#ndm_170405 .content .content_box .content_1').removeClass('on').eq(0).addClass('on');
+							// $('#ndm_170405 .content .content_box .content_1').removeClass('on').eq(0).css({'left':0})
+							$('#ndm_170405 .tab ul li').eq(0).trigger( "click" );
     					}
 
     				}
@@ -1811,8 +1856,10 @@
     					var title = '';
     					var url = '#apparel';
     					history.pushState(state, title, url);
-    					$('#ndm_170405 .content .content_box .content_1').removeClass('on').eq(1).addClass('on');
+
     				});
+
+
 
     				$('.tab ul li.shoes').click(function(e){
     					e.preventDefault();
@@ -1828,56 +1875,62 @@
 
 
 
-				// if (location.hash == 'a'){
-				//  alert();
-				//  }
-
-				//  if(history.pushState) {
-				//     history.pushState(null, null, '#myhash');
-				// 	}
-				// 	else {
-				// 	    location.hash = '#myhash';
-				// 	}
-
-				// var apparel = #apparel
-
-
-
-
-
-
-
-
-
-
-
-
 				// ready
 				$('.ready').click(function(){
-					alert('준비중입니다.');
+					alert('입고 예정입니다.');
 					return false;
 				});
 
-				//tab
-
-				$('#ndm_170405 .tab ul li').click(function(){
-					$('#ndm_170405 .tab ul li').removeClass('on');
-					var tab_ = $(this).index();
-					$(this).addClass('on')
-					if( tab_ == 1 ){
-						$('#ndm_170405 .content .content_box .content_1').removeClass('on').eq(1).addClass('on');
-						$('#ndm_170405 .main_top').removeClass('on').eq(1).addClass('on');
-						tab_ = 0;
-
-
-
-					}else{
-						$('#ndm_170405 .content .content_box .content_1').removeClass('on').eq(0).addClass('on');
-						$('#ndm_170405 .main_top').removeClass('on').eq(0).addClass('on');
-
-						tab_ = 1;
-					}
+				// out
+				$('.outorder').click(function(){
+					alert('품절되었습니다.');
+					return false;
 				});
+
+
+				//tab
+				var isAnimate = false;
+				$('#ndm_170405 .tab ul li.shoes').click(function(){
+
+
+					// if(isAnimate == true ){
+					// 	return false;
+					// }
+					// isAnimate = true;
+					// isAnimate2 = false;
+
+					$('#ndm_170405 .content .content_box .content_1').eq(1).css({'left':'1500px'});
+					$('#ndm_170405 .content .content_box .content_1').eq(0).css({'left':'1500px'});
+					$('#ndm_170405 .content .content_box .content_1').eq(0).animate({'left':'0px'},500);
+					$('#ndm_170405 .content .content_box .content_1').removeClass('on').eq(0).addClass('on');
+					$('#ndm_170405 .tab ul li').removeClass('on');
+					$(this).addClass('on');
+					$('#ndm_170405 .content').addClass('on');
+				})
+
+				var isAnimate2 = false;
+
+				$('#ndm_170405 .tab ul li.apparel').click(function(){
+
+					// if(isAnimate2 == true ){
+					// 	return false;
+					// }
+					// isAnimate2 = true;
+					// isAnimate = false;
+
+					$('#ndm_170405 .content .content_box .content_1').eq(1).css({'left':'-1500px'});
+					$('#ndm_170405 .content .content_box .content_1').eq(1).animate({'left':'0px'},500);
+					$('#ndm_170405 .content .content_box .content_1').eq(0).animate({'left':'-1500px'},500);
+					$('#ndm_170405 .content .content_box .content_1').removeClass('on').eq(1).addClass('on');
+
+					$('#ndm_170405 .tab ul li').removeClass('on');
+					$(this).addClass('on');
+					$('#ndm_170405 .content').removeClass('on');
+				})
+
+
+
+
 
 
 				//slider
@@ -1924,7 +1977,6 @@
 
 				});
 				$('.num a').click(function(){
-
 					preindex = index;
 					index = $(this).index();
 

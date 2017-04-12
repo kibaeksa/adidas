@@ -1106,8 +1106,9 @@
 
 			#event_pre_etr dt{
 				margin-bottom: 20px;
-				color:#d7d7d7;
+				color:#fff;
 				font-size: 18px;
+				font-family:'NotoSansKRRegular','Nanum Gothic';
 			}
 			.ie7 #event_pre_etr dt,
 			.ie8 #event_pre_etr dt{
@@ -1118,9 +1119,9 @@
 			/* 161007 */
 			#event_pre_etr dd{
 				width: 910px;
-				padding:20px;
+				padding:35px 20px;
 				background: #d7d7d7;
-				margin-bottom:20px;
+				margin-bottom:10px;
 				font-family:'NotoSansKRRegular','Nanum Gothic';
 			}
 
@@ -1143,6 +1144,10 @@
 				color:#333;
 				background:url('http://image.adidas.co.kr/images/adidas/temp/ico_bul_gray.png') 0 9px no-repeat;
 				font-size:13px;
+			}
+			#event_pre_etr dd li.org{
+				background:url('http://image.adidas.co.kr/images/adidas/temp/ico_bul_org.png') 0 9px no-repeat;
+
 			}
 
 			/* 161007 */
@@ -1171,10 +1176,13 @@
 
 			#event_pre_etr .bottom .chk label{
 				margin-left: 2px;
-				color:#d7d7d7;
-				font-size: 15px;
+				color:#fff;
+				/*font-size: 15px;*/
 				vertical-align: middle;
 				font-weight: bold;
+				font: 15px 'NotoSansLight','Nanum Gothic';
+				letter-spacing: -1px;
+
 			}
 
 			#event_pre_etr .bottom .chk input{
@@ -1186,11 +1194,11 @@
 				height:102px;
 				padding-top:23px;
 				display: block;
-				border: 2px solid  #d7d7d7;
+				border: 6px solid  #fff;
 				text-align: center;
 				font-size:40px;
 				line-height: 98px;
-				color:#d7d7d7;
+				color:#fff;
 				letter-spacing:-1px;
 			}
 
@@ -1201,23 +1209,31 @@
 			}
 			#event_pre_etr .bottom .btn_area .button span.t1{
 				margin-bottom:12px;
-				font-size: 40px;
-				line-height: 40px;
+				color:#fff;
+				font: 40px/40px 'NotoSansKR','Nanum Gothic';
+
 			}
 
 			#event_pre_etr .bottom .btn_area .button span.t2{
-				font-size: 15px;
+				/*font-size: 15px;*/
+				font: 15px/18px 'NotoSansKRBold','Nanum Gothic';
+				color:#fff;
 			}
 
 			#event_pre_etr .bottom .btn_area .button span.t2 strong{
 				margin-right: 3px;
 				font:18px/18px 'YEEZY TSTAR-Bold';
 				letter-spacing: 0;
+				color:#fff;
 			}
 
 			#event_pre_etr .bottom .btn_area .button span.t2 strong span{
-				font: 14px 'NotoSansKRRegular','Nanum Gothic';
+				position: relative;
+				top:-1px;
+				font: 15px/18px 'NotoSansKRBold','Nanum Gothic';
 				display: inline;
+				color:#fff;
+
 			}
 			/* ico_sel_arw.png */
 
@@ -1242,13 +1258,14 @@
 			#event_pre_etr .top .store_selecbox .btn{
 				width:255px;
 				height: 41px;
-				line-height: 41px;
+				/*line-height: 41px;*/
 				padding-left: 30px;
 				display: block;
 				position: relative;
 				color:#d7d7d7;
 				font-size: 16px;
 				background: #000;
+				font:13px/41px 'NotoSansKR', 'Nanum Gothic';
 			}
 
 			#event_pre_etr .top .store_selecbox .arw{
@@ -1294,10 +1311,12 @@
 				display: block;
 				padding-left: 30px;
 				height: 35px;
-				line-height: 35px;
+				/*line-height: 35px;*/
 				color:#d7d7d7;
 				background: #000;
-				font-size: 16px;
+				/*font-size: 16px;*/
+				font:13px/35px 'NotoSansKR', 'Nanum Gothic';
+
 			}
 			#event_pre_etr .top .store_selecbox li a:hover,
 			#event_pre_etr .top .store_selecbox li.selected a{
@@ -1339,16 +1358,16 @@
 					<!-- 160602 div.sel_box 추가  -->
 					<div class="sel_wrap clfix">
 						<div class="sel_box">
-							<p class="tit">1. 제품 선택</p>
+							<p class="tit">1. 선호 지역 선택</p>
 							<div class="store_selecbox" id="selectbox1">
-								<a href="#" class="btn">제품 선택<span class="arw"></span></a>
+								<a href="#" class="btn">선호 지역 선택<span class="arw"></span></a>
 								<div class="store_list">
 									<ul>
-										<li><a href="#">제품 선택</a></li>
+										<li><a href="#">선호 지역 선택</a></li>
 									</ul>
 								</div>
 							</div>
-							<p class="desc">* 원하는 제품을 선택</p>
+							<p class="desc">* 온라인 구매를 원할 경우, 온라인 스토어 선택</p>
 						</div>
 						<!-- //sel_box -->
 
@@ -1356,7 +1375,7 @@
 							<p class="tit">2. 스토어 선택</p>
 							<div class="store_selecbox" id="selectbox2">
 								<a href="#" class="btn">스토어 선택<span class="arw"></span></a>
-								<div class="store_list" style="width:400px;">
+								<div class="store_list" style="width:285px;">
 									<ul>
 										<li><a href="#">오리지널스 서울 플래그십 스토어 (압구정)</a></li>
 										<li><a href="#">OCS압구정2</a></li>
@@ -1382,7 +1401,7 @@
 									</ul>
 								</div>
 							</div>
-							<p class="desc">* 구매를 원하는 사이즈를 선택해주세요.</p>
+							<p class="desc">* 구매를 원하는 사이즈를 선택</p>
 						</div>
 						<!-- //sel_box -->
 					</div>
@@ -1399,9 +1418,9 @@
 							<ul>
 								<li>본 온라인 래플은 무작위 추첨제로 진행됩니다. (선착순 응모 아님)</li>
 								<li>아디클럽 회원가입이 필수이며 회원 ID 1개당 1회 응모가 가능합니다.</li>
-								<li>2017.02.19(일)까지 가입한 아디클럽 회원에 한해 온라인 래플 응모에 참여 가능합니다.</li>
+								<li>2017.02.20(월)까지 가입한 아디클럽 회원에 한해 온라인 래플 응모에 참여 가능합니다.</li>
 								<li>[마이페이지>나의 회원정보]에 등록된 이메일주소와 휴대폰번호로 신청 페이지 링크 및 관련 공지 사항이 발송됩니다.</li>
-								<li>반드시 2017.02.19(일)까지 이메일주소 / 휴대폰번호 및 수신 동의 여부를 확인 후  업데이트해주시기 바랍니다.</li>
+								<li>반드시 2017.02.20(월)까지 이메일주소 / 휴대폰번호 및 수신 동의 여부를 확인 후  업데이트해주시기 바랍니다.</li>
 								<li>입력하신 이메일 주소 / 휴대폰번호 등의 개인정보가 사실과 다르거나 수신에 동의하지 않은 경우, 불이익이 발생할 수 있으며, 당사는 그에 대한 책임을 지지 않습니다.</li>
 								<li>당첨자 본인만 구매가 가능합니다.</li>
 								<li>당첨자 본인이 사전에 신청한 제품, 스토어 및 사이즈로만 구매가 가능합니다.</li>
@@ -1427,7 +1446,7 @@
 					<div class="btn_area">
 						<a href="" class="button">
 							<span class="t1">응모하기</span>
-							<span class="t2"><strong>2017.02.21<span>(화)</span> 06:00 PM</strong> 마감</span>
+							<span class="t2"><strong>2017.02.22<span>(수)</span> 06:00 PM</strong> 마감</span>
 						</a>
 					</div>
 				</div>

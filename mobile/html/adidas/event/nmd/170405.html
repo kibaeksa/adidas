@@ -476,16 +476,18 @@
 					width: 50%;
 					text-align: center;
 					background: #ec2029;
-					font:1.2rem/4rem 'AdihausDIN-Cond';
+					/*font:1.2rem/4rem 'AdihausDIN-Cond';*/
 					text-transform: uppercase;
 					color:#fff;
-					letter-spacing: 1px;
+
 					border-bottom: 1px solid #ec2029;
 				}
 				#nmd .tab ul li.on{
 					border-bottom: 1px solid #fff;
 				}
 				#nmd .tab ul li span{
+					font:1.2rem/4rem 'NotosansKR';
+					letter-spacing: 0.5px;
 					opacity: 0.4;
 				}
 				#nmd .tab ul li.on span{
@@ -531,6 +533,19 @@
 				#nmd .content .content_1 .table{}
 				#nmd .content .content_1 .table.item table tr td{
 					padding: 2rem 2rem;
+				}
+
+				#nmd .content .content_1 .table table tr.ready td:after{
+					content: '';
+					width: 100%;
+					height: 100%;
+					display: block;
+					position: absolute;
+					top:0;
+					left:0;
+					background: #000;
+					opacity: 0.5;
+					-webkit-opacity: 0.5;
 				}
 
 				#nmd .content .content_1 .table table tr:last-child td{
@@ -632,8 +647,8 @@
 				</div>
 				<div class="tab">
 					<ul>
-						<li class="shoes"><span>shoes</span></li>
-						<li class="apparel"><span>apparel</span></li>
+						<li class="shoes"><span>신발</span></li>
+						<li class="apparel"><span>의류</span></li>
 					</ul>
 				</div>
 				<div class="content">
@@ -649,9 +664,10 @@
 						</div>
 						<div class="table">
 							<table>
-								<tr>
+								<tr class="ready">
 									<td>
-										<a href="http://m.adidas.co.kr/MO/Product/prdDispBas.action?prodCD=BY3035" class="link ready" class="ready"></a>
+										<span>입고 예정입니다</span>
+										<!-- <a href="http://m.adidas.co.kr/MO/Product/prdDispBas.action?prodCD=BY3035" class="link ready" class="ready"></a> -->
 										<div class="tit">BY3035</div>
 										<div class="img"><img src="http://imagem.adidas.co.kr/images/adidas/event/nmd/170405/shoe1.png" alt=""></div>
 										<a href="javascript:void(0)" class="buy">구매하기</a>
@@ -823,33 +839,33 @@
 				(function($){
 					window.onload = function(){
 
-		                if( location.hash ){
-		                    $('#nmd .main_wrap .box').removeClass('on').eq(1).addClass('on');
-		                    $('#nmd .tab ul li').removeClass('on').eq(1).addClass('on');
-		                    $('#nmd .content .content_1').removeClass('on').eq(1).addClass('on');
-
-		                }else{
+						if( location.hash ){
 		                    $('#nmd .main_wrap .box').removeClass('on').eq(0).addClass('on');
 		                    $('#nmd .tab ul li').removeClass('on').eq(0).addClass('on');
 		                    $('#nmd .content .content_1').removeClass('on').eq(0).addClass('on');
+
+		                }else{
+		                    $('#nmd .main_wrap .box').removeClass('on').eq(1).addClass('on');
+		                    $('#nmd .tab ul li').removeClass('on').eq(1).addClass('on');
+		                    $('#nmd .content .content_1').removeClass('on').eq(1).addClass('on');
 		                }
 
 		            }
 
 
-		            $('.tab ul li.apparel').click(function(e){
+					$('.tab ul li.apparel').click(function(e){
 		                e.preventDefault();
 		                var state = { 'page_id': 1, 'user_id': 5 };
-		                var title = '';
-		                var url = '#apparel';
+		                var title = ' ';
+		                var url = ' ';
 		                history.pushState(state, title, url);
 		            });
 
 		            $('.tab ul li.shoes').click(function(e){
 		                e.preventDefault();
 		                var state = { 'page_id': 1, 'user_id': 5 };
-		                var title = ' ';
-		                var url = ' ';
+		                var title = '#shoes';
+		                var url = '#shoes';
 		                history.pushState(state, title, url);
 		            });
 
