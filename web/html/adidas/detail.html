@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="/css/adidas/adidas_r.css"/>
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css"/>
   <script src="/js/jquery/jquery-1.4.2.js"></script>
+  <script src="/js/modalPopup.js"></script>
   <script src="/js/customForm.js"></script>
   <script src="/js/adidas/adidas.js"></script>
   <script src="/js/jquery/zoom/adidas/zoom.js"></script>
@@ -513,23 +514,6 @@
 			// 160824
 
 
-            //170322 당일배송 안내 POPUP SCRIPT
-            $('.modal-popup-oneday_notice .popup-header .close').bind('click',function(){
-                $(this).parent().parent().parent().hide();
-            });
-
-            $('.modal-popup-oneday_notice .overlay').bind('click',function(){
-                $(this).parent().hide();
-            });
-
-            $('.oneday_bars .bar').bind('click',function(){
-                if($(this).hasClass('b1')){
-                    $('.modal-popup-oneday_notice1').show();
-                }else if($(this).hasClass('b3')){
-                    $('.modal-popup-oneday_notice2').show();
-                }
-            });
-
             /* 170401 툴팁 */
             $('.oneday_deliv_info>div>.spt_bg').hover(function(){
                 $(this).find('.tooltip-layer').show();
@@ -546,7 +530,14 @@
 
  <body>
      <!-- 170401 스피드배송 안내 POPUP 업데이트  -->
-     <div class="modal-popup-wrapper modal-popup-oneday_notice modal-popup-oneday_notice1">
+     <div class="modal-popup-wrapper modal-popup-oneday_notice modal-popup-oneday_notice1"
+         data-modalpop=""
+         data-modalpop-width="600"
+         data-modalpop-height="500"
+         data-modalpop-name="modalpop-notice1"
+         data-modalpop-autoopen=""
+         data-modalpop-fade=""
+     >
  		<div class="overlay"></div>
  		<div class="popup">
             <div class="popup-header">
@@ -582,7 +573,12 @@
  		</div>
  	</div>
 
-    <div class="modal-popup-wrapper modal-popup-oneday_notice modal-popup-oneday_notice2">
+    <div class="modal-popup-wrapper modal-popup-oneday_notice modal-popup-oneday_notice2"
+        data-modalpop=""
+        data-modalpop-width="600"
+        data-modalpop-height="500"
+        data-modalpop-name="modalpop-notice2"
+    >
        <div class="overlay"></div>
        <div class="popup">
            <div class="popup-header">
@@ -2638,7 +2634,7 @@
                 <div class="ct950">
                     <div class="bar b1">
                         <span class="spt_bg"></span>
-                        <a href="javascript:void(0)">스피드 배송 서비스 오픈!</a>
+                        <a href="javascript:void(0)" data-modalpop-click="modalpop-notice1">스피드 배송 서비스 오픈!</a>
                     </div>
                     <div class="bar b2">
                         <span class="spt_bg"></span>
@@ -2646,7 +2642,7 @@
                     </div>
                     <div class="bar b3">
                         <span class="spt_bg"></span>
-                        <a href="javascript:void(0)">교환/환불은 이렇게</a>
+                        <a href="javascript:void(0)" data-modalpop-click="modalpop-notice2">교환/환불은 이렇게</a>
                     </div>
                 </div>
             </div>
