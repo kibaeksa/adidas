@@ -1269,6 +1269,10 @@ div.error .btn {width:700px; height:30px; text-align:center; margin-top:20px;}
 	display: none;
 }
 
+.modal-popup-wrapper.open{
+	display: block;
+}
+
 .modal-popup-wrapper>.overlay{
 	width: 100%;
 	height: 100%;
@@ -7121,6 +7125,10 @@ Update
 	margin-bottom: 10px;
 }
 
+*:first-child+html .payment-main .deliv_form .row.email{
+	z-index: 10;
+}
+
 .payment-main .deliv_form .col_head{
 	position: absolute;
 	top:11px;
@@ -7130,7 +7138,16 @@ Update
 }
 
 .payment-main .deliv_form .col_body{
+	width: 510px;
+}
 
+.payment-main .deliv_form .row.phone .col_body1{
+	width: 150px;
+	float: left;
+}
+
+.payment-main .deliv_form .row.phone .col_body2{
+	width: 177px;
 }
 
 .payment-main .deliv_form .col_body .col_row{
@@ -7227,15 +7244,31 @@ Update
 }
 
 .payment-main .deliv_form .phone .col_head2{
-	left: 317px;
+	left: 330px;
 }
 
 .payment-main .deliv_form .phone .col_body input{
-	width: 183px;
+	width: 138px;
+}
+
+.payment-main .deliv_form .phone .col_body .col{
+	float:none;
 }
 
 .payment-main .deliv_form .phone .col_body2{
 	float: right;
+}
+
+.payment-main .deliv_form .phone .col_body2 input{
+	width: 165px;
+}
+
+*:first-child+html .payment-main .deliv_form .phone .col_body2{
+	width: 174px;
+}
+
+*:first-child+html .payment-main .deliv_form .phone .col_body2 input{
+	width: 161px;
 }
 
 .payment-main .deliv_form .email .b1 input{
@@ -7248,10 +7281,6 @@ Update
 	font: 13px 'NotoSansKRBold','Nanum Gothic';
 }
 
-.payment-main .deliv_form .email .b3{
-	margin-right: 10px;
-}
-
 *:first-child+html .payment-main .deliv_form .email .b3{
 	margin-right: 6px;
 }
@@ -7261,15 +7290,24 @@ Update
 }
 
 .payment-main .deliv_form .email .b4{
+	width: 177px;
+	float: right;
+}
+
+*:first-child+html .payment-main .deliv_form .email .b4{
 	width: 174px;
 }
 
-.payment-main .deliv_form .addr .b1{
-	margin-right: 10px;
+.payment-main .deliv_form .addr .b2{
+	float: right;
 }
 
 *:first-child+html .payment-main .deliv_form .addr .b1{
 	margin-right: 5px;
+}
+
+*:first-child+html .payment-main .deliv_form .addr .b2{
+	width: 175px;
 }
 
 .payment-main .deliv_form .addr .b1 input{
@@ -7277,7 +7315,7 @@ Update
 }
 
 .payment-main .deliv_form .addr .b2{
-	width: 176px;
+	width: 177px;
 }
 
 .payment-main .delivery_info{
@@ -10238,10 +10276,6 @@ Update
 	margin: -158px 0 0 -275px;
 	top: 50%;
 	left: 50%;
-}
-
-.modal-popup-wrapper.modal-popup-search_order>.popup .popup-contents{
-	/*padding-top: 15px;*/
 }
 
 .modal-popup-wrapper.modal-popup-search_order .form{

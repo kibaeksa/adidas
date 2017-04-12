@@ -138,8 +138,11 @@ $width600:600px;
 							}
 
 							dd{
+								box-sizing: border-box;
+								-webkit-box-sizing: border-box;
+								padding-right: 1rem;
 								color: #fff;
-								font:0.9rem/1.4rem 'NotoSansKRLight';
+								font:0.8rem/1.4rem 'NotoSansKRLight';
 							}
 						}
 					}
