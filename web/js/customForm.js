@@ -1,7 +1,7 @@
 (function($){
     /**
 	* $.fn.cmtSelectInit
-	* 커스텀 셀렉트박스 활성화 함수 (즁복으로 이벤트가 적용되지 않기 때문에 스크립트로 HTML 생성 시 사용가능 )
+	* Initialize custom selectbox
 	*/
 	$.fn.cmtSelectInit = function(){
 		$('.selectbox-ctm').each(function(){
@@ -83,10 +83,10 @@
 
     /**
 	* $.fn.ctmSelectSetCallback
-	* 커스텀 셀렉트 박스에 callback(before , after) 함수 추가 (최소 1개)
+	* Initialize callback function to specific selectbox
 	* @param {Object} callback
-	*        before : function,
-	*        after : function
+	*        before : function, : execute before click
+	*        after : function   : execute after click
 	*/
 	$.fn.ctmSelectSetCallback = function(callback){
 		$(this).data('callback',callback);
@@ -94,7 +94,7 @@
 
 	/**
 	* $.fn.cmtInputInit
-	* 커스텀 인풋박스 활성화 함수 (즁복으로 이벤트가 적용되지 않기 때문에 스크립트로 HTML 생성 시 사용가능 )
+	* Initialize custom form (checkbox , radio)
 	*/
 	$.fn.cmtInputInit = function(){
 
@@ -152,10 +152,10 @@
 
 	/**
 	* $.fn.ctmInputSetCallback
-	* 커스텀 인풋박스에 callback(before , after) 함수 추가 (최소 1개)
+	* Initialize callback function to specific form
 	* @param {Object} callback
-	*        before : function,
-	*        after : function
+	*        before : function, : execute before click
+	*        after : function   : execute after click
 	*/
 	$.fn.ctmInputSetCallback = function(callback){
 		$(this).data('callback',callback);

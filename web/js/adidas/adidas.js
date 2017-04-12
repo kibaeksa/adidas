@@ -159,39 +159,6 @@ function closeLayer(o,t){
 	return false;
 }
 
-function sortOpenLayer(o,e){
-	var event = e || window.event;
-
-	if(event.stopPropagation) event.stopPropagation();
-	else event.cancelBubble=true;
-
-	var _obj=jQuery(o);
-	var _layerArray=_obj.siblings('.sort_layer');
-	var _nowOpenLayer;
-
-	_layerArray.each(function(){
-		if(jQuery(this).hasClass('on')){
-			_nowOpenLayer=jQuery(this);
-			if(_nowOpenLayer.index()==_obj.index()){
-				_nowOpenLayer=false;
-			}
-		}
-	});
-
-	if(_obj.hasClass('on') && !_nowOpenLayer){
-		_obj.find('ul').hide();
-		_obj.removeClass('on');
-	}else if(_nowOpenLayer){
-		_nowOpenLayer.find('ul').hide();
-		_nowOpenLayer.removeClass('on');
-		_obj.find('ul').show();
-		_obj.addClass('on');
-	}else{
-		_obj.find('ul').show();
-		_obj.addClass('on');
-	}
-	return false;
-}
 
 function blurAction(obj,moveId,dir,obj2){
 	if(dir == 0){ /* just use the tab key */
@@ -569,14 +536,13 @@ function blurAction(obj,moveId,dir,obj2){
 
 	/**
 	* Swiper
-	* 이미지 슬라이드 함수
+	* Image Slider
 	* @param {Object} options
-			 width : 가로값
-			 loop : 반복 여부
-			 auto : 자동롤링 여부
-			 dragable : 드래그 기능 여부 (추후 개발예정)
-			 duration :  속도
-			 easing : easing 추가 시
+			 width
+			 loop
+			 auto
+			 duration
+			 easing
 
 	*/
 	$.fn.Swipers = function(_options){
@@ -771,10 +737,6 @@ function blurAction(obj,moveId,dir,obj2){
 			}
 		});
 
-		$('.sort_layer>p>a').bind('click',function(e){
-			e.preventDefault();
-		});
-
 		$('a').focus(function(){
 			$(this).addClass('focus_obj');
 		});
@@ -814,9 +776,6 @@ function blurAction(obj,moveId,dir,obj2){
 		/* //accessibility */
 
 		$(document).click(function(event){
-			$('.sort_layer').find('ul').hide();
-			$('.sort_layer').removeClass('on');
-
 			$('.selectbox-ctm').removeClass('open');
 		});
 
@@ -897,12 +856,6 @@ function blurAction(obj,moveId,dir,obj2){
 			$(this).removeClass('on');
 		});
 
-		$('#header-20160315 .market_layer .close').bind('click',function(){
-			$('#header-20160315 .market>a').removeClass('on');
-			$('.market_layer').hide();
-			return false;
-		});
-
 		$('.selectbox_layer').bind('click',function(){
 			if( $(this).hasClass('open') ){
 				$(this).removeClass('open');
@@ -913,6 +866,7 @@ function blurAction(obj,moveId,dir,obj2){
 			return false;
 		});
 
+		/* Receiving Alert selectbox */
 		$('.selectbox_layer li').bind('click',function(){
 			if($(this).hasClass('on')){
 				$(this).parent().parent().removeClass('open');

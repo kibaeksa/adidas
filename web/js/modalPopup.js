@@ -303,12 +303,6 @@
             isModalpop = isModalpop == null ? false : isModalpop;
 
             if(isModalpop !== false){
-                /* modalpop을 처음 로드 했을때 */
-
-                // console.log('---------------------------------');
-                // console.log('NAME : ',getDataset(elem , 'modalpopName'));
-                // console.log('INIT : ',getDataset(elem , 'modalpopInit'));
-                // console.log('---------------------------------');
 
                 if(!getDataset(elem , 'modalpopInit')){
                     if(!checkModalPopup(getDataset(elem , 'modalpopName'))){
