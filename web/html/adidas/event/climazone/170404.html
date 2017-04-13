@@ -2092,8 +2092,9 @@
 							<img src="/images/adidas/event/climazone/170404/video_bg.jpg" alt="">
 						</div>
 					</div>
-					<div class="img_bg img_bg-1">
-						<img src="/images/adidas/event/climazone/170404/middle2_visual.jpg" alt="" />
+					<div class="img_bg img_bg-1" id="gif_wrap">
+						<img id="change_gif1" src="/images/adidas/event/climazone/170404/middle2_visual.jpg"  alt="" />
+						<!-- <img id="change_gif1" src="http://image.adidas.co.kr/images/adidas/event/climazone/170404/middle1_visual.gif" alt="" /> -->
 					</div>
 				</div>
 
@@ -2196,8 +2197,8 @@
 						</div>
 
 					</div>
-					<div class="img_bg img_bg-1">
-						<img src="/images/adidas/event/climazone/170404/middle1_visual.jpg" alt="" />
+					<div class="img_bg img_bg-1" id="gif_wrap1">
+						<img src="http://image.adidas.co.kr/images/adidas/event/climazone/170404/middle1_visual.jpg" alt="" />
 						<p class="middle_txt">극한의 더위를 이기는 최상의 시원함과 쾌적함</p>
 					</div>
 				</div>
@@ -2313,7 +2314,7 @@
 				<!-- //box4 -->
 
 				<div class="content_box box5">
-					<div class="img_bg img_bg-1"><img src="/images/adidas/event/climazone/170404/bottom_visual.jpg" alt="" /></div>
+					<div class="img_bg img_bg-1" id="gif_wrap2"><img src="http://image.adidas.co.kr/images/adidas/event/climazone/170404/bottom_visual.jpg" alt="" /></div>
 					<div class="inner">
 						<div class="bottom_banner">
 							<a href="http://shop.adidas.co.kr/PF070801.action?pageNo=253">
@@ -2345,6 +2346,27 @@
 				var viewVideo;
 
 				(function($){
+
+					// function img_detect(URL) {
+					// 	var image = new Image();
+					// 	image.src = URL;
+					// 	image.onload = changeimage;
+					// }
+					//
+					// img_detect('http://image.adidas.co.kr/images/adidas/event/climazone/170404/middle1_visual.gif');
+
+					setTimeout(function(){
+						document.getElementById("gif_wrap").innerHTML = '<img id="change_gif1" class="test" src="http://image.adidas.co.kr/images/adidas/event/climazone/170404/middle1_visual.gif" alt="" />';
+					},500);
+
+					setTimeout(function(){
+						document.getElementById("gif_wrap1").innerHTML = '<img id="change_gif1" class="test" src="http://image.adidas.co.kr/images/adidas/event/climazone/170404/middle2_visual.gif" alt="" /><p class="middle_txt">극한의 더위를 이기는 최상의 시원함과 쾌적함</p>';
+					},500);
+
+					setTimeout(function(){
+						document.getElementById("gif_wrap2").innerHTML = '<img id="change_gif1" class="test" src="http://image.adidas.co.kr/images/adidas/event/climazone/170404/bottom_visual.gif" alt="" />';
+					},500);
+
 
 					viewVideo = function(videoId){
 						var $this = $(this);
