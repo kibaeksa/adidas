@@ -170,23 +170,23 @@ $width600:600px;
 				bottom:0;
 				background: #000;
 				width:33.333333%;
-				background: url("http://image.adidas.co.kr/images/adidas/event/alexander_wang/bg_left_org.jpg") no-repeat center top;
+				background: url("http://image.adidas.co.kr/images/adidas/event/alexander_wang/bg_left_org.jpg?v=1") no-repeat center top;
 				background-size:cover;
 				z-index: 0;
 				&.first{
 					bottom: 64px;
-					background-image:url("http://image.adidas.co.kr/images/adidas/event/alexander_wang/bg_left_org.jpg");
+					background-image:url("http://image.adidas.co.kr/images/adidas/event/alexander_wang/bg_left_org.jpg?v=1");
 				}
 				&.second{
 					left:33.3333%;
-					background-image:url("http://image.adidas.co.kr/images/adidas/event/alexander_wang/bg_center_org.jpg");
+					background-image:url("http://image.adidas.co.kr/images/adidas/event/alexander_wang/bg_center_org.jpg?v=1");
 			    background-position: center center;
 					bottom: -20px;
 				}
 				&.third{
 					bottom: 64px;
 					left: 66.66667%;
-					background-image:url("http://image.adidas.co.kr/images/adidas/event/alexander_wang/bg_right_org.jpg");
+					background-image:url("http://image.adidas.co.kr/images/adidas/event/alexander_wang/bg_right_org.jpg?v=1");
 			    background-position: center bottom;
 				}
 
@@ -197,10 +197,10 @@ $width600:600px;
 					z-index: 1;
 					background-size:cover;
 					visibility: hidden;
-					background-image:url("http://image.adidas.co.kr/images/adidas/event/alexander_wang/bg_change1.jpg");
+					background-image:url("http://image.adidas.co.kr/images/adidas/event/alexander_wang/bg_change1.jpg?v=1");
 				}
 				.bg_change2{
-					background-image:url("http://image.adidas.co.kr/images/adidas/event/alexander_wang/bg_change2.jpg");
+					background-image:url("http://image.adidas.co.kr/images/adidas/event/alexander_wang/bg_change2.jpg?v=1");
 					z-index: 2;
 
 

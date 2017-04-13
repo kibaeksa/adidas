@@ -1102,10 +1102,10 @@
 					<!-- ////////////////////20170331 버튼 분기//////////////////// -->
 
 
-					<!-- 20170331 버튼 옵션 1 : 적용 시간 : 지금~ 4월1일 오전 10시 59분 -->
-					<div class="main_button">
-						<span class="text_change">2017.04.01 11AM 판매예정</span>
-					</div>
+					<!-- 20170331 버튼 옵션 1 : 적용 시간 : 지금~ 4월15일 오전 11시 00분 -->
+					<!-- <div class="main_button">
+						<span class="text_change">2017.04.15 11AM 판매예정</span>
+					</div> -->
 
 					<!-- 20170331 버튼 옵션 2 : 적용시간 : 4월1일 11시~~ 판재종료전까지 -->
 					<!-- <a href="#" class="main_button">
@@ -1113,9 +1113,9 @@
 					</a> -->
 
 					<!-- 20170331 버튼 옵션 3 : 적용 시간 : 재고 소진시~-->
-					<!-- <div class="main_button">
+					<div class="main_button">
 						<span class="text_change">SOLD OUT</span>
-					</div> -->
+					</div>
 
 
 					<!-- ////////////////////20170331 버튼 분기 end//////////////////// -->
@@ -1161,6 +1161,28 @@
 			<!-- <script type="text/javascript" src="/js/adidas/event/customise/common.js"></script> -->
 			<script type="text/javascript" src="/js/prx.min.js"></script>
 			<script type="text/javascript">
+
+			(function() {
+				var lastTime = 0;
+				var vendors = ['ms', 'moz', 'webkit', 'o'];
+				for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+					window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+					window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame']
+											   || window[vendors[x]+'CancelRequestAnimationFrame'];
+				}
+
+				if (!window.requestAnimationFrame)
+					window.requestAnimationFrame = function(callback , timer){
+						console.log('1werwr1');
+						var t = timer !=undefined ? timer : 10;
+						setTimeout(callback , t);
+					};
+
+				if (!window.cancelAnimationFrame)
+					window.cancelAnimationFrame = function(id) {
+						clearTimeout(id);
+					};
+			}());
 
 				(function($){
 
@@ -1272,24 +1294,24 @@
 								return false;
 	            			});
 
-          			function viewVideo(videoId){
-									var $this = $(this);
-									var videoLayerElem = $('<div class="video_layer"><a class="sptbg close" href="javascript:void(0)"></a><div class="video"></div><div class="bg"></div></div>');
-									$('html').addClass('no_scroll');
-									$('body').append(videoLayerElem);
-									setTimeout(function(){
-										$('.video_layer').addClass('loaded');
-										setTimeout(function(){
-											$('.video_layer').find('.video').append('<iframe width="100%" height="100%" src="http://www.youtube.com/embed/'+videoId+'?autoplay=1&rel=0&wmode=transparent" frameborder="0" allowfullscreen wmode="transparent"> </iframe>');
-										},20);
-									},300);
+  						function viewVideo(videoId){
+							var $this = $(this);
+							var videoLayerElem = $('<div class="video_layer"><a class="sptbg close" href="javascript:void(0)"></a><div class="video"></div><div class="bg"></div></div>');
+							$('html').addClass('no_scroll');
+							$('body').append(videoLayerElem);
+							setTimeout(function(){
+								$('.video_layer').addClass('loaded');
+								setTimeout(function(){
+									$('.video_layer').find('.video').append('<iframe width="100%" height="100%" src="http://www.youtube.com/embed/'+videoId+'?autoplay=1&rel=0&wmode=transparent" frameborder="0" allowfullscreen wmode="transparent"> </iframe>');
+								},20);
+							},300);
 
-									$('.video_layer .close').bind('click',function(){
-										$('html').removeClass('no_scroll');
-										$('.video_layer').remove();
-									});
-									return false;
-								}
+							$('.video_layer .close').bind('click',function(){
+								$('html').removeClass('no_scroll');
+								$('.video_layer').remove();
+							});
+							return false;
+						}
 
 
 				})(jQuery);
