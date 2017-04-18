@@ -341,9 +341,24 @@ Reebok.ops = {
 		}
 	}
 
+	function initSelectbox(){
+		$('.sel_design').each(function(){
+
+			if(this.dataset.init){
+				return;
+			}
+			this.dataset.init = true;
+
+			var $this = $(this);
+			var $selectBox = $(this).find('select');
+			$this.change(function(event){
+				$this.find('>a span').text($selectBox.find('option:selected').text());
+			});
+		});
+	}
+
 
 	document.addEventListener("DOMContentLoaded", function(event) {
-
 		Reebok.el.doc = $(document);
 
 		var elemHeader = document.getElementById('header');
@@ -531,11 +546,13 @@ Reebok.ops = {
 				}
 
 			});
-
-
 		}
 
+		/* Init custom selectbox */
+		initSelectbox();
+
 	});
+
 
 	$(document).ready(function(){
 		Reebok.el.doc = $(document);
@@ -544,6 +561,8 @@ Reebok.ops = {
 		Reebok.el.leftmenu = $('#leftmenu');
 		Reebok.el.container = $('#container');
 		Reebok.el.flxNavi = $('#header .hdr2');
+
+
 	});
 
 

@@ -1,14 +1,13 @@
 @charset "utf-8";
-@import url('order.css');
-@import url('popup.css');
-/*@import url('//image.reebok.co.kr/css/reebok/order.css');
-@import url('//image.reebok.co.kr/css/reebok/popup.css');*/
+@import url('//image.reebok.co.kr/css/reebok/order.css');
+@import url('//image.reebok.co.kr/css/reebok/popup.css');
 @import url('//image.reebok.co.kr/css/reebok/customer.css');
 @import url('//image.reebok.co.kr/css/reebok/mypage.css');
 @import url('//image.reebok.co.kr/css/reebok/cscenter.css');
 @import url('//image.reebok.co.kr/css/reebok/search.css');
 @import url('//image.reebok.co.kr/css/reebok/club.css');
 @import url('//image.reebok.co.kr/css/reebok/restyle.css');
+@import url('fonts.css');
 @import url('//fonts.googleapis.com/earlyaccess/nanumgothic.css');
 
 
@@ -47,93 +46,6 @@ input {border-top:expression((this.type=='text'||this.type=='password')?'1px sol
 
 select {font:normal 12px 'gulim','굴림';height:18px;vertical-align:middle;color:#888;padding:0;margin:0;}
 textarea {border:1px solid #d7d7d5;color:#797b80;padding:0;margin:0;}
-
-
-@font-face{
-	font-family: 'NotoSansKRBold';
-	src: url('//image.reebok.co.kr/fonts/NotoSansKr/woff/NotoSansKr-bold.woff') format('woff');
-}
-
-@font-face{
-	font-family: 'NotoSansKRThin';
-	src: url('//image.reebok.co.kr/fonts/NotoSansKr/woff/NotoSansKr-thin.woff') format('woff');
-}
-
-@font-face{
-	font-family: 'NotoSansKRLight';
-	src: url('//image.reebok.co.kr/fonts/NotoSansKr/woff/NotoSansKr-light.woff') format('woff');
-}
-
-@font-face{
-	font-family: 'NotoSansKRRegular';
-	src: url('//image.reebok.co.kr/fonts/NotoSansKr/woff/NotoSansKr-regular.woff') format('woff');
-}
-
-@font-face{
-	font-family: 'NotoSansKR';
-	src: url('//image.reebok.co.kr/fonts/NotoSansKr/woff/NotoSansKr-medium.woff') format('woff');
-}
-
-@font-face {
-	font-family: 'reefont-bold';
-    src: url('/fonts/reefont/eot/reefont-bold-webfont.eot');
-	src: url('/fonts/reefont/eot/reefont-bold-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('/fonts/reefont/woff/reefont-bold-webfont.woff') format('woff');
-}
-
-@font-face {
-	font-family: 'reefont';
-    src: url('/fonts/reefont/eot/reefont-regular-webfont.eot');
-	src: url('/fonts/reefont/eot/reefont-regular-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('/fonts/reefont/woff/reefont-regular-webfont.woff')  format('woff');
-}
-
-@font-face {
-  font-family: 'DINWebPro-Cond';
-  src: url("//image.reebok.co.kr/fonts/dinWebpro/eot/DINWebPro-Cond.eot");
-  src: url("//image.reebok.co.kr/fonts/dinWebpro/woff/DINWebPro-Cond.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'DINWebPro-CondLight';
-  src: url("//image.reebok.co.kr/fonts/dinWebpro/eot/DINWebPro-CondLight.eot");
-  src: url("//image.reebok.co.kr/fonts/dinWebpro/woff/DINWebPro-CondLight.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'DINWebPro-CondBold';
-  src: url("//image.reebok.co.kr/fonts/dinWebpro/eot/DINWebPro-CondBold.eot");
-  src: url("//image.reebok.co.kr/fonts/dinWebpro/woff/DINWebPro-CondBold.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'DINWebPro-CondMedium';
-  src: url("//image.reebok.co.kr/fonts/dinWebpro/eot/DINWebPro-CondMedium.eot");
-  src: url("//image.reebok.co.kr/fonts/dinWebpro/woff/DINWebPro-CondMedium.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'QStencil';
-  src: url("//image.reebok.co.kr/fonts/QStencil/eot/Q-Stencil.eot");
-  src: url("//image.reebok.co.kr/fonts/QStencil/woff/Q-Stencil.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'ReefontCondensed';
-  src: url("//image.reebok.co.kr/fonts/reefont/eot/reefont-condensed-webfont.eot");
-  src: url("//image.reebok.co.kr/fonts/reefont/woff/reefont-condensed-webfont.woff") format("woff");
-}
-
-@font-face{
-	font-family:"Colfax";
-	src:url('//image.reebok.co.kr/fonts/Colfax/colfaxwebblack.eot');
-	src:url('//image.reebok.co.kr/fonts/Colfax/colfaxwebblack.eot?#iefix') format('embedded-opentype'),
-		url('//image.reebok.co.kr/fonts/Colfax/colfaxwebblack.woff2') format('woff2'),
-		url('//image.reebok.co.kr/fonts/Colfax/colfaxwebblack.woff') format('woff'),
-		url('//image.reebok.co.kr/fonts/Colfax/colfaxwebblack.ttf') format('truetype');
-		font-weight:normal;
-		font-style:normal
-}
 
 
 /* link style */
@@ -277,7 +189,7 @@ span.price span.sale span.won{color:#e4000f;}
 
 .price-container .prc{
 	position: relative;
-	font:17px 'DINWebPro-CondBold';
+	font:17px 'dinpro bold';
 	color: #000;
 	vertical-align: baseline;
 }
@@ -299,7 +211,7 @@ span.price span.sale span.won{color:#e4000f;}
 
 .price-container .prc.line{
 	margin-right: 5px;
-	font:15px 'adihaus';
+	font:15px 'dinpro bold';
 	color: #000;
 	text-decoration: line-through;
 }
@@ -602,6 +514,192 @@ span.price span.sale span.won{color:#e4000f;}
 	left: 50%;
 	background: #fff;
 	z-index: 701;
+}
+
+/* Products-list */
+.products-list-tpl{
+	position: relative;
+}
+
+.products-list-tpl .h_tit{
+	margin-bottom: 20px;
+	font:30px/30px 'NotoSansKRRegular','Nanum Gothic';
+	color: #000;
+	text-align: center;
+}
+
+.products-list-tpl .products-list-wrapper{
+	width: 950px;
+	height: 330px;
+	position: relative;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+.products-list-tpl .products-list-wrapper{
+	height: auto;
+}
+
+.products-list-tpl .products-list-wrapper .products-list{
+	position: absolute;
+	top:0;
+	left: 0;
+	margin: 10px 0 0 10px;
+}
+
+.products-list-tpl .products-list-wrapper .products-list::after{
+	content:'.'; display:block; height:0; font-size:0; clear:both; visibility:hidden;
+}
+
+.products-list-tpl .products-list-wrapper .products-slide-wrapper{
+	width: 940px;
+	height: 330px;
+	position: relative;
+	overflow: hidden;
+	padding: 15px;
+}
+
+.products-list-tpl .products-list-wrapper .prev,
+.products-list-tpl .products-list-wrapper .next{
+	width: 33px;
+	height: 21px;
+	position: absolute;
+	top: 125px;
+	/*left: 50%;*/
+	z-index: 10;
+	background: #fff;
+	transition:background 0.3s;
+	-webkit-transition:background 0.3s;
+}
+
+.products-list-tpl .products-list-wrapper .prev{
+	left:-29px;
+}
+
+.products-list-tpl .products-list-wrapper .next{
+	right: -47px;
+}
+
+.products-list-tpl .products-list-wrapper .prev span,
+.products-list-tpl .products-list-wrapper .next span{
+	width: 33px;
+	height: 21px;
+	position: absolute;
+	/*margin: -6px 0 0 -3px;*/
+}
+
+.products-list-tpl .products-list-wrapper .prev span{
+	background-position:-140px -2446px;
+}
+
+.products-list-tpl .products-list-wrapper .next span{
+	background-position:-105px -2446px;
+
+}
+
+
+.products-list-tpl .products-list-wrapper .products-slide-wrapper .products-list{
+	width: 5000px;
+
+}
+
+.products-list-tpl .products-list-wrapper .products-list li{
+	position: relative;
+	width: 230px;
+	height: 330px;
+	margin-right: 10px;
+	float: left;
+	transition: box-shadow 0.2s ease-out;
+	-webkit-transition: box-shadow 0.2s ease-out;
+}
+
+.products-list-tpl .products-list-wrapper .products-list li:hover{
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.products-list-tpl .products-list-wrapper .products-list li:last-child{
+	margin-right: 0;
+}
+
+.products-list-tpl .products-list-wrapper .products-list li .img{
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.products-list-tpl .products-list-wrapper .products-list li .img img{
+	width: 230px;
+}
+
+.products-list-tpl .products-list-wrapper .products-list li .tit{
+	height:18px;
+	padding-left: 8px;
+	margin-bottom: 8px;
+	overflow: hidden;
+
+	display: -webkit-box;
+	text-overflow: ellipsis;
+	white-space:normal;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+
+.products-list-tpl .products-list-wrapper .products-list li .tit a{
+	font: 14px/17px 'NotoSansKR','Nanum Gothic';
+	color: #000;
+}
+
+.products-list-tpl .products-list-wrapper .products-list li .rating-star{
+	position: absolute;
+	bottom: 20px;
+	left: 10px;
+}
+
+.products-list-tpl .products-list-wrapper .products-list li .rating-star .star-count{
+	display: inline-block;
+	color: #999;
+	font:13px 'dinpro';
+	vertical-align: middle;
+}
+
+.products-list-tpl .products-list-wrapper .products-list li .price{
+	position: absolute;
+	bottom: 20px;
+	right: 10px;
+	text-align: right;
+	padding-left: 8px;
+}
+
+.products-list-tpl .products-list-wrapper .products-list li .price .line{
+	position: absolute;
+	top: -15px;
+	right: 0;
+	font-size: 13px;
+	margin-right: 0;
+	color: #666;
+	font:14px 'dinpro';
+}
+
+.products-list-tpl .products-list-wrapper .num{
+	text-align: center;
+}
+
+.products-list-tpl .products-list-wrapper .num a{
+	padding: 8px;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.products-list-tpl .products-list-wrapper .num a span{
+	width: 10px;
+	height: 10px;
+	display: block;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	background: #e0e1e1;
+}
+
+.products-list-tpl .products-list-wrapper .num a.on span{
+	background: #ab2328;
 }
 
 /* Common modal popup */
@@ -1076,8 +1174,9 @@ span.price span.sale span.won{color:#e4000f;}
 .modal_pop_layer.as_layer .tit{border-bottom:1px solid #ebebeb;padding:20px 0 20px 20px;font: bold 25px 'Nanum Gothic',Nanum Gothic;color: #000;}
 .modal_pop_layer.as_layer .delivery_desc{padding:20px;border-bottom:1px solid #ebebeb;}
 .modal_pop_layer.as_layer .delivery_desc p{margin-bottom:15px;color:#333;letter-spacing:-.75px;line-height:18px;}
-.modal_pop_layer.as_layer .delivery_desc li{padding:7px 0;color:#4e6cce;font-size:12px;font-weight:bold;padding-left:7px;background:url(//image.adidas.co.kr/images/adidas/common/bg_bullet.gif) 0 10px no-repeat;}
-.modal_pop_layer.as_layer .delivery_desc li a{color:#4e6cce;}
+.modal_pop_layer.as_layer .delivery_desc li{margin-bottom: 5px;color:#ab2328;font:12px 'dotum';font-weight:bold;padding-left:10px;}
+.modal_pop_layer.as_layer .delivery_desc li .bul{background: #ab2328;}
+.modal_pop_layer.as_layer .delivery_desc li a{color:#ab2328;}
 .modal_pop_layer.as_layer .delivery_desc2{overflow: hidden;padding:30px 20px 50px;font-family:'gulim',gulim;}
 .modal_pop_layer.as_layer dl{overflow:hidden;clear:left;margin-bottom:38px;}
 .modal_pop_layer.as_layer dt{width:90px;float:left;font-size:12px;font-weight:bold;color:#333;}
@@ -6346,10 +6445,15 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 	background:url(//image.adidas.co.kr/images/adidas/common/bg_weeksale_label.png) 0 0 no-repeat;
 }
 
+.product-main .product-infomation .imgscut_box .thumbnails{
+	width: 520px;
+	margin-left: -6px;
+}
+
 .product-main .product-infomation .imgscut_box .thumbnails a{
 	display: block;
 	float: left;
-	margin:0 11px 11px 0;
+	margin: 0 6px 11px 5px;
 	border: 1px solid  #dadada;
 }
 
@@ -6540,12 +6644,12 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 
 .product-main .product-infomation .buy_box .other_color p{
 	margin-bottom:13px;
-	font:14px/14px 'DINWebPro-Cond','Nanum Gothic';
+	font:13px/13px 'dinpro','Nanum Gothic';
 	color: #333;
 	letter-spacing: 0.7px;
 }
 .product-main .product-infomation .buy_box .other_color p strong{
-	font-family: 'DINWebPro-CondBold','Nanum Gothic';
+	font-family: 'dinpro bold','Nanum Gothic';
 }
 
 .product-main .product-infomation .buy_box .other_color p.tit{
@@ -6553,35 +6657,35 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 	color: #333;
 }
 
-.product-main .product-infomation .buy_box .other_color .thumbnails a{
-	width: 48px;
-	height: 48px;
+.product-main .product-infomation .buy_box .thumbnails{
+	width: 420px;
+	margin-left: -5px;
+}
+
+.product-main .product-infomation .buy_box .thumbnails a{
+	width: 60px;
+	height: 60px;
 	float: left;
 	position: relative;
-	margin:0 8px 8px 0;
+	margin:0 5px 8px 5px;
 	display: block;
-	border:1px solid transparent;
+
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
 }
 
-.product-main .product-infomation .buy_box .other_color .thumbnails a.on,
-.product-main .product-infomation .buy_box .other_color .thumbnails a:hover{
-	border-color:#c8cbcc;
-}
-
-
-
-.product-main .product-infomation .buy_box .other_color .thumbnails a.last{
+.product-main .product-infomation .buy_box .thumbnails a.last{
 	margin-right: 0;
 }
 
-.product-main .product-infomation .buy_box .other_color .thumbnails img{
-	width: 48px;
+.product-main .product-infomation .buy_box .thumbnails img{
+	width: 60px;
 }
 
-.product-main .product-infomation .buy_box .other_color .thumbnails a:hover::before{
+.product-main .product-infomation .buy_box .thumbnails a:hover::before{
 	content:'';
 	display: block;
-	width: 50px;
+	width: 60px;
 	height: 3px;
 	position: absolute;
 	bottom: -1px;
@@ -6589,10 +6693,10 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 	background: #ab2328;
 }
 
-.product-main .product-infomation .buy_box .other_color .thumbnails a.on::before{
+.product-main .product-infomation .buy_box .thumbnails a.on::before{
 	content:'';
 	display: block;
-	width: 50px;
+	width: 60px;
 	height: 3px;
 	position: absolute;
 	bottom: -1px;
@@ -6600,8 +6704,8 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 	background: #ab2328;
 }
 
-.old_ie .product-main .product-infomation .buy_box .other_color .thumbnails a:hover,
-.old_ie .product-main .product-infomation .buy_box .other_color .thumbnails a.on{
+.old_ie .product-main .product-infomation .buy_box .thumbnails a:hover,
+.old_ie .product-main .product-infomation .buy_box .thumbnails a.on{
 	border-color: #000;
 }
 
@@ -6663,99 +6767,53 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 	margin-right: 10px;
 }
 
-.product-main .product-infomation .buy_box .size_box .select_box .size_shoes{
-
-}
-
 .product-main .product-infomation .buy_box .size_box .select_box .selectbox-ctm.open{
 	z-index: 5;
 	border-bottom-color: #fff;
 }
 
-.product-main .product-infomation .buy_box .size_box .select_box .size_shoes .select-contents,
-.product-main .product-infomation .buy_box .size_box .select_box .size_clothes .select-contents{
-	width: 398px;
+.product-main .product-infomation .buy_box .size_box .select_box .select_size .select-contents{
+	width: 408px;
 	top: 43px;
-	padding: 10px 0 10px 10px;
+	padding: 20px 0 10px 0;
 	max-height:inherit;
 }
 
-.product-main .product-infomation .buy_box .size_box .select_box .size_shoes .select-contents li{
-	width: 36px;
-	height: 36px;
-	margin: 0 5px 5px 0;
+.product-main .product-infomation .buy_box .size_box .select_box .select_size .select-contents ul{
+	width: 370px;
+	margin: 0 auto;
+}
+
+.product-main .product-infomation .buy_box .size_box .select_box .select_size .select-contents li{
+	height: auto;
+	margin: 0 2px 4px;
 	float: left;
 }
 
-.product-main .product-infomation .buy_box .size_box .select_box .size_shoes .select-contents li a{
-	width: 34px;
-	height: 34px;
-	border: 1px solid  #ccc;
+.product-main .product-infomation .buy_box .size_box .select_box .select_size .select-contents li a{
+	width: 35px;
+	height: 21px;
 	padding: 0;
+	border: 1px solid  #ccc;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	text-align: center;
-	font:12px/34px 'adihaus';
-}
-
-.product-main .product-infomation .buy_box .size_box .select_box .size_shoes .select-contents li a:hover{
-	border-bottom: 2px solid  #025f8e;
-}
-
-.product-main .product-infomation .buy_box .size_box .select_box .size_shoes .select-contents li.disable a:hover{
-	border-bottom: 1px solid  #ccc;
-}
-
-.product-main .product-infomation .buy_box .size_box .select_box .size_shoes .select-contents li.selected a{
-	border-bottom: 2px solid  #000;
-}
-
-.product-main .product-infomation .buy_box .size_box .select_box .size_clothes .select-contents li{
-	width:110px;
-	height: 70px;
-	margin: 0 5px 5px 0;
-	float: left;
-}
-
-.product-main .product-infomation .buy_box .size_box .select_box .size_clothes .select-contents li a{
-	width: 108px;
-	height: 61px;
-	padding: 7px 0 0;
-	border: 1px solid  #eee;
-	box-sizing: inherit;
-	-webkit-box-sizing: inherit;
-}
-
-.product-main .product-infomation .buy_box .size_box .select_box .size_clothes .select-contents li.selected a{
-	background: #ccc;
-	border-color: #000;
-}
-
-.product-main .product-infomation .buy_box .size_box .select_box .size_clothes .select-contents li.disable a{
-	background: #eee;
-}
-
-.product-main .product-infomation .buy_box .size_box .select_box .size_clothes .select-contents li.disable a span{
-	color: #ccc !important;
-}
-
-.product-main .product-infomation .buy_box .size_box .select_box .size_clothes .select-contents li.disable a:hover{
-	border-color: #eee;
-}
-
-.product-main .product-infomation .buy_box .size_box .select_box .size_clothes .select-contents li a:hover{
-	border-color: #000;
-}
-
-.product-main .product-infomation .buy_box .size_box .select_box .size_clothes .select-contents li a span{
-	display: block;
-	text-align: center;
-	font-size: 11px;
-	color: #888;
-}
-
-.product-main .product-infomation .buy_box .size_box .select_box .size_clothes .select-contents li a span.num{
-	margin-bottom: 2px;
-	font:bold 13px 'adihaus';
+	font:13px 'dinpro';
 	color: #000;
+	border-radius:15px;
+}
+
+.product-main .product-infomation .buy_box .size_box .select_box .select_size .select-contents li a:hover{
+	border-color: #aaa;
+}
+
+.product-main .product-infomation .buy_box .size_box .select_box .select_size .select-contents li.selected a{
+	border-color: #ab2328;
+	color: #ab2328;
+}
+
+.product-main .product-infomation .buy_box .size_box .select_box .select_size .select-contents li.disable a{
+	border-color: #eee;
 }
 
 .product-main .product-infomation .buy_box .size_box .select_box>.select_amount{
@@ -6952,10 +7010,12 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 }
 
 .product-main .product-infomation .buy_box .button_wrap .alert_addedcart a.close span{
-	width: 15px;
-	height: 15px;
-	margin: 10px;
-	background-position:-125px -685px;
+	width: 19px;
+	height: 19px;
+	background-position:-110px -2230px;
+	position: absolute;
+	top: 8px;
+    left: 7px;
 }
 
 .product-main .product-infomation .buy_box .button_wrap a{
@@ -7144,16 +7204,6 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 	font:13px 'NotoSansKR','Nanum Gothic';
 	color: #666;
 }
-
-/*.product-main .product-description .spec .ico{
-	width: 16px;
-	height: 16px;
-	margin-right: 4px;
-	display: inline-block;
-	background-position:-240px -20px;
-	vertical-align: middle;
-	cursor: pointer;
-}*/
 
 .product-main .product-description .spec .ico{
 	width: 2px;
@@ -7347,8 +7397,6 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 	background-position:-240px -10px;
 }
 
-
-
 .product-main .product-insta{
 	margin-bottom: 45px;
 }
@@ -7364,8 +7412,10 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 	color: #444;
 }
 
-.product-main .product-reviews .staff_review{
-	position: relative;
+.product-main .product-reviews h3 span{
+	font:20px/40px 'DINWebPro-Condmedium','Nanum Gothic';
+	color: #333;
+	vertical-align: bottom;
 }
 
 .product-main .product-reviews .staff_review .btn_stfreview{
@@ -7390,7 +7440,13 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 	min-height: 238px;
 	position: relative;
 	overflow: hidden;
-	border: 1px solid  #ebebeb;
+	border-top: 3px solid  #ebebeb;
+	border-bottom: 1px solid  #ebebeb;
+}
+
+.product-main .product-reviews .staff_review{
+	position: relative;
+	margin-bottom: 120px;
 }
 
 .product-main .product-reviews .staff_review_slider ul{
@@ -7401,33 +7457,47 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 }
 
 .product-main .product-reviews .staff_review_slider li{
-	width: 908px;
+	width: 950px;
 	position: relative;
 	float: left;
-	padding: 20px;
+	padding:20px 0;
 }
 
 .product-main .product-reviews .staff_review_slider li .cut{
-	width:360px;
-	float: left;
+	width: 395px;
 	position: relative;
+	float: left;
+	padding-left: 80px;
 }
 
 .product-main .product-reviews .staff_review_slider li .cut .big_cut{
+	width: 395px;
+	height: 395px;
+	position: relative;
+	overflow: hidden;
 	margin-bottom: 5px;
+	cursor: default;
 }
 
 .product-main .product-reviews .staff_review_slider li .cut .big_cut img{
-	max-width: 360px;
+	max-width: 395px;
+	width: auto;
+}
+
+.product-main .product-reviews .staff_review_slider li .cut .cut_thumbnails{
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .product-main .product-reviews .staff_review_slider li .cut .cut_thumbnails a{
 	width: 68px;
 	height: 68px;
+	overflow: hidden;
 	position: relative;
-	float: left;
 	display: block;
 	margin-right: 5px;
+	margin: 0 5px 12px 0;
 	background: #e6e6e6;
 }
 
@@ -7461,8 +7531,8 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 }
 
 .product-main .product-reviews .staff_review_slider li .info{
-	width: 518px;
-	padding:60px 0 0 40px;
+	width: 430px;
+	padding:40px 0 0 40px;
 	float: left;
 }
 
@@ -7487,9 +7557,9 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 }
 
 .product-main .product-reviews .staff_review_slider li .info .reviewer_spec span{
-	margin-right: 6px;
-	color: #0286cd;
-	font:13px/13px 'NotoSansKRRegular','Nanum Gothic';
+	margin-right: 8px;
+	color: #000;
+	font:13px/13px 'NotoSansKR','Nanum Gothic';
 }
 
 .product-main .product-reviews .staff_review_slider li .info .desc{
@@ -7508,10 +7578,86 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 	display: block;
 }
 
+.product-main .product-reviews .staff_review_slider li .info .size_info strong{
+	text-transform: uppercase;
+	color:#ab2328;
+	font:15px/15px 'dinpro bold','Nanum Gothic';
+	letter-spacing: 0.7px;
+}
+.product-main .product-reviews .staff_review_slider li .info .size_info strong>em{
+	width:13px;
+	height: 13px;
+	margin-right: 3px;
+	display: inline-block;
+	background-position: -140px -2430px;
+}
+
+.product-main .product-reviews .staff_review_slider li .info .size_info strong span{
+	font:13px/13px 'NotoSansKR','Nanum Gothic';
+
+}
+
+.product-main .product-reviews .staff_review_slider li .info .size_info p.info_desc{
+	padding-top: 3px;
+	color:#ab2328;
+	font:13px/13px 'NotoSansKRLight','Nanum Gothic';
+}
+
+.product-main .product-reviews .staff_review_slider li .info .review_content{
+	padding-top: 25px;
+	font: 13px/20px 'NotoSansKRLight','Nanum Gothic';
+	letter-spacing: -0.5px;
+	display: none;
+}
+
+.product-main .product-reviews .staff_review_slider li .info .size_tip{
+	margin-bottom: 20px;
+}
+
+.product-main .product-reviews .staff_review_slider li .info .size_tip p{
+	margin-bottom: 5px;
+	font:13px/13px 'NotoSansKR','Nanum Gothic';
+	color: #ff6d6d;
+}
+
+.product-main .product-reviews .staff_review_slider li .info .size_tip .ico{
+	margin-right: 5px;
+	padding-left: 18px;
+	position: relative;
+	display: inline-block;
+	height: 15px;
+	font:16px/16px 'adinenuPro-light';
+	letter-spacing: 0;
+}
+
+.product-main .product-reviews .staff_review_slider li .info .size_tip .ico .spt_bg{
+	width: 14px;
+	height: 14px;
+	background-position: 0 -300px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.product-main .product-reviews .staff_review_slider li .info .size_tip .ico span{
+	font-family: 'NotoSansKR','Nanum Gothic';
+}
+
 .product-main .product-reviews .num{
 	padding-top:30px;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 	text-align: center;
+	letter-spacing: 0.7px;
+}
+
+.product-main .product-reviews .num *{
+	color: #000;
+	font:16px/16px 'DINWebPro-CondBold';
+}
+
+.product-main .product-reviews .num strong{
+	color: #ab2328;
+	font-family: 'DINWebPro-CondBold';
 }
 
 .product-main .product-reviews .num a{
@@ -7751,10 +7897,10 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 }
 
 .product-main .product-reviews .reviews_container .reviews_box .rating_summary{
-	width: 280px;
+	width: 330px;
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 45px;
 	padding-top: 35px;
 }
 
@@ -7780,14 +7926,14 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 
 .product-main .product-reviews .reviews_container .reviews_box .rating_summary .count{
 	margin-bottom: 27px;
-	font:32px/32px 'DINWebPro-CondLight','Nanum Gothic';
+	font:30px/30px 'dinpro';
 	color: #333;
 	letter-spacing: 0.7px;
 }
 
 .product-main .product-reviews .reviews_container .reviews_box .rating_summary .per{
 	margin-bottom: 8px;
-	font:48px/48px 'adiBlack';
+	font:48px/48px 'dinpro bold';
 	color: #333;
 }
 
@@ -7800,16 +7946,20 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 
 .product-main .product-reviews .reviews_container .reviews_box .rating_summary .rating_grph{
 	margin-bottom: 30px;
+	overflow: hidden;
 }
 
 .product-main .product-reviews .reviews_container .reviews_box .rating_summary .rating_grph dt{
+	width: 50px;
+	float: left;
 	margin-bottom: 10px;
 	font:13px/13px 'NotoSansKR','Nanum Gothic';
 	color: #333;
 }
 
 .product-main .product-reviews .reviews_container .reviews_box .rating_summary .rating_grph dd{
-
+	width: 280px;
+	float: left;
 }
 
 .product-main .product-reviews .reviews_container .reviews_box .rating_summary .rating_grph dd .radio_img{
@@ -7832,6 +7982,7 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 
 .product-main .product-reviews .reviews_container .reviews_box .rating_summary .rating_grph dd .labels{
 	position: relative;
+	height: 15px;
 }
 
 .product-main .product-reviews .reviews_container .reviews_box .rating_summary .rating_grph dd .labels span{
@@ -7854,7 +8005,7 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 }
 
 .product-main .product-reviews .reviews_container .reviews_box .reviews_list{
-	padding:10px 0 0 350px;
+	padding: 10px 0 0 475px;
 }
 
 .product-main .product-reviews .reviews_container .reviews_box .reviews_list>.reload_review{
@@ -7932,14 +8083,24 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 }
 
 .photo_review_layer .close{
-	width: 26px;
-	height: 26px;
+	width: 30px;
+	height: 30px;
 	position: absolute;
-	top:-25px;
+	top:-29px;
 	right: 0;
-	background-position:-60px -685px;
 	margin: 0;
 	float: none;
+	background: #ededed;
+	border: 1px solid #d0d0d0;
+}
+
+.photo_review_layer .close span{
+	width: 19px;
+	height: 19px;
+	background-position:-110px -2230px;
+	position: absolute;
+    top: 4px;
+    left: 5px;
 }
 
 .photo_review_layer .cont{
@@ -7965,7 +8126,7 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 
 .product-main .product-reviews .reviews_container .reviews_box .reviews_list .box .info .user_id{
 	margin-right: 10px;
-	font:14px 'adihaus-bold';
+	font:14px 'dinpro bold';
 	color: #000;
 }
 
@@ -7978,226 +8139,11 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 	position: absolute;
 	top:25px;
 	right: 0;
-	font:14px 'adihaus';
+	font:14px 'dinpro';
 	color: #9a9b9b;
 }
-/*
-170201
-Update end
-*/
-.product-main.product-main-update .product-infomation .buy_box .size_box .select_box .size_clothes .select-contents{
-	width: 408px;
-	padding-left: 0;
-}
 
-.product-main.product-main-update .product-infomation .buy_box .size_box .select_box .size_clothes .select-contents ul{
-	width: 370px;
-	margin: 0 auto;
-}
-.product-main.product-main-update .product-infomation .buy_box .size_box .select_box .size_clothes .select-contents li{
-	width: 70px;
-	height: 101px;
-	margin: 0 2px 4px;
-}
-
-.product-main.product-main-update .product-infomation .buy_box .size_box .select_box .size_clothes .select-contents li a{
-	width: 68px;
-	height: 86px;
-	padding-top: 13px;
-	border: 1px solid  #ccc;
-}
-
-.product-main.product-main-update .product-infomation .buy_box .size_box .select_box .size_clothes .select-contents li a:hover{
-	height: 85px;
-	border-color: #accdde;
-	border-bottom: 2px solid #ab2328;
-}
-
-.product-main.product-main-update .product-infomation .buy_box .size_box .select_box .size_clothes .select-contents li.disable a{
-	background: #eee;
-	border-color: #eee;
-}
-
-.product-main.product-main-update .product-infomation .buy_box .size_box .select_box .size_clothes .select-contents li.disable a:hover{
-	height: 86px;
-	border: 1px solid  #eee;
-}
-
-.product-main.product-main-update .product-infomation .buy_box .size_box .select_box .size_clothes .select-contents li.selected a{
-	height: 85px;
-	border-color: #000;
-	border-bottom: 2px solid #000;
-	background: #fff;
-}
-
-.product-main.product-main-update .product-infomation .buy_box .size_box .select_box .size_clothes .select-contents li a span{
-	margin-bottom: 3px;
-	font:11px/11px 'NotoSansKRLight','Nanum Gothic';
-	color: #aaa;
-}
-
-.product-main.product-main-update .product-infomation .buy_box .size_box .select_box .size_clothes .select-contents li a span.num{
-	margin-bottom:5px;
-	font:15px/15px 'adihaus-medium';
-	color: #333;
-}
-
-.product-main.product-main-update .product-infomation .buy_box .size_box .select_box .size_clothes .select-contents li a .size{
-	font:12px/12px 'adihausDIN-Cond-medium';
-}
-
-.product-main.product-main-update .product-main .product-reviews{
-
-}
-
-.product-main.product-main-update .product-reviews h3 span{
-	font:20px/40px 'DINWebPro-Condmedium','Nanum Gothic';
-	color: #333;
-	vertical-align: bottom;
-}
-
-.product-main.product-main-update .product-reviews .staff_review{
-	margin-bottom: 120px;
-}
-
-
-.product-main.product-main-update .product-reviews .staff_review_slider{
-	border-width: 0;
-	border-top: 3px solid  #ebebeb;
-	border-bottom: 1px solid  #ebebeb;
-}
-
-.product-main.product-main-update .product-reviews .staff_review_slider li{
-	width: 950px;
-	padding:20px 0;
-}
-
-.product-main.product-main-update .product-reviews .staff_review_slider li .cut{
-	width: 395px;
-	padding-left: 80px;
-	position: relative;
-}
-
-.product-main.product-main-update .product-reviews .staff_review_slider li .cut .cut_thumbnails{
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-.product-main.product-main-update .product-reviews .staff_review_slider li .cut .cut_thumbnails a{
-	margin-bottom:12px;
-	float:none;
-	overflow: hidden;
-	position: relative;
-}
-
-.product-main.product-main-update .product-reviews .staff_review_slider li .info .reviewer_spec span{
-	margin-right: 8px;
-	color: #000;
-	font-family:'NotoSansKR','Nanum Gothic';
-}
-
-.product-main.product-main-update .product-reviews .staff_review_slider li .info .size_info{}
-
-.product-main.product-main-update .product-reviews .staff_review_slider li .info .size_info strong{
-	text-transform: uppercase;
-	color:#ab2328;
-	font:15px/15px 'DINWebPro-CondBold','Nanum Gothic';
-	letter-spacing: 0.7px;
-}
-.product-main.product-main-update .product-reviews .staff_review_slider li .info .size_info strong>em{
-	width:13px;
-	height: 13px;
-	margin-right: 3px;
-	display: inline-block;
-	background-position: -140px -2430px;
-}
-
-.product-main.product-main-update .product-reviews .staff_review_slider li .info .size_info strong span{
-	font:13px/13px 'NotoSansKR','Nanum Gothic';
-
-}
-
-.product-main.product-main-update .product-reviews .staff_review_slider li .info .size_info p.info_desc{
-	padding-top: 3px;
-	color:#ab2328;
-	font:13px/13px 'NotoSansKRLight','Nanum Gothic';
-
-}
-
-.product-main.product-main-update .product-reviews .staff_review_slider li .cut .big_cut{
-	width: 395px;
-	height: 395px;
-	position: relative;
-	overflow: hidden;
-	cursor: default;
-}
-
-.product-main.product-main-update .product-reviews .staff_review_slider li .cut .big_cut img{
-	max-width: 395px;
-	width: auto;
-}
-
-.product-main.product-main-update .product-reviews .staff_review_slider li .info{
-	width: 430px;
-}
-
-.product-main.product-main-update .product-reviews .staff_review_slider li .info .review_content{
-	padding-top: 25px;
-	font: 13px/20px 'NotoSansKRLight','Nanum Gothic';
-	letter-spacing: -0.5px;
-	display: none;
-}
-
-.product-main.product-main-update .product-reviews .staff_review_slider li .info .size_tip{
-	margin-bottom: 20px;
-}
-
-.product-main.product-main-update .product-reviews .staff_review_slider li .info .size_tip p{
-	margin-bottom: 5px;
-	font:13px/13px 'NotoSansKR','Nanum Gothic';
-	color: #ff6d6d;
-}
-
-.product-main.product-main-update .product-reviews .staff_review_slider li .info .size_tip .ico{
-	margin-right: 5px;
-	padding-left: 18px;
-	position: relative;
-	display: inline-block;
-	height: 15px;
-	font:16px/16px 'adinenuPro-light';
-	letter-spacing: 0;
-}
-
-.product-main.product-main-update .product-reviews .staff_review_slider li .info .size_tip .ico .spt_bg{
-	width: 14px;
-	height: 14px;
-	background-position: 0 -300px;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-.product-main.product-main-update .product-reviews .staff_review_slider li .info .size_tip .ico span{
-	font-family: 'NotoSansKR','Nanum Gothic';
-}
-
-.product-main.product-main-update .product-reviews .num{
-	margin-bottom: 30px;
-	letter-spacing: 0.7px;
-}
-
-.product-main.product-main-update .product-reviews .num *{
-	color: #000;
-	font:16px/16px 'DINWebPro-CondBold';
-}
-
-.product-main.product-main-update .product-reviews .num strong{
-	color: #ab2328;
-	font-family: 'DINWebPro-CondBold';
-}
-
-.product-main.product-main-update .product-reviews .arrow_wrap{
+.product-main .product-reviews .arrow_wrap{
 	width: 100%;
 	height: 30px;
 	position: absolute;
@@ -8205,60 +8151,60 @@ Update end
 	left: 0;
 }
 
-.product-main.product-main-update .product-reviews .arrow_wrap .spt_bg{
+.product-main .product-reviews .arrow_wrap .spt_bg{
 	width: 30px;
 	height: 30px;
 }
 
-.product-main.product-main-update .product-reviews .arrow_wrap .spt_bg.next{
+.product-main .product-reviews .arrow_wrap .spt_bg.next{
 	background-position: -35px -2446px;
 }
 
-.product-main.product-main-update .product-reviews .arrow_wrap .spt_bg.prev{
+.product-main .product-reviews .arrow_wrap .spt_bg.prev{
 	background-position: -70px -2446px;
 }
 
-.product-main.product-main-update .product-reviews .arrow_wrap .prev_wrap,
-.product-main.product-main-update .product-reviews .arrow_wrap .next_wrap{
+.product-main .product-reviews .arrow_wrap .prev_wrap,
+.product-main .product-reviews .arrow_wrap .next_wrap{
 	height: 30px;
 	position: absolute;
 	top: 0;
 	left: 0;
 }
 
-.product-main.product-main-update .product-reviews .arrow_wrap .next_wrap{
+.product-main .product-reviews .arrow_wrap .next_wrap{
 	left: auto;
 	right: 0;
 }
 
-.product-main.product-main-update .product-reviews .arrow_wrap .prev_wrap .text,
-.product-main.product-main-update .product-reviews .arrow_wrap .next_wrap .text{
+.product-main .product-reviews .arrow_wrap .prev_wrap .text,
+.product-main .product-reviews .arrow_wrap .next_wrap .text{
 	width: 400px;
 	position: absolute;
 	top: 5px;
 	left: 40px;
 }
 
-.product-main.product-main-update .product-reviews .arrow_wrap .next_wrap .text{
+.product-main .product-reviews .arrow_wrap .next_wrap .text{
 	left: auto;
 	right: 40px;
 }
 
-.product-main.product-main-update .product-reviews .arrow_wrap .prev_wrap .text>*{
+.product-main .product-reviews .arrow_wrap .prev_wrap .text>*{
 	float: left;
 }
 
-.product-main.product-main-update .product-reviews .arrow_wrap .text>*{
+.product-main .product-reviews .arrow_wrap .text>*{
 	float: right;
 	font:13px 'NotoSansKR','Nanum Gothic';
 	color: #888;
 }
 
-.product-main.product-main-update .product-reviews .arrow_wrap .text p{
+.product-main .product-reviews .arrow_wrap .text p{
 	position: relative;
 }
 
-.product-main.product-main-update .product-reviews .arrow_wrap .text p::after{
+.product-main .product-reviews .arrow_wrap .text p::after{
 	display: block;
 	content:'';
 	position: absolute;
@@ -8269,48 +8215,19 @@ Update end
 	background: #888;
 }
 
-.product-main.product-main-update .product-reviews .arrow_wrap .prev_wrap .text p::after{
+.product-main .product-reviews .arrow_wrap .prev_wrap .text p::after{
 	left: auto;
 	right: -7px;
 }
 
-.product-main.product-main-update .product-reviews .arrow_wrap .text .next_tit{
+.product-main .product-reviews .arrow_wrap .text .next_tit{
 	margin: 0 15px;
 	font:13px 'NotoSansKRLight','Nanum Gothic';
 }
 
-.product-main.product-main-update .product-reviews .reviews_container .reviews_box .reviews_list{
-	padding: 10px 0 0 475px;
-}
-
-.product-main.product-main-update .product-reviews .reviews_container .reviews_box .rating_summary{
-	width: 330px;
-	left: 45px;
-}
-
-.product-main.product-main-update .product-reviews .reviews_container .reviews_box .rating_summary .rating_grph{
-	overflow: hidden;
-}
-
-.product-main.product-main-update .product-reviews .reviews_container .reviews_box .rating_summary .rating_grph dt{
-	width: 50px;
-	float: left;
-}
-
-.product-main.product-main-update .product-reviews .reviews_container .reviews_box .rating_summary .rating_grph dd{
-	width: 280px;
-	float: left;
-}
-
-.product-main.product-main-update .product-reviews .reviews_container .reviews_box .rating_summary .rating_grph dd .labels{
-	height: 15px;
-}
-/* End of 170201 update */
-
-
 .product-main .product-infomation .buy_box .size_box .select_box .selectbox-ctm .select-contents .rating_percantage{
-	padding-top: 25px;
-	margin:25px 20px 20px;
+	padding-top: 20px;
+	margin:20px;
 	border-top: 1px dotted  #000;
 }
 
@@ -8326,7 +8243,7 @@ Update end
 
 .product-main .product-infomation .buy_box .size_box .select_box .selectbox-ctm .select-contents .rating_percantage .tit span{
 	font:14px 'NotoSansKRRegular','Nanum Gothic';
-	color: #027dbf;
+	color: #ab2328;
 }
 
 .product-main .product-infomation .buy_box .size_box .select_box .selectbox-ctm .select-contents .rating_percantage .total{
@@ -8386,197 +8303,9 @@ Update end
 	border:1px solid #000;
 }
 
-/*products-list*/
-.products-list-tpl{
-	position: relative;
-}
-
-.products-list-tpl.viewed_items{
+.product-main .recommend_item{
 	padding-bottom:50px;
-}
-
-.products-list-tpl .h_tit{
-	margin-bottom: 20px;
-	font:30px/30px 'NotoSansKRRegular','Nanum Gothic';
-	color: #000;
-	text-align: center;
-}
-
-.products-list-tpl .products-list-wrapper{
-	width: 950px;
-	height: 330px;
-	position: relative;
-	padding: 10px;
-	margin: 0 auto;
-}
-
-.viewed_items.products-list-tpl .products-list-wrapper{
-	height: auto;
-}
-
-.products-list-tpl .products-list-wrapper .products-list{
-	position: absolute;
-	top:0;
-	left: 0;
-	margin: 10px 0 0 10px;
-}
-
-.products-list-tpl .products-list-wrapper .products-list::after{
-	content:'.'; display:block; height:0; font-size:0; clear:both; visibility:hidden;
-}
-
-.products-list-tpl .products-list-wrapper .products-slide-wrapper{
-	width: 940px;
-	height: 330px;
-	position: relative;
-	overflow: hidden;
-	padding: 15px;
-}
-
-.products-list-tpl .products-list-wrapper .prev,
-.products-list-tpl .products-list-wrapper .next{
-	width: 33px;
-	height: 21px;
-	position: absolute;
-	top: 125px;
-	/*left: 50%;*/
-	z-index: 10;
-	background: #fff;
-	transition:background 0.3s;
-	-webkit-transition:background 0.3s;
-}
-
-.products-list-tpl .products-list-wrapper .prev:hover,
-.products-list-tpl .products-list-wrapper .next:hover{
-	/*background: #f0f0f0;*/
-}
-
-.products-list-tpl .products-list-wrapper .prev{
-	left:-29px;
-}
-
-.products-list-tpl .products-list-wrapper .next{
-	right: -47px;
-}
-
-.products-list-tpl .products-list-wrapper .prev span,
-.products-list-tpl .products-list-wrapper .next span{
-	width: 33px;
-	height: 21px;
-	position: absolute;
-	/*margin: -6px 0 0 -3px;*/
-}
-
-.products-list-tpl .products-list-wrapper .prev span{
-	background-position:-140px -2446px;
-}
-
-.products-list-tpl .products-list-wrapper .next span{
-	background-position:-105px -2446px;
-
-}
-
-
-.products-list-tpl .products-list-wrapper .products-slide-wrapper .products-list{
-	width: 5000px;
-
-}
-
-.products-list-tpl .products-list-wrapper .products-list li{
-	position: relative;
-	width: 230px;
-	height: 330px;
-	margin-right: 10px;
-	float: left;
-	transition: box-shadow 0.2s ease-out;
-	-webkit-transition: box-shadow 0.2s ease-out;
-}
-
-.products-list-tpl .products-list-wrapper .products-list li:hover{
-	box-shadow: 0 0 20px rgba(0,0,0,0.5);
-}
-
-.products-list-tpl .products-list-wrapper .products-list li:last-child{
-	margin-right: 0;
-}
-
-.products-list-tpl .products-list-wrapper .products-list li .img{
-	position: relative;
-	margin-bottom: 15px;
-}
-
-.products-list-tpl .products-list-wrapper .products-list li .img img{
-	width: 230px;
-}
-
-.products-list-tpl .products-list-wrapper .products-list li .tit{
-	height:18px;
-	padding-left: 8px;
-	margin-bottom: 8px;
-	overflow: hidden;
-
-	display: -webkit-box;
-	text-overflow: ellipsis;
-	white-space:normal;
-	-webkit-line-clamp: 1;
-	-webkit-box-orient: vertical;
-}
-
-.products-list-tpl .products-list-wrapper .products-list li .tit a{
-	font: 14px/17px 'NotoSansKR','Nanum Gothic';
-	color: #000;
-}
-
-.products-list-tpl .products-list-wrapper .products-list li .rating-star{
-	position: absolute;
-	bottom: 20px;
-	left: 10px;
-}
-
-.products-list-tpl .products-list-wrapper .products-list li .rating-star .star-count{
-	color: #999;
-	font:13px 'adihaus';
-}
-
-.products-list-tpl .products-list-wrapper .products-list li .price{
-	position: absolute;
-	bottom: 20px;
-	right: 10px;
-	text-align: right;
-	padding-left: 8px;
-}
-
-.products-list-tpl .products-list-wrapper .products-list li .price .line{
-	position: absolute;
-	top: -15px;
-	right: 0;
-	font-size: 13px;
-	margin-right: 0;
-	color: #666;
-	font:14px 'adihaus';
-}
-
-.products-list-tpl .products-list-wrapper .num{
-	text-align: center;
-}
-
-.products-list-tpl .products-list-wrapper .num a{
-	padding: 8px;
-	display: inline-block;
-	overflow: hidden;
-}
-
-.products-list-tpl .products-list-wrapper .num a span{
-	width: 10px;
-	height: 10px;
-	display: block;
-	border-radius:5px;
-	-webkit-border-radius:5px;
-	background: #e0e1e1;
-}
-
-.products-list-tpl .products-list-wrapper .num a.on span{
-	background: #ab2328;
+	margin-bottom: 50px;
 }
 
 .product-badge{
@@ -8681,10 +8410,10 @@ Update end
 
 .rating-star .star-container .user_id{
 	position: absolute;
-	top:3px;
+	top:0;
 	left:100px;
 	display: inline-block;
-	font:14px/14px 'DINWebPro-CondBold','Nanum Gothic';
+	font:14px/14px 'dinpro','Nanum Gothic';
 	letter-spacing: 0.7px;
 	color:#555;
 
