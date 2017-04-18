@@ -574,7 +574,7 @@
                     <h2>zoku runner</h2>
                     <p class="desc_eng">ultraknit</p>
                     <!-- <p class="desc_eng2">초보러너에게도 즐겁고 가벼운 러닝</p> -->
-                    <a href="javascript:void(0)" id="ready_v" class="play-video" data-video-id="Pbax9W2Zw-M"></a>
+                    <a href="javascript:void(0)" id="ready_v" class="play-video" data-video-id="Piv_0klo9qo"></a>
                   </div>
                   <div class="video_bg" id="video-background"></div>
                 </div>
@@ -918,14 +918,9 @@
 
                   // video
             			$('.play-video').bind('click',function(){
-                            //영상대기
-                            $('#ready_v').click(function(){
-                                alert('영상이 준비중입니다');
-                                return false;
-                            });
-            	      //var videoId = $(this).attr('data-video-id');
-      							// viewVideo(videoId);
-      							// return false;
+                            var videoId = $(this).attr('data-video-id');
+                            viewVideo(videoId);
+                            return false;
             			});
 
             			function viewVideo(videoId){
