@@ -92,7 +92,7 @@
 	src: url('/fonts/dinpro/DINPro-Regular.woff2') format('woff2'),
 	url('/fonts/dinpro/DINPro-Regular.woff') format('woff'),
 	url('/fonts/dinpro/DINPro-Regular.ttf') format('truetype');
-	font-weight: 400;
+	font-weight: 300;
 	font-style: normal;
 }
 
@@ -101,7 +101,7 @@
 	src: url('/fonts/dinpro/DINPro-Bold.woff2') format('woff2'),
 	url('/fonts/dinpro/DINPro-Bold.woff') format('woff'),
 	url('/fonts/dinpro/DINPro-Bold.ttf') format('truetype');
-	font-weight: 700;
+	font-weight: 500;
 	font-style: normal;
 }
 
