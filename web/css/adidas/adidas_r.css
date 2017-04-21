@@ -2172,8 +2172,9 @@ div.error .btn {width:700px; height:30px; text-align:center; margin-top:20px;}
 }
 
 #header-20160315 .gnb_menu>ul>li .depth2_contents .ctgr_box>.img_box.zne dt .spt_bg{
-	width:163px;
-	height:20px;
+	width:172px;
+	height:30px;
+	margin-top: -10px;
 	background-position: -150px -1330px;
 	text-indent: -5000px;
 }
