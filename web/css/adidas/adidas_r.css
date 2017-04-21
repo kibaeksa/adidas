@@ -1643,7 +1643,7 @@ div.error .btn {width:700px; height:30px; text-align:center; margin-top:20px;}
 #container_r.white{background:#fff;}
 #container:after {content:"."; display:block; height:0; font-size:0; clear:both; visibility:hidden;}
 #contents_r{position:relative;width:950px;margin:0 auto;}
-
+#container_r.main_renewal_170421{ background: #fff; }
 
 #header-20160315{
 	position: relative;
@@ -10361,4 +10361,104 @@ Update
 .modal-popup-oneday_notice>.popup .more{
 	font:13px 'NotoSansKR','Nanum Gothic';
 	color: #000;
+}
+
+
+/*170421 main_renewal*/
+#visual_main_renewal_170421{}
+#visual_main_renewal_170421 .visual_slider_wrapper{
+	width:100%;
+	overflow: hidden;
+}
+#visual_main_renewal_170421 .slider_wrapper{
+	position: relative;
+	left:50%;
+	margin-left: -960px;
+	height: 700px;
+}
+#visual_main_renewal_170421 .slider_wrapper .gradient{
+	position: absolute;
+	bottom:-42px;
+	z-index: 1;
+}
+#visual_main_renewal_170421 .slider_wrapper .slider_list{
+	width:5000px;
+	position: absolute;
+	top:0;
+	left:0;
+}
+#visual_main_renewal_170421 .slider_wrapper .slider_list:after{
+	content: '.';
+	display: block;
+	height: 0;
+	font-size: 0;
+	clear: both;
+	visibility: hidden;
+}
+#visual_main_renewal_170421 .slider_wrapper .slider_list li{
+	float: left;
+}
+
+
+.main_renewal_170421 .main_banner{
+	padding-bottom: 85px;
+}
+.main_renewal_170421 .main_banner .banner_list ul{
+	padding-bottom: 32px;
+    position: relative;
+    width: 950px;
+    height: 362px;
+}
+.main_renewal_170421 .main_banner .banner_list ul.last{
+	padding-bottom: 0px;
+}
+.main_renewal_170421 .main_banner .banner_list ul li{
+	-webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.main_renewal_170421 .main_banner .banner_list ul li:hover{
+	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+.main_renewal_170421 .main_banner .banner_list ul li:after{
+	content: '.';
+    display: block;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    visibility: hidden;
+}
+.main_renewal_170421 .main_banner .banner_list ul li>a{
+	display: block;
+}
+
+.main_renewal_170421 .products-list-tpl .products-list-wrapper{
+	padding:0;
+	overflow: hidden;
+}
+.main_renewal_170421 .products-list-tpl .products-list-wrapper .products-list{
+	margin:0;
+}
+.main_renewal_170421 .products-list-tpl .products-list-wrapper .products-slide-wrapper{
+	padding: 0px 15px 18px 15px;
+}
+.main_renewal_170421 .products-list-tpl .products-list-wrapper .products-list li:hover{
+	box-shadow: none;
+}
+.main_renewal_170421 .products-list-tpl .products-list-wrapper .products-slide-wrapper .prev{
+	left:0px;
+}
+.main_renewal_170421 .products-list-tpl .products-list-wrapper .products-slide-wrapper .next{
+	right:20px;
+}
+.main_renewal_170421 .products-list-tpl .products-list-wrapper .num a{
+	padding: 0px 8px;
+}
+.main_renewal_170421 .products-list-tpl .h_tit{
+	margin-bottom: 41px;
+	font: 29px/29px 'NotoSansKRLight','Nanum Gothic';
 }
