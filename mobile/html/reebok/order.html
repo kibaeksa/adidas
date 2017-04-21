@@ -332,117 +332,6 @@
 </head>
 
 <body>
-	<aside id="leftmenu">
-		<div class="bg" onclick="Reebok.fn.toggleLeft();return false;"></div>
-		<a onclick="Reebok.fn.toggleLeft();return false;" class="btn_sidemenu" href="#">
-			<span></span>
-			<span></span>
-			<span></span>
-		</a>
-		<section id="inn_leftmenu" class="lmenu_wrap">
-			<section class="menu">
-				<div class="bnn">
-					<div class="bnn_sld">
-						<a href="#" style="background-image:url('images/reebok/bg_navi_visual1.jpg');"></a>
-						<a href="#" style="ba kground-image:url('images/reebok/bg_navi_visual1.jpg');"></a>
-						<a href="#" style="background-image:url('images/reebok/bg_navi_visual1.jpg');"></a>
-					</div>
-					<div class="bul">
-						<span class="on"></span>
-						<span></span>
-					</div>
-				</div>
-				<h2 class="blind">네비게이션 메뉴</h2>
-				<ul class="dp1">
-					<li class="has_dp">
-						<a href="#" onclick="Reebok.fn.toggleLeftList(this);return false;">MEN</a>
-						<ul class="dp2">
-							<li><a href="#">BEST</a></li>
-							<li><a href="#">NEW</a></li>
-							<li><a href="#">SALE</a></li>
-							<li><a href="#" class="kor">신발</a></li>
-							<li><a href="#" class="kor">의류</a></li>
-							<li><a href="#" class="kor">용품</a></li>
-						</ul>
-					</li>
-					<li class="has_dp">
-						<a href="#" onclick="Reebok.fn.toggleLeftList(this);return false;">WOMEN</a>
-						<ul class="dp2">
-							<li><a href="#">BEST</a></li>
-							<li><a href="#">NEW</a></li>
-							<li><a href="#">SALE</a></li>
-							<li><a href="#" class="kor">신발</a></li>
-							<li><a href="#" class="kor">의류</a></li>
-							<li><a href="#" class="kor">용품</a></li>
-						</ul>
-					</li>
-					<li class="has_dp">
-						<a href="#" onclick="Reebok.fn.toggleLeftList(this);return false;">KIDS</a>
-						<ul class="dp2">
-							<li><a href="#">BEST</a></li>
-							<li><a href="#">NEW</a></li>
-							<li><a href="#">SALE</a></li>
-							<li><a href="#" class="kor">신발</a></li>
-							<li><a href="#" class="kor">의류</a></li>
-							<li><a href="#" class="kor">용품</a></li>
-						</ul>
-					</li>
-					<li class="ctg has_dp">
-						<a href="#" class="ctg" onclick="Reebok.fn.toggleLeftList(this);return false;">SPORT</a>
-						<ul class="dp2">
-							<li><a href="#">BEST</a></li>
-							<li><a href="#">NEW</a></li>
-							<li><a href="#">SALE</a></li>
-							<li><a href="#" class="kor">신발</a></li>
-							<li><a href="#" class="kor">의류</a></li>
-							<li><a href="#" class="kor">용품</a></li>
-						</ul>
-					</li>
-					<li class="ctg has_dp">
-						<a href="#" class="ctg" onclick="Reebok.fn.toggleLeftList(this);return false;">CLASSICS</a>
-						<ul class="dp2">
-							<li><a href="#">BEST</a></li>
-							<li><a href="#">NEW</a></li>
-							<li><a href="#">SALE</a></li>
-							<li><a href="#" class="kor">신발</a></li>
-							<li><a href="#" class="kor">의류</a></li>
-							<li><a href="#" class="kor">용품</a></li>
-						</ul>
-					</li>
-					<li class="has_dp">
-						<a href="#" class="ctg" onclick="Reebok.fn.toggleLeftList(this);return false;">COLLECTION</a>
-						<ul class="dp2">
-							<li><a href="#">BEST</a></li>
-							<li><a href="#">NEW</a></li>
-							<li><a href="#">SALE</a></li>
-							<li><a href="#" class="kor">신발</a></li>
-							<li><a href="#" class="kor">의류</a></li>
-							<li><a href="#" class="kor">용품</a></li>
-						</ul>
-					</li>
-					<li><a href="#" class="kor">신상품</a></li>
-					<li><a href="#" class="kor">베스트상품</a></li>
-					<li><a href="#" class="kor">기획전</a></li>
-					<li><a href="#" class="sale">SALE</a></li>
-				</ul>
-				<ul class="util">
-					<li><a href="#">로그인</a></li>
-					<li><a href="#">장바구니</a></li>
-					<li><a href="#">마이페이지</a></li>
-					<li><a href="#">공지사항</a></li>
-					<li><a href="#" class="club">리클럽</a></li>
-				</ul>
-				<div class="btn">
-					<a href="#">고객센터</a>
-					<a href="#">매장찾기</a>
-				</div>
-			</section>
-			<!-- //menu -->
-		</section>
-
-	</aside>
-	<!-- //leftmenu -->
-
 	<section id="wrap">
 		<section id="container">
 
@@ -1186,8 +1075,8 @@
 									<div class="td">
 										<input type="text" class="ipt_lng3 bdrbox">
 										<input type="text" class="ipt_lng3 bdrbox">
-										<!-- 161228 테스트 하기 위한 임시클래스 추가  -->
-										<a href="#" class="btn1 btn_findzip">우편번호 검색</a>
+										<!-- 170419 우편번호 검색 ==> 주소찾기 문구 변경 -->
+										<a href="#" class="btn1 btn_findzip">주소찾기</a>
 									</div>
 								</li>
 								<li class="addr">
@@ -1611,8 +1500,7 @@
 	<!-- //wrap -->
 
 
-	<!-- 161228 start -->
-	<div class="layerpopup layerpopup_zipfinder" id="layerpopup-zipfinder">
+	<!-- <div class="layerpopup layerpopup_zipfinder" id="layerpopup-zipfinder">
 		<div class="header">
 			<h2>주소찾기</h2>
 			<a href="javascript:void(0)" class="close_x_btn"></a>
@@ -1629,10 +1517,8 @@
 				</div>
 				<div class="desc">지번주소(동/읍/면/리) 도로명 또는 건물명(아파트)을 입력해주세요.</div>
 			</div>
-			<!-- //search_wrap -->
 
-
-				<div class="zip_result">
+			<div class="zip_result">
 				<div class="state">
 					검색결과: <strong>49</strong>건
 				</div>
@@ -1790,7 +1676,6 @@
 				</ul>
 			</div>
 
-			<!-- 170113 paging -->
 			<div class="paging">
 				<div>
 					<a href="javascript:void(0)" class="first btn disabled"><span></span></a>
@@ -1804,12 +1689,54 @@
 					<a href="javascript:void(0)" class="last btn"><span></span></a>
 				</div>
 			</div>
+		</div> -->
 
+		<!-- 170419 주소찾기 결과 START -->
+		<div class="layerpopup layerpopup_zipfinder" id="layerpopup-zipfinder">
+			<div class="header">
+				<h2>주소찾기</h2>
+				<a href="javascript:void(0)" class="close_x_btn"></a>
+			</div>
+			<div class="contents">
 
+				<div class="zip_result">
+
+					<ul class="zip_list">
+						<li>
+							<a href="#">
+								<strong>06449</strong>
+								<div class="address_box">
+									<div>
+										<div class="label">도로명</div>
+										서울 서초구 서초동 1362-26
+									</div>
+									<div>
+										<div class="label">지번</div>
+										서울 서초구 강남대로 253 (아웃백스테이크하우스)
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="search_wrap" style="margin:30px 0;">
+	    			<div class="inner">
+	    				<div class="input_wrap" style="padding: 0;">
+	    					<input type="text" style="padding-left: 10px;" placeholder="상세주소를 입력해주세요.">
+	    				</div>
+	    			</div>
+	    		</div>
+
+	            <div class="button_area" style="padding: 0 15px 15px 15px;">
+	                <div style="background:#ab2328;"><a href="#" style="background:#ab2328;">확인 <span class="icons" data-icon="" style="font-size:11px;vertical-align:middle;margin-left:3px;"></span></a></div>
+	            </div>
+	            <div style="padding-bottom:30px;text-align:center;">
+	                <a href="#" style="font-size:12px;color:#000;">주소 재검색하기 <span class="icons" data-icon=""></span></a>
+	            </div>
+			</div>
 		</div>
-		<!-- 161228 end -->
-
-
+		<!-- 170419 END -->
 
 	</section>
 

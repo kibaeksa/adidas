@@ -263,7 +263,6 @@ window.requestAnimFrame = (function(){
 			$(obj.find(config.controlWrap).find(config.controlObj)).bind('click',function(){
 				if(_sliderObj.nowidx == $(this).index()) return false;
 
-				/* 맨 마지막 콘텐츠에서 첫번째 콘텐츠로 이동하려 할 때 */
 				if(config.loopStyle && _sliderObj.nowidx==_sliderObj.controller.find(config.controlObj).length-1 && $(this).index()==0){
 					_sliderObj.nowidx=$(this).index();
 					_commonMethod.loopActionSliding(_sliderObj.slider,_sliderObj.nowidx,_sliderObj.controller.find(config.controlObj).length,config.moveValue);
@@ -275,7 +274,6 @@ window.requestAnimFrame = (function(){
 							obj.find(config.autoControl).trigger('click');
 						}
 					}
-				/* 첫번째 콘텐츠에서 마지막 콘텐츠로 이동하려 할 때 */
 				}else if(config.loopStyle && _sliderObj.nowidx==0 && $(this).index()==_sliderObj.controller.find(config.controlObj).length-1){
 					_sliderObj.nowidx=$(this).index();
 					_commonMethod.loopActionSliding(_sliderObj.slider,_sliderObj.nowidx,_sliderObj.controller.find(config.controlObj).length,config.moveValue);
@@ -287,7 +285,6 @@ window.requestAnimFrame = (function(){
 							obj.find(config.autoControl).trigger('click');
 						}
 					}
-				/* 첫번째 콘텐츠에서 마지막 콘텐츠를 제외한 콘텐츠로 이동하려 할 때 */
 				}else if(config.loopStyle && _sliderObj.nowidx==0){
 					_sliderObj.nowidx=$(this).index();
 					_commonMethod.loopActionSliding(_sliderObj.slider,_sliderObj.nowidx,null,config.moveValue);
@@ -993,7 +990,7 @@ function clubList(obj){
 		}
 	});
 
-	if(viewing_idx==idx){ /* 펼쳐져있는 리스트를 눌렀을때 */
+	if(viewing_idx==idx){
 		jQuery(array[idx]).find('div.list_cont').hide();
 		jQuery(array[idx]).removeClass('now');
 	}else{

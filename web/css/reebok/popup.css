@@ -608,7 +608,7 @@ div.electronic_commerce strong {font-weight:normal; color:#ed4908;}
 
 .findzip_pop .zip_list li a{
 	display: block;
-	padding: 15px 0 15px 90px;
+	padding: 15px 0 15px 100px;
 }
 
 .findzip_pop .zip_list li:hover{
@@ -616,13 +616,14 @@ div.electronic_commerce strong {font-weight:normal; color:#ed4908;}
 }
 
 .findzip_pop .zip_list li .num{
-	width: 90px;
+	width: 60px;
+	padding-left: 30px;
 	position: absolute;
 	top: 50%;
 	left: 0;
 	font:14px/14px 'NotoSansKR','Nanum Gothic';
 	color: #b81c25;
-	text-align: center;
+	text-align: left;
 	margin-top: -7px;
 }
 
