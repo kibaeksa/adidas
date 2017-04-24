@@ -10335,6 +10335,8 @@ div.search_fail .sch_failbox2 #new_prodlist .banner_list .banner_slide{width:100
 #container_r.main .master_slider .master_slide_wrapper .navi>a{
 	width:41px;
 	height: 74px;
+	opacity: 0.5;
+	-webkit-opacity: 0.5;
 }
 #container_r.main .master_slider .master_slide_wrapper .navi>a>span{
 	position: absolute;
@@ -10349,9 +10351,6 @@ div.search_fail .sch_failbox2 #new_prodlist .banner_list .banner_slide{width:100
 #container_r.main .master_slider .master_slide_wrapper .navi>.next{ position: absolute; right:-80px; }
 #container_r.main .master_slider .master_slide_wrapper .num{
 	position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
     text-align: center;
     height: 25px;
     top: 460px;
@@ -10359,8 +10358,6 @@ div.search_fail .sch_failbox2 #new_prodlist .banner_list .banner_slide{width:100
     width: auto;
     right: 50%;
     padding: 0 9px;
-    margin-right: -200px;
-    /* margin-left: -200px; */
     margin-right: -474px;
     background: rgba(0,0,0,0.6);
     border-radius: 50px;
@@ -10368,6 +10365,7 @@ div.search_fail .sch_failbox2 #new_prodlist .banner_list .banner_slide{width:100
     -ms-border-radius: 50px;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#60000000,endColorstr=#60000000);
     zoom: 1;
+	z-index: 10;
 }
 #container_r.main .master_slider .master_slide_wrapper .num a{
 	position: relative;

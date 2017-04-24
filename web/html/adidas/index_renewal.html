@@ -1353,7 +1353,7 @@ jQuery(document).ready(function(){
 	                    </ul>
 	                </div>
 					<div class="navi">
-						<a href="javascript:void(0)" class="prev disabled"><span class="spt_bg"></span></a>
+						<a href="javascript:void(0)" class="prev"><span class="spt_bg"></span></a>
 						<a href="javascript:void(0)" class="next"><span class="spt_bg"></span></a>
 					</div>
 				</div>
@@ -2145,11 +2145,34 @@ jQuery(document).ready(function(){
 				var sliders = $('#main_slider').Swipers({
 					width : 1920,
 					height : 700,
-					duration : 2800,
+					duration : 800,
 					easing : 'ease-out',
 					auto : true,
 					autoTime : 5000,
 					loop : true,
+					autoDuration : 3000,
+					init : function(length){
+		                console.log(this);
+
+						$(this).parent('.master_slide_wrapper').append((function(){
+							var htmlString_ = '<div class="num">';
+							for(var i = 0; i < length; i++){
+								if(i == 0){
+									htmlString_ += '<a href="javascript:void(0)" class="on"><span></span></a>';
+								}else{
+									htmlString_ += '<a href="javascript:void(0)"><span></span></a>';
+								}
+							}
+							return htmlString_;
+						})());
+
+						master_wrapper.find('.num').children('a').bind('click',function(){
+							sliders.move($(this).index());
+						});
+
+
+
+		            },
 					callback : function(index){
 						$('.master_slide_wrapper .num a').removeClass('on').eq(index).addClass('on');
 					}
@@ -2162,20 +2185,6 @@ jQuery(document).ready(function(){
 				master_wrapper.find('.prev>span').bind('click',function(){
 					sliders.prev();
 				});
-
-				master_wrapper.append((function(){
-					var htmlString_ = '<div class="num">';
-					var len_ =  main_length;
-					for(var i = 0; i < len_; i++){
-						if(i == 0){
-							htmlString_ += '<a href="javascript:void(0)" class="on"><span></span></a>';
-						}else{
-							htmlString_ += '<a href="javascript:void(0)"><span></span></a>';
-						}
-					}
-					return htmlString_;
-				})());
-
 				master_wrapper.find('.num').children('a').bind('click',function(){
 					sliders.move($(this).index());
 				});
