@@ -543,6 +543,7 @@ function blurAction(obj,moveId,dir,obj2){
 			 auto
 			 duration
 			 easing
+			 autoDuration
 
 	*/
 	$.fn.Swipers = function(_options){
@@ -559,7 +560,8 @@ function blurAction(obj,moveId,dir,obj2){
 			autoTime : _options.auto ? 3000 : false,
 			dragable : false,
 			easing : false,
-			duration : 800
+			duration : 800,
+			autoDuration : 800
 		};
 		var options = $.extend(defaultOptions,_options);
 
@@ -569,7 +571,6 @@ function blurAction(obj,moveId,dir,obj2){
 		var moveValue = !!options.moveValue ? options.moveValue : options.width;
 
 		var autoTimer;
-		var isClone = false;
 		var isAnimating = false;
 
 		function init(){
@@ -610,6 +611,10 @@ function blurAction(obj,moveId,dir,obj2){
 					checkAnimate(index+1,true);
 				},options.autoTime);
 			}
+
+			if(!!options.init){
+				options.init.call(wrapperElem.get(0) , length);
+			}
 		}
 
 		function setIndex(idx){
@@ -618,41 +623,38 @@ function blurAction(obj,moveId,dir,obj2){
 		}
 
 		function checkAnimate(num,isAuto){
-			if(isAnimating){
-				return false;
-			}
-
-			var cb;
-			isClone = false;
+			var duration = !isAuto ? defaultOptions.duration : (defaultOptions.autoDuration || defaultOptions.duration);
+			var animData = {
+				isAuto : isAuto,
+				duration : duration ? duration : undefined
+			};
 
 			if(options.loop){
 				if(num < 0){
-					isClone = true;
-					setIndex(length-1);
-					cb =function(){
-						sliderElem.stop().css({
-							left : (length) * -moveValue
-						});
-					};
 
+					setIndex(length-1);
+					sliderElem.css({
+						left : (length+1) * moveValue * -1
+					});
+					animData.num = length;
 				}else if(num >= length){
-					isClone = true;
+
 					setIndex(0);
-					cb = function(){
-						sliderElem.stop().css({
-							left : -moveValue
-						});
-					};
+					sliderElem.css({
+						left : 0
+					});
+					animData.num = 1;
 				}else{
+					animData.num = num+1;
 					setIndex(num);
 				}
-				animate(num+1 , cb);
+
 			}else{
 				if(isAuto){
 					if(num < 0){
-						num = length-1;
+						animData.num = length-1;
 					}else if(num > length-1){
-						num = 0;
+						animData.num = 0;
 					}
 				}else{
 					if(num < 0 || num > length-1){
@@ -661,25 +663,25 @@ function blurAction(obj,moveId,dir,obj2){
 				}
 
 				setIndex(num);
-				animate(num);
 			}
+
+			animate(animData);
 
 		}
 
-		function animate(num , cb){
-			if(isAnimating){
-				return false;
-			}
+		function animate(animOptions){
 
-			isAnimating = true;
+			var duration = animOptions.duration;
+			var num = animOptions.num;
+			var easing = animOptions.isAuto ? 'easeOutSine' : options.easing;
 
-			if(options.autoTime){
+			if(options.autoTime && !animOptions.isAuto){
 				clearInterval(autoTimer);
 			}
 
-			sliderElem.animate({
+			sliderElem.stop().animate({
 				left : moveValue * num * -1
-			},options.duration,options.easing);
+			},duration,easing);
 
 			if(!!options.callback){
 				options.callback.call($(itemElems[index]),index,prevIdx);
@@ -687,16 +689,13 @@ function blurAction(obj,moveId,dir,obj2){
 
 			setTimeout(function(){
 				isAnimating = false;
-				if(!!cb){
-					cb();
-				}
-
-				if(options.autoTime){
+				if(options.autoTime && !animOptions.isAuto){
+					clearInterval(autoTimer);
 					autoTimer = setInterval(function(){
 						checkAnimate(index+1,true);
 					},options.autoTime);
 				}
-			},options.duration);
+			},duration);
 		}
 
 		init();
@@ -733,7 +732,7 @@ function blurAction(obj,moveId,dir,obj2){
 		if(length > 4){
 			init();
 		}
-		
+
 		function init(){
 			elemContainer.append((function(){
 				var htmlString = '<div class="num">';
