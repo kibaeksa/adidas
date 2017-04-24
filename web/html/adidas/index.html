@@ -152,6 +152,7 @@ jQuery(document).ready(function(){
 
 	// 슈퍼위켄드 닫기팝업
 	jQuery('.modal-popup-super_weekend .close ,.modal-popup-super_weekend.overlay').bind('click',function(){
+		console.log(this);
 		jQuery('.modal-popup-super_weekend').hide();
 		return false;
 	});
@@ -815,18 +816,19 @@ jQuery(document).ready(function(){
 					</div>
 					<!-- //depth2_contents -->
 				</li>
-				<!-- 170224 Start -->
-				<li class="sports">
+
+				<!-- 170424 col_17 클래스 추가 -->
+				<li class="sports col_17">
 					<a href="#">SPORTS</a>
 					<div class="depth2_contents">
 						<!-- 170224 background:none style제거 -->
 						<div class="ct950">
 							<div class="ctgr_box">
-								<div class="box img_box col_14">
+								<div class="box img_box col_17">
 									<dl>
 										<dt><a href="#"><span class="spt_bg logo sp"></span>축구</a></dt>
 										<dd>
-											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_bnn1.jpg" alt="" /></a></div>
+											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_bnn8.jpg" alt="" /></a></div>
 											<ul>
 												<li class="depth3_wrapper">
 													<a href="#">신발</a>
@@ -858,11 +860,11 @@ jQuery(document).ready(function(){
 								</div>
 								<!-- //box -->
 
-								<div class="box img_box col_14">
+								<div class="box img_box col_17">
 									<dl>
 										<dt><a href="#"><span class="spt_bg logo sp"></span>축구</a></dt>
 										<dd>
-											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_bnn1.jpg" alt="" /></a></div>
+											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_bnn9.jpg" alt="" /></a></div>
 											<ul>
 												<li class="depth3_wrapper">
 													<a href="#">신발</a>
@@ -893,154 +895,9 @@ jQuery(document).ready(function(){
 									</dl>
 								</div>
 
-								<div class="box img_box col_14">
+								<div class="box img_box col_17">
 									<dl>
 										<dt><span class="spt_bg logo sp"></span>러닝</dt>
-										<dd>
-											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_bnn2.jpg" alt="" /></a></div>
-											<ul>
-												<li class="depth3_wrapper">
-													<a href="#">신발</a>
-													<div class="depth3">
-														<a href="#">남성</a>
-														<a href="#">여성</a>
-														<a href="#">키즈</a>
-													</div>
-												</li>
-												<li class="depth3_wrapper">
-													<a href="#">의류</a>
-													<div class="depth3">
-														<a href="#">남성</a>
-														<a href="#">여성</a>
-														<a href="#">키즈</a>
-													</div>
-												</li>
-												<li class="depth3_wrapper">
-													<a href="#">용품</a>
-													<div class="depth3">
-														<a href="#">남성</a>
-														<a href="#">여성</a>
-														<a href="#">키즈</a>
-													</div>
-												</li>
-											</ul>
-										</dd>
-									</dl>
-								</div>
-								<!-- //box -->
-								<div class="box img_box col_14">
-									<dl>
-										<dt><span class="spt_bg logo sp"></span>농구</dt>
-										<dd>
-											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_bnn3.jpg" alt="" /></a></div>
-											<ul>
-												<li class="depth3_wrapper">
-													<a href="#">신발</a>
-													<div class="depth3">
-														<a href="#">남성</a>
-														<a href="#">여성</a>
-														<a href="#">키즈</a>
-													</div>
-												</li>
-												<li class="depth3_wrapper">
-													<a href="#">의류</a>
-													<div class="depth3">
-														<a href="#">남성</a>
-														<a href="#">여성</a>
-														<a href="#">키즈</a>
-													</div>
-												</li>
-												<li class="depth3_wrapper">
-													<a href="#">용품</a>
-													<div class="depth3">
-														<a href="#">남성</a>
-														<a href="#">여성</a>
-														<a href="#">키즈</a>
-													</div>
-												</li>
-											</ul>
-										</dd>
-									</dl>
-								</div>
-								<!-- //box -->
-								<div class="box img_box col_14">
-									<dl>
-										<dt><span class="spt_bg logo sp"></span>트레이닝</dt>
-										<dd>
-											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_bnn4.jpg" alt="" /></a></div>
-											<ul>
-												<li class="depth3_wrapper">
-													<a href="#">Z.N.E</a>
-													<!-- 170323 ZNE 일때 depth3에 style 추가-->
-													<div class="depth3" style="left: 40px;">
-														<a href="#">남성</a>
-														<a href="#">여성</a>
-														<a href="#">키즈</a>
-													</div>
-												</li>
-												<li class="depth3_wrapper">
-													<a href="#">의류</a>
-													<div class="depth3">
-														<a href="#">남성</a>
-														<a href="#">여성</a>
-														<a href="#">키즈</a>
-													</div>
-												</li>
-												<li class="depth3_wrapper">
-													<a href="#">용품</a>
-													<div class="depth3">
-														<a href="#">남성</a>
-														<a href="#">여성</a>
-														<a href="#">키즈</a>
-													</div>
-												</li>
-											</ul>
-										</dd>
-									</dl>
-								</div>
-								<!-- //box -->
-
-								<div class="box etcbox col_14 last">
-									<dl>
-										<dt>다른 스포츠</dt>
-										<dd>
-											<ul>
-												<li><a href="#">아웃도어</a></li>
-												<li><a href="#">테니스</a></li>
-												<li><a href="#">스케이트보딩</a></li>
-												<!-- <li><a href="#">사이클링</a></li> -->
-												<li class="last"><a href="#">사이클링</a></li>
-											</ul>
-										</dd>
-									</dl>
-								</div>
-							</div>
-							<!-- //ctgr_box -->
-
-							<div class="view_all img_box">
-								<div class="col_14"><a href="#">축구 전체보기</a></div>
-								<div class="col_14"><a href="#">러닝 전체보기</a></div>
-								<div class="col_14"><a href="#">농구 전체보기</a></div>
-								<div class="col_14"><a href="#">트레이닝 전체보기</a></div>
-								<div class="col_14"><a href="#">트레이닝 전체보기</a></div>
-								<div class="col_14 last"><a href="http://shop.adidas.co.kr/PF020201.action?S_CTGR_CD=01004001">스포츠 전체보기</a></div>
-							</div>
-						</div>
-						<!-- //ct950 -->
-					</div>
-					<!-- //depth2_contents -->
-				</li>
-				<!-- 170224 End -->
-				<li class="brands line">
-					<a href="#">BRANDS</a>
-					<div class="depth2_contents" style="display: block;">
-						<div class="ct950">
-							<div class="ctgr_box">
-								<div class="box img_box col_17 originals">
-									<dl>
-										<dt>
-											<span class="spt_bg">Originals</span>
-										</dt>
 										<dd>
 											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_bnn10.jpg" alt="" /></a></div>
 											<ul>
@@ -1073,11 +930,9 @@ jQuery(document).ready(function(){
 									</dl>
 								</div>
 								<!-- //box -->
-								<div class="box img_box col_17 neo">
+								<div class="box img_box col_17">
 									<dl>
-										<dt>
-											<span class="spt_bg">adidas neo</span>
-										</dt>
+										<dt><span class="spt_bg logo sp"></span>농구</dt>
 										<dd>
 											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_bnn11.jpg" alt="" /></a></div>
 											<ul>
@@ -1109,14 +964,53 @@ jQuery(document).ready(function(){
 										</dd>
 									</dl>
 								</div>
-								<!-- //box -->
-								<div class="box img_box col_17 stella">
+
+								<div class="box etcbox col_16_5 last">
+									<dl>
+										<dt>다른 스포츠</dt>
+										<dd>
+											<ul>
+												<li><a href="#">아웃도어</a></li>
+												<li><a href="#">테니스</a></li>
+												<li><a href="#">스케이트보딩</a></li>
+												<!-- <li><a href="#">사이클링</a></li> -->
+												<li class="last"><a href="#">사이클링</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<!-- //ctgr_box -->
+
+							<div class="view_all img_box">
+								<div class="col_17"><a href="#">축구 전체보기</a></div>
+								<div class="col_17"><a href="#">러닝 전체보기</a></div>
+								<div class="col_17"><a href="#">농구 전체보기</a></div>
+								<div class="col_17"><a href="#">트레이닝 전체보기</a></div>
+								<div class="col_16_5 last"><a href="http://shop.adidas.co.kr/PF020201.action?S_CTGR_CD=01004001">스포츠 전체보기</a></div>
+							</div>
+						</div>
+						<!-- //ct950 -->
+					</div>
+					<!-- //depth2_contents -->
+				</li>
+				<!-- 170424  col_14 클래스 추가 -->
+				<li class="brands line col_14">
+					<a href="#">BRANDS</a>
+					<div class="depth2_contents" style="display: block;">
+						<div class="ct950">
+							<div class="ctgr_box">
+								<!--
+								170424
+								* col_17 => col_14 로 클래스명 변경
+								  -->
+								<div class="box img_box col_14 originals">
 									<dl>
 										<dt>
-											<a href="#"><span class="spt_bg">Stella McCartney</span></a>
+											<a href="#"><span class="spt_bg">Originals</span></a>
 										</dt>
 										<dd>
-											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_bnn12.jpg" alt="" /></a></div>
+											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_brands_01.jpg" alt="" /></a></div>
 											<ul>
 												<li class="depth3_wrapper">
 													<a href="#">신발</a>
@@ -1148,14 +1042,17 @@ jQuery(document).ready(function(){
 								</div>
 								<!-- //box -->
 
-								<!-- 160908 Z.N.E 카레고리 메뉴 추가 ('zne' 클래스) -->
-								<div class="box img_box col_17 zne">
+								<!--
+								170424
+								* col_17 => col_14 로 클래스명 변경
+								  -->
+								<div class="box img_box col_14 zne">
 									<dl>
 										<dt>
 											<a href="#"><span class="spt_bg">FIND FOCUS</span></a>
 										</dt>
 										<dd>
-											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_bnn_zne.jpg" alt="" /></a></div>
+											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_brands_02.jpg" alt="" /></a></div>
 											<ul>
 												<li class="depth3_wrapper">
 													<a href="#">신발</a>
@@ -1188,8 +1085,138 @@ jQuery(document).ready(function(){
 									</dl>
 								</div>
 
-								<!-- 160908 캠페인 카테고리 수정 -->
-								<div class="box etcbox col_16_5 last">
+
+								<!--
+								170424
+								* col_17 => col_14 로 클래스명 변경
+								  -->
+								<div class="box img_box col_14 stella">
+									<dl>
+										<dt>
+											<a href="#"><span class="spt_bg">Stella McCartney</span></a>
+										</dt>
+										<dd>
+											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_brands_03.jpg" alt="" /></a></div>
+											<ul>
+												<li class="depth3_wrapper">
+													<a href="#">신발</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+												<li class="depth3_wrapper">
+													<a href="#">의류</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+												<li class="depth3_wrapper">
+													<a href="#">용품</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<!-- //box -->
+
+								<!--
+								170424
+								* col_17 => col_14 로 클래스명 변경
+								  -->
+								<div class="box img_box col_14 terrex">
+									<dl>
+										<dt>
+											<a href="#"><span class="spt_bg">Terrex</span></a>
+										</dt>
+										<dd>
+											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_brands_04.jpg" alt="" /></a></div>
+											<ul>
+												<li class="depth3_wrapper">
+													<a href="#">신발</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+												<li class="depth3_wrapper">
+													<a href="#">의류</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+												<li class="depth3_wrapper">
+													<a href="#">용품</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<!-- //box -->
+
+								<!--
+								170424
+								* col_17 => col_14 로 클래스명 변경
+								  -->
+								<div class="box img_box col_14 neo">
+									<dl>
+										<dt>
+											<a href="#"><span class="spt_bg">adidas neo</span></a>
+										</dt>
+										<dd>
+											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_brands_05.jpg" alt="" /></a></div>
+											<ul>
+												<li class="depth3_wrapper">
+													<a href="#">신발</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+												<li class="depth3_wrapper">
+													<a href="#">의류</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+												<li class="depth3_wrapper">
+													<a href="#">용품</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<!-- //box -->
+
+								<!--
+								170424
+								* col_17 => col_14 로 클래스명 변경
+								  -->
+								<div class="box etcbox col_14 last">
 									<dl>
 										<dt>컬렉션</dt>
 										<dd>
@@ -1209,12 +1236,17 @@ jQuery(document).ready(function(){
 							<!-- //ctgr_box -->
 
 							<div class="view_all img_box">
-								<div class="col_17"><a href="#">전체보기</a></div>
-								<div class="col_17"><a href="#">전체보기</a></div>
-								<div class="col_17"><a href="#">전체보기</a></div>
-								<div class="col_17"><a href="#">전체보기</a></div>
-								<!-- 160908 링크 추가 -->
-								<div class="last" style="width:165px;margin-left:15px;"><a href="#">캠페인 전체보기</a></div>
+								<div class="col_14"><a href="#">전체보기</a></div>
+								<div class="col_14"><a href="#">전체보기</a></div>
+								<div class="col_14"><a href="#">전체보기</a></div>
+								<div class="col_14"><a href="#">전체보기</a></div>
+								<div class="col_14"><a href="#">전체보기</a></div>
+								<!--
+								170424
+								* style 제거 style="width:165px;margin-left:15px;"
+								* col_14 클래스 추가
+								 -->
+								<div class="col_14 last"><a href="#">캠페인 전체보기</a></div>
 							</div>
 						</div>
 						<!-- //ct950 -->
