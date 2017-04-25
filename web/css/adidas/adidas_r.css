@@ -3055,6 +3055,10 @@ div.location_r span.ico{
 #footer .sitemap dl.collection{margin-bottom:22px;}
 #footer .sitemap .sitemap_area1 .box{clear:both;}
 
+#footer{
+	position: relative;
+	z-index: 20;
+}
 #footer .f_menu{height:38px;padding-top:22px;background:#000;}
 #footer .f_menu li{padding:0 10px;}
 #footer .f_menu .f_top{position:absolute;top:0;right:0;}
@@ -3110,9 +3114,6 @@ div.location_r span.ico{
 #footer .f_menu>.ct950>ul>li.eng a{ font:11px/11px 'adihaus'; color:#fff;}
 #footer .f_menu>.ct950>ul>li.nobar:after{ display: none;}
 
-#footer .address_r{
-
-}
 #footer .address_r .info{position:relative;padding-top:3px;top: auto;left: auto;}
 
 #footer .country_selector{
@@ -10302,7 +10303,7 @@ div.search_fail .sch_failbox2 #new_prodlist .banner_list .banner_slide{width:100
 }
 #container_r.main .gradient{
 	position: absolute;
-    bottom: -140px;
+    bottom: -180px;
     z-index: 1;
 }
 #container_r.main .master_slider .master_slide_wrapper{
@@ -10324,7 +10325,7 @@ div.search_fail .sch_failbox2 #new_prodlist .banner_list .banner_slide{width:100
 }
 #container_r.main .master_slider .master_slide_wrapper .navi>a>span{
 	position: absolute;
-	background: url("/images/adidas/main/btn.png") 0 0 no-repeat;
+	background: url("http://image.adidas.co.kr/images/adidas/common/btn_main_arrow.png") 0 0 no-repeat;
 	width:41px;
 	height: 74px;
 }
@@ -10340,12 +10341,11 @@ div.search_fail .sch_failbox2 #new_prodlist .banner_list .banner_slide{width:100
     right: 50%;
     padding: 0 9px;
     margin-right: -474px;
+	background: #000;
     background: rgba(0,0,0,0.6);
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -ms-border-radius: 50px;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#60000000,endColorstr=#60000000);
-    zoom: 1;
 	z-index: 10;
 }
 #container_r.main .master_slider .master_slide_wrapper .num a{

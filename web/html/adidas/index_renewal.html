@@ -23,142 +23,137 @@
 <script type="text/javascript" src="/js/jquery/easing/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="/js/adidas/adidas.js"></script>
 <script type="text/javascript">
-jQuery(document).ready(function(){
-	jQuery('.visual_inner_wrap').adislider({
-		slidewrap:'.visual_slide',
-		slideBox:'.visual_box',
-		useArrow:false,
-		autoRolling:true,
-		controlWrap:'.visual_util .control',
-		controlObj:'.slide_control a.visual_btn',
-		moveValue:'1920',
-		loopStyle:false,
-		/*
-			170224 speed 값 변경
-			speed:2000 ==> speed:4000,
-		*/
-		speed:4000,
-		easing:'easeOutCubic',
-		autoControl:'.control>a',
-		loopStyle:true,
-		titleList:[
-			'메인 비주얼 제목1',
-			'메인 비주얼 제목2',
-			'메인 비주얼 제목3'
-		],
-		titleElement:'.visual_inner_wrap .visual_util h3'
-	});
-
-	jQuery('#new_prodlist .banner_list').adislider({
-		slidewrap:'.banner_slide',
-		slideBox:'.banner_box',
-		useArrow:true,
-		autoRolling:true,
-		controlWrap:'.banner_control',
-		controlObj:'a',
-		moveValue:'960',
-		loopStyle:false,
-		leftMove:'.arrow_left',
-		rightMove:'.arrow_right',
-		speed:1000,
-		easing:'easeOutCubic',
-		autoControl:false,
-		loopStyle:true,
-		titleList:[
-			'Men\'s best products',
-			'Women\'s best products',
-			'Men\'s new arrivals',
-			'Women\'s new arrivals'
-		],
-		titleElement:'#new_prodlist .banner_header h4'
-
-	});
-
-	jQuery('#new_prodlist li').hover(function(){
-		jQuery(this).find('.type').find('.view_quick').stop();
-		jQuery(this).find('.type').find('.view_quick').animate({opacity:1},200);
-	},function(){
-		jQuery(this).find('.type').find('.view_quick').stop();
-		jQuery(this).find('.type').find('.view_quick').animate({opacity:0},200);
-	});
-
-	// 150924 footer SNS bind event
-	jQuery('.f_sns>div>a.btn').bind('click',function(){
-		if( jQuery(this).siblings('.layer').hasClass('layer') ){
-			if(jQuery(this).hasClass('on')){
-				jQuery(this).removeClass('on');
-				jQuery(this).siblings('.layer').removeClass('open');
-			}else{
-				jQuery('.f_sns>div>a.btn').removeClass('on');
-				jQuery('.f_sns>div>.layer').removeClass('open');
-				jQuery(this).addClass('on');
-				jQuery(this).siblings('.layer').addClass('open');
-			}
-			return false;
-		}else{
-			return true;
-		}
-	});
-
-	jQuery('.f_sns>div>.layer>.close').bind('click',function(){
-		jQuery(this).parent().siblings('.btn').removeClass('on');
-		jQuery(this).parent().removeClass('open');
-		return false;
-	});
-	// 150924 end
-
-
-	// 161208 start
-	if(jQuery('.market .no_data_layer').length >= 1){
-		jQuery('.market>a').hover(function(){
-			jQuery(this).siblings('.no_data_layer').show();
-		},function(){
-			jQuery(this).siblings('.no_data_layer').hide();
+	jQuery(document).ready(function(){
+		jQuery('.visual_inner_wrap').adislider({
+			slidewrap:'.visual_slide',
+			slideBox:'.visual_box',
+			useArrow:false,
+			autoRolling:true,
+			controlWrap:'.visual_util .control',
+			controlObj:'.slide_control a.visual_btn',
+			moveValue:'1920',
+			loopStyle:false,
+			/*
+				170224 speed 값 변경
+				speed:2000 ==> speed:4000,
+			*/
+			speed:4000,
+			easing:'easeOutCubic',
+			autoControl:'.control>a',
+			loopStyle:true,
+			titleList:[
+				'메인 비주얼 제목1',
+				'메인 비주얼 제목2',
+				'메인 비주얼 제목3'
+			],
+			titleElement:'.visual_inner_wrap .visual_util h3'
 		});
-	}
-	// 161208 end
+
+		jQuery('#new_prodlist .banner_list').adislider({
+			slidewrap:'.banner_slide',
+			slideBox:'.banner_box',
+			useArrow:true,
+			autoRolling:true,
+			controlWrap:'.banner_control',
+			controlObj:'a',
+			moveValue:'960',
+			loopStyle:false,
+			leftMove:'.arrow_left',
+			rightMove:'.arrow_right',
+			speed:1000,
+			easing:'easeOutCubic',
+			autoControl:false,
+			loopStyle:true,
+			titleList:[
+				'Men\'s best products',
+				'Women\'s best products',
+				'Men\'s new arrivals',
+				'Women\'s new arrivals'
+			],
+			titleElement:'#new_prodlist .banner_header h4'
+
+		});
+
+		jQuery('#new_prodlist li').hover(function(){
+			jQuery(this).find('.type').find('.view_quick').stop();
+			jQuery(this).find('.type').find('.view_quick').animate({opacity:1},200);
+		},function(){
+			jQuery(this).find('.type').find('.view_quick').stop();
+			jQuery(this).find('.type').find('.view_quick').animate({opacity:0},200);
+		});
+
+		// 150924 footer SNS bind event
+		jQuery('.f_sns>div>a.btn').bind('click',function(){
+			if( jQuery(this).siblings('.layer').hasClass('layer') ){
+				if(jQuery(this).hasClass('on')){
+					jQuery(this).removeClass('on');
+					jQuery(this).siblings('.layer').removeClass('open');
+				}else{
+					jQuery('.f_sns>div>a.btn').removeClass('on');
+					jQuery('.f_sns>div>.layer').removeClass('open');
+					jQuery(this).addClass('on');
+					jQuery(this).siblings('.layer').addClass('open');
+				}
+				return false;
+			}else{
+				return true;
+			}
+		});
+
+		jQuery('.f_sns>div>.layer>.close').bind('click',function(){
+			jQuery(this).parent().siblings('.btn').removeClass('on');
+			jQuery(this).parent().removeClass('open');
+			return false;
+		});
+		// 150924 end
 
 
-});
+		// 161208 start
+		if(jQuery('.market .no_data_layer').length >= 1){
+			jQuery('.market>a').hover(function(){
+				jQuery(this).siblings('.no_data_layer').show();
+			},function(){
+				jQuery(this).siblings('.no_data_layer').hide();
+			});
+		}
+		// 161208 end
 
 
-
-/* fa funcion 함수 */
-function strCut(obj,len) {
-	var str = obj;
-	var l = 0;
-	for (var i=0; i<str.length; i++) {
-		l += (str.charCodeAt(i) > 128) ? 2 : 1;
-		if (l > len) return str.substring(0,i) + "..";
-	}
-	return str;
-}
-/* //150513 */
-
-//151116 러닝클럽 종료 안내 팝업 닫기
-function closeRcEndNotiLayer(){
-	jQuery('#popup_rc_end_noti').hide();
-}
-
-
-/* 150513 */
-jQuery(document).ready(function(){
-	var title1 = '2015년 브라질 월드컵 기념 온라인단독 한정상품 7500원 할인 쿠폰';
-	var title2 = '생일축하 기념 10% 할인 쿠폰';
-	var cutln = navigator.appVersion.indexOf('MSIE 7.0') < 0 ? 32 : 30; //바이트 수
-
-	jQuery('.coupon_popup_layer .body .cpn li').eq(0).find('.label').attr('title',title1).text(strCut(title1 , cutln));
-	jQuery('.coupon_popup_layer .body .cpn li').eq(1).find('.label').attr('title',title2).text(strCut(title2 , cutln));
-
-	// 슈퍼위켄드 닫기팝업
-	jQuery('.modal-popup-super_weekend .close ,.modal-popup-super_weekend.overlay').bind('click',function(){
-		jQuery('.modal-popup-super_weekend').hide();
-		return false;
 	});
-});
-/* //150513 */
 
+	/* fa funcion 함수 */
+	function strCut(obj,len) {
+		var str = obj;
+		var l = 0;
+		for (var i=0; i<str.length; i++) {
+			l += (str.charCodeAt(i) > 128) ? 2 : 1;
+			if (l > len) return str.substring(0,i) + "..";
+		}
+		return str;
+	}
+	/* //150513 */
 
+	//151116 러닝클럽 종료 안내 팝업 닫기
+	function closeRcEndNotiLayer(){
+		jQuery('#popup_rc_end_noti').hide();
+	}
+
+	/* 150513 */
+	jQuery(document).ready(function(){
+		var title1 = '2015년 브라질 월드컵 기념 온라인단독 한정상품 7500원 할인 쿠폰';
+		var title2 = '생일축하 기념 10% 할인 쿠폰';
+		var cutln = navigator.appVersion.indexOf('MSIE 7.0') < 0 ? 32 : 30; //바이트 수
+
+		jQuery('.coupon_popup_layer .body .cpn li').eq(0).find('.label').attr('title',title1).text(strCut(title1 , cutln));
+		jQuery('.coupon_popup_layer .body .cpn li').eq(1).find('.label').attr('title',title2).text(strCut(title2 , cutln));
+
+		// 슈퍼위켄드 닫기팝업
+		jQuery('.modal-popup-super_weekend .close ,.modal-popup-super_weekend.overlay').bind('click',function(){
+			jQuery('.modal-popup-super_weekend').hide();
+			return false;
+		});
+	});
+	/* //150513 */
 </script>
 
 </head>
@@ -1331,6 +1326,7 @@ jQuery(document).ready(function(){
 	</div>
 	<!-- 160324 end -->
 
+	<!-- 170425 -->
 	<div id="container_r" class="main">
 
 		<div class="masterhead_container">
@@ -1927,6 +1923,7 @@ jQuery(document).ready(function(){
 
 		</div>
 		<!-- contents_r end -->
+
 	</div>
 	<!-- container_r end -->
 
@@ -2042,14 +2039,14 @@ jQuery(document).ready(function(){
 						<dt>SPORTS</dt>
 						<dd>
 							<ul>
-								<li><a href="#">축구</a></li>
-								<li><a href="#">러닝</a></li>
-								<li><a href="#">농구</a></li>
-								<li><a href="#">트레이닝</a></li>
-								<li><a href="#">아웃도어</a></li>
-								<li><a href="#">테니스</a></li>
-								<li><a href="#">스케이트 보딩</a></li>
-								<li><a href="#">사이클링</a></li>
+								<li><a href="http://shop.adidas.co.kr/PF020107.action?GUBUN=FOOTBALL">축구</a></li>
+								<li><a href="http://shop.adidas.co.kr/PF020107.action?GUBUN=RUNNING">러닝</a></li>
+								<li><a href="http://shop.adidas.co.kr/PF020107.action?GUBUN=BASKETBALL">농구</a></li>
+								<li><a href="http://shop.adidas.co.kr/PF020107.action?GUBUN=TRAINING">트레이닝</a></li>
+								<li><a href="http://shop.adidas.co.kr/PF020107.action?GUBUN=OUTDOOR">아웃도어</a></li>
+								<li><a href="http://shop.adidas.co.kr/PF020107.action?GUBUN=TENNIS">테니스</a></li>
+								<li><a href="http://shop.adidas.co.kr/PF020107.action?GUBUN=SKATEBOARDING">스케이트 보딩</a></li>
+								<li><a href="http://shop.adidas.co.kr/PF020107.action?GUBUN=CYCLING">사이클링</a></li>
 							</ul>
 						</dd>
 					</dl>
@@ -2057,11 +2054,11 @@ jQuery(document).ready(function(){
 						<dt>COLLECTIONS</dt>
 						<dd>
 							<ul>
-								<li><a href="#">아디다스 스텔라 맥카트니</a></li>
-								<li><a href="#">아디다스 스텔라 스포츠</a></li>
-								<li><a href="#">테크핏</a></li>
-								<li><a href="#">스페지알</a></li>
-								<li><a href="#">화이트 마운티어링</a></li>
+								<li><a href="http://shop.adidas.co.kr/PF020205.action?S_CTGR_CD=01006007">아디다스 스텔라 맥카트니</a></li>
+								<li><a href="http://shop.adidas.co.kr/PF020205.action?S_CTGR_CD=01006026&ato=A&utm_expid=118282323-37.hYegpD1FRPKvVMfe6GcKVg.1&utm_referrer=http%3A%2F%2Fshop.adidas.co.kr%2FPF020205.action%3FS_CTGR_CD%3D01006007">아디다스 스텔라 스포츠</a></li>
+								<li><a href="http://shop.adidas.co.kr/PF020205.action?S_CTGR_CD=01006011">테크핏</a></li>
+								<li><a href="http://shop.adidas.co.kr/PF020205.action?S_CTGR_CD=01006024">스페지알</a></li>
+								<li><a href="http://shop.adidas.co.kr/PF020205.action?S_CTGR_CD=01006032">화이트 마운티어링</a></li>
 							</ul>
 						</dd>
 					</dl>
@@ -2076,10 +2073,10 @@ jQuery(document).ready(function(){
 						<dt>MEMBERSHIP</dt>
 						<dd>
 							<ul>
-								<li><a href="#">로그인 / 회원가입</a></li>
-								<li><a href="#">아디클럽</a></li>
-								<li><a href="#">캠페인</a></li>
-								<li><a href="#">아디클럽 체험단</a></li>
+								<li><a href="https://shop.adidas.co.kr/PF0608011.action?checkbtn=fromTop&returnURL=http://shop.adidas.co.kr%2FPF020205.action%3FS_CTGR_CD%3D01006032">로그인 / 회원가입</a></li>
+								<li><a href="http://shop.adidas.co.kr/PF080101.action">아디클럽</a></li>
+								<li><a href="http://shop.adidas.co.kr/PF070201.action">캠페인</a></li>
+								<li><a href="http://shop.adidas.co.kr/PF070201.action?AD_CLUB_GB=adClubExp">아디클럽 체험단</a></li>
 							</ul>
 						</dd>
 					</dl>
@@ -2087,15 +2084,15 @@ jQuery(document).ready(function(){
 						<dt>SUPPORT</dt>
 						<dd>
 							<ul style="margin-bottom:30px;">
-								<li><a href="#">고객센터, 심의수선</a></li>
-								<li style="margin-bottom:0px;"><a href="#">1588-8241</a></li>
+								<li><a href="#"><strong>고객센터, 심의수선</strong></a></li>
+								<li style="margin-bottom:0px;"><a href="#"><strong>1588-8241</strong></a></li>
 							</ul>
 							<ul>
 								<li><a href="#">주문배송</a></li>
-								<li><a href="#">1:1문의</a></li>
-								<li><a href="#">FAQ</a></li>
-								<li><a href="#">매장안내</a></li>
-								<li><a href="#">이용약관개인정보 취급방침</a></li>
+								<li><a href="https://shop.adidas.co.kr/PF0608011.action?checkbtn=fromTop&returnURL=http://shop.adidas.co.kr/PF080304.action">1:1문의</a></li>
+								<li><a href="http://shop.adidas.co.kr/PF080301.action">FAQ</a></li>
+								<li><a href="http://shop.adidas.co.kr/PF110101.action">매장안내</a></li>
+								<li><a href="http://shop.adidas.co.kr/PF010107.action?gubn=2">이용약관개인정보 취급방침</a></li>
 							</ul>
 						</dd>
 					</dl>
@@ -2199,8 +2196,7 @@ jQuery(document).ready(function(){
 
 			})(jQuery);
 		</script>
-
-
+	<!-- 170425 end -->
 
 
 
