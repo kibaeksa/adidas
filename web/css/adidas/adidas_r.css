@@ -622,7 +622,7 @@ a:active {color:#797b80;text-decoration:none;}
 
 .products-list-tpl .products-list-wrapper .products-list li .tit{
 	height:18px;
-	padding-left: 8px;
+	padding-left: 10px;
 	margin-bottom: 8px;
 	overflow: hidden;
 
@@ -651,7 +651,7 @@ a:active {color:#797b80;text-decoration:none;}
 
 .products-list-tpl .products-list-wrapper .products-list li .price{
 	position: absolute;
-	bottom: 20px;
+	bottom: 18px;
 	right: 10px;
 	text-align: right;
 	padding-left: 8px;
@@ -676,7 +676,7 @@ a:active {color:#797b80;text-decoration:none;}
 }
 
 .products-list-tpl .products-list-wrapper .num a{
-	padding: 8px;
+	padding: 5px;
 	display: inline-block;
 	overflow: hidden;
 }
