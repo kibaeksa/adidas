@@ -372,8 +372,8 @@ Reebok.ops = {
 
 		if(!!document.getElementById('navigation-slide')){
 			document.getElementById('navigation-slide').style.width = window.innerWidth - 50+'px';
-			document.getElementById('navigation-slide').style.height = window.innerHeight - 51+'px';
-			document.getElementById('global-search-slide').style.height = window.innerHeight - 51+'px';
+			document.getElementById('navigation-slide').style.height = window.innerHeight - (document.querySelector('.navigation_main_wrapper').getBoundingClientRect().bottom)+'px';
+			document.getElementById('global-search-slide').style.height = window.innerHeight - (document.querySelector('.navigation_main_wrapper').getBoundingClientRect().bottom)+'px';
 		}
 
 		//  Renewal
@@ -410,6 +410,7 @@ Reebok.ops = {
 
 			// Click gnb button
 			document.getElementById('global-navigation-button').addEventListener('click',function(){
+
 				var navigationElem = document.getElementById('navigation-slide');
 				var dataset = navigationElem.dataset;
 				if(navigationElem.dataset.state == 'working'){
@@ -432,6 +433,7 @@ Reebok.ops = {
 						document.querySelector('.navmenu_close').style.display = 'none';
 					},100);
 				}else{
+
 					if(document.getElementById('global-search-slide').dataset.state == 'opened'){
 						var searchElem = document.getElementById('global-search-slide');
 						searchElem.dataset.state = '';
@@ -439,6 +441,9 @@ Reebok.ops = {
 						searchElem.style.WebkitTransform = 'translate3d(100%,0,0)';
 						removeClass(document.getElementById('global-search-button') , 'close');
 					}
+
+					document.getElementById('navigation-slide').style.height = window.innerHeight - (document.querySelector('.navigation_main_wrapper').getBoundingClientRect().bottom)+'px';
+					document.getElementById('global-search-slide').style.height = window.innerHeight - (document.querySelector('.navigation_main_wrapper').getBoundingClientRect().bottom)+'px';
 
 					document.getElementById('nav_menu_overlay').style.display = 'block';
 					document.querySelector('.navmenu_close').style.display = 'block';
@@ -497,6 +502,9 @@ Reebok.ops = {
 						gnbElem.style.WebkitTransform = 'translate3d(-100%,0,0)';
 						removeClass(document.getElementById('global-navigation-button') , 'close');
 					}
+
+					document.getElementById('navigation-slide').style.height = window.innerHeight - (document.querySelector('.navigation_main_wrapper').getBoundingClientRect().bottom)+'px';
+					document.getElementById('global-search-slide').style.height = window.innerHeight - (document.querySelector('.navigation_main_wrapper').getBoundingClientRect().bottom)+'px';
 
 					addClass(this,'close');
 					addClass(document.getElementsByTagName('html')[0],'no-scroll');
