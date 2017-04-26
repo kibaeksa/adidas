@@ -3129,6 +3129,7 @@ div.location_r span.ico{
 }
 
 #footer .country_selector ul{
+	display: none;
 	width:138px;
 	padding:10px 0;
 	background:#fff;
@@ -3136,7 +3137,6 @@ div.location_r span.ico{
 	position:absolute;
 	bottom:27px;
 	left:0;
-	z-index:-1;
 	opacity:0;
 	filter:alpha(opacity=0);
 	-ms-filter:alpha(opacity=0);
@@ -3147,6 +3147,7 @@ div.location_r span.ico{
 }
 
 #footer .country_selector.open ul{
+	display: block;
 	transform:translate3d(0,0,0);
 	-webkit-transform:translate3d(0,0,0);
 	filter:alpha(opacity=100);
