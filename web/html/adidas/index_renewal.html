@@ -24,63 +24,7 @@
 <script type="text/javascript" src="/js/adidas/adidas.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function(){
-		jQuery('.visual_inner_wrap').adislider({
-			slidewrap:'.visual_slide',
-			slideBox:'.visual_box',
-			useArrow:false,
-			autoRolling:true,
-			controlWrap:'.visual_util .control',
-			controlObj:'.slide_control a.visual_btn',
-			moveValue:'1920',
-			loopStyle:false,
-			/*
-				170224 speed 값 변경
-				speed:2000 ==> speed:4000,
-			*/
-			speed:4000,
-			easing:'easeOutCubic',
-			autoControl:'.control>a',
-			loopStyle:true,
-			titleList:[
-				'메인 비주얼 제목1',
-				'메인 비주얼 제목2',
-				'메인 비주얼 제목3'
-			],
-			titleElement:'.visual_inner_wrap .visual_util h3'
-		});
 
-		jQuery('#new_prodlist .banner_list').adislider({
-			slidewrap:'.banner_slide',
-			slideBox:'.banner_box',
-			useArrow:true,
-			autoRolling:true,
-			controlWrap:'.banner_control',
-			controlObj:'a',
-			moveValue:'960',
-			loopStyle:false,
-			leftMove:'.arrow_left',
-			rightMove:'.arrow_right',
-			speed:1000,
-			easing:'easeOutCubic',
-			autoControl:false,
-			loopStyle:true,
-			titleList:[
-				'Men\'s best products',
-				'Women\'s best products',
-				'Men\'s new arrivals',
-				'Women\'s new arrivals'
-			],
-			titleElement:'#new_prodlist .banner_header h4'
-
-		});
-
-		jQuery('#new_prodlist li').hover(function(){
-			jQuery(this).find('.type').find('.view_quick').stop();
-			jQuery(this).find('.type').find('.view_quick').animate({opacity:1},200);
-		},function(){
-			jQuery(this).find('.type').find('.view_quick').stop();
-			jQuery(this).find('.type').find('.view_quick').animate({opacity:0},200);
-		});
 
 		// 150924 footer SNS bind event
 		jQuery('.f_sns>div>a.btn').bind('click',function(){
@@ -1333,8 +1277,8 @@
 			<div class="master_slider">
 				<div class="gradient"><img src="/images/adidas/main/gradient.png" alt=""></div>
 	            <div class="master_slide_wrapper">
-	                <div class="master-slide-container"  id="main_slider">
-	                    <ul class="master-slide-list">
+	                <div id="main_slider">
+	                    <ul>
 							<li>
 								<div class="img">
 									<img src="/images/adidas/main/main_visual1.jpg" alt="" usemap="#main1">
