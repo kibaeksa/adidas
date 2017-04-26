@@ -79,6 +79,8 @@ span.price span.sale span.won{color:#e4000f;}
 .oo_label.size90{width:90px;}
 .oo_label img{width:100%;}
 
+/* Align 950 */
+.ct950{width:950px;margin:0 auto;}
 
 /* Tooltip layer */
 .tooltip-layer{
@@ -87,6 +89,10 @@ span.price span.sale span.won{color:#e4000f;}
 	 left: 20px;
 	 display: none;
 	 z-index: 50;
+}
+
+.tooltip-layer.active{
+	display: block;
 }
 
 .tooltip-layer .arrow{
@@ -115,7 +121,7 @@ span.price span.sale span.won{color:#e4000f;}
 	display: block;
 	text-align: center;
 	background: #000;
-}393934
+}
 
 .btn-ctm.btn-blue{background: #027dbf;}
 .btn-ctm.btn-gray{background: #777;}
@@ -134,6 +140,14 @@ span.price span.sale span.won{color:#e4000f;}
 	font:14px/46px 'NotoSansKRRegular','Nanum Gothic';
 }
 
+.btn-ctm .ico_arrow{
+	width: 8px;
+	height: 12px;
+	position: absolute;
+    right: 18px;
+    top: 18px;
+	background-position: -62px -185px;
+}
 
 .btn-ctm.anim::before{
 	content:'';
@@ -179,6 +193,103 @@ span.price span.sale span.won{color:#e4000f;}
 
 .btn-ctm.anim.active::before{
 	width: 100%;
+}
+
+.product-badge{
+	height: 20px;
+	position: absolute;
+	top: 20px;
+	left: 0;
+}
+
+.product-badge span{
+	height: 17px;
+	display: block;
+    font:11px 'adihaus';
+    padding: 3px 10px 0;
+    color: #fff;
+}
+
+.product-badge.new span{
+	background:rgb(48,149,75);
+	background:rgba(48,149,75,0.8);
+}
+
+.product-badge.online_only span{
+	background:rgb(35,158,145);
+	background:rgba(35,158,145,0.8);
+}
+
+.product-badge.best span{
+	background:rgb(230,175,7);
+	background:rgba(230,175,7,0.8);
+}
+
+.product-badge.sale span{
+	background:rgb(197,54,34);
+	background:rgba(197,54,34,0.8);
+}
+
+.product-badge.mi span{
+	padding-right:25px;
+	background:rgb(0,0,0) url('//image.adidas.co.kr/images/adidas/common/ico_customize.png') 59px 3px no-repeat;
+	background-color:rgba(0,0,0,0.8);
+}
+
+.product-badge.mi span em{
+	color:#407DBE;
+}
+
+.product-badge.oneday span{
+	padding-right: 35px;
+	background: #474748 url('//image.adidas.co.kr/images/adidas/common/ico_one_day_deliv.png') 102px 6px no-repeat;
+	background-color:rgba(0,0,0,0.6);
+}
+
+/*rating-star*/
+.rating-star{
+	position: relative;
+}
+
+.rating-star::after{
+	content:'.'; display:block; height:0; font-size:0; clear:both; visibility:hidden;
+}
+
+.rating-star .star-container{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.rating-star .star-container .user_id{
+	position: absolute;
+	top:0;
+	left:100px;
+	display: inline-block;
+	font:14px/14px 'dinpro','Nanum Gothic';
+	letter-spacing: 0.7px;
+	color:#555;
+
+}
+
+.rating-star .star-container .star-bg{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.rating-star .star-container .star-bg img{
+	width: 62px;
+}
+
+.rating-star .star-container .star-point{
+	position: relative;
+	overflow: hidden;
+}
+
+.rating-star .star-container .star-point img{
+	width: 62px;
+	vertical-align:top;
 }
 
 /* price */
@@ -2242,91 +2353,6 @@ div.header_top{width:890px;height:100px;}
 
 #gnb_150930 div.depth2_menu .rightarea{width:300px;float:left;}
 
-
-#shopping_live {width:888px;overflow:hidden; position:absolute; top:140px; left:0; z-index:200;border:1px solid #3e448d;background:#585ea8;}
-/* 120622 쇼핑라이브*/
-#shopping_live .live_top{height:24px;padding:10px 20px 0;}
-#shopping_live .live_top h3{float:left;}
-#shopping_live .live_top h3 img{vertical-align:middle;}
-#shopping_live .live_top h3 span{padding-left:10px;font:11px 'dotum',Dotum;color:#fff;text-shadow:1px 1px #42477e;}
-#shopping_live .live_top a{float:right;margin-top:2px;}
-
-#shopping_live .live_body{height:277px;padding:10px 10px 0;margin:0 1px 1px;background:#f3f6f9;}
-#shopping_live .live_body .live_left{width:248px;height:267px;float:left;border:1px solid #555556;position:relative;}
-#shopping_live .live_body .live_left_inner{width:222px;height:241px;padding:12px;border:1px solid #8060a5;position:relative;z-index:2;background:#714e9b;}
-#shopping_live .live_body .live_left .rank_top{height:27px;border-bottom:1px solid #5a3e7c;}
-#shopping_live .live_body .live_left .rank_top h4{float:left;}
-#shopping_live .live_body .live_left .rank_top span{float:right;font:11px verdana,'Verdana';color:#c3c3c3;}
-#shopping_live .live_body .live_left ul{width:222px;position:absolute;top:40px;left:12px;}
-#shopping_live .live_body .live_left li{height:37px;border-top:1px solid #8d71af;border-bottom:1px solid #5a3e7c;background:url(//image.reebok.co.kr/images/reebok/common/ico_rank_non.gif) 205px 17px no-repeat;}
-#shopping_live .live_body .live_left li.up{background:url(//image.reebok.co.kr/images/reebok/common/ico_rank_up.gif) 204px 13px no-repeat;}
-#shopping_live .live_body .live_left li.down{background:url(//image.reebok.co.kr/images/reebok/common/ico_rank_down.gif) 204px 13px no-repeat;}
-#shopping_live .live_body .live_left li a{display:block;height:25px;padding:12px 25px 0 0;}
-#shopping_live .live_body .live_left li a span.rank{display:block;width:14px;height:13px;float:left;margin-right:5px;background:#000;color:#fff;font:bold 9px/13px 'Verdana',verdana;text-align:center;}
-#shopping_live .live_body .live_left li a strong{float:left;color:#e8c1e4;}
-#shopping_live .live_body .live_left li a strong.hv{color:#fff;}
-#shopping_live .live_body .live_left li a em{width:25px;float:right;color:#ababac;font:10px 'Verdana',verdana;text-align:right;}
-
-#shopping_live .live_body .live_left .rank_view{margin-top:195px;}
-#shopping_live .live_body .live_left .rank_view span{width:108px;height:20px;display:block;position:relative;cursor:pointer;}
-#shopping_live .live_body .live_left .rank_view span span{position:absolute;top:0;left:0;opacity:0;-ms-filter: alpha(opacity=0);filter: alpha(opacity=0);}
-#shopping_live .live_body .live_left .rank_view span span.on{display:block;opacity:1 !important;-ms-filter: alpha(opacity=100) !important;filter: alpha(opacity=100) !important;}
-#shopping_live .live_body .live_left .rank_view span.rview1{float:left;background:url(//image.reebok.co.kr/images/reebok/common/btn_live_viewrank.gif) 0 0 no-repeat;}
-#shopping_live .live_body .live_left .rank_view span.rview2{float:right;background:url(//image.reebok.co.kr/images/reebok/common/btn_live_viewrank2.gif) 0 0 no-repeat;}
-#shopping_live .live_body .live_left .rank_view span.rview1 span{background:url(//image.reebok.co.kr/images/reebok/common/btn_live_viewrank_on.gif) 0 0 no-repeat;}
-#shopping_live .live_body .live_left .rank_view span.rview2 span{background:url(//image.reebok.co.kr/images/reebok/common/btn_live_viewrank2_on.gif) 0 0 no-repeat;}
-
-#shopping_live .live_body .live_right{float:right;border:1px solid #3177ab;position:relative;}
-#shopping_live .live_body .live_right .live_right_inner{width:582px;height:253px;padding:12px 12px 0;border:1px solid #4690c9;position:relative;z-index:2;background:#3184c3;}
-#shopping_live .live_body .live_right .live_right_inner .live_rtop{height:28px;border-bottom:1px solid #276a9c;}
-#shopping_live .live_body .live_right .live_right_inner .live_rtop h4{float:left;}
-#shopping_live .live_body .live_right .live_right_inner .live_rtop .live_bul{float:right;margin-top:6px;}
-#shopping_live .live_body .live_right .live_right_inner .live_rtop .live_bul span{display:block;width:7px;height:7px;float:left;margin-right:3px;background:url(//image.reebok.co.kr/images/reebok/common/bg_live_bul.gif) 0 0 no-repeat;}
-#shopping_live .live_body .live_right .live_right_inner .live_rtop .live_bul span.on{background:url(//image.reebok.co.kr/images/reebok/common/bg_live_bul_on.gif) 0 0 no-repeat;}
-#shopping_live .live_body .live_right .live_right_inner .live_rbody{padding:12px 0 0 32px;border-top:1px solid #5a9dcf;position:relative;}
-#shopping_live .live_body .live_right .live_right_inner .live_rbody a.live_ar_l{display:block;width:8px;height:14px;position:absolute;top:105px;left:7px;background:url(//image.reebok.co.kr/images/reebok/common/btn_live_left.gif) 0 0 no-repeat;text-indent:-5000px;}
-#shopping_live .live_body .live_right .live_right_inner .live_rbody a.live_ar_r{display:block;width:8px;height:14px;position:absolute;top:105px;right:7px;background:url(//image.reebok.co.kr/images/reebok/common/btn_live_right.gif) 0 0 no-repeat;text-indent:-5000px;}
-#shopping_live .live_body .live_right .live_right_inner .live_rbody a.live_ar_l:hover{background:url(//image.reebok.co.kr/images/reebok/common/btn_live_left_h.gif) 0 0 no-repeat;}
-#shopping_live .live_body .live_right .live_right_inner .live_rbody a.live_ar_r:hover{background:url(//image.reebok.co.kr/images/reebok/common/btn_live_right_h.gif) 0 0 no-repeat;}
-#shopping_live .live_body .live_right .live_right_inner .live_rbody .live_list{float:left;}
-#shopping_live .live_body .live_right .live_right_inner .live_rbody .live_slide_wrap{position:relative;overflow:hidden;width:520px;height:211px;}
-#shopping_live .live_body .live_right .live_right_inner .live_rbody .live_slide{position:absolute;top:0;left:0;width:10000px;height:211px;}
-#shopping_live .live_body .live_right .live_right_inner .live_rbody .list{height:94px;margin-bottom:12px;clear:both;}
-#shopping_live .live_body .live_right .live_right_inner .live_rbody .list li{height:94px;float:left;margin-right:12px;position:relative;}
-#shopping_live .live_body .live_right .live_right_inner .live_rbody .list li .hover_bg{width:88px;height:88px;position:absolute;top:4px;left:4px;border:0px solid #f94444;cursor:pointer;background-image:url(about:blank);}
-#shopping_live .live_body .live_right .live_right_inner .live_rbody .list li .hover_bg.on{top:0 !important;left:0 !important;border:4px solid #f94444 !important;}
-#shopping_live .live_body .live_right .live_right_inner .live_rbody .list li .live_layer1{
-	width:171px;
-	height:90px;
-	padding:14px 20px 0 22px;
-	position:absolute;
-	top:-5px;
-	left:98px;
-	background:url(//image.reebok.co.kr/images/reebok/common/bg_live_layer1.png) 0 0 no-repeat;
-	display:none;
-	z-index:50;
-}
-#shopping_live .live_body .live_right .live_right_inner .live_rbody .list li .live_layer2{
-	width:171px;
-	height:90px;
-	padding:14px 22px 0 20px;
-	position:absolute;
-	top:-5px;
-	left:-216px;
-	background:url(//image.reebok.co.kr/images/reebok/common/bg_live_layer2.png) 0 0 no-repeat;
-	display:none;
-	z-index:50;
-}
-#shopping_live .live_body .live_right .live_right_inner .live_rbody .list li p.tit{margin-bottom:5px;}
-#shopping_live .live_body .live_right .live_right_inner .live_rbody .list li p.tit a{color:#fff;}
-#shopping_live .live_body .live_right .live_right_inner .live_rbody .list li p.price{font:11px 'Dotum',dotum;color:#fff;margin-bottom:7px;}
-#shopping_live .live_body .live_right .live_right_inner .live_rbody .list li p.price span.line_through{text-decoration:line-through;margin-right:5px;}
-#shopping_live .live_body .live_right .live_right_inner .live_rbody .list li p.price span.sale{color:#f4a9ca;}
-#shopping_live .live_body .live_right .live_right_inner .live_rbody .list li p.btn{color:#bdbdbd;}
-/* 120622 쇼핑라이브*/
-
-
-#shopping_live iframe.ie6_shopping {position:absolute;top:0;left:0;z-index:-99;width:890px;height:330px;border:0;filter:alpha(opacity=0);}
 /* common */
 
 
@@ -4776,121 +4802,6 @@ div.error .btn {width:700px; height:30px; text-align:center; margin-top:20px;}
 	display:none;
 }
 
-#gnb_r{height:40px;clear:both;background:url(//image.reebok.co.kr/images/reebok/common/gnb.gif) no-repeat;}
-#gnb_r ul li#men{float:left;height: 40px;z-index: 300;position: relative;margin-left: 22px;padding-left: 1px;width: 63px;}
-#gnb_r ul li#women{float:left;height: 40px;z-index: 300;position: relative;margin-left: 1px;width: 68px;}
-#gnb_r ul li#kids{float:left;height: 40px;z-index: 300;position: relative;margin-left: -1px;margin-right: 50px;width: 65px;}
-#gnb_r ul li#sports{float:left;height: 40px;z-index: 300;position: relative;margin-left: 1px;margin-right: 1px;width: 66px;}
-#gnb_r ul li#classic{float:left;height: 40px;z-index: 300;position: relative;left: -1px;margin-right: 1px;width: 85px;}
-#gnb_r ul li#fitness_training{float:left;height: 40px;z-index: 300;position: relative;margin-left: -3px;margin-right: 53px;width: 138px;}
-#gnb_r ul li#search{float:left;height: 40px;z-index: 300;position: relative;width:77px;margin-left:-2px;}
-#gnb_r ul li#live{float:left;height: 40px;z-index: 300;position: relative;width:87px;}
-#gnb_r ul li#reestyle{float:left;height: 40px;z-index: 300;position: relative;width:100px}
-
-#gnb_r #men{float: left;height: 40px;margin-left: 22px;padding-left: 1px;position: relative;width: 63px;z-index: 300;}
-
-
-#gnb_r ul li a.depth1_btn{display:block;width:100%;height:100%;background:url(//image.reebok.co.kr/images/reebok/common/bg_gnb.jpg) 0 0 no-repeat;text-indent:-5000px}
-#gnb_r ul li div.depth2_menu{
-	position:absolute;
-	border: 5px solid #616161;
-	overflow: hidden;
-	background:#fff;
-	visibility:hidden;
-}
-#gnb_r div.depth2_menu div.shoes, #gnb_r div.depth2_menu div.cloth, #gnb_r div.depth2_menu div.etc{
-	width:221px;
-	float:left;
-}
-#gnb_r div.depth2_menu div.category_tit{
-	background:#272727 url(//image.reebok.co.kr/images/reebok/common/bg_cate_tit.gif) right 0 repeat-y;
-	height: 23px;
-	padding: 12px 0 0 13px;
-}
-#gnb_r div.depth2_menu div.category_tit h3{
-	float: left;
-	padding-right: 5px;
-	font-size: 12px;
-}
-#gnb_r div.depth2_menu div.category_tit a{color:#fff;}
-#gnb_r div.depth2_menu div.category_cont{
-	overflow: hidden;
-	background: #fff url(//image.reebok.co.kr/images/reebok/common/bg_cate_cont.gif) right 0 repeat-y;
-}
-#gnb_r div.depth2_menu div.list p{color: #6c6e72;font-weight: bold;margin: 9px 0 6px 16px;letter-spacing: -1px;}
-#gnb_r div.depth2_menu div.list ul{float:left;width: 85px;margin: 0 0 0 16px;}
-#gnb_r div.depth2_menu div.list ul li{background:url(//image.reebok.co.kr/images/reebok/common/blt_category_mlist.gif) no-repeat left 5px;padding-left:6px;height:16px;line-height:16px;}
-#gnb_r div.depth2_menu dl{float: left;width: 115px;padding: 15px 0 16px;margin: 0 0 0 11px;}
-#gnb_r div.depth2_menu dl.last{background:none !important;}
-#gnb_r div.depth2_menu dl dt{padding:0 0 8px 3px}
-#gnb_r div.depth2_menu dl dd{padding:5px 0 0 4px}
-#gnb_r div.depth2_menu dl dd ul li{font-size:11px;font-family: 'dotum','돋움';letter-spacing:-1px;line-height:17px;}
-#gnb_r div.depth2_menu dl dd ul li a{padding-left:7px;color:#a2e3ed;background: url(//image.reebok.co.kr/images/reebok/common/blt_category_mlist.gif) no-repeat left 4px;}
-
-
-#gnb_r ul li#men a.depth1_btn{background-position:-23px 0;}
-#gnb_r ul li#men a.depth1_btn.on{background-position:-23px -40px;}
-#gnb_r ul li#men div.depth2_menu{width:663px}
-#gnb_r ul li#men div.depth2_menu div.list{float:left;height:144px;border-right-width:0;}
-#gnb_r ul li#men div.depth2_menu div.etc div.category_tit{background-image:none}
-#gnb_r ul li#men div.depth2_menu div.etc div.category_cont{background-image:none}
-
-#gnb_r ul li#women a.depth1_btn{background-position:-86px 0;}
-#gnb_r ul li#women a.depth1_btn.on{background-position:-86px -40px;}
-#gnb_r ul li#women div.depth2_menu{width:663px}
-#gnb_r ul li#women div.depth2_menu div.list{float:left;height:144px;border-right-width:0;}
-#gnb_r ul li#women div.depth2_menu div.etc div.category_tit{background-image:none}
-#gnb_r ul li#women div.depth2_menu div.etc div.category_cont{background-image:none}
-
-#gnb_r ul li#kids a.depth1_btn{background-position:-154px 0;}
-#gnb_r ul li#kids a.depth1_btn.on{background-position:-154px -40px;}
-#gnb_r ul li#kids div.depth2_menu{width:140px;}
-#gnb_r ul li#kids div.depth2_menu div.shoes{width:140px}
-#gnb_r ul li#kids div.depth2_menu div.shoes div.category_cont{width:140px;height:44px;padding-top:13px}
-#gnb_r ul li#kids div.depth2_menu div.list strong{font-size:12px;padding:5px 0 0 15px}
-#gnb_r ul li#kids div.depth2_menu div.list strong a{color:#222;}
-#gnb_r ul li#kids div.depth2_menu div.list span{font:11px/14px 'Dotum','돋움';letter-spacing: -0.5px;}
-
-#gnb_r ul li#sports a.depth1_btn{background-position:-270px 0;}
-#gnb_r ul li#sports a.depth1_btn.on{background-position:-270px -40px;}
-#gnb_r ul li#sports div.depth2_menu{width: 270px;background: #1c7f8e;border: none;}
-#gnb_r ul li#sports div.depth2_menu h2{width:102px;height:38px;padding-top:2px;cursor:pointer;}
-#gnb_r ul li#sports div.depth2_menu dl{width:120px;padding-left:15px;margin:0;background:url(//image.reebok.co.kr/images/reebok/common/bg_cate_sports.gif) right 0 repeat-y;}
-#gnb_r ul li#sports div.depth2_menu dl strong{font: bold 11px/14px 'Dotum','돋움';letter-spacing:-0.5px;padding-right:5px;}
-#gnb_r ul li#sports div.depth2_menu dl strong a{color:#fff;background:none}
-#gnb_r ul li#sports div.depth2_menu dl span{font: 11px/14px 'Dotum','돋움';letter-spacing:-0.5px;}
-#gnb_r ul li#sports div.depth2_menu dl span a{color:#fff;}
-
-#gnb_r ul li#classic a.depth1_btn{background-position:-335px 0;}
-#gnb_r ul li#classic a.depth1_btn.on{background-position:-335px -40px;}
-#gnb_r ul li#classic div.depth2_menu{width:270px;background:#663366;border:none}
-#gnb_r ul li#classic div.depth2_menu dl{width:120px;height:37px;padding-left:15px;margin:0;background:url(//image.reebok.co.kr/images/reebok/common/bg_cate_classic.gif) right 0 repeat-y;}
-#gnb_r ul li#classic div.depth2_menu dl strong{font: bold 11px/14px 'Dotum','돋움';letter-spacing:-0.5px;padding-right:5px;}
-#gnb_r ul li#classic div.depth2_menu dl strong a{color:#fff;background:none}
-#gnb_r ul li#classic div.depth2_menu dl span a{color:#e5b5eb;}
-
-#gnb_r ul li#fitness_training a.depth1_btn{background-position:-420px 0;}
-#gnb_r ul li#fitness_training a.depth1_btn.on{background-position:-420px -40px;}
-#gnb_r ul li#fitness_training div.depth2_menu{width:219px;background:#275935;border:none}
-#gnb_r ul li#fitness_training div.depth2_menu dl{width:219px;border-right-width:0px;background: url(//image.reebok.co.kr/images/reebok/common/bg_cate_f_t.gif) 0 bottom repeat-x;padding:0;margin:0 !important;}
-#gnb_r ul li#fitness_training div.depth2_menu dl dt{padding: 10px 0 10px 20px;font: normal 11px/14px 'Dotum','돋움';letter-spacing: 0px;}
-#gnb_r ul li#fitness_training div.depth2_menu dl dt strong{padding-right:5px}
-#gnb_r ul li#fitness_training div.depth2_menu dl dt strong a{color:#fff;font-weight:normal}
-
-#gnb_r ul li#classic a.depth1_btn{background-position:-335px 0;}
-#gnb_r ul li#classic a.depth1_btn.on{background-position:-335px -40px;}
-
-#gnb_r ul li#reestyle,#gnb_r ul li#live,#gnb_r ul li#search{position:static}
-#gnb_r ul li#search a.depth1_btn{background-position:-611px 0;}
-#gnb_r ul li#live a.depth1_btn{background-position:-690px 0;}
-#gnb_r ul li#reestyle a.depth1_btn{background-position:-772px 0;}
-
-#gnb_r div#ree_style{left:0;overflow:hidden;position:absolute;top:141px;width:890px;z-index:200;}
-#gnb_r div#ree_style div.st_tit{height:33px;padding:14px 22px 0 30px;border-bottom:3px solid #ac0614;background:#2f2f2f;}
-#gnb_r div#ree_style div.st_tit h2{float:left;}
-#gnb_r div#ree_style div.st_tit a{float:right;margin-top:10px;}
-#gnb_r  div#ree_style div.st_cont li{float:left;}
-
 ul.prod_tab2{clear:both}
 ul.prod_tab2 li{width:170px;height:36px;float:left;}
 ul.prod_tab2 li a{
@@ -5025,154 +4936,6 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 #contents_main #prod_banner .banner_slide_wrap{width:890px;height:254px;margin:0 auto;overflow:hidden;position:relative;}
 #contents_main #prod_banner .banner_slide_wrap .banner_box{float:left}
 #contents_main #prod_banner .banner_slide_wrap .banner_slide{width:54750px;height:254px;position:absolute;left:0;top:0;}
-
-
-#gnb_r2{height:40px;clear:both;background:url(//image.reebok.co.kr/images/reebok/common/bg_gnb_line.gif) right 2px no-repeat;}
-#gnb_r2>ul>li{float:left;height:40px;z-index: 300;position: relative;}
-#gnb_r2 ul li#toprank{position:static;}
-#gnb_r2 ul li#toprank a.depth1_btn.on{background:none}
-#gnb_r2 ul li#rbk_sns{position:static;margin-left:5px;}
-#gnb_r2 ul li#rbk_sns a.depth1_btn{padding:13px 20px 0;}
-*:first-child+html #gnb_r2 ul li#rbk_sns a.depth1_btn{padding:13px 0 0;width:80px;text-align:center}
-#gnb_r2 ul li#rbk_sns a.depth1_btn.on{background:none}
-
-#gnb_r2 ul li a.depth1_btn{
-	height:27px;
-	padding:13px 17px 0;
-	display:block;
-	font:bold 12px 'Arial','Gulim',gulim;
-	text-transform:uppercase;
-}
-#gnb_r2 ul li a.depth1_btn_nodep{
-	height:27px;
-	padding:13px 17px 0;
-	display:block;
-	font:bold 12px 'Arial','Gulim',gulim;
-	text-transform:uppercase;
-	color:#fff;
-}
-
-#gnb_r2 ul li a.depth1_btn.on{
-	background:url(//image.reebok.co.kr/images/reebok/common/bg_gnb_arrow.gif) center bottom no-repeat ;
-}
-
-#gnb_r2 ul.gnb_menu1,#gnb_r2 ul.gnb_menu2,#gnb_r2 ul.gnb_menu3{height:40px;float:left;padding:0 18px;background:url(//image.reebok.co.kr/images/reebok/common/bg_gnb_line.gif) 0 2px no-repeat;}
-#gnb_r2 ul.gnb_menu3{padding-right:0;}
-#gnb_r2 ul.gnb_menu3 li a em{color:#dd0213;font-weight:bold}
-#gnb_r2 ul.gnb_menu1 li a.depth1_btn{color:#fff;}
-#gnb_r2 ul.gnb_menu2 li a.depth1_btn{color:#a7a7a7;}
-#gnb_r2 ul.gnb_menu2 li a.depth1_btn_nodep{color:#a7a7a7;}
-#gnb_r2 ul.gnb_menu3 li a.depth1_btn{color:#c4c4c4;}
-#gnb_r2 ul.gnb_menu3 li a.depth1_btn_nodep{color:#c4c4c4;}
-#gnb_r2 ul li div.depth2_menu{
-	position:absolute;
-	border: 5px solid #616161;
-	overflow: hidden;
-	background:#fff;
-	visibility:hidden;
-	padding:10px;
-	z-index:200;
-}
-
-#gnb_r2 ul li#men .depth2_menu{width:640px;left:-17px}
-#gnb_r2 ul li#women .depth2_menu{width:640px;}
-#gnb_r2 ul li#sports .depth2_menu{width:640px;left:-63px}
-#gnb_r2 ul li#fitness .depth2_menu{width:640px;left:-61px}
-#gnb_r2 ul li#classic .depth2_menu{width:640px;left:-145px;}
-#gnb_r2 ul li#collection .depth2_menu{width:154px;padding:20px 15px;}
-
-#gnb_r2 div.depth2_menu .leftarea{width:290px;padding:10px 0 0 10px;overflow:hidden;float:left;margin-right:40px}
-#gnb_r2 div.depth2_menu .leftarea dl{width:125px;float:left;margin:0 40px 22px 0;}
-#gnb_r2 div.depth2_menu .leftarea dl.last{background:none !important;margin-right:0;}
-#gnb_r2 div.depth2_menu .leftarea dl dt{height:15px;padding:0 0 5px 0;margin-bottom:8px;font:bold 14px 'Arial';color:#3d3e42;border-bottom:1px solid #ccc;}
-#gnb_r2 div.depth2_menu .leftarea dl dd{}
-#gnb_r2 div.depth2_menu .leftarea dl dd ul li{font:normal 12px/20px 'Gulim','굴림';}
-#gnb_r2 div.depth2_menu .leftarea dl dd ul li a{line-height:20px;padding-left:5px;color:#7e7e7e;background:url(//image.reebok.co.kr/images/reebok/common/bg_gnb_line2.gif) 0 5px no-repeat;letter-spacing:-1px}
-#gnb_r2 div.depth2_menu .leftarea dl dd ul li a:hover{text-decoration:underline;}
-
-#gnb_r2 ul li#classic .depth2_menu dl.last{width:155px}
-#gnb_r2 ul li#sports .depth2_menu dl.last{width:155px}
-#gnb_r2 ul li#classic .depth2_menu{width:670px}
-#gnb_r2 ul li#sports .depth2_menu{width:670px}
-#gnb_r2 ul li#sports .depth2_menu .leftarea{width:320px}
-#gnb_r2 ul li#classic .depth2_menu .leftarea{width:320px}
-
-#gnb_r2 ul li#collection .depth2_menu li{font:normal 12px/20px 'Gulim','굴림';}
-#gnb_r2 ul li#collection .depth2_menu li a{line-height:20px;padding-left:10px;color:#7e7e7e;background:url(//image.reebok.co.kr/images/reebok/common/bg_gnb_line2.gif) 0 5px no-repeat;letter-spacing:0}
-#gnb_r2 ul li#collection .depth2_menu li a:hover{text-decoration:underline;}
-
-#gnb_r2 ul li#rbk_sns .depth2_menu{width:116px;position:absolute;top:140px;right:0;padding:0;border-width:0;background-image:url("about:blank");background-color:transparent;}
-#gnb_r2 ul li#rbk_sns .depth2_menu h3{width:116px;height:42px;background:#38393c;border-bottom:1px solid #68686b;}
-#gnb_r2 ul li#rbk_sns .depth2_menu h3 span{display:block;text-indent:-5000px}
-#gnb_r2 ul li#rbk_sns .depth2_menu h3.fit_tit{width:104px;height:27px;padding:15px 0 0 12px;}
-#gnb_r2 ul li#rbk_sns .depth2_menu h3.fit_tit span{width:91px;height:12px;background-position:0 -250px}
-#gnb_r2 ul li#rbk_sns .depth2_menu h3.classic_tit{width:105px;height:27px;padding:15px 0 0 11px;}
-#gnb_r2 ul li#rbk_sns .depth2_menu h3.classic_tit span{width:95px;height:13px;background-position:0 -270px}
-
-#gnb_r2 ul li#rbk_sns .depth2_menu li{border-bottom:1px solid #68686b}
-#gnb_r2 ul li#rbk_sns .depth2_menu li.last{border-bottom-width:0;margin-bottom:2px}
-#gnb_r2 ul li#rbk_sns .depth2_menu li a{width:116px;height:30px;display:block;background-color:#2b2b2e}
-#gnb_r2 ul li#rbk_sns .depth2_menu li.cf a{display:block;text-indent:-5000px;background-position:0 -365px;}
-#gnb_r2 ul li#rbk_sns .depth2_menu li.cf a:hover{display:block;text-indent:-5000px;background-position:0 -495px;}
-#gnb_r2 ul li#rbk_sns .depth2_menu li.cf a:focus{display:block;text-indent:-5000px;background-position:0 -495px;}
-#gnb_r2 ul li#rbk_sns .depth2_menu li.fb a{display:block;text-indent:-5000px;background-position:0 -290px;}
-#gnb_r2 ul li#rbk_sns .depth2_menu li.fb a:hover{background-position:0 -405px;}
-#gnb_r2 ul li#rbk_sns .depth2_menu li.fb a:focus{background-position:0 -405px;}
-#gnb_r2 ul li#rbk_sns .depth2_menu li.blog a{display:block;text-indent:-5000px;background-position:0 -330px;}
-#gnb_r2 ul li#rbk_sns .depth2_menu li.blog a:hover{background-position:0 -450px;}
-#gnb_r2 ul li#rbk_sns .depth2_menu li.blog a:focus{background-position:0 -450px;}
-
-#gnb_r2 ul li#rbk_sns .depth2_menu li a{background:url(//image.reebok.co.kr/images/reebok/common/btn_navi_sns_150106.gif) 0 0 no-repeat;text-indent:-5000px;}
-#gnb_r2 ul li#rbk_sns .depth2_menu li.fb_kor a{background-position:0 0;}
-#gnb_r2 ul li#rbk_sns .depth2_menu li.fb_cls a{background-position:0 -31px;}
-#gnb_r2 ul li#rbk_sns .depth2_menu li.n_blg a{background-position:0 -62px;}
-#gnb_r2 ul li#rbk_sns .depth2_menu li.insta a{background-position:0 -93px;}
-#gnb_r2 ul li#rbk_sns .depth2_menu li.fb_kor a:hover{background-position:-116px 0;}
-#gnb_r2 ul li#rbk_sns .depth2_menu li.fb_cls a:hover{background-position:-116px -31px;}
-#gnb_r2 ul li#rbk_sns .depth2_menu li.n_blg a:hover{background-position:-116px -62px;}
-#gnb_r2 ul li#rbk_sns .depth2_menu li.insta a:hover{background-position:-116px -93px;}
-
-#gnb_r2 div.depth2_menu .rightarea{width:300px;float:left;}
-
-#top_rank{width:870px;height:244px;padding:10px;left:0;border-width:0;position:absolute;top:141px;left:0;background:#38393c;}
-#top_rank .rank_leftarea{width:251px;height:213px;float:left;}
-#top_rank .rank_leftarea .top{height:31px;}
-#top_rank .rank_leftarea .top h2{width:105px;height:16px;margin-top:5px;margin-right:5px;float:left;background-position:0 -60px;text-indent:-5000px}
-#top_rank .rank_leftarea .top span{float:left;color:#c3c3c3;margin-top:9px;}
-#top_rank .rank_leftarea .body{width:219px;height:201px;background:#292929;border:1px solid #2b2b2b;padding:5px 15px;}
-#top_rank .rank_leftarea .body li a{height:13px;display:block;padding:14px 0 13px;border-bottom:1px dashed #3f3f3f;background:url(//image.reebok.co.kr/images/reebok/common/ico_rank_non2.gif) 204px 19px no-repeat;}
-#top_rank .rank_leftarea .body li a strong{width:13px;height:13px;margin-right:5px;float:left;display:block;text-indent:-5000px}
-#top_rank .rank_leftarea .body li a strong.num1{background-position:right -190px;}
-#top_rank .rank_leftarea .body li a strong.num2{background-position:right -205px;}
-#top_rank .rank_leftarea .body li a strong.num3{background-position:right -220px;}
-#top_rank .rank_leftarea .body li a strong.num4{background-position:right -235px;}
-#top_rank .rank_leftarea .body li a strong.num5{background-position:right -251px;}
-#top_rank .rank_leftarea .body li a span{float:left;color:#fff;font-size:12px;}
-#top_rank .rank_leftarea .body li.last a{border-bottom-width:0;}
-#top_rank .rank_leftarea .body li.up a{background:url(//image.reebok.co.kr/images/reebok/common/ico_rank_up2.gif) 203px 15px no-repeat;}
-#top_rank .rank_leftarea .body li.down a{background:url(//image.reebok.co.kr/images/reebok/common/ico_rank_down2.gif) 202px 13px no-repeat;}
-#top_rank .rank_rightarea{width:619px;height:213px;float:left;}
-#top_rank .rank_rightarea .top{height:31px;}
-#top_rank .rank_rightarea .top h2{width:132px;height:16px;float:left;margin-top:5px;background-position:0 -91px;text-indent:-5000px;}
-#top_rank .rank_rightarea .top a.close{width:10px;height:9px;margin:3px 10px 0 0;display:block;float:right;background-position:right -125px;text-indent:-5000px}
-#top_rank .rank_rightarea .body{width:617px;height:211px;position:relative;border:1px solid #2b2b2b;border-left-width:0;background:#4c4d51;}
-#top_rank .rank_rightarea .body .rankprod_prev{display:block;width:8px;height:14px;background-position:0 -185px;text-indent:-5000px;position:absolute;top:105px;left:25px}
-#top_rank .rank_rightarea .body .rankprod_prev:hover{background-position:-25px -185px;}
-#top_rank .rank_rightarea .body .rankprod_next{display:block;width:8px;height:14px;background-position:0 -215px;text-indent:-5000px;position:absolute;top:105px;right:25px}
-#top_rank .rank_rightarea .body .rankprod_next:hover{background-position:-25px -215px;}
-#top_rank .rank_rightarea .body .rankprod_slider_wrap{width:530px;height:155px;margin:20px 0 0 45px;position:relative;overflow:hidden}
-#top_rank .rank_rightarea .body .rankprod_slider_wrap ul{position:absolute;top:0;left:0;width:100000px;}
-#top_rank .rank_rightarea .body .rankprod_slider_wrap ul li{position:relative;margin-right:10px;float:left;}
-#top_rank .rank_rightarea .body .rankprod_slider_wrap ul li a{display:block;padding:7px 15px;background:#fff;}
-#top_rank .rank_rightarea .body .rankprod_slider_wrap ul li .oo_label{top:12px;left:20px;}
-
-#top_rank .rank_rightarea .body .rankprod_paging{height:24px;padding-top:11px;position:relative;text-align:center;}
-#top_rank .rank_rightarea .body .rankprod_paging a{display:inline-block;padding:0 10px 0;font:10px 'Verdana';background:url(//image.reebok.co.kr/images/reebok/common/bg_linebar05.gif) right 3px no-repeat;color:#999;}
-#top_rank .rank_rightarea .body .rankprod_paging a:hover{color:#fff;}
-#top_rank .rank_rightarea .body .rankprod_paging a.on{color:#fff;font-weight:bold;text-decoration:underline}
-#top_rank .rank_rightarea .body .rankprod_paging a.last{background:none;}
-#top_rank .rank_rightarea .body .rankprod_paging .prev{display:block;width:5px;height:5px;background-position:-295px -70px;position:absolute;left:166px;top:16px;display:block;text-indent:-5000px}
-#top_rank .rank_rightarea .body .rankprod_paging .next{display:block;width:5px;height:5px;background-position:right -95px;position:absolute;right:166px;top:16px;display:block;text-indent:-5000px}
 
 .top_down{position:fixed;bottom:20px;right:20px;z-index:400;}
 .top_down a{width:40px;height:40px;display:block;text-indent:-5000px;background:url(//image.reebok.co.kr/images/adidas/common/btn_topdown.png) 0 0 no-repeat;}
@@ -6563,13 +6326,6 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 	background-position: -295px -720px;
 }
 
-.product-main .ico.white_arrow{
-	width: 8px;
-	height: 12px;
-	display: inline-block;
-	background-position: -62px -185px;
-}
-
 .product-main .product-infomation .buy_box .rating .rating-star{
 	margin-right:10px;
 	display: inline-block;
@@ -7422,12 +7178,6 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 	position: absolute;
 	top: -86px;
 	right: 0;
-}
-
-.product-main .product-reviews .staff_review .btn_stfreview em{
-	position: absolute;
-	right:18px;
-	top:18px;
 }
 
 .product-main .product-reviews .staff_review_wrap{
@@ -8307,135 +8057,706 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 	margin-bottom: 50px;
 }
 
-.product-badge{
-	height: 20px;
+/*Product review */
+.product-review-write{
+	position: relative;
+}
+
+.product-review-write .tip_box{
+	width: 220px;
 	position: absolute;
-	top: 20px;
+	top: -15px;
+	left: 30px;
+	padding: 20px;
+	background: #fff;
+	z-index: 100;
+	display: none;
+	border: 1px solid  #d2d2d2;
+	-webkit-box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+	box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+
+.product-review-write .tip_box dt{
+	margin-bottom: 10px;
+	font:16px 'NotoSansKR','Nanum Gothic';
+	color: #333;
+	letter-spacing: -0.75px;
+}
+
+.product-review-write .tip_box li{
+	position: relative;
+	padding-left: 10px;
+	margin-bottom:7px;
+	font:11px/17px 'Dotum';
+	color: #888;
+	letter-spacing:-0.75px;
+}
+
+.product-review-write .tip_box li .dot{
+	width: 3px;
+	height: 3px;
+	display: block;
+	position: absolute;
+	top:5px;
+	left: 0;
+	background: #616161;
+}
+
+.product-review-write .sptbg{
+	display: block;
+	background:url('/images/reebok/common/review_sprite.png') 0 0 no-repeat;
+}
+
+.product-review-write>*{
+	text-align: center;
+	color: #000;
+}
+
+.product-review-write h2{
+	width: 500px;
+	position: relative;
+	margin: 0 auto 15px;
+	padding-top: 70px;
+	font:50px/50px 'NotoSansKRBold','Nanum Gothic';
+}
+
+.product-review-write h2 div{
+	position: absolute;
+	top: 85px;
+	right: 100px;
+}
+
+.product-review-write h2 span.spt_bg{
+	width: 20px;
+	height: 20px;
+	background-position:-50px 0;
+}
+
+.product-review-write .prod_tit{
+	margin-bottom: 50px;
+	font:16px/16px 'NotoSansKRRegular','Nanum Gothic';
+}
+
+.product-review-write .write_form{
+	position: relative;
+}
+
+.product-review-write .write_form.ct950{
+	width: 885px;
+}
+
+.product-review-write .write_form .count{
+	width: 100%;
+	height: 20px;
+	display: block;
+	position: absolute;
+	bottom:-30px;
 	left: 0;
 }
 
-.product-badge span{
-	height: 17px;
-	display: block;
-    font:11px 'adihaus';
-    padding: 3px 10px 0;
-    color: #fff;
-}
-
-.product-badge.new span{
-	background:rgb(48,149,75);
-	background:rgba(48,149,75,0.8);
-}
-
-.product-badge.online_only span{
-	background:rgb(35,158,145);
-	background:rgba(35,158,145,0.8);
-}
-
-.product-badge.best span{
-	background:rgb(230,175,7);
-	background:rgba(230,175,7,0.8);
-}
-
-.product-badge.sale span{
-	background:rgb(197,54,34);
-	background:rgba(197,54,34,0.8);
-}
-
-.product-badge.mi span{
-	padding-right:25px;
-	background:rgb(0,0,0) url('//image.adidas.co.kr/images/adidas/common/ico_customize.png') 59px 3px no-repeat;
-	background-color:rgba(0,0,0,0.8);
-}
-
-.product-badge.mi span em{
-	color:#407DBE;
-}
-
-.product-badge.oneday span{
-	padding-right: 35px;
-	background: #474748 url('//image.adidas.co.kr/images/adidas/common/ico_one_day_deliv.png') 102px 6px no-repeat;
-	background-color:rgba(0,0,0,0.6);
-}
-
-/* Tooltip layer */
-.tooltip-layer{
-	 position: absolute;
-	 top: -20px;
-	 left: 20px;
-	 display: none;
-	 z-index: 50;
-}
-
-.tooltip-layer.active{
-	display: block;
-}
-
-.tooltip-layer .arrow{
-	width: 9px !important;
-	height: 14px !important;
-	background-position: -290px -120px !important;
+.product-review-write .write_form .count div{
+	width: 100%;
+	height: 20px;
 	position: absolute;
-	top: 50%;
-	left: -7px;
-	margin-top: -7px;
+	top: 0;
+	left: 0;
+	font: 13px/13px 'NotoSansKRRegular','Nanum Gothic';
 }
 
-.tooltip-layer .tooltip-contents{
-	display: block;
-	background: #fff;
-	padding: 12px 15px;
-	border: 1px solid  #ccc;
-	-webkit-box-shadow: 0 6px 12px rgba(68,68,68,0.1);
-	box-shadow: 0 6px 12px rgba(68,68,68,0.1);
+.product-review-write .write_form .count div.field_helper{
+	color: #aaa;
 }
 
-/*rating-star*/
-
-/* rating */
-.rating-star{
-	position: relative;
-}
-
-.rating-star::after{
-	content:'.'; display:block; height:0; font-size:0; clear:both; visibility:hidden;
-}
-
-.rating-star .star-container{
-	position: relative;
-	display: inline-block;
-	vertical-align: middle;
-}
-
-.rating-star .star-container .user_id{
+.product-review-write .write_form .tip_box{
+	width: 220px;
 	position: absolute;
-	top:0;
-	left:100px;
-	display: inline-block;
-	font:14px/14px 'dinpro','Nanum Gothic';
-	letter-spacing: 0.7px;
-	color:#555;
-
+	top: 0;
+	right:38px;
 }
 
-.rating-star .star-container .star-bg{
+.product-review-write .write_form .review_form{
+	padding-top: 20px;
+}
+
+.product-review-write .write_form .review_form table{
+	width: 875px;
+}
+
+.product-review-write .write_form .review_form table .tr_tit .desc{
+	position: relative;
+	height: 30px;
+	color: #ab2328;
+}
+
+.product-review-write .write_form .review_form table .tr_tit .desc span{
 	width: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
-}
-.rating-star .star-container .star-bg img{
-	width: 62px;
+	line-height:16px;
 }
 
-.rating-star .star-container .star-point{
+.product-review-write .write_form .review_form table .tr_tit .desc span#filed_counter{
+	display: none;
+	color: #333;
+}
+
+.product-review-write .write_form .review_form table .tr_tit textarea{
+	width: 445px;
+	height: 50px;
+	border-width:0 0 1px 0;
+	outline: none;
+	color: #aaa;
+}
+
+.product-review-write .write_form .review_form table .tr_tit textarea.focused{
+	color: #000;
+}
+
+.product-review-write .write_form .review_form table .tr_tit textarea.focused_line{
+	border-bottom: 2px solid  #000;
+	height: 49px;
+}
+
+.product-review-write .write_form .review_form table .tr_tit textarea.modified{
+	border-bottom: 2px solid  #000;
+	height: 49px;
+	color: #000;
+}
+
+.product-review-write .write_form .write_table{
+	width: 585px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.product-review-write .write_form .write_table th{
+	width: 140px;
+	padding-top: 28px;
+	font:13px/13px 'NotoSansKR','Nanum Gothic';
+	color: #000;
+	vertical-align: top;
+	text-align: left;
+}
+
+.product-review-write .write_form .write_table th.vmd{
+	padding-top: 0;
+	vertical-align: middle;
+}
+
+.product-review-write .write_form .write_table .tr_stars th{
+	padding-top: 14px;
+}
+
+.product-review-write .write_form .write_table td .desc{
+	margin-top: 15px;
+	font:12px/15px 'NotoSansKRRegular','Nanum Gothic';
+	color: #999;
+}
+
+.product-review-write .write_form input.t_ipt{
+	width: 723px;
+	padding-left: 10px;
+	height: 36px;
+	border: 1px solid  #c8cbcc;
+	font:12px/36px 'NotoSansKRRegular','Nanum Gothic';
+}
+
+.product-review-write .write_form .write_table .rating_star{
+	height: 65px;
 	position: relative;
 	overflow: hidden;
 }
 
-.rating-star .star-container .star-point img{
-	width: 62px;
-	vertical-align:top;
+.product-review-write .write_form .write_table .rating_star a{
+	width: 36px;
+	height: 34px;
+	margin-right: 2px;
+	float: left;
 }
 
-.ct950{width:950px;margin:0 auto;}
+.product-review-write .write_form .write_table .rating_star a.on{
+	background-position: 0 -45px;
+}
+.product-review-write .write_form .write_table .tr_stars .status{
+	position: absolute;
+	top: 7px;
+    left: 210px;
+	font:12px 'NotoSansKRRegular','Nanum Gothic';
+	color: #000;
+}
+
+.product-review-write .rating_radio{
+	height: 90px;
+}
+
+.product-review-write .radio_container{
+	width: 380px;
+	height: 36px;
+	position: relative;
+	background: none;
+}
+
+.product-review-write .radio_container>div{
+	position: relative;
+	margin-right: 50px;
+	padding: 0 6px;
+	float: left;
+	background: #fff;
+	z-index: 2;
+}
+
+.product-review-write .radio_container>div.on a{
+	background-position:-69px -59px;
+}
+
+.product-review-write .radio_container>div.pn5{
+	margin-right: 0;
+}
+
+.product-review-write .radio_container .line_bg{
+	width: 100%;
+	height: 2px;
+	display: block;
+	position: absolute;
+	top: 16px;
+	left: 0;
+	background: #c9cccd;
+}
+
+.product-review-write .radio_container a{
+	width: 24px;
+	height: 24px;
+	margin: 6px 0;
+	float: left;
+	display: block;
+	background-position: -69px -1px;
+}
+
+.product-review-write .radio_container a.p5{
+	margin-right: 0;
+}
+
+.product-review-write .radio_container a:hover{
+	background-position: -69px -30px;
+}
+
+.product-review-write .radio_container a.on{
+	background-position: -69px -59px;
+}
+
+.product-review-write .rating_radio .labels{
+	width: 380px;
+	position: relative;
+}
+
+.product-review-write .rating_radio .labels span{
+	width: 100px;
+	height: 17px;
+	display: block;
+	color: #999;
+	font:12px 'NotoSansKRRegular','Nanum Gothic';
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+}
+
+.product-review-write .rating_radio .labels span.p1{
+	text-align: left;
+}
+
+.product-review-write .rating_radio .labels span.p2{
+	left: 55px;
+}
+
+.product-review-write .rating_radio .labels span.p3{
+	left: 140px;
+}
+
+.product-review-write .rating_radio .labels span.p4{
+	left: 227px;
+}
+
+.product-review-write .rating_radio .labels span.p5{
+	right: 0;
+	left: auto;
+	text-align: right;
+}
+
+.product-review-write .rating_radio .status{
+	width: 100%;
+	height: 18px;
+	text-align: left;
+	display: none;
+	font:12px 'NotoSansKRRegular','Nanum Gothic';
+	color: #000;
+}
+
+.product-review-write .write_form .write_table td textarea{
+	width: 723px;
+	height: 218px;
+	padding: 5px;
+	border: 1px solid #c8cbcc;
+	font:12px/19px 'NotoSansKRRegular','Nanum Gothic';
+	color: #000;
+}
+
+.product-review-write .write_form .write_table .tr_content td .desc{
+	position: relative;
+	color: #0386cd;
+}
+
+.product-review-write .write_form .write_table .tr_content td .desc .count{
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #999;
+}
+
+.product-review-write .write_form .write_table .tr_tit th{
+	padding-top: 12px;
+}
+
+.product-review-write .write_form .write_table .tr_photos th{
+	padding-top: 49px;
+}
+
+.product-review-write .write_form .write_table .tr_content th{
+	padding-top: 60px;
+}
+
+.product-review-write .write_form .write_table .tr_photos .desc{
+	margin-bottom: 20px;
+}
+
+.product-review-write .write_form .write_table .photos_container{
+	padding-top: 20px;
+}
+
+.product-review-write .write_form .write_table .photos_container>*{
+	position: relative;
+	float: left;
+	margin-right: 5px;
+}
+
+.product-review-write .write_form .write_table .photos_container .btn_upload{
+	width: 63px;
+	height: 63px;
+	position: relative;
+	display: block;
+	border: 1px solid  #c8cbcc;
+}
+
+.product-review-write .write_form .write_table .photos_container .btn_upload .sptbg{
+	width: 17px;
+	height: 17px;
+	background-position:-120px 0;
+	position: absolute;
+	top: 23px;
+	left: 23px;
+}
+
+.product-review-write .write_form .write_table .photos_container .photo_box{
+	width: 65px;
+	height: 65px;
+	overflow: hidden;
+	background: #f2f6f8;
+}
+
+.product-review-write .write_form .write_table .photos_container .photo_box .close{
+	width: 19px;
+	height: 19px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-position:-120px -30px;
+	z-index: 2;
+}
+
+.product-review-write .write_form .write_table .photos_container .photo_box img{
+	width: 100%;
+}
+
+.product-review-write .write_form .write_table .btn_area{
+	overflow: hidden;
+	padding: 40px 0 120px 142px;
+}
+
+.product-review-write .write_form .write_table .btn_area .btn-ctm{
+	width: 280px;
+	float: left;
+	margin-right: 10px;
+}
+
+.product-review-write .write_form .write_table.staff_form{
+	width: 885px;
+	margin: 0 auto;
+	outline: 0;
+	border-top: 2px solid  #000;
+}
+
+.product-review-write .write_form .write_table.staff_form .btn_area{
+	padding:20px 0 100px 190px;
+}
+
+.product-review-write .write_form .write_table.staff_form .btn_area .btn-ctm{
+	margin-right: 10px;
+	float: left;
+}
+
+.product-review-write .write_form .spec_form{
+	width: 875px;
+	position: relative;
+	padding-bottom:35px;
+	margin: 0;
+	border-bottom-width: 0;
+}
+
+*:first-child+html .product-review-write .write_form .spec_form{
+	z-index: 10;
+}
+
+.product-review-write .write_form .spec_form .tip_box{
+	right: 0;
+}
+
+.product-review-write .write_form .spec_form table{
+	width: 650px;
+	table-layout: fixed;
+}
+
+.product-review-write .write_form .spec_form th{
+	width: 90px;
+	text-align: left;
+	font:13px/13px 'NotoSansKR','Nanum Gothic';
+	color: #000;
+	vertical-align: top;
+}
+
+.product-review-write .write_form .spec_form th.th2{
+	width: 90px;
+	padding-left: 55px;
+}
+
+.product-review-write .write_form .spec_form td{
+	padding: 15px 0;
+}
+
+.product-review-write .write_form .spec_form td .desc{
+	margin-top: 10px;
+	font:12px/12px 'NotoSansKR','Nanum Gothic';
+	color: #999;
+}
+
+.product-review-write .write_form .spec_form td .items_wrap{
+	margin-bottom: 15px;
+}
+
+.product-review-write .write_form .spec_form td .items_wrap .selectbox-ctm{
+	width: 220px;
+	float: left;
+}
+
+.product-review-write .write_form .spec_form td .items_wrap .selectbox-ctm li a{
+	padding-left: 5px;
+}
+
+.product-review-write .write_form .spec_form td .items_wrap .selectbox-ctm>a{
+	font-size: 13px;
+	padding-left: 5px;
+}
+
+.product-review-write .write_form .spec_form td .items_wrap .select_store{
+	margin-left: 8px;
+}
+
+.product-review-write .write_form .spec_form td .items_wrap .select_size{
+	width: 105px;
+}
+
+.product-review-write .write_form .spec_form .t_ipt{
+	width: 453px;
+	outline: none;
+	color: #000;
+}
+
+*:first-child+html .product-review-write .write_form .spec_form .t_ipt{
+	width: 451px;
+}
+
+.product-review-write .write_form .spec_form textarea{
+	width: 445px;
+	height: 50px;
+	border-width:0 0 1px 0;
+	outline: none;
+	color: #aaa;
+	font:12px/19px 'NotoSansKRRegular','Nanum Gothic';
+}
+
+.product-review-write .write_form .spec_form textarea.focused{
+	color: #000;
+}
+
+.product-review-write .write_form .spec_form textarea.focused_line{
+	border-bottom: 2px solid  #000;
+	height: 49px;
+}
+
+.product-review-write .write_form .spec_form textarea.modified{
+	color: #000;
+	border-bottom: 2px solid  #000;
+	height: 49px;
+}
+
+.product-review-write .write_form .spec_form .ipt_wrap{
+	width: 103px;
+	height: 38px;
+	float: left;
+	margin-right: 8px;
+	position: relative;
+	border: 1px solid  #c8cbcc;
+}
+
+.product-review-write .write_form .spec_form .ipt_wrap .unit{
+	position: absolute;
+	top: 0;
+	right:15px;
+	color: #000;
+	font:13px/38px 'NotoSansKR','Nanum Gothic';
+}
+
+.product-review-write .write_form .spec_form .ipt_wrap .t_ipt{
+	width: 50px;
+	border-width: 0;
+}
+
+*:first-child+html .product-review-write .write_form .spec_form .ipt_wrap .t_ipt{
+	width: 50px;
+	height: 34px;
+}
+
+.product-review-write .write_form .spec_form .selectbox-ctm,
+.product-review-write .write_form .spec_form .selectbox-ctm>a{
+	height: 38px;
+	line-height: 38px;
+}
+
+.product-review-write .write_form .spec_form .selectbox-ctm>.select-contents{
+	top: 38px;
+}
+
+.product-review-write .write_table.staff_form{
+	width: 875px;
+	padding:50px 0 0;
+	margin: 0 auto;
+}
+
+.product-review-write .write_table.staff_form table{
+	width: 100%;
+}
+
+.product-review-write .write_table.staff_form th{
+	width: 65px;
+	padding-top: 30px;
+	padding:30px 0 0 0;
+	font-size: 13px;
+}
+
+.product-review-write .write_table.staff_form .staff_upload_box{
+	height: 70px;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.product-review-write .write_table.staff_form .staff_upload_box .upload_img{
+	width: 70px;
+	height: 70px;
+	position: relative;
+	margin-right: 20px;
+	overflow: hidden;
+	float: left;
+	border: 1px solid  #c8cbcc;
+}
+
+.product-review-write .write_table.staff_form .staff_upload_box .upload_img .imgbox{
+	width: 70px;
+	height: 70px;
+	position: relative;
+	overflow: hidden;
+}
+
+.product-review-write .write_table.staff_form .staff_upload_box .upload_img .imgbox img{
+	width: 100%;
+}
+
+.product-review-write .write_table.staff_form .staff_upload_box .upload_img .imgbox .close{
+	width: 19px;
+	height: 19px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-position: -120px -30px;
+	z-index: 2;
+}
+
+.product-review-write .write_table.staff_form .staff_upload_box .btn_upload{
+	width: 70px;
+	height: 70px;
+	display: block;
+	position: relative;
+}
+
+.product-review-write .write_table.staff_form .staff_upload_box .btn_upload .sptbg{
+	width: 17px;
+	height: 17px;
+	background-position:-120px 0;
+	position: absolute;
+	top:27px;
+	left:27px;
+}
+
+.product-review-write .write_table.staff_form .staff_upload_box .btn_upload .txt{
+	width: 100%;
+	display: block;
+	color: #0386cd;
+	font:13px/13px 'NotoSansKR','Nanum Gothic';
+	text-align: center;
+	position: absolute;
+	top:88px;
+	left: 0;
+}
+
+.product-review-write .write_table.staff_form .staff_upload_box .t_area{
+	width: 727px;
+	height: 45px;
+	position: relative;
+	float: left;
+}
+
+.product-review-write .write_table.staff_form .staff_upload_box .t_area textarea{
+	width: 730px;
+	height: 45px;
+	padding: 0;
+	border-width: 0 0 1px 0;
+	border-color: #c8cbcc;
+	outline:none;
+}
+
+.product-review-write .write_table.staff_form .staff_upload_box .t_area textarea.focused_line{
+	height: 44px;
+	border-bottom: 2px solid  #000;
+}
+
+.product-review-write .write_table.staff_form .staff_upload_box .t_area textarea.modi{
+	height: 44px;
+	border-bottom: 2px solid  #000;
+}
+
+.product-review-write .write_table.staff_form .staff_upload_box .t_area .count{
+	position: absolute;
+	bottom: -30px;
+	left: 0;
+	color: #999;
+	font:13px/13px 'NotoSansKRRegular','Nanum Gothic';
+}
