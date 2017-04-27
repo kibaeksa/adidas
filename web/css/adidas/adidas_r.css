@@ -667,6 +667,16 @@ a:active {color:#797b80;text-decoration:none;}
 	font:14px 'adihaus';
 }
 
+.products-list-tpl.related-products .products-list-wrapper .products-list li .price{
+	bottom:30px;
+}
+
+.products-list-tpl.related-products .products-list-wrapper .products-list li .price .price-container .prc.line{
+	position: relative;
+    top: 0;
+    margin-right: 10px;
+}
+
 .products-list-tpl .products-list-wrapper .num{
 	position: absolute;
 	bottom: 0;
