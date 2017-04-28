@@ -300,13 +300,45 @@ $width600:600px;
 			.imgs{
 				.col{
 					.img3{
-					    background: url("/images/adidas/event/creator_know_how/02/gal3.jpg") no-repeat;
+					    background: url("http://image.adidas.co.kr/images/adidas/event/creator_know_how/02/gal3.jpg") no-repeat;
 					}
 				}
 			}
 		}
 	}
-
+	&.kimseunghyeon{
+		.content{
+			>h2{
+				color:#193055;
+			}
+			img.img_tit{
+				top: -93px;
+			    right: -19px;
+			}
+		}
+		.products{
+			.txt_bg{
+				>img.img1{
+					top:393px;
+				}
+				>img.img2{
+					top:1245px;
+				}
+				>img.img3{
+					top:1950px;
+				}
+			}
+		}
+		.collections{
+			.imgs{
+				.col{
+					.img3{
+						background: url("http://image.adidas.co.kr/images/adidas/event/creator_know_how/03/gal3.jpg") no-repeat;
+					}
+				}
+			}
+		}
+	}
 	.main_visual{
 		position: relative;
 		height: 643px;
@@ -354,18 +386,19 @@ $width600:600px;
 
 							/*training 12 name title*/
 							&.ord1{
-								.thumb{ background-image: url("/images/adidas/event/creator_know_how/creator1.png"); }
-								.name{ background-image: url("/images/adidas/event/creator_know_how/01/slider_title01.png"); }
+								.thumb{ background-image: url("http://image.adidas.co.kr/images/adidas/event/creator_know_how/creator1.png"); }
+								.name{ background-image: url("http://image.adidas.co.kr/images/adidas/event/creator_know_how/01/slider_title01.png"); }
 							}
 							&.ord2{
-								.thumb{ background-image: url("/images/adidas/event/creator_know_how/creator2.png"); }
-								.name{ background-image: url("/images/adidas/event/creator_know_how/02/slider_title.png"); }
+								.thumb{ background-image: url("http://image.adidas.co.kr/images/adidas/event/creator_know_how/creator2.png"); }
+								.name{ background-image: url("http://image.adidas.co.kr/images/adidas/event/creator_know_how/02/slider_title.png"); }
 							}
 							&.ord3{
-								.name{ background-image: url("/images/adidas/event/creator_know_how/03/slider_title.png"); }
+								.thumb{ background-image: url("http://image.adidas.co.kr/images/adidas/event/creator_know_how/creator3.png"); }
+								.name{ background-image: url("http://image.adidas.co.kr/images/adidas/event/creator_know_how/03/slider_title.png"); }
 							}
 							&.comming{
-								.thumb{ background-image: url("/images/adidas/event/creator_know_how/comming.png"); }
+								.thumb{ background-image: url("http://image.adidas.co.kr/images/adidas/event/creator_know_how/comming.png"); }
 								pointer-events: none;
 							}
 							/*training 12 name title end*/
@@ -394,7 +427,7 @@ $width600:600px;
 							&:after{
 								content:'';
 								display: inline-block;
-								background-image: url("/images/adidas/event/creator_know_how/stroke.png");
+								background-image: url("http://image.adidas.co.kr/images/adidas/event/creator_know_how/stroke.png");
 								background-repeat: no-repeat;
 								background-position: center center;
 								position: absolute;
@@ -490,11 +523,11 @@ $width600:600px;
 			margin: 0 auto;
 			width: 950px;
 		}
-
 		h2{
 			position: relative;
-			top:65px;
-			font:110px 'adinenuPro-black','Nanum Gothic';
+			padding-top: 80px;
+			height: 83px;
+			font:110px/110px 'adinenuPro-black','Nanum Gothic';
 			text-transform: uppercase;
 			color:#f36724;
 			text-align: center;
@@ -507,7 +540,7 @@ $width600:600px;
 		}
 		.intro{
 			position: relative;
-			margin-top: 108px;
+			margin-top: 80px;
 			.img{
 				float:left;
 			}
@@ -558,7 +591,7 @@ $width600:600px;
 			@include opacity(0);
 			@include prefix-css3(transition,all 0.4s ease-in);
 
-			padding: 63px 0 0 0;
+			padding: 70px 0 0 0;
 			z-index: 1;
 			text-align: center;
 			.bar{
@@ -571,12 +604,13 @@ $width600:600px;
 			p{
 				text-align: center;
 				&.thin{
-					font:46px 'NotoSansKRThin', 'Nanum Gothic';
+					margin-bottom: 18px;
+					font:46px/46px 'NotoSansKRThin', 'Nanum Gothic';
 					color:#fff;
 				}
 				&.eng{
 					text-transform: uppercase;
-					font:56px 'adinenuPro-bold', 'Nanum Gothic';
+					font:56px/56px 'adinenuPro-bold', 'Nanum Gothic';
 					color:#fff;
 				}
 				&.regular{
@@ -670,7 +704,7 @@ $width600:600px;
 				float:left;
 				p{
 					&.title{
-						font:30px 'NotosansKRBold','Nanum Gothic';
+						font:30px/30px 'NotosansKRBold','Nanum Gothic';
 						color:#000;
 						letter-spacing: -2px;
 						span{
@@ -752,7 +786,7 @@ $width600:600px;
 					overflow:hidden;
 					@include opacity (0);
 					@include prefix-css3(transition, all 1.2s);
-					background: url("/images/adidas/event/creator_know_how/01/gal3.jpg") no-repeat;
+					background: url("http://image.adidas.co.kr/images/adidas/event/creator_know_how/01/gal3.jpg") no-repeat;
 					background-size: 100% 100%;
 					p{
 						text-align: center;
