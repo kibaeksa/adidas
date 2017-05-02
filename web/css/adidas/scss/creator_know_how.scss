@@ -311,6 +311,22 @@ $width600:600px;
 			>h2{
 				color:#193055;
 			}
+			.intro{
+				.desc{
+					>p{
+						top: 260px;
+						font: 18px/26px 'NotosansKRRegular','Nanum Gothic';
+						color: #574747;
+						letter-spacing: -0.7px;
+						strong{
+							color: #141010;
+						}
+						&.second{
+							top: 331px;
+						}
+					}
+				}
+			}
 			img.img_tit{
 				top: -93px;
 			    right: -19px;
@@ -349,9 +365,6 @@ $width600:600px;
 				position: absolute;
 				left:50%;
 				margin-left: -952px;
-				img{
-					// width: 100%;
-				}
 			}
 		}
 		.logo{
