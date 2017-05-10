@@ -6365,7 +6365,7 @@ div.layerpop_wrap#nomem_order_popup .inner .content .desc{
 }
 #contents>.product_view .product_order .today_delivery .txt_area{
     float: left;
-	padding-right: 60px;
+	padding-right: 65px;
     display: inline-block;
     vertical-align: middle;
 }
@@ -6384,11 +6384,13 @@ div.layerpop_wrap#nomem_order_popup .inner .content .desc{
 #contents>.product_view .product_order .today_delivery>a.address_edit{
   width: auto;
   position: absolute;
-  top: 0;
-  text-align: right;
+  top: 50%;
   right: 10px;
+  text-align: right;
   font: 1.2rem/45px 'NotoSansKRRegular';
   padding: 23px 0 22px 0;
+  transform:translate3d(0,-50%,0);
+  -webkit-transform:translate3d(0,-50%,0);
 }
 #contents>.product_view .product_order .today_delivery>a.address_edit:after{
   margin-left: 2px;
@@ -9770,7 +9772,7 @@ footer#footer .f_logo img{
     height: 14px;
     margin-right: 3px;
     display: inline-block;
-    background: url(../../../images/reebok/ico_truck_dark.png) 0 0 no-repeat;
+    background: url(/images/reebok/ico_truck_dark.png) 0 0 no-repeat;
     vertical-align: middle;
     -webkit-background-size: 18px auto;
     background-size: 18px auto;
