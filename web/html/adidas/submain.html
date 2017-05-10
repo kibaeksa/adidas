@@ -23,16 +23,16 @@
 					speed:800,
 					easing:'easeOutCubic',
 					autoControl:false,
-					loopStyle:true,	
+					loopStyle:true,
 				});
 			});
-			
+
 		})(jQuery);
-	
+
 	</script>
  </head>
 
- <body>	
+ <body>
 
 	<div id="wrap">
 		<div class="top_bnn"><img src="/images/adidas/temp/top131118.jpg" border="0" usemap="#Map" alt=""/>
@@ -44,7 +44,7 @@
 		</div>
 		<!-- 130620 start -->
 		<div class="skip_nav">
-			<!--  
+			<!--
 				main에만 들어갈 소스
 			-->
 			<h2 class="blind">skip navigation</h2>
@@ -54,7 +54,7 @@
 			<a href="#best_prodlist"onclick="document.getElementById('best_prodlist').tabIndex = -1;document.getElementById('best_prodlist').focus();return false;">베스트상품 바로가기</a>
 			<a href="#new_prodlist"onclick="document.getElementById('new_prodlist').tabIndex = -1;document.getElementById('new_prodlist').focus();return false;">신상품 바로가기</a>
 			<a href="#expl_more"onclick="document.getElementById('expl_more').tabIndex = -1;document.getElementById('expl_more').focus();return false;">EXPLORE MORE 바로가기</a>
-			<a href="#footer_r" onclick="document.getElementById('footer_r').tabIndex = -1;document.getElementById('footer_r').focus();return false;">하단 바로가기</a>		
+			<a href="#footer_r" onclick="document.getElementById('footer_r').tabIndex = -1;document.getElementById('footer_r').focus();return false;">하단 바로가기</a>
 			<!--
 				나머지 페이지에 공통으로 들어갈 소스
 			<h2 class="blind">skip navigation</h2>
@@ -66,516 +66,1227 @@
 		</div>
 		<!-- 130620 start -->
 
-		<div id="header_r" class="m20160302">
-			<!-- 160302 탑배너 버튼 새로추가 -->
-			<a href="#" class="topbnn_toggle spt_bg"></a>
-			<!-- 160302 div 추가 -->
+        <div id="header-20160315">
+		<a href="#" class="topbnn_toggle spt_bg"></a>
+		<div class="util_box">
+			<div class="bar_rpt"></div>
 			<div class="ct950">
-				<h1><a href="#">아디다스 공식 온라인 스토어</a></h1>
+				<h1><a href="#" class="spt_bg">로고</a></h1>
+				<ul class="utils_menu">
+					<li>
+						<a href="#">주문조회</a>
+					</li>
+					<li>
+						<a href="#">가입 후 혜택 받기</a>
+					</li>
+					<li class="login last">
+						<a href="#">로그인</a>
+						<div class="spt_bg ico_login"></div>
+					</li>
+				</ul>
+				<div class="search_area">
+					<div class="search">
+						<form id="frmSrchTop" name="frmSrchTop" method="post" onsubmit="return false;" action="">
+							<input type="hidden" id="topSiteCD" name="topSiteCD" value="1">
+							<input type="hidden" id="topSearchCheck" name="topSearchCheck" value="0">
 
-				<!-- 
-				160302 
-				기존 다른국가 사이트 레이어 제거
+							<label for="S_PROD_NM_TOP" class="blind">검색</label>
+							<input type="text" name="S_PROD_NM_TOP" id="S_PROD_NM_TOP" class="sh" onfocus="this.value='';document.getElementById('S_SEARCH_WORDS_URL').value='';" onmousedown="dqtop_setTextbox('1',event);" onkeypress="keyDownTop('1',event);" autocomplete="off">
+							<a href="#" onclick="fn_search_top();" onmousedown="javascript:fn_trkClickTrace('^최상단^검색');" class="spt_bg btn">검색</a>
 
-				<p class="language"><a href="#" onclick="language_btn();return false;"><img src="images/adidas/common/btn_korea.gif" alt="language"></a></p>
-				<div id="language_layer" style="display:none;">
-					<ul>
-						<li class="nation1"><a href="http://www.adidas.com/us/" target="_blank" class="arial" onmousedown="javascript:fn_trkClickTrace('^최상단^국가^미국');"><span class="spt_bg">&nbsp;</span>United States</a></li><li class="nation2"><a href="http://www.adidas.ca/shop" target="_blank" class="arial" onmousedown="javascript:fn_trkClickTrace('^최상단^국가^캐나다');"><span class="spt_bg">&nbsp;</span>Canada</a></li><li class="nation3"><a href="http://www.adidas.de/shop" target="_blank" class="arial" onmousedown="javascript:fn_trkClickTrace('^최상단^국가^독일');"><span class="spt_bg">&nbsp;</span>Germany</a></li><li class="nation4"><a href="http://www.adidas.fr/shop" target="_blank" class="arial" onmousedown="javascript:fn_trkClickTrace('^최상단^국가^프랑스');"><span class="spt_bg">&nbsp;</span>France</a></li><li class="nation5"><a href="http://www.adidas.nl/shop" target="_blank" class="arial" onmousedown="javascript:fn_trkClickTrace('^최상단^국가^네덜란드');"><span class="spt_bg">&nbsp;</span>The Netherlands</a></li><li class="nation6"><a href="http://www.adidas.co.uk/shop" target="_blank" class="arial" onmousedown="javascript:fn_trkClickTrace('^최상단^국가^영국');"><span class="spt_bg">&nbsp;</span>United Kingdom</a></li><li class="nation7"><a href="http://www.adidas.es/" target="_blank" class="arial" onmousedown="javascript:fn_trkClickTrace('^최상단^국가^스페인');"><span class="spt_bg">&nbsp;</span>Spain</a></li><li class="nation8"><a href="http://www.adidas.it/" target="_blank" class="arial" onmousedown="javascript:fn_trkClickTrace('^최상단^국가^이탈리아');"><span class="spt_bg">&nbsp;</span>Italy</a></li><li class="nation9"><a href="http://www.adidas.ru/shop" target="_blank" class="arial" onmousedown="javascript:fn_trkClickTrace('^최상단^국가^러시아');"><span class="spt_bg">&nbsp;</span>Russia</a></li><li class="nation10"><a href="http://shop.adidas.jp/pc/" target="_blank" class="arial" onmousedown="javascript:fn_trkClickTrace('^최상단^국가^일본');"><span class="spt_bg">&nbsp;</span>Japan</a></li><li class="nation11"><a href="http://shop.adidas.cn/" target="_blank" class="arial" onmousedown="javascript:fn_trkClickTrace('^최상단^국가^중국');"><span class="spt_bg">&nbsp;</span>China</a></li><li class="nation12"><a href="http://www.adidas.co/shop" target="_blank" class="arial" onmousedown="javascript:fn_trkClickTrace('^최상단^국가^콜롬비아');"><span class="spt_bg">&nbsp;</span>Colombia</a></li><li class="nation13"><a href="http://www.adidas.com.br/shop" target="_blank" class="arial" onmousedown="javascript:fn_trkClickTrace('^최상단^국가^브라질');"><span class="spt_bg">&nbsp;</span>Brazil</a></li>
-					</ul>
+							<input type="hidden" name="S_SEARCH_WORDS_URL" id="S_SEARCH_WORDS_URL" value="http://shop.adidas.co.kr/PF050101.action?S_PROD_NM=360%20I"><script type="text/javascript" src="/js/search/dqAutoCompleteTopR.js"></script>
+							<div class="search_box" id="dqAutoTop" style="display:none;z-index:1000;" onmouseover="dqtop_setMouseon();" onmouseout="dqtop_setMouseoff();"></div>
+						</form>
+					</div>
 				</div>
-				 -->
-				
-				<div class="search">
-					<input type="text" class="sh" style="border-width: 0px;">
-					<!-- 160302 btn_search_top2.gif 이미지 교체 -->
-					<a onclick="testMove();return false" href="#"><img src="/images/adidas/common/btn_search_top2.gif" alt="search"></a>
+				<!-- //search_box -->
+				<div class="market">
+					<a href="#">
+						<span class="spt_bg"></span>
+						<strong>6</strong>
+					</a>
 
-					<div class="search_layerbox" id="dqAutoTop" style="display: none; z-index: 1000;" onmouseover="dqtop_setMouseon();" onmouseout="dqtop_setMouseoff();">
+					<!-- 161208 start -->
+					<div class="no_data_layer">
+						<span class="spt_bg"></span> 장바구니가 비어있습니다.
+					</div>
+					<!-- //161208 -->
+
+					<!--
+					161206 장바구니 레이어 삭제
+					<div class="market_layer">
+						<div class="market_header">
+							<span>장바구니 </span>
+							<strong>5개</strong>
+							<a href="#" class="spt_bg close">닫기</a>
+						</div>
+
+						<div class="market_bottom" id="market_bottom">
+							<div class="desc"><span class="spt_bg"></span>한 달간 전 제품 무료배송 ( 2016/07/15 ~ 08/15 )</div>
+						</div>
+						<div class="market_body" id="market_body">
+							<div class="mkt_box">
+								<div class="prod_img">
+									<img src="http://shop.adidas.co.kr/upload/prod/basic/94/S20528-1_94X94.jpg" alt="" width="94" height="94">
+								</div>
+								<div class="prod_info">
+									<p class="tit">[Accessories] 클라이마 3S 캡 </p>
+									<p class="prod_code">상품코드 : <span>S20528 (WHITE)</span></p>
+									<p class="amount">주문수량 : 1개</p>
+									<p class="size">사이즈 : </p>
+									<p class="price">주문금액 : 25,000원</p>
+									<p class="prod_link"><a href="http://shop.adidas.co.kr/PF020401.action?PROD_CD=S20528" class="spt_bg">상품 바로가기</a></p>
+								</div>
+							</div>
+							<div class="mkt_box">
+								<div class="prod_img">
+									<img src="http://shop.adidas.co.kr/upload/prod/basic/94/S79030-1_94X94.jpg" width="94" height="94">
+								</div>
+								<div class="prod_info">
+									<p class="tit">[Men's Originals] 로스엔젤레스</p>
+									<p class="prod_code">상품코드 : <span>S79030 (WHITE/WHITE/BLUE)</span></p>
+									<p class="amount">주문수량 : 1개</p>
+									<p class="size">사이즈 : 95</p>
+									<p class="price">주문금액 : 109,000원</p>
+									<p class="prod_link"><a href="http://shop.adidas.co.kr/PF020401.action?PROD_CD=S79030" class="spt_bg">상품 바로가기</a></p>
+								</div>
+							</div>
+							<div class="mkt_box">
+								<div class="prod_img">
+									<img src="http://shop.adidas.co.kr/upload/prod/basic/94/S79030-1_94X94.jpg" width="94" height="94">
+								</div>
+								<div class="prod_info">
+									<p class="tit">[Men's Originals] 로스엔젤레스</p>
+									<p class="prod_code">상품코드 : <span>S79030 (WHITE/WHITE/BLUE)</span></p>
+									<p class="amount">주문수량 : 1개</p>
+									<p class="size">사이즈 : 95</p>
+									<p class="price">주문금액 : 109,000원</p>
+									<p class="prod_link"><a href="http://shop.adidas.co.kr/PF020401.action?PROD_CD=S79030" class="spt_bg">상품 바로가기</a></p>
+								</div>
+							</div>
+							<div class="mkt_box">
+								<div class="prod_img">
+									<img src="http://shop.adidas.co.kr/upload/prod/basic/94/S79030-1_94X94.jpg" width="94" height="94">
+								</div>
+								<div class="prod_info">
+									<p class="tit">[Men's Originals] 로스엔젤레스</p>
+									<p class="prod_code">상품코드 : <span>S79030 (WHITE/WHITE/BLUE)</span></p>
+									<p class="amount">주문수량 : 1개</p>
+									<p class="size">사이즈 : 95</p>
+									<p class="price">주문금액 : 109,000원</p>
+									<p class="prod_link"><a href="http://shop.adidas.co.kr/PF020401.action?PROD_CD=S79030" class="spt_bg">상품 바로가기</a></p>
+								</div>
+							</div>
+							<div class="mkt_box">
+								<div class="prod_img">
+									<img src="http://shop.adidas.co.kr/upload/prod/basic/94/S79030-1_94X94.jpg" width="94" height="94">
+								</div>
+								<div class="prod_info">
+									<p class="tit">[Men's Originals] 로스엔젤레스</p>
+									<p class="prod_code">상품코드 : <span>S79030 (WHITE/WHITE/BLUE)</span></p>
+									<p class="amount">주문수량 : 1개</p>
+									<p class="size">사이즈 : 95</p>
+									<p class="price">주문금액 : 109,000원</p>
+									<p class="prod_link"><a href="http://shop.adidas.co.kr/PF020401.action?PROD_CD=S79030" class="spt_bg">상품 바로가기</a></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="market_bottom" id="market_bottom">
+							<div class="total_price">
+								<p>총 주문 금액 : <strong> 451,000</strong> 원</p>
+								<p class="point">예상 포인트 : <span> 22,550 </span><img alt="p" src="/images/adidas/mypage/ico_point.gif"></p>
+							</div>
+							<div class="go_market">
+								<a href="http://shop.adidas.co.kr/PF030101.action"><img src="/images/adidas/common/btn_go_market.gif" alt="장바구니 바로가기"></a>
+							</div>
+						</div>
+					</div> -->
+				</div>
+				<!-- //market -->
+
+				<!-- 160920 검색제안 -->
+				<div class="search-suggest" style="display:none;">
+					<div class="category_lits">
+						<h2>추천 카테고리</h2>
 						<ul>
-							<li>
-								<a href="#"><span>f</span>alcon elite 2 ..</a>
-								<input type="hidden" id="dqtop_acqHidden1" value="falcon elite 2 w">
-								<span id="dqtop_acq1" style="display:none">falcon elite 2 w</span>
-							</li>
-							<li>
-								<a href="#"><span>f</span>alcon elite 2 ..</a>
-								<input type="hidden" id="dqtop_acqHidden2" value="falcon elite 2 w">
-								<span id="dqtop_acq2" style="display:none">falcon elite 2 w</span>
-							</li>
-							<li>
-								<a href="#"><span>f</span>alcon elite 2 .alcon </a>
-								<input type="hidden" id="dqtop_acqHidden3" value="falcon elite 2 w">
-								<span id="dqtop_acq3" style="display:none">falcon elite 2 w</span>
-							</li>
-							<li>
-								<a href="#"><span>f</span>alcon elite 2 ..</a>
-								<input type="hidden" id="dqtop_acqHidden4" value="falcon elite 2 w">
-								<span id="dqtop_acq4" style="display:none">falcon elite 2 w</span>
-							</li>
-							<li>
-								<a href="#"><span>f</span>alcon elite 2 ..</a>
-								<input type="hidden" id="dqtop_acqHidden5" value="falcon elite 2 w">
-								<span id="dqtop_acq5" style="display:none">falcon elite 2 w</span>
-							</li>
-							<li>
-								<a href="#"><span>f</span>alcon elite 2 ..</a>
-								<input type="hidden" id="dqtop_acqHidden6" value="falcon elite 2 w">
-								<span id="dqtop_acq6" style="display:none">falcon elite 2 w</span>
-							</li>
-							<li>
-								<a href="#"><span>f</span>alcon elite 2 ..</a>
-								<input type="hidden" id="dqtop_acqHidden7" value="falcon elite 2 w">
-								<span id="dqtop_acq7" style="display:none">falcon elite 2 w</span>
-							</li>
+							<li><a href="#">슈퍼스타<span>&gt;</span>남성</a></li>
+							<li><a href="#">슈퍼스타<span>&gt;</span>여성</a></li>
+							<li><a href="#">슈퍼스타<span>&gt;</span>키즈</a></li>
+							<li><a href="#">슈퍼스타<span>&gt;</span>스포츠</a></li>
+							<li><a href="#">슈퍼스타<span>&gt;</span>오리지널</a></li>
+							<li><a href="#">슈퍼스타<span>&gt;</span>컬랙션</a></li>
 						</ul>
 					</div>
+
+					<div class="products_list">
+						<h2>추천 상품</h2>
+						<div class="box">
+							<a href="#">
+								<div class="img">
+									<img src="http://image.adidas.co.kr/upload/prod/basic/80/S31510-1_80X80.jpg" alt="">
+								</div>
+								<div class="info">
+									<div class="ctgr">UNISEX ORIGINALS</div>
+									<div class="tit">튜블라 레디얼</div>
+									<div class="price">
+										<div class="price-container">
+											<!-- 170104 원 / 세일가 추가 -->
+											<span class="prc line">109,000 <span class="won">원</span></span>
+											<span class="prc sale">87,200 <span class="won">원</span></span>
+										</div>
+									</div>
+									<div class="rating">
+										<div class="rating-star">
+											<div class="star-container">
+												<div class="star-point" style="width:98%;">
+													<img src="http://image.adidas.co.kr/images/adidas/common/ico_rating.png" alt="">
+												</div>
+												<div class="star-bg">
+													<img src="http://image.adidas.co.kr/images/adidas/common/ico_rating_empty.png" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- //rating -->
+								</div>
+								<!-- //info -->
+							</a>
+						</div>
+						<!-- //box -->
+
+						<div class="box">
+							<a href="#">
+								<div class="img">
+									<img src="http://image.adidas.co.kr/upload/prod/basic/80/AA2290-1_80X80.jpg" alt="">
+								</div>
+								<div class="info">
+									<div class="ctgr">ACCESSORIES</div>
+									<div class="tit">[온라인단독] 3S PER 앵클 양말 6P</div>
+									<div class="price">
+										<div class="price-container">
+											<!-- 170104 원 추가 -->
+											<span class="prc">109,000 <span class="won">원</span></span>
+										</div>
+									</div>
+									<div class="rating">
+										<div class="rating-star">
+											<div class="star-container">
+												<div class="star-point" style="width:98%;">
+													<img src="http://image.adidas.co.kr/images/adidas/common/ico_rating.png" alt="">
+												</div>
+												<div class="star-bg">
+													<img src="http://image.adidas.co.kr/images/adidas/common/ico_rating_empty.png" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- //rating -->
+								</div>
+								<!-- //info -->
+							</a>
+						</div>
+						<!-- //box -->
+
+						<div class="box">
+							<a href="#">
+								<div class="img">
+									<img src="http://image.adidas.co.kr/upload/prod/basic/80/S74986-1_80X80.jpg" alt="">
+								</div>
+								<div class="info">
+									<div class="ctgr">UNISEX ORIGINALS</div>
+									<div class="tit">[모델착장] 슈퍼스타 슬립온</div>
+									<div class="price">
+										<div class="price-container">
+											<span class="prc">109,000 <span class="won">원</span></span>
+										</div>
+									</div>
+									<div class="rating">
+										<div class="rating-star">
+											<div class="star-container">
+												<div class="star-point" style="width:98%;">
+													<img src="http://image.adidas.co.kr/images/adidas/common/ico_rating.png" alt="">
+												</div>
+												<div class="star-bg">
+													<img src="http://image.adidas.co.kr/images/adidas/common/ico_rating_empty.png" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- //rating -->
+								</div>
+								<!-- //info -->
+							</a>
+						</div>
+						<!-- //box -->
+
+						<div class="box">
+							<a href="#">
+								<div class="img">
+									<img src="http://image.adidas.co.kr/upload/prod/basic/80/S79208-1_80X80.jpg" alt="">
+								</div>
+								<div class="info">
+									<div class="ctgr">UNISEX ORIGINALS</div>
+									<div class="tit">슈퍼스타 파운데이션</div>
+									<div class="price">
+										<div class="price-container">
+											<span class="prc">109,000 <span class="won">원</span></span>
+										</div>
+									</div>
+									<div class="rating">
+										<div class="rating-star">
+											<div class="star-container">
+												<div class="star-point" style="width:98%;">
+													<img src="http://image.adidas.co.kr/images/adidas/common/ico_rating.png" alt="">
+												</div>
+												<div class="star-bg">
+													<img src="http://image.adidas.co.kr/images/adidas/common/ico_rating_empty.png" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- //rating -->
+								</div>
+								<!-- //info -->
+							</a>
+						</div>
+						<!-- //box -->
+					</div>
 				</div>
-				<div class="utilmenu">
+				<!-- //search-suggest -->
+
+
+				<!-- 161109 나의 최근 검색어 -->
+				<div class="suggest-keyword" style="display: none;">
+					<h2>나의 최근 검색어</h2>
 					<ul>
-						<li><a href="#">로그인</a></li>
-						<li><a href="#">회원가입</a></li>
-						<li><a href="#">마이페이지</a></li>		
-						<!-- 160302 장바구니 추가-->				
-						<li class="mkt last"><a href="javascript:void(0)" onclick="marketLayer();">장바구니<span>( 26 item )</span></a></li>						
+						<li><a href="#">슈퍼스타</a></li>
+						<li><a href="#">스탠 스미스</a></li>
+						<li><a href="#">후드티</a></li>
+						<li><a href="#">하이케</a></li>
 					</ul>
 				</div>
+				<!-- //161109 -->
 
-				<!--
-				160302 장바구니 버튼부분 제거
-				 <div class="market">
-					<a class="go_evt" href="#"><img alt="아디클럽 1만원 쿠폰" src="/images/adidas/common/btn_event.jpg"></a>
-					<span class="mkt">
-						<a onclick="marketLayer();return false" href="#">장바구니</a>
-						<span>(<strong>26</strong><em>Items)</em></span>
-					</span>
-					<a onclick="marketLayer();return false" class="icon_market">
-						<img alt="장바구니" src="/images/adidas/common/market.jpg">
-					</a>
-				</div> -->
-				<div class="market_layer">
-					<div class="market_header">
-						<span>장바구니</span>
-						<strong>10개</strong>
-						<a class="spt_bg" onclick="jQuery('.market_layer').hide();return false" href="#">
-							<span class="spt_desc">닫기</span>
-						</a>
-					</div>
-					<div class="market_body">
-						<div class="mkt_arrow_top"><a class="spt_bg disable" onclick="mktMoveTop(this);return false" href="#"></a></div>
-						<div class="mkt_slide_wrap">
-							<div class="mkt_slide">
-								<div class="mkt_box">
-									<div class="prod_img"><img alt="" src="/images/adidas/temp/market_prod1.jpg"></div>
-									<div class="prod_info">
-										<p class="tit">[Men's Originals]<br>아디 파이어버드 트랙탑</p>
-										<p class="prod_code">상품코드 : <span>l43685(NAVY/WHITE)</span></p>
-										<p class="amount">주문수량 : 1개</p>
-										<p class="size">사이즈 : 95</p>
-										<p class="price">주문금액 : 99,000원</p>
-										<p class="prod_link"><a class="spt_bg" href="#">상품 바로가기</a></p>
-									</div>	
-								</div>
-								<!-- //mkt_box -->
-								<div class="mkt_box">
-									<div class="prod_img"><img alt="" src="/images/adidas/temp/market_prod2.jpg"></div>
-									<div class="prod_info">
-										<p class="tit">[Men's Originals] 아디 파이어버드 트랙탑</p>
-										<p class="prod_code">상품코드 : <span>l43685(NAVY/WHITE)</span></p>
-										<p class="amount">주문수량 : 1개</p>
-										<p class="size">사이즈 : 95</p>
-										<p class="price">주문금액 : 99,000원</p>
-										<p class="prod_link"><a class="spt_bg" href="#">상품 바로가기</a></p>
-									</div>	
-								</div>
-								<!-- //mkt_box -->
-								<div class="mkt_box">
-									<div class="prod_img"><img alt="" src="/images/adidas/temp/market_prod3.jpg"></div>
-									<div class="prod_info">
-										<p class="tit">[Men's Originals] 아디 파이어버드 트랙탑</p>
-										<p class="prod_code">상품코드 : <span>l43685(NAVY/WHITE)</span></p>
-										<p class="amount">주문수량 : 1개</p>
-										<p class="size">사이즈 : 95</p>
-										<p class="price">주문금액 : 99,000원</p>
-										<p class="prod_link"><a class="spt_bg" href="#">상품 바로가기</a></p>
-									</div>	
-								</div>
-								<!-- //mkt_box -->
-
-								<div class="mkt_box">
-									<div class="prod_img"><img alt="" src="/images/adidas/temp/market_prod2.jpg"></div>
-									<div class="prod_info">
-										<p class="tit">[Men's Originals] 아디 파이어버드 트랙탑</p>
-										<p class="prod_code">상품코드 : <span>l43685(NAVY/WHITE)</span></p>
-										<p class="amount">주문수량 : 1개</p>
-										<p class="size">사이즈 : 95</p>
-										<p class="price">주문금액 : 99,000원</p>
-										<p class="prod_link"><a class="spt_bg" href="#">상품 바로가기</a></p>
-									</div>	
-								</div>
-								<!-- //mkt_box -->
-
-								<div class="mkt_box">
-									<div class="prod_img"><img alt="" src="/images/adidas/temp/market_prod2.jpg"></div>
-									<div class="prod_info">
-										<p class="tit">[Men's Originals]아디 파이어버드 트랙탑</p>
-										<p class="prod_code">상품코드 : <span>l43685(NAVY/WHITE)</span></p>
-										<p class="amount">주문수량 : 1개</p>
-										<p class="size">사이즈 : 95</p>
-										<p class="price">주문금액 : 99,000원</p>
-										<p class="prod_link"><a class="spt_bg" href="#">상품 바로가기</a></p>
-									</div>	
-								</div>
-								<!-- //mkt_box -->
-
-								<div class="mkt_box">
-									<div class="prod_img"><img alt="" src="/images/adidas/temp/market_prod2.jpg"></div>
-									<div class="prod_info">
-										<p class="tit">[Men's Originals 아디 파이어버드 트랙탑</p>
-										<p class="prod_code">상품코드 : <span>l43685(NAVY/WHITE)</span></p>
-										<p class="amount">주문수량 : 1개</p>
-										<p class="size">사이즈 : 95</p>
-										<p class="price">주문금액 : 99,000원</p>
-										<p class="prod_link"><a class="spt_bg" href="#">상품 바로가기</a></p>
-									</div>	
-								</div>
-								<!-- //mkt_box -->
-							</div>
-							<!-- //mkt_slide -->
-						</div>
-						<!-- //mkt_slide_wrap -->
-						<div class="mkt_arrow_btm"><a class="spt_bg" onclick="mktMoveBtm(this);return false" href="#"></a></div>
-					</div>
-					<!-- //market_body -->
-
-					<div class="market_bottom">
-						<div class="total_price">
-							<p>총 주문 금액 : <strong>145,000</strong> 원</p>
-							<p class="point">예상 포인트 <span>123,000</span></p>
-						</div>
-						<div class="go_market"><a href="#"><img alt="장바구니 바로가기" src="/images/adidas/common/btn_go_market.gif"></a></div>
-						<div class="desc"><span class="spt_bg"></span>5만원 이상 주문시 배송비 무료</div>
-					</div>
-					<!-- //market_bottom -->
-				</div>
-				<!-- //market_layer -->
 			</div>
 			<!-- //ct950 -->
 		</div>
-		<!-- //header_r -->
+		<!-- //utils -->
 
-		<div id="gnb_r" class="m20160302">
-			<div class="ct950">
-				<ul class="menu1">
-					<li class="menu shop"><a href="#"><img alt="" src="/images/adidas/common/btn_shop.jpg"></a></li>
-					<li onmouseout="layerOutNavi(this);" onmouseover="layerOverNavi(this);" id="men" class="menu ar">
-						<a class="txt_eng" href="men_submain.html">MEN</a>
-						<div class="depth2">
-							<div class="box">
-								<dl style="margin-bottom:30px;">
-									<dt class="arial">Category</dt>
-									<dd>
-										<ul>
-											<li><a href="list.html">신발</a></li>
-											<li><a href="list.html">의류</a></li>
-											<li><a href="list.html">용품</a></li>
-										</ul>
-									</dd>
-								</dl>
-								<dl class="brand_logo">
-									<dt class="arial">Brands</dt>
-									<dd>
-										<a class="sp spt_bg" href="#">performance</a>
-										<a class="ss spt_bg" href="#">originals</a>
-									</dd>
-								</dl>
+		<div class="gnb_menu">
+			<ul class="ct950 clfix">
+				<li>
+					<a href="#">MEN</a>
+					<div class="depth2_contents" style="display: none;">
+						<div class="ct950">
+							<div class="ctgr_box">
+								<div class="box col_18">
+									<dl>
+										<dt>남성</dt>
+										<dd>
+											<ul>
+												<!--
+												160415
+												신상품/인기상품/할인상품/온라인 단독상품 strong 태그 추가
+												-->
+												<li><a href="#"><strong>신상품</strong></a></li>
+												<li><a href="#"><strong>인기상품</strong></a></li>
+												<li class="line"><a href="#"><strong>할인상품</strong></a></li>
+												<li><a href="#"><storng>온라인 단독상품</storng></a></li>
+												<li><a href="#">마이 아디다스</a></li>
+												<li><a href="#">하이라이트 CONCEPT</a></li>
+												<li class="line"><a href="#">하이라이트 CONCEPT</a></li>
+												<!-- 160415 공식아웃렛 span 태그 추가-->
+												<li><a href="#"><span style="color:#a6141e;">공식 아웃렛</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<!-- //box -->
+								<div class="box col_18">
+									<dl>
+										<dt><a href="#">신발</a></dt>
+										<dd>
+											<ul>
+												<li><a href="#">라이프스타일</a></li>
+												<li><a href="#">축구</a></li>
+												<li><a href="#">러닝</a></li>
+												<li><a href="#">농구</a></li>
+												<li><a href="#">트레이닝</a></li>
+												<li><a href="#">아웃도어</a></li>
+												<li><a href="#">테니스</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<!-- //box -->
+								<div class="box col_18">
+									<dl>
+										<dt>의류</dt>
+										<dd>
+											<ul>
+												<li><a href="#">자켓</a></li>
+												<li><a href="#">트랙탑</a></li>
+												<li><a href="#">긴팔티</a></li>
+												<li><a href="#">반팔티</a></li>
+												<li><a href="#">민소매</a></li>
+												<li><a href="#">긴바지</a></li>
+												<li><a href="#">반바지</a></li>
+												<li><a href="#">기타</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<!-- //box -->
+								<div class="box col_18">
+									<dl>
+										<dt>용품</dt>
+										<dd>
+											<ul>
+												<li><a href="#">공</a></li>
+												<li><a href="#">가방</a></li>
+												<li><a href="#">모자</a></li>
+												<li><a href="#">양밀</a></li>
+												<li><a href="#">시계</a></li>
+												<li><a href="#">디지털 액세서리</a></li>
+												<li><a href="#">피트니스 용품</a></li>
+												<li><a href="#">기타</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<!-- //box -->
+								<div class="box col_18 last">
+									<dl>
+										<dt>스포츠</dt>
+										<dd>
+											<ul>
+												<li><a href="#">축구</a></li>
+												<li><a href="#">러닝</a></li>
+												<li><a href="#">농구</a></li>
+												<li><a href="#">트레이닝</a></li>
+												<li><a href="#">아웃도어</a></li>
+												<li><a href="#">테니스</a></li>
+												<li><a href="#">야구</a></li>
+												<li><a href="#">기타</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<!-- //box -->
 							</div>
-							<dl>
-								<dt class="arial">Sport</dt>
-								<dd>
-									<ul>
-										<li><a href="#">축구</a></li>
-										<li><a href="#">농구</a></li>
-										<li><a href="#">러닝</a></li>
-										<li><a href="#">테니스</a></li>
-										<li><a href="#">아웃도어</a></li>
-										<li><a href="#">트레이닝</a></li>
-										<li><a href="#">스윔</a></li>
-										<li><a href="#">야구</a></li>
-										<li><a href="#">용품</a></li>
-										<li><a href="#">기타</a></li>
-									</ul>
-								</dd>
-							</dl>
-							<div class="box" style="margin-right:0;">
-								<dl style="margin:0 0 30px 0;">
-									<dt class="arial">More Choices</dt>
-									<dd>
-										<ul>
-											<li><a href="#">신상품</a></li>
-											<li><a href="#">베스트 상품</a></li>
-											<li><a href="#">세일</a></li>
-											<!-- 150616 -->
-											<li class="adifont"><a href="http://shop.adidas.co.kr/PF020105.action">custo<strong>mi</strong>ze</a></li>
-										</ul>
-									</dd>
-								</dl>
+							<!-- //ctgr_box -->
 
-								<dl style="margin-right:0;">
-									<dt class="arial">Collection</dt>
-									<dd>
-										<ul>
-											<li><a href="#">Online Only</a></li>
-											<li><a href="#">Y3 Tennis</a></li>
-											<li><a href="#">NBHD</a></li>
-										</ul>
-									</dd>
-								</dl>
+							<div class="view_all">
+								<div class="col_18"><a href="#">남성 전체보기</a></div>
+								<div class="col_18"><a href="#">남성신발 전체보기</a></div>
+								<div class="col_18"><a href="#">남성의류 전체보기</a></div>
+								<div class="col_18"><a href="#">남성용품 전체보기</a></div>
+								<div class="col_18 last"><a href="#">스포츠 전체보기</a></div>
 							</div>
 						</div>
-				    </li>
-					<li onmouseout="layerOutNavi(this);" onmouseover="layerOverNavi(this);" id="women" class="menu ar">
-						<a class="txt_eng" href="#">WOMEN</a>
-						<div class="depth2">
-							<div class="box">
-								<dl style="margin-bottom:30px;">
-									<dt class="arial">Category</dt>
-									<dd>
-										<ul>
-											<li><a href="#">신발</a></li>
-											<li><a href="#">의류</a></li>
-											<li><a href="#">용품</a></li>
-										</ul>
-									</dd>
-								</dl>
-								<dl class="brand_logo">
-									<dt class="arial">Brands</dt>
-									<dd>
-										<a class="sp spt_bg" href="#">performance</a>
-										<a class="ss spt_bg" href="#">originals</a>
-									</dd>
-								</dl>
+						<!-- //ct950 -->
+					</div>
+					<!-- //depth2_contents -->
+				</li>
+				<li>
+					<a href="#">WOMEN</a>
+					<div class="depth2_contents" style="display: none;">
+						<div class="ct950">
+							<div class="ctgr_box">
+								<div class="box col_18">
+									<dl>
+										<dt>여성</dt>
+										<dd>
+											<ul>
+												<!--
+												160415
+												신상품/인기상품/할인상품/온라인 단독상품 strong 태그 추가
+												-->
+												<li><a href="#"><strong>신상품</strong></a></li>
+												<li><a href="#"><strong>인기상품</strong></a></li>
+												<li class="line"><a href="#"><strong>할인상품</strong></a></li>
+												<li><a href="#"><strong>온라인 단독상품</strong></a></li>
+												<li><a href="#">마이 아디다스</a></li>
+												<li><a href="#">팬츠 가이드</a></li>
+												<li><a href="#">하이라이트 CONCEPT</a></li>
+												<li class="line"><a href="#">하이라이트 CONCEPT</a></li>
+												<!-- 160415 공식아웃렛 span 태그 추가-->
+												<li><a href="#"><span style="color:#a6141e;">공식 아웃렛</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<!-- //box -->
+								<div class="box col_18">
+									<dl>
+										<dt>신발</dt>
+										<dd>
+											<ul>
+												<li><a href="#">오리지널스</a></li>
+												<li><a href="#">축구</a></li>
+												<li><a href="#">러닝</a></li>
+												<li><a href="#">농구</a></li>
+												<li><a href="#">트레이닝</a></li>
+												<li><a href="#">아웃도어</a></li>
+												<li><a href="#">테니스</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<!-- //box -->
+								<div class="box col_18">
+									<dl>
+										<dt>의류</dt>
+										<dd>
+											<ul>
+												<li><a href="#">브라탑</a></li>
+												<li><a href="#">민소매</a></li>
+												<li><a href="#">반팔티</a></li>
+												<li><a href="#">긴팔티</a></li>
+												<li><a href="#">트랙탑/자켓</a></li>
+												<li><a href="#">반바지</a></li>
+												<li><a href="#">긴바지</a></li>
+												<li><a href="#">스커트/원피스</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<!-- //box -->
+								<div class="box col_18">
+									<dl>
+										<dt>용품</dt>
+										<dd>
+											<ul>
+												<li><a href="#">가방</a></li>
+												<li><a href="#">모자</a></li>
+												<li><a href="#">양밀</a></li>
+												<li><a href="#">시계</a></li>
+												<li><a href="#">디지털 액세서리</a></li>
+												<li><a href="#">피트니스 용품</a></li>
+												<li><a href="#">공</a></li>
+												<li><a href="#">기타</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<!-- //box -->
+								<div class="box col_18 last">
+									<dl>
+										<dt>스포츠</dt>
+										<dd>
+											<ul>
+												<li><a href="#">축구</a></li>
+												<li><a href="#">러닝</a></li>
+												<li><a href="#">농구</a></li>
+												<li><a href="#">트레이닝</a></li>
+												<li><a href="#">아웃도어</a></li>
+												<li><a href="#">테니스</a></li>
+												<li><a href="#">수영</a></li>
+												<li><a href="#">기타</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<!-- //box -->
 							</div>
-							<dl>
-								<dt class="arial">Sport</dt>
-								<dd>
-									<ul>
-										<li><a href="#">러닝</a></li>
-										<li><a href="#">테니스</a></li>
-										<li><a href="#">아웃도어</a></li>
-										<li><a href="#">스윔</a></li>
-										<li><a href="#">트레이닝</a></li>
-										<li><a href="#">용품</a></li>
-									</ul>
-								</dd>
-							</dl>
-							<div class="box" style="margin-right:0;">
-								<dl style="margin:0 0 30px 0;">
-									<dt class="arial">More Choices</dt>
-									<dd>
-										<ul>
-											<li><a href="#">신상품</a></li>
-											<li><a href="#">베스트 상품</a></li>
-											<li><a href="#">세일</a></li>
-											<!-- 150616 -->
-											<li class="adifont"><a href="http://shop.adidas.co.kr/PF020105.action">custo<strong>mi</strong>ze</a></li>
-										</ul>
-									</dd>
-								</dl>
+							<!-- //ctgr_box -->
 
-								<dl style="margin-right:0;">
-									<dt class="arial">Collection</dt>
-									<dd>
-										<ul>
-											<li><a href="#">Online Only</a></li>
-											<li><a href="#">Y3 Tennis</a></li>
-											<li><a href="#">NBHD</a></li>
-										</ul>
-									</dd>
-								</dl>
+							<div class="view_all">
+								<div class="col_18"><a href="#">여성 전체보기</a></div>
+								<div class="col_18"><a href="#">여성신발 전체보기</a></div>
+								<div class="col_18"><a href="#">여성의류 전체보기</a></div>
+								<div class="col_18"><a href="#">여성용품 전체보기</a></div>
+								<div class="col_18 last"><a href="#">스포츠 전체보기</a></div>
 							</div>
 						</div>
-					</li>
-					<li onmouseout="layerOutNavi(this);" onmouseover="layerOverNavi(this);" class="menu ar line">
-						<a class="txt_eng" href="#">KIDS</a>
-						<div class="depth2">
-							<div class="box">
-								<!-- 
-								151021
-								수정 전 : style="margin-bottom:30px;"
-								수정 후 : style="margin-bottom:50px;"
-								-->
-								<dl style="margin-bottom:50px;">
-									<dt class="arial">Category</dt>
-									<dd>
-										<ul>
-											<li><a href="#">신발</a></li>
-											<li><a href="#">의류</a></li>
-											<li><a href="#">용품</a></li>
-										</ul>
-									</dd>
-								</dl>
-								<dl class="brand_logo">
-									<dt class="arial">Brands</dt>
-									<dd>
-										<a class="sp spt_bg" href="#">performance</a>
-										<a class="ss spt_bg" href="#">originals</a>
-									</dd>
-								</dl>
+						<!-- //ct950 -->
+					</div>
+					<!-- //depth2_contents -->
+				</li>
+				<li class="line">
+					<a href="#">KIDS</a>
+					<div class="depth2_contents" style="display: none;">
+						<div class="ct950">
+							<div class="ctgr_box">
+								<div class="box col_18">
+									<dl>
+										<dt>키즈</dt>
+										<dd>
+											<ul>
+												<!--
+												160415
+												신상품/인기상품/할인상품/온라인 단독상품 strong 태그 추가
+												-->
+												<li><a href="#"><strong>신상품</strong></a></li>
+												<li><a href="#"><strong>인기상품</strong></a></li>
+												<li class="line"><a href="#"><strong>할인상품</strong></a></li>
+												<li><a href="#"><strong>온라인 단독상품</strong></a></li>
+												<li><a href="#">마이 아디다스</a></li>
+												<li><a href="#">하이라이트 CONCEPT</a></li>
+												<li class="line"><a href="#">하이라이트 CONCEPT</a></li>
+												<!-- 160415 공식아웃렛 span 태그 추가-->
+												<li><a href="#"><span style="color:#a6141e;">공식 아웃렛</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<!-- //box -->
+								<div class="box col_18">
+									<dl>
+										<dt>유아 (3-36개월)</dt>
+										<dd>
+											<ul>
+												<li><a href="#">신발</a></li>
+												<li><a href="#">의류</a></li>
+												<li><a href="#">용품</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<!-- //box -->
+								<div class="box col_18">
+									<dl>
+										<dt>남아 (4세-13세)</dt>
+										<dd>
+											<ul>
+												<li><a href="#">신발</a></li>
+												<li><a href="#">의류</a></li>
+												<li><a href="#">용품</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<!-- //box -->
+								<div class="box col_18">
+									<dl>
+										<dt>여아 (4세-13세)</dt>
+										<dd>
+											<ul>
+												<li><a href="#">신발</a></li>
+												<li><a href="#">의류</a></li>
+												<li><a href="#">용품</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<!-- //box -->
+								<div class="box col_18 last">
+									<dl>
+										<dt>스포츠</dt>
+										<dd>
+											<ul>
+												<li><a href="#">축구</a></li>
+												<li><a href="#">러닝</a></li>
+												<li><a href="#">농구</a></li>
+												<li><a href="#">트레이닝</a></li>
+												<li><a href="#">아웃도어</a></li>
+												<li><a href="#">테니스</a></li>
+												<li><a href="#">수영</a></li>
+												<li><a href="#">기타</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<!-- //box -->
 							</div>
+							<!-- //ctgr_box -->
 
-							<div style="margin-right:0;" class="box">
-								<!-- 
-								151021
-								수정 전 : style="margin-bottom:68px;"
-								수정 후 : style="width:170px;margin-bottom:30px;"
-								-->
-								<dl style="width:170px;margin-bottom:30px;">
-									<dt class="arial">Sport</dt>
-									<dd>
-										<ul>
-											<li><a href="#">농구</a></li>
-											<li><a href="#">러닝</a></li>
-											<li><a href="#">테니스</a></li>
-											<li><a href="#">아웃도어</a></li>
-											<li><a href="#">스윔</a></li>
-											<li><a href="#">트레이닝</a></li>
-											<li><a href="#">용품</a></li>
-										</ul>
-									</dd>
-								</dl>
-								<!-- 
-								151021
-								style="width:170px;" 추가
-								 -->
-								<dl style="width:170px;">
-									<dt class="arial">Infants and Kids</dt>
-									<dd>
-										<ul>
-											<li><a href="#">인펀트 (3~36개월)</a></li>
-											<li><a href="#">토들러 (4~7세)</a></li>
-											<li><a href="#">주니어 보이즈 (8~13세 남)</a></li>
-											<li><a href="#">주니어 걸즈 (8~13세 여)</a></li>
-										</ul>
-									</dd>
-								</dl>
-							</div>
-
-							<div class="box" style="margin-right:0;">
-								<!-- 
-								151021
-								수정 전 : style="margin:0 0 30px 0;"
-								수정 후 : style="width:130px;margin:0 0 40px 0;"
-								-->
-								<dl style="width:130px;margin:0 0 40px 0;">
-									<dt class="arial">More Choices</dt>
-									<dd>
-										<ul>
-											<li><a href="#">신상품</a></li>
-											<li><a href="#">베스트 상품</a></li>
-											<li><a href="#">세일</a></li>
-											<!-- 150616 -->
-											<li class="adifont"><a href="http://shop.adidas.co.kr/PF020105.action">custo<strong>mi</strong>ze</a></li>
-										</ul>
-									</dd>
-								</dl>
-								<!-- 
-								151021
-								수정 전 : style="margin-right:0;"
-								수정 후 : style="width:130px;margin-right:0;"
-								-->
-								<dl style="width:130px;margin-right:0;">
-									<dt class="arial">Collection</dt>
-									<dd>
-										<ul>
-											<li><a href="#">Online Only</a></li>
-											<li><a href="#">Y3 Tennis</a></li>
-											<li><a href="#">NBHD</a></li>
-										</ul>
-									</dd>
-								</dl>
+							<div class="view_all">
+								<div class="col_18"><a href="#">키즈 전체보기</a></div>
+								<div class="col_18"><a href="#">유아 전체보기</a></div>
+								<div class="col_18"><a href="#">남아 전체보기</a></div>
+								<div class="col_18"><a href="#">여아 전체보기</a></div>
+								<div class="col_18 last"><a href="#">스포츠 전체보기</a></div>
 							</div>
 						</div>
-					</li>
-					<li onmouseout="layerOutNavi(this);" onmouseover="layerOverNavi(this);" class="menu ar sale">
-						<!-- 160302 txt_eng 클래스 추가 -->
-						<a class="txt_eng" href="list_sale.html">SALE</a>
-						<div class="depth2 arial">
-							<ul>
-								<li><a href="list_sale.html">Mens</a></li>
-								<li><a href="list_sale.html">Womens</a></li>
-								<li><a href="list_sale.html">Kids</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="menu"><a href="design/promo_list.html">기획전</a></li>
-					<li class="menu"><a href="#">온라인단독</a></li>
-					<li class="menu mi_adi" onmouseover="layerOverNavi(this);" onmouseout="layerOutNavi(this);">
-						<!-- 
-						160302 
-						a태그 style 제거
-						
-						<a href="#" style="font:16px/25px 'adinenu-bold';">custo<strong style="color:#0088cd;">mi</strong>ze</a>
-						 -->
-						<a href="#">custo<strong style="color:#0088cd;">mi</strong>ze</a>
-						<div class="depth2" style="display: none;">
-							<div class="l">
-								<dl>
-									<dt class="arial">design your own</dt>
-									<dd>
-										<ul>
-											<li>세상에서 유일한 당신만의 제품을 디자인하세요.</li>
-											<li>다양한 소재와 컬러의 조합과 당신만의 이니셜까지!</li>
-											<li><strong>customize</strong>를 통해 당신만의 스타일을 보여주세요.</li>
-											<li style="margin-bottom:0;"><strong>배송기간 : 4주-6주</strong></li>
-										</ul>
-									</dd>
-								</dl>
+						<!-- //ct950 -->
+					</div>
+					<!-- //depth2_contents -->
+				</li>
 
-								<div class="lnk">
-									<ul>
-										<li><a href="#"><strong style="letter-spacing:0;">customize</strong> 메인 바로가기</a></li>
-										<li><a href="#"><strong style="letter-spacing:0;">customize</strong> 전체상품 보러가기</a></li>
-										<li style="margin-bottom:0;"><a href="#"><strong style="letter-spacing:0;">customize</strong> 사용방법 알아보기</a></li>
-									</ul>
+				<!-- 170424 col_17 클래스 추가 -->
+				<li class="sports col_17">
+					<a href="#">SPORTS</a>
+					<div class="depth2_contents" style="display: none;">
+						<!-- 170224 background:none style제거 -->
+						<div class="ct950">
+							<div class="ctgr_box">
+								<div class="box img_box col_17">
+									<dl>
+										<dt><a href="#"><span class="spt_bg logo sp"></span>축구</a></dt>
+										<dd>
+											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_bnn8.jpg" alt=""></a></div>
+											<ul>
+												<li class="depth3_wrapper">
+													<a href="#">신발</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+												<li class="depth3_wrapper">
+													<a href="#">의류</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+												<li class="depth3_wrapper">
+													<a href="#">용품</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<!-- //box -->
+
+								<div class="box img_box col_17">
+									<dl>
+										<dt><a href="#"><span class="spt_bg logo sp"></span>축구</a></dt>
+										<dd>
+											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_bnn9.jpg" alt=""></a></div>
+											<ul>
+												<li class="depth3_wrapper">
+													<a href="#">신발</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+												<li class="depth3_wrapper">
+													<a href="#">의류</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+												<li class="depth3_wrapper">
+													<a href="#">용품</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+
+								<div class="box img_box col_17">
+									<dl>
+										<dt><span class="spt_bg logo sp"></span>러닝</dt>
+										<dd>
+											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_bnn10.jpg" alt=""></a></div>
+											<ul>
+												<li class="depth3_wrapper">
+													<a href="#">신발</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+												<li class="depth3_wrapper">
+													<a href="#">의류</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+												<li class="depth3_wrapper">
+													<a href="#">용품</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<!-- //box -->
+								<div class="box img_box col_17">
+									<dl>
+										<dt><span class="spt_bg logo sp"></span>농구</dt>
+										<dd>
+											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_bnn11.jpg" alt=""></a></div>
+											<ul>
+												<li class="depth3_wrapper">
+													<a href="#">신발</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+												<li class="depth3_wrapper">
+													<a href="#">의류</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+												<li class="depth3_wrapper">
+													<a href="#">용품</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+
+								<div class="box etcbox col_16_5 last">
+									<dl>
+										<dt>다른 스포츠</dt>
+										<dd>
+											<ul>
+												<li><a href="#">아웃도어</a></li>
+												<li><a href="#">테니스</a></li>
+												<li><a href="#">스케이트보딩</a></li>
+												<!-- <li><a href="#">사이클링</a></li> -->
+												<li class="last"><a href="#">사이클링</a></li>
+											</ul>
+										</dd>
+									</dl>
 								</div>
 							</div>
+							<!-- //ctgr_box -->
+
+							<div class="view_all img_box">
+								<div class="col_17"><a href="#">축구 전체보기</a></div>
+								<div class="col_17"><a href="#">러닝 전체보기</a></div>
+								<div class="col_17"><a href="#">농구 전체보기</a></div>
+								<div class="col_17"><a href="#">트레이닝 전체보기</a></div>
+								<div class="col_16_5 last"><a href="http://shop.adidas.co.kr/PF020201.action?S_CTGR_CD=01004001">스포츠 전체보기</a></div>
+							</div>
 						</div>
-					</li>
-				</ul>
-				<ul class="menu2">
-					<!-- 160302 txt_eng 클래스 추가 -->
-					<li class="menu"><a href="#" class="txt_eng">BEST</a></li>
-					<!-- 160302 txt_eng 클래스 추가 -->
-					<li class="menu"><a href="list_running.html" class="txt_eng">NEW</a></li>
-					<!-- 160302 txt_eng 클래스 추가 -->
-					<li class="menu"><a href="#" style="color:#ff1e00" class="txt_eng">OUTLET</a></li>
-					<li class="menu ar etc" onmouseover="layerOverNavi(this);" onmouseout="layerOutNavi(this);">
-						<a href="#">스포츠</a>
-						<div class="depth2" style="display: none;">
-							<ul>
-								<li><a href="#">축구</a></li>
-								<li><a href="#">러닝</a></li>
-								<li><a href="#">농구</a></li>
-								<li><a href="#">트레이닝</a></li>
-								<li><a href="#">아웃도어</a></li>
-								<li><a href="#">테니스</a></li>
-							</ul>
+						<!-- //ct950 -->
+					</div>
+					<!-- //depth2_contents -->
+				</li>
+				<!-- 170424  col_14 클래스 추가 -->
+				<li class="brands line col_14">
+					<a href="#">BRANDS</a>
+					<div class="depth2_contents" style="display: none;">
+						<div class="ct950">
+							<div class="ctgr_box">
+								<!--
+								170424
+								* col_17 => col_14 로 클래스명 변경
+								  -->
+								<div class="box img_box col_14 originals">
+									<dl>
+										<dt>
+											<a href="#"><span class="spt_bg">Originals</span></a>
+										</dt>
+										<dd>
+											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_brands_01.jpg" alt=""></a></div>
+											<ul>
+												<li class="depth3_wrapper">
+													<a href="#">신발</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+												<li class="depth3_wrapper">
+													<a href="#">의류</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+												<li class="depth3_wrapper">
+													<a href="#">용품</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<!-- //box -->
+
+								<!--
+								170424
+								* col_17 => col_14 로 클래스명 변경
+								  -->
+								<div class="box img_box col_14 zne">
+									<dl>
+										<dt>
+											<a href="#"><span class="spt_bg">FIND FOCUS</span></a>
+										</dt>
+										<dd>
+											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_brands_02.jpg" alt=""></a></div>
+											<ul>
+												<li class="depth3_wrapper">
+													<a href="#">신발</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+												<li class="depth3_wrapper">
+													<a href="#">의류</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+												<li class="depth3_wrapper line">
+													<a href="#">용품</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+												<li><a href="#">남성 Z.N.E</a></li>
+												<li><a href="#">여성 Z.N.E</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+
+
+								<!--
+								170424
+								* col_17 => col_14 로 클래스명 변경
+								  -->
+								<div class="box img_box col_14 stella">
+									<dl>
+										<dt>
+											<a href="#"><span class="spt_bg">Stella McCartney</span></a>
+										</dt>
+										<dd>
+											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_brands_03.jpg" alt=""></a></div>
+											<ul>
+												<li class="depth3_wrapper">
+													<a href="#">신발</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+												<li class="depth3_wrapper">
+													<a href="#">의류</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+												<li class="depth3_wrapper">
+													<a href="#">용품</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<!-- //box -->
+
+								<!--
+								170424
+								* col_17 => col_14 로 클래스명 변경
+								  -->
+								<div class="box img_box col_14 terrex">
+									<dl>
+										<dt>
+											<a href="#"><span class="spt_bg">Terrex</span></a>
+										</dt>
+										<dd>
+											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_brands_04.jpg" alt=""></a></div>
+											<ul>
+												<li class="depth3_wrapper">
+													<a href="#">신발</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+												<li class="depth3_wrapper">
+													<a href="#">의류</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+												<li class="depth3_wrapper">
+													<a href="#">용품</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<!-- //box -->
+
+								<!--
+								170424
+								* col_17 => col_14 로 클래스명 변경
+								  -->
+								<div class="box img_box col_14 neo">
+									<dl>
+										<dt>
+											<a href="#"><span class="spt_bg">adidas neo</span></a>
+										</dt>
+										<dd>
+											<div class="img"><a href="#"><img src="/images/adidas/temp/gnb_brands_05.jpg" alt=""></a></div>
+											<ul>
+												<li class="depth3_wrapper">
+													<a href="#">신발</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+												<li class="depth3_wrapper">
+													<a href="#">의류</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+												<li class="depth3_wrapper">
+													<a href="#">용품</a>
+													<div class="depth3">
+														<a href="#">남성</a>
+														<a href="#">여성</a>
+														<a href="#">키즈</a>
+													</div>
+												</li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<!-- //box -->
+
+								<!--
+								170424
+								* col_17 => col_14 로 클래스명 변경
+								  -->
+								<div class="box etcbox col_14 last">
+									<dl>
+										<dt>컬렉션</dt>
+										<dd>
+											<ul>
+												<li><a href="#">오리지널스 플래그쉽</a></li>
+												<li><a href="#">TUBULA</a></li>
+												<li><a href="#">KIDS</a></li>
+												<li><a href="#">스텔라 스포츠</a></li>
+												<li class="last"><a href="#">스텔라 스포츠</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<!-- //box -->
+
+							</div>
+							<!-- //ctgr_box -->
+
+							<div class="view_all img_box">
+								<div class="col_14"><a href="#">전체보기</a></div>
+								<div class="col_14"><a href="#">전체보기</a></div>
+								<div class="col_14"><a href="#">전체보기</a></div>
+								<div class="col_14"><a href="#">전체보기</a></div>
+								<div class="col_14"><a href="#">전체보기</a></div>
+								<!--
+								170424
+								* style 제거 style="width:165px;margin-left:15px;"
+								* col_14 클래스 추가
+								 -->
+								<div class="col_14 last"><a href="#">캠페인 전체보기</a></div>
+							</div>
 						</div>
-					</li>
-					<li class="menu ar etc" style="margin-right:0;padding-right:0;" onmouseout="layerOutNavi(this);" onmouseover="layerOverNavi(this);">
-						<a href="#" class="txt_eng">adiclub</a>
-						<div class="depth2" style="width: 180px; left: -60px; display: none;">
-							<ul>
-								<li><a href="http://shop.adidas.co.kr/PF080101.action">아디클럽 멤버십</a></li>
-								<li><a href="http://shop.adidas.co.kr/PF070201.action">아디클럽 캠페인</a></li>
-							</ul>
+						<!-- //ct950 -->
+					</div>
+					<!-- //depth2_contents -->
+				</li>
+				<!-- 170220 class="line" 추가 -->
+				<li class="line">
+					<a href="#">CUSTOMISE</a>
+					<div class="depth2_contents" style="display: none;">
+						<div class="ct950">
+							<div class="ctgr_box">
+								<!--
+								* 161028 col_14 -> col_17 로 수정
+								* style="margin-right: 20px;" 추가
+								-->
+								<div class="box col_17" style="margin-right: 20px;">
+									<dl>
+										<dt>마이 아디다스</dt>
+										<dd>
+											<ul>
+												<li><a href="#">제품1</a></li>
+												<li><a href="#">제품2</a></li>
+												<li><a href="#">제품3</a></li>
+												<li><a href="#">제품4</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<!-- //box -->
+
+								<!--
+								* 161028 col_14 -> col_17 로 수정
+								* style="margin-right: 20px;" 추가
+								-->
+								<div class="box col_17" style="margin-right: 20px;">
+									<dl>
+										<dt>남성</dt>
+										<dd>
+											<ul>
+												<li><a href="#">축구</a></li>
+												<li><a href="#">농구</a></li>
+												<li><a href="#">러닝</a></li>
+												<li><a href="#">오리지널스</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<!-- //box -->
+
+								<!--
+								* 161028 col_14 -> col_17 로 수정
+								* style="margin-right: 20px;" 추가
+								-->
+								<div class="box col_17" style="margin-right: 20px;">
+									<dl>
+										<dt>여성</dt>
+										<dd>
+											<ul>
+												<li><a href="#">축구</a></li>
+												<li><a href="#">농구</a></li>
+												<li><a href="#">러닝</a></li>
+												<li><a href="#">오리지널스</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<!-- //box -->
+
+								<!--
+									* 161028 col_14 -> col_17 로 수정
+									* 161028 키즈 삭제
+								 -->
+								<!--
+								<div class="box col_17">
+									<dl>
+										<dt>키즈</dt>
+										<dd>
+											<ul>
+												<li><a href="#">축구</a></li>
+												<li><a href="#">농구</a></li>
+												<li><a href="#">러닝</a></li>
+												<li><a href="#">오리지널스</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div> -->
+								<!-- //box -->
+
+								<div class="box col_31 last">
+									<!--
+									 161028
+									 *  style="width:370px;" 추가
+									  -->
+									<div class="img" style="width: 370px;"><a href="#"><img src="/images/adidas/temp/1610_miadidas.gif" alt=""></a></div>
+								</div>
+								<!-- //box -->
+							</div>
+							<!-- //ctgr_box -->
+
+							<div class="view_all">
+								<!--
+								160630
+								* col_18 -> col_15 로 수정
+								* style="margin-right: 20px;" 추가
+								 -->
+								<div class="col_17" style="margin-right: 20px;"><a href="#">전체보기</a></div>
+								<div class="col_17" style="margin-right: 20px;"><a href="#">남성 전체보기</a></div>
+								<div class="col_17" style="margin-right: 20px;"><a href="#">여성 전체보기</a></div>
+								<!--
+								161028 키즈 삭제
+								<div class="col_15"><a href="#">키즈 전체보기</a></div>
+								 -->
+								 <!--
+								 161028
+								 *  style="width:370px;" 추가
+								  -->
+								<div class="col_31 last" style="width:370px;"><a href="#">제작방법 알아보기</a></div>
+							</div>
 						</div>
-					</li>
-				</ul>
-			</div>
+						<!-- //ct950 -->
+					</div>
+					<!-- //depth2_contents -->
+				</li>
+				<!-- 170220 VR STORE 추가 -->
+				<li class="vrstore">
+					<a href="http://360pano.kr/adidaskorea/20170209/web/" target="_blank">VR STORE</a>
+					<div class="depth2_contents" style="display: none;">
+						<div class="ct950">
+							<div class="text_box">
+								<h3>adidas vr store <span>open</span></h3>
+								<p>새롭게 오픈한 아디다스 오리지널스 압구정 VR 스토어를 직접 체험해 보세요.<br>실제 오프라인 스토어의 환경을 온라인상에서 구현하여, <strong>365일/ 24시간</strong> 언제 어디서든<br><strong>압구정 플래그십 스토어만의 프리미엄 컬렉션 및 한정 상품을 쇼핑하실 수 있습니다.</strong> </p>
+								<a href="http://shop.adidas.co.kr/vr/originals_apgujeong/web/index.html" target="_blank"><span>VR</span> 스토어 바로가기 <span class="spt_bg"></span></a>
+							</div>
+
+							<div class="bg">
+								<a href="http://shop.adidas.co.kr/vr/originals_apgujeong/web/index.html" target="_blank">
+									<div><img src="http://image.adidas.co.kr/images/adidas/common/bg_gnb_vrstore.jpg" alt=""></div>
+									<div>아디다스 오리지널스 압구정 VR 스토어 </div>
+								</a>
+
+							</div>
+						</div>
+					</div>
+				</li>
+				<!-- 170220 VR STORE 끝 -->
+			</ul>
 		</div>
+		<!-- //gnb_menu -->
+	</div>
 		<div id="container_r">
-			
+
 			<!-- sub_main start -->
 			<div class="sub_main" style="background-color:#f5f5f5;">
 				<div id="smain_visual" class="visual">
@@ -603,7 +1314,7 @@
 						</div>
 						<!-- //slider_wrap -->
 					</div>
-					<!-- //vsl_wrap -->					
+					<!-- //vsl_wrap -->
 				</div>
 				<!-- //visual -->
 
@@ -628,6 +1339,8 @@
 			</div>
 			<!-- //sub_main -->
 
+            <div id="olapic_specific_widget"></div><script type="text/javascript" src="https://photorankstatics-a.akamaihd.net/81b03e40475846d5883661ff57b34ece/static/frontend/latest/build.min.js"  data-olapic="olapic_specific_widget" data-instance="840a71ea80a84b27a49c33ed50ec2db1" data-apikey="9e9c4f3a8aa4a5cd0abbc84d02e10fbfc1689b7cd22b3bf2b6043a41121db91b" async="async"data-lang="KO_KO" ></script>
+
 			<!-- 140408 -->
 			<div class="top_down">
 				<a href="#" class="top" onclick="jQuery('html, body').animate({scrollTop:0},1000,'easeOutCubic');return false;">top</a>
@@ -647,9 +1360,9 @@
 					<div class="cscenter_num spt_bg">
 						<strong><a href="#">고객센터</a> : </strong>
 						<span><em>1588-8241</em></span>
-					</div> 
+					</div>
 				</div>
-			</div>	
+			</div>
 			<!-- //f_linemenu -->
 			<div class="sitemap ct950">
 				<div class="sitemap_area1">
@@ -879,7 +1592,7 @@
 						<area shape="rect" coords="168,29,260,47" href="javascript:fn_certifiedInfoPopAdi();return false" alt="">
                         <area shape="rect" coords="228,4,262,23" href="http://ftc.go.kr/info/bizinfo/communicationList.jsp" target="_blank" alt="">
 					</map>
-				</div>				
+				</div>
 			</div>
 		</div>
 		<!-- //footer -->
