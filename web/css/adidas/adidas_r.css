@@ -1309,7 +1309,7 @@ div.error .btn {width:700px; height:30px; text-align:center; margin-top:20px;}
 .modal-popup-wrapper>.popup .popup-header{
 	padding: 27px 30px;
 	background: #fff;
-	border: 1px solid  #ebebeb;
+	border-bottom: 1px solid  #ebebeb;
 }
 
 .modal-popup-wrapper>.popup .popup-header h2{
