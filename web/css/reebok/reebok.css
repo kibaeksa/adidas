@@ -896,7 +896,7 @@ span.price span.sale span.won{color:#e4000f;}
 	font-weight: bold;
 }
 
-.modal-popup-wrapper. table.data_table tr:last-child td{
+.modal-popup-wrapper table.data_table tr:last-child td{
 	border-bottom-width: 0;
 }
 
@@ -8129,7 +8129,7 @@ div.qna table tr td p.star_level.lev5{background-position:0 -55px;}
 .product-review-write h2 span.spt_bg{
 	width: 20px;
 	height: 20px;
-	background-position:-50px 0;
+	background-position:-50px -10px;
 }
 
 .product-review-write .prod_tit{
