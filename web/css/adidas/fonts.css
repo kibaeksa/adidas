@@ -166,6 +166,6 @@
 @font-face{
 	font-family:'Decima Mono';
 	src:url('//image.adidas.co.kr/fonts/decimamono/woff/32923C_0_0.woff2') format('woff2'),
-			url('//image.adidas.co.kr/fonts/decimamono/woff/32923C_0_0.woff') format('woff'),
-			url('//image.adidas.co.kr/fonts/decimamono/ttf/32923C_0_0.ttf') format('truetype');
-	}
+		url('//image.adidas.co.kr/fonts/decimamono/woff/32923C_0_0.woff') format('woff'),
+		url('//image.adidas.co.kr/fonts/decimamono/ttf/32923C_0_0.ttf') format('truetype');
+}
