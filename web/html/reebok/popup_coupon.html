@@ -18,6 +18,28 @@
 
 </head>
 <body>
+	<!-- 170510 팝업 -->
+	<div class="open hidden" id="cponCls" style="position: fixed;top: 0;left: 0;width: 100%;height: 100%;z-index: 702;">
+		<div id="popup_popup" style="height: 100%;"></div>
+		<div id="popup_popupbox" style="top: 50%;left: 50%;margin-left: -205px;margin-top: -94px;">
+			<div class="massage">
+				<p>결제 예정 금액보다 선택하신 쿠폰금액 합계가  더 많습니다.</p>
+				<p><strong>초과된 금액 <em><span id="overAmt">0</span>원</em></strong>에 대하여 쿠폰이나 포인트로 돌려드리지 않습니다.</p><br>
+
+				<p>선택하신 쿠폰을 사용하시겠습니까?</p>
+			</div>
+
+			<div class="button">
+				<a href="javascript:fn_cponApplySet();"><img src="//image.adidas.co.kr/images/reebok/popup/btn_coupon_use.gif" alt="쿠폰사용"></a>
+				<a id="closeCponClsPop" href="javascript:void(0);"><img src="//image.adidas.co.kr/images/reebok/popup/btn_cancel.gif" alt="취소"></a>
+			</div>
+
+			<input type="hidden" name="tmpCnt" id="tmpCnt" value="0">
+			<input type="hidden" name="tmpAmt" id="tmpAmt" value="0">
+
+		</div>
+	</div>
+
 	<!-- 170215 start -->
 	<div class="modal-popup-wrapper modal-popup-coupon not_layer">
 		<div class="popup">
@@ -337,6 +359,16 @@
 				$('.tab_list a').removeClass('on').eq($(this).index()).addClass('on');
 				$('.tab_contents_wrap>.tab_cont_box').hide().eq($(this).index()).show();
 			});
+
+			//170510 쿠폰사용 컨펌 팝업
+			$('#closeCponClsPop , #cponCls #popup_popup').bind('click',function(){
+				$('#cponCls').addClass('hidden');
+			});
+
+			setTimeout(function(){
+				$('#cponCls').removeClass('hidden');
+			},500);
+
 
 		})(jQuery)
 	</script>
