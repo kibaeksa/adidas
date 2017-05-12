@@ -8078,19 +8078,119 @@ html.no_scroll{
 				margin-left: -990px;
 			}
 		}
+		.calendar{
+			background: url("/images/reebok/event/about/bmhp/time_table_bg.jpg") no-repeat;
+			background-size:100% 100%;
+			.inner{
+				width: 900px;
+				margin: 0 auto;
+			}
+			h2{
+				padding:70px 0 60px;
+			}
+			.month_wrap{
+				.month{
+					padding-bottom: 60px;
+					p{
+						text-transform: uppercase;
+						text-align: center;
+						&.title{
+							padding-bottom: 10px;
+							font: 46px/46px 'QStencil', "Nanum Gothic";
+							color:#000;
+							letter-spacing: 1px;
+						}
+						&.s_title{
+							font: 18px/18px 'NotosansKRRegular', "Nanum Gothic";
+							color:#000;
+							letter-spacing: -0.7px;
+						}
+					}
+					.month_dt{
+						padding-top: 25px;
+						>ul{
+							>li{
+								// @include box-sizing();
+								float:left;
+								width: 213px;
+								margin-right: 10px;
+								border:1px solid #383737;
+								&.last{ margin-right: 0px; }
+								.box{
+									.dt{
+										padding: 22px 0;
+										background: #383737;
+										color:#fff;
+										font:26px/26px 'DINWebPro-CondMedium';
+									}
+									.contents{
+										padding: 20px;
+										background: rgba(277,277,277,0.3);
 
-		.insta{
-			position: relative;
-		}
-
-		.slider_wrap{
-			position: relative;
-			height: 264px;
-			.bg{
-				position: absolute;
-				top:0;
-				left:50%;
-				margin-left:-990px;
+										p{
+											height: 45px;
+											font: 13px/18px 'NotosansKRRegular','Nanum Gothic';
+											text-align: left;
+											color:#292929;
+										}
+										.con{
+											>img{
+												padding-bottom: 10px;
+											}
+											&.location{
+												padding: 14px 0 0 0;
+												height: auto;
+												ul{
+													text-align: left;
+													li{
+														position: relative;
+														margin-left: 20px;
+														padding-bottom: 8px;
+														&.last{
+															padding-bottom: 0px;
+														}
+														a{
+															position: relative;
+															display: inline-block;
+															font: 13px/14px 'NotosansKRRegular','Nanum Gothic';
+															color:#292929;
+															letter-spacing: -0.2px;
+															&:after{
+																position: absolute;
+																left:0;
+																bottom:-5px;
+																content: '';
+																display: inline-block;
+																width: 100%;
+																background: #383737;
+																height: 1px;
+															}
+															span{
+																position: absolute;
+																left:-20px;
+																top:0;
+																background: url("/images/reebok/event/about/bmhp/ping.png") no-repeat;
+																display: inline-block;
+																width:13px;
+																height: 17px;
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+							&:after{
+								display: block;
+								height: 0;
+								clear: both;
+								content: '';
+							}
+						}
+					}
+				}
 			}
 		}
 	}
