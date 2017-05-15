@@ -564,6 +564,9 @@ function blurAction(obj,moveId,dir,obj2){
 			autoDuration : 800
 		};
 		var options = $.extend(defaultOptions,_options);
+		if(options.auto && !options.loop){
+			options.loop = true;
+		}
 
 		var index = 0;
 		var prevIdx = -1;
@@ -650,17 +653,17 @@ function blurAction(obj,moveId,dir,obj2){
 				}
 
 			}else{
-				if(isAuto){
-					if(num < 0){
-						animData.num = length-1;
-					}else if(num > length-1){
-						animData.num = 0;
-					}
-				}else{
+				// if(isAuto){
 					if(num < 0 || num > length-1){
-						return false;
+						return;
+					}else{
+						animData.num = num;
 					}
-				}
+				// }else{
+					// if(num < 0 || num > length-1){
+						// return false;
+					// }
+				// }
 
 				setIndex(num);
 			}

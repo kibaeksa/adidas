@@ -1440,15 +1440,10 @@
 			width : 950,
 			height : 524,
 			duration : 600,
-            autoDuration : 3000,
 			easing : 'easeOutQuad',
 			auto : true,
 			loop: true,
-			autoTime : 5000,
-            init : function(length){
-                console.log(this);
-                console.log(length);
-            },
+			autoTime : 3000,
 			callback : function(index,prevIdx){
 				$('.prm4594 .btn a').eq(prevIdx).removeClass('on');
 				$('.prm4594 .btn a').eq(index).addClass('on');

@@ -84,15 +84,25 @@ jQuery(document).ready(function(){
 
 	// 150924 footer SNS bind event
 	jQuery('.f_sns>div>a.btn').bind('click',function(){
-		if( jQuery(this).siblings('.layer').hasClass('layer') ){
-			if(jQuery(this).hasClass('on')){
-				jQuery(this).removeClass('on');
-				jQuery(this).siblings('.layer').removeClass('open');
+		var $this = jQuery(this);
+		if( $this.siblings('.layer').hasClass('layer') ){
+			if($this.hasClass('on')){
+				$this.removeClass('on');
+				$this.siblings('.layer').show();
+				setTimeout(function(){
+					$this.siblings('.layer').addClass('open');
+				},10);
 			}else{
 				jQuery('.f_sns>div>a.btn').removeClass('on');
 				jQuery('.f_sns>div>.layer').removeClass('open');
-				jQuery(this).addClass('on');
-				jQuery(this).siblings('.layer').addClass('open');
+				jQuery('.f_sns>div>.layer').hide();
+				$this.addClass('on');
+				$this.siblings('.layer').show();
+
+				setTimeout(function(){
+					$this.siblings('.layer').addClass('open');
+				},10);
+
 			}
 			return false;
 		}else{
@@ -101,8 +111,9 @@ jQuery(document).ready(function(){
 	});
 
 	jQuery('.f_sns>div>.layer>.close').bind('click',function(){
-		jQuery(this).parent().siblings('.btn').removeClass('on');
-		jQuery(this).parent().removeClass('open');
+		var $this = jQuery(this);
+		$this.parent().siblings('.btn').removeClass('on');
+		$this.parent().removeClass('open');
 		return false;
 	});
 	// 150924 end

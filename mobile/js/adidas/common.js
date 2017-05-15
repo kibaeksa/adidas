@@ -504,21 +504,24 @@ adiApp.getNodefromString = function (htmlString) {
 				return;
 			}
 
+			if(document.getElementsByClassName('top_bnn').length == 0){
+				topBnnH = 0;
+			}
+
 			var sTop = document.documentElement.scrollTop || document.body.scrollTop;
-			offsetTop = 61 + topBnnH;
+			offsetTop = 60 + topBnnH;
 
-			if(sTop < offsetTop-50){
-				$(headerElem).addClass('unfixed hide');
-				containerElem.style.marginTop = '0';
-				prevScroll = sTop;
-			}else if(sTop > offsetTop){
-				$(headerElem).removeClass('unfixed');
-				containerElem.style.marginTop = '61px';
-				offsetTop = 61 + topBnnH;
 
-				if(prevScroll - sTop > 3){
+
+
+
+				// $(headerElem).removeClass('unfixed');
+				// containerElem.style.marginTop = '61px';
+				offsetTop = 60 + topBnnH;
+
+				if(prevScroll - sTop > 10){
 					$(headerElem).removeClass('hide');
-				}else if(prevScroll - sTop < -3){
+				}else if(prevScroll - sTop < -10){
 					$(headerElem).addClass('hide');
 				}
 
@@ -526,7 +529,9 @@ adiApp.getNodefromString = function (htmlString) {
 				offsetBottom = headerElem.getBoundingClientRect().bottom;
 
 				prevScroll = sTop;
-			}
+
+
+			// document.querySelector('#statusDiv').innerHTML = sTop +' -- '+' 헤더 클래스값 : '+$(headerElem).css('position');
 
 
 			requestAnimationFrame(headerSticky);

@@ -299,7 +299,7 @@ html.no_srl{
 	-webkit-animation-delay:0.7s;
 }
 
-
+/* Form (input , radio) */
 .chk_box1,
 .rdo_box1{
 	display: inline-block;
@@ -407,6 +407,7 @@ html.no_srl{
 	background: #027dbf !important;
 }
 
+/* adidas point */
 .mpoints{
 	font:12px 'AdihausDIN-bold';
 }
@@ -1708,6 +1709,7 @@ html.no_srl{
     background: #0286cd;
     border-radius:50%;
     z-index: 150;
+    box-shadow:2px 3px 3px rgba(0,0,0,0.35);
 }
 
 #quick-menu>.toggle_btn>*{
@@ -1848,7 +1850,7 @@ html.no_srl{
 }
 
 #quick-menu .menubtn_wrap>.btn_list>a.btn_order .img{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 
@@ -1862,14 +1864,18 @@ html.no_srl{
 }
 
 #header.unfixed{
-	position: relative !important;
+    top: 0;
+    left: 0;
+	position: absolute !important;
 }
 
 #header.hide{
 	transform:translate3d(0,-100%,0);
+    -webkit-transform:translate3d(0,-100%,0);
 }
 #header.unfixed.hide{
 	transform:translate3d(0,0,0);
+    -webkit-transform:translate3d(0,0,0);
 }
 
 #header #nav_menu_overlay{
@@ -2924,7 +2930,13 @@ html.no_srl{
 	background: #0188cc;
 }*/
 
-#container{}
+#container{
+    width: 100%;
+    padding-top: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
 #container.main #main_swipe_wrap{
 	position: relative;
 	width: 100%;
