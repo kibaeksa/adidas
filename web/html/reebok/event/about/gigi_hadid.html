@@ -756,7 +756,7 @@
 
 					</script>
 					<!-- // shop the look 슬라이드 -->
-          
+
           <!-- 배너 종료 css -->
           <style>
             .campaign_gigihadid .banner_area .inner .banner .eventOver a{
@@ -829,36 +829,6 @@
       					        };
       					}());
             		(function($){
-                  /*banner 종료 날짜 설정 시작*/
-
-                  var startdate = "2017020100";
-                  var enddate = "2017022800";
-
-                  var now = new Date();   //현재시간
-
-                  year = now.getFullYear();   //현재시간 중 4자리 연도
-                  month = now.getMonth()+1;   //현재시간 중 달. 달은 0부터 시작하기 때문에 +1
-                  if((month+"").length < 2){
-                      month="0"+month;   //달의 숫자가 1자리면 앞에 0을 붙임.
-                  }
-                  date = now.getDate();      //현재 시간 중 날짜.
-                  if((date+"").length < 2){
-                      date="0"+date;
-                  }
-                  hour = now.getHours();   //현재 시간 중 시간.
-                  if((hour+"").length < 2){
-                  hour="0"+hour;
-                  }
-                  today = year + "" + month + "" + date+ "" +hour;      //오늘 날짜 완성.
-                  // 시간비교
-                  if ((eval(today) > eval(startdate)) && ((eval(today) < eval(enddate))))  {
-                       $('.eventOver').css({'display':'none'});
-                  }else{
-                    $('.eventOver').css({'display':'block'});
-                  }
-
-                  /*banner 종료 날짜 설정 끝*/
-
 
 
             			var swipers = $('#slider-hadid').Swipers({
