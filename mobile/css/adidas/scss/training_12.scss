@@ -127,8 +127,8 @@ $width600:600px;
 				color:#494746;
 				img{
 					right: 2%;
-			    bottom: 23%;
-			    width: 33%;
+				    bottom: 23%;
+				    width: 33%;
 				}
 			}
 			.say{
@@ -185,15 +185,16 @@ $width600:600px;
 				font: 3rem/3.5rem 'adinenuPro-black','Nanum Gothic';
 				img{
 					right: 50%;
-				    bottom: 23%;
-				    width: 33%;
-					margin-right: -159px;
+					bottom: 25%;
+				    width: 25%;
+				    margin-right: -159px;
 				}
 			}
 			.say{
 				background-image: url("http://imagem.adidas.co.kr/images/adidas/event/creator_know_how/03/say_bg.png");
 				p{
 					color:#574747;
+					letter-spacing: -1px;
 					&:first-child{
 						margin-bottom: 1rem;
 					}
@@ -210,6 +211,17 @@ $width600:600px;
 				border:1px solid #fff;
 				color:#fff;
 				background: rgba(0,0,0,0.16);
+			}
+		}
+		.product{
+			.box{
+				.info_wrap{
+					.info{
+						&:last-child{
+							margin-right: 2rem;
+						}
+					}
+				}
 			}
 		}
 	}
@@ -482,6 +494,7 @@ $width600:600px;
 
 	.product{
 		position: relative;
+		padding-bottom: 2rem;
 		.box{
 			padding: 0 1rem;
 			margin: 2rem 1rem 0 2rem;

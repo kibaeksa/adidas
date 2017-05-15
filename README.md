@@ -1,3 +1,0 @@
-SANTELGLOBAL
-
-Adidas & Reebok Project
